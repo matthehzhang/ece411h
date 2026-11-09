@@ -1,0 +1,827 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:08.000
+Okay, so this is, you'll be problem 7.68.
+
+00:00:08.000 --> 00:00:12.000
+And it is an example.
+
+00:00:12.000 --> 00:00:17.000
+Slightly more complicated circuit analysis in the Phaser domain.
+
+00:00:17.000 --> 00:00:21.000
+So it's a slightly.
+
+00:00:21.000 --> 00:00:29.000
+Slightly more applications.
+
+00:00:29.000 --> 00:00:33.000
+An example of Phaser.
+
+00:00:33.000 --> 00:00:37.000
+Circuit, analysis.
+
+00:00:37.000 --> 00:00:43.000
+Okay? And so what this problem entails is that we are given this circuit over here.
+
+00:00:43.000 --> 00:00:56.000
+Alright. It has a few resistors to capacitors, and an independent voltage source, and we're asked to calculate this current over here is Sub. X. Given v. Sub s.
+
+00:00:56.000 --> 00:01:00.000
+Of T over here. Okay, so we will start off as usual.
+
+00:01:00.000 --> 00:01:16.000
+By redrawing this circuit.
+
+00:01:16.000 --> 00:01:22.000
+Okay, so.
+
+00:01:22.000 --> 00:01:28.000
+Circuit looks like this. Then we have our voltage source.
+
+00:01:28.000 --> 00:01:35.000
+Here in the middle. Okay? And then says, Connect it down here as well.
+
+00:01:35.000 --> 00:01:43.000
+This resistor is point one OS. This capacitor is 20 micro farads.
+
+00:01:43.000 --> 00:01:49.000
+This capacitor down here is 20 microfarads, this resistor is 0 point 2 ohms.
+
+00:01:49.000 --> 00:01:53.000
+This is point 10, and this voltage source is Vc.
+
+00:01:53.000 --> 00:02:03.000
+Sub s. Of T. Right, and what we are asked to calculate is this current here?
+
+00:02:03.000 --> 00:02:20.000
+I, sub. X. We are given that V. Sub. S. Of T is equal to 6 times the cosine of 5 times 10 to the minus 5 and volts, and what we want to do is to solve for I sub.
+
+00:02:20.000 --> 00:02:40.000
+X. Of T. Alright. And so the first step here is going to be to transform the circuit to the phaser dimensions.
+
+00:02:40.000 --> 00:02:47.000
+Okay, and that basically means just replacing the current voltage quantities by their corresponding phasers.
+
+00:02:47.000 --> 00:02:55.000
+And the Circuit parameters by their corresponding complex impedances.
+
+00:02:55.000 --> 00:03:07.000
+Okay. So we redraw it again.
+
+00:03:07.000 --> 00:03:18.000
+It's going to look like this.
+
+00:03:18.000 --> 00:03:29.000
+This passive a little bit better here. Okay? And then this is connected here at the bottom, and then we have.
+
+00:03:29.000 --> 00:03:37.000
+The voltage source here in the middle. Okay, this resistor is still point one ohms.
+
+00:03:37.000 --> 00:03:41.000
+This capacitor now is one over J. Omega C.
+
+00:03:41.000 --> 00:03:44.000
+Alright! This capacitor is also one over J. Omega, C. Right.
+
+00:03:44.000 --> 00:03:50.000
+Because the 2 capacitors have the same value. This is point 10, this is point 2.
+
+00:03:50.000 --> 00:03:54.000
+This is the Phaser, and this current is, I. Sub. X.
+
+00:03:54.000 --> 00:04:03.000
+Also a Phaser. Alright! The capacitance here is 20 microfarads.
+
+00:04:03.000 --> 00:04:07.000
+Our angular frequency. Alright! We get from this expression for v.
+
+00:04:07.000 --> 00:04:16.000
+Sub S. Over here. Sorry. It's 5 times 10 to the plus 5 t, right? So it's 5 times 10 to the 5, and then V.
+
+00:04:16.000 --> 00:04:19.000
+Sub s. Here as a Phaser is just 6. The phase angle is 0.
+
+00:04:19.000 --> 00:04:31.000
+Right, because this is in the standard cosine form here, and there's no phase angle that comes into place.
+
+00:04:31.000 --> 00:04:36.000
+So, Omega, it's 5 times 10 to the 5.
+
+00:04:36.000 --> 00:04:41.000
+Radians per second, and then Vsa S. Is a Phaser.
+
+00:04:41.000 --> 00:04:48.000
+It's just 6 in volts. Okay? So now for this circuit, alright, this is a little more complicated.
+
+00:04:48.000 --> 00:04:59.000
+Okay and to solve, for I, sub x. What we want to do here is to do a node voltage and L, so we will take this note over here to be our reference.
+
+00:04:59.000 --> 00:05:01.000
+Node alright. This note over here on the left, then, has voltage v.
+
+00:05:01.000 --> 00:05:10.000
+Sub, s. Because of the voltage source, and then our unknown voltages will be V.
+
+00:05:10.000 --> 00:05:15.000
+One up here and V. 2 down here. Okay, so this is a 2 variable node.
+
+00:05:15.000 --> 00:05:33.000
+Voltage analysis. So not too bad. Right? So, then, now that we have decided on this strategy, right or looked at things in the Phaser domain, what we wanna do is to perform this node voltage.
+
+00:05:33.000 --> 00:05:39.000
+Now!
+
+00:05:39.000 --> 00:05:44.000
+Right, and this will give us the voltage is v.
+
+00:05:44.000 --> 00:05:52.000
+One, and v. 2. In the Phaser domain. Then once we have those alright, we can see that the current I.
+
+00:05:52.000 --> 00:05:57.000
+Sub. X over here is just going to be V, one minus v.
+
+00:05:57.000 --> 00:05:59.000
+2, which is the voltage across this point one Ohm.
+
+00:05:59.000 --> 00:06:04.000
+Resistor over here. It's going to be V, one minus v, 2 over point one OS.
+
+00:06:04.000 --> 00:06:09.000
+Alright! So I, sub. X. Is a Phaser, will then be V.
+
+00:06:09.000 --> 00:06:18.000
+One minus v, 2 over point one oops. Okay? So that is going to be our approach for solving this problem.
+
+00:06:18.000 --> 00:06:19.000
+Now, as usual, node, voltage analysis, we will apply Kcl.
+
+00:06:19.000 --> 00:06:28.000
+At each of the nodes with an unknown voltage.
+
+00:06:28.000 --> 00:06:32.000
+So if we apply Kcl.
+
+00:06:32.000 --> 00:06:42.000
+First at the node. V. One. Okay, then we have the current going out this way to the left.
+
+00:06:42.000 --> 00:06:50.000
+That is, v, one minus v, 2 over point one OS.
+
+00:06:50.000 --> 00:06:57.000
+Then we have the current coming down this way through the capacitor that is the voltage V.
+
+00:06:57.000 --> 00:07:07.000
+One minus vs. Over one over J. Omega C, and then we have the current going down this way to the right.
+
+00:07:07.000 --> 00:07:15.000
+That is the voltage v. One minus 0. So just be one over point 2.
+
+00:07:15.000 --> 00:07:28.000
+And this is it to 0? Okay, now, I numerically right, we have Omega C here in this denominator and Omega times.
+
+00:07:28.000 --> 00:07:33.000
+C is 5 times 10 to the 5 times 20 times 10 to the minus 6.
+
+00:07:33.000 --> 00:07:38.000
+So we have 5 times 20, which is 10 to the 2 times 10 to the minus 6.
+
+00:07:38.000 --> 00:07:42.000
+That's 10 to the minus 4. I'm 10 to the 5 that becomes just 10.
+
+00:07:42.000 --> 00:07:51.000
+Alright! So we have that Omega is equal to 5 times 10 to the 5 times 20.
+
+00:07:51.000 --> 00:08:01.000
+I'm sorry. Omega C. Is 5 times 10 to the 5 times 20 times 10 to the minus 6, and that is just 10.
+
+00:08:01.000 --> 00:08:13.000
+Okay, so now, alright, we can go ahead and simple this equation here.
+
+00:08:13.000 --> 00:08:20.000
+Alright. So I just collecting together the terms associated with each unknown.
+
+00:08:20.000 --> 00:08:24.000
+Alright. We have v. One over point one. That's just 10 v.
+
+00:08:24.000 --> 00:08:27.000
+One. Right? Then we have v. One over one over. J. Times.
+
+00:08:27.000 --> 00:08:36.000
+10. That's just j times 10 times. V. One. What's Jay?
+
+00:08:36.000 --> 00:08:42.000
+10 times v. One. And then we have v. One over point 2.
+
+00:08:42.000 --> 00:08:47.000
+That's 5 v. One. So plus 5. All of this times. V.
+
+00:08:47.000 --> 00:08:54.000
+One. Right? Then we have minus V, 2 over point one. So that's minus 10.
+
+00:08:54.000 --> 00:08:57.000
+V-tew! And then we have minus vs. Over one over J.
+
+00:08:57.000 --> 00:09:04.000
+Times point one. So that's ij times 10 times minus vs.
+
+00:09:04.000 --> 00:09:10.000
+On the left. So that becomes j times 10 times vs.
+
+00:09:10.000 --> 00:09:20.000
+On the right hand side, and if we just simplify this very slightly, we have 15 plus j times 10.
+
+00:09:20.000 --> 00:09:25.000
+Times v. One minus 10 times v. 2. It's equal to J.
+
+00:09:25.000 --> 00:09:28.000
+Times 10.
+
+00:09:28.000 --> 00:09:32.000
+Times, vs. Which is J. Times 60 since Vs.
+
+00:09:32.000 --> 00:09:35.000
+Is 6.
+
+00:09:35.000 --> 00:09:42.000
+Or if we divide this whole equation by 5, we have 3.
+
+00:09:42.000 --> 00:09:47.000
+Plus j times 2. How is v. One minus 2 times? V.
+
+00:09:47.000 --> 00:09:58.000
+2 is equal to J. Times 12. So this is the first equation that we have will underline.
+
+00:09:58.000 --> 00:10:05.000
+Blue here, so it's easy to pick out. Okay, so that's the first equation for our 2 unknowns.
+
+00:10:05.000 --> 00:10:13.000
+V, one and v, 2, right? We need a second equation, and we'll get that by applying Kcl.
+
+00:10:13.000 --> 00:10:22.000
+That node v. 2. Alright. So that's this node down here.
+
+00:10:22.000 --> 00:10:33.000
+Okay, so Kcl is going to tell us that the current going up this way, which is v, 2 minus V, one over point one plus the current going this way, which is a V 2 minus vs.
+
+00:10:33.000 --> 00:10:36.000
+Over point 1.
+
+00:10:36.000 --> 00:10:42.000
+Plus the current going up this way, which is v, 2, minus 0, or just v, 2 over one over J.
+
+00:10:42.000 --> 00:10:48.000
+Omega C is equal to 0.
+
+00:10:48.000 --> 00:10:56.000
+Okay, so we have v, 2, minus v, one over point 1.
+
+00:10:56.000 --> 00:11:02.000
+Plus v 2 minus vs over point 1.
+
+00:11:02.000 --> 00:11:12.000
+Plus v. 2 over one over J. Omega, C.
+
+00:11:12.000 --> 00:11:18.000
+Is equal to 0. Alright! Those are the 3 currents that we have.
+
+00:11:18.000 --> 00:11:25.000
+Going out along these 3 branches that are connected to that would be too.
+
+00:11:25.000 --> 00:11:30.000
+Okay, so here, right again, I, right, Omega C alright.
+
+00:11:30.000 --> 00:11:36.000
+This here is equal to 10. Okay, so we're gonna have.
+
+00:11:36.000 --> 00:11:37.000
+We just grouped together the terms associated with the same unknown, variable.
+
+00:11:37.000 --> 00:11:47.000
+Then for v. One, we have minus v. One over point one so it's minus 10 d.
+
+00:11:47.000 --> 00:11:52.000
+One this term, and then we have for v. 2. We have v.
+
+00:11:52.000 --> 00:11:55.000
+2 over point one. So that's 10 times v, 2.
+
+00:11:55.000 --> 00:12:09.000
+Then over here we have v. 2 over point one, so plus another 10 times v, 2, and then over here we have v, 2 over one over, J. Times 10.
+
+00:12:09.000 --> 00:12:15.000
+So that's just J, times 10 times. V, 2. So pl jay times 10.
+
+00:12:15.000 --> 00:12:16.000
+All this times, v. 2. That takes care of this third term, and then we have minus vs.
+
+00:12:16.000 --> 00:12:23.000
+Over point one that's minus 10 vs. On the left.
+
+00:12:23.000 --> 00:12:32.000
+So that's equal to 10 vs. On the right, which is 60.
+
+00:12:32.000 --> 00:12:44.000
+Okay. And if we take this whole equation here and divide it by 10, we get minus v one plus.
+
+00:12:44.000 --> 00:12:53.000
+And there's 2 plus j times v 2, and that's equal to 6.
+
+00:12:53.000 --> 00:13:00.000
+Okay, so that is our second equation. And so now we have these 2 equations alright for the 2 unknowns.
+
+00:13:00.000 --> 00:13:08.000
+V. One, and v, 2, and we can just go ahead and solve for B, one and v, 2, using whatever method we would like.
+
+00:13:08.000 --> 00:13:17.000
+So that is the third step over here which is to solve these node equations.
+
+00:13:17.000 --> 00:13:22.000
+Alright. And then, once we've done that.
+
+00:13:22.000 --> 00:13:27.000
+To calculate. I. Sub x. Right, which we saw a few minutes ago.
+
+00:13:27.000 --> 00:13:33.000
+We saw how to do that. So let's just write down these 2, not equations together.
+
+00:13:33.000 --> 00:13:38.000
+So with the first equation. Alright. These are the equations that we underlined in blue over here.
+
+00:13:38.000 --> 00:13:43.000
+So the first equation, this one is 3 plus j times 2 times.
+
+00:13:43.000 --> 00:13:52.000
+V. One minus 2 v. 2 is equal to J times 12.
+
+00:13:52.000 --> 00:14:06.000
+Okay. The second equation is this one right over here. So minus v, one plus 2 plus j, v, 2 is equal to 6.
+
+00:14:06.000 --> 00:14:10.000
+Or if we put this in matrix form, it's 3 plus J.
+
+00:14:10.000 --> 00:14:18.000
+2, and minus 2, and then minus 1, 2 plus J operating on V.
+
+00:14:18.000 --> 00:14:25.000
+One and v. 2. This is equal to j. Times 12 and 6. Right.
+
+00:14:25.000 --> 00:14:32.000
+The constant terms. And so now you can solve these 2 equations using any method that you would like.
+
+00:14:32.000 --> 00:14:45.000
+What we will do here is we will use Cramer.
+
+00:14:45.000 --> 00:14:50.000
+Okay. So by Kramer's rule, then V.
+
+00:14:50.000 --> 00:14:52.000
+One is going to be to be the determinant of the matrix of coefficients where the coefficients of V.
+
+00:14:52.000 --> 00:15:01.000
+One, the first column are replaced by the constant terms.
+
+00:15:01.000 --> 00:15:12.000
+So it's jay times 12 and 6, and then minus 2 c plus j, divided by the determinant of the matrix of coefficients.
+
+00:15:12.000 --> 00:15:19.000
+So 3, plus j, 2, minus one minus 2, 2, plus J.
+
+00:15:19.000 --> 00:15:30.000
+Alright when we calculate the determinant of a 2 by 2 matrix, it's just the product of the diagonal elements minus the product of the opposite diagonal elements.
+
+00:15:30.000 --> 00:15:39.000
+So we have J. Times 12 times 2. So that's J times 24. And then we have J.
+
+00:15:39.000 --> 00:15:45.000
+Times 12 times. J, so that's minus 12, and then minus minus 2 times 6.
+
+00:15:45.000 --> 00:15:51.000
+That's minus 12. So that's plus 12.
+
+00:15:51.000 --> 00:15:58.000
+And then in the denominator we have 3 plus j times 2 times 2 plus J.
+
+00:15:58.000 --> 00:16:08.000
+Minus 2. Okay? And so we calculate this out in the numerator.
+
+00:16:08.000 --> 00:16:09.000
+Alright, this and this cancel out. So we have just J.
+
+00:16:09.000 --> 00:16:15.000
+Times 24, divided by, and then in the denominator.
+
+00:16:15.000 --> 00:16:21.000
+We have here 3 times 2. That's 6 plus j times 2 times.
+
+00:16:21.000 --> 00:16:27.000
+J, that's minus 2. And then we have, plus j times 2 times 2.
+
+00:16:27.000 --> 00:16:28.000
+That's 4, j plus 3. J, so that's plus 7.
+
+00:16:28.000 --> 00:16:38.000
+J plus j times 7 right? And then we have have this minus 2 over here.
+
+00:16:38.000 --> 00:16:52.000
+So, minus 2. Okay, so we have. Finally, jay times 24, divided by 6, minus 2, minus 2, which is 2 plus J time step.
+
+00:16:52.000 --> 00:16:59.000
+So that's v. One. Then for v, 2.
+
+00:16:59.000 --> 00:17:04.000
+Alright, that is the matrix of coefficients with the coefficients of V.
+
+00:17:04.000 --> 00:17:10.000
+2. The second column, replaced by the constants, terms.
+
+00:17:10.000 --> 00:17:16.000
+So it's 3 plus j, 2 minus one, and then J.
+
+00:17:16.000 --> 00:17:22.000
+12, 6, divided by the determinant of just the matrix of coefficient 3 plus J.
+
+00:17:22.000 --> 00:17:33.000
+2 minus one minus 2, 2 plus j. So in the numerator we have.
+
+00:17:33.000 --> 00:17:45.000
+3 times 6. That's 18, plus J. 2 times 6 so that's plus J times 12 minus negative.
+
+00:17:45.000 --> 00:17:52.000
+J. Times 12. So plus jay times 12, divided by the same denominator.
+
+00:17:52.000 --> 00:18:05.000
+As for v. One, so 2 plus j times 7. And so this becomes 18, plus j times 24 over to plus j times 7. Okay.
+
+00:18:05.000 --> 00:18:15.000
+So now we have v. One and v. 2. And once we have those, then.
+
+00:18:15.000 --> 00:18:17.000
+I. Sub. X. Alright. We saw a few minutes ago, is just going to be V.
+
+00:18:17.000 --> 00:18:26.000
+One minus v. 2, divided by point 10, alright!
+
+00:18:26.000 --> 00:18:29.000
+If we go back to our original.
+
+00:18:29.000 --> 00:18:35.000
+Phaser, the main circuit diagram. Right? We see that Ix over here is the voltage across the point.
+
+00:18:35.000 --> 00:18:40.000
+One own resistor, which is v. One minus v. 2, divided by point one Alright.
+
+00:18:40.000 --> 00:18:44.000
+So that's where that came from.
+
+00:18:44.000 --> 00:18:52.000
+Okay. And whatever point one is 10. So this is just 10 times v, one minus v, 2, bye.
+
+00:18:52.000 --> 00:18:56.000
+And so this is going to be 10 times, and then V.
+
+00:18:56.000 --> 00:19:03.000
+One was J. Times 24 over 2, plus j. 7 alright, and V.
+
+00:19:03.000 --> 00:19:06.000
+One and v. 2 are over the same denominator already.
+
+00:19:06.000 --> 00:19:09.000
+So for v. One we have J. Times 24, and then in the numerator, and then for v.
+
+00:19:09.000 --> 00:19:22.000
+2 we have minus 18, minus v, 2. It's minus 18, minus J times 24, and then our denominator is 2 plus 8 jay times 7.
+
+00:19:22.000 --> 00:19:26.000
+Okay. So then the J times, 24 and the minus J times 24 cancel each other out.
+
+00:19:26.000 --> 00:19:37.000
+So we just have minus 18 times 10. That's minus a hundred 80 over to plus j times 7.
+
+00:19:37.000 --> 00:19:38.000
+Then here we multiply the numerator and the denominator by 2, minus J.
+
+00:19:38.000 --> 00:19:46.000
+Times 7. So we have minus 1, 80 times 2 minus J.
+
+00:19:46.000 --> 00:19:51.000
+Times 7, divided by, and then the manitude, and then 2 plus J. 7 times 2 minus.
+
+00:19:51.000 --> 00:20:08.000
+J. 7 is 4 plus 49. Okay? And so then what this gives us is minus a hundred, 80 times 2, which is minus.
+
+00:20:08.000 --> 00:20:11.000
+3 60, divided by the non-inter, 4 plus 49.
+
+00:20:11.000 --> 00:20:18.000
+That's 53, and then we have plus jay times right?
+
+00:20:18.000 --> 00:20:19.000
+These 2 minus signs cancel each other out. So J.
+
+00:20:19.000 --> 00:20:28.000
+Times 7 times 1 80, which is 1260.
+
+00:20:28.000 --> 00:20:35.000
+Divided by 53. Okay, so that is what I sub.
+
+00:20:35.000 --> 00:20:41.000
+X is as a Phaser in rectangular form.
+
+00:20:41.000 --> 00:20:49.000
+Alright, then, what we need to do next is convert this back into the back to the time domain.
+
+00:20:49.000 --> 00:20:51.000
+And so the first step in doing that will be to write this in polar form rod rather than rectangular form.
+
+00:20:51.000 --> 00:21:03.000
+So we want to convert.
+
+00:21:03.000 --> 00:21:09.000
+To the time domain.
+
+00:21:09.000 --> 00:21:16.000
+Okay, and that'll be isob X. T, right? And so we have that I sub.
+
+00:21:16.000 --> 00:21:22.000
+X. In rectangle form is minus 3, 60 over 53.
+
+00:21:22.000 --> 00:21:33.000
+Plus j times 1260, over 53 right? And so we need to figure out the magnitude of that alright.
+
+00:21:33.000 --> 00:21:43.000
+That's easy, and the result is 24.7 2, and that's going to be times a phase factor E to the J.
+
+00:21:43.000 --> 00:21:57.000
+Times 5, and Phi in this case is going to be 180 degrees minus the inverse tangent of.
+
+00:21:57.000 --> 00:22:06.000
+1260, over 3, 60, and that is a hundred 5.9 5 degrees.
+
+00:22:06.000 --> 00:22:16.000
+Okay. Now, one of the questions you might naturally ask here is, well, why did we specify the phase angle on this way?
+
+00:22:16.000 --> 00:22:20.000
+Right as 1, 80, minus the inverse tangent of 1260, over 3, 60, right.
+
+00:22:20.000 --> 00:22:25.000
+It's easy to say where to see where this minus sign came from. Right.
+
+00:22:25.000 --> 00:22:42.000
+Because we have minus 3 60 over here. So ordinarily right in general, the phase angle is the inverse tangent of the imaginary part over the real part, alright and the inverse tangent of X is equal to minus the inverse tangent inverse tangent of minus X so
+
+00:22:42.000 --> 00:22:53.000
+we can pull the minus sign to the outside but then there's a question of why we don't just calculate this rather than 1 80 minus that. Okay?
+
+00:22:53.000 --> 00:23:04.000
+And the reason is the following, okay, if we think about, I sub.
+
+00:23:04.000 --> 00:23:10.000
+X. I. In the 2 dimensional complex plane.
+
+00:23:10.000 --> 00:23:21.000
+Okay, that's I, sub x. Right? Then the imaginary part is 1260, over 53.
+
+00:23:21.000 --> 00:23:28.000
+And then the real part is minus 3, 60, over 53.
+
+00:23:28.000 --> 00:23:35.000
+Alright, so i. Sub. X. Is.
+
+00:23:35.000 --> 00:23:41.000
+Something like this. Okay, this is Ix.
+
+00:23:41.000 --> 00:23:48.000
+And so the phase angle that we want is going to be this angle here.
+
+00:23:48.000 --> 00:23:54.000
+Alright. Now, if you were to take, take 1260, over minus 3, 60, right?
+
+00:23:54.000 --> 00:24:09.000
+We don't have to worry about the common denominator of 53, since we're dividing now we are to take 1260, over over minus 3 60 plug that into your calculator, and then calculate the inverse tangent.
+
+00:24:09.000 --> 00:24:13.000
+What you would actually get.
+
+00:24:13.000 --> 00:24:20.000
+Is this angle here? Alright, because that also has a negative.
+
+00:24:20.000 --> 00:24:29.000
+Tangent, alright, and the standard thing that your calculator will do is to when you calculate the universe tangent.
+
+00:24:29.000 --> 00:24:34.000
+If it's negative, right? It's in general, it's going to give you some angle that's between minus 90 degrees and 90 degrees.
+
+00:24:34.000 --> 00:24:49.000
+So with's going to give you this angle, not this angle right, but from this little diagram here you can see that obviously this angle alright, the one in black is the one that we want alright.
+
+00:24:49.000 --> 00:25:09.000
+So we do not want this one here, which is what your calculator would give you if you just naively took the imaginary part divided by the real part, and I plugged it into your calculator, and calculated the inverse tangent alright so that is why we do it this way.
+
+00:25:09.000 --> 00:25:22.000
+Because what your calculator will give you for this alright the inverse tangent of 1260, over 3 60, right with the minus sign is going to be this angle in red.
+
+00:25:22.000 --> 00:25:28.000
+Here, alright, and we wanna add a hundred 80 to that to get the correct phase angle.
+
+00:25:28.000 --> 00:25:32.000
+Alright, so so that's what's going on there.
+
+00:25:32.000 --> 00:25:49.000
+And so what we finally get then is that I still X of T is equal to 24.7 2 times the cosine of 5 times 10 of them minus 5 t.
+
+00:25:49.000 --> 00:26:00.000
+Now, plus our phase angle, which is 105.9 5 degrees, and that's in angstroms.
+
+00:26:00.000 --> 00:26:12.000
+Okay, so what are some of the key points? And this example?
+
+00:26:12.000 --> 00:26:21.000
+Okay. One. Alright is that, as always, the standard circuit analysis techniques right?
+
+00:26:21.000 --> 00:26:25.000
+That you're familiar with, I from the time domain, can also be applied in the Phaser domain.
+
+00:26:25.000 --> 00:26:36.000
+In this case it was node voltage analysis, right with 2 unknown nodes.
+
+00:26:36.000 --> 00:26:40.000
+Right. So the standard.
+
+00:26:40.000 --> 00:26:50.000
+Circuit analysis techniques.
+
+00:26:50.000 --> 00:26:52.000
+For example, in this case it was node voltage.
+
+00:26:52.000 --> 00:26:59.000
+Analysis.
+
+00:26:59.000 --> 00:27:04.000
+I can be applied.
+
+00:27:04.000 --> 00:27:10.000
+In the Phaser domain.
+
+00:27:10.000 --> 00:27:33.000
+Alright. The math is a little more cumbersome because you're dealing with complex numbers rather than real numbers. So that brings us to the second point, which is that having good proficiency in working with complex numbers is actually important in solving in doing phaser domain circ analysis all right so proficiency.
+
+00:27:33.000 --> 00:27:39.000
+In working.
+
+00:27:39.000 --> 00:27:43.000
+With complex numbers.
+
+00:27:43.000 --> 00:27:49.000
+It's important.
+
+00:27:49.000 --> 00:27:53.000
+In Phaser domain.
+
+00:27:53.000 --> 00:28:01.000
+Circuit, analysis.
+
+00:28:01.000 --> 00:28:16.000
+Okay. The third point which we saw I just here is that it's important to recognize how to calculate the phase angles correctly.
+
+00:28:16.000 --> 00:28:20.000
+Right rather than just trusting what your calculator gives you, because sometimes your calculator will actually give you the incorrect answer.
+
+00:28:20.000 --> 00:28:29.000
+It will be off by a hundred 80 degrees.
+
+00:28:29.000 --> 00:28:37.000
+So you wanna recognize how to calculate.
+
+00:28:37.000 --> 00:28:43.000
+The face angles.
+
+00:28:43.000 --> 00:28:49.000
+Correctly rather than.
+
+00:28:49.000 --> 00:28:56.000
+Just, trusting.
+
+00:28:56.000 --> 00:29:18.000
+Your calculator and very useful tool in doing that is, as we saw in this example, to visualize or draw the Phaser in this two-dimensional complex plane with the real part along the horizontal axis and the imaginary part along the vertical
+
+00:29:18.000 --> 00:29:22.000
+axis and just drawing or visualizing that picture.
+
+00:29:22.000 --> 00:29:27.000
+We'll help you actually, pretty easily to figure out what the correct phase angle should be.
+
+00:29:27.000 --> 00:29:40.000
+Plus or minus a hundred 80 degrees, which is where the ambiguity can come in right. So drawing.
+
+00:29:40.000 --> 00:29:46.000
+Alright or just visualizing.
+
+00:29:46.000 --> 00:29:48.000
+Phaser.
+
+00:29:48.000 --> 00:29:57.000
+And this 2 dimensional complex plane.
+
+00:29:57.000 --> 00:30:02.000
+It can be very helpful.
+
+00:30:02.000 --> 00:30:07.000
+In, the.
+
+00:30:07.000 --> 00:30:09.000
+The correct.
+
+00:30:09.000 --> 00:30:17.000
+Face, angle.
+
+00:30:17.000 --> 00:30:35.000
+Okay. The last point alright is that I, as you may have seen in the original statement of the problem as it's in the book I this is one of the problems that has an asterisk next to it, Oops.
+
+00:30:35.000 --> 00:30:43.000
+Okay, there, you go. Alright. Has an asterisk next to it, which is that it's one of the problems that has the answer.
+
+00:30:43.000 --> 00:31:00.000
+The final answer in the back of the book. Alright, however, it turns out that an in this case the answer that's in the back of the book, and then the solutions that are distributed by the publishers that answer is actually not correct.
+
+00:31:00.000 --> 00:31:06.000
+It's off by a minus sign. Alright. So the answer.
+
+00:31:06.000 --> 00:31:14.000
+And the back of the textbook.
+
+00:31:14.000 --> 00:31:18.000
+Is incorrect. Alright! It's off by.
+
+00:31:18.000 --> 00:31:23.000
+A minus sign.
+
+00:31:23.000 --> 00:31:33.000
+Okay. And Hi, if you go to the solution. Alright, that is in the solution.
+
+00:31:33.000 --> 00:31:39.000
+Manual, so I will.
+
+00:31:39.000 --> 00:31:43.000
+Paste, that.
+
+00:31:43.000 --> 00:31:46.000
+Okay, into.
+
+00:31:46.000 --> 00:31:52.000
+This one note, document.
+
+00:31:52.000 --> 00:31:59.000
+And it should show up shortly.
+
+00:31:59.000 --> 00:32:03.000
+Okay, so this is the answer, as it is shown.
+
+00:32:03.000 --> 00:32:13.000
+In the solution manual right? So they solve this problem using a mesh current analysis which will also work alright.
+
+00:32:13.000 --> 00:32:15.000
+It actually involves 3 unknown mesh cards, right?
+
+00:32:15.000 --> 00:32:29.000
+So I alright. 3 unknowns is a little worse to deal with than 2 unknowns when we did the node voltage analysis it was sufficient to have 2 unknown node vaults right?
+
+00:32:29.000 --> 00:32:36.000
+Which is why we did it that way, but if you look at this alright, you can see that right.
+
+00:32:36.000 --> 00:32:41.000
+They solve for these unknown mesh currents here, and then they get I one right, which is minus.
+
+00:32:41.000 --> 00:32:55.000
+Ix over here all right. There. Get this result, for I one, and then they correctly recognize that I actually is equal to minus.
+
+00:32:55.000 --> 00:33:08.000
+I one alright. From this diagram up here. But then over here, alright, they just plug in, I one not minus. I.
+
+00:33:08.000 --> 00:33:16.000
+One. Alright! So this here!
+
+00:33:16.000 --> 00:33:23.000
+It's actually not correct. Alright! And then the rest of it that follows, therefore, is not correct either.
+
+00:33:23.000 --> 00:33:31.000
+Alright, and I. In fact, if you look at this answer here, it's off by minus sign.
+
+00:33:31.000 --> 00:33:36.000
+From what we calculated.
+
+00:33:36.000 --> 00:33:41.000
+Up here, right? And the minus sign shows up as a 180 degree.
+
+00:33:41.000 --> 00:33:53.000
+Phase shift. Okay, so so that's something to be cautious about in this particular case. Right?
+
+00:33:53.000 --> 00:34:16.000
+Because the answer that is in the book is not correct, and also more generally, it's perhaps a cautionary note that in general Hi, not everything that us see printed or in electronic form, even if it looks pretty official is going to be correct right and here this is an example where the answer
+
+00:34:16.000 --> 00:34:20.000
+that was in the book actually is not correct. Okay, alright. So that's it.
+
+00:34:20.000 --> 00:34:29.000
+For this example.
+

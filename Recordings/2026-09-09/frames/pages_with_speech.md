@@ -1,0 +1,781 @@
+# 2026-09-09: board pages with the speech that accompanied them
+
+36 distinct pages from 104 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0004.jpg  on screen [0:00:00 – 0:03:15]
+<sub>sharpness 7611, ink 4.5 %, colour 0.6</sub>
+
+- [0:00:02] Okay, let's go ahead and get started. So I have started the recording as usual. A few announcements here. The first one is just a reminder that the first problem set was due today, so hopefully everyone has handed that in.
+- [0:00:17] A second problem set is due on Monday the 14th. Okay, so at 9 a.m. on Canvas as usual. The third problem set was just released this morning. Okay, so that is due on Monday, September 21st.
+- [0:00:34] And I think as I mentioned before, and also is posted in an announcement, the third problem set is pretty long, so you should make sure to get an early start on it.
+- [0:00:46] And then a third announcement here is just a reminder that next Wednesday, that September 16th, we will not have our class or our regular office hours.
+- [0:00:59] All right, and so what I'll do is I'll record and post a class recording on Canvas later that week, possibly on Wednesday, and then you should be sure to watch that before our class on September 21st.
+- [0:01:15] The fourth announcement is that assuming that there isn't any travel mishap, which is certainly not a given these days, then what I'll try to do is I'll have additional office hours, not at their regular time on Wednesday, but instead on Wednesday afternoon.
+- [0:01:33] So 4.30 to 6 p.m. in the same location as usual, which is my E, our office 3.802.
+- [0:01:41] And then finally, apologize for these. I had some trips that were clustered around these couple weeks.
+- [0:01:51] So we will also not have class or office hours on September 23rd.
+- [0:01:57] Okay, and so what we'll do is the same thing.
+- [0:02:00] I'll record and post the recording for a class to take the place of the class that we missed, and then you should be sure to watch that recording before our subsequent class on the 28th of September.
+- [0:02:16] So any questions on all of this?
+- [0:02:20] Okay, any questions from our last class meeting?
+- [0:02:26] Okay, if not, then we'll pick up from where we left off.
+- [0:02:29] And so what we were doing last time was we had started our discussion of second order circuits, so RLC circuits and the like.
+- [0:02:38] All right.
+- [0:02:42] And we went through an example of how we determine the initial conditions for voltages and currents in that type of circuit.
+- [0:02:51] And so what we want to do today is to go through the details of how we actually solve RLC circuits and the different kinds of behavior that we can get in RLC circuits.
+- [0:03:05] So we'll start off with relatively straightforward circuit configuration, and then we'll build on that to look at some other circuit configurations for second order circuits.
+
+## page 02  f_0007.jpg  on screen [0:03:15 – 0:03:15]
+<sub>sharpness 2736, ink 1.9 %, colour 0.3</sub>
+<sub>earlier states of this page: f_0005.jpg (0:03:15)</sub>
+
+- [0:03:05] So we'll start off with relatively straightforward circuit configuration, and then we'll build on that to look at some other circuit configurations for second order circuits.
+
+## page 03  f_0041.jpg  on screen [0:03:15 – 0:17:09]
+<sub>sharpness 2565, ink 4.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0008.jpg (0:03:50), f_0010.jpg (0:06:02), f_0013.jpg (0:06:03), f_0015.jpg (0:08:29), f_0017.jpg (0:09:36), f_0021.jpg (0:10:57), f_0026.jpg (0:11:23), f_0031.jpg (0:12:52), f_0032.jpg (0:12:54), f_0034.jpg (0:13:28), f_0035.jpg (0:13:30), f_0036.jpg (0:13:31)</sub>
+
+- [0:03:05] So we'll start off with relatively straightforward circuit configuration, and then we'll build on that to look at some other circuit configurations for second order circuits.
+- [0:03:18] So what we want to do today is to talk about what we call series RLC circuits.
+- [0:03:28] Okay, and the reading for this is in.
+- [0:03:35] You'll be at all and it is sections.
+- [0:03:39] Six dash two through six dash six.
+- [0:03:47] Okay.
+- [0:03:48] And so the type of circuit that we want to look at here is one where we have a voltage source.
+- [0:03:56] We'll call it V sub S of T and it is just connected in series with a resistor, inductor and capacitor.
+- [0:04:05] Okay, so we have a resistor and inductor.
+- [0:04:11] And a capacitor, right?
+- [0:04:13] You can see that they're all connected in series.
+- [0:04:15] So this is just a simple loop.
+- [0:04:17] So this is R, this is L, and this is C. Okay.
+- [0:04:23] And we want to think about the voltage across the capacitor and also the current.
+- [0:04:30] We'll label it as the current through the capacitor.
+- [0:04:33] But actually, as you can see in this configuration, that current is actually the same in all the components of the circuit.
+- [0:04:41] Okay.
+- [0:04:42] And so what we want to do is to say that the voltage source V sub S of T is going to be some constant capital V sub S times the unit step function, which we saw earlier.
+- [0:05:00] All right.
+- [0:05:00] So V sub S here is a constant.
+- [0:05:07] Okay.
+- [0:05:07] And then, why that showed up.
+- [0:05:17] Okay.
+- [0:05:17] And then U of T, remember, is the unit step function.
+- [0:05:24] All right.
+- [0:05:24] So it has a value of zero for T less than zero and then value of one for T greater than or equal to zero.
+- [0:05:33] Okay.
+- [0:05:34] And what we want to do here is to solve for V sub C of T for T greater than or equal to zero.
+- [0:05:53] Okay.
+- [0:05:54] So this is the circuit that we want to look at.
+- [0:05:57] So any questions on this?
+- [0:06:00] Okay.
+- [0:06:01] So remember, kind of the zeroth order preliminary step that we need to go through is to determine what the initial and final conditions are on, say, V sub C.
+- [0:06:22] Okay.
+- [0:06:23] So to do that, let's think first, as we typically do about the steady state situation.
+- [0:06:29] All right.
+- [0:06:30] T less than zero, where the source has been off for a long time.
+- [0:06:36] Basically, since T equal to minus infinity.
+- [0:06:39] And so there are no currents or voltages in the circuit.
+- [0:06:45] The inductor is behaving as a short circuit, the capacitor as an open circuit.
+- [0:06:50] Okay.
+- [0:06:50] So in this situation, basically, everything is zero.
+- [0:06:53] So V sub C of T is equal to zero.
+- [0:06:58] And I sub C of T is equal to zero.
+- [0:07:02] Okay.
+- [0:07:02] And then more specifically, that means that if we look at T equal to zero minus, right, just before the voltage source turns on, V sub C and I sub C are also equal to zero.
+- [0:07:23] Okay.
+- [0:07:23] So that is at T less than zero in steady state.
+- [0:07:28] Okay.
+- [0:07:28] Then from that, we can deduce what happens at T equal to zero, right?
+- [0:07:34] And then this will be our set of initial conditions.
+- [0:07:38] So at T equal to zero, what we know, we know that V sub C, the voltage across the capacitor, has to be continuous.
+- [0:07:50] And so that means that V sub C at T equal to zero is equal to zero, right?
+- [0:07:56] We also know that the current through the inductor has to be continuous.
+- [0:08:06] Okay.
+- [0:08:07] And that means that I sub C at zero, which we know from the circuit configuration has to be equal to I sub L, the current through the inductor at T equal to zero, right?
+- [0:08:20] We know that this is zero as well, right?
+- [0:08:23] Because I sub C at zero minus was equal to zero.
+- [0:08:28] So those are the things that we know.
+- [0:08:30] And then we can also deduce what we ultimately want to solve for is V sub C.
+- [0:08:35] All right.
+- [0:08:36] And what we will see is that in coming up with a complete solution, we will need to apply two initial conditions, right?
+- [0:08:47] And one of those will be on V sub C at T equal to zero.
+- [0:08:50] The other one will be on the derivative of V sub C with respect to time at T equal to zero.
+- [0:08:57] Okay.
+- [0:08:59] But we can determine what that derivative has to be because we know that the current through the capacitor is zero at T equal to zero.
+- [0:09:07] And we know that that current is equal to C times dV C dT.
+- [0:09:12] All right.
+- [0:09:12] So if that current is equal to zero, then that means that dV C dT at T equal to zero also has to be equal to zero.
+- [0:09:20] Okay.
+- [0:09:21] So basically, because we know that in general, we know that the current through a capacitor is equal to C,
+- [0:09:31] the capacitance times the derivative of the voltage, V C dT, then it also has to be the case that dV C dT evaluated at T equal to zero is equal to zero as well.
+- [0:09:53] All right.
+- [0:09:53] And we'll use that later on.
+- [0:09:56] Okay.
+- [0:09:56] So those are the initial conditions.
+- [0:09:59] Any questions on those and how we got to them?
+- [0:10:03] Okay.
+- [0:10:04] And then finally, what we have is the final conditions, right?
+- [0:10:11] That is, as T goes to infinity, in this case, this will sort of be mostly a check on the solution that we get.
+- [0:10:18] All right.
+- [0:10:18] So T going to infinity again corresponds to the steady state, but now with the voltage source on.
+- [0:10:27] Okay.
+- [0:10:28] So equal to capital V sub S.
+- [0:10:30] So here we know that the capacitor behaves as an open circuit and the inductor behaves as a short circuit.
+- [0:10:52] Okay.
+- [0:10:52] And so if we look at our circuit configuration up here, right,
+- [0:10:58] if the capacitor is behaving as an open circuit, the inductor is a short circuit,
+- [0:11:05] and the voltage source is on, then we know that, unless you I sub C, the current has to be zero because the capacitor is an open circuit and V sub C has to be equal to capital V sub S.
+- [0:11:19] And so what we get for the final conditions is that V sub C as T goes to infinity has to be equal to capital V sub S, right, which is a constant.
+- [0:11:32] And I sub C as T goes to infinity has to be equal to zero.
+- [0:11:37] So those are our initial and final conditions.
+- [0:11:40] Okay. So any questions on these?
+- [0:11:45] Okay.
+- [0:11:46] So then once we have these, right, we'll come back and we'll use these results later.
+- [0:11:51] All right. What we need to do is now to look at our circuit and try to come up with a differential equation that we can solve for a single unknown.
+- [0:12:02] And in this case, that single unknown will be V sub C.
+- [0:12:06] All right. So we want a differential equation for V sub C of T that's valid at T greater than or equal to zero.
+- [0:12:20] Okay. And in general, to arrive at differential equations for the current and voltage in a circuit, what we want to do is to apply kind of our standard tools of circuit analysis.
+- [0:12:35] But now using for the inductor and the capacitor, the differential relationships between current and voltage rather than or in addition to the algebraic relationship Ohm's law that we have for a resistor.
+- [0:12:49] Okay. So if we look at the circuit up here, right, it's just a simple loop.
+- [0:12:57] So what do you think is the obvious circuit law to apply here to try to come up with this differential equation?
+- [0:13:05] KVL. Right. We apply KVL around the loop and we know that the sum of all the voltages has to be equal to zero.
+- [0:13:13] So going around the loop, we're going to have that say the voltage across the resistor plus the voltage across the inductor plus the voltage across the capacitor has to be equal to capital V sub S.
+- [0:13:26] Right. Which is the value of the voltage source.
+- [0:13:29] So now if we apply KVL around the loop, we have the voltage across the resistor, which is just R times the current I sub C.
+- [0:13:44] Plus the voltage across the inductor, which is L, the inductance times the current, DICBT.
+- [0:13:53] Plus the voltage across the capacitor, which is what we're trying to solve for V sub C.
+- [0:13:58] We know that the sum of those voltages has to be equal to the value of the voltage source, capital V sub S.
+- [0:14:06] OK. So here now what we have is it's a differential equation, but it has two unknowns, V sub C and I sub C.
+- [0:14:18] And we have two unknowns in one equation.
+- [0:14:22] So we're not able to solve for these unknown functions.
+- [0:14:26] What we need is some other relationship, say between the current and the voltage.
+- [0:14:33] All right. I sub C and V sub C. So what do you think that is going to be? Yes. Right.
+- [0:14:43] So we also know that the current through the capacitor is C times DVC DT.
+- [0:14:50] And so what we can do is we can take this expression over here, C times DVC DT, and substitute it into this equation everywhere we see I sub C.
+- [0:15:01] And then if we do that, what you can see is that we will get a second order differential equation for V sub C, and V sub C will be the only unknown in this.
+- [0:15:10] Right. It'll be second order because we have a DICDT term over here.
+- [0:15:15] And when we take this derivative with respect to time of this quantity here, we're going to get a second derivative of V sub C.
+- [0:15:22] All right. And in general, when you're looking at more complicated circuit configurations, right.
+- [0:15:30] Usually the hardest part of the problem is figuring out is getting to a differential equation with only one unknown function.
+- [0:15:39] OK. And doing that is sort of a matter of using the basic circuit laws and circuit analysis techniques that we have at our disposal and then figuring out what other relationships we have between currents and voltages that we can use to get to a differential equation for a single
+- [0:16:00] unknown. All right. And so in this case, what we did was we used KVL and then we took advantage of the relationship between current and voltage for a capacitor, which we know has to be true.
+- [0:16:13] So then if we just take this and substitute it into this differential equation over here, what we get from the first term is R times C times DVC DT.
+- [0:16:27] All right. That's taking this expression here and plugging it in and plugging it into the first term.
+- [0:16:33] And then from the second term, we get L times C times D squared DB VC DT squared.
+- [0:16:42] And then the third term is just V sub C. And that's equal to capital V sub S.
+- [0:16:50] And if we take this equation and divide it by L times C, right, so that the coefficient of the second order derivative is one.
+- [0:17:02] OK. And then just rearrange the order of the terms, right, so that we have the highest order derivative first.
+- [0:17:10] Then what we get is D squared VC DT squared.
+
+## page 04  f_0061.jpg  on screen [0:17:09 – 0:26:48]
+<sub>sharpness 3123, ink 4.8 %, colour 0.3</sub>
+<sub>earlier states of this page: f_0042.jpg (0:18:17), f_0047.jpg (0:20:03), f_0048.jpg (0:20:05), f_0049.jpg (0:20:06), f_0052.jpg (0:21:36), f_0056.jpg (0:24:39)</sub>
+
+- [0:17:02] OK. And then just rearrange the order of the terms, right, so that we have the highest order derivative first.
+- [0:17:10] Then what we get is D squared VC DT squared.
+- [0:17:21] OK, I updated this two days ago. It has to be updated again. OK. Plus, right.
+- [0:17:29] And then for the first order derivative, when we divide by LC, we get R over L. DVC DT.
+- [0:17:37] And then for the term proportional to V sub C, we have one over LC times V sub C.
+- [0:17:44] And then this is equal to one over LC times capital V sub S. Right.
+- [0:17:50] And so what this is, this is now our second order differential equation.
+- [0:17:58] And now it is a differential equation where the only unknown, right, our unknown function that we can now try to solve for is V sub C.
+- [0:18:07] OK, so any questions on how we got to this? OK. So now what we need to do is to solve this differential equation. OK.
+- [0:18:33] So if we look at, if we just think about second order differential equations generally, right, this equation here that we're trying to solve,
+- [0:18:43] it has the general form of just a linear second order differential equation with constant coefficients.
+- [0:18:52] OK. So if we just think about that as essentially a math problem, all right, what we want to do is let's say we're going to consider
+- [0:19:03] differential equation that is of the following forms.
+- [0:19:16] D squared, VCDT squared plus some constant coefficient now which we'll call A, right.
+- [0:19:23] In our actual equation, A is R over L, DVC DT plus another constant we'll call B.
+- [0:19:33] In our actual equation, B is going to be 1 over LC times V sub C and that's equal to another constant C.
+- [0:19:42] This is lowercase C, right, which is 1 over LC capital C times capital V sub S, right.
+- [0:19:52] And A, B and C here are constants. Right. So their derivatives are zero. OK.
+- [0:20:01] So this is the equation that we now want to think about as basically a math problem. OK.
+- [0:20:08] So how many of you have in some math course seen an equation like this and know how to solve it?
+- [0:20:20] OK. So a couple. So what we want to do here is so what do you think the first thing that we do is? Remember.
+- [0:20:31] Yes. Yeah, that's right. So if C were not a constant here, if it were some arbitrary function, this would be a harder problem.
+- [0:20:40] All right. Even with this being a constant, what we want to do first is to solve a slightly simpler problem.
+- [0:20:49] Right. And we make it simpler by setting the right hand side equal to zero. And that's called the homogeneous equation.
+- [0:20:57] So we want to first consider the homogeneous equation, which is what we get if we set the right hand side.
+- [0:21:11] See small c here equal to zero. OK. So we're going to have D squared V C, D T squared plus A times D, V, C, D, T plus B times V, C is equal to zero.
+- [0:21:28] So this is the homogeneous equation. And we're going to refer to this a number of times.
+- [0:21:34] So we'll label it star. All right. Now, if we look at this equation, we have three different terms that are different orders of derivative of V C.
+- [0:21:46] And they all have to they have to add up together to zero. OK.
+- [0:21:51] With the constant coefficients. And so what that suggests is that V C and its first and second derivative should have very similar
+- [0:22:03] mathematical form because if you had different functional forms and you tried to add them together, then it would be a miracle if this equation were always satisfied.
+- [0:22:13] So what we want to do is to basically try to guess, you know, is there a function that has the same mathematical form as its first and second derivatives?
+- [0:22:26] Right. And there is. What function is that? Right. It's the exponential function.
+- [0:22:33] OK. So so what we can do then is we can recognize that if we take the derivative with respect to time of the exponential function, say we'll call it E to the S T,
+- [0:22:46] that derivative is proportional to the function itself. E to the S T. OK.
+- [0:22:55] And so what we'll do is, OK, we will say, all right, we're going to guess that the solution to this equation has this functional form, say, as a constant times this function here.
+- [0:23:11] We'll plug it in here and see where that takes us. OK. And where we'll take us is that when we plug a function of this form into this equation,
+- [0:23:21] we will get an equation for this quantity in the exponent S, the coefficient of the exponent.
+- [0:23:29] And then we can then solve for the values of S that will satisfy this equation.
+- [0:23:37] And that will be our solution or our solutions. OK. So what we're going to do is we're going to consider a trial solution.
+- [0:23:50] OK. Where a trial solution is sort of a fancy word for guess. All right.
+- [0:23:59] So we're going to say, right, but here it's a pretty informed guess. All right.
+- [0:24:05] That the solution is of the form some constant we'll call capital A times E to the S T.
+- [0:24:12] And we're going to try that solution as the solution to our homogeneous differential equation.
+- [0:24:20] And so if we take this equation here and substitute it into our differential equation here, then every time we take a derivative with respect to time, we'll bring down a factor of S. OK.
+- [0:24:34] And then the rest of this function will stay the same. OK.
+- [0:24:37] So what we get then is from the first term, the second derivative term, we have S squared, right, from the second derivative with respect to time times A E to the S T.
+- [0:24:53] From the second term, that was from this term, from the second term over here, we get our coefficient A times S from the first derivative with respect to time times A E to the S T.
+- [0:25:10] And then from the third term over here, we just get B. We're not taking any derivative, so we just have the function itself, A times E to the S T.
+- [0:25:19] And that's equal to zero. OK.
+- [0:25:22] And then in this equation, right, we can just cancel out the A E to the S T. All right.
+- [0:25:28] And that's legal, mathematically legal, because we know the exponential function is never equal to zero.
+- [0:25:36] OK. And we're not going to take the case where A is equal to zero because that's a trivial solution, just so that V sub C is equal to zero.
+- [0:25:46] So we cancel out the A E to the S T factors, and what we get is the equation S squared plus A times S plus B is equal to zero.
+- [0:26:00] And this, right, it's just a quadratic equation for S. So this is easy for us to solve.
+- [0:26:07] All right. This equation here, right, if you remember, you know, back to, I guess, the math course that a couple of you took, this equation here is what we call the characteristic equation for our differential equation.
+- [0:26:21] So this is called the characteristic equation, OK, of our differential equation star. OK.
+- [0:26:46] And we can easily solve it because it's just a quadratic equation.
+
+## page 05  f_0077.jpg  on screen [0:26:48 – 0:28:48]
+<sub>sharpness 3698, ink 5.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0065.jpg (0:26:49), f_0069.jpg (0:27:58)</sub>
+
+- [0:26:46] And we can easily solve it because it's just a quadratic equation.
+- [0:26:51] We will get two values for S, right, since it's a quadratic equation.
+- [0:26:55] And those two values of S will then correspond to two distinct solutions to our differential equation.
+- [0:27:04] And then the general solution to this homogeneous equation will be any linear combination of those two solutions.
+- [0:27:13] OK, so now we're just going to solve for S, right, and basically applying the quadratic formula.
+- [0:27:24] All right. We get that S is equal to minus A. All right.
+- [0:27:28] That's minus the linear coefficient, plus or minus the square root of A squared minus 4B divided by 2.
+- [0:27:40] All right. So we can write this as minus A over 2 plus or minus the square root of A over 2, the quantity squared, minus B.
+- [0:27:56] OK. So now, right, there are two values of S corresponding to the plus and the minus.
+- [0:28:04] Right. So what we have then is that the solutions for S, right, are that we have S1 is equal to minus A over 2 plus the square root of A over 2, the quantity squared, minus B.
+- [0:28:25] OK. And then a second value we'll call S2, which is minus A over 2 minus the square root of the quantity A over 2 squared minus B.
+- [0:28:38] OK. So these are our solutions to the characteristic equation, right, S1 and S2.
+- [0:28:46] And then if we take those and plug them back into our trial solution over here, right, we get two different solutions for V sub C of t.
+
+## page 06  f_0098.jpg  on screen [0:28:48 – 0:30:14]
+<sub>sharpness 3240, ink 5.1 %, colour 0.3</sub>
+<sub>earlier states of this page: f_0090.jpg (0:30:11), f_0095.jpg (0:30:13), f_0096.jpg (0:30:13)</sub>
+
+- [0:28:46] And then if we take those and plug them back into our trial solution over here, right, we get two different solutions for V sub C of t.
+- [0:28:56] And the general solution is a linear combination of those two.
+- [0:29:03] OK. So now that we have S1 and S2, then the general solution to our homogeneous equation star, right, is then that V sub C of t.
+- [0:29:21] Is equal to, all right, some constant A1 times e to the S1 times t plus some other constant A2 times e to the S2 times t, where A1 and A2 are constants.
+- [0:29:45] OK. So now this, all right, or the combination of this with our values, our expressions for S1 and S2, this is now the solution to our homogeneous differential equation.
+- [0:30:09] OK. And then just to connect this back to our original equation for the series RLC circuit, right, if we compare our original equation here,
+
+## page 07  f_0103.jpg  on screen [0:30:14 – 0:30:16]
+<sub>sharpness 3590, ink 5.8 %, colour 0.3</sub>
+
+- [0:30:09] OK. And then just to connect this back to our original equation for the series RLC circuit, right, if we compare our original equation here,
+
+## page 08  f_0113.jpg  on screen [0:30:16 – 0:30:36]
+<sub>sharpness 3671, ink 5.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0110.jpg (0:30:19)</sub>
+
+- [0:30:09] OK. And then just to connect this back to our original equation for the series RLC circuit, right, if we compare our original equation here,
+- [0:30:24] to this form that we've been addressing sort of mathematically, right, then small a here is R over L and small b here is 1 over LC.
+- [0:30:35] OK. So coming back down here, all right, we know that for the series RLC circuit, all right, what we have is that A is equal to R over L.
+
+## page 09  f_0115.jpg  on screen [0:30:36 – 0:30:37]
+<sub>sharpness 3530, ink 5.6 %, colour 0.3</sub>
+<sub>earlier states of this page: f_0114.jpg (0:30:37)</sub>
+
+- [0:30:35] OK. So coming back down here, all right, we know that for the series RLC circuit, all right, what we have is that A is equal to R over L.
+
+## page 10  f_0119.jpg  on screen [0:30:37 – 0:30:39]
+<sub>sharpness 3514, ink 5.4 %, colour 0.3</sub>
+<sub>earlier states of this page: f_0117.jpg (0:30:37)</sub>
+
+- [0:30:35] OK. So coming back down here, all right, we know that for the series RLC circuit, all right, what we have is that A is equal to R over L.
+
+## page 11  f_0121.jpg  on screen [0:30:39 – 0:30:39]
+<sub>sharpness 3765, ink 5.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0120.jpg (0:30:39)</sub>
+
+- [0:30:35] OK. So coming back down here, all right, we know that for the series RLC circuit, all right, what we have is that A is equal to R over L.
+
+## page 12  f_0162.jpg  on screen [0:30:39 – 0:33:58]
+<sub>sharpness 3185, ink 4.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0138.jpg (0:33:08), f_0153.jpg (0:33:38)</sub>
+
+- [0:30:35] OK. So coming back down here, all right, we know that for the series RLC circuit, all right, what we have is that A is equal to R over L.
+- [0:30:56] And then B is equal to 1 over LC. Right. So we can take those circuit parameters or combinations of circuit parameters and plug them back in up here.
+- [0:31:06] All right. To get the solution that we need. So any questions on how we have arrived at this solution to the homogeneous part of our differential equation?
+- [0:31:20] Yeah. Yes. Oh, yeah. So that is a good question. The question is, what happens if, say, B is greater than A over 2, the quantity squared?
+- [0:31:34] And what happens then is that you have, as we will see, you get complex values for S1 and S2.
+- [0:31:45] Right. But those are still valid solutions. So what will happen down here is that right, if S1 and S2 are real, they'll always be negative.
+- [0:31:55] OK. And so you'll get exponentially decaying voltage. If S1 and S2 are complex, then what happens is that you will have oscillatory components to the solutions,
+- [0:32:12] because e to the some imaginary number is going to be sine plus cosine or sine plus or cosine plus j times the sine.
+- [0:32:23] All right. And so so what we will see is that depending on the relative values of R over L or more precisely, R over 2 L versus 1 over LC,
+- [0:32:37] then you can get either purely exponential or sort of decaying exponential times oscillatory solutions.
+- [0:32:47] And then there is the special case where S1 is equal to S2. And then there will be an additional solution that will try to work out that corresponds to the behavior in that case.
+- [0:32:59] OK. So we'll see the details of that coming up. OK. Any other questions?
+- [0:33:04] OK. So so looking at this, let's first look at an even simpler case.
+- [0:33:18] We're going to suppose that the resistance is equal to zero. So we only have the inductor and the capacitor.
+- [0:33:26] All right. And so that means that A here, which is R over L, is going to be equal to zero.
+- [0:33:32] And then that means that in our solutions up here, S1 and S2, S1 will be equal to just the square root of minus B.
+- [0:33:48] So we're already at a case where this is its imaginary. And then S2 will be minus the square root of minus B.
+- [0:33:56] OK. So we get that S1 is equal to the square root of minus B. And S2 is equal to minus the square root of minus B. OK.
+
+## page 13  f_0201.jpg  on screen [0:33:58 – 0:39:31]
+<sub>sharpness 2862, ink 4.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0163.jpg (0:35:36), f_0172.jpg (0:37:18), f_0180.jpg (0:38:14), f_0181.jpg (0:38:15), f_0182.jpg (0:38:15), f_0190.jpg (0:38:50), f_0193.jpg (0:38:52), f_0195.jpg (0:38:54), f_0197.jpg (0:38:55)</sub>
+
+- [0:33:56] OK. So we get that S1 is equal to the square root of minus B. And S2 is equal to minus the square root of minus B. OK.
+- [0:34:19] Right. And we know that B here is 1 over LC. Right. That's always going to be positive.
+- [0:34:26] So we're taking the square root of a negative number. And that is going to be imaginary.
+- [0:34:31] So since B is equal to 1 over LC, then we know that S1 and S2 are imaginary. OK.
+- [0:34:43] And so your solution is going to have sines and cosines. It's going to be oscillating. Right.
+- [0:34:49] So what happens then is that the solutions, OK, V sub C of T, right, I guess the solution, right, V sub C of T is oscillatory.
+- [0:35:11] All right. A sum of sines and cosines. And there will be an angular frequency to that, which is just the square root of 1 over LC.
+- [0:35:25] All right. Because the square root of minus 1 over LC, which is the square root of minus B, is going to be J, the square root of minus 1, times the square root of 1 over LC.
+- [0:35:37] OK. So we have an angular frequency. We'll call that omega naught, which is the square root of 1 over LC.
+- [0:35:53] OK. And omega naught, this is a special quantity here. It is what we call the resonant frequency. OK.
+- [0:36:09] And its units are radians per second or radians per second. Like this. OK.
+- [0:36:22] And sort of the interpretation of omega naught is that, right, if we have a circuit where we just have a voltage source that turns on and it's in series with just an inductor and a capacitor, then what will happen is that the voltage across the capacitor will just oscillate.
+- [0:36:42] It'll oscillate forever. And that corresponds to sort of energy in the circuit alternating between being stored in the capacitor and the inductor.
+- [0:36:57] OK. And if there's no resistor, then there's nothing that can dissipate power.
+- [0:37:04] And so that oscillation of where the energy is stored and also of the voltage across the capacitor will just continue forever.
+- [0:37:16] All right. So that's the special case where the resistance is zero. And what it got us was to be able to derive and think a little bit about this resonant frequency.
+- [0:37:32] So any questions on that? OK. So now what we want to do is consider the more general case where the resistance is nonzero.
+- [0:37:48] We will. Yes, we'll get to that. So but first, what we want to do is to sort of outline at least what are the different components in the in the exponent.
+- [0:38:01] And then we'll get to the sort of putting that constant term back on the right hand side. OK.
+- [0:38:09] So if we let the resistance be nonzero, then what happens is that.
+- [0:38:18] All right. In our solutions up here, right, that corresponds to a being nonzero. OK.
+- [0:38:27] And so what we will get then is exponential decay in the voltage. All right.
+- [0:38:34] Because we have this minus air to here and here. And in magnitude, right, the real part of this is is not going to be cause this to be positive.
+- [0:38:47] So we'll always have exponential decay. Right. And so what happens then is that the voltage, V sub C, will exponentially decay as well.
+- [0:38:59] Or it will be what we call exponentially damped. Right. So when we have a nonzero resistance, then what we do is we define what we call a damping factor.
+- [0:39:19] OK. And we call that alpha. Right. So alpha here is our damping factor. OK.
+
+## page 14  f_0222.jpg  on screen [0:39:31 – 0:44:41]
+<sub>sharpness 2237, ink 3.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0203.jpg (0:40:27), f_0207.jpg (0:40:48), f_0210.jpg (0:42:02), f_0213.jpg (0:42:33), f_0217.jpg (0:43:12), f_0219.jpg (0:43:23)</sub>
+
+- [0:39:19] OK. And we call that alpha. Right. So alpha here is our damping factor. OK.
+- [0:39:33] And we define it as R over 2L. We have the two in the denominator because in our solution we have A over two, not A.
+- [0:39:44] All right. So we're just including that two here in the definition of the damping factor.
+- [0:39:51] And the units of this, we at one level, we can think of it as just inverse seconds.
+- [0:40:02] But more precisely, the units for this are what we call nepers per second or NPR per second. All right.
+- [0:40:19] And the neper, this is basically, it is a unit that we use to note that it is, since this is going to appear in the exponent.
+- [0:40:35] Right. Then it's a unit that corresponds to differences in multiplicative differences. Right.
+- [0:40:42] The differences on a log scale rather than differences on an arithmetic scale. Right.
+- [0:40:47] So this is a unit for differences on a natural logarithmic scale. Right.
+- [0:41:08] Or equivalently, we can think of it as a unit for multiplicative factors of E on a linear scale.
+- [0:41:33] Right. So if we have a damping factor of say one neper per second, that means that every second, the in this case, the voltage will decrease by a factor of E.
+- [0:41:44] OK. Yes. Question. Yes. So it's similar to decibels, except decibels are for common logs. Right.
+- [0:41:53] So yeah. Right. And this is for for natural logs. But the idea is the same. OK.
+- [0:42:02] So so what happens here then is that when we have a nonzero damping factor, then this is going to tell us that we're going to get exponential decay.
+- [0:42:16] OK. Of what will then be transient voltages and currents. OK.
+- [0:42:30] So now that we have these two parameters, the resonant frequency and the damping factor, we can write our solution for the voltage across the capacitor in terms of those parameters.
+- [0:42:45] So it's going to be A1, a constant times e to the minus alpha t times e to the square root of alpha squared minus omega naught squared times t plus A2 times e to the minus alpha t times e to the minus the square root of alpha squared minus omega naught squared times t.
+- [0:43:15] All right. So this is now the solution for the voltage in terms of the damping factor and the resonant frequency.
+- [0:43:26] OK. So any questions on this? OK. Oh, transient. That term just means that it's a behavior that will die out with time.
+- [0:43:41] Right. So it's going to be exponentially decaying with time. OK.
+- [0:43:47] So now what we want to do is to go back to our original equation and consider that constant term on the right hand side.
+- [0:43:55] OK. So now what we want to do is to consider the solution to the full equation.
+- [0:44:08] And to do that, what we want to do is to come up with what we call a particular integral for the full differential equation.
+- [0:44:18] So we want to think about the particular integral for the full differential equation.
+- [0:44:38] OK. So remember, the full differential equation is d squared vc dt squared plus r over l dvcdt plus 1 over lc vc.
+
+## page 15  f_0231.jpg  on screen [0:44:41 – 0:48:26]
+<sub>sharpness 2098, ink 3.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0228.jpg (0:48:25)</sub>
+
+- [0:44:38] OK. So remember, the full differential equation is d squared vc dt squared plus r over l dvcdt plus 1 over lc vc.
+- [0:44:58] In the homogeneous equation, we set that equal to zero.
+- [0:45:01] But our actual equation has a constant v sub s over lc on the right hand side.
+- [0:45:08] OK. And what we call the particular integral of this is just any solution.
+- [0:45:15] It doesn't have to be the most general solution, just any solution that we can come up with by hook or by crook to this equation over here.
+- [0:45:24] All right. And for our purposes right now.
+- [0:45:29] Well, once we have a particular integral for this equation, then the most general solution to this equation is just going to be that particular integral plus the solution to the homogeneous equation.
+- [0:45:44] All right. So we just have to come up with one solution, any solution to this equation over here.
+- [0:45:50] And for our purposes right now, we will just try to guess that solution.
+- [0:45:57] OK. So does anyone have a good guess for what a solution to this equation is?
+- [0:46:09] OK. Well, if we think about it a little bit, we could try to guess some function where these derivative terms are zero.
+- [0:46:21] So what function has zero derivative?
+- [0:46:25] That first function plus a constant. So. Right. So, yes.
+- [0:46:33] OK. So. So then. So the full general solution would be the homogeneous solution plus a constant.
+- [0:46:41] All right. Right. But to figure out that. Yeah. Question. OK.
+- [0:46:49] Yeah. So. Yeah. So perhaps what you were getting to was that the full solution is that first solution,
+- [0:46:57] the whole solution to the homogeneous equation plus a constant.
+- [0:47:00] And to figure out that the thing that we needed to add, the particular integral was a constant. Right.
+- [0:47:08] You know, one way to reason that out would be to say, well, let me try to think about functions where the derivatives are zero.
+- [0:47:14] Right. And a function that has where all its derivatives are zero is just a constant.
+- [0:47:24] And then you can see, since the right hand side is a constant, then a particular integral for this is just that V sub C is equal to capital V sub S.
+- [0:47:36] If this were some time dependent function, it would be more complicated. OK.
+- [0:47:40] But in this case, it's relatively simple. Right. So a solution to this equation.
+- [0:47:51] We just have to come up with any solution. Right. Is that V sub C of T is just equal to capital V sub S.
+- [0:47:58] Right. Just a constant. Right. That obviously satisfies this equation.
+- [0:48:04] And so once we have that, then we know that the most general solution is going to be capital V sub S over here plus this solution that we worked out up here,
+- [0:48:17] which is the general solutions of the homogeneous equation. Right.
+- [0:48:20] Every solution to this full equation here has to be of that form.
+- [0:48:26] OK. So what we then have is that the full solution right for V sub C of T.
+
+## page 16  f_0248.jpg  on screen [0:48:26 – 0:53:29]
+<sub>sharpness 2654, ink 4.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0236.jpg (0:49:28), f_0242.jpg (0:49:29)</sub>
+
+- [0:48:26] OK. So what we then have is that the full solution right for V sub C of T.
+- [0:48:38] OK. For the series RLC circuit. Right.
+- [0:48:49] Is then the V sub C of T is going to be the solution to the homogeneous equation.
+- [0:48:58] A1 times e to the minus alpha T times e to the square root of alpha squared minus omega naught squared T plus A2 times e to the minus alpha T e to the minus square root of alpha squared minus omega naught squared T plus V sub S.
+- [0:49:24] All right. So so that's the full solution.
+- [0:49:28] So any questions to here? Yes.
+- [0:49:40] We're told in value that a second order differential equation has precisely two solutions.
+- [0:49:47] This year seems like it has three solutions. And I guess where where am I well with that?
+- [0:49:55] Oh so so the two solutions correspond to the fact that A1 and A2 are undetermined constants.
+- [0:50:09] OK. And so in general you can come up with sort of two linearly independent values of A1 and A2.
+- [0:50:20] Right. You can think of it as a two dimensional space. Right. A1 on one axis A2 on the other axis and then combinations of different values of A1 and A2 are sort of vectors in that space.
+- [0:50:34] And there are two independent basis vectors in that space.
+- [0:50:40] So if we were to solve for A1 and A2 we would be able to eventually get rid of the plus.
+- [0:50:49] No the V S would still be there. What we what we do and we'll see this shortly is for any particular circuit there will be boundary right initial conditions right for V sub C.
+- [0:51:03] In this case that's equal to zero and DVC DT at equals zero. Those two initial conditions will then allow us to determine A1 and A2 for that particular circuit.
+- [0:51:15] OK. Any other questions. OK. So so if we look at this general solution over here then we can see that there are basically three different types of behavior that we can get from this.
+- [0:51:31] All right. If say alpha is greater than omega naught then both of these terms over here the first two terms will just be exponentially decaying.
+- [0:51:44] Right. So that's one category of behavior. Another category of behavior will be if omega naught is greater than alpha.
+- [0:51:54] What will happen then is that we'll have this will be an imaginary exponential over here or it'll be e to some imaginary quantity.
+- [0:52:03] And the same thing over here. So we will get sort of exponentially decaying times oscillating behavior. That's another category.
+- [0:52:13] And then there's a third category which is where alpha is exactly equal to omega naught. Right.
+- [0:52:21] And then we will see what happens in in that case as well. The form of the solution that we have here is actually a little bit different in that case.
+- [0:52:30] OK. So what happens then is that once we have this general solution we can see that there are basically three distinct behaviors.
+- [0:52:46] OK. That can occur. OK. And they correspond. OK. So corresponding to the square root of alpha squared minus omega naught squared.
+- [0:53:08] All right. So this being real and nonzero is one category. Zero is another category. And imaginary is the third category.
+- [0:53:25] OK. So we're going to look at each of these in turn. All right. And whether and which one of these we get basically just depends on the specific values of R, L and C. OK.
+
+## page 17  f_0255.jpg  on screen [0:53:29 – 0:56:08]
+<sub>sharpness 3358, ink 5.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0252.jpg (0:53:31)</sub>
+
+- [0:53:25] OK. So we're going to look at each of these in turn. All right. And whether and which one of these we get basically just depends on the specific values of R, L and C. OK.
+- [0:53:41] So the first category that we'll consider is what's called overdamped response. OK.
+- [0:53:55] And this corresponds to alpha being greater than omega naught or equivalently alpha squared minus omega naught squared being real. OK.
+- [0:54:08] And in terms of the circuit parameters that means that R is greater than two over the square root of L over C.
+- [0:54:16] So basically you get this kind of behavior if you have sufficiently large resistance. OK.
+- [0:54:24] And what happens in this case is that V sub C of T our voltage across the capacitor.
+- [0:54:33] All right. It's in general A1 e to the minus alpha T times e to the root alpha squared minus omega naught squared T plus A2 e to the minus alpha T e to the minus the square root of alpha squared minus omega naught squared times T plus V sub S.
+- [0:54:59] All right. And if we look at these first two terms over here in the case where the square root of alpha squared minus omega naught squared is real.
+- [0:55:11] All right. Then we can see that both of these terms will give us exponentially decaying behavior.
+- [0:55:19] So if we have pure just sort of exponentially decaying behavior, no oscillations or anything like that, then that is what we refer to as overdamped response.
+- [0:55:30] It corresponds to having large values of the resistance. And it sort of makes sense because if you have a large value of the resistance, then the resistor is what dissipates power.
+- [0:55:41] Right. So the energy in the circuit is going to be dissipated more rapidly and you just get exponential decay.
+- [0:55:47] All right. So in this overdamped case, then we just get these to be decaying exponential functions.
+- [0:56:04] OK, so let's look at a specific numerical example of this.
+
+## page 18  f_0260.jpg  on screen [0:56:08 – 0:58:25]
+<sub>sharpness 2478, ink 3.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0256.jpg (0:56:08)</sub>
+
+- [0:56:04] OK, so let's look at a specific numerical example of this.
+- [0:56:12] All right. So let's suppose that V sub S will take it to be 24 volts and then the resistance R will take to be 64 ohms.
+- [0:56:26] And then the inductance L to be point H point eight Henry's and then the capacitance C to be two millifarads.
+- [0:56:39] OK, so then let's work out what the damping factor and resonant frequency are.
+- [0:56:45] So the damping factor L alpha is R over two L. Right.
+- [0:56:51] So that's going to be 64 over two times point eight. That's 64 over one point six. So that's 40.
+- [0:56:59] Right. 40. Nephers per second. All right.
+- [0:57:04] And then omega naught, our resonant frequency is the square root of one over LC.
+- [0:57:12] All right. So in the denominator, we have L times C. So point eight, which is eight times 10 to the minus one times two times 10 to the minus three.
+- [0:57:21] So we have eight times two. That's 16 times 10 to the minus four in the denominator.
+- [0:57:28] Right. Now, when we take the square root of 16 times 10 to the minus four, we get four times 10 to the minus two.
+- [0:57:36] Right. So point oh four. We take one over that. That's 25.
+- [0:57:41] OK, so this is 25 radians per seconds.
+- [0:57:49] All right. And so indeed we have that alpha is greater than omega naught.
+- [0:57:57] Right. Now you may say, you know, what are you doing comparing quantities that have different units.
+- [0:58:04] But in this case, the relevant units are actually inverse seconds.
+- [0:58:07] All right. And Nephers is just something that we have in there to remind ourselves that this is a log scale.
+- [0:58:14] And then radians are the natural unit for angular quantities.
+- [0:58:19] OK, so so really the relevant units here are inverse seconds.
+- [0:58:23] So we are comparing quantities that have the same units and we see that alpha is greater than omega naught.
+
+## page 19  f_0287.jpg  on screen [0:58:25 – 1:00:09]
+<sub>sharpness 1467, ink 2.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0284.jpg (1:00:07), f_0286.jpg (1:00:08)</sub>
+
+- [0:58:23] So we are comparing quantities that have the same units and we see that alpha is greater than omega naught.
+- [0:58:29] OK. And then the square root of alpha squared minus omega naught squared is equal to right.
+- [0:58:37] This is the square root of 40 squared minus 25 squared.
+- [0:58:43] And if you work this out, it's 31.2.
+- [0:58:48] All right. Nephers per second since it's going to be for exponential decay.
+- [0:58:57] All right. So that means that V sub C of T is going to be right.
+- [0:59:06] It's A1 times e to the minus 8.8 T.
+- [0:59:13] All right. That's minus alpha. So minus 40 plus 31.2.
+- [0:59:20] All right. So that's minus 8.8 times T plus A2 times e to the minus 71.2 T.
+- [0:59:29] All right. That's trying to get all this together.
+- [0:59:33] Right. So the first term here was this first one.
+- [0:59:38] All right. So minus 40 plus 31.2 both times C.
+- [0:59:42] Here we have minus 40 minus 31.2. So that's minus 71.2 times T plus V sub S, which is 24.
+- [0:59:51] This is all in volts. OK. So now, all right, we have this solution,
+- [0:59:58] but we still have these constants, the unknown constants A1 and A2.
+- [1:00:02] And so to get A1 and A2, we have to use our initial conditions,
+- [1:00:09] which we worked out in the beginning of today's class.
+
+## page 20  f_0289.jpg  on screen [1:00:09 – 1:02:38]
+<sub>sharpness 2128, ink 3.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0288.jpg (1:02:24)</sub>
+
+- [1:00:09] which we worked out in the beginning of today's class.
+- [1:00:13] So to determine A1 and A2, we need to recall the initial conditions at T equal to 0.
+- [1:00:37] Since we have an expression for V sub C of T,
+- [1:00:41] the initial conditions that we will use are what V sub C was equal to at T equal to 0.
+- [1:00:48] It's 0. And then also what the derivative of V sub C with respect to time is equal to at T equal to 0.
+- [1:00:56] That was also 0. OK. So we have our two initial conditions.
+- [1:01:01] V sub C at T equal to 0 is equal to 0.
+- [1:01:05] And if we look, if we substitute T equal to 0 in this equation up here,
+- [1:01:11] then we just get that A1 plus A2 plus 24 is equal to 0. OK.
+- [1:01:20] Our second initial condition is that dVc dT evaluated at T equal to 0.
+- [1:01:27] Remember, we saw that this was also equal to 0. OK.
+- [1:01:32] So what we want to do then is to take the derivative of this expression with respect to time
+- [1:01:41] and then evaluate it at T equal to 0 and set it equal to 0.
+- [1:01:47] All right. So when we take the derivative of this with respect to time, the constant term goes away.
+- [1:01:53] And then for this first term over here, we bring down a factor of minus 8.8.
+- [1:01:59] So we're going to get minus 8.8 times A1.
+- [1:02:02] And then this exponential evaluated at T equal to 0 will just be 1.
+- [1:02:06] And then from the second term over here, we'll have taken the derivative,
+- [1:02:11] we'll get a factor of minus 71.2 times A2.
+- [1:02:15] And then this exponent, exponential evaluated at T equal to 0 will give us 1 again.
+- [1:02:20] So what we get here is minus 8.8 A1 minus 71.2 A2 is equal to 0.
+- [1:02:33] OK. Or if we write this in matrix form, all right, these two equations,
+
+## page 21  f_0292.jpg  on screen [1:02:38 – 1:03:15]
+<sub>sharpness 1352, ink 2.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0290.jpg (1:02:38)</sub>
+
+- [1:02:33] OK. Or if we write this in matrix form, all right, these two equations,
+- [1:02:42] we have 1 minus 8.8 and then 1 minus 71.2 operating on A1 and A2 is equal to minus 24.
+- [1:02:55] Right. 24 we move to the right hand side and 0.
+- [1:03:00] OK. So we just have to solve this system of two equations for two unknowns.
+- [1:03:06] All right. So this is something that you did many times in 302, most likely.
+- [1:03:13] And so you can solve it any way that you would like.
+
+## page 22  f_0294.jpg  on screen [1:03:15 – 1:05:29]
+<sub>sharpness 1952, ink 2.9 %, colour 0.2</sub>
+
+- [1:03:13] And so you can solve it any way that you would like.
+- [1:03:17] What we'll do here is we'll just use Cramer's rule, right,
+- [1:03:22] which involves taking derivatives of this matrix of coefficients
+- [1:03:27] or the matrix of coefficients with this column vector of constants
+- [1:03:31] substituting for one of the sets of coefficients.
+- [1:03:35] Right. Now you can solve this set of equations any way you would like.
+- [1:03:38] This is the, you know, what I think is an easy way to do it.
+- [1:03:41] So what we do to get A1 is we take this column vector over here,
+- [1:03:46] we use it to replace the coefficients for A1,
+- [1:03:49] and we take the derivative of the resulting 2 by 2 matrix. Yes.
+- [1:03:58] So you can, but then you have to make sure that you plug in the numbers correctly
+- [1:04:03] because we can only give you credit for the work that you show.
+- [1:04:06] So if you say, all right, now I'm solving this on my calculator
+- [1:04:09] and you get the right answer, that's fine.
+- [1:04:11] If you get the wrong answer, we can only give you credit for getting the equations.
+- [1:04:16] Any other questions? OK.
+- [1:04:19] So for A1, right, we're going to have for the derivative,
+- [1:04:25] it's minus 24 times minus 71.2.
+- [1:04:30] Right. And then in Cramer's rule, the denominator is just the derivative,
+- [1:04:35] or it's the determinant of the matrix of coefficients.
+- [1:04:38] So it is minus 71.2 plus 8.8.
+- [1:04:45] OK. And if you calculate this, then it's minus 27.38 volts.
+- [1:04:52] And then A2, right, what we do is we take the column vector of constants
+- [1:04:58] and use it to replace the coefficients of A2.
+- [1:05:03] We take the determinant of the resulting matrix.
+- [1:05:06] It's going to be minus 24 times minus 8.8 divided by the same denominator.
+- [1:05:15] So minus 71.2 plus 8.8.
+- [1:05:19] And that turns out to be 3.38 volts.
+- [1:05:29] OK. And so what we finally get then is that in this case, our example of an overdamped circuit,
+
+## page 23  f_0307.jpg  on screen [1:05:29 – 1:07:30]
+<sub>sharpness 2171, ink 3.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0299.jpg (1:06:28), f_0306.jpg (1:07:30)</sub>
+
+- [1:05:29] OK. And so what we finally get then is that in this case, our example of an overdamped circuit,
+- [1:05:38] we get the V sub C of T is minus 27.38 times e to the minus 8.8 T plus 3.38 times e to
+- [1:05:56] the minus 71.2 T plus 24.
+- [1:06:02] And all of this is in volts.
+- [1:06:06] That's the solution for R equal to 64 ohms, L equal to 0.8 henries, and C equal to 2 millifarads,
+- [1:06:18] and then V S equal to 24 volts.
+- [1:06:23] OK. As our example of the overdamped circuit.
+- [1:06:28] And if we were to, if we plot or sketch out the plot of what this looks like, then we're
+- [1:06:33] looking at V sub C as a function of T from 0 on.
+- [1:06:39] And we can see that as T goes to infinity, V sub C will just go to 24 volts, which is
+- [1:06:49] what we had figured out earlier was the final condition.
+- [1:06:52] And it's going to approach it kind of like this.
+- [1:07:03] And the exponential time constant for this, it's mostly going to be determined by this
+- [1:07:08] first term over here.
+- [1:07:11] And so this is going to be approximately equal to 1 over 8.8 seconds.
+- [1:07:21] OK. So this is the overdamped case.
+- [1:07:25] Any questions on this?
+- [1:07:29] OK.
+- [1:07:30] Now let us look at the case where alpha and omega naught are exactly equal to each other.
+
+## page 24  f_0324.jpg  on screen [1:07:30 – 1:08:43]
+<sub>sharpness 2567, ink 4.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0308.jpg (1:07:31), f_0317.jpg (1:08:20)</sub>
+
+- [1:07:30] Now let us look at the case where alpha and omega naught are exactly equal to each other.
+- [1:07:41] That is what we call the critically damped response.
+- [1:07:49] OK.
+- [1:07:53] So this corresponds to alpha being equal to omega naught, or equivalently, the square root
+- [1:07:58] of alpha squared minus omega naught squared being equal to 0.
+- [1:08:05] Or in terms of our circuit parameters, the resistance being exactly equal to 2 times
+- [1:08:11] root L over C. OK.
+- [1:08:14] Now here, we have a little mathematical problem, OK, because our two independent solutions,
+- [1:08:22] two different exponentials over here, in the critically damped case, these S1 is going to
+- [1:08:29] be equal to S2.
+- [1:08:30] So these exponential terms are going to be the same.
+- [1:08:33] So we actually only have one independent solution.
+- [1:08:36] So we have to figure out some second independent solution that is different from just the exponential
+
+## page 25  f_0338.jpg  on screen [1:08:43 – 1:10:22]
+<sub>sharpness 1505, ink 2.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0328.jpg (1:09:36), f_0331.jpg (1:09:50), f_0333.jpg (1:09:51), f_0336.jpg (1:10:22)</sub>
+
+- [1:08:36] So we have to figure out some second independent solution that is different from just the exponential
+- [1:08:45] solution.
+- [1:08:46] So the little challenge here is that our exponential solution for V sub C of t, in this case, now
+- [1:09:03] it has only one independent function, which is a1 times e to the minus alpha t.
+- [1:09:21] So both of our previously independent solutions now reduced to this 1.
+- [1:09:27] So what we need to do is we need to find, unless you do, a second independent solution to our
+- [1:09:46] homogeneous equation star.
+- [1:09:51] So there are a variety of ways that you can arrive at this.
+- [1:09:57] And so I'll show you one way that you can arrive at this.
+- [1:10:04] So remember, the equation that, the homogeneous equation that we're working with is d squared
+- [1:10:10] VCDt squared plus a times dVCDt plus V times Vc is equal to 0.
+- [1:10:18] That was our homogeneous equation.
+- [1:10:21] And the solutions, the general solution to this was V sub C of t is equal to a1 e to
+
+## page 26  f_0342.jpg  on screen [1:10:22 – 1:11:09]
+<sub>sharpness 1863, ink 2.9 %, colour 0.2</sub>
+
+- [1:10:21] And the solutions, the general solution to this was V sub C of t is equal to a1 e to
+- [1:10:32] the s1 t plus a2 e to the s2 t.
+- [1:10:40] And s1 was equal to minus a over 2 plus the square root of a over 2 squared minus b.
+- [1:10:49] And s2 was equal to minus a over 2 minus the square root of a over 2 squared minus b.
+- [1:10:58] And the problem that we're contending with here is that this square root term is equal
+- [1:11:04] to 0, so s1 and s2 are equal to each other.
+- [1:11:09] We only get one independent solution.
+
+## page 27  f_0350.jpg  on screen [1:11:09 – 1:12:11]
+<sub>sharpness 2126, ink 3.3 %, colour 0.2</sub>
+
+- [1:11:09] We only get one independent solution.
+- [1:11:12] So to try to figure out what a second independent solution to this is, what we're going to do
+- [1:11:20] is we will think first about the case where s1 and s2 are not equal to each other.
+- [1:11:27] And then we will take the limit of s1 approaching s2.
+- [1:11:33] And we'll do it in a particular way that will get us to the second solution.
+- [1:11:37] So let's suppose first that s1 is not equal to s2 and the independent solutions to star
+- [1:11:59] are our homogeneous equation.
+- [1:12:02] They are as usual e to the s1 t and e to the s2 t.
+- [1:12:09] So if we have those two as our independent solutions, then we also know that any linear
+
+## page 28  f_0354.jpg  on screen [1:12:11 – 1:13:03]
+<sub>sharpness 2309, ink 3.7 %, colour 0.2</sub>
+
+- [1:12:09] So if we have those two as our independent solutions, then we also know that any linear
+- [1:12:15] combination of these will be a solution to the equation as well.
+- [1:12:20] So then another possible solution is we'll take this particular linear combination, e to
+- [1:12:35] the s2 t minus e to the s1 t divided by s2 minus s1.
+- [1:12:43] And that corresponds, if we think of this in terms of the coefficients, we're taking
+- [1:12:50] a1 equal to minus 1 over s2 minus s1 and a2 equal to 1 over s2 minus s1.
+- [1:13:01] So this is certainly also going to be a solution to our homogeneous equation because it's just
+
+## page 29  f_0367.jpg  on screen [1:13:03 – 1:15:05]
+<sub>sharpness 1397, ink 2.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0363.jpg (1:14:22), f_0364.jpg (1:14:24), f_0366.jpg (1:15:05)</sub>
+
+- [1:13:01] So this is certainly also going to be a solution to our homogeneous equation because it's just
+- [1:13:08] a linear combination of our original solutions.
+- [1:13:10] So any questions on that?
+- [1:13:13] Yes.
+- [1:13:15] Why is it necessary to find the second one?
+- [1:13:18] Isn't the fact that they combine just the result of the fact that alpha equals omega,
+- [1:13:24] why is it necessary?
+- [1:13:26] Isn't there an original?
+- [1:13:28] Oh, yeah.
+- [1:13:29] So that's an interesting question.
+- [1:13:30] One way you can think about it is that if we only had that one independent solution,
+- [1:13:36] we would only have one unknown constant in our solution.
+- [1:13:43] But there would still be two initial conditions that we have to satisfy, one on VC and one
+- [1:13:49] on DVC, DDT.
+- [1:13:51] So we're going to have only one constant that can be used to satisfy those two initial conditions.
+- [1:13:59] So it would be like having one variable and then you have two different equations and that
+- [1:14:05] one variable you have to solve for that variable with two equations.
+- [1:14:09] And in general, there's no solution to that.
+- [1:14:10] Oh, I see.
+- [1:14:11] So there are three cases where the two things are statistically significant.
+- [1:14:14] Yeah, right.
+- [1:14:15] Yeah.
+- [1:14:16] So that's one way of looking at it.
+- [1:14:17] So we need a second solution that will give us that second unknown coefficient.
+- [1:14:21] OK.
+- [1:14:22] So we're almost finished with this.
+- [1:14:26] So what we want to do is to take this solution here and now take the limit of S2 approaching
+- [1:14:37] S1.
+- [1:14:38] All right.
+- [1:14:44] OK.
+- [1:14:45] So we're going to take the limit as S2 approaches S1 of e to the S2t minus e to the S1t divided
+- [1:14:57] by S2 minus S1.
+- [1:15:01] OK.
+- [1:15:03] And if we think about this, all right, let's suppose let's instead of calling it S2 and
+
+## page 30  f_0368.jpg  on screen [1:15:05 – 1:15:53]
+<sub>sharpness 2357, ink 3.5 %, colour 0.2</sub>
+
+- [1:15:03] And if we think about this, all right, let's suppose let's instead of calling it S2 and
+- [1:15:13] S1, let's call S2, say S1, we'll call it S1 plus delta S.
+- [1:15:20] All right.
+- [1:15:21] So the limit of S2 approaching S1 is the limit of delta S approaching zero.
+- [1:15:25] All right.
+- [1:15:26] So this limit is going to be the limit of delta S going to zero of e to the S1 plus delta
+- [1:15:37] S times t minus e to the S1t over delta S. OK.
+- [1:15:48] So now if you think back to an earlier math course.
+- [1:15:53] Oops.
+- [1:15:54] Uh-oh.
+
+## page 31  f_0369.jpg  on screen [1:15:53 – 1:15:54]
+<sub>sharpness 1999, ink 3.1 %, colour 0.2</sub>
+
+- [1:15:53] Oops.
+- [1:15:54] Uh-oh.
+
+## page 32  f_0370.jpg  on screen [1:15:54 – 1:15:55]
+<sub>sharpness 2278, ink 3.4 %, colour 0.2</sub>
+
+- [1:15:54] Uh-oh.
+- [1:15:56] What does this limit look like?
+
+## page 33  f_0371.jpg  on screen [1:15:55 – 1:15:56]
+<sub>sharpness 1751, ink 2.5 %, colour 0.2</sub>
+
+- [1:15:54] Uh-oh.
+- [1:15:56] What does this limit look like?
+
+## page 34  f_0372.jpg  on screen [1:15:56 – 1:15:57]
+<sub>sharpness 1770, ink 2.5 %, colour 0.2</sub>
+
+- [1:15:56] What does this limit look like?
+
+## page 35  f_0381.jpg  on screen [1:15:57 – 1:17:10]
+<sub>sharpness 1608, ink 2.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0373.jpg (1:15:59), f_0380.jpg (1:17:09)</sub>
+
+- [1:15:56] What does this limit look like?
+- [1:15:59] It's the definition of some particular mathematical operation.
+- [1:16:02] What does this limit look like?
+- [1:16:03] Yes.
+- [1:16:06] This is the definition of the derivative of e to the S1t or e to the S2 evaluated at S
+- [1:16:13] equal to S1.
+- [1:16:15] So looking at it that way, we can see that this is going to be the derivative with respect
+- [1:16:20] to S of e to the St evaluated at S equal to S1.
+- [1:16:29] OK.
+- [1:16:30] And this is just t times e to the S1t.
+- [1:16:36] OK.
+- [1:16:38] And S1 as before is equal to minus a over 2.
+- [1:16:45] This function now is a function.
+- [1:16:49] It's a second independent function, independent of just e to the S1t.
+- [1:16:55] And from the way that we arrived at it, or you can verify it yourself, we can see that
+- [1:17:01] it is also a solution to our homogeneous equation.
+- [1:17:04] OK.
+- [1:17:05] So this is one way that we can come up with our second independent solution.
+
+## page 36  f_0383.jpg  on screen [1:17:10 – 1:17:39]
+<sub>sharpness 1155, ink 1.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0382.jpg (1:17:37)</sub>
+
+- [1:17:05] So this is one way that we can come up with our second independent solution.
+- [1:17:17] OK.
+- [1:17:18] So our second independent solution to the homogeneous equation then is this function t e to the
+- [1:17:30] S1 times t.
+- [1:17:32] All right.
+- [1:17:36] And I think this is a better, at least more satisfying way to arrive at it than I, you

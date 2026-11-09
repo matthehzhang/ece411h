@@ -1,0 +1,356 @@
+WEBVTT
+
+00:00:08.000 --> 00:00:20.000
+A multiple OPAM circuit. That's the first order RC circuit. Okay, so this example here.
+
+00:00:20.000 --> 00:00:29.000
+Is multiple OP-amp.
+
+00:00:29.000 --> 00:00:35.000
+First order RC circuit.
+
+00:00:35.000 --> 00:00:45.000
+Okay, so what we want to do here is to analyze this. And show that the voltage V over here.
+
+00:00:45.000 --> 00:00:53.000
+Obeys this particular differential equation. Alright, and.
+
+00:00:53.000 --> 00:00:59.000
+So what we will do is as usual, we will. I redraw this circuit.
+
+00:00:59.000 --> 00:01:11.000
+Okay. And so We'll have to leave ourselves enough room over here. So we'll draw the first opamp over here like this.
+
+00:01:11.000 --> 00:01:20.000
+Okay, it's Non-inverting input is grounded. And then, it's inverting input.
+
+00:01:20.000 --> 00:01:29.000
+Is connected through a capacitor C. Alright, this is the voltage V. Okay, and then.
+
+00:01:29.000 --> 00:01:40.000
+We have some output voltage. V one over here and we have a feedback resistor. Like this. With resistance R.
+
+00:01:40.000 --> 00:01:44.000
+Okay. And then. V one, the output of this first. Dot.
+
+00:01:44.000 --> 00:01:50.000
+We'll call this opamp number one.
+
+00:01:50.000 --> 00:01:53.000
+Okay, goes to.
+
+00:01:53.000 --> 00:02:03.000
+The inverting input of a second opium, will call that number 2. This resistor has value r.
+
+00:02:03.000 --> 00:02:07.000
+Okay, it's not inverting input is also granted.
+
+00:02:07.000 --> 00:02:14.000
+Okay, it goes to an output V 2. And.
+
+00:02:14.000 --> 00:02:24.000
+We have a feedback resistor. Also are, again, over here. And then V 2. Is connected.
+
+00:02:24.000 --> 00:02:28.000
+Through a resistor.
+
+00:02:28.000 --> 00:02:38.000
+To the inverting input of a third OP. And call this number 3. Alright. And then.
+
+00:02:38.000 --> 00:02:44.000
+The non-inverting input of opium number 3 is connected to ground. Okay, this resistor has value r.
+
+00:02:44.000 --> 00:02:50.000
+And then we have. A feedback resistor.
+
+00:02:50.000 --> 00:03:02.000
+For opium number 3. Also has value are. Okay, and then it's output is V 3 And the output V 3.
+
+00:03:02.000 --> 00:03:13.000
+Is Connected. Directly back. To the voltage V. Alright.
+
+00:03:13.000 --> 00:03:22.000
+And then, finally. We have one other connection. Alright, which is.
+
+00:03:22.000 --> 00:03:28.000
+. That like this.
+
+00:03:28.000 --> 00:03:41.000
+Okay, the inverting input of opium number 3. Is now also connected. To the output.
+
+00:03:41.000 --> 00:03:50.000
+I have another OP-amp over here. Call this opium number 4. Alright, it's inverting input is granted.
+
+00:03:50.000 --> 00:03:55.000
+And or it's non-inverting input is grounded.
+
+00:03:55.000 --> 00:04:07.000
+We have a feedback resistor over here. We'll call this output. Before this feedback resistor is to our.
+
+00:04:07.000 --> 00:04:18.000
+And then. We have an input voltage VS connected through Hey, resistor R, to the inverting input of opium number 4.
+
+00:04:18.000 --> 00:04:33.000
+Okay, so this is the circuit that, we're going to analyze. Alright, and we will analyze it in really the usual way, right, that we, typically analyze OP-amp circuits, which is that we apply KCL.
+
+00:04:33.000 --> 00:04:40.000
+At the appropriate inputs to the various. All right. And so let's label those. .
+
+00:04:40.000 --> 00:04:50.000
+So we'll call this . That's this one over here I'll call this one. VN 3.
+
+00:04:50.000 --> 00:05:01.000
+Call this one, VN 2. Call this one VN one. Alright, so basically what we're going to do is to apply.
+
+00:05:01.000 --> 00:05:10.000
+Casey all at each of those inputs and then you can see that the outputs of each of the opamps.
+
+00:05:10.000 --> 00:05:15.000
+Right, 1, 2, and 4 are basically connected to the inputs. Of an OP-amp that's further along in the signal path.
+
+00:05:15.000 --> 00:05:27.000
+Okay. And so we can. Analyze each of these OP-amps in any order, but it's typically most convenient.
+
+00:05:27.000 --> 00:05:39.000
+To start where you have the most definite information and then also to kind of follow the opamps in some direction along the signal path.
+
+00:05:39.000 --> 00:05:47.000
+Alright, so we'll go ahead and. Proceed that way. So for the first step of this, what we'll do is we'll apply KCL.
+
+00:05:47.000 --> 00:05:56.000
+And VN 4. All right, the inverting output of opium number 4. So that is this node over here, right?
+
+00:05:56.000 --> 00:06:04.000
+And we are starting with that because we know. I, the input. Do, V. S.
+
+00:06:04.000 --> 00:06:14.000
+Is basically considered to be a known quantity. Not an unknown variable. Alright, and, what we have here is Alright, we know that.
+
+00:06:14.000 --> 00:06:19.000
+Basically,
+
+00:06:19.000 --> 00:06:28.000
+We know the voltage at VN 4 is 0, right, because the non-inverting input of that opium is connected to ground.
+
+00:06:28.000 --> 00:06:37.000
+And so if we apply I KCL at this node here. We have that. Minus VS over R.
+
+00:06:37.000 --> 00:06:48.000
+Minus. V 4 over 2 are is equal to 0 or equivalently. We have that V 4 is equal to minus 2 R.
+
+00:06:48.000 --> 00:07:02.000
+Over R. Times VS, which is just minus 2 times. . Alright So we're gonna keep this result in mind here.
+
+00:07:02.000 --> 00:07:08.000
+Then, for the next step, we'll go to the opium number 3 over here.
+
+00:07:08.000 --> 00:07:16.000
+And we'll apply KCL. Add. VN 3.
+
+00:07:16.000 --> 00:07:26.000
+Okay, for VN 3. Right, we know that The voltage there is 0, right, because of this connection of the non-inverting input of opium number 3 to ground.
+
+00:07:26.000 --> 00:07:37.000
+So we just add up the. Currents, the outgoing currents along these other 3 connections. Alright, so we have through the resistor R over here.
+
+00:07:37.000 --> 00:07:48.000
+It's minus V 2 over R is the current. Through this connection down here, it's minus V 4 over, this resistor is R.
+
+00:07:48.000 --> 00:07:55.000
+It's minus V 4 over R. And then up here along this connection, the current is minus V 3.
+
+00:07:55.000 --> 00:08:04.000
+Over R. Alright. So applying KCL at that node, we have minus V 2 over R.
+
+00:08:04.000 --> 00:08:18.000
+Minus V 4 over R. Minus V 3 over R is equal to 0. So that means that V 3 is equal to.
+
+00:08:18.000 --> 00:08:22.000
+Minus v 2 minus v 4.
+
+00:08:22.000 --> 00:08:32.000
+Alright, or since V 4. We know is equal to minus 2 Vs. We know the V 3 is equal to.
+
+00:08:32.000 --> 00:08:44.000
+Minus V 2. Plus 2 VS. Alright. We also know that V 3 is equal to V.
+
+00:08:44.000 --> 00:08:53.000
+Alright, because of this connection. Up here. Alright. So.
+
+00:08:53.000 --> 00:09:01.000
+That means that we can also say The V is equal to minus V 2.
+
+00:09:01.000 --> 00:09:11.000
+Plus 2 VS. Okay, so this is the result that we want to keep in mind. From from this KCL equation.
+
+00:09:11.000 --> 00:09:19.000
+Then the next step. Right now we've applied KCL at This node and at this node.
+
+00:09:19.000 --> 00:09:30.000
+Alright, so we'll go ahead and we'll apply it at This note over here. Alright, again, we know that the voltage at this node is 0 because of the connection.
+
+00:09:30.000 --> 00:09:36.000
+From the other opium input to ground. So we have for KCL minus V one over R.
+
+00:09:36.000 --> 00:09:45.000
+Minus v 2 over r is equal to 0. Okay, so we get the This is now going to be KCL.
+
+00:09:45.000 --> 00:09:59.000
+At VN too. And we have that minus V one over. R minus V 2 over R. Is equal to 0, which means that V 2 just equal to minus V one.
+
+00:09:59.000 --> 00:10:04.000
+Alright, so we're gonna keep this result in line.
+
+00:10:04.000 --> 00:10:16.000
+And then. Hmm. This one over here, right, opium number one. We know the voltage at the inverting input.
+
+00:10:16.000 --> 00:10:22.000
+We're going to do apply KCL. At VN one. We know the voltage here is equal to 0.
+
+00:10:22.000 --> 00:10:30.000
+And so the current. Flowing out to the left here through the capacitor is minus c times dv dt.
+
+00:10:30.000 --> 00:10:37.000
+Alright, and then the current flowing out to the right over here through the resistor R is minus V one.
+
+00:10:37.000 --> 00:10:47.000
+Over R. Okay, and the sum of those 2 has to be 0. So now we're going to apply KCL.
+
+00:10:47.000 --> 00:10:53.000
+At VN one and we have that minus C.
+
+00:10:53.000 --> 00:11:01.000
+DVD. Minus V one over R. Is equal to 0.
+
+00:11:01.000 --> 00:11:12.000
+Which means that V one. Is equal to R. Time C, minus R times C. Times.
+
+00:11:12.000 --> 00:11:20.000
+. Alright So now, alright. We have.
+
+00:11:20.000 --> 00:11:26.000
+A little chain of results that we can use to relay the
+
+00:11:26.000 --> 00:11:37.000
+To VS. Without any other unknowns because here we have minus V 2. But V 2 is equal to minus V one.
+
+00:11:37.000 --> 00:11:46.000
+So this is just V one. Alright, and V one we know is minus RC times DVDT.
+
+00:11:46.000 --> 00:11:52.000
+Alright, so then if we make that chain of substitutions. We will have an equation that involves only v and vs.
+
+00:11:52.000 --> 00:11:57.000
+Alright, so.
+
+00:11:57.000 --> 00:12:04.000
+From what I just described, we can see that V 2. Is equal to minus V one.
+
+00:12:04.000 --> 00:12:10.000
+Right. That's this expression over here. But V one is minus RC times DVDT.
+
+00:12:10.000 --> 00:12:24.000
+So that means that V 2 is equal to RC. Times. DVD and we can substitute that in for the v 2 over here.
+
+00:12:24.000 --> 00:12:34.000
+So we have that V is equal to minus V 2. Plus 2 VS. Alright, that was this result over here.
+
+00:12:34.000 --> 00:12:44.000
+So that has to be equal to minus. RC. Times dv dt. Plus 2 VS.
+
+00:12:44.000 --> 00:12:54.000
+Or if we just rearrange this. A little bit. We have that our time C. Times dv dt.
+
+00:12:54.000 --> 00:13:03.000
+Alright. Plus V. Is equal to 2 times.
+
+00:13:03.000 --> 00:13:12.000
+. Alright, that's basically taking this equation here moving this minus r c dv dt over to the left hand side.
+
+00:13:12.000 --> 00:13:21.000
+Okay. And then if we divide both sides by RC. We get the DVDT. Plus.
+
+00:13:21.000 --> 00:13:31.000
+One over RC times V. Is equal to 2. Over RC vs. Alright.
+
+00:13:31.000 --> 00:13:41.000
+Now what we wanna do is substitute in numerical values for R and C. Alright, so. Right, they only show up as the product RC.
+
+00:13:41.000 --> 00:13:49.000
+Right, so our time C. Is 10 kilo ohms. For our times 20 micro farads.
+
+00:13:49.000 --> 00:13:56.000
+For C. Alright, so that's 200. That's 20 times 10 and then kilo times micro.
+
+00:13:56.000 --> 00:14:03.000
+Is 10 to the minus 3. Okay. And so that gives us point 2. And it seconds.
+
+00:14:03.000 --> 00:14:12.000
+Right, RC, I, that product has the units of seconds. Okay. And so what we finally get is.
+
+00:14:12.000 --> 00:14:21.000
+DVDT, alright, plus one over RC times V one over point 2 is 5. So plus 5 times V.
+
+00:14:21.000 --> 00:14:28.000
+And that's equal to 2 over RC. So 2 or point 2 is 10. So that's equal to 10.
+
+00:14:28.000 --> 00:14:38.000
+. S So this is our final result. DVDT plus 5 V is equal to 10 VS.
+
+00:14:38.000 --> 00:14:46.000
+And if we go back to the original problem statement. Oops. Okay. Then we can see that in fact over here.
+
+00:14:46.000 --> 00:14:54.000
+Alright, that is what the problem asked us. To show. Alright, so by doing the analysis explicitly.
+
+00:14:54.000 --> 00:15:04.000
+We have shown that indeed. The voltage V here obeys this equation.
+
+00:15:04.000 --> 00:15:09.000
+Okay, so what were some of the key points?
+
+00:15:09.000 --> 00:15:15.000
+From this example. Hi.
+
+00:15:15.000 --> 00:15:23.000
+Alright, basically I. For the most part, this was just a standard analysis of a multiple OP-amp circuit.
+
+00:15:23.000 --> 00:15:36.000
+Alright. And what we saw was that we proceeded in the usual way. Of applying KCL at each of the appropriate opium inputs.
+
+00:15:36.000 --> 00:15:45.000
+And then kind of, linking the results together that typically ends up being easier to do. If you start, I add.
+
+00:15:45.000 --> 00:15:53.000
+The opiums where you know what the inputs are. And then for the other opamps, it's easier to see the connections.
+
+00:15:53.000 --> 00:16:02.000
+If you analyze them. In some order that corresponds to the signal path. Through the circuit. So we ended up.
+
+00:16:02.000 --> 00:16:06.000
+Starting with the opamp that was near the end. Of the signal path and then working backwards.
+
+00:16:06.000 --> 00:16:18.000
+Alright. I and as you saw that made it relatively easy to see and implement what the connections were from one opium to the next.
+
+00:16:18.000 --> 00:16:27.000
+Alright, so, the off. Alright, they can be analyzed.
+
+00:16:27.000 --> 00:16:38.000
+In anywhere. And it'll still work. Alright. But it's often easiest.
+
+00:16:38.000 --> 00:16:43.000
+Right to see connections.
+
+00:16:43.000 --> 00:17:05.000
+Right, which algebraically I will make things somewhat simpler. If the or analyze sequentially.
+
+00:17:05.000 --> 00:17:09.000
+Okay, along.
+
+00:17:09.000 --> 00:17:14.000
+The signal pass.
+
+00:17:14.000 --> 00:17:28.000
+Okay, I and that's probably the main thing to notice about this particular example here. Okay, so let me stop the recording for this example.
+

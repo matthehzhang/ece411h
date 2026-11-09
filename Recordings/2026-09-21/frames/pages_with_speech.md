@@ -1,0 +1,1166 @@
+# 2026-09-21: board pages with the speech that accompanied them
+
+35 distinct pages from 96 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0008.jpg  on screen [0:00:00 – 0:04:16]
+<sub>sharpness 8575, ink 5.5 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0005.jpg (0:04:16), f_0006.jpg (0:04:16), f_0007.jpg (0:04:16)</sub>
+
+- [0:00:19] Okay, why don't we go ahead and get started now that I have the microphone.
+- [0:00:24] So I've started the recording
+- [0:00:27] and we have a number of announcements today. The first one is just a reminder that
+- [0:00:33] the third problem set was due this morning, so hopefully everyone has turned that in. And then
+- [0:00:39] problem set 4 was posted last week, and that'll be due
+- [0:00:44] on Monday, September 28th, okay?
+- [0:00:46] So a week from today, and that problem set covers basically sinusoidal signals,
+- [0:00:53] some basics of complex numbers, and
+- [0:00:55] phasor analysis of circuits, so the topic that we're discussing right now.
+- [0:01:01] Second announcement is just a reminder that
+- [0:01:03] this afternoon is a lab, not a recitation, so you should make sure to go to the lab location.
+- [0:01:10] Third announcement is that,
+- [0:01:13] as you may have seen on Canvas, there is a handout that I posted.
+- [0:01:17] It's the first of two handouts on
+- [0:01:20] basically complex numbers and doing algebra with complex numbers. Okay, so this first handout
+- [0:01:28] covers just some of the basics of that, and then the second one, which I'll post a little bit later,
+- [0:01:34] will be relevant to our discussion of things like
+- [0:01:38] transfer functions and the like, where it talks about how to
+- [0:01:42] manipulate essentially rational functions of complex numbers and the like. Okay,
+- [0:01:47] the fourth announcement is just a reminder that I have some travel again this week, so
+- [0:01:55] we will have a regular schedule today, but then on Wednesday
+- [0:01:59] we won't have class or office hours, and they'll do the same thing as last week, which is to
+- [0:02:03] make a recording to take the place of the class on Wednesday, and I'll post that on Canvas, and
+- [0:02:09] you should make sure to watch that recording before our next class meeting on the 28th.
+- [0:02:15] All right, and then the fifth announcement is
+- [0:02:20] just a reminder and a heads up that we have the first semester exam coming up in a
+- [0:02:27] little bit over two weeks, so on Wednesday, October 7th, all right, and so that exam
+- [0:02:33] it'll be in person here in this room,
+- [0:02:36] and it'll be closed book and closed notes, and you'll be allowed to use a calculator, anything without
+- [0:02:43] communication abilities, so no using your phone as a calculator, and I will bring
+- [0:02:50] Blue Books to class for you to write your exam solutions in, so
+- [0:02:55] so everything will be
+- [0:02:57] handwritten in the Blue Books,
+- [0:02:59] and so no, you know, writing the exam, or actually not the Blue Books,
+- [0:03:03] but actually what I'll do is I'll post an exam template, an answer sheet template,
+- [0:03:10] okay, and then you should bring those to
+- [0:03:14] the class, and you write your exams on those, okay, but not on a tablet, all right, and I'll post some additional information on
+- [0:03:22] the details of the exam format, how you'll turn it in, and the material
+- [0:03:27] that will be covered on the exam, a little bit closer to the exam date,
+- [0:03:31] the material that you will be responsible for will go partway through
+- [0:03:38] next week's classes.
+- [0:03:41] Okay, so any questions on all this? Yes?
+- [0:03:54] Yeah, so Darsh must have changed that, and so yeah, so that should be okay.
+- [0:03:58] Any other questions?
+- [0:04:02] Okay, any questions from either our last class meeting or from the recording from last week?
+- [0:04:13] Okay, if not, then we'll pick up from where we left off, so
+- [0:04:17] so the topic that we started discussing
+
+## page 02  f_0014.jpg  on screen [0:04:16 – 0:04:17]
+<sub>sharpness 5110, ink 3.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0010.jpg (0:04:17)</sub>
+
+- [0:04:13] Okay, if not, then we'll pick up from where we left off, so
+- [0:04:17] so the topic that we started discussing
+
+## page 03  f_0018.jpg  on screen [0:04:17 – 0:07:12]
+<sub>sharpness 2807, ink 1.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0015.jpg (0:04:18)</sub>
+
+- [0:04:17] so the topic that we started discussing
+- [0:04:20] in the recording, oh, yes?
+- [0:04:37] So the notation that we will use is the tilde below.
+- [0:04:47] Yeah, sometimes it's a tilde above, but I you know, I think in other settings that can be
+- [0:04:55] it can conflict with having like a vector sign on top of a symbol, so
+- [0:05:02] so that's sort of why I
+- [0:05:05] prefer to put it below, or you know, sometimes it's boldface, but it's hard to convey boldface in handwriting.
+- [0:05:12] So we will
+- [0:05:14] consistently use the tilde below. You know, once in a while
+- [0:05:18] if it's clear that it is a phasor quantity, that is a complex number, then we won't show the tilde,
+- [0:05:24] but hopefully it'll be clear from the context that it is a phasor and a complex number.
+- [0:05:30] Okay, so if we're working on a minimum, or something, we'll explicitly show that every single step, as long as it's clear that it's a phasor quantity.
+- [0:05:39] Yeah, so that would generally be okay.
+- [0:05:41] Any other questions?
+- [0:05:45] Okay, so we had started talking about phasors, which are a way of essentially using complex numbers to
+- [0:05:54] deal with sinusoidal signals in circuits. Alright, so we talked about the basic idea of phasors,
+- [0:06:01] and then how we
+- [0:06:05] represent the behavior of
+- [0:06:07] various electrical components using complex impedances, and then towards the end of the recording I kind of outlined
+- [0:06:14] the key steps that one goes through in
+- [0:06:18] actually doing phasor-based analysis of circuits. So what we'll do today is
+- [0:06:22] we'll look at an example of how we do phasor analysis, a relatively simple example.
+- [0:06:28] Then we'll see how
+- [0:06:30] things like impedance transformations, source transformations, and the like
+- [0:06:34] carry over from what you studied in 302 or 302H to the phasor domain. They carry over in pretty much exactly the same way.
+- [0:06:43] And then what we'll do is
+- [0:06:47] we'll talk about
+- [0:06:49] an additional tool that you can use in phasor analysis, which is phasor diagrams, which is a way of
+- [0:06:55] sort of more easily visualizing
+- [0:06:58] the phase relationships between different phasor quantities in a circuit because the phasors can be represented
+- [0:07:06] graphically rather than algebraically, okay, or in addition to algebraically.
+- [0:07:11] Okay, so we'll start off looking at a simple example
+
+## page 04  f_0021.jpg  on screen [0:07:12 – 0:07:34]
+<sub>sharpness 2389, ink 2.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0020.jpg (0:07:34)</sub>
+
+- [0:07:11] Okay, so we'll start off looking at a simple example
+- [0:07:16] of
+- [0:07:18] phasor analysis of circuits. And now this will be an RL circuit.
+- [0:07:30] Okay, and so the circuit that we're going to, okay,
+- [0:07:34] let me give myself a little more room here, is one where we have a source.
+
+## page 05  f_0023.jpg  on screen [0:07:34 – 0:09:36]
+<sub>sharpness 1401, ink 2.1 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0022.jpg (0:09:06)</sub>
+
+- [0:07:34] let me give myself a little more room here, is one where we have a source.
+- [0:07:39] In the time domain, that source signal will be V sub s of t, and then we have a resistor
+- [0:07:47] and
+- [0:07:49] an inductor like this. Okay, so we have resistor R, an
+- [0:07:55] inductor L, and then there'll be a current I
+- [0:07:59] flowing around
+- [0:08:01] the circuit loop, and then we will have a
+- [0:08:05] voltage across the inductor, okay, and that is what we want to solve for. Okay, so that's a
+- [0:08:12] voltage as a function of time.
+- [0:08:15] The voltage source signal is a sinusoidal signal, and so it is going to be
+- [0:08:25] 15
+- [0:08:27] times the sine of
+- [0:08:29] 4 times 10 to the 4th T
+- [0:08:33] minus
+- [0:08:34] 30 degrees, and that's in volts.
+- [0:08:37] Then the resistor has a value of 3 ohms and the inductor has a value of 0.1
+- [0:08:46] millihenries, and
+- [0:08:48] what we want to do here is to find V sub L of T.
+- [0:08:54] Okay, so this is the the problem that we're going to
+- [0:08:57] go through here, right? So any questions on
+- [0:09:00] this circuit or what we're trying to do. Okay, so the first step is
+- [0:09:10] basically to take our
+- [0:09:13] voltage source signal and
+- [0:09:16] essentially
+- [0:09:17] we want to write it as a phasor, but this
+- [0:09:22] signal over here is not specified in the usual cosine form of the signal.
+- [0:09:26] So the first thing that we need to do is convert that signal to
+- [0:09:30] the usual cosine form, all right? So we want to convert
+- [0:09:35] signal V sub S of T to
+
+## page 06  f_0024.jpg  on screen [0:09:36 – 0:11:18]
+<sub>sharpness 2164, ink 3.3 %, colour 0.1</sub>
+
+- [0:09:35] signal V sub S of T to
+- [0:09:38] the cosine form of the signal, all right? So V sub S of T,
+- [0:09:46] okay, it's
+- [0:09:48] 15
+- [0:09:50] times the sine of 4 times 10 to the 4th T minus 30 degrees,
+- [0:09:56] okay, but remember
+- [0:09:58] I'm going to raise this a little bit because the glare is not so good at this angle. Okay,
+- [0:10:04] so what we want to do is to write this as
+- [0:10:09] an amplitude times the cosine of
+- [0:10:13] some argument, okay, and
+- [0:10:16] if we have the sine of
+- [0:10:18] a given argument, in this case 4 times 10 to the 4th T minus 30 degrees, then the cosine of that,
+- [0:10:25] of that, or if we write it in terms of the cosine,
+- [0:10:28] then it is going to be the cosine of that same argument minus 90 degrees,
+- [0:10:34] okay,
+- [0:10:35] and so
+- [0:10:37] we can also write this as 15 times the cosine of
+- [0:10:41] 4 times 10 to the 4th T minus
+- [0:10:46] 120 degrees, all right,
+- [0:10:49] and
+- [0:10:50] so here we also see, all right, that the angular frequency is 4 times 10 to the 4th
+- [0:10:57] radians
+- [0:10:59] per second.
+- [0:11:01] Okay, so this is the signal in the standard cosine form which allows us to
+- [0:11:06] see immediately what the phase angle is, all right, so we can write it as a phasor, yes?
+- [0:11:11] Oh, yeah, so that is a good point.
+
+## page 07  f_0025.jpg  on screen [0:11:18 – 0:11:18]
+<sub>sharpness 2309, ink 3.6 %, colour 0.1</sub>
+
+- [0:11:11] Oh, yeah, so that is a good point.
+
+## page 08  f_0038.jpg  on screen [0:11:18 – 0:15:51]
+<sub>sharpness 2984, ink 4.7 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0026.jpg (0:11:19), f_0028.jpg (0:11:20), f_0031.jpg (0:13:58)</sub>
+
+- [0:11:11] Oh, yeah, so that is a good point.
+- [0:11:22] We have to be a little bit careful here because we are mixing radians and degrees, okay, so
+- [0:11:30] for the angular frequency
+- [0:11:32] we will use
+- [0:11:34] radians, right, so the angular frequency is radians per second, all right, and that's because
+- [0:11:40] radians are kind of the natural unit for
+- [0:11:44] angles, so that, you know, when you take the sine of the cosine and its derivatives and such, it works out the way that
+- [0:11:50] you want without some extraneous
+- [0:11:53] numerical factor in front, but for the
+- [0:11:57] phase angles, we will typically use degrees and
+- [0:12:02] that is because, you know, we have much more intuition for, say, what 120 degrees looks like versus what
+- [0:12:10] 2.3 radians or, you know, whatever it looks like, okay, so
+- [0:12:15] we are mixing
+- [0:12:17] radians, so this
+- [0:12:19] 4 times 10 to the 4th t, that is going to be an angle in radians,
+- [0:12:23] but the 120 degrees is an angle in degrees, okay, so if you're actually
+- [0:12:30] trying to calculate something numerically, you have to be careful about that, but
+- [0:12:35] you know, the reasoning behind mixing the
+- [0:12:39] angular units in this way is basically what I described.
+- [0:12:42] Okay, does that answer your question?
+- [0:12:45] Okay, so that's sort of a good cautionary note, right,
+- [0:12:53] so you should notice that
+- [0:12:56] we're mixing
+- [0:13:03] radians in the term omega times t and then degrees,
+- [0:13:13] all right, 120 degrees in, or I guess minus 120 degrees in the angle,
+- [0:13:20] that's the argument of the cosine, all right, and so
+- [0:13:25] it'll be typical, okay, to refer to the angular frequency omega in radians per second,
+- [0:13:39] but to the phase shifts in degrees.
+- [0:13:48] Okay, so any other questions on this?
+- [0:13:53] Okay, so then
+- [0:13:55] once we have written our signals in
+- [0:13:59] cosine form, then what we want to do is to transform everything in the circuit to the phasor domain,
+- [0:14:05] so now we want to transform to the phasor domain.
+- [0:14:15] Okay, so
+- [0:14:18] we have our input signal, right, the source, V sub s,
+- [0:14:24] okay, we have in the time domain, we've written it in the cosine form,
+- [0:14:30] so what is the phasor that corresponds to this time domain signal?
+- [0:14:36] What do you... Yes, that's right, so as a phasor, this is 15
+- [0:14:46] e to the, we'll write it as minus j times 120 degrees, okay.
+- [0:14:53] Then we have the
+- [0:14:56] impedances of our components, right, the resistor and the inductor, so for the resistor,
+- [0:15:03] right, the impedance of the resistor is just the resistance, okay, and
+- [0:15:09] for the inductor,
+- [0:15:10] the impedance of the inductor is
+- [0:15:15] j omega L, all right, and then
+- [0:15:18] we're going to want to deal with our current and also the voltage across the inductor
+- [0:15:24] as phasors as well, so
+- [0:15:27] the current,
+- [0:15:29] which is the time domain signal, we will work with as a phasor and then V sub L of t,
+- [0:15:36] which is what we ultimately want to solve for,
+- [0:15:38] we will work with that as a phasor as well, but eventually we will have to convert that back to
+- [0:15:45] the time domain, okay.
+- [0:15:48] So now once we've transformed everything to the phasor domain,
+- [0:15:52] then we just want to analyze the circuit in the phasor domain,
+
+## page 09  f_0069.jpg  on screen [0:15:51 – 0:19:12]
+<sub>sharpness 1656, ink 2.5 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0039.jpg (0:15:52), f_0042.jpg (0:18:27), f_0047.jpg (0:18:28), f_0066.jpg (0:19:02)</sub>
+
+- [0:15:48] So now once we've transformed everything to the phasor domain,
+- [0:15:52] then we just want to analyze the circuit in the phasor domain,
+- [0:16:08] okay, and so this is something that I
+- [0:16:12] think you've seen to various degrees in 302 or 302h, and
+- [0:16:17] essentially what we're doing now is just applying, oh yeah, question,
+- [0:16:34] yeah, so if you have, right, direct current meaning
+- [0:16:38] non-time varying signals, all right, then
+- [0:16:41] it actually becomes even simpler than what we've been doing for the last couple weeks because then
+- [0:16:47] you know, that's essentially a steady-state
+- [0:16:50] situation,
+- [0:16:52] and
+- [0:16:53] so the, you know, a capacitor will behave as an open circuit, an inductor as a short circuit, and all you'll have are sources and resistors.
+- [0:17:05] Phasors here are
+- [0:17:07] used specifically for
+- [0:17:10] sinusoidal signals, right, which is
+- [0:17:13] you know, another way they were referred to AC signals, so with a
+- [0:17:17] fixed and specified frequency, all right.
+- [0:17:22] What we were doing with time domain analysis a little bit earlier in the course
+- [0:17:27] was not restricted to
+- [0:17:30] just sinusoidal signals, right, so we could have
+- [0:17:33] say, input voltage signals that
+- [0:17:36] were not just sinusoidal, they could be, you know, they could be step functions, they could be exponential
+- [0:17:44] functions and the like, they could also be sinusoidal signals, but
+- [0:17:52] you know, that approach allows one to handle
+- [0:17:58] signals that are not just sinusoidal signals. Phasors are specifically for sinusoidal signals, and
+- [0:18:03] what we will see later in the course is that for linear circuits where you can apply superposition, you can construct
+- [0:18:11] ultimately almost any kind of signal by taking a superposition of
+- [0:18:16] sinusoidal signals at different frequencies, okay, so we will eventually get to that.
+- [0:18:21] Okay, any other questions?
+- [0:18:24] Okay, so if we go back and
+- [0:18:28] look at our circuit here, right, now everything is
+- [0:18:33] in phasors, we have complex impedances for the resistor and the inductor, and
+- [0:18:40] sort of the obvious way to analyze this circuit is to apply KVL
+- [0:18:45] around this loop, all right, so that the voltages
+- [0:18:49] across the resistor, the sum of the voltages across the resistor and the inductor are equal to,
+- [0:18:55] will be equal to the
+- [0:18:57] voltage associated with the source, okay, so
+- [0:19:03] basically what we're going to do is we're going to apply
+- [0:19:07] KVL around this loop, and so the voltage across the resistor is R times
+
+## page 10  f_0075.jpg  on screen [0:19:12 – 0:22:38]
+<sub>sharpness 2398, ink 3.5 %, colour 0.1</sub>
+
+- [0:19:07] KVL around this loop, and so the voltage across the resistor is R times
+- [0:19:16] the current as a phasor, the voltage across the inductor is j omega L, right, that's the impedance of the inductor times
+- [0:19:24] the current, and the sum of those has to be equal to the voltage
+- [0:19:30] across the voltage associated with the source, all right, and so we can just solve this for
+- [0:19:37] the current, it's 1 over R plus j omega L
+- [0:19:44] times
+- [0:19:46] V sub s, all right,
+- [0:19:48] so that is the current, and then
+- [0:19:51] now that we have the current, in order to get the voltage across the inductor, we just multiply it by
+- [0:19:58] the impedance of the inductor, all right, and then that'll be the answer, okay, so
+- [0:20:05] then the next step is to solve for
+- [0:20:11] the voltage across the inductor as a phasor first, and then we write it, we convert it back to the time domain to get the final
+- [0:20:17] result.
+- [0:20:19] Okay, so
+- [0:20:21] we just saw
+- [0:20:23] that
+- [0:20:25] the current is equal to 1 over R plus j omega L times V sub s, all right, so
+- [0:20:35] let's put the numbers into this and see what this looks like as essentially a complex number, okay,
+- [0:20:43] so we have 1
+- [0:20:45] over, and then R, remember is 3 ohms, and
+- [0:20:48] then that's plus j and omega is 4 times 10 to the 4th
+- [0:20:54] gradients per second, and then L
+- [0:20:56] was
+- [0:20:58] 0.1 millihenries, okay, so that is 10 to the minus 4
+- [0:21:05] henries, all right, and
+- [0:21:07] then V sub s, we saw, all right, it's still visible up here, is
+- [0:21:13] 15
+- [0:21:14] times e to the minus j
+- [0:21:17] times 120 degrees, okay, and
+- [0:21:22] so if we just
+- [0:21:25] multiply out, all right, this here in the denominator, right, this is easy
+- [0:21:30] because it's 4 times 10 to the 4th times 10 to the minus 4, there's a minus
+- [0:21:34] here,
+- [0:21:36] okay, then this is just 3 plus j times 4 in the denominator, right, so we're going to have
+- [0:21:44] 15
+- [0:21:46] e to the minus j times 120 degrees
+- [0:21:51] divided by
+- [0:21:53] 3 plus j times 4, all right, so that's what we have in the denominator. Now,
+- [0:22:00] eventually when we convert
+- [0:22:02] our signal, our signal specifically for V sub L
+- [0:22:06] from the phasor domain back to the time domain, then what we will want is to have that voltage in
+- [0:22:14] a sort of
+- [0:22:16] amplitude and phase, or magnitude and phase form, all right, not in this rectangular form over here. Here
+- [0:22:22] we have kind of a mix, all right, so in order to eventually get that voltage in
+- [0:22:29] magnitude and phase form, then we want to convert this 3 plus j times 4 from rectangular form to magnitude and phase form, all right, so
+- [0:22:39] so you probably know how to do that,
+
+## page 11  f_0080.jpg  on screen [0:22:38 – 0:24:23]
+<sub>sharpness 1891, ink 2.8 %, colour 0.1</sub>
+
+- [0:22:29] magnitude and phase form, then we want to convert this 3 plus j times 4 from rectangular form to magnitude and phase form, all right, so
+- [0:22:39] so you probably know how to do that,
+- [0:22:41] but just as a
+- [0:22:44] reminder, right, and
+- [0:22:46] also
+- [0:22:47] sort of looking at an easy way to remember how to do this or to visualize it,
+- [0:22:53] right, what we can do is we can plot
+- [0:22:58] this complex number, 3 plus j4,
+- [0:23:01] in the complex plane with the real part on the horizontal, on the x-axis, and
+- [0:23:07] the imaginary part on the y-axis, okay, so
+- [0:23:11] this is 3 on the real axis, and this is 4 on the imaginary axis,
+- [0:23:17] then 3 plus j4 is this point over here,
+- [0:23:21] all right, and then
+- [0:23:25] the line,
+- [0:23:26] right, going from the origin to that number is
+- [0:23:31] the magnitude, all right, and
+- [0:23:33] we can see from this little diagram here that you can either use the Pythagorean theorem to calculate
+- [0:23:41] the length of this line and therefore the magnitude, right, it's
+- [0:23:44] 3 squared, that's 9, plus 4 squared, that's 16, 9 plus 16 is 25, you take the square root of this 5,
+- [0:23:50] or you can recognize that, right, this is going to form a 3, 4, 5 triangle. Either way,
+- [0:23:56] we see that the magnitude is 5, and
+- [0:23:59] then the phase angle is
+- [0:24:01] this, all right, and
+- [0:24:04] again, all right, just from looking at the diagram, we can see that that phase angle is
+- [0:24:09] going to be the inverse tangent of
+- [0:24:14] 4 thirds, right, the inverse tangent of the imaginary part over the real part, okay, so
+- [0:24:20] what we are going to get then is
+
+## page 12  f_0087.jpg  on screen [0:24:23 – 0:26:51]
+<sub>sharpness 1865, ink 2.5 %, colour 0.1</sub>
+
+- [0:24:20] what we are going to get then is
+- [0:24:25] that the current as a phasor is going to be in the numerator 15 e to the minus j
+- [0:24:32] times 120 degrees
+- [0:24:34] divided by in the denominator, now the magnitude of 3 plus j4 is 5 and
+- [0:24:43] then the phase factor is e to the j
+- [0:24:47] times the inverse tangent of 4 thirds, all right, and then at this point
+- [0:24:56] right, you can just use your calculator to calculate the inverse tangent of 4 thirds. It is
+- [0:25:03] about 53.1 degrees, right, so this is going to be 15
+- [0:25:07] times e to the minus j times 120 degrees
+- [0:25:11] divided by 5 times e to the j
+- [0:25:16] times 53.1 degrees, right, and
+- [0:25:21] so overall the
+- [0:25:24] magnitude of i is going to be 15 over 5, that's 3, and
+- [0:25:29] then the phase factor is e going to be e to the minus j and then it'll be
+- [0:25:35] times
+- [0:25:36] 173.1 degrees, all right, because if we have e to the j
+- [0:25:42] times 53.1 degrees in the denominator that becomes e to the minus j
+- [0:25:48] times 53.1 degrees in the numerator, right, and then we add the exponents.
+- [0:25:55] Okay, so this is what we have
+- [0:25:57] as
+- [0:25:58] sort of the complex number value of the phasor for the current. Yes, question?
+- [0:26:04] Oh, so on exams and such, usually
+- [0:26:16] you know, what I'll do is I'll specify you should do things to three significant figures. Okay, so in this case that's 53.1 degrees,
+- [0:26:23] all right.
+- [0:26:26] You know, if you have, if this were say
+- [0:26:30] 120.7 degrees, then
+- [0:26:33] it's probably better to keep that point 7, so that in the end,
+- [0:26:38] right, if it ends up being a two-digit degree number, you'll still have that third significant figure. Any other questions?
+- [0:26:48] Okay, so
+- [0:26:50] now that we have the current,
+
+## page 13  f_0101.jpg  on screen [0:26:51 – 0:28:52]
+<sub>sharpness 1577, ink 2.1 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0098.jpg (0:28:52)</sub>
+
+- [0:26:50] now that we have the current,
+- [0:26:53] then we can get the voltage across the inductor, right, it's just j omega L times
+- [0:27:01] the current, okay, so it's going to be j omega, all right, is 4 times 10 to the 4th, L
+- [0:27:09] is 10 to the minus 4, and then I, we just saw, right, is 3 times e to the minus j
+- [0:27:18] 173.1 degrees.
+- [0:27:21] Okay, and
+- [0:27:23] so now if we just multiply this out, or we have 4 times 3,
+- [0:27:29] that's 12,
+- [0:27:32] okay, then we have 10 to the 4 times 10 to the minus 4, that's 1, so we don't have to write that down, and
+- [0:27:39] then we have this factor of j over here.
+- [0:27:43] J in
+- [0:27:46] sort of magnitude phase form is e to the j times 90 degrees, all right, because it's purely imaginary, that means it's vertical
+- [0:27:55] in
+- [0:27:57] the complex plane over here, so its phase angle is 90 degrees, all right, and it has magnitude 1.
+- [0:28:02] So j we write as e to the j
+- [0:28:06] times 90 degrees,
+- [0:28:08] okay, and then we have
+- [0:28:11] our phase factor e to the minus j,
+- [0:28:15] 173.1 degrees, okay, and then
+- [0:28:18] right now we multiply this out just by adding the phases and the exponents over here, and so we get 12
+- [0:28:28] times e to the
+- [0:28:30] minus j times 83.1 degrees, okay, so that is
+- [0:28:38] the result for the voltage across the inductor as a phasor, all right,
+- [0:28:43] and then the last step is going to convert that back to the time domain.
+- [0:28:46] So any questions to hear? Okay, so then once we have this,
+
+## page 14  f_0115.jpg  on screen [0:28:52 – 0:32:50]
+<sub>sharpness 1778, ink 2.5 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0106.jpg (0:29:44), f_0114.jpg (0:32:50)</sub>
+
+- [0:28:46] So any questions to hear? Okay, so then once we have this,
+- [0:28:55] then the last step is to convert
+- [0:29:00] v sub l from the phasor domain to the time domain, okay, and so v sub l of t, all right,
+- [0:29:13] remember, it's always going to be the real part of
+- [0:29:18] the phasor v sub l times e to the j omega t,
+- [0:29:23] okay, so this is the real part of,
+- [0:29:28] right, v sub l as a phasor is 12 e to the minus j
+- [0:29:33] times 83.1 degrees, and then times e to the j omega t,
+- [0:29:39] okay, and so then, right, we can easily see how to do this.
+- [0:29:47] We just combine the phases here, right, by adding them, and then when we take the real part,
+- [0:29:53] right, we're going to get 12 times the cosine of that phase angle, all right, so
+- [0:29:59] we get the v sub l of t is equal to 12
+- [0:30:04] times the cosine of,
+- [0:30:08] right, omega is 4 times 10 to the 4th,
+- [0:30:12] all right, times t
+- [0:30:14] minus 83.1 degrees, okay, and that's in volts.
+- [0:30:23] Okay, and so that is the result, and so that
+- [0:30:27] shows us kind of a simple example of how we actually carry out the
+- [0:30:32] the analysis of, in this case, a relatively simple circuit using phasors. Yes, question?
+- [0:30:36] Can you add frequency in of how much that component, or the signal across that component is changing, but because
+- [0:30:57] the
+- [0:30:59] signal frequency of the input is going to be the same as the one across that component, then you just
+- [0:31:07] save the one for the signal for the one across that component.
+- [0:31:11] Yes, that's right, so
+- [0:31:13] so we can only use phasor analysis if
+- [0:31:18] there's only a single angular frequency that we're working with, but
+- [0:31:26] you know, ultimately all the signals in circuit, they're going to come
+- [0:31:32] ultimately from
+- [0:31:34] the independent sources, all right, and
+- [0:31:38] so here we specify the voltage source to have this particular angular frequency, in this case 4 times 10 to the 4th,
+- [0:31:45] so everything else, all the other signals will have that same frequency.
+- [0:31:50] If you had, say, multiple sources and
+- [0:31:55] the signals at those sources were at different frequencies,
+- [0:31:59] all right, then
+- [0:32:01] you would not be able to analyze the whole thing all at once using phasors, all right,
+- [0:32:06] but what you could do is to use superposition,
+- [0:32:10] all right, just consider one of these sources at a time, turning all the others off, and then
+- [0:32:16] that would allow you to use phasors because then you would only have one frequency to deal with, and then you could use
+- [0:32:22] superposition to add up the contributions at all those other frequencies together to get your eventual result.
+- [0:32:29] Yeah, so right, so it would have to be a linear circuit, meaning, you know, linear components,
+- [0:32:39] because superposition only works for linear systems.
+- [0:32:44] Okay, any other questions?
+- [0:32:47] Okay, so
+- [0:32:50] right, so we have been using kind of the standard and
+
+## page 15  f_0127.jpg  on screen [0:32:50 – 0:35:23]
+<sub>sharpness 2683, ink 4.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0118.jpg (0:34:09), f_0119.jpg (0:34:09)</sub>
+
+- [0:32:50] right, so we have been using kind of the standard and
+- [0:32:58] well-known-to-us tools for circuit analysis in the phasor domain,
+- [0:33:03] and so it's worth looking explicitly at what that implies for
+- [0:33:10] specifically impedance transformations,
+- [0:33:17] meaning if we have series or parallel
+- [0:33:21] combinations of particular components, and then also various types of
+- [0:33:29] equivalent circuits.
+- [0:33:33] Okay, and the short answer here is that all the things that you learned
+- [0:33:38] about impedance transformations and equivalent circuits in
+- [0:33:42] 302 or 302h
+- [0:33:44] basically just carry over in essentially the same form
+- [0:33:48] for phasors as well. Okay, and so the reading for this,
+- [0:33:52] all right, is in
+- [0:33:58] Uliby et al., and it's sections
+- [0:34:02] 7-5 and 7-6. Okay, so
+- [0:34:09] and basically, all right, the reason this turns out to be the case is because
+- [0:34:14] KCL and KVL can be applied in their usual form for
+- [0:34:20] phasors, and therefore everything that depends on KCL and KVL in those forms,
+- [0:34:26] which is just about everything that we do with circuits and at some level will carry over as well. All right, so basically
+- [0:34:33] since KCL and KVL,
+- [0:34:38] right, these are valid
+- [0:34:41] for phasors,
+- [0:34:44] then
+- [0:34:46] write all the things that depend on them. So
+- [0:34:49] circuit,
+- [0:34:52] write the rules that we use
+- [0:34:54] to analyze circuits, the techniques, and so forth.
+- [0:35:05] All right, from
+- [0:35:07] 302 or 302h,
+- [0:35:10] all right, these all carry over to phasors as well. All right, so for example, if you have
+
+## page 16  f_0140.jpg  on screen [0:35:23 – 0:39:24]
+<sub>sharpness 2540, ink 4.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0131.jpg (0:35:24), f_0134.jpg (0:38:21), f_0135.jpg (0:38:22), f_0139.jpg (0:39:23)</sub>
+
+- [0:35:10] all right, these all carry over to phasors as well. All right, so for example, if you have
+- [0:35:25] impedances in series, okay, so
+- [0:35:35] unless you, all right, say if you have
+- [0:35:38] a series of components with different impedances, say z1,
+- [0:35:46] z2,
+- [0:35:49] and so forth up to, say, z sub n, all right,
+- [0:35:57] then, right, we knew, you knew from 302 or 302h, if these were resistors,
+- [0:36:02] then the equivalent resistance would just be the sum of the individual resistances that
+- [0:36:08] generalizes in the obvious way to impedances as well. All right, so the equivalent
+- [0:36:18] impedance of a set of impedances in series is just going to be the sum of
+- [0:36:26] the individual
+- [0:36:29] impedances, all right, and it works out that way basically because
+- [0:36:36] all right, we know that the voltages of
+- [0:36:38] components in series,
+- [0:36:40] you add them together to get the total voltage, and then since there is series, we know the currents are the same,
+- [0:36:46] all right, so then if you just work out the consequences of that, then
+- [0:36:51] you pretty directly get to get to this, and that was the same way that presumably
+- [0:36:56] you arrived at the analogous relationship or the specialized version of this
+- [0:37:03] for resistors only, all right, and then similarly if we have impedances in
+- [0:37:15] parallel,
+- [0:37:17] all right, so
+- [0:37:18] say something like
+- [0:37:21] this, okay, so this would be
+- [0:37:45] components in parallel, all right, then
+- [0:37:49] this, right, we know what this should be if these were all resistors, and
+- [0:37:56] that result generalizes in the obvious way to impedances as well,
+- [0:38:02] all right, so 1 over the equivalent impedance of this parallel combination is equal to the sum
+- [0:38:12] of the reciprocals of the individual
+- [0:38:16] impedances, right, in the same way that it works for
+- [0:38:19] resistors, all right,
+- [0:38:21] and then
+- [0:38:23] from this, then you can also see that things like voltage division, current division, and so forth also carry forward in
+- [0:38:31] kind of the obvious way from
+- [0:38:33] just purely resistive circuits to phasors, all right, so concepts of
+- [0:38:44] voltage and current division, all right, these apply
+- [0:38:52] to impedances, all right, just as they applied, all right, to resistances
+- [0:39:07] when you work with them in 302 or 302h, okay, so any questions to here?
+- [0:39:22] Okay, and then
+
+## page 17  f_0158.jpg  on screen [0:39:24 – 0:46:40]
+<sub>sharpness 2737, ink 4.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0143.jpg (0:39:25), f_0146.jpg (0:41:16)</sub>
+
+- [0:39:22] Okay, and then
+- [0:39:26] all right, hopefully you also remember source transformations, all right, remember this was the idea that if you had
+- [0:39:38] say a combination of components that
+- [0:39:44] corresponded to a realistic voltage source,
+- [0:39:47] all right, now
+- [0:39:49] so in 302 or 302h, this is probably a voltage source and a resistor in series, now it's a voltage source and
+- [0:39:56] an impedance in series
+- [0:40:01] connected to two terminals, all right, so you have
+- [0:40:05] some voltage and some current
+- [0:40:09] at those terminals, then
+- [0:40:12] that could be represented using an equivalent circuit
+- [0:40:18] consisting of a current source,
+- [0:40:21] all right, an ideal current source in
+- [0:40:28] parallel with an impedance,
+- [0:40:38] okay, and
+- [0:40:40] these being equivalent circuit means that the relationship between the current
+- [0:40:46] and the voltage at the output terminals has to be the same for both of these and then
+- [0:40:53] I write the key in
+- [0:40:55] using source transformations is to know how to go back and forth
+- [0:40:59] between these configurations, that is if you had something like this,
+- [0:41:04] right, the realistic voltage source configuration, then how would you have to select this
+- [0:41:10] current and this impedance to get the equivalent circuit, all right,
+- [0:41:15] so
+- [0:41:17] perhaps you remember how to do that, but just as a reminder of
+- [0:41:22] what those relationships are and how you arrive at them, all right, we know that
+- [0:41:28] say for this
+- [0:41:30] configuration over here, all right, we know that
+- [0:41:33] the voltage V
+- [0:41:36] at these terminals, right, it has to be equal to the voltage source
+- [0:41:41] minus the voltage drop across this
+- [0:41:44] impedance, right, and the voltage drop across the impedance is I times Z sub S, so this is going to be
+- [0:41:51] the voltage source as a phasor minus
+- [0:41:55] the current
+- [0:41:57] times Z sub S or
+- [0:42:01] equivalently
+- [0:42:02] we could take this, right, so this is a linear relationship between
+- [0:42:07] voltage and current,
+- [0:42:09] right, so we can take this and instead of having it solved for the voltage,
+- [0:42:14] we could solve this same equation for the current, if we do that,
+- [0:42:19] we get the current is equal to
+- [0:42:22] the voltage divided by
+- [0:42:26] the impedance
+- [0:42:29] minus V
+- [0:42:31] over
+- [0:42:34] the impedance, okay, and then for the current source configuration over here,
+- [0:42:42] all right, we know that
+- [0:42:44] the current,
+- [0:42:46] all right, that we have at the terminal over here has to be the current associated with the source,
+- [0:42:52] right, I sub S, minus
+- [0:42:55] whatever current flows down this branch over here,
+- [0:42:58] but the current that flows down this branch has to be the voltage across the branch, which is V
+- [0:43:05] divided by the impedance, so minus V over
+- [0:43:11] Z sub S,
+- [0:43:13] all right, so this again is a linear relationship between the current and the voltage,
+- [0:43:19] instead of having it solve for the current over here, we could solve it for the voltage, all right, so we do that,
+- [0:43:26] oops, right, we get that the voltage is equal to I sub S times Z sub S
+- [0:43:40] minus I
+- [0:43:42] times
+- [0:43:44] Z sub S, all right, and then
+- [0:43:48] to see how to go back and forth, right, between these configurations, that is how to execute the source transformation,
+- [0:43:55] all right, all we have to do is to recognize that in order for these to be equivalent circuits,
+- [0:44:01] the current voltage relationship that we have over here and that we have over here, those have to be the same,
+- [0:44:07] all right, so we just have to pick the values, say if we wanted to go from
+- [0:44:13] the
+- [0:44:15] realistic current source configuration,
+- [0:44:18] okay, over to the realistic voltage source configuration, then that would mean that we would have to pick
+- [0:44:24] V sub S over here,
+- [0:44:27] so that
+- [0:44:29] we get, so that this
+- [0:44:33] current voltage relationship over here, all right, is the same as
+- [0:44:38] this one over here, all right, and then once you look at it that way, then it's easy to see how you should do that,
+- [0:44:44] all right, V sub S over here is the constant term in this
+- [0:44:49] current voltage relationship, I sub S times Z sub S is the constant term over here,
+- [0:44:54] so that means that to do the source transformation in this direction,
+- [0:44:57] we have to pick V sub S to be equal to I sub S
+- [0:45:02] times
+- [0:45:04] Z sub S and
+- [0:45:06] then
+- [0:45:08] the slope has to be the same here and here,
+- [0:45:13] all right, in both cases the slope is
+- [0:45:16] just the value of this impedance, right, here or here, and so that means that the impedances have to be the same
+- [0:45:23] in both cases,
+- [0:45:29] okay, and then
+- [0:45:32] correspondingly, if we have the
+- [0:45:37] realistic voltage source configuration over here, and we want to go to the realistic current source configuration, then
+- [0:45:46] we have to have these linear current voltage relationships to be the same,
+- [0:45:52] so we can compare, say, this one over here
+- [0:45:55] to this one over here,
+- [0:45:58] that means that I sub S, the constant term, has to be the same here as it is over here,
+- [0:46:04] here the constant term is V sub S over Z sub S, so that means that to go in this direction,
+- [0:46:10] you pick I sub S to be equal to V sub S
+- [0:46:14] over Z sub S, and then again,
+- [0:46:18] the impedances, right,
+- [0:46:21] it's the slope, so one over Z sub S over here, so one over Z sub S over here,
+- [0:46:26] that means that Z sub S has to be the same in both cases, so it's unchanged,
+- [0:46:33] okay, and so that's how
+- [0:46:36] source transformations carry over, and a quick review of what you hopefully saw before
+
+## page 18  f_0166.jpg  on screen [0:46:40 – 0:46:55]
+<sub>sharpness 1613, ink 2.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0165.jpg (0:46:55)</sub>
+
+- [0:46:36] source transformations carry over, and a quick review of what you hopefully saw before
+- [0:46:42] regarding source transformations in 302 or 302H, so any questions to hear? Okay, and then
+- [0:46:56] the other one that we will talk about is
+
+## page 19  f_0169.jpg  on screen [0:46:55 – 0:48:50]
+<sub>sharpness 2426, ink 3.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0168.jpg (0:48:00)</sub>
+
+- [0:46:42] regarding source transformations in 302 or 302H, so any questions to hear? Okay, and then
+- [0:46:56] the other one that we will talk about is
+- [0:47:02] Thevenin equivalent circuits, okay, so remember the basic idea in Thevenin equivalent circuits is
+- [0:47:16] that if we have
+- [0:47:18] just in general some actual, or what we'll call our actual linear circuit,
+- [0:47:23] okay, so this can be any linear circuit with
+- [0:47:29] two terminal connections like this,
+- [0:47:32] then we know that there will have to be a current
+- [0:47:36] and a voltage
+- [0:47:39] associated with those terminals and this actual linear circuit, and the idea of
+- [0:47:45] Thevenin equivalent circuits is that
+- [0:47:48] basically
+- [0:47:49] since the relationship between the current and the voltage over here has to be a linear relationship,
+- [0:47:55] right, between that current and voltage, then we should be able to construct an
+- [0:48:00] equivalent circuit to this that gives us the same
+- [0:48:06] linear relationship between current and voltage, right, so any
+- [0:48:10] circuit configuration that will give us this linear
+- [0:48:13] relation with sufficient generality will suffice, and with Thevenin equivalent circuits,
+- [0:48:19] all right, then we choose the form of the equivalent circuit
+- [0:48:23] to be
+- [0:48:25] just a voltage source
+- [0:48:31] with the Thevenin voltage in series with the Thevenin now impedance, and
+- [0:48:37] this has to give us the same relationship between
+- [0:48:41] the current and the voltage at the output terminals that we have in the actual circuit over here, all right, so
+- [0:48:49] so that's just a
+- [0:48:50] reminder of what the basic idea is
+
+## page 20  f_0170.jpg  on screen [0:48:50 – 0:48:51]
+<sub>sharpness 2090, ink 3.1 %, colour 0.2</sub>
+
+- [0:48:50] reminder of what the basic idea is
+
+## page 21  f_0190.jpg  on screen [0:48:51 – 0:54:29]
+<sub>sharpness 3355, ink 5.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0171.jpg (0:48:52), f_0175.jpg (0:50:24), f_0182.jpg (0:52:57)</sub>
+
+- [0:48:50] reminder of what the basic idea is
+- [0:48:54] for Thevenin equivalent circuits, and
+- [0:48:58] as you
+- [0:49:01] perhaps recall from 302 or 302h,
+- [0:49:05] right, then the way that you can solve for the Thevenin
+- [0:49:10] equivalent voltage is to recognize that
+- [0:49:13] if you just leave these
+- [0:49:15] terminals
+- [0:49:17] unconnected to anything out here in both these cases, then
+- [0:49:21] that is what defines the open circuit voltage, all right, for
+- [0:49:26] a circuit configuration like this, and if we have the same open circuit configuration
+- [0:49:33] that the output terminals over here, then this current has to be zero,
+- [0:49:39] so the voltage here has to be the Thevenin equivalent voltage, all right,
+- [0:49:43] so then that tells us that the Thevenin equivalent voltage is just the open circuit voltage of the original circuit, all right, so
+- [0:49:50] this is equal to the open circuit voltage as a phasor, all right,
+- [0:49:58] for the actual
+- [0:50:05] linear circuit,
+- [0:50:06] the, and then the Thevenin impedance, or in 302 or 302h,
+- [0:50:13] you probably looked at this as the Thevenin equivalent resistance, all right, one way of getting it was to recognize that
+- [0:50:21] if we made the short circuit connection, all right, so that is
+- [0:50:26] just using a wire to connect these two
+- [0:50:29] terminals over here, then
+- [0:50:31] right, we can figure out what the current is that flows at these terminals, that's the short circuit current, and
+- [0:50:38] then over here in this configuration, if we make the same short circuit connection, then
+- [0:50:44] I
+- [0:50:46] write the current also has to be equal to that same short circuit current, and in that case
+- [0:50:52] we can figure out that the impedance has to be
+- [0:50:56] the Thevenin voltage, which is the open circuit voltage divided by the short circuit current, all right, so we know that the Thevenin
+- [0:51:05] impedance has to be the open circuit voltage
+- [0:51:10] divided by the short circuit
+- [0:51:12] current, all right, this is what we call the short circuit method, all right, for calculating the Thevenin
+- [0:51:23] resistance or impedance, all right, but that only works if
+- [0:51:28] the open circuit voltage is non-zero, right, if the open circuit voltage is zero,
+- [0:51:35] right, the Thevenin voltage will be zero, and the current, the short circuit current will also be zero, and
+- [0:51:40] so this will give you zero over zero, right, which is undefined, so then in that case
+- [0:51:47] what you can do is you can attach an
+- [0:51:52] external source over here, it can be either a current source or a voltage source, and then
+- [0:51:59] you turn off, that is set to zero,
+- [0:52:03] the Thevenin voltage over here, which is equivalent to
+- [0:52:07] turning off all of the independent sources over here, and then once you do that, then
+- [0:52:12] the Thevenin impedance, or in 302 or 302H, it was the Thevenin resistance, is just the
+- [0:52:20] the voltage over the current in that configuration, all right, so
+- [0:52:24] the other way of doing it is
+- [0:52:29] all right, you can say that the Thevenin equivalent impedance is
+- [0:52:33] the external value of the voltage divided by the external value of
+- [0:52:38] the current, or the voltage and divided by the current associated with having this external source,
+- [0:52:44] this is called the external source method,
+- [0:52:54] okay, and then
+- [0:52:56] you can do exactly the same thing, or the analogous thing,
+- [0:53:00] for Norton equivalent circuits as well, right, so the generalization to Norton equivalent circuits
+- [0:53:05] is carried over in exactly the same way, right, so Norton equivalent circuits
+- [0:53:20] generalize to phasors, right, in
+- [0:53:28] really the analogous way, okay, so any questions on
+- [0:53:39] Thevenin equivalent circuits in the phasor domain, yes?
+- [0:53:53] Yeah, so we will get to that later when we talk about how we deal with power
+- [0:53:58] in the phasor domain, and
+- [0:54:01] yeah, so the short version or a little bit of a preview is that
+- [0:54:05] if you take your source circuit and
+- [0:54:09] you know, represent it by its Thevenin equivalent, then for the load, if you want to maximize the power transfer, then
+- [0:54:16] the way that you do that, as you mentioned, is to take the load
+- [0:54:22] impedance and set it to the complex conjugate of the source impedance, okay,
+- [0:54:27] and we'll see that later.
+- [0:54:29] Yeah, the generalization of
+
+## page 22  f_0203.jpg  on screen [0:54:29 – 0:57:33]
+<sub>sharpness 2627, ink 4.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0193.jpg (0:54:33), f_0197.jpg (0:55:11), f_0198.jpg (0:55:12), f_0199.jpg (0:55:54), f_0202.jpg (0:57:32)</sub>
+
+- [0:54:29] Yeah, the generalization of
+- [0:54:31] power generally to the phasor domain is more complicated because
+- [0:54:37] for power you're multiplying current and voltage, and so
+- [0:54:42] if you're taking a
+- [0:54:44] complex representation of the current and the complex representation of the voltage, then
+- [0:54:48] you have to be a little bit careful about how you multiply them together in order to get the correct result,
+- [0:54:52] and we'll talk about the details of that in a little bit.
+- [0:54:58] Excuse me?
+- [0:55:01] Yeah, not necessarily. That's right. Yes. Any other questions?
+- [0:55:07] Okay, so what we have been doing with phasors so far has really involved
+- [0:55:16] sort of working with them as algebraic quantities, but a lot of times if we're thinking about the phase then
+- [0:55:24] it can be easier to understand and visualize what's happening if we have some geometric representation.
+- [0:55:31] All right, so that brings us to the topic of
+- [0:55:35] phasor diagrams. Okay, and so the reading for this is
+- [0:55:44] in
+- [0:55:47] Uliby et al. and it's section
+- [0:55:51] 7-7, okay, and
+- [0:55:54] basically what a phasor diagram does is it's just taking different phasor quantities, currents and voltages and
+- [0:56:02] plotting them in this two-dimensional complex plane,
+- [0:56:06] where the real part is on the horizontal axis and the imaginary part is on the vertical axis.
+- [0:56:11] So a phasor diagram, what we're really doing is, or what it really does is it shows
+- [0:56:23] voltages and or currents,
+- [0:56:32] as vectors
+- [0:56:35] in
+- [0:56:36] two-dimensional
+- [0:56:42] complex plane.
+- [0:56:48] And these can be helpful in visualizing
+- [0:56:58] the phase and
+- [0:57:03] some degree of the magnitude
+- [0:57:07] relationships
+- [0:57:14] among the different circuit quantities that one is working with. Okay, so that is the basic idea of
+- [0:57:27] phasor diagrams.
+- [0:57:29] Okay, and
+- [0:57:32] to see how this works,
+
+## page 23  f_0217.jpg  on screen [0:57:33 – 1:00:15]
+<sub>sharpness 2095, ink 3.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0204.jpg (0:57:35), f_0206.jpg (0:58:01), f_0210.jpg (1:00:12)</sub>
+
+- [0:57:32] to see how this works,
+- [0:57:35] we will look at an example of this. We'll look at phasor diagrams,
+- [0:57:48] okay, for
+- [0:57:51] series RLC circuit. Okay, so the circuit that we will look at here,
+- [0:58:05] all right, we have a voltage V sub S of T, and then we have a resistor, a
+- [0:58:15] capacitor, and an inductor. Okay, so resistor R, capacitor C,
+- [0:58:25] inductor L, all right, and then each of these
+- [0:58:29] will have a voltage, right, V sub R for the resistor,
+- [0:58:35] V sub C for the capacitor,
+- [0:58:38] and V sub L for the inductor, okay, and then there'll be some current
+- [0:58:46] flowing around this loop,
+- [0:58:50] and
+- [0:58:52] what we will do is we'll say that
+- [0:58:55] the input voltage signal, right, the value, the signal associated with the voltage source is going to be
+- [0:59:03] 20
+- [0:59:05] times the cosine of
+- [0:59:09] 500 T plus
+- [0:59:13] 30 degrees,
+- [0:59:15] right, which means that that's in volts, okay, so the angular frequency is 500 radians
+- [0:59:25] per second, okay, and then
+- [0:59:29] we'll take the resistor to have a value of 8 ohms,
+- [0:59:33] the capacitor to have a value of 0.25
+- [0:59:39] millihertz, and the inductor to have a value of 4
+- [0:59:43] millihenries, okay, and so what we want to do is to calculate,
+- [0:59:51] we want to convert the voltage signal to the phasor domain and then
+- [0:59:57] calculate the currents and all these voltages as phasors as well, and then
+- [1:00:03] we'll plot them in this two-dimensional complex plane to see how the phasor diagram helps us to visualize, in
+- [1:00:10] particular, the phase relationships among those quantities, okay, so any questions on this circuit before we start?
+
+## page 24  f_0218.jpg  on screen [1:00:15 – 1:01:07]
+<sub>sharpness 2622, ink 3.8 %, colour 0.2</sub>
+
+- [1:00:10] particular, the phase relationships among those quantities, okay, so any questions on this circuit before we start?
+- [1:00:20] Okay, so
+- [1:00:22] if we're working in the phasor domain,
+- [1:00:27] all right, basically we want to convert all these quantities to phasors, all right, so
+- [1:00:35] for the voltage source,
+- [1:00:37] right, if we have this as our time domain sinusoidal signal, what is the phasor
+- [1:00:44] that corresponds to this? What do you think? Yes, right, so it's 20
+- [1:00:53] times e to the j
+- [1:00:56] times 30 degrees, or
+- [1:00:58] 30 degrees, all right, so we'll box the quantities that we eventually want to plot in the phasor diagram,
+- [1:01:05] okay, once we have solved for them,
+- [1:01:08] so then we're also going to, right, we want the current, so that's going to be
+
+## page 25  f_0308.jpg  on screen [1:01:07 – 1:07:58]
+<sub>sharpness 3694, ink 5.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0226.jpg (1:03:25), f_0247.jpg (1:03:33), f_0257.jpg (1:03:48), f_0264.jpg (1:04:46), f_0279.jpg (1:07:38), f_0298.jpg (1:07:43), f_0303.jpg (1:07:57)</sub>
+
+- [1:01:05] okay, once we have solved for them,
+- [1:01:08] so then we're also going to, right, we want the current, so that's going to be
+- [1:01:15] represented as a phasor, I twill,
+- [1:01:18] the impedance of
+- [1:01:20] the resistor is just the resistance, which is 8 ohms, all right,
+- [1:01:26] the impedance of
+- [1:01:29] the capacitor, all right, is 1 over j omega c,
+- [1:01:34] okay, so this is
+- [1:01:36] 1 over j,
+- [1:01:39] omega is 500 radians per second, and then
+- [1:01:43] c is
+- [1:01:46] 0.25 milli farads,
+- [1:01:52] okay, and
+- [1:01:54] so now, right, if we look at this denominator over here,
+- [1:01:58] we have 500,
+- [1:02:01] say times milli, right, milli is 10 to the minus 3, so 500 times 10 to the minus 3 is 1 half,
+- [1:02:07] right, and then 0.25, that's 1 quarter,
+- [1:02:10] so in the denominator here, we have j times 1 half times 1 quarter, so that's j times 1 eighth,
+- [1:02:16] all right, and if we take the reciprocal of that, right, the reciprocal of
+- [1:02:21] 1 eighth is 8, and the reciprocal of
+- [1:02:27] or
+- [1:02:29] yeah, of j is
+- [1:02:32] minus j, right, so we're going to have minus j
+- [1:02:37] times 8 as
+- [1:02:39] the impedance of the capacitor, right, that's in ohms, and
+- [1:02:44] then the impedance of the inductor,
+- [1:02:47] right, it's j omega l,
+- [1:02:51] alright, so it's j times omega, which is 500, and then l, the impedance is 4 milli henries,
+- [1:02:59] alright, so here we have
+- [1:03:02] say 500
+- [1:03:04] times 4, that's 2,000,
+- [1:03:07] times milli, that's 10 to the minus 3, so 2,000 times 10 to the minus 3 is 2, and then we have j over here,
+- [1:03:13] so this is equal to j times 2,
+- [1:03:16] also in ohms, alright, so these are now
+- [1:03:22] the impedances of
+- [1:03:25] our different circuit components, and
+- [1:03:29] now to solve for say the current
+- [1:03:33] in this circuit over here, right, we can just apply KVL around this loop, right,
+- [1:03:39] which again will tell us that the sum of the voltages across all these components has to be equal to
+- [1:03:45] the value of the voltage source,
+- [1:03:49] okay, so then now,
+- [1:03:52] if we apply KVL around the loop, right, this tells us that
+- [1:04:02] the impedance across the resistor,
+- [1:04:04] or of the resistor plus the impedance of the capacitor plus the impedance of the inductor
+- [1:04:10] times the current has to be equal to
+- [1:04:14] the voltage source, alright, so then the impedance of the resistor is 8 ohms,
+- [1:04:21] alright, the impedance of the capacitor is minus j times 8, and the impedance of the inductor is
+- [1:04:29] plus j times 2, alright, so that's what we have from here,
+- [1:04:35] that times
+- [1:04:38] the phasor for the current is
+- [1:04:40] equal to the phasor for the voltage source, right, and
+- [1:04:45] so that means that then
+- [1:04:48] the phasor for the current, right, so here this is 8 minus j times 6,
+- [1:04:57] alright, so this is going to be 1 over 8 minus j times 6 times
+- [1:05:08] v sub s twiddle, right, and
+- [1:05:11] then
+- [1:05:13] the phasor for the voltage source v sub s, right, we saw up here, it's 20 times e to the j of 30 degrees, alright,
+- [1:05:21] so we're going to have
+- [1:05:22] 20
+- [1:05:24] e to the j,
+- [1:05:25] 30 degrees, right, that's in the numerator, and then we have 8 minus j times 6 in the denominator,
+- [1:05:34] okay, and
+- [1:05:35] so again, we want to take this denominator and
+- [1:05:40] write it in
+- [1:05:42] magnitude phase form, right, in polar form, alright, so in the numerator we're still going to have 20 e to the j times
+- [1:05:49] 30 degrees, and
+- [1:05:51] then in the denominator,
+- [1:05:54] what's the magnitude of 8 minus j times 6?
+- [1:05:58] 10, right,
+- [1:06:01] either from sort of the 3, 4, 5
+- [1:06:04] triangle multiplied by 2 or the Pythagorean theorem, and
+- [1:06:08] then for the phase factor we have
+- [1:06:12] it's going to be e to the j times the inverse tangent of
+- [1:06:18] minus 6 over 8, right, the imaginary part over the real part,
+- [1:06:23] but we can take the minus sign out of the inverse tangent, so it's going to give us e to the minus j times
+- [1:06:30] the inverse tangent of
+- [1:06:35] 6 over 8 or 3 fourths, okay, and
+- [1:06:38] so now here, all right, we're going to get
+- [1:06:46] 20 over 10, which is 2, and then we have e to the
+- [1:06:52] j times 30 degrees, right, from up here, and then if we take this
+- [1:06:59] in the denominator and move it to the numerator, then we just lose this minus sign in the exponent, so we're going to get
+- [1:07:07] e to the j
+- [1:07:10] times the inverse tangent of 6 over 8, and if you plug that into your calculator, it's 36.9 degrees.
+- [1:07:18] Okay, and so
+- [1:07:21] we get
+- [1:07:23] that this is 2 times e to the j
+- [1:07:27] 66.9 degrees, and that's
+- [1:07:30] the phasor for
+- [1:07:32] the current.
+- [1:07:36] Okay, and then once we have the phasor for the current, then
+- [1:07:43] all right, if we look at our original circuit up here, once we have the phasor for the current,
+- [1:07:47] then we can get each of the phasors for each of these voltages by
+- [1:07:52] multiplying that current by the impedance of that component, okay?
+- [1:07:58] So
+
+## page 26  f_0315.jpg  on screen [1:07:58 – 1:07:59]
+<sub>sharpness 2185, ink 3.3 %, colour 0.2</sub>
+
+- [1:07:58] So
+
+## page 27  f_0321.jpg  on screen [1:07:59 – 1:09:48]
+<sub>sharpness 2935, ink 4.0 %, colour 0.2</sub>
+
+- [1:07:58] So
+- [1:08:03] once we have the current, then we know that the voltage
+- [1:08:07] across the resistor as a phasor is the impedance of the resistor R
+- [1:08:13] times the current, so that's going to be
+- [1:08:16] 8 ohms
+- [1:08:17] times
+- [1:08:19] 2 times e to the j 66.9 degrees, right? So that's going to be
+- [1:08:25] 16 e to the j
+- [1:08:28] 66.9 degrees, and that's
+- [1:08:31] the voltage
+- [1:08:34] phasor for the resistor. The voltage across the capacitor is
+- [1:08:41] its impedance, 1 over j omega c
+- [1:08:44] times I twiddle.
+- [1:08:47] Remember we saw that the impedance of
+- [1:08:50] the capacitor was minus j times 8
+- [1:08:55] ohms, all right, times 2, and then I is 2 times e to the j
+- [1:09:02] 66.9 degrees. Okay, so now we're going to have
+- [1:09:08] 8 times 2 at 16
+- [1:09:10] minus j
+- [1:09:12] we can write as e to the minus j
+- [1:09:14] 90 degrees, right, because it's a vector pointing directly downward in
+- [1:09:19] the complex plane, all right, and then times e to the j
+- [1:09:24] 66.9 degrees, all right, and so putting that together we get 16
+- [1:09:32] e to the minus j
+- [1:09:38] 23.1 degrees.
+- [1:09:40] That is the
+- [1:09:43] phasor for the voltage across the capacitor, and then finally
+
+## page 28  f_0372.jpg  on screen [1:09:48 – 1:11:07]
+<sub>sharpness 1346, ink 1.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0350.jpg (1:10:55), f_0353.jpg (1:11:03), f_0359.jpg (1:11:04), f_0364.jpg (1:11:05), f_0369.jpg (1:11:06), f_0371.jpg (1:11:06)</sub>
+
+- [1:09:43] phasor for the voltage across the capacitor, and then finally
+- [1:09:50] we
+- [1:09:52] have the voltage across the inductor. That is the impedance of the inductor j omega l
+- [1:09:58] times
+- [1:09:59] the phasor i. So remember j omega l, all right, the impedance of
+- [1:10:05] the inductor is
+- [1:10:07] j times 2, so we're multiplying that by 2 times e to the j
+- [1:10:13] 66.9 degrees, and
+- [1:10:14] so that is going to give us 2 times 2 is 4, and then j is
+- [1:10:20] e to the j times 90 degrees, and then we have e to the j
+- [1:10:25] 66.9 degrees.
+- [1:10:27] So now we have
+- [1:10:29] 4 times e to the j
+- [1:10:34] 156.9 degrees, all right, and that's the phasor for the voltage across the inductor.
+- [1:10:43] Okay, so now
+- [1:10:45] basically what we have are all the voltages across the different components.
+- [1:10:51] We have the current as a phasor over here, and then we have our
+- [1:10:57] original voltage source as a phasor over here.
+- [1:10:59] So what we want to do is to plot all of these things together on a
+- [1:11:04] two-dimensional complex plane. That'll be the phasor diagram. So any questions before we do that?
+
+## page 29  f_0385.jpg  on screen [1:11:07 – 1:11:48]
+<sub>sharpness 3094, ink 4.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0373.jpg (1:11:45), f_0376.jpg (1:11:46), f_0377.jpg (1:11:47), f_0378.jpg (1:11:47)</sub>
+
+- [1:11:04] two-dimensional complex plane. That'll be the phasor diagram. So any questions before we do that?
+- [1:11:11] Okay, so now we're looking at
+- [1:11:16] phasor diagrams
+- [1:11:20] for this circuit, and there are actually two ways to
+- [1:11:23] to do it.
+- [1:11:25] One, which we'll do first, is
+- [1:11:32] alright, so the two-dimensional complex plane, right, real part of the horizontal axis, imaginary part on the vertical axis,
+- [1:11:39] right, what we want to do is we'll just plot these phasor quantities
+- [1:11:44] as we computed them, okay?
+- [1:11:47] So if we look at
+- [1:11:49] say the
+
+## page 30  f_0421.jpg  on screen [1:11:48 – 1:12:25]
+<sub>sharpness 1217, ink 2.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0416.jpg (1:12:12), f_0420.jpg (1:12:12)</sub>
+
+- [1:11:47] So if we look at
+- [1:11:49] say the
+- [1:11:52] current here, and the voltage across the resistor, right, these have the same phase angle.
+- [1:12:00] So they will be parallel vectors in
+- [1:12:04] the complex plane, and they have different magnitudes here, right, 16 for
+- [1:12:09] V sub R2 for
+- [1:12:12] the current, right, we're being a little bit sloppy here because we are
+- [1:12:18] comparing numbers that have different units, alright, which you're not really supposed to do.
+- [1:12:23] But for our purposes now, right, the main thing that we're
+
+## page 31  f_0427.jpg  on screen [1:12:25 – 1:13:14]
+<sub>sharpness 2961, ink 4.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0422.jpg (1:13:10)</sub>
+
+- [1:12:23] But for our purposes now, right, the main thing that we're
+- [1:12:27] intending to give A here is that they're parallel, so we'll plot them
+- [1:12:32] together, alright, so
+- [1:12:35] 66.9 degrees,
+- [1:12:37] alright, this would be
+- [1:12:40] V sub R, and then we'll draw, I'll draw it in red here, the
+- [1:12:50] phasor for the current like this, and
+- [1:12:54] the angle here is going to be
+- [1:12:59] 66.9 degrees. Okay, so those are the vectors representing the voltage across the resistor and
+- [1:13:08] the currents. Now,
+- [1:13:11] alright, if we go back
+- [1:13:14] over here, alright, we see that the voltage source has a phase angle of
+
+## page 32  f_0440.jpg  on screen [1:13:14 – 1:13:28]
+<sub>sharpness 3673, ink 5.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0430.jpg (1:13:16)</sub>
+
+- [1:13:14] over here, alright, we see that the voltage source has a phase angle of
+- [1:13:24] 30 degrees. Okay, so we will draw that, that'll look something
+
+## page 33  f_0441.jpg  on screen [1:13:28 – 1:13:30]
+<sub>sharpness 2972, ink 4.3 %, colour 0.2</sub>
+
+- [1:13:24] 30 degrees. Okay, so we will draw that, that'll look something
+
+## page 34  f_0459.jpg  on screen [1:13:30 – 1:13:59]
+<sub>sharpness 1826, ink 2.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0442.jpg (1:13:30)</sub>
+
+- [1:13:24] 30 degrees. Okay, so we will draw that, that'll look something
+- [1:13:36] like this, right, so this is the voltage source, this angle here is
+- [1:13:42] 30 degrees,
+- [1:13:44] okay, then
+- [1:13:47] we have
+- [1:13:50] the voltage across the
+- [1:13:52] capacitor that has a negative phase angle, so it's going to be in the fourth quadrant, it's minus 23.1 degrees.
+- [1:13:58] Alright, so that's going to be
+
+## page 35  f_0475.jpg  on screen [1:13:59 – 1:19:12]
+<sub>sharpness 2986, ink 4.2 %, colour 0.3</sub>
+<sub>earlier states of this page: f_0471.jpg (1:18:29)</sub>
+
+- [1:13:58] Alright, so that's going to be
+- [1:14:01] like this, alright, so
+- [1:14:07] this is the voltage across the
+- [1:14:09] capacitor, this angle is minus 23.1 degrees.
+- [1:14:14] Okay, and then
+- [1:14:16] finally,
+- [1:14:18] we have
+- [1:14:20] the voltage across the
+- [1:14:22] inductor,
+- [1:14:24] right, over here, that has a phase angle of
+- [1:14:28] 156.9 degrees.
+- [1:14:30] Okay, so that's going to be
+- [1:14:35] like this, alright, so V sub L, and then
+- [1:14:40] 156.9 degrees,
+- [1:14:42] alright, that's
+- [1:14:45] 66.9 degrees from the vertical, alright, so here what we've done is we've plotted the
+- [1:14:53] phases, you know, as we have calculated them, and so that way of doing it gives us what we call
+- [1:15:00] an absolute phasor diagram,
+- [1:15:09] okay, and
+- [1:15:11] you know, one of the things that if we look at this carefully, one of the things that we can see here is that
+- [1:15:19] the voltage across the resistor, right, 66.9 plus 23.1 is 90 degrees, so the
+- [1:15:29] voltage, the phasor for the
+- [1:15:31] voltage across the resistor and also for the current, they're at 90 degrees from
+- [1:15:36] the phasor for the voltage across the capacitor.
+- [1:15:41] They're also at 90 degrees
+- [1:15:43] from
+- [1:15:45] the phasor for the voltage across the
+- [1:15:48] inductor, and so that means that the voltage across the capacitor and across the inductor are
+- [1:15:55] 180 degrees out of phase.
+- [1:15:57] Alright, so we can see that directly from this phasor diagram, alright,
+- [1:16:04] but I, you know, we had to
+- [1:16:07] stare at it a little bit and
+- [1:16:10] you know, look at the numbers a little bit to see that in fact that was the case. If we wanted to
+- [1:16:18] sort of see that or make that more apparent,
+- [1:16:22] then what we could do instead is
+- [1:16:28] we could construct a
+- [1:16:31] phasor diagram
+- [1:16:32] where all of these vectors, they're all rotated by some
+- [1:16:39] fixed angle that we can select so that, and we select that angle by which we rotate all these vectors to highlight
+- [1:16:47] some of the phase relationships that we would like to highlight. So we could take
+- [1:16:52] this phasor diagram over here and
+- [1:16:56] rotate all the vectors
+- [1:16:59] clockwise by
+- [1:17:01] say 66.9 degrees, which would put the voltage across the resistor and also the current
+- [1:17:07] along the horizontal axis. All right, so
+- [1:17:11] if we did that
+- [1:17:14] we would get
+- [1:17:15] v sub r like this and
+- [1:17:18] then the current
+- [1:17:20] parallel to that.
+- [1:17:23] Okay, and then if we did that, right, then
+- [1:17:29] v sub s, right, the source would be at
+- [1:17:37] an angle like this,
+- [1:17:40] right, so it'd be minus 36.9 degrees. But then,
+- [1:17:46] the utility of doing it this way is that the voltage across the capacitor,
+- [1:17:53] all right, this vector over here
+- [1:17:56] would be
+- [1:17:58] pointing straight down,
+- [1:18:00] and the voltage across the inductor,
+- [1:18:03] v sub l here, would be pointing straight up.
+- [1:18:08] Okay, and doing it this way, it becomes much more obvious that we have a right angle here and a right angle here,
+- [1:18:16] all right, so the 90 degree phase relationships and also the fact that the voltage across the
+- [1:18:22] capacitor and the inductor are 180 degrees out of phase, right, it's much more obvious.
+- [1:18:27] Okay, so when we do it this way, this is called a
+- [1:18:34] relative
+- [1:18:36] phasor diagram.
+- [1:18:39] Okay, so we can rotate the phasors by, you know, anything,
+- [1:18:44] any angle that we want,
+- [1:18:48] and what we chose to do here is to rotate it in a way that the phases are shown
+- [1:18:58] relative to the current.
+- [1:19:00] Okay, but we can choose something else if we wanted to.
+- [1:19:03] So any questions on
+- [1:19:06] these phasor diagrams?
+- [1:19:11] Okay, if not, then that's everything that we want to cover for today. So,

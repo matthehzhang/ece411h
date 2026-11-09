@@ -1,0 +1,431 @@
+[0:00:03] Okay. So this is, Ulaby problem 12.14,
+[0:00:09] and this is an example
+[0:00:13] of a circuit analysis
+[0:00:19] using
+[0:00:21] Laplace transforms.
+[0:00:30] Okay. So the problem,
+[0:00:32] that we are solving here is,
+[0:00:34] to look at this particular circuit here, Alright?
+[0:00:39] And to figure out the current that flows around this loop
+[0:00:43] in the situation where the voltage source has this particular form here. So it's zero up to time equal to zero, and then it increases linear
+[0:00:52] linearly,
+[0:00:54] with time four times greater than or equal to zero. Alright? And here, if the Laplace transform is a useful technique to employ because if we didn't use Laplace transforms. Right?
+[0:01:09] Right. We can't use phasors because this is not periodic. If we didn't use Laplace transforms and we try to solve a differential equation,
+[0:01:16] associated with this directly, then we would be stuck with having to figure out the
+[0:01:24] particular integral, right, that
+[0:01:27] solves the differential equation for
+[0:01:31] a linear function as the inhomogeneous
+[0:01:33] term. Right? And that's something that,
+[0:01:38] we haven't discussed, so we don't know, if that's going to be straightforward,
+[0:01:42] or not. But we do know how to solve this kind of problem using Laplace transforms. Okay. So
+[0:01:49] let's go ahead with this. We will, as usual, redraw our circuit.
+[0:01:55] So we have a voltage source with a resistor,
+[0:01:59] an inductor,
+[0:02:01] and a capacitor
+[0:02:03] like this.
+[0:02:05] Okay. So this voltage source is v sub s of t.
+[0:02:10] Resistor is r, inductor is l, capacitor is c,
+[0:02:15] and we want to solve for the currents
+[0:02:18] I of t,
+[0:02:20] where r, the resistance is two ohms, l, the inductance is six Henry's, and c the capacitance is two farads. Right? These are not necessarily,
+[0:02:30] realistic circuit numbers that you would find in an actual circuit, but they allow us to see the analysis technique and work out, the numbers
+[0:02:40] relatively easily.
+[0:02:42] Okay.
+[0:02:43] And
+[0:02:44] the voltage source here, b sub s of t, as a function of time... Right. This is zero, one second, two seconds,
+[0:02:53] three seconds,
+[0:02:55] one volt.
+[0:02:56] So this is in volts.
+[0:02:59] Two volts. It basically looks... I'll draw this in
+[0:03:03] blue here.
+[0:03:06] Alright. It is
+[0:03:08] zero
+[0:03:11] up until time equal to zero, and then it increases
+[0:03:15] linearly. Okay.
+[0:03:17] So
+[0:03:21] v sub s of t here is just t
+[0:03:25] times u of t, and that's in volts. Alright?
+[0:03:28] And what we're asked to do here is to solve
+[0:03:35] for I of t. Alright? So that's the problem, that we are given here. Alright?
+[0:03:40] And so the first thing that we want to do is to determine
+[0:03:46] the initial conditions,
+[0:03:53] right, for
+[0:03:56] the current through the inductor
+[0:03:58] and the voltage across the capacitor
+[0:04:02] at time zero minus. Okay?
+[0:04:05] And we need to do that because, when we eventually transform the circuit to the s domain,
+[0:04:13] then if these
+[0:04:15] values are non zero, then we will have to introduce an additional component I... Into the circuit. Alright?
+[0:04:23] So if we look at the circuit
+[0:04:26] four times less than zero,
+[0:04:29] then I... Or we know the v sub s of t
+[0:04:35] is equal to zero, and it's zero, for a long time before t equal to zero.
+[0:04:41] And so
+[0:04:43] the current
+[0:04:46] through the inductor should be zero, and the voltage across the capacitor
+[0:04:51] should be zero as well. Okay? So since these are both zero, we will not have to introduce,
+[0:04:58] additional source components into the circuit when we transform it to the s domain.
+[0:05:03] Okay. So then the second step then
+[0:05:06] is to transform,
+[0:05:08] the circuit
+[0:05:12] to the s domain
+[0:05:18] for t greater than or equal to zero.
+[0:05:21] Okay?
+[0:05:22] And so we're going to have
+[0:05:25] our voltage source,
+[0:05:28] resistor,
+[0:05:31] inductor,
+[0:05:33] and capacitor.
+[0:05:36] Okay.
+[0:05:37] The voltage source
+[0:05:39] will be some function of s now.
+[0:05:42] The resistor
+[0:05:44] will be represented by impedance, which is just r.
+[0:05:47] The inductor has an impedance, which is s times the inductance l.
+[0:05:52] And the capacitor has an impedance, which is one over s times the capacitance c.
+[0:05:59] And the current will be some function in the s domain also. Alright?
+[0:06:04] So,
+[0:06:06] the first thing that we wanna do here... After drawing this, circuit in the s domain, we wanna figure out what v sub s of s is. Alright. We know v sub s of t
+[0:06:17] is t times the unit step function.
+[0:06:22] And, we know that t times unit step function forms a Laplace transform pair
+[0:06:28] with
+[0:06:30] the function one over s squared. Right? And that's
+[0:06:37] from Ulaby et al in this table 12 dash two, which is the table of,
+[0:06:44] common Laplace transform pairs. Alright?
+[0:06:47] So, once we have all of that,
+[0:06:50] then what we wanna do is just to analyze
+[0:06:55] the circuit
+[0:06:58] in the s domain.
+[0:07:02] And then,
+[0:07:04] in doing so, we wanna solve initially for I sub... I of s, which is in the s domain.
+[0:07:10] And then we have to perform the inverse Laplace transform
+[0:07:13] to go back to the time domain, which is the solution that ultimately,
+[0:07:17] we want. Okay.
+[0:07:19] So, if we just look at this circuit in the s domain, right, then the analysis is very straightforward.
+[0:07:26] We just apply KVL. We enforce KVL going around the circuit loop over here. And I... And the resulting equation, we just solve that for the current I of s.
+[0:07:39] Okay. So we wanna apply KVL
+[0:07:44] around
+[0:07:48] the circuit loop. Right? And so that's going to give us... Alright. The voltage source is going to give us minus
+[0:07:55] v sub s. Then the resistor is going to be r, a voltage r times I of s.
+[0:08:02] The inductor is going to be the inductor impedance z sub l times I of s.
+[0:08:09] And then for the capacitor, it's the capacitor impedance z sub c
+[0:08:13] times I of
+[0:08:15] s.
+[0:08:17] And all those have to add up to zero by k v l. Right?
+[0:08:21] And so now
+[0:08:23] we can go ahead and substitute in numerical values for our circuit components. And so the resistor is two ohms, remember.
+[0:08:34] The inductance is six Henry's, so the impedance is six s.
+[0:08:40] And then the capacitance is two farads. So the impedance is one over two s.
+[0:08:47] All of this multiplies I of s. Okay?
+[0:08:51] And that's equal to
+[0:08:53] v sub s. It becomes positive when we move it to the right hand side.
+[0:08:57] And,
+[0:08:59] v sub s,
+[0:09:01] we saw
+[0:09:03] up here is just one over s squared.
+[0:09:08] Okay. Or we can solve this for
+[0:09:12] I of s,
+[0:09:13] and we get that this is equal to one over s squared
+[0:09:17] times
+[0:09:18] two plus six s plus one over two s. Alright?
+[0:09:27] Oops.
+[0:09:32] Okay.
+[0:09:33] And if we take this and put it in, the standard form, right, that makes it, a little bit easier to compute the Laplace transform then...
+[0:09:43] Or the the partial fraction expansion, eventually, inverse Laplace transform. What we're gonna do is we're gonna take one factor of s over here and multiply it through these three terms so that we get a quadratic expression for s in here. And we're going to factor out a six,
+[0:10:00] a factor of six from this and pull it to the outside in the denominator. So we get one over,
+[0:10:07] then we have six s,
+[0:10:09] and then we have s squared. Right? That's from the six s times,
+[0:10:15] s with a factor of six pulled out,
+[0:10:17] plus
+[0:10:19] one third s,
+[0:10:21] that's from two times s,
+[0:10:24] which we multiply through here. With a factor of six pulled out, that becomes one third. And then plus
+[0:10:32] one twelfth,
+[0:10:33] that's one over two s. When we multiply through by s, that becomes one half. We pull out a factor of six, that becomes one twelfth. Alright. So this is I of s. Alright?
+[0:10:45] So now this is the function for which we want to compute the inverse Laplace transform to get I of t. And to do that, we want to determine,
+[0:10:56] the values of s at which this has poles. Alright? So I of s
+[0:11:02] has poles
+[0:11:05] at s equal to zero
+[0:11:07] and s squared plus one third s plus one twelfth
+[0:11:13] equal to zero. Alright?
+[0:11:15] And so
+[0:11:17] for this quadratic over here, to find its roots, we just use the quadratic formula. So s is equal to one half
+[0:11:24] times minus one third plus or minus the square root of one third squared, which is one ninth minus four times one twelfth.
+[0:11:35] Okay.
+[0:11:37] And,
+[0:11:38] so this becomes
+[0:11:40] minus
+[0:11:41] one third times one half. So it's minus one sixth plus or minus. Alright?
+[0:11:47] This quantity under the square root is negative. Right? So we have a factor of j,
+[0:11:53] and then we'll have our factor of one half from the outside. We bring that in, and then we have one ninth minus
+[0:12:00] four twelfth is one third. Right? So, when we pull the factor of j out, that becomes one third minus one ninth. That's three ninth minus one ninth. That's two ninth. So we have the square root
+[0:12:12] of two over nine.
+[0:12:15] Okay.
+[0:12:16] And so this becomes minus one six plus or minus j times
+[0:12:22] the square root of two in the numerator, and then the square root of nine is three. So we have two times three or six in the denominator.
+[0:12:30] Alright?
+[0:12:32] So that means that
+[0:12:37] I of s is equal to one
+[0:12:40] over six s times s plus
+[0:12:44] one sixth minus j times root two over six
+[0:12:48] times s plus one six plus j root two over six.
+[0:12:55] Okay. So now this is the function for which we want to compute the inverse Laplace transform.
+[0:13:02] And so to do that, we go through the usual procedure of
+[0:13:07] performing the... Writing out the partial fraction expansion, figuring out the residues or or the coefficients in that expansion, and then doing the inverse Laplace transform. So now we wanna do
+[0:13:21] the partial fraction
+[0:13:26] expansion of
+[0:13:29] I of s. Right? And that is that I of s is equal to... So one gonna be a coefficient k one over s plus coefficient l one over s plus one six minus j root two over six
+[0:13:45] plus
+[0:13:47] l one star. Right, is complex conjugate over s plus one six plus j root two over six. And the residues are complex conjugates to each other because the roots, the poles are complex conjugates of each other.
+[0:14:02] Okay. And then,
+[0:14:04] to compute the residues, that is these coefficients,
+[0:14:08] right, we do the usual thing. K one is going to be equal to s
+[0:14:13] times I of s evaluated at s equal to zero.
+[0:14:18] Okay.
+[0:14:19] So when we,
+[0:14:21] take I of s and multiply by s, right, if we go to this form up here, then that cancels out this s in the denominator, and then we just have these other terms here evaluated at s equal to zero. So we're gonna have one
+[0:14:37] over six times zero squared plus one third times zero plus one twelfth.
+[0:14:44] So that is six times one twelve, and the denominator, that's one half, and the denominator, that's two. Alright? For k one.
+[0:14:52] Then
+[0:14:53] we wanna compute l one.
+[0:14:56] That's going to be following the same procedure.
+[0:15:00] S
+[0:15:01] plus one six minus j
+[0:15:04] root two over six times
+[0:15:07] I of s evaluated at s equal to minus one six plus
+[0:15:12] j root two over six. Okay.
+[0:15:16] And so here,
+[0:15:19] alright, if we look at
+[0:15:21] this expression here for I of s, then multiplying by s plus one six minus j root two over six is gonna cancel out this term in the denominator, and then we'll just have these other terms left here evaluated at s equal to minus one six plus j root two over six.
+[0:15:40] So that's gonna give us one
+[0:15:44] over six times s,
+[0:15:46] which is minus one six plus j
+[0:15:48] root two over six times s
+[0:15:53] minus one six plus j root two over six
+[0:15:57] plus one six plus
+[0:15:59] j root two over six.
+[0:16:02] Alright?
+[0:16:04] And
+[0:16:08] we worked all this out, then we have,
+[0:16:12] six times this first factor in parentheses here. So we have, six times minus one six, that's minus one,
+[0:16:21] plus... And then j times root two over six times six. So j times root two.
+[0:16:27] No. Okay. And then over here, we have minus one six plus one six, that's zero. And then we have j times root two over six plus j times root two over six. That becomes j times root two over three.
+[0:16:42] Okay.
+[0:16:43] And if we multiply out these terms in the denominator,
+[0:16:47] we get one over,
+[0:16:50] and then we have
+[0:16:52] j root two times j root two over three. That becomes,
+[0:16:58] minus
+[0:16:59] two thirds.
+[0:17:02] And then we have j root two over three times minus one. That's minus j root two
+[0:17:08] over three. Alright?
+[0:17:11] So now here, we're going to multiply the numerator and the denominator by the complex conjugate of the denominator. So minus two thirds plus j root two over three over minus two thirds plus j root two over three. That'll give us the magnitude squared of the denominator in the denominator and then this in the numerator.
+[0:17:33] So we get minus two thirds
+[0:17:36] plus j
+[0:17:38] root two over three over...
+[0:17:41] Then it's two thirds squared plus
+[0:17:44] root two over three squared.
+[0:17:48] Okay. In the denominator,
+[0:17:50] we have... This is four ninths. Right? Two thirds of quantity squared plus two ninths. That's six ninths in the denominator or two thirds in the denominator. That becomes three halves in the numerator
+[0:18:02] times
+[0:18:04] minus two thirds plus j root two over three.
+[0:18:08] Okay.
+[0:18:09] And then we multiply
+[0:18:11] this through, we get minus one
+[0:18:14] plus j times root two over two.
+[0:18:18] Alright?
+[0:18:19] And,
+[0:18:21] if we take that,
+[0:18:23] now what we wanted... So we've gotten l one now into rectangular form, but it turns out here, it's actually useful to put it into polar form now. Alright? Because that'll allow us to get a phase shift angle out of it more easily. So if we figure out the magnitude of this, that's the square root of one
+[0:18:44] plus,
+[0:18:46] root two over two, the quantity squared. Alright? And so that ends up being 1.225.
+[0:18:55] And then that's times e to the j times some phase angle phi
+[0:18:59] where phi is equal to a 180 degrees
+[0:19:04] minus
+[0:19:05] the inverse tangent
+[0:19:06] of root two over two or equivalently one over root two over one. Okay? And that turns out to be 144.7
+[0:19:17] degrees.
+[0:19:18] And so l one ends up being equal to 1.225
+[0:19:23] times e to the j times a 144.7
+[0:19:27] degrees.
+[0:19:28] Okay. So here, you might ask, well,
+[0:19:32] why didn't we just take root two over two divided by minus one and compute the, inverse tangent of that? Okay. And the reason, right,
+[0:19:45] is that,
+[0:19:46] right, if we sort of draw out...
+[0:19:51] Right. This is l one. Alright? And we draw out,
+[0:19:56] minus one plus j times root two over two, then that's going to be this minus one.
+[0:20:04] And say this is
+[0:20:07] root two over two. Right? We know that that point is actually out here. Alright?
+[0:20:13] And
+[0:20:17] so the angle that we want
+[0:20:19] is this. Right?
+[0:20:22] But, so we know that it has to be in the second quadrant. Alright? Because just looking at this form here, we know that had... That... That's in the second quadrant. But if we were to take just the inverse tangent
+[0:20:35] of
+[0:20:38] root two over two over minus one,
+[0:20:41] then
+[0:20:42] that would actually give us... Put this in red.
+[0:20:48] This angle here. So this angle here is what you would actually get if you computed
+[0:20:55] the inverse tangent of
+[0:20:58] minus one over root two, which is minus
+[0:21:02] the inverse tangent of one over root two. Right? So if you stuck that into your calculator and calculated, you would get this angle here because it's gonna give you an angle that is between minus 90 degrees and 90 degrees. And so we have to take that and shift it by a 180 degrees, which is this 180 degrees here in order to get what is actually the correct angle. Alright. So that is why
+[0:21:26] we
+[0:21:28] calculated the phase angle in this way. Alright? So that's something that,
+[0:21:34] as hopefully you know, it's from our discussion of phasers, is important to,
+[0:21:40] be mindful of and, to do correctly.
+[0:21:44] Okay. So now that we have k one and l one,
+[0:21:49] then
+[0:21:51] we know that I sub s or I of s, right, is
+[0:21:55] is k one over s. So that's two over s and then plus l one over s plus one six minus j root two over six, plus l one star over s plus one six plus j root two over six. And l one is given by this expression here. And when we use... When we compute its complex conjugate, we just put a minus sign in front of the j here. Alright? So
+[0:22:21] I of s is going to be
+[0:22:24] two over s
+[0:22:25] plus 1.225
+[0:22:28] e to the j
+[0:22:30] one forty four point seven degrees
+[0:22:32] divided by s plus one six minus j
+[0:22:38] root two over six plus
+[0:22:40] 1.225
+[0:22:43] e to the minus j
+[0:22:45] one forty four point seven degrees. Alright. That's the complex conjugate of this residue over here
+[0:22:52] over s plus one six,
+[0:22:54] plus j root two over six.
+[0:22:58] Okay. So that is the current I in the s domain.
+[0:23:03] And what we need to do now is compute
+[0:23:09] the inverse
+[0:23:11] Laplace transform. Okay?
+[0:23:14] And,
+[0:23:15] for that, right, we have... Right? We just have, some of simple poles here. So we know that the inverse Laplace transform is just going to be a sum of
+[0:23:26] exponentials. In this case, with the pole at zero, it is
+[0:23:31] an exponential with zero in the exponent or just one. Right? So from
+[0:23:38] Ulaby et al,
+[0:23:42] and it's table
+[0:23:44] 12 dash two, which is the table of common Laplace transform pairs,
+[0:23:49] then we have that
+[0:23:52] u of t forms Laplace transform pair with one over s. Right? That'll give us the first term, and either the minus a t u of t
+[0:24:01] forms a Laplace transform pair with one over s plus a. We could also use that to get the first term here with a equal to zero, and we use this to get the second and the third terms.
+[0:24:14] Okay.
+[0:24:15] So then,
+[0:24:18] using,
+[0:24:19] these results to,
+[0:24:22] calculate
+[0:24:23] the inverse Laplace transform, we get from the first term in I of s, we get two times u of t. Every factor will... Every term will have a factor of u of t, so we'll write that at the end. And then plus
+[0:24:40] 1.225.
+[0:24:42] Right? That factor is common to both of these. Alright?
+[0:24:47] And then from this first term over here, we have
+[0:24:52] e to the minus a t. So that's e to the minus t over six,
+[0:24:58] times e to the plus
+[0:25:00] j
+[0:25:02] root two over six times t
+[0:25:05] times e to the j
+[0:25:07] one forty four point seven degrees.
+[0:25:11] And then from this second term or or this last term over here, we get plus e to the minus t over six times e to the minus j
+[0:25:23] root two over six t
+[0:25:25] times e to the minus
+[0:25:27] one forty four point seven degrees.
+[0:25:30] All of this
+[0:25:33] times u of t.
+[0:25:35] Okay.
+[0:25:36] And then
+[0:25:38] we can take this. Alright?
+[0:25:41] And
+[0:25:44] write it as two plus
+[0:25:46] 1.225.
+[0:25:48] Alright?
+[0:25:49] And then, both of these terms here have a factor of either the minus t over six.
+[0:25:54] So we can
+[0:25:57] pull that out in front.
+[0:25:59] And then,
+[0:26:00] the other factors in these two terms, you can see pretty easily, are equal to two times the cosine
+[0:26:07] of
+[0:26:08] root two over six t
+[0:26:11] plus a 144.7
+[0:26:14] degrees
+[0:26:16] times
+[0:26:18] u of t. Alright?
+[0:26:20] And if we just simplify this a little bit more, multiplying two by 1.225 and then, putting in a decimal value for root two over six,
+[0:26:31] alright, then what we finally get is
+[0:26:35] I of t is equal to two plus
+[0:26:39] 2.45
+[0:26:42] e to the minus t over six
+[0:26:44] times the cosine of,
+[0:26:46] o point
+[0:26:49] two three five seven t
+[0:26:52] plus
+[0:26:53] a 144.7
+[0:26:55] degrees.
+[0:26:58] Alright. Times
+[0:27:00] u of c, and that's in amps.
+[0:27:05] And
+[0:27:06] this is the answer. Right?
+[0:27:10] As I had noted, or perhaps will note in class, you have to be a little bit careful here because
+[0:27:16] this term here is an angle in
+[0:27:20] radians.
+[0:27:21] Alright? Because the
+[0:27:23] angular frequency is typically given in radians per second. This is in degrees.
+[0:27:29] So we've written, an angle. We've added things in different units, which, ordinarily is a no no. Okay? But,
+[0:27:38] that is typically how these are written here. So we just have to be cognizant that, in fact,
+[0:27:44] this is in radians
+[0:27:45] and this is in degrees.
+[0:27:49] Okay.
+[0:27:50] So,
+[0:27:51] what are some of the
+[0:27:53] key points,
+[0:27:56] okay, that we can extract
+[0:27:58] from this particular example? So first, alright, we saw kind of what the general procedure is for doing circuit analysis using Laplace transform.
+[0:28:11] Right? The major steps here
+[0:28:14] are that first, we determine
+[0:28:21] the initial conditions
+[0:28:25] for the current through the inductor
+[0:28:28] and the voltage across the capacitor. Right? One has to do this for all the inductors and capacitors in
+[0:28:36] circuit. In this case, there were only one of each.
+[0:28:39] Then once we have those,
+[0:28:45] we transform the circuit
+[0:28:49] to the s domain.
+[0:28:52] Okay. If, some of these initial conditions were non zero, we would have to introduce additional source components,
+[0:28:59] into the s domain circuit. But in this particular case, they were both zero, so we didn't have to do that.
+[0:29:06] And then,
+[0:29:08] we do the analysis
+[0:29:11] of the circuit in the s domain,
+[0:29:16] alright, which is, the same as just doing conventional circuit analysis
+[0:29:20] except that you have impedances that can be functions of s.
+[0:29:26] And then
+[0:29:29] once you've done that, then you wanna perform,
+[0:29:33] and you've gotten the result that you want. In our case, that was I of s, in the s domain, then you want to perform the inverse transform
+[0:29:45] back to the time domain.
+[0:29:51] Okay.
+[0:29:55] Second point that we can note, which we also saw in the examples of just how to compute inverse Laplace transforms more generically,
+[0:30:04] is that
+[0:30:07] the partial fraction
+[0:30:10] expansion,
+[0:30:12] right, that we use. This allows
+[0:30:15] the s domain
+[0:30:20] solution
+[0:30:21] that we obtained
+[0:30:22] to be written
+[0:30:27] in a form
+[0:30:30] that
+[0:30:32] is easily
+[0:30:38] transformed
+[0:30:39] back to the time domain.
+[0:30:49] Okay. A third point
+[0:30:52] that can be noted here is that
+[0:30:56] one of the things that we did here was that when we computed the residues, that is the coefficients and the partial fraction expansion,
+[0:31:03] we expressed the residues for the complex roots in polar form. Alright? And that was useful because it allowed us to get the phase shift angles or what turned out to be the phase shift angles,
+[0:31:18] quite directly,
+[0:31:20] once we did the inverse Laplace transform. So we wanna keep this in mind that it can be useful
+[0:31:31] to express the residues.
+[0:31:34] Right? That is the coefficients
+[0:31:39] for complex poles
+[0:31:45] in polar form.
+[0:31:49] Right? At least at the end. You don't have to work with it in polar form throughout. But at the end, it can be useful to express them in polar form.
+[0:31:58] And the reason for this is that
+[0:32:01] the phase shift angles
+[0:32:08] appear this way
+[0:32:10] more naturally.
+[0:32:14] Okay.
+[0:32:16] And then
+[0:32:18] the last point, which, you may have noticed, as,
+[0:32:23] we work through, this example and perhaps others is that
+[0:32:30] accuracy and proficiency
+[0:32:34] in complex algebra
+[0:32:40] are important.
+[0:32:45] Okay. So that is it for, this example here. Alright? And I will stop stop the recording now.

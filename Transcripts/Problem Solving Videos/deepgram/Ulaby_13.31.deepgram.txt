@@ -1,0 +1,456 @@
+[0:00:03] Okay. So this is Ulaby problem 13.31,
+[0:00:08] and this is an example here of average power calculations.
+[0:00:14] K. So as an example of
+[0:00:17] average power
+[0:00:19] calculations
+[0:00:23] using
+[0:00:27] Fourier series
+[0:00:32] circuit analysis.
+[0:00:36] Okay. So what we have here is a problem where we are given... We we have this circuit down here. So an RLC parallel circuit,
+[0:00:46] and we're given the form of the current source here essentially as a Fourier series already.
+[0:00:53] And, the problem is asking us to compute the average power that's dissipated in the resistor,
+[0:00:59] given these values here for the for the circuit components.
+[0:01:04] Okay.
+[0:01:05] So
+[0:01:07] let's go ahead and redraw the circuit as usual.
+[0:01:14] K. So we have a current source,
+[0:01:17] I sub s of t, an inductor l,
+[0:01:24] a capacitor c,
+[0:01:28] and a resistor r.
+[0:01:32] Okay. And these are all connected in parallel. Alright?
+[0:01:37] And the
+[0:01:39] resistor
+[0:01:41] is one kiloohm.
+[0:01:43] The inductor
+[0:01:45] is one Henry,
+[0:01:46] and the capacitor is one
+[0:01:49] microfarad.
+[0:01:51] And the current source,
+[0:01:55] I sub s of t, is 10
+[0:01:58] plus five times the cosine of a 100 t plus 30 degrees
+[0:02:04] minus the cosine of
+[0:02:07] 200 t
+[0:02:10] minus 30 degrees,
+[0:02:12] and that's in milliamps. Okay.
+[0:02:17] And the question
+[0:02:19] is to find the average power.
+[0:02:25] I'll call it p average.
+[0:02:28] It's an a, right, that's dissipated
+[0:02:34] in the resistor r.
+[0:02:36] Okay.
+[0:02:37] So, to solve this problem, what we wanna do is to
+[0:02:43] take this expression for I sub s of t
+[0:02:47] and
+[0:02:48] convert it to the phasor domain. Right? Then analyze the circuit in the phasor domain and obtain
+[0:02:56] the current and or the voltage for the resistor r from which we can then calculate
+[0:03:02] the, the power. Okay. So that's, the process that we'll go through.
+[0:03:08] So the first step here is to
+[0:03:12] basically take the Fourier series.
+[0:03:20] K. The Fourier series
+[0:03:26] expression for
+[0:03:28] I sub s of t, which essentially we have,
+[0:03:32] we pretty much have that already
+[0:03:35] and then express
+[0:03:39] I sub s.
+[0:03:41] Alright. The corresponding,
+[0:03:43] phasor quantity
+[0:03:46] in the phasor domain.
+[0:03:50] Okay.
+[0:03:51] So,
+[0:03:52] we have that I sub s of t, alright, is equal to
+[0:03:57] 10
+[0:03:58] plus five times the cosine
+[0:04:01] of 100 t plus 30 degrees
+[0:04:04] minus the cosine of
+[0:04:06] 200 t
+[0:04:08] minus 30 degrees
+[0:04:11] in milliamps.
+[0:04:13] Okay.
+[0:04:14] So in the phasor domain, right, we can see that we have a frequency component at
+[0:04:20] omega equal to zero, another at omega equal to 100 radians per second, and a third at omega equal to 200 radians per second.
+[0:04:29] So in the phasor domain, we can write I sub s as being 10.
+[0:04:35] Alright. That is the omega equal to zero component
+[0:04:38] plus
+[0:04:40] five
+[0:04:41] times e to the j
+[0:04:43] times 30 degrees. That's from this term here, which is the
+[0:04:50] frequency component at
+[0:04:53] omega equal to a 100
+[0:04:55] radians per second.
+[0:04:58] And then
+[0:04:59] minus
+[0:05:01] e to the minus j
+[0:05:03] 30 degrees.
+[0:05:05] Right? That is from this term over here. That is the frequency component
+[0:05:09] at omega equal to 200
+[0:05:13] radians per second.
+[0:05:15] Right? All of this,
+[0:05:16] again,
+[0:05:18] in milliamps.
+[0:05:19] Okay. So going to the phasor domain, once we had,
+[0:05:24] the series... The Fourier series expansion for I sub s, going to the phasor domain actually was very straightforward.
+[0:05:30] Part of that was also that
+[0:05:32] these
+[0:05:33] components
+[0:05:34] here are already
+[0:05:37] in,
+[0:05:38] the standard cosine form. Alright? So we didn't have to convert them to the standard cosine form. So once we have that, then the second step is
+[0:05:49] to look at the circuit
+[0:05:51] and
+[0:05:52] analyze it in the phasor domain to obtain the voltage and or the current, for the resistor r. So to do that,
+[0:06:00] we'll take the voltage at the bottom node here to be zero,
+[0:06:04] then the voltage at this upper node, will take to be v one, and we'll do a simple node voltage analysis essentially,
+[0:06:11] calculating or using KCL at the node v one to solve for the voltage v one, which is just the goat voltage across the resistor as well. And from that, we'll be able to calculate the current... Or sorry, the power.
+[0:06:25] Okay. So what we wanna do then is to analyze
+[0:06:29] the circuit
+[0:06:35] in the phasor domain
+[0:06:43] to obtain the voltage that we labeled v one, as a phasor. So we're going to apply KCL
+[0:06:50] at that upper node v one. Okay? And when we do that, where we have the current coming in from the left from the,
+[0:06:58] current source...
+[0:07:00] Or sorry. The current going out, to the left
+[0:07:05] along the branch containing the current source, that's gonna be minus I sub s. Right? Because we have I sub s going in. Then the current flowing down through the inductor,
+[0:07:14] that's gonna be v one over the impedance of the inductor, which is j omega l,
+[0:07:21] plus,
+[0:07:22] the current flowing down through the capacitor,
+[0:07:26] which is v one over the impedance of the capacitor, which is one over j omega c,
+[0:07:32] plus the current flowing downward through the resistor, which is just v one over r.
+[0:07:37] All of that has to add up to zero.
+[0:07:41] Okay?
+[0:07:42] And if we group together the terms proportional to v one,
+[0:07:46] we have one over r
+[0:07:48] plus one over j omega l
+[0:07:52] plus j omega c
+[0:07:54] times v one is equal to
+[0:07:58] I sub s.
+[0:08:00] Right? Or
+[0:08:03] if we divide both sides of this equation by this quantity here in the parenthesis to solve for v one,
+[0:08:12] we get the v one is equal to I sub s
+[0:08:16] divided by
+[0:08:18] one over r plus one over j omega l
+[0:08:22] plus j omega c. Alright?
+[0:08:26] So now to further simplify this, we can multiply the numerator and the denominator by
+[0:08:35] j omega r times l.
+[0:08:38] Okay. And that will, get rid of the fractions,
+[0:08:43] right, in the denominator.
+[0:08:46] And so this will give us in the numerator
+[0:08:49] j omega r times l.
+[0:08:51] Alright. We'll write down the I sub s at the end.
+[0:08:55] And in the denominator,
+[0:08:58] from j omega r l times one over j omega l,
+[0:09:02] we get r.
+[0:09:04] Alright. From j omega r l times one over r, we get plus j omega l.
+[0:09:11] And then from j omega c times j omega r l, we get minus omega squared r l c. All of this times
+[0:09:20] I sub s.
+[0:09:21] Okay?
+[0:09:23] And then,
+[0:09:25] we can,
+[0:09:26] group together the real and imaginary terms in the denominator. So we get j omega r l in the numerator and then r times one minus
+[0:09:37] omega squared l c
+[0:09:39] plus j omega l in the denominator,
+[0:09:43] all of this times I sub s.
+[0:09:47] Okay.
+[0:09:48] So that is v one, which is the voltage at the upper node, also the voltage across the resistor in the phasor domain.
+[0:09:57] Alright. Now,
+[0:09:59] what we wanna do is convert,
+[0:10:03] to the time domain,
+[0:10:12] then compute
+[0:10:13] the average power. Right?
+[0:10:17] Could directly calculate,
+[0:10:19] v one explicitly by substituting in I sub s as a phasor over here, and then using what we know and worked out in class to be the result for the average power, then
+[0:10:31] we don't necessarily have to go back to the time domain explicitly.
+[0:10:35] But in order to see a little bit more about how this problem works,
+[0:10:40] we will actually
+[0:10:42] convert
+[0:10:43] back to the time domain. Alright?
+[0:10:45] So
+[0:10:47] let's go ahead now and
+[0:10:50] plug in the
+[0:10:53] phasor expression for
+[0:10:55] I sub s and
+[0:10:58] also
+[0:10:59] work with this prefactor over here, basically, the current to voltage transfer function. Alright?
+[0:11:07] By converting
+[0:11:10] this prefactor over here from its current form to the polar form, alright, where the polar form is going to be helpful in working conveniently, particularly with the phase
+[0:11:23] factors in the phasor domain. Okay. So
+[0:11:30] converting that prefactor into polar form,
+[0:11:34] right, what we need is the magnitude,
+[0:11:37] right, which is going to the magnitude... Be the magnitude of the numerator divided by the magnitude of the denominator.
+[0:11:43] The magnitude of the numerator is just omega times r times l.
+[0:11:48] The magnitude of the denominator is the square root of the real part squared plus the imaginary part squared. So it's gonna be the square root of r squared times one minus omega squared l c, the quantity squared,
+[0:12:01] plus omega squared l squared.
+[0:12:03] All of this under the square root.
+[0:12:06] And then we have the phase,
+[0:12:09] which is
+[0:12:10] e to the
+[0:12:13] minus j
+[0:12:15] times the inverse tangent
+[0:12:17] of
+[0:12:19] the imaginary part of the denominator
+[0:12:23] divided by the real part of the denominator.
+[0:12:26] So omega l divided by r times one minus omega squared l c.
+[0:12:33] Okay. And then finally,
+[0:12:36] right, it's... We have this minus sign in the exponent of the phase factor because, without the minus sign, that would be the phase of the denominator.
+[0:12:46] But we're writing this in the numerator, so, we have to put a minus sign in the exponent.
+[0:12:52] Then finally, we have this factor of j
+[0:12:56] over here. We can't forget about that. That's either the j times 90 degrees.
+[0:13:01] All this times
+[0:13:03] I sub s. Alright?
+[0:13:06] Now,
+[0:13:07] we can plug in
+[0:13:10] numerical values for r and l. Alright? So r was... And c. R was one kilo ohm. L was one Henry.
+[0:13:20] C is one microfarad. So 10 to the minus six farads.
+[0:13:25] Okay. So plugging those in, then in the numerator, we have r a thousand times l one. So we... Times omega. So we get a thousand omega
+[0:13:34] divided by the square root of r squared. It's 10 to the third square. That's 10 to the six times
+[0:13:41] one minus.
+[0:13:43] And then l times c is one times 10 to the minus six. So 10 to the minus six times omega squared
+[0:13:51] quantity squared.
+[0:13:53] And then plus omega squared l squared l is one, so just omega squared.
+[0:13:58] All this under the square root.
+[0:14:02] Then we have e to the minus j
+[0:14:06] times the inverse tangent now of omega l, which is just omega since l is equal to one times
+[0:14:13] divided by r, which is 10 to the third times one minus omega squared l c, which is 10 to the minus six
+[0:14:23] omega squared.
+[0:14:25] Okay. And then times e to the j times 90 degrees
+[0:14:31] times I sub s. Alright?
+[0:14:35] So now from this, we can compute,
+[0:14:39] v one
+[0:14:41] at,
+[0:14:42] the frequencies that we know show up in I sub s, which are zero, 100, and 200.
+[0:14:50] Okay. So v one
+[0:14:54] at omega equal to zero, right, we can see, because of this omega in the numerator here, then that's just gonna be zero.
+[0:15:02] Okay?
+[0:15:04] So that means that there's no DC component to the voltage
+[0:15:08] across the resistor.
+[0:15:10] And if... Even though there is a DC component to the current,
+[0:15:14] I s...
+[0:15:18] And if we look back at the circuit, we can see,
+[0:15:21] that
+[0:15:23] at zero frequency,
+[0:15:26] this inductor is gonna behave as a short circuit. So this node and this node are short circuit to each other.
+[0:15:33] So it makes sense that the DC component of the voltage is zero. Okay. So that's a quick, little check there that, this result makes sense.
+[0:15:43] Then we can compute v one at omega equal to 100,
+[0:15:49] okay, using
+[0:15:52] this expression up here. Right? So we have a thousand times a 100, that's 10 to the fifth,
+[0:15:59] divided by 10 to the sixth times one minus
+[0:16:05] 10 to the minus six times a 100 squared, that's 10 to the fourth. So one minus 10 to the minus two quantity squared
+[0:16:12] plus omega squared, that's 10 to the fourth.
+[0:16:18] Okay. Times e to the minus j
+[0:16:22] times the inverse tangent of omega 10 to the two
+[0:16:26] over
+[0:16:29] 10 to the three times
+[0:16:31] one minus 10 to the minus two.
+[0:16:34] Alright?
+[0:16:35] Then times e to the j
+[0:16:38] 90 degrees
+[0:16:40] times I sub s at omega equal to 100.
+[0:16:45] Alright?
+[0:16:46] And
+[0:16:48] if we calculate out all these numerical values over here,
+[0:16:53] then we get
+[0:16:56] 100.5.
+[0:16:58] Alright? That's this expression here. Alright? Times e to the j times 84.232
+[0:17:10] degrees.
+[0:17:11] That includes this e to the j 90 degree, factor over here times the I sub s at omega equal to 100.
+[0:17:21] Alright? From our earlier expression that we worked out for I sub s in the phasor domain, at a 100 radians per second, I sub s was five,
+[0:17:33] times e to the j 30.
+[0:17:36] Alright. So I sub s
+[0:17:39] at omega equal to 100 was five e to the j 30 degrees.
+[0:17:47] So if we plug that in here for I sub s, then we get five times a 100.5, that's five zero two point five
+[0:17:56] times
+[0:17:57] e to the j, and then 30 plus 84.232,
+[0:18:01] that's one one four point two three degrees.
+[0:18:06] Okay. So that's v one at... Make it equal to a 100 radians per second.
+[0:18:12] And then
+[0:18:16] at 200,
+[0:18:17] alright, we get from the expression
+[0:18:22] up here. Alright. It's a thousand times 200. That's two times 10 to the fifth
+[0:18:29] divided by the square root of
+[0:18:33] 10 to the sixth times one minus... And then omega squared is four times 10 to the fourth. So four times 10 to the minus two squared
+[0:18:44] plus
+[0:18:45] four times 10 to the fourth.
+[0:18:49] All this under the square root
+[0:18:52] is either the minus j.
+[0:18:54] It's the inverse tangent of
+[0:18:57] 200. Right? That's omega.
+[0:19:00] Divided by
+[0:19:02] 10 to the third times one minus
+[0:19:05] four times 10 to the minus two, right,
+[0:19:09] times
+[0:19:10] e to the j
+[0:19:12] 90 degrees
+[0:19:14] times I sub s at omega equal to
+[0:19:18] 200.
+[0:19:19] Alright?
+[0:19:21] And
+[0:19:22] if we work out the numbers here, then for this magnitude over here, we get two zero three point nine five.
+[0:19:32] And then from the phase factors, the two phase factors together, we get e to the j 78.23
+[0:19:38] degrees.
+[0:19:40] That's gonna be times I sub s at omega equal to 200.
+[0:19:45] Alright.
+[0:19:47] If we look back again at what we worked out
+[0:19:51] here for I sub s in the phasor domain, the, component at omega equal to 200 is minus e to the minus j 30 degrees.
+[0:20:03] K. So I sub s at omega equal to 200 is equal to minus e to the minus j times 30 degrees. Alright?
+[0:20:11] And so this is going to be equal to
+[0:20:14] minus
+[0:20:16] two zero three point nine five times e to the j
+[0:20:22] 48.23
+[0:20:23] degrees. Alright?
+[0:20:25] Or if we wanted to, we could take this minus sign over here and,
+[0:20:31] include it in the phase, if we want it. But it turns out not to matter if we do that.
+[0:20:37] Okay.
+[0:20:38] So
+[0:20:41] having worked out those components
+[0:20:43] of v one in the phasor domain, then what we get
+[0:20:48] in the time domain is that v one of t is equal to
+[0:20:53] five zero two point five
+[0:20:55] times the cosine of 100 t,
+[0:20:58] plus
+[0:21:00] one fourteen point twenty three degrees.
+[0:21:03] Alright. That's from
+[0:21:05] this result here, right, for the phasor component of v one at omega equal to 100.
+[0:21:11] Right? So we get the same amplitude and then we get this phase 114.23
+[0:21:16] degrees over here in the standard cosine form at an angular frequency of a 100 radians per second. And then similarly, we get minus two zero three point
+[0:21:26] nine five.
+[0:21:27] That's this over here times the cosine
+[0:21:32] of
+[0:21:34] 200 t
+[0:21:36] plus 48.23
+[0:21:39] degrees.
+[0:21:40] And all of this is in millivolts.
+[0:21:44] Okay. So how do we take this
+[0:21:47] and compute the average power?
+[0:21:50] Alright. So let's recall
+[0:21:55] that in general, the average power, okay, is going to be...
+[0:22:00] It's the average over one cycle
+[0:22:03] of the voltage
+[0:22:06] times the current.
+[0:22:08] Alright?
+[0:22:10] And we worked out in class that this was equal to... Right? If we express the voltage and the current in their Fourier series forms, it's the product of the DC components
+[0:22:22] plus the sum
+[0:22:25] from n, going from one to infinity of one half times
+[0:22:31] the,
+[0:22:34] voltage
+[0:22:36] amplitude times the current amplitude
+[0:22:39] times the cosine
+[0:22:41] of
+[0:22:43] the phase difference between the voltage
+[0:22:46] and the current at that frequency.
+[0:22:49] Okay.
+[0:22:52] Now,
+[0:22:53] for a resistor,
+[0:23:00] the current,
+[0:23:01] alright, in general is just the voltage
+[0:23:09] divided by the resistance. That's just Ohm's law. Right? Since the resistance is purely real,
+[0:23:15] then the phase
+[0:23:18] of the voltage
+[0:23:19] and
+[0:23:21] the current, they're equal to each other. Alright?
+[0:23:25] And when they're equal, then this cosine factor over here is always equal to one. Alright? So for a resistor,
+[0:23:34] the average power is just v d c times I d c
+[0:23:38] plus sum from n going to one to infinity
+[0:23:43] of one half, and then it's the magnitude of v sub n times I sub n. Right?
+[0:23:50] So that's going to be,
+[0:23:53] v d c squared over r. Right? Again, just using Ohm's law plus
+[0:24:00] the sum from n going to one to infinity of one half
+[0:24:06] v sub n squared over r. Okay?
+[0:24:09] And so we can use that to compute
+[0:24:13] the average power, right, having computed the,
+[0:24:18] Fourier series components of the voltage already. So,
+[0:24:23] the voltage has zero DC components, so this doesn't contribute anything. Alright? So that's zero.
+[0:24:31] And then we have plus one half.
+[0:24:35] That's this one half over here
+[0:24:38] times
+[0:24:40] one over 10 to the third.
+[0:24:42] Right? That's the one over r over here since r is one kilo ohm.
+[0:24:46] And then we have the sum
+[0:24:49] of,
+[0:24:50] the voltage,
+[0:24:52] amplitudes, right, at the different frequencies.
+[0:24:55] So 502.5
+[0:24:58] squared
+[0:25:00] plus two zero three point nine five squared.
+[0:25:05] And then,
+[0:25:07] those were amplitudes in millivolts.
+[0:25:10] So
+[0:25:12] if we want the average power in watts,
+[0:25:15] we have to multiply by 10 to the minus three to convert the voltages to volts and then square it since we're taking the voltages square. Right? So this factor here is included because
+[0:25:29] the v sub n were computed
+[0:25:36] in millivolts.
+[0:25:37] Okay.
+[0:25:39] And so then, if we just calculate out these numbers,
+[0:25:44] then what we get is that the average power is 1.471
+[0:25:49] times 10 to the minus four watts,
+[0:25:53] or we can express it in microwatts as a 147.1
+[0:25:58] microwatts.
+[0:26:01] Okay. So that's the answer, for this example.
+[0:26:05] And,
+[0:26:06] if we look back on what we did
+[0:26:09] and think about
+[0:26:11] what some of the key points were in this example,
+[0:26:15] one is... Right. Basically,
+[0:26:19] what we did was in doing the Fourier series circuit analysis,
+[0:26:24] what we did was we computed,
+[0:26:27] the Fourier series for the known input voltages and currents. In this case, we were basically given that information.
+[0:26:33] Then we converted that to the phasor domain. Okay?
+[0:26:37] And then we computed... We analyzed the circuit in the phasor domain, right, which is
+[0:26:43] a
+[0:26:44] relatively straightforward thing to do. We know how to do it from earlier in the semester at a single frequency, then we use the idea of superposition
+[0:26:52] to combine,
+[0:26:54] the multiple frequencies in the four a series expansion together. We can do that for voltages
+[0:27:00] and currents since those are linear quantities and we have a linear circuit. Alright?
+[0:27:07] And then... Alright. So that first point is that
+[0:27:11] for
+[0:27:14] for a series
+[0:27:18] circuit analysis
+[0:27:21] in general, right, what we wanna do is to compute,
+[0:27:26] right, or in this case,
+[0:27:28] really to recognize,
+[0:27:31] the Fourier series
+[0:27:38] for,
+[0:27:39] our known
+[0:27:41] input
+[0:27:46] voltages and or occurrence.
+[0:27:49] Alright?
+[0:27:51] Then...
+[0:27:52] Alright. Once we have those components, each of which is at a specific frequency,
+[0:27:56] then we analyze the circuit
+[0:28:02] in the phasor domain,
+[0:28:07] alright, which works at a particular frequency.
+[0:28:10] And then, we can use
+[0:28:13] the idea of superposition.
+[0:28:18] Right? We don't really have to use it, explicitly. We're using it implicitly,
+[0:28:22] in doing, the Fourier series analysis. So we're using superposition
+[0:28:26] to combine
+[0:28:29] our results
+[0:28:30] from multiple frequencies.
+[0:28:39] Okay.
+[0:28:42] The second,
+[0:28:43] point is that,
+[0:28:46] from what we worked out in class,
+[0:28:49] right, we saw that only the voltage and current components that are at the same frequencies
+[0:28:54] as each other, right, contribute to the average power dissipation. So here, we just wanna recognize that. Right? That only the voltage
+[0:29:08] and frequency components
+[0:29:16] at the same frequency
+[0:29:21] as each other,
+[0:29:23] right, contribute
+[0:29:28] to the average
+[0:29:33] power dissipation.
+[0:29:37] Okay. And that's basically because of the nature of the trigonometric integrals that are involved. So the other... The cross terms will
+[0:29:46] essentially all end up going to zero.
+[0:29:49] Right? And so we only have to take... Right. We basically take the square of each
+[0:29:55] individual
+[0:29:56] frequency
+[0:29:57] combination.
+[0:29:59] And then
+[0:30:00] finally,
+[0:30:02] I... You'll notice that at the end, right, we were given the current, and therefore, we calculated the voltage in milliamps and millivolts respectively.
+[0:30:14] But we had to remember at the end to include this factor of 10 to the minus three for each. And so in the calculation of power, 10 to the minus three squared
+[0:30:25] in order to get the power in watts. Alright? And then we could convert that to whatever,
+[0:30:31] other unit,
+[0:30:33] we want. In this case, we converted it to microwatts. Right? So,
+[0:30:38] we wanna be careful in general
+[0:30:42] in making sure
+[0:30:48] to work
+[0:30:51] with consistent units.
+[0:30:58] Okay. So that is, this example. You will be 13.31,
+[0:31:04] and I will stop the recording here.

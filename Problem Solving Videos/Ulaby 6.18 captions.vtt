@@ -1,0 +1,851 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Okay.
+
+00:00:05.000 --> 00:00:13.000
+Okay, so this video is for you to be problem 6.1 8. Alright, and this is an example.
+
+00:00:13.000 --> 00:00:23.000
+Of The analysis of a second order RLC circuit. So this is
+
+00:00:23.000 --> 00:00:28.000
+Analysis of
+
+00:00:28.000 --> 00:00:32.000
+Second order RLC circuit.
+
+00:00:32.000 --> 00:00:40.000
+Okay, and the circuit that, we want to analyze is shown here and What we're asked to solve for is I sub C of T.
+
+00:00:40.000 --> 00:00:50.000
+That's the current flowing through this capacitor here for T greater than equal to greater than or equal to 0 with this switch opening.
+
+00:00:50.000 --> 00:00:58.000
+Add t equal to 0. So it starts off in the close position and then it switches to the open position.
+
+00:00:58.000 --> 00:01:07.000
+Okay so what that means is that when it's in the open position then. There is effectively no active source.
+
+00:01:07.000 --> 00:01:15.000
+In the circuit because the 30 volt source over here isn't really going anywhere. Okay, so.
+
+00:01:15.000 --> 00:01:20.000
+What we want to do here is the following. We'll start off. Bye.
+
+00:01:20.000 --> 00:01:37.000
+I just redrawing the circuit as usual.
+
+00:01:37.000 --> 00:01:48.000
+Okay, so this is our 30 volt. Source this is a 2 ohm resistor Okay, and then it goes to, the switch over here.
+
+00:01:48.000 --> 00:02:00.000
+The switch is in the closed position. Okay, and then we have
+
+00:02:00.000 --> 00:02:05.000
+A 12 ohm resistor down here.
+
+00:02:05.000 --> 00:02:13.000
+Okay, this was a 2 ohm resistor over here. And we have.
+
+00:02:13.000 --> 00:02:21.000
+A 4 ohm resistor up here at the top. And then this connects back. Down to here.
+
+00:02:21.000 --> 00:02:30.000
+And then for the rest of the circuit. We have an inductor. With value for Henry's.
+
+00:02:30.000 --> 00:02:36.000
+And then we have a capacitor.
+
+00:02:36.000 --> 00:02:45.000
+Okay, where the capacitance? Is point 6 4. Farads. Okay, and then.
+
+00:02:45.000 --> 00:02:56.000
+We have the voltage across the capacitor. We have the current through the capacitor, which is also the same as the current flowing through the inductor.
+
+00:02:56.000 --> 00:03:03.000
+Alright. And this switch is opening. At t equal to 0. Okay.
+
+00:03:03.000 --> 00:03:08.000
+And what we're asked to do.
+
+00:03:08.000 --> 00:03:20.000
+Is solve for I sub C of T. Okay. Fat t greater than or equal to 0. Okay, so, this is the problem that we're asked to solve.
+
+00:03:20.000 --> 00:03:25.000
+And the first step here will be to determine.
+
+00:03:25.000 --> 00:03:28.000
+The initial conditions.
+
+00:03:28.000 --> 00:03:33.000
+Alright, for T, less than or equal to 0, particularly for T equal to 0, right?
+
+00:03:33.000 --> 00:03:41.000
+That's what we're going to actually use. But we need to look at T less than 0 in order to arrive at those initial conditions.
+
+00:03:41.000 --> 00:03:53.000
+Okay. And as usual, The capacitor, we will take for T lesson 0 to be, an open circuit.
+
+00:03:53.000 --> 00:03:59.000
+And the inductor we will take to be.
+
+00:03:59.000 --> 00:04:09.000
+A short circuit. Okay. And let's think about what happens now. For T less than 0 where this switch is in the close position.
+
+00:04:09.000 --> 00:04:17.000
+Okay, when the switch is in the close position, right, if we look at the current over here I sub C.
+
+00:04:17.000 --> 00:04:30.000
+Alright, basically because the capacitor Hmm. Hi, acting as an open circuit. Then the current through the capacitor.
+
+00:04:30.000 --> 00:04:34.000
+Which is also the current through the inductor. We'll call that I sub L. Right.
+
+00:04:34.000 --> 00:04:42.000
+That's equal to I sub c. Those are both 0 at t equal to 0. Okay, so I sub C.
+
+00:04:42.000 --> 00:04:53.000
+At 0 minus. Which is also equal to I sub L. At 0 minus. These are both equal to 0 because the capacitor is behaving.
+
+00:04:53.000 --> 00:05:03.000
+As an open circuit. Alright, now. To figure out the voltage across the capacitor. Alright.
+
+00:05:03.000 --> 00:05:17.000
+What we can do is recognize that The inductor is behaving as a short circuit. So the voltage across the capacitor is going to be the same as the voltage across this 12 ohm resistor.
+
+00:05:17.000 --> 00:05:26.000
+Okay, now in this configuration. The 12 ohm resistor is actually in parallel with the 4 plus 2 over here.
+
+00:05:26.000 --> 00:05:40.000
+Alright, so the equivalent resistance. Of those 2 resistor paths between this node and this node Okay, I will just be 12 in parallel with 6.
+
+00:05:40.000 --> 00:05:47.000
+Which we can easily calculate. Then we can get the voltage between this node and this node, which is v sub c.
+
+00:05:47.000 --> 00:05:55.000
+Just by using voltage division. Right, we have 2 OEMs over here in series. With the 12 in parallel with 6.
+
+00:05:55.000 --> 00:06:01.000
+And so by voltage division, we can figure out what fraction of this 30 ohms over here shows up.
+
+00:06:01.000 --> 00:06:10.000
+Between these 2 nodes and therefore what V sub C is. Okay. So we have. 12 ohms.
+
+00:06:10.000 --> 00:06:19.000
+In parallel with 6 ohms. Okay. And so, the equivalent resistance there is 12.
+
+00:06:19.000 --> 00:06:27.000
+Time 6 divided by 12 plus 6. Which is 72 over 18. Which is forums. Okay.
+
+00:06:27.000 --> 00:06:31.000
+And therefore.
+
+00:06:31.000 --> 00:06:38.000
+V sub C. At 0 minus. Okay, that's with the switch. Close.
+
+00:06:38.000 --> 00:06:46.000
+So that we have the 30 volts. Being part of the circuit over here. That's going to be Hi.
+
+00:06:46.000 --> 00:06:56.000
+The resistance for. Divided by the series combination of this 2 ohms. Plus the equivalent resistance of 4 h.
+
+00:06:56.000 --> 00:07:02.000
+So 2 ohms plus 4. And that's going to be times.
+
+00:07:02.000 --> 00:07:09.000
+The total, 30 volts. All right. And so that is. 4 over 6 or 2 thirds.
+
+00:07:09.000 --> 00:07:20.000
+Times 30 volts. Okay, which is just 20 volts. Alright. Now.
+
+00:07:20.000 --> 00:07:26.000
+Since V sub C as 0 minus is equal to 20 volts. We know the v sub c at 0.
+
+00:07:26.000 --> 00:07:32.000
+Also has to be equal to 20 volts because The voltage across the capacitor always has to be continuous.
+
+00:07:32.000 --> 00:07:42.000
+Alright, so. We can then conclude the V sub C is 0. Is equal to 20 volts.
+
+00:07:42.000 --> 00:07:46.000
+Right, because V sub C.
+
+00:07:46.000 --> 00:07:51.000
+Has to be continuous.
+
+00:07:51.000 --> 00:08:06.000
+Okay, so now at t equal to 0. Alright, so we wanna remember this. At T equal to 0, the switch opens.
+
+00:08:06.000 --> 00:08:16.000
+Okay. And. Hi. What we want to do is we want to determine the Hi.
+
+00:08:16.000 --> 00:08:23.000
+Initial value, that is the value at t equal to 0. The current through the capacitor of i sub c.
+
+00:08:23.000 --> 00:08:40.000
+Alright, now in general. The current through a capacitor does not have to be continuous. However, in this particular circuit, the current that's flowing through the capacitor is the same as the current that's flowing through the inductor.
+
+00:08:40.000 --> 00:08:47.000
+So those are both equal to I sub C. And because the currents. Flowing through an inductor has to be continuous.
+
+00:08:47.000 --> 00:08:59.000
+Then in this case, I sub C will have to be continuous as well. Alright, and so therefore I sub C at 0 will be equal to I sub C at 0 minus, which is 0.
+
+00:08:59.000 --> 00:09:09.000
+Alright, and so, what we have then is that I sub C is 0. Right, we know this is equal to I sub L at 0.
+
+00:09:09.000 --> 00:09:13.000
+And therefore, it has to be 0.
+
+00:09:13.000 --> 00:09:16.000
+Since I said L.
+
+00:09:16.000 --> 00:09:21.000
+Has to be continuous.
+
+00:09:21.000 --> 00:09:28.000
+Okay. And we want to just remind ourselves here that we were able to come to that conclusion.
+
+00:09:28.000 --> 00:09:36.000
+Because I sub C is also the current flowing through the inductor. If this were say a resistor here, then we wouldn't be able to apply that.
+
+00:09:36.000 --> 00:09:39.000
+That kind of reasoning.
+
+00:09:39.000 --> 00:09:46.000
+Okay, so. This is our other, boundary condition, that we'll need over here.
+
+00:09:46.000 --> 00:09:52.000
+Alright, so now that we have our initial condition. So now we have our initial conditions.
+
+00:09:52.000 --> 00:09:58.000
+And so the second step will be to formulate.
+
+00:09:58.000 --> 00:10:04.000
+Okay, the differential equation.
+
+00:10:04.000 --> 00:10:12.000
+That governs the behavior of this circuit. For T greater than or equal to 0. That is with the switch in the open position.
+
+00:10:12.000 --> 00:10:18.000
+Okay. And. To do that. All right, what we will do is.
+
+00:10:18.000 --> 00:10:27.000
+Hmm. We will simply apply a simple node voltage analysis Alright, so we'll take our reference node down here.
+
+00:10:27.000 --> 00:10:31.000
+To have a voltage of 0. And then we'll take this. Note up here.
+
+00:10:31.000 --> 00:10:39.000
+This one here to have voltage V one. Okay. So that's this note over here.
+
+00:10:39.000 --> 00:10:48.000
+And then we just apply KCL at this node. With The switch in the open position so there's no current flowing along this little branch over here.
+
+00:10:48.000 --> 00:10:55.000
+Alright, so we're gonna have, we apply KCL. We will have the voltage or the current flowing up this way.
+
+00:10:55.000 --> 00:11:01.000
+Which is V one over 6 ohms. Plus the current flowing down this way, which is V one over 12 ohms.
+
+00:11:01.000 --> 00:11:11.000
+Plus the current flowing this way. To the right, which is I sub C that's also equal to the capacitance times DVCDT.
+
+00:11:11.000 --> 00:11:19.000
+Okay. So. What we have here then. Is we want to apply.
+
+00:11:19.000 --> 00:11:29.000
+KCL at the node V one. Okay, and so, when we add up the currents, it'll be as I described, V one over 6.
+
+00:11:29.000 --> 00:11:42.000
+Plus V one over 12. We here we could have. Just immediately recognize that the sex and the 12 are in parallel with each other so they are equivalent resistance is 4 ohms.
+
+00:11:42.000 --> 00:11:48.000
+And so we could have just written V one over 4 for both of those together, but we get to the same result with.
+
+00:11:48.000 --> 00:11:54.000
+Just one more step here. Anyway, which, and I think it's a little bit more transparent to do it this way.
+
+00:11:54.000 --> 00:12:02.000
+And then we have the current flowing through the branch that contains the inductor. And the capacitor and that current is C.
+
+00:12:02.000 --> 00:12:08.000
+Times. DVCDT.
+
+00:12:08.000 --> 00:12:15.000
+Okay, so now, so those. The sum of those 3 currents has to be 0.
+
+00:12:15.000 --> 00:12:27.000
+That's KCL. Okay, so now Right here in this equation we have V one. Which is the known voltage and VC, the voltage across the capacitor.
+
+00:12:27.000 --> 00:12:37.000
+Alright, now. Instead of V one, we'd like to have, these other quantities that, are more directly relevant over here.
+
+00:12:37.000 --> 00:12:51.000
+Okay, and Hi. To express v one in terms of these quantities. What we can recognize is that The voltage V one is equal to the voltage across the inductor.
+
+00:12:51.000 --> 00:13:02.000
+Plus the voltage across the capacitor. The voltage across the capacitor is V sub C. The voltage across the inductor is L, the inductance.
+
+00:13:02.000 --> 00:13:10.000
+Times D I C DT. Okay, so
+
+00:13:10.000 --> 00:13:19.000
+V one is equal to. VC plus L. Times the IC. .
+
+00:13:19.000 --> 00:13:29.000
+Okay And so if we take that. And if we take this expression for v one and substitute it into here.
+
+00:13:29.000 --> 00:13:37.000
+Right, we have. One quarter, that's 1 6 plus 1 12. That's how we get the one quarter.
+
+00:13:37.000 --> 00:13:51.000
+Times v one which is VC plus L times D I see. . All right plus C. Times DVC, DT.
+
+00:13:51.000 --> 00:13:56.000
+Right, that's just this last term over here. And that's equal to 0. Okay.
+
+00:13:56.000 --> 00:14:10.000
+Alright, so now. We have an equation that involves 2 different variables i sub c and v sub c Alright, and what we really need is an equation that involves only one variable.
+
+00:14:10.000 --> 00:14:17.000
+Okay, so we need to be able to relate. The current and the voltage in the capacitor to each other.
+
+00:14:17.000 --> 00:14:26.000
+Alright, and we know. That that relationship is that I sub C. Is equal to C. .
+
+00:14:26.000 --> 00:14:38.000
+Okay So at this point, we have. These 2 equations. Alright, and we want to have an equation in terms of just one unknown.
+
+00:14:38.000 --> 00:14:47.000
+Either I sub c or v sub c Now, what the problem is asking us to solve for. We go back to the original problem statement.
+
+00:14:47.000 --> 00:15:00.000
+Is I. Alright. But now if we look at this, we can see that. If we try to express everything in this equation.
+
+00:15:00.000 --> 00:15:06.000
+In terms of I sub C. Then for this term, we would be in good shape because this is just I sub C.
+
+00:15:06.000 --> 00:15:13.000
+Here we have DICD, all right. So that looks good. Here we have VC.
+
+00:15:13.000 --> 00:15:22.000
+V sub C. Is actually you can see from here. Going to be. One over c times the integral.
+
+00:15:22.000 --> 00:15:34.000
+Of I Alright, and I. It's sort of inconvenient, right, mathematically, to try to deal with an equation where we have both an integral.
+
+00:15:34.000 --> 00:15:45.000
+And a derivative of some function. So what we will do instead. Is to cast this equation here in terms of.
+
+00:15:45.000 --> 00:15:51.000
+Just V sub C. Right, so for this term here in this term here, we already have that.
+
+00:15:51.000 --> 00:15:56.000
+And then for this term here, we'll take the derivative of this equation. With respect to time.
+
+00:15:56.000 --> 00:16:04.000
+So DICD is going to be equal to C. Times the second derivative of DVC of VC with respect to time.
+
+00:16:04.000 --> 00:16:12.000
+So this will give us a second derivative term over here and we will have a second order differential equation that we can then solve.
+
+00:16:12.000 --> 00:16:21.000
+For V sub C, once we have V sub C. We can get I sub C by multiplying by the capacitance and taking the derivative with respect to time.
+
+00:16:21.000 --> 00:16:26.000
+Okay, so that's the path that we'll follow. For solving the rest of this problem.
+
+00:16:26.000 --> 00:16:40.000
+So what we do first is I 2. Substitute I sub c from this expression here. In for ICC over here, right, which will give us the second derivative of V sub C.
+
+00:16:40.000 --> 00:16:45.000
+So we're gonna get, one quarter.
+
+00:16:45.000 --> 00:16:57.000
+And then I. From this term over here, we have L. Time C times D squared VC dt squared.
+
+00:16:57.000 --> 00:17:07.000
+So we have LC times D squared VC. DT squared. And then we have this second term over here.
+
+00:17:07.000 --> 00:17:18.000
+Plus C times DVC. DT and then finally we have this last term or this term over here which is one quarter.
+
+00:17:18.000 --> 00:17:24.000
+VC and that's equal to 0. Okay. And, what we'll do next.
+
+00:17:24.000 --> 00:17:36.000
+Is we will take this equation. And divide the whole equation by one quarter LC. So put it in, kind of the standard form that we're a customs working with.
+
+00:17:36.000 --> 00:17:47.000
+So we'll get d squared VC. DT squared plus And then when we divide C by one quarter LC, we're getting at 4 over L.
+
+00:17:47.000 --> 00:17:57.000
+Okay, times. DVCDT. And then when we take one quarter and divide by one quarter LC, we're gonna get one over LC.
+
+00:17:57.000 --> 00:18:10.000
+Times VC. And that's equal to 0. Alright, and if we then put in numerical values, L, remember is for Henry's.
+
+00:18:10.000 --> 00:18:14.000
+Okay, so we're getting a D squared VC.
+
+00:18:14.000 --> 00:18:21.000
+DT squared plus 4 over 4 Henry's, that's one. So just plus DVCDT.
+
+00:18:21.000 --> 00:18:32.000
+Plus and then L times C, LS for Henry C is point 6 4 ferrets. So we have 4 times point 6 4 that's 2.5 6 in the denominator.
+
+00:18:32.000 --> 00:18:39.000
+So we have one over 2.5 6. At times VC. And that's equal to 0.
+
+00:18:39.000 --> 00:18:50.000
+Okay, so this now. Is the differential equation that we have to solve, it is a homogeneous equation so we can solve it.
+
+00:18:50.000 --> 00:18:57.000
+Relatively easily. So that's going to be the third step. Which is to solve.
+
+00:18:57.000 --> 00:19:04.000
+The differential equation. All right. And to do that. We'll follow the usual procedure.
+
+00:19:04.000 --> 00:19:10.000
+Which is to assume that V sub C of T. Has the following form. It's an exponential, right?
+
+00:19:10.000 --> 00:19:19.000
+Some constant A. Times E to the S T. Alright, and so solving for V sub C. Effectively amounts to solving for S.
+
+00:19:19.000 --> 00:19:26.000
+Alright, and so if we take this expression for v sub c of t. And substituted.
+
+00:19:26.000 --> 00:19:36.000
+In here, alright. Then what we will get is an equation for s because each time we take a derivative of this with respect to t, we will get this function back.
+
+00:19:36.000 --> 00:19:45.000
+Times s. All right. So from this first term over here, we're going to get s squared.
+
+00:19:45.000 --> 00:19:53.000
+Then from the second term, we're gonna get S. And then from the third term, just one over 2 point.
+
+00:19:53.000 --> 00:20:01.000
+5 6 and that's equal to 0. There's also an overall factor of A times E to the St multiplying all of this.
+
+00:20:01.000 --> 00:20:16.000
+But we can cancel that out. Now, and we know we can do that because this expression here is never equal to 0 except in the trivial case where A is equal to 0 and that's not the case that we're going to be interested in.
+
+00:20:16.000 --> 00:20:25.000
+Okay, so now we have This equation for S. All right. And, it's a quadratic equation.
+
+00:20:25.000 --> 00:20:33.000
+So we can pretty much solve it. Immediately. Alright, so we get the S. Is equal to just using the quadratic formula.
+
+00:20:33.000 --> 00:20:42.000
+It's gonna be one half times minus one. Plus, or minus the square root. One squared, which is just one.
+
+00:20:42.000 --> 00:20:52.000
+Minus 4 times this constant term. So 4 over 2.5 6.
+
+00:20:52.000 --> 00:20:58.000
+Okay. This term. Under the square root. The discriminate.
+
+00:20:58.000 --> 00:21:05.000
+Is negative. So we're going to have complex values for us. So we're gonna have minus one half.
+
+00:21:05.000 --> 00:21:14.000
+Plus or minus one half. Times j times the square root of 4 over 2.5 6 minus one.
+
+00:21:14.000 --> 00:21:22.000
+Hmm. And this isn't being equal to minus one half. Hello, plus or minus J.
+
+00:21:22.000 --> 00:21:31.000
+Times 3 8. Okay, so when we have complex values for S. Then what we're going to have over here.
+
+00:21:31.000 --> 00:21:40.000
+Is A times E to the minus one half T, alright, from the real part of S. And then it'll be times.
+
+00:21:40.000 --> 00:21:49.000
+I an additional set of factors. There actually be 2 terms in it. That we can write either as Complex exponentials.
+
+00:21:49.000 --> 00:21:57.000
+One term that's proportional to E to the J times 3 A/C, another one that's proportional to the minus J times 3 A/C or.
+
+00:21:57.000 --> 00:22:07.000
+Equivalently, we can write. That second set of terms as. A sum of a sign of the cosine.
+
+00:22:07.000 --> 00:22:12.000
+Right, so something times the sign of 3 HT plus something times the coast line of 3 HT.
+
+00:22:12.000 --> 00:22:21.000
+And the latter is going to be simpler because eventually we know that Right, we know that the voltage, and the current have to be real.
+
+00:22:21.000 --> 00:22:27.000
+So if we express. Then in terms of signs and cosines then they'll automatically be real.
+
+00:22:27.000 --> 00:22:36.000
+Okay, so from the fact that we have complex values for S. We can immediately write the V sub C of T.
+
+00:22:36.000 --> 00:22:46.000
+Is equal to e to the minus one half t. T here. Okay, that's from the real part of S that we saw for here.
+
+00:22:46.000 --> 00:22:58.000
+Times some constant that we have to determine A one. Times the cosine. Of 3 HT. Plus another constant A 2.
+
+00:22:58.000 --> 00:23:09.000
+Times the sign. Of 3 HT. Okay. And so now we have to determine the values of A one and A 2.
+
+00:23:09.000 --> 00:23:17.000
+Okay, so, to do that, we need to use our initial conditions. So one of the initial conditions.
+
+00:23:17.000 --> 00:23:25.000
+That we determined earlier is that V sub C at t equal to 0 is 20 volts. Alright, so we can use that.
+
+00:23:25.000 --> 00:23:32.000
+Pretty much immediately. Right. So we know that. V sub c at t equal to 0.
+
+00:23:32.000 --> 00:23:39.000
+Is equal to 20 volts. And if we take this expression here. And evaluated at t equal to 0.
+
+00:23:39.000 --> 00:23:47.000
+Then this exponential becomes one because e to the 0 is one. This cosine becomes one and the sign becomes 0.
+
+00:23:47.000 --> 00:23:54.000
+So v sub c of t at t equal to 0 is just equal to a one. So that means that A one.
+
+00:23:54.000 --> 00:24:01.000
+Has to be equal to 20. Okay, so we got one. Now we need to get A 2.
+
+00:24:01.000 --> 00:24:11.000
+Now, the other initial condition that we had. Was a value for I sub C at a 0. All right.
+
+00:24:11.000 --> 00:24:19.000
+We saw that I sub c t equal to 0 is equal to 0. Okay, now. What we can do then.
+
+00:24:19.000 --> 00:24:29.000
+Is we can take advantage of. This relationship over here. Then I subc is equal to c times the derivative of v sub c with respect to t.
+
+00:24:29.000 --> 00:24:37.000
+So if we take the expression that we worked out for V sub C. Take its derivative with respect to time, multiply by C.
+
+00:24:37.000 --> 00:24:44.000
+Then that will give us our expression for I sub C of T, which is what we wanted to begin with.
+
+00:24:44.000 --> 00:24:55.000
+And if we evaluate that. At t equal to 0. Then that will allow us as it turns out to determine the value of that other constant A 2.
+
+00:24:55.000 --> 00:25:04.000
+Okay, so that's how we'll proceed from here. So I Alright, is equal to C.
+
+00:25:04.000 --> 00:25:11.000
+Times, DVC. DT. Oops. Okay.
+
+00:25:11.000 --> 00:25:18.000
+And so this is going to be. The capacitance, which is point 6 4 ferrets.
+
+00:25:18.000 --> 00:25:23.000
+And then we're going to have.
+
+00:25:23.000 --> 00:25:31.000
+And look at both of these together. Right, so we have. This product here, alright, we have to take the derivative of that with respect to time.
+
+00:25:31.000 --> 00:25:35.000
+So if we take it's gonna be, the derivative of the first term, the exponential times the second plus the first term times the derivative of this second term over here.
+
+00:25:35.000 --> 00:25:47.000
+So let's just go ahead and calculate those. So the derivative of e to the minus one half t is minus one half.
+
+00:25:47.000 --> 00:25:54.000
+E the minus one half T. So we're gonna multiply that by A one. Times the cosine.
+
+00:25:54.000 --> 00:26:06.000
+Of 3 HT plus A 2. Times a sign. . 3 Alright, and then we're gonna add to this.
+
+00:26:06.000 --> 00:26:13.000
+First term, e to the minus one half t.
+
+00:26:13.000 --> 00:26:22.000
+Times the derivative. Of the second term that we have here in the square brackets. Right from each of these, when we take the derivative, we're going to get a factor of 3 8.
+
+00:26:22.000 --> 00:26:34.000
+Out in front. Okay, and then. The derivative of the cosine of 3 as t is going to be that 3 8 times minus the sign.
+
+00:26:34.000 --> 00:26:50.000
+Of 3 A/C. So we have minus A one times the sine. . And then the derivative of the sine of 3 A/C is going to be that 3 8 a factor times the cosine of 3 HT.
+
+00:26:50.000 --> 00:27:04.000
+So we're gonna have plus A 2. Times the cosine. Of 3 HT. Okay, so now Alright, we can take this.
+
+00:27:04.000 --> 00:27:12.000
+And, evaluated. At t equal to 0. All right. So I sub C at 0.
+
+00:27:12.000 --> 00:27:17.000
+Right. Is going to be.
+
+00:27:17.000 --> 00:27:29.000
+Point 6 4 out here. And then, right, when we evaluate this at 0, it becomes a lot simpler because the exponents, the exponential functions over here are all equal to one.
+
+00:27:29.000 --> 00:27:39.000
+Cosine is equal to one, sine is equal to 0. Okay, so we're gonna get from this first term over here, we're gonna get minus one half.
+
+00:27:39.000 --> 00:27:48.000
+Times one times A one times one over here. This is gonna give us 0. So we're just gonna get minus one half.
+
+00:27:48.000 --> 00:27:56.000
+Times A one from all of this. And then from all of this, we get one. Times 3 8.
+
+00:27:56.000 --> 00:28:11.000
+This is going to be 0 and then this is going cosine of 3. Time 0 is gonna be one So we're gonna have plus 3 8 times A 2.
+
+00:28:11.000 --> 00:28:21.000
+And from the initial condition that we worked at earlier, we know that I sub C at 0 has to be equal to a t equal to 0 has to be equal to 0.
+
+00:28:21.000 --> 00:28:33.000
+And so this then means that. A 2 has to be equal to. 8 thirds times one half.
+
+00:28:33.000 --> 00:28:41.000
+Times A one. Alright, so this is going to be this 4, this is one. So it's going to be 4 thirds.
+
+00:28:41.000 --> 00:28:55.000
+Times A one. A one is 20, so this is going to be 80. Over 3. Alright, that is what A 2 is.
+
+00:28:55.000 --> 00:29:01.000
+Okay, so now we can take our values for A one and A 2. And substitute them into this.
+
+00:29:01.000 --> 00:29:10.000
+Expression here. For, I sub C of T. Alright, and so if we do that.
+
+00:29:10.000 --> 00:29:20.000
+We have that I sub CFT. Is equal to. We have this 0 point 6 4, which is the capacitance down in front.
+
+00:29:20.000 --> 00:29:28.000
+And then we're gonna have. From what we're gonna do is we're gonna ride.
+
+00:29:28.000 --> 00:29:41.000
+Hi. E to the one, e to the minus one half. T. Alright, we know that, we're gonna have that factor in common to both of these terms.
+
+00:29:41.000 --> 00:29:47.000
+So we can just pull it out in front. And then we're gonna group the cosine of the sine terms together.
+
+00:29:47.000 --> 00:29:58.000
+So for the cosine. Terms we have minus one half times A one. So we have Minus one half times A one.
+
+00:29:58.000 --> 00:30:08.000
+That takes care of this term. And then we're gonna have. 3 8 plus 3 8 times A 2.
+
+00:30:08.000 --> 00:30:16.000
+Plus 3 8. Times A 2. Times the cosine. . Right.
+
+00:30:16.000 --> 00:30:26.000
+So that second term takes care of this one over here Then for the signed terms. We're gonna have minus one half.
+
+00:30:26.000 --> 00:30:36.000
+Times A 2. Alright, so we have minus. One half. Times A 2.
+
+00:30:36.000 --> 00:30:44.000
+That's this term over here. And then we have. Sorry, this is A one over here.
+
+00:30:44.000 --> 00:30:55.000
+I minus 3 8 times A one. So we might have the minus sign over here. So in the parentheses we have plus 3 8.
+
+00:30:55.000 --> 00:31:08.000
+Times. A one times. Design. Of 3 A/C.
+
+00:31:08.000 --> 00:31:19.000
+Okay. And so now we substitute in the numerical values. That we got for A one and A 2 right A one is 20 A 2 is 80 over 3.
+
+00:31:19.000 --> 00:31:29.000
+Okay, so this is going to be equal to. You know, point 6 4. Times e to the minus one half t.
+
+00:31:29.000 --> 00:31:36.000
+Okay, and then Here we have minus one half A one, A one is 20, so minus 10.
+
+00:31:36.000 --> 00:31:49.000
+Plus 3 8 A 2. A 2. Is we saw up here, 80 over 3. So, 80 over 3 times 3 8 is 10.
+
+00:31:49.000 --> 00:31:51.000
+Alright times the cosine. Of 3 HT. Alright, so we see actually that this term is going to go away, right?
+
+00:31:51.000 --> 00:32:07.000
+Because minus 10 plus 10 is 0. Then we have minus. And we have one half a 2. So that is one half of 80 over 3, that's 40 over 3.
+
+00:32:07.000 --> 00:32:22.000
+Plus 3 8. A one, alright, so 3 8 times 20. Alright, is 60 over 8, which is 15 over 2.
+
+00:32:22.000 --> 00:32:31.000
+So plus 15 over 2. Times the sign. Oh, 3 HT.
+
+00:32:31.000 --> 00:32:37.000
+Okay. And. So now, right, this goes to 0. So we have.
+
+00:32:37.000 --> 00:32:46.000
+Point 6 4, right, which is 64 over a hundred. That is 16.
+
+00:32:46.000 --> 00:32:54.000
+Over 25. Alright. Then we have. 40 over 3.
+
+00:32:54.000 --> 00:33:03.000
+Plus 15 over 2. Right, 40 over 3 is 80 over 6. 15 over 2 is 45 over 6.
+
+00:33:03.000 --> 00:33:08.000
+Alright, so, 80 plus 45 is a hundred 25. Over 6.
+
+00:33:08.000 --> 00:33:17.000
+So this is times 125. Over 6. Alright, then we have times e to the minus one half t.
+
+00:33:17.000 --> 00:33:21.000
+Times the sign.
+
+00:33:21.000 --> 00:33:30.000
+Of 3 HT. Alright. And if we multiply all of these out. Then these cancel out to 5.
+
+00:33:30.000 --> 00:33:39.000
+This cancels out to 8. Over 3. So. Oh, and then there was a minus sign here.
+
+00:33:39.000 --> 00:33:51.000
+This minus sign is from this minus sign over here. All right. And so what we finally get. Is that I sub c of t is equal to minus.
+
+00:33:51.000 --> 00:33:59.000
+40 over 3 times e to the minus one half t. Times the sign.
+
+00:33:59.000 --> 00:34:07.000
+Of 3 HT and that is in amps.
+
+00:34:07.000 --> 00:34:18.000
+Okay, and that is the result. Okay. So, so if you had looked at. Some of the examples, if you remember from a class of the homeworks, the examples.
+
+00:34:18.000 --> 00:34:28.000
+Assignments for solving first order circuits, you can see that second order service, circuits are significantly more complicated to.
+
+00:34:28.000 --> 00:34:45.000
+Analyze. Alright. And so some of the key points. Alright, if we, sort of take a step back and, do a retrospective analysis of our solution here some of the key points
+
+00:34:45.000 --> 00:34:57.000
+That you might take a note of. Is in terms of the initial conditions. Right.
+
+00:34:57.000 --> 00:35:08.000
+We did the usual thing of Letting inductor. Become a short circuit.
+
+00:35:08.000 --> 00:35:21.000
+And the capacitor become. An open circuit. Alright for T less than 0. I and then.
+
+00:35:21.000 --> 00:35:29.000
+We require. V sub C of T and. Right? Basically the currents.
+
+00:35:29.000 --> 00:35:38.000
+Through the inductor and the voltage across the capacitor. We require these to be.
+
+00:35:38.000 --> 00:35:51.000
+Continuous. Alright. From the information that we can get from this, we can then additionally arrive at boundary conditions on the derivatives of various currents and voltages and often we will need those, right?
+
+00:35:51.000 --> 00:36:00.000
+And as you saw in this example, we in fact I did need to have effectively.
+
+00:36:00.000 --> 00:36:09.000
+2 initial conditions, one on V sub C and one on its. Derivative, which ended up being.
+
+00:36:09.000 --> 00:36:17.000
+Of which in the case of capacitor is proportional to I sub C. Alright, once we have the initial conditions.
+
+00:36:17.000 --> 00:36:24.000
+Then, what we did was we used.
+
+00:36:24.000 --> 00:36:29.000
+The differential relationships.
+
+00:36:29.000 --> 00:36:37.000
+Right, the current voltage relationships, right? For
+
+00:36:37.000 --> 00:36:42.000
+Capacitors and inductors.
+
+00:36:42.000 --> 00:36:46.000
+Right, we use those to formulate.
+
+00:36:46.000 --> 00:36:55.000
+The differential equation.
+
+00:36:55.000 --> 00:37:03.000
+And we used, just sort of basic circuit concepts.
+
+00:37:03.000 --> 00:37:08.000
+Okay, to write.
+
+00:37:08.000 --> 00:37:13.000
+A differential equation.
+
+00:37:13.000 --> 00:37:20.000
+In terms of a single.
+
+00:37:20.000 --> 00:37:32.000
+Unknown variable. Okay, and coming up with that differential equation in terms of just a single unknown variable is often one of the trickier parts of doing this kind of analysis, right?
+
+00:37:32.000 --> 00:37:58.000
+So it requires some playing around with the different circuit equations and it's one of these things where with practice, then you will become better and better at coming up with the differential equation that can be solved for a single unknown and once you have that typically you can get everything else, that you need from that.
+
+00:37:58.000 --> 00:38:08.000
+Alright, in terms, once you have the differential equation, then, what we did was just use the usual substitution of this exponential form.
+
+00:38:08.000 --> 00:38:17.000
+Alright, 2, I solve the equation. So we used.
+
+00:38:17.000 --> 00:38:28.000
+The substitution of a current or a voltage. Being equal to or having the form of a constant times.
+
+00:38:28.000 --> 00:38:36.000
+E to the ST, right? So we use that to solve.
+
+00:38:36.000 --> 00:38:45.000
+The differential equation, right, because we know that at least for a homogeneous differential equation, the solution has to be of this form.
+
+00:38:45.000 --> 00:38:53.000
+And so an algebraic solution for S. Is essentially going to give us the solution to the differential equation.
+
+00:38:53.000 --> 00:39:06.000
+And then what's very helpful here. Is to know. The form. Of the solution.
+
+00:39:06.000 --> 00:39:13.000
+For S being real. Or complex.
+
+00:39:13.000 --> 00:39:18.000
+Or a double root.
+
+00:39:18.000 --> 00:39:25.000
+Okay, and this is something that, we've gone over, where depending on when you're watching this, we will go over, in class.
+
+00:39:25.000 --> 00:39:37.000
+All right. And then. The last point to note was that as I described when we were in the process of solving this.
+
+00:39:37.000 --> 00:39:48.000
+What we did actually, we were asked to solve for I, the current through the capacitor. But what we actually did was to formulate a differential equation for the voltage and then solve that.
+
+00:39:48.000 --> 00:39:55.000
+Right, so we solved. Initially.
+
+00:39:55.000 --> 00:40:10.000
+For v sub c of t. Right. Rather than I sub CFT. Right, because
+
+00:40:10.000 --> 00:40:16.000
+Doing so, basically it was easier.
+
+00:40:16.000 --> 00:40:24.000
+And the reason it was easier was because it allowed us to have a purely differential equation. Second order differential equation.
+
+00:40:24.000 --> 00:40:42.000
+Instead of having an equation that would have both derivative in an integral right for for i sub c all right although you know that can be solved as well alright and then Once we did this.
+
+00:40:42.000 --> 00:40:48.000
+Then we calculated.
+
+00:40:48.000 --> 00:40:54.000
+I sub C of T. Bye.
+
+00:40:54.000 --> 00:41:02.000
+Noting that. I sub C of T is equal to C. Times DVCDT. Okay.
+
+00:41:02.000 --> 00:41:12.000
+And so we could just take the derivative of v sub c. And then that gave us our solution.
+
+00:41:12.000 --> 00:41:19.000
+Okay, so those are points that are, worth, thinking about. And they'll probably come up again as you solve other problems of this type.
+
+00:41:19.000 --> 00:41:34.000
+Okay, so then
+

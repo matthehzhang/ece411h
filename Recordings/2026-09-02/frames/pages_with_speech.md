@@ -1,0 +1,535 @@
+# 2026-09-02: board pages with the speech that accompanied them
+
+37 distinct pages from 106 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0004.jpg  on screen [0:00:00 – 0:01:21]
+<sub>sharpness 5969, ink 3.9 %, colour 0.5</sub>
+
+- [0:00:02] Okay, so I have started the recording. And as usual, just a few announcements. The first one is a reminder about the problem sets. The first one is due on Wednesday, so a week from today, second one, the following Monday, September 14th.
+- [0:00:18] All right, and then the third problem set will be released on the same day that the first problem set is due. And that'll be due on September 21st, all right, so a week after the second problem set.
+- [0:00:31] And I'm kind of letting you know about that significantly in advance because the third problem set, which is on RLC, good bless you, circuit analysis, is actually somewhat time consuming. So you should not leave it for the last minute.
+- [0:00:49] Okay, and then finally, just a reminder that we won't have our class or regular office hours on September 16th. And what I'll do is I'll record a lecture and post it on Canvas, and you should make sure to watch it before September 21st.
+- [0:01:06] Okay, any questions on any of these? Okay, any questions from our last class meeting? Okay, so if not, I actually want to go back and talk just a little bit about the problem sets.
+- [0:01:20] And talk just a little bit about something that you discussed a little bit in the recitation session for this week, which is circuits that have multiple op amps in them.
+
+## page 02  f_0008.jpg  on screen [0:01:21 – 0:01:21]
+<sub>sharpness 3885, ink 2.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0005.jpg (0:01:21), f_0006.jpg (0:01:21), f_0007.jpg (0:01:21)</sub>
+
+- [0:01:20] And talk just a little bit about something that you discussed a little bit in the recitation session for this week, which is circuits that have multiple op amps in them.
+
+## page 03  f_0027.jpg  on screen [0:01:21 – 0:07:14]
+<sub>sharpness 1167, ink 1.9 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0009.jpg (0:02:04), f_0014.jpg (0:07:01), f_0022.jpg (0:07:13), f_0026.jpg (0:07:14)</sub>
+
+- [0:01:20] And talk just a little bit about something that you discussed a little bit in the recitation session for this week, which is circuits that have multiple op amps in them.
+- [0:01:40] Okay, what we have looked at in class so far are circuits that have a single op amp, all right. The extension to multiple op amps is actually relatively straightforward.
+- [0:01:51] And I think Darsh kind of outlined how you do that using the example of an instrumentation amplifier circuit in the recitation session.
+- [0:02:02] So I just wanted to talk a little bit about how you approach problems or circuits that have multiple op amps in them kind of in general, right.
+- [0:02:12] So there are a few basic rules that the circuits pretty much always have to follow, or that any circuit really has to follow, right.
+- [0:02:20] So the basic rules, all right, for circuits with multiple op amps, okay, and we're talking specifically about ideal op amps, all right, are first of all, each of the op amps, right, we're using, God bless you, we're using the ideal op amp model.
+- [0:02:43] So each of the op amps will have to follow the rules of ideal op amp behavior, right. So for each ideal op amp, all right, we are going to require, as usual, that the input currents be equal to zero, and then the input voltages are equal to each other, okay, for ideal op amp behavior.
+- [0:03:15] The second point is that it's often important to check to make sure that each of the op amps in the circuit is getting an input voltage that keeps it within its ideal behavior, right, within its linear region.
+- [0:03:34] So you want to make sure that each op amp remains in its linear region, right, the linear region of behavior, right, or if it doesn't, you have to account for the op amp saturation behavior.
+- [0:04:10] Okay, and, you know, this can be a significant issue because, for example, if you have multiple op amps that are cascaded, say, you know, meaning that the output of one set of op amps then become the input for the next set of op amps, and if also, you know, each of these op amps is acting as an amplifier, okay,
+- [0:04:37] then, you know, after those two stages, you can get a gain that is kind of the product of the individual gain factors for each of the amplifiers, and so, you know, it's easier or more likely, perhaps, that that will try to push the output of the op amp beyond its supply voltages.
+- [0:05:00] And so, you want to check to make sure that you're not getting into that kind of situation, right.
+- [0:05:08] And then the third rule is that, you know, the usual rules of circuit analysis apply. So KCL and KVL, right, these will apply everywhere in the circuit, right, so around all the loops and for KVL and at all the nodes for KCL.
+- [0:05:37] But the one thing you have to be a little bit careful of is that if you have a node that is connected to the output of one of the op amps, then it's usually not that useful to apply KCL at that node because the output current at the op amp usually will not be known.
+- [0:05:57] You can apply KCL at the end to figure out what that current has to be, but if you're in the middle of your analysis, then usually applying KCL at the output of an op amp will not help you that much because you'll always have this unknown current coming out of the op amp.
+- [0:06:15] Alright, so the caveat here is that, right, at each, alright, so the current at each op amp output, right, is typically, right, not known, okay, unless you go back and solve for it at the end when you know everything else.
+- [0:06:50] Okay, so it's not known until everything else has been solved. Okay, so these are, you know, kind of the things that we have to keep in mind if we're looking at circuits that have multiple op amps.
+- [0:07:14] And then the general approach, which you saw at least outlined in the recitation session, right, the general approach, okay, for analyzing circuits that have multiple op amps is the following.
+
+## page 04  f_0028.jpg  on screen [0:07:14 – 0:09:36]
+<sub>sharpness 1423, ink 2.4 %, colour 0.1</sub>
+
+- [0:07:14] And then the general approach, which you saw at least outlined in the recitation session, right, the general approach, okay, for analyzing circuits that have multiple op amps is the following.
+- [0:07:42] So, so typically, what you want to do is you start near the known input voltages, right, so you'll generally have a set of known input voltages, and those might be the inputs to one set of op amps, right, or maybe a single op amp.
+- [0:07:57] So you kind of start there because you want to start where kind of you know what is going on.
+- [0:08:04] And you analyze the behavior of that initial set of op amps that are connected to the inputs. Once you get the outputs of those op amps, right, those will basically act as voltage sources, and so you will know them.
+- [0:08:19] And then very often those will be the inputs to say another set of op amps or another single op amp. And then you can analyze the behavior of that op amp, and you just sort of work your way through the circuit until you get to the final output. Yes, question?
+- [0:08:53] Yeah, so, so if one of the op amps is in saturation, then yes, it could be the case that the input voltages are no longer equal to each other, right, because that's the nature of the transfer characteristic.
+- [0:09:15] And so, so that's part of the behavior that you have to take into account, you know, if it looks like one of the op amps is going out of its linear region of behavior.
+- [0:09:28] Okay, so, so the general approach, as I was describing, right, is you want to determine the output voltages of the individual op amps, plus you, starting with those that are connected to the known inputs, right, so starting with those that are closest, and bless you, to the input signals, okay, which are generally known or specified just as constant parameters.
+
+## page 05  f_0029.jpg  on screen [0:09:36 – 0:10:51]
+<sub>sharpness 2666, ink 4.5 %, colour 0.1</sub>
+
+- [0:09:28] Okay, so, so the general approach, as I was describing, right, is you want to determine the output voltages of the individual op amps, plus you, starting with those that are connected to the known inputs, right, so starting with those that are closest, and bless you, to the input signals, okay, which are generally known or specified just as constant parameters.
+- [0:10:17] And then you can use the output voltages of these op amps, right, you can use them as input voltages for the subsequent op amps, okay, in the signal path.
+- [0:10:46] Okay, and then, as we were just discussing, right, you also want to, while you're doing this analysis, right, you also want to make sure that you account for the fact that the op amps may be going into saturation, right, so you have to account for the op amp saturation behavior.
+
+## page 06  f_0037.jpg  on screen [0:10:51 – 0:11:31]
+<sub>sharpness 2091, ink 3.6 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0036.jpg (0:11:30)</sub>
+
+- [0:10:46] Okay, and then, as we were just discussing, right, you also want to, while you're doing this analysis, right, you also want to make sure that you account for the fact that the op amps may be going into saturation, right, so you have to account for the op amp saturation behavior.
+- [0:11:23] Okay, so that's the basic approach. You saw kind of a sketch of an example of that in the recitation session, so you can see the recitation discussion, or I have a recording of the analysis of the instrumentation amplifier circuit that maybe goes into a little bit more detail, so you can also see the recording of the instrumentation amplifier.
+
+## page 07  f_0045.jpg  on screen [0:11:31 – 0:13:18]
+<sub>sharpness 1859, ink 3.2 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0039.jpg (0:11:31), f_0041.jpg (0:12:00), f_0042.jpg (0:13:18)</sub>
+
+- [0:11:23] Okay, so that's the basic approach. You saw kind of a sketch of an example of that in the recitation session, so you can see the recitation discussion, or I have a recording of the analysis of the instrumentation amplifier circuit that maybe goes into a little bit more detail, so you can also see the recording of the instrumentation amplifier.
+- [0:12:14] This is in Ulibi, it's section 4-9, all right, so that's an example that you can see. If you want to see another example, you can also look at the solution to Ulibi problem, it's 5.71.
+- [0:12:38] If you want to see examples of how you analyze these types of circuits, okay, and I will post, so the solution to Ulibi 5.71 is in the section of the Canvas site where there are the recorded solutions to a bunch of different problems from Ulibi, and then I'll post a link to the instrumentation amplifier example in the lecture topics discussion board for today's entry.
+- [0:13:08] Okay, so any questions on any of that? Okay, so what we wanted to do next then is to go back to circuits that have just a single op amp, but now what we want to do is instead of just having say op amps and capacitors, op amps and resistors and sources, we are going to introduce the possibility of having a capacitor in the op amp circuit.
+
+## page 08  f_0052.jpg  on screen [0:13:18 – 0:18:41]
+<sub>sharpness 1511, ink 2.1 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0046.jpg (0:13:19), f_0048.jpg (0:15:42), f_0050.jpg (0:15:42), f_0051.jpg (0:16:48)</sub>
+
+- [0:13:08] Okay, so any questions on any of that? Okay, so what we wanted to do next then is to go back to circuits that have just a single op amp, but now what we want to do is instead of just having say op amps and capacitors, op amps and resistors and sources, we are going to introduce the possibility of having a capacitor in the op amp circuit.
+- [0:13:38] Okay, and if we think about what that is likely to enable, all right, remember for a capacitor, the current voltage relationship is that the current is given by the capacitance times the derivative of the voltage across the capacitor with respect to time.
+- [0:13:56] Whereas for a resistor, we just have an algebraic, a direct proportionality relationship between the current and the voltage. Okay, so if in a circuit with a capacitor, we then have the possibility of having less current that are proportional to say the derivative of a voltage rather than just being proportional to a voltage, then what we should be able to do, if you sort of think about how we can do that,
+- [0:14:25] sort of think about how we analyze, say the amplifier and summing and difference circuits from last time, what we should be able to do is to get not only algebraic relationships between input and output voltages, but we should also be able to get differential relationships or integrative relationships between input and output voltages.
+- [0:14:50] All right, because we'll be able to have currents that are derivatives of voltages rather than just being proportional to the voltage. Okay, so we'll look at two examples, sort of the two canonical examples of how this works.
+- [0:15:05] Okay, so we're looking now at op amp circuits that have capacitors in them. Okay, and the reading for this is in Ulibi et al. And it's section 5-6.
+- [0:15:29] All right, and the first example that we'll look at is an op amp integrator. Okay, so this circuit is going to be very similar to the inverting amplifier circuit, if you remember that from before.
+- [0:15:52] So we're going to have our op amp like this. Okay, this is the output voltage. These are the input voltages. The non-inverting input vp is going to be connected to ground. All right, and then we're going to have an input voltage, call that v sub s.
+- [0:16:17] And then we're going to look at two places in the circuit where we can add components, right? One between vs and vn, and the other one between vn and vo. All right, now in the inverting amplifier, remember we had resistors in both of those positions. Okay, but what we want to do now is to fill one of those with a capacitor and the other one with a resistor
+- [0:16:49] in such a way that the output voltage will be the integral of the input voltage, right? So you want vo to be the integral of vs. All right, so if we want that, then where do you think the capacitor should go? And why? Okay, well you want the output to be the integral of the input, right?
+- [0:17:24] vo to be the integral of vs, right? That means that vs, or yeah, so you want the output to be the integral of vs. Yes?
+- [0:17:38] Well, I guess the capacitor, when you put it in there, take the derivative of voltage across the terminals, the opposite of, so we want the integral of the input, the output, maybe we put the capacitor above the op-end.
+- [0:17:59] Yes, that's right, you want the capacitor to be between the output voltage vo and vn, because then that current will be proportional to the derivative of the output, all right? And so then you'll get through KCL applied at vn, you'll get that the derivative of the output is proportional to vs, all right?
+- [0:18:21] And then if you integrate that expression, you'll get that the output voltage itself is proportional to the integral, right, of vs. So that's exactly how we want to do it. So we're going to put a resistor here and a capacitor here. We'll call this r, call this c, and then in the usual way, which we saw in the case of the inverting amplifier as well,
+
+## page 09  f_0058.jpg  on screen [0:18:41 – 0:20:17]
+<sub>sharpness 1720, ink 2.7 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0053.jpg (0:19:12)</sub>
+
+- [0:18:21] And then if you integrate that expression, you'll get that the output voltage itself is proportional to the integral, right, of vs. So that's exactly how we want to do it. So we're going to put a resistor here and a capacitor here. We'll call this r, call this c, and then in the usual way, which we saw in the case of the inverting amplifier as well,
+- [0:18:49] we're going to apply KCL at the inverting input of the op-end. And so if we do that, right, then we're going to have the current going out to the left through the resistor r. So that current is going to be the voltage vn minus vs over r.
+- [0:19:09] And then that current plus the current flowing up and through the capacitor to the right is going to have to equal 0. The current flowing up and to the right through the capacitor is c times the derivative with respect to time of vn minus vo. Those two currents have to add up to 0, all right?
+- [0:19:32] And then we also know that for an ideal op-end, vp is equal to vn. And so both of those are equal to 0. Okay, so cursor is not showing up. But in the equation that we just wrote down, vn, we can set it to 0. We can multiply this whole equation by minus 1.
+- [0:19:54] And what we get then is that vs over r plus c times dvo dt is equal to 0. Or if we solve for dvo dt, it's equal to minus 1 over rc times v sub s, right? So the derivative of the output voltage vo is proportional to the input voltage vs.
+
+## page 10  f_0079.jpg  on screen [0:20:17 – 0:24:00]
+<sub>sharpness 2529, ink 3.7 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0062.jpg (0:21:44)</sub>
+
+- [0:19:54] And what we get then is that vs over r plus c times dvo dt is equal to 0. Or if we solve for dvo dt, it's equal to minus 1 over rc times v sub s, right? So the derivative of the output voltage vo is proportional to the input voltage vs.
+- [0:20:21] All right, so any questions on how we got to that? Okay, and then once we have that, we can just integrate that equation over some time interval, say from a time t1 to a time t2. So the integral from t1 to t2 of, say, dvo dt, we're going to integrate over time, all right?
+- [0:20:45] That has to be equal to minus 1 over rc times the integral over the same time interval of v sub s of t dt. Okay, when we integrate a perfect differential, right? dvo dt, we're just going to get vo, right? The output voltage.
+- [0:21:12] Because differentiation and integration are inverse operations. So, all right, since this is a definite integral, we're going to get the vo at t2 minus vo at t1, all right? It's equal to, and then on the right-hand side, minus 1 over rc times the integral, all right? It's still from t1 to t2 of v sub s of t dt.
+- [0:21:40] And this is the result. And so what we see here is that indeed, we have an output voltage. What this circuit is doing is that it's giving us an output voltage that is the integral of the input voltage, right? So this circuit acts as an integrator for v sub s of t.
+- [0:22:09] All right, so the voltage difference between two different times is proportional to the integral of the input signal. Yes?
+- [0:22:16] Probably doesn't matter at all, but the minus sign that you're getting there, that's just a product of the way that you decided to label your voltage and current, right?
+- [0:22:29] So the minus sign, basically it comes in because we've started from the inverting amplifier configuration, all right? So you get a minus sign, or this particular configuration gives you a minus sign in the proportionality, and therefore also a minus sign in the relationship between the output and the integral of the input.
+- [0:22:54] So if we had started from, say, the non-inverting amplifier or something like that, then we could have gotten it without the minus sign, but it would have been a little bit more complicated because you have two resistors, you have to have the voltage divider.
+- [0:23:11] So with your first KCL equation here, which way are you defining the current to go?
+- [0:23:20] Oh, so we're defining, yeah, I don't know how to get the cursor back over here, but yeah, so we're defining the current to go like this through the capacitor, all right?
+- [0:23:36] Because when we apply KCL at this node, right, the way that we're doing it is that we're saying that the sum of all the output currents has to be zero.
+- [0:23:45] So the current going out of that node through the resistor is going like this, and through the capacitor is going like this, right?
+- [0:23:53] And when we say that the current in a capacitor is equal to C times dv dt, right, then the convention in that relationship is that we're talking about the current flowing from the higher voltage to the lower voltage,
+
+## page 11  f_0080.jpg  on screen [0:24:00 – 0:25:57]
+<sub>sharpness 2556, ink 3.5 %, colour 0.1</sub>
+
+- [0:23:53] And when we say that the current in a capacitor is equal to C times dv dt, right, then the convention in that relationship is that we're talking about the current flowing from the higher voltage to the lower voltage,
+- [0:24:14] in the sense that we've defined v, right? So that's why we had vn minus v0 over here, right, in this current.
+- [0:24:23] Oh, I'm just thinking as like if you were to find the other current, like from the vs node to the vn node, that's going from the vs to vn to the vn to the vs, then you would have gotten sort of that negative 1 over rc, you just got 1 over rc, but that doesn't mean like a difference.
+- [0:24:39] It's the same thing, it's just you define...
+- [0:24:43] Oh, we still would have gotten this same relationship over here with the minus sign, because it's because when we apply KCL at this node, at vn, then, you know, one way of doing it, which is what we did, is to say that the sum of all the outgoing currents is equal to zero.
+- [0:25:01] And so then we get vn minus vs and vn minus v0. Another way of doing it, which is what you're describing, is to say the sum of all the incoming currents has to be zero.
+- [0:25:13] Okay. And so that would be, then you would have vs minus vn, and then v0 minus vn, and you would still get the minus sign, all right?
+- [0:25:24] But what you cannot do is to say that the sum of the current coming in this way and the current going out that way has to be zero.
+- [0:25:34] Well, I'm just saying you would set them as equal to each other.
+- [0:25:37] Yeah, so you would set them as equal to each other, but you would still end up getting a minus sign in that relationship.
+- [0:25:48] Any other questions? Yes.
+- [0:25:52] Why would you need a hardware circuit for integrating?
+- [0:25:57] Oh, well, say if you didn't want to buy a little microprocessor or something like that, and you wanted something very simple and less expensive to do something like a counting function, all right?
+
+## page 12  f_0083.jpg  on screen [0:25:57 – 0:25:57]
+<sub>sharpness 2936, ink 4.0 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0081.jpg (0:25:57)</sub>
+
+- [0:25:57] Oh, well, say if you didn't want to buy a little microprocessor or something like that, and you wanted something very simple and less expensive to do something like a counting function, all right?
+
+## page 13  f_0119.jpg  on screen [0:25:57 – 0:27:54]
+<sub>sharpness 1542, ink 2.1 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0090.jpg (0:25:59), f_0106.jpg (0:27:28), f_0111.jpg (0:27:52), f_0113.jpg (0:27:53), f_0114.jpg (0:27:53), f_0117.jpg (0:27:53), f_0118.jpg (0:27:54)</sub>
+
+- [0:25:57] Oh, well, say if you didn't want to buy a little microprocessor or something like that, and you wanted something very simple and less expensive to do something like a counting function, all right?
+- [0:26:13] You're counting up events, so you have some sensor that's counting up how many people walk through a turnstile or how many times something blocks a laser or something like that.
+- [0:26:28] Then this will allow you to do that because, say, for each event, you get a pulse, a voltage pulse.
+- [0:26:36] Then what this would do is effectively count up those pulses, all right?
+- [0:26:45] And if you care about cost and complexity, one op amp is probably better than a microprocessor that you would then program to calculate the interval of something.
+- [0:26:59] Is that sort of what you're asking? Yeah.
+- [0:27:02] Okay. Any other questions?
+- [0:27:06] Okay. So the other example that we will look at here is just the inverse, which is an op amp differentiator.
+- [0:27:23] Okay. And so for a differentiator, all right, given what we discussed about kind of the logic behind how we put together the integrator circuit,
+- [0:27:35] then the obvious way to do the differentiator circuit is to swap the positions of the resistor and the capacitor, all right?
+- [0:27:44] Then what we will get from KCL is an output voltage that is proportional to the derivative of the input VS.
+- [0:27:55] And so what this circuit will look like is this, output voltage VN and VP, VP connected to zero.
+
+## page 14  f_0120.jpg  on screen [0:27:54 – 0:28:33]
+<sub>sharpness 1558, ink 2.1 %, colour 0.1</sub>
+
+- [0:27:44] Then what we will get from KCL is an output voltage that is proportional to the derivative of the input VS.
+- [0:27:55] And so what this circuit will look like is this, output voltage VN and VP, VP connected to zero.
+- [0:28:10] And then we have our input signal VS now connected through a capacitor C to VN.
+- [0:28:23] And then we have for our feedback portion of the circuit, a resistor R between VO and VN.
+- [0:28:31] All right. And then to see what this circuit does, again, we can, as usual, we'll apply KCL at the input node VN.
+
+## page 15  f_0133.jpg  on screen [0:28:33 – 0:31:37]
+<sub>sharpness 1443, ink 2.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0122.jpg (0:29:57), f_0129.jpg (0:30:55), f_0131.jpg (0:30:55), f_0132.jpg (0:31:12)</sub>
+
+- [0:28:31] All right. And then to see what this circuit does, again, we can, as usual, we'll apply KCL at the input node VN.
+- [0:28:42] And what we will get is that for the circuit or for the current flowing out of VN through the capacitor, so flowing through the left and to the left in the circuit diagram, that current is going to be C times d dt of VN minus VS.
+- [0:29:02] And then the current flowing up and to the right through the resistor R is just going to be VN minus VO over R.
+- [0:29:12] Those two currents, the two outgoing currents from VN have to sum to zero.
+- [0:29:17] And then we know that VN has to be equal to VP and VP is equal to zero.
+- [0:29:23] Okay. So in this equation, we can replace VN with zero.
+- [0:29:29] We multiply by minus one. And what we get is that C times dVS dt plus VO over R is equal to zero.
+- [0:29:43] Or you're solving for VO, you get the VO is equal to minus RC times dVS dt.
+- [0:29:54] Okay. So indeed, what's happening here is that this circuit, it acts as a differentiator for the input V sub S of t.
+- [0:30:14] And so this would be something useful if what you want to detect, if you want a signal that becomes non-zero anytime there's a change in something.
+- [0:30:27] Because if you have a constant input, then the output voltage would be zero.
+- [0:30:31] Every time it changes, then you'll get a non-zero output.
+- [0:30:36] All right. So that's one of the kinds of situations where you might want something that is acting as a differentiator.
+- [0:30:45] So any questions on this?
+- [0:30:50] Okay. So that is everything that we want to say for now on first order circuits, including op amp circuits, all right, or first order op amp circuits.
+- [0:31:03] What we want to do next is to move on to circuits that have, say, both inductors and capacitors in them at the same time.
+- [0:31:14] So we want to look at now RLC circuits. Okay.
+- [0:31:21] And the reading for this is in Uliby et al. And this is in chapter six. All right.
+- [0:31:35] And so as I understand it from the background survey and the 302 and 302H instructors, this is something that was probably discussed very little, if at all, in 302 or 302H. Is that correct?
+
+## page 16  f_0150.jpg  on screen [0:31:37 – 0:40:51]
+<sub>sharpness 2267, ink 3.1 %, colour 1.2</sub>
+<sub>earlier states of this page: f_0134.jpg (0:33:36), f_0141.jpg (0:36:12), f_0145.jpg (0:36:13), f_0149.jpg (0:40:51)</sub>
+
+- [0:31:35] And so as I understand it from the background survey and the 302 and 302H instructors, this is something that was probably discussed very little, if at all, in 302 or 302H. Is that correct?
+- [0:31:52] Okay. So RLC circuits, where you have more than one or specifically two kind of energy storage components, inductors or capacitors, can give you a wider range of behaviors than just the first order circuits.
+- [0:32:10] So remember, when we talked about first order circuits, those were circuits that had just a single equivalent capacitor or inductor in them.
+- [0:32:19] And so their behavior was governed by a first order differential equation. And the solution to first order differential equation is always some form of exponential.
+- [0:32:31] Okay. So that's basically the kind of behavior that you can get from a first order circuit.
+- [0:32:36] So circuits that have a single capacitor or inductor, plus as usual resistors and sources.
+- [0:33:00] So these were the RC and RL circuits that we've looked at.
+- [0:33:08] And these, they yield basically first order differential equations for the currents and the voltages. And those are relatively simple.
+- [0:33:31] But if you have two inductors and or capacitors, or say one of each, that cannot be combined into a single equivalent inductor or capacitor.
+- [0:33:44] So two basically independent inductors and or capacitors. Then what you will get instead, or what you can get instead, is a second order differential equation.
+- [0:33:57] Because you're going to have two terms with derivatives, and in order to get down to one variable, you end up having a second order differential equation.
+- [0:34:07] So circuits with two inductors and or capacitors, they cannot be combined into a single component.
+- [0:34:41] So for example, if you have an RLC circuit, one inductor and one capacitor, these can yield what we call second order differential equations.
+- [0:35:01] And a second order differential equation, as you probably know, is one where the highest order derivative with respect to time that you have is a second derivative rather than a first derivative.
+- [0:35:22] So what we mean by this is that the highest order derivative is d squared dt squared.
+- [0:35:39] And if we have a circuit where the currents and voltages are described by a second order differential equation, then we call those second order circuits.
+- [0:35:51] So circuits that are governed by second order differential equations, myself a little more room here, these are called second order circuits.
+- [0:36:23] And these can have more complicated behavior, significantly more complicated than first order circuits.
+- [0:36:32] So we want to spend actually a fair amount of time talking about these types of circuits, how you analyze them, what kind of behavior you get from them.
+- [0:36:43] So any questions so far? Yes.
+- [0:36:59] Let's see. Well, so if you have a first order, well, so any linear circuit with two output terminals can be turned into a Thevenin equivalent circuit, right, where you have a voltage source in series with some complex impedance, right.
+- [0:37:24] And that is true of any linear circuit, not just a first order or a second order or what have you circuit.
+- [0:37:36] It may be easier to do it for a first order circuit.
+- [0:37:39] But if you have a second order circuit with two output terminals, you can still take that and construct a Thevenin equivalent for that circuit.
+- [0:37:53] And of course, you could do the same thing for a first order circuit or any other linear circuit. Is that what you're asking?
+- [0:37:58] Oh, well, suppose we had a circuit, you know, where it was, say, something like this, right.
+- [0:38:23] This has two capacitors in it.
+- [0:38:26] But it is not a second order circuit because these two capacitors, right, they're in parallel so they can be combined into a single equivalent capacitor.
+- [0:38:40] All right. So you could take this and, you know, an equivalent circuit would be that.
+- [0:38:51] OK, so because of that, then that original circuit that I drew on the left there, even though it has two capacitors, is not a second order circuit because it would still give you just a first order differential equation.
+- [0:39:07] OK, so that's what we mean by, you know, equivalent circuits or by capacitors or inductors that cannot be combined into a single equivalent circuit.
+- [0:39:23] OK, now, so now maybe I'm understanding a little bit better what you're asking.
+- [0:39:28] Maybe you're asking, well, maybe we could just take a circuit and take the whole thing and make the Thevenin equivalent circuit of it, which would then only have one energy storage component.
+- [0:39:43] All right. Then, you know, does that then become a first order circuit?
+- [0:39:51] But that's not quite correct. You can't necessarily do that because a Thevenin equivalent for a circuit is only how that circuit looks with respect to a specific set of output terminals or input terminals.
+- [0:40:11] OK, you know, whereas if we're looking at a circuit as a whole, you know, in general, there won't be some unique set of input or repair of output and input terminals that you can select.
+- [0:40:23] You know, there could be many possibilities.
+- [0:40:26] So maybe that's what you're asking. Maybe not.
+- [0:40:32] OK.
+- [0:40:34] Yeah, so if it's still not clear, we can perhaps discuss a little bit after class or in office hours.
+- [0:40:41] Yes, question over here. So if you had something, say, like this, unless you write those cannot be combined. Right. Yeah.
+
+## page 17  f_0152.jpg  on screen [0:40:51 – 0:40:51]
+<sub>sharpness 1254, ink 1.5 %, colour 1.2</sub>
+<sub>earlier states of this page: f_0151.jpg (0:40:51)</sub>
+
+- [0:40:41] Yes, question over here. So if you had something, say, like this, unless you write those cannot be combined. Right. Yeah.
+
+## page 18  f_0153.jpg  on screen [0:40:51 – 0:41:17]
+<sub>sharpness 782, ink 0.4 %, colour 1.8</sub>
+
+- [0:40:41] Yes, question over here. So if you had something, say, like this, unless you write those cannot be combined. Right. Yeah.
+- [0:41:11] Any other questions?
+- [0:41:15] OK, so kind of the generic type of problem that we're going to look at is a second order circuit.
+
+## page 19  f_0160.jpg  on screen [0:41:17 – 0:43:12]
+<sub>sharpness 1213, ink 1.8 %, colour 0.2</sub>
+
+- [0:41:15] OK, so kind of the generic type of problem that we're going to look at is a second order circuit.
+- [0:41:27] So with two capacitors and or inductors, and there will be some sudden change, like maybe a source turns on or a switch changes position or something like that.
+- [0:41:39] And what we want to do is to figure out what the time evolution of the currents and voltages are after that change has occurred.
+- [0:41:50] All right. That's kind of the generic type of problem that we're going to look at.
+- [0:41:55] Change back to the black pen here. So what we want to do is consider a second order circuit.
+- [0:42:07] OK. That has a sudden change. All right. So, for example, a switch is thrown or a source changes.
+- [0:42:27] All right. And some time, which will usually take to be equal to zero, if there are multiple changes, then there'll be at some well specified times.
+- [0:42:37] All right. And so we want to think first about what is the general approach to trying to think about and analyze this type of circuit.
+- [0:42:48] And then we'll look at examples of how we execute different parts of that and with circuits of kind of increasing complexity.
+- [0:42:59] OK, so the general approach to this is all right. This sort of a zeroth order step, which is to determine the initial and or the final conditions for the behavior of the circuit.
+
+## page 20  f_0173.jpg  on screen [0:43:12 – 0:47:27]
+<sub>sharpness 1443, ink 2.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0161.jpg (0:45:23), f_0165.jpg (0:47:26), f_0169.jpg (0:47:27), f_0171.jpg (0:47:27)</sub>
+
+- [0:42:59] OK, so the general approach to this is all right. This sort of a zeroth order step, which is to determine the initial and or the final conditions for the behavior of the circuit.
+- [0:43:15] That is what happens in the steady state. OK. So we want to determine the initial. That is at t less than or equal to zero and or the final.
+- [0:43:34] That is, as t goes to infinity, circuit conditions. All right. That is what are the currents and voltages under those circumstances.
+- [0:43:46] And we do this basically the same way that we did it with first order circuits. Right.
+- [0:43:55] And steady state and inductor behaves as a short circuit capacitor behaves as an open circuit.
+- [0:44:02] And so you end up just with the resistors and the sources and you can pretty easily figure out what the currents and voltages are.
+- [0:44:08] All right. So in a manner similar to first order circuits. OK.
+- [0:44:23] And then once you're trying to come up with the behavior, say, for t greater than or equal to zero, then the general approach is going to be to use our standard tools for circuit analysis.
+- [0:44:38] KCL, KVL, node analysis and the like to derive a second order differential equation for the current and or the voltage that you want to that you want to solve for.
+- [0:44:52] So you want to derive what will typically be a second order differential equation for the desired voltage or current.
+- [0:45:16] And then once you have that differential equation, then you want to solve it. All right.
+- [0:45:24] So then you want to solve the differential equation. And in general, what will happen is that that solution, right, since it's a second order differential equation, then there will be two unknown coefficients.
+- [0:45:45] And one way of thinking about that is that with the second order differential equation, you're going to have to integrate in some sense twice and you'll get two constants of integration.
+- [0:45:56] All right. And you have to figure out eventually what those are. All right. So in general, the solution will have two unknown coefficients or other as yet unknown because we still have to figure them out.
+- [0:46:20] And the way we figure out the values of those unknown coefficients, the way that we do that is to use these initial and or final conditions that impose, say, specific values of a current or a voltage at t equal to zero and t equal to infinity or a current and voltage or voltage and its derivative at t equal to zero.
+- [0:46:46] So what we want to do is to apply our initial and or final conditions to determine the values of the unknown coefficients.
+- [0:47:11] OK, so so are there any questions on kind of this general approach? OK, so what we'll do then is we'll look first at an example of step zero, which is determining the initial and final conditions for various currents and voltages.
+
+## page 21  f_0181.jpg  on screen [0:47:27 – 0:52:08]
+<sub>sharpness 2835, ink 3.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0174.jpg (0:47:58), f_0175.jpg (0:47:58), f_0177.jpg (0:50:24)</sub>
+
+- [0:47:11] OK, so so are there any questions on kind of this general approach? OK, so what we'll do then is we'll look first at an example of step zero, which is determining the initial and final conditions for various currents and voltages.
+- [0:47:41] So this is an example of determining the initial and final conditions. OK, so the circuit that we will look at for this, OK, is the following.
+- [0:48:06] All right, we're going to have a voltage source, take that to be 24 volts, and then we'll have a resistor, say two ohms. We will have a resistor here, which is four ohms, and then an inductor, 0.2 Henry's.
+- [0:48:35] Another resistor here, which is six ohms, and then we will have a capacitor, right, which is eight microfarads. All right. And we're going to add one more component here in a second.
+- [0:48:56] And what we want to do is to think about the voltages and the currents associated with the inductor and the capacitor. All right, so we're going to have a voltage VL that we define with the polarity shown here.
+- [0:49:10] We're going to have a current, I sub L, all right, the current through the inductor. And then for the capacitor, we'll have a voltage Vc with this polarity and then a current I sub c.
+- [0:49:26] And then the thing that is going to change here is that we have a voltage source, or sorry, a current source that we connect up top here with a value of four amps times a function u of t, where u of t is what we call the unit step function, which maybe you've seen before.
+- [0:49:53] We will see it a lot in this course. And this is a function that has a value of zero for t less than zero and a value of one for t greater than or equal to zero, right?
+- [0:50:06] And this is what we call the unit step function. All right. So having this unit step function here, it's sort of equivalent to having a switch, right, in this circuit that
+- [0:50:26] say in series with that source, with that current source that say closes at t equal to zero. All right, that's basically the functionality that the unit step function gives us.
+- [0:50:39] And what we are going to want to do here is to find the following initial and final conditions.
+- [0:50:48] The first part will be to determine the voltage across the capacitor and the current through the inductor at t equal to zero.
+- [0:50:59] And then the second part will be to determine the current through the inductor and the voltage across the inductor at t equal to zero.
+- [0:51:11] And then the third part will be to figure out the voltage across the capacitor as t goes to infinity and the current through the inductor as t goes to infinity.
+- [0:51:23] All right, so these are the three things that we want to do here. All right, so any questions before we start on this?
+- [0:51:33] Okay, so the first thing that we want to do is to think about what is happening, unless you're in this circuit, in the steady state situation that we have at t less than zero.
+- [0:51:49] Okay, so when t is less than zero, then that 4-amp current source will have been off for essentially infinite time.
+- [0:51:57] All right, so the circuit will be in steady state, and therefore the inductor will be behaving as a short circuit, the capacitor as an open circuit.
+- [0:52:07] All right, so to make it a little bit easier for us to think about that, we're going to just redraw the circuit.
+
+## page 22  f_0201.jpg  on screen [0:52:08 – 0:52:51]
+<sub>sharpness 2174, ink 2.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0182.jpg (0:52:08), f_0183.jpg (0:52:09), f_0199.jpg (0:52:50), f_0200.jpg (0:52:50)</sub>
+
+- [0:52:07] All right, so to make it a little bit easier for us to think about that, we're going to just redraw the circuit.
+- [0:52:14] So we're going to draw the circuit. As it looks, for t equal to what we call zero minus, right, so basically taking the limit as t goes to zero from the left, from the negative side, all right, which is the steady state situation.
+- [0:52:33] All right, so this means t being less than zero.
+- [0:52:38] Okay, and in that case, what the circuit will look like is that this 4-amp source will just be an open circuit because it'll be off.
+- [0:52:47] The inductor will look like a short circuit, the capacitor will look like an open circuit.
+
+## page 23  f_0202.jpg  on screen [0:52:51 – 0:52:51]
+<sub>sharpness 1963, ink 2.5 %, colour 0.2</sub>
+
+- [0:52:47] The inductor will look like a short circuit, the capacitor will look like an open circuit.
+
+## page 24  f_0203.jpg  on screen [0:52:51 – 0:52:51]
+<sub>sharpness 1560, ink 2.0 %, colour 0.2</sub>
+
+- [0:52:47] The inductor will look like a short circuit, the capacitor will look like an open circuit.
+
+## page 25  f_0204.jpg  on screen [0:52:51 – 0:55:12]
+<sub>sharpness 2049, ink 2.8 %, colour 0.1</sub>
+
+- [0:52:47] The inductor will look like a short circuit, the capacitor will look like an open circuit.
+- [0:52:53] Okay, so if we draw that, we'll have our 24-volt source, okay, our 2-ohm resistor, and then the 4-ohm resistor, the inductor will look like a short circuit, right, so we'll just explicitly show the inductor here as a short circuit.
+- [0:53:27] We will have our 6-ohm resistor like that, and then the capacitor, all right, will look like and behave as an open circuit.
+- [0:53:42] Okay, and then the 4-amp current source will also behave as an open circuit, right, because its value will be zero.
+- [0:53:56] So here, all right, if we think about, right, we have these two voltages and two currents, all right, that we need to determine in this circumstance, and here it's actually quite easy to do that, right.
+- [0:54:12] The current through the capacitor, right, in this configuration, t equal to zero minus, what is that current?
+- [0:54:21] It's zero, right, because we have an open terminal at the end.
+- [0:54:28] The voltage across the inductor in this configuration is what? It's zero, right.
+- [0:54:36] How about the current through the inductor? All right, what is that going to be?
+- [0:54:49] Two amps, right, because, right, we just have this loop here that constitutes the circuit in this configuration, and then by Ohm's law, right, the current I sub L going around the loop, it's just going to be 24 volts divided by 2 plus 4 plus 6, which is 12 ohms, so 24 over 12 is 2.
+- [0:55:09] All right, so we have, this is 24 volts over 2 ohms plus 4 ohms plus 6 ohms, and that's equal to 2 amps.
+
+## page 26  f_0284.jpg  on screen [0:55:12 – 0:59:57]
+<sub>sharpness 2484, ink 3.4 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0227.jpg (0:57:39), f_0228.jpg (0:57:39), f_0238.jpg (0:58:24), f_0259.jpg (0:58:35), f_0261.jpg (0:58:35), f_0283.jpg (0:59:49)</sub>
+
+- [0:55:09] All right, so we have, this is 24 volts over 2 ohms plus 4 ohms plus 6 ohms, and that's equal to 2 amps.
+- [0:55:20] And then what is the voltage across the capacitor? Yes, it's 12 volts, right, because the voltage across the capacitor is the same as the voltage across the 6 ohm resistor, and we know that we're going to have our 2 amp.
+- [0:55:41] Current I sub L also flowing through the 6 ohm resistor, and then by Ohm's law, 2 amps times 6 ohms is 12 volts.
+- [0:55:49] So this is 6 ohms times 2 amps, and that is 12 volts. So that is what we have in steady state for t equal to zero minus. All right, yeah, question?
+- [0:56:05] You're solving for vc of 0 seconds, or is that not in any particular order, that's just what you said to me, right?
+- [0:56:19] Oh, it is in a particular order, and the reason, well, we'll see it in a minute, but the reason is because when we go from t equal to zero minus to t equal to zero, then, right, at t equal to zero, that current source, the 4 amp current source is suddenly turning on.
+- [0:56:40] But we know that the voltage across the capacitor and the current through an inductor always have to be continuous, right?
+- [0:56:48] So if we knew their values, which we now do, at t equal to zero minus, then we can just use the continuity argument to get them at t equal to zero, right?
+- [0:56:58] And then we have to figure out what the other ones are. Okay, so that was the reason, which we will see here in a second.
+- [0:57:06] So that's in steady state at t equal to zero minus. What we want to do next is to think about the circuit as it looks at t equal to zero, right?
+- [0:57:17] Then in that case, the 4 amp source will be present, and the inductor and the capacitor will behave as an inductor and a capacitor rather than having the more simple steady state behavior.
+- [0:57:31] So now we want to draw a circuit when t is equal to zero, all right?
+- [0:57:40] And so in that case, all right, we have again our 24 volt source, a 2 ohm resistor, 4 ohm resistor.
+- [0:57:56] Now we have our 0.2 Henry inductor. Okay, we still have our 6 ohm resistor, and then we have our capacitor as well, which is 8.
+- [0:58:18] Actually, this is millipharids here, not microfarads. I think I drew it. Yeah, so is that? Yes, 8 millipharids.
+- [0:58:32] May have to start wearing my reading glasses when I'm teaching here, but okay, so it's 8 millipharids, all right?
+- [0:58:42] And then now we have at t equal to zero, we also have our 4 amp source present here.
+- [0:58:56] And we're going to have our voltage V sub L, our current I sub L for the inductor, voltage V sub C and current I sub C for the capacitor.
+- [0:59:07] Okay, so if we look at part A of the problem, right, what we wanted to solve for were Vc at zero and then Il at zero, okay?
+- [0:59:26] But we know, as I was just describing, that the voltage across the capacitor and the current through the inductor, those always have to be continuous.
+- [0:59:35] And since we had solved for the steady state values up here, right, Vc was 12 volts, Il was 2 amps, then we know that those values, those variables also have to have those values at t equal to zero because they have to be continuous, right?
+- [0:59:55] So Vc is 12 volts, and then Il is 2 amps, and we get these very easily by the continuity argument.
+
+## page 27  f_0286.jpg  on screen [0:59:57 – 0:59:58]
+<sub>sharpness 3469, ink 4.7 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0285.jpg (0:59:58)</sub>
+
+- [0:59:55] So Vc is 12 volts, and then Il is 2 amps, and we get these very easily by the continuity argument.
+
+## page 28  f_0289.jpg  on screen [0:59:58 – 0:59:59]
+<sub>sharpness 4091, ink 6.2 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0287.jpg (0:59:58)</sub>
+
+- [0:59:55] So Vc is 12 volts, and then Il is 2 amps, and we get these very easily by the continuity argument.
+
+## page 29  f_0290.jpg  on screen [0:59:59 – 0:59:59]
+<sub>sharpness 4807, ink 7.2 %, colour 0.2</sub>
+
+- [0:59:55] So Vc is 12 volts, and then Il is 2 amps, and we get these very easily by the continuity argument.
+
+## page 30  f_0295.jpg  on screen [0:59:59 – 1:00:00]
+<sub>sharpness 3699, ink 5.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0291.jpg (0:59:59)</sub>
+
+- [0:59:55] So Vc is 12 volts, and then Il is 2 amps, and we get these very easily by the continuity argument.
+
+## page 31  f_0297.jpg  on screen [1:00:00 – 1:00:00]
+<sub>sharpness 3354, ink 4.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0296.jpg (1:00:00)</sub>
+
+- [0:59:55] So Vc is 12 volts, and then Il is 2 amps, and we get these very easily by the continuity argument.
+
+## page 32  f_0316.jpg  on screen [1:00:00 – 1:04:28]
+<sub>sharpness 2566, ink 3.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0300.jpg (1:00:01), f_0301.jpg (1:00:01), f_0314.jpg (1:02:24)</sub>
+
+- [0:59:55] So Vc is 12 volts, and then Il is 2 amps, and we get these very easily by the continuity argument.
+- [1:00:20] Okay, so that is part A, all right? So any questions on this?
+- [1:00:30] Okay, so then the next thing that we need to do is to solve for sort of the other two voltages and currents, which are the current through the capacitor and the voltage across the inductor, all right?
+- [1:00:48] And so to do that, we actually have to analyze what's going on in this circuit in a little bit more detail.
+- [1:00:56] Okay, so let's suppose that we first try to solve for the current I sub c, all right, through the capacitor, all right?
+- [1:01:06] The way that we can do that is to recognize that that is effectively the only unknown current in this circuit, all right?
+- [1:01:21] So if we apply KCL at, yeah, so I don't know why we're not having this c, why the current, why the cursor is not showing up.
+- [1:01:37] But if we look at the node that is just to the right of the inductor, all right, that has the four branches coming out of it, then the only unknown current at that node is I sub c, right?
+- [1:01:55] Because from the left, at t equal to 0, right? From the left, at t equal to 0, we know the current is I sub L, right?
+- [1:02:02] We solve for that. Coming down from the top, we know the current coming in is 4 amps.
+- [1:02:08] Going down through the 6 ohm resistor, all right, we know that the current through that has to be 2 amps, all right?
+- [1:02:20] Because we know that the voltage across the capacitor, and therefore also the voltage across the 6 ohm resistor, all right, is 12 volts.
+- [1:02:29] And so my ohm's law has to be 2 amps, and so the only unknown current at that node is I sub c, all right?
+- [1:02:35] And so we can then easily solve for I sub c, all right?
+- [1:02:39] So, okay, so the idea then is that by KCL, all right, at t equal to 0 at that node, what we see is the following, right?
+- [1:02:54] What we're going to do, the way we're going to apply KCL, as usual, is to take the sum of all the outgoing currents to be 0, okay?
+- [1:03:03] So the current going out up through that vertical branch to the 4 amp current source, we have 4 amps coming in, that means minus 4 amps going out, all right?
+- [1:03:16] So we have minus 4 amps, and then from that left-hand branch, we have I sub L coming in, therefore minus I sub L going out, so minus I sub L at t equal to 0.
+- [1:03:31] And then for the right-hand branch, that's I sub c going out at t equal to 0.
+- [1:03:38] That's what we want to solve for, and then going down through the 6 ohm resistor, that current is V sub c at 0 over 6 amps.
+- [1:03:50] All those have to add up to 0, okay?
+- [1:03:54] So we're going to get minus 4, oh, sorry, 6 ohms, yes, right.
+- [1:04:04] Okay, so we have minus 4 from the first term, from the second term, that's minus 2, and then plus I sub c at 0, and then plus, it's going to be 12 volts over 6 ohms, and that's equal to 0, okay?
+- [1:04:29] And so if we solve this, right, we can see that 12 volts over 6 ohms is 2 amps, so that's going to cancel out with a minus 2, we move the minus 4 to the right-hand side, and we get that I sub c at 0 is 4 amps.
+
+## page 33  f_0386.jpg  on screen [1:04:28 – 1:09:37]
+<sub>sharpness 1347, ink 1.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0327.jpg (1:04:58), f_0359.jpg (1:06:43), f_0365.jpg (1:06:44), f_0371.jpg (1:07:46), f_0379.jpg (1:09:09), f_0385.jpg (1:09:36)</sub>
+
+- [1:04:04] Okay, so we have minus 4 from the first term, from the second term, that's minus 2, and then plus I sub c at 0, and then plus, it's going to be 12 volts over 6 ohms, and that's equal to 0, okay?
+- [1:04:29] And so if we solve this, right, we can see that 12 volts over 6 ohms is 2 amps, so that's going to cancel out with a minus 2, we move the minus 4 to the right-hand side, and we get that I sub c at 0 is 4 amps.
+- [1:04:45] Okay, so that's how we get the current through the capacitor.
+- [1:04:51] All right, so any questions on that?
+- [1:04:53] Okay, so then, now to get the voltage across the inductor, all right, since we now know all the currents, the easiest thing to do is to apply KVL around the loop that has the 24 volt source and then the inductor and the resistors.
+- [1:05:19] Yes, question?
+- [1:05:20] Oh, so, so in general, it is always the case that voltage across the capacitor and current through an inductor have to be continuous.
+- [1:05:38] And the reason is that for a capacitor, we know that the current is equal to the capacitance times dv dt, right?
+- [1:05:47] So if the voltage across the capacitor were not continuous, that capacitor would have an undefined current.
+- [1:05:57] Okay, and then for the inductor, we know that the voltage is equal to L times dI dt, and if the current I were discontinuous, then the voltage would be undefined, right?
+- [1:06:12] So that's why those two in particular, and that's a general thing where current through an inductor and voltage across the capacitor always have to be continuous.
+- [1:06:23] And then, did you have a question?
+- [1:06:24] I'm good, thanks.
+- [1:06:25] Okay, any other questions?
+- [1:06:28] Okay, so what we want to do now is to apply KVL around this loop here, all right?
+- [1:06:38] And then the only unknown voltage is going to be the voltage across the inductor, so that's what we can solve for.
+- [1:06:45] All right, so now by KVL at t equal to zero, what we're able to see is, all right, the voltages we have from the voltage source, it's minus 24 volts plus, and then from the 2-ohm resistor,
+- [1:07:03] its voltage is 2 ohms times the current through that resistor, which is I sub L at zero plus 4 amps, and then we have the 4-ohm resistor, current through that is I sub L at zero,
+- [1:07:22] and then we have the voltage across the inductor, V sub L at zero, that's what we're solving for, and then we have the voltage across the, we can think of it as either the 6-ohm resistor or the capacitor, in either case, it's V sub C at zero.
+- [1:07:41] All those have to add up to zero.
+- [1:07:44] Okay, and then if we just plug in what we have already solved for, right?
+- [1:07:50] I sub L at zero and V sub C at zero, then we have, it's minus 24 plus 2 ohms times, and then I sub L at zero is 2 amps, so 2 plus 4 plus 4 ohms times I sub L at zero,
+- [1:08:10] plus, I sub L at zero, we have solved for that, it is 2 amps, and then plus V sub L at zero, and then plus V sub C at zero, which is 12 volts, that has to equal zero,
+- [1:08:30] and then if we just look at this, it's very easy to solve for V sub L at zero, because minus 24, that cancels out with the 2 times the quantity 2 plus 4 plus 12, and then we just have 4 times 2, which is 8 on the left, we move it to the right-hand side, it's minus 8 volts.
+- [1:08:52] So that is the voltage across the inductor at t equal to zero. So any questions on that?
+- [1:09:02] Okay, so now we have gotten all of the initial conditions, all right?
+- [1:09:08] And then the last step here is to solve for the final conditions, right?
+- [1:09:14] So, thinking about what this circuit is behaving like as t goes to infinity, which is again going to be a steady state situation.
+- [1:09:24] So in steady state, again, the inductor will behave as a short circuit, the capacitor will behave as an open circuit, but now we have this 4 amp source that is active.
+- [1:09:36] So let's now once again draw the circuit, but now in this configuration as t goes to infinity, so 24 volt source, 2 ohm resistor, 4 ohm resistor.
+
+## page 34  f_0387.jpg  on screen [1:09:37 – 1:10:43]
+<sub>sharpness 1618, ink 2.3 %, colour 0.2</sub>
+
+- [1:09:36] So let's now once again draw the circuit, but now in this configuration as t goes to infinity, so 24 volt source, 2 ohm resistor, 4 ohm resistor.
+- [1:09:56] Now, since this is a steady state situation, the inductor behaves as a short circuit, where we have our 6 ohm resistor like this, and then again in steady state, the capacitor behaves as an open circuit, and now we have this 4 amp current source in the circuit as well, all right?
+- [1:10:31] And what we wanted to solve for here were i sub l and v sub c, all right?
+- [1:10:41] So here, what happens is that, right again, this is quite a simple circuit because it just has the three resistors and the two sources, right?
+
+## page 35  f_0395.jpg  on screen [1:10:43 – 1:12:07]
+<sub>sharpness 1635, ink 2.2 %, colour 0.2</sub>
+
+- [1:10:41] So here, what happens is that, right again, this is quite a simple circuit because it just has the three resistors and the two sources, right?
+- [1:10:57] And so what we can do, for example, to get i sub l is we can apply k v l around this loop over here, and then from that we can figure out what i sub l is going to be because that's the only unknown current in the circuit.
+- [1:11:18] So basically, if we apply k v l, then what we have is from the voltage source, we have minus 24 volts, and then for the 2 ohm resistor, right, its current is going to be 4 amps plus i sub l, all right?
+- [1:11:40] We know that by k c l at that left hand node, and then we have the voltage across the 4 ohm resistor, which is 4 ohms times i sub l, and then we have the voltage across the 6 ohm resistor, which is 6 ohms times its current is 4 amps plus i sub l, right?
+- [1:12:04] All of those voltages have to add up to 0. The only unknown here is the current i sub l, all right?
+
+## page 36  f_0421.jpg  on screen [1:12:07 – 1:16:13]
+<sub>sharpness 2121, ink 3.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0407.jpg (1:13:25), f_0411.jpg (1:14:19), f_0412.jpg (1:14:19), f_0418.jpg (1:15:07)</sub>
+
+- [1:12:04] All of those voltages have to add up to 0. The only unknown here is the current i sub l, all right?
+- [1:12:14] So we just solve for that, right?
+- [1:12:16] It's going to be minus 24 plus, all right, 2 ohms times 4 amps, that's 8, and then plus 2 times i l.
+- [1:12:24] Then we have plus 4 times i l, then we have 6 ohms times 4 amps, so plus 24, and then plus 6 i l is equal to 0, and so we have 2 plus 4 plus 6 times i l, so that's 12 i l, and adding up the constants, right, we have minus 24 and 24 canceling each other out, we have 8 on the left,
+- [1:12:52] so that becomes minus 8 on the right, and so we get that i sub l, which is i sub l as t goes to infinity, is equal to minus 8 over 12 or minus 2 thirds of an amp, okay?
+- [1:13:10] And then finally, for v sub c, right, we know that v sub c is equal to the voltage across the 6 ohm resistor, which is 6 ohms times the quantity of 4 amps plus i sub l, right?
+- [1:13:25] So v sub c is equal to 6 ohms times 4 amps plus i sub l. We just solve for i sub l, it's minus 2 thirds, so this is going to be 6 ohms times 4 minus 2 thirds, that's 10 thirds amps, right?
+- [1:13:47] And then here, this is 6 over 3, which is 2 times 10, so that's 20 volts, and that's v sub c at infinity.
+- [1:14:00] Okay, so, and that is the whole thing. Now we've gotten, you know, all the initial and final conditions that we wanted.
+- [1:14:08] So any questions on how we did either this last part or any part of this example?
+- [1:14:19] Okay, so then just to finish up, let's kind of look back at what we have done here and try to identify what were the key points in how we arrived at these solutions, right?
+- [1:14:35] So the first point to note is that, you know, as always, in steady state, the capacitor became an open circuit, the inductor became a short circuit, right?
+- [1:14:46] So in steady state, all right, we know that the capacitor becomes an open circuit, and the inductor becomes a short circuit, right?
+- [1:15:00] And so that makes the steady state situation considerably simpler, all right?
+- [1:15:06] And then, as we were discussing earlier, we know that whenever there is one of these transitions occurring, the voltage across a capacitor and the current through an inductor always have to be continuous.
+- [1:15:19] So if we know the steady state values, then when some change occurs, those steady state values have to be retained.
+- [1:15:25] Okay, so, and we'll call these the transition points.
+- [1:15:30] Okay, so in this problem, it was a T equal to zero when the 4-amp current source turned on.
+- [1:15:41] Then we knew, we know that the current through the inductor and the voltage across the capacitor, these always have to be continuous.
+- [1:15:50] So that allows us to get those values.
+- [1:15:55] And then once we have those, right, basically what we did was we looked at the circuit configuration at T equal to zero at that transition point, and then used our usual tools of circuit analysis to figure out what the other voltages and currents had to be at T equal to zero.
+- [1:16:13] Okay, so once we make use of the continuity conditions, then basically what we want to do is to use our usual circuit analysis tools to build on these continuity conditions to get the other currents and voltages.
+
+## page 37  f_0427.jpg  on screen [1:16:13 – 1:19:12]
+<sub>sharpness 2478, ink 3.7 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0422.jpg (1:16:13)</sub>
+
+- [1:16:13] Okay, so once we make use of the continuity conditions, then basically what we want to do is to use our usual circuit analysis tools to build on these continuity conditions to get the other currents and voltages.
+- [1:16:47] Okay, and then the specifics of that will vary depending on the circuit, but that's the general idea.
+- [1:16:52] Okay, so any questions on all of this? Yes?
+- [1:16:57] So, why would we do it this way instead of just solving for the circuit without the initial conditions and then realizing that I need two initial conditions, the search to find those afterwards instead of finding like six different conditions that have to happen.
+- [1:17:16] Oh, so in the end, right, if this were part of some bigger problem where we eventually had to solve for, say, one of these currents or voltages as a function of time for T greater than zero, or greater than equal to zero, then you're right.
+- [1:17:35] It doesn't matter whether we find the initial and or final conditions before or after obtaining the general solution that has these unknown coefficients, right?
+- [1:17:45] So in this particular example, what I wanted to show was how you find all of these different, right?
+- [1:17:53] In a more complicated problem where, say, you're interested in finding only one of the, say, the voltage across the capacitor, right?
+- [1:18:04] Then you could solve the general equation without first solving for the initial conditions and then figure out what are the quantities that you need to, what are the initial and or final conditions that you need to know in order to get those unknown coefficients and then solve only for those, right?
+- [1:18:25] So you could also do it that way. The purpose of this example is to show how you could hold these different ones.
+- [1:18:32] But, you know, you don't necessarily have to get every single one, but it's good to know how to get all of them. Any other questions?
+- [1:18:44] Okay, if not, then we will stop here for today and we'll pick up next time. So remember, Monday is Labor Day, so it'll be next Wednesday, right?
+- [1:18:54] So we'll pick up next time with how we actually do that analysis for currents or voltages as a function of time.
+- [1:19:04] All right, so that's it for today and I will now stop the recording.

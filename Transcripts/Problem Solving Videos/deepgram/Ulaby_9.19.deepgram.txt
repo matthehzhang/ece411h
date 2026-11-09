@@ -1,0 +1,1329 @@
+[0:00:03] Okay. So this is Ulaby problem 9.19.
+[0:00:06] Alright? And this is a multipart problem, and
+[0:00:12] it consists of examples of generating
+[0:00:17] Bode plots. Right? So Bode plots that are generated
+[0:00:24] from transfer functions,
+[0:00:30] h
+[0:00:31] of omega.
+[0:00:33] Okay? And
+[0:00:34] so, so this is a pretty long example because it has so many parts. Alright? So we'll just go through each of these one by one. Alright? And what we'll want to do is to take a look at each of these transfer functions and then construct the Bode magnitude and phase plots. And we're gonna use the straight line approximation
+[0:00:55] versions of these Bode plots, right, for the four different transfer functions that are shown here.
+[0:01:03] Okay. So we'll go ahead and get started with this. So
+[0:01:07] the first one of these is where the transfer function
+[0:01:12] h of omega is equal to... It's four times 10 to the fourth
+[0:01:17] times 60
+[0:01:18] plus j times six omega
+[0:01:22] divided by
+[0:01:24] four plus j times two omega
+[0:01:27] times
+[0:01:28] 100
+[0:01:29] plus j times two omega
+[0:01:32] times
+[0:01:33] 400
+[0:01:34] plus j times
+[0:01:36] forming.
+[0:01:38] Okay. So the first thing that we would like to do here is to put this in,
+[0:01:44] the standard form that we have for the transfer function that allows us to more easily think about and generate the Bode plots. And so that means that, for the zeros
+[0:01:55] and the poles... Right? Remember, zeros are where the numerator goes to zero, poles are where the denominator goes to zero. We want... These are all simple zeros and poles. So we want them to be of the form one plus j omega,
+[0:02:10] divided by,
+[0:02:12] whatever the zero or pole frequency is. Alright? And so if we do that for each of the zeros and poles, that are, in this expression and we pull all of the
+[0:02:24] necessary constants out to, the front into an overall constant, then what we get is
+[0:02:32] four times 10 to the fourth. Right? That's the constant that was, written in up here. Then from this zero, we pull out a factor of 60.
+[0:02:41] And then what we're left with is one plus
+[0:02:45] j omega
+[0:02:47] over 10.
+[0:02:50] And then in the denominator,
+[0:02:52] from this four plus j times two omega, we pull out a factor of four.
+[0:02:58] From the 100
+[0:03:00] plus j times two omega, we pull out a factor of a 100.
+[0:03:04] And then from
+[0:03:06] the 400 plus j times, four omega, we pull out a factor of
+[0:03:12] 400.
+[0:03:14] And then what we have left,
+[0:03:16] for the simple poll factors are from the first one, it's one plus j omega over two.
+[0:03:23] And from the second, it's one plus j omega
+[0:03:26] over 50.
+[0:03:27] And from the third, it's one plus j omega
+[0:03:31] over a 100.
+[0:03:33] Okay. And then
+[0:03:36] these constants out here, alright, the ones that are
+[0:03:40] contained in this
+[0:03:42] dash line boundary here, if you multiply all these out, you get
+[0:03:47] 15.
+[0:03:48] Okay.
+[0:03:49] So now if we look at the form of,
+[0:03:52] this transfer function, then we can see that it has a simple zero
+[0:04:00] at omega equal to 10.
+[0:04:03] Alright. That's from this factor up here. And then we have simple poles
+[0:04:13] and omega equal to... From this first factor, it's omega equal to two. From the second factor, it's omega equal to 50. From the third factor, I... It's omega equal to 100. So we have simple poles at omega equal to two,
+[0:04:28] 50,
+[0:04:29] and a 100. Okay.
+[0:04:32] So so these
+[0:04:35] will be helpful to us in identifying what are key frequencies in the Bode plots. Right? And and therefore, in the behavior of whatever circuit or other linear system has this transfer function. Okay?
+[0:04:50] We also want to look at some of the limit... Limiting behaviors
+[0:04:54] of the magnitude of the transfer function, which, remember, we called m,
+[0:05:00] and then the phase, which we called phi. Alright? So I... For the magnitude, we can see that
+[0:05:07] the magnitude
+[0:05:09] at omega equal to zero.
+[0:05:11] Right?
+[0:05:14] When omega is equal to zero, then each of these pole or zero factors here
+[0:05:20] goes to... It behaves basically as one. Alright? So then the magnitude is zero. It goes towards a constant, which is just this constant in front, 15,
+[0:05:32] and we want to express that on the dB scale. Right? So it's gonna be 20
+[0:05:37] times the log base 10
+[0:05:40] of 15,
+[0:05:41] which is
+[0:05:42] 23.5
+[0:05:45] dB.
+[0:05:47] Okay?
+[0:05:48] Then,
+[0:05:49] the magnitude
+[0:05:53] at infinity.
+[0:05:54] Alright.
+[0:05:56] Alright. As omega goes to infinity,
+[0:05:59] then this transfer function basically ends up going as we have one power of omega in the numerator, three powers in the denominator. So it ends up going as one over omega squared. So the magnitude as,
+[0:06:12] omega approaches infinity is going to be... It's gonna go to zero
+[0:06:17] or on the dB scale, it's minus infinity
+[0:06:22] dB.
+[0:06:23] Okay. So that is the
+[0:06:26] magnitude.
+[0:06:27] What about the phase?
+[0:06:29] When
+[0:06:31] omega is equal to zero,
+[0:06:34] then these zero and pole factors basically,
+[0:06:37] go to one, and we have a positive constant out here. So the phase at omega equal to zero is just zero degrees.
+[0:06:45] And then the phase
+[0:06:48] as omega goes to infinity,
+[0:06:51] right, we're going to have in the numerator, we have j omega. In the denominator, we basically have j omega cubed. Alright? So we're going to have, j over j cubed, is,
+[0:07:07] minus one. Alright? And the phase of minus one will be plus or minus a 180 degrees. Right? Depending on what
+[0:07:18] the phase is as we approach, infinity. Alright? So we'll determine that, as we generate the Bode phase plot.
+[0:07:27] Okay. So now with this information, we can go ahead and start,
+[0:07:33] generating
+[0:07:37] Bode plots. So we will first
+[0:07:42] work out the Bode magnitude plot. K. So we're gonna plot the magnitude
+[0:07:47] of the transfer function. This is going to be on dB scale. Alright?
+[0:07:53] And
+[0:07:57] we have
+[0:07:59] omega
+[0:08:00] on the horizontal axis. Alright? And we had three poles at two fifty and one hundred and one zero at 10. Okay. So among the key points here, right, we'll
+[0:08:14] indicate
+[0:08:15] omega equal to 10
+[0:08:18] and omega equal to 100,
+[0:08:21] then omega equal to two would be somewhere like this. Omega equal to five would be somewhere like... Or sorry. 50,
+[0:08:29] would be somewhere like that. Okay? And these are going to be
+[0:08:36] key
+[0:08:37] frequencies
+[0:08:39] in the Bode magnitude plot.
+[0:08:42] Okay. So we'll try to align things here like this. Okay? And then,
+[0:08:49] alright, we have
+[0:08:53] at, omega equal to zero,
+[0:08:57] then,
+[0:08:59] the magnitude was 23.5 dB. So let's mark that
+[0:09:03] on,
+[0:09:05] the vertical scale. Right?
+[0:09:07] And so, what we have here is that...
+[0:09:12] Alright. If if we are at frequencies below
+[0:09:16] two,
+[0:09:17] right, that's two radians per second, then,
+[0:09:20] all of these zero and and,
+[0:09:25] whole factors over here behave essentially as one. So the magnitude is going to be constant at 23.5.
+[0:09:32] Alright. So let me... I'll draw this in green here.
+[0:09:38] Okay. So it's going to be a 23.5
+[0:09:40] all the way up to two.
+[0:09:43] And then,
+[0:09:44] from two to 10,
+[0:09:46] okay,
+[0:09:47] then
+[0:09:49] the
+[0:09:50] numerator and these two,
+[0:09:52] factors in the denominator will still behave as one. This is going to behave as
+[0:09:58] j omega over two. Alright. So we're gonna go... This is going to go overall in the linear approximation as one over omega in terms of the magnitude. And so that will decrease at 20 dB
+[0:10:15] per decade. Alright. So maybe something
+[0:10:21] like this. Okay. So this is
+[0:10:24] minus 20 dB
+[0:10:26] per decade is the slope.
+[0:10:30] Then between
+[0:10:31] ten and fifty, alright,
+[0:10:35] this factor here behaves as omega. This factor here behaves as omega. So they... In terms of the omega dependence cancel each other out. These two,
+[0:10:47] behave
+[0:10:49] as one.
+[0:10:50] Alright? Because we're still below maybe equal to 50. And so,
+[0:10:55] this basically goes as a constant.
+[0:10:59] Okay.
+[0:11:01] Then between fifty and one hundred.
+[0:11:04] Alright. Then these two, again, cancel each other out. This behaves as one. This behaves as omega.
+[0:11:12] So we have essentially one over omega. Alright?
+[0:11:17] And so we're going to go something like...
+[0:11:22] Maybe like this. So, again, the slope is
+[0:11:26] minus 20 dB
+[0:11:30] per decade.
+[0:11:31] Okay? And then finally,
+[0:11:34] when omega is greater than 100, then all these factors here, right, the omega dependent factors, the zero and the poles, will behave basically as omega.
+[0:11:46] And so we will, this will behave as one over omega squared in terms of the magnitude. And so we will have a
+[0:11:54] sharper slope here,
+[0:11:56] alright, which is minus 40
+[0:12:01] dB
+[0:12:03] per decade.
+[0:12:05] Okay. So that is the
+[0:12:07] magnitude plot. Alright?
+[0:12:15] Let's look at the phase plot.
+[0:12:19] K. The phase plot
+[0:12:21] will be somewhat more
+[0:12:25] complicated.
+[0:12:28] Okay. So,
+[0:12:31] we're gonna extend these axes a little bit farther. So this is now the phase
+[0:12:36] that we're plotting,
+[0:12:38] and, this will be
+[0:12:41] zero degrees. I'll say this will be 90 degrees.
+[0:12:45] This will be minus
+[0:12:47] 90 degrees.
+[0:12:49] This will be minus
+[0:12:51] a 180 degrees. Okay?
+[0:12:54] And
+[0:12:55] let's see. Let's
+[0:12:58] let's try to extend these
+[0:13:03] out here like this.
+[0:13:08] Okay. And then we have...
+[0:13:10] Right. This is 10.
+[0:13:15] This is 100.
+[0:13:17] Say, this over here, this is one.
+[0:13:20] And then,
+[0:13:21] this might be
+[0:13:25] point one here.
+[0:13:26] And then,
+[0:13:28] say a thousand
+[0:13:31] out here, alright, we're gonna need a number of other points,
+[0:13:35] here as well. So we have two. Alright? Because,
+[0:13:39] that corresponds to... Let's see. I guess it was a pole,
+[0:13:45] okay, at, maybe equal to two. And for the phase plot, that means that we're also going to need to mark
+[0:13:54] that frequency divided by 10 and multiplied by 10. So we have point two here
+[0:13:59] and then
+[0:14:01] 20 here. Right?
+[0:14:04] Then,
+[0:14:05] we had,
+[0:14:07] right, 10,
+[0:14:09] as
+[0:14:10] a zero. Right? So we already have one and one hundred mark. Then we had
+[0:14:16] 50,
+[0:14:17] alright,
+[0:14:19] as a pole. So 50 was roughly here.
+[0:14:24] So we're gonna need to mark five
+[0:14:27] and then
+[0:14:29] 500.
+[0:14:30] Okay. And then our final pole was
+[0:14:33] at omega equal to 100.
+[0:14:37] And so we have 10 and a thousand marked here as well. Okay.
+[0:14:43] So now, what we're going to do is we're going to, just
+[0:14:49] sketch out, and I'll sketch it in
+[0:14:52] blue.
+[0:14:54] Okay.
+[0:14:56] What the phase behavior...
+[0:14:58] What the behavior of the phase is for each zero
+[0:15:03] or pole. Alright? And so,
+[0:15:07] for example, we had a a simple pole
+[0:15:11] at... Or simple zero at omega equal to 10. Alright? So going back to the transfer function, that's this factor up here. Alright? And so we can see that the phase of this factor here when omega is very small, say, less than,
+[0:15:28] one.
+[0:15:29] Right, less than
+[0:15:32] one tenth times
+[0:15:34] the zero frequency, then this behaves as one. So it's phase is zero. When omega is very large, say,
+[0:15:41] 10 times the zero frequency or larger, so a 100 or larger, then the phase is basically just given by this j. So it would be 90 degrees. Okay. So
+[0:15:53] for the zero, this simple zero,
+[0:15:56] the phase
+[0:15:58] undergoes
+[0:16:00] a transition from zero
+[0:16:03] at, one,
+[0:16:05] okay,
+[0:16:06] to
+[0:16:08] 90 degrees
+[0:16:09] at a 100,
+[0:16:11] and it's 45 degrees
+[0:16:13] at
+[0:16:15] the zero frequency itself. So try to draw this
+[0:16:19] straight line here or approximately
+[0:16:22] straight line like that. Okay. So that is the phase associated with zero, the simple zero at omega equal to 10.
+[0:16:31] Now for
+[0:16:33] the poles... Alright, let's think about the pole at omega equal to two. So that's this factor over here.
+[0:16:41] Okay. So when omega is much less than two, say,
+[0:16:46] less than point two, then the phase is zero because...
+[0:16:52] Or the contribution of the phase to h of omega is zero because this just behaves as one. When omega is very large, much greater than two, so say 20 or higher,
+[0:17:05] then this looks like just j omega over two in the denominator.
+[0:17:11] So that'll contribute a factor of one over j or minus j to the phase.
+[0:17:16] And the phase of that is... The phase corresponding to a factor of minus j is minus 90 degrees.
+[0:17:23] Okay.
+[0:17:24] And so for this simple pole at omega equal to two, then we're going to go from a phase of zero at point two
+[0:17:33] to a phase of minus 90 degrees at 20,
+[0:17:37] and it'll be 45 degrees
+[0:17:40] at
+[0:17:41] the pole frequency, which is two itself. So now I'll try to draw a
+[0:17:47] straight line
+[0:17:51] here like this. Okay?
+[0:17:54] And then we'll have the same thing as what we just drew
+[0:18:00] for the poles at fifty and one hundred. So for the pole... The simple pole at 50, we go from zero phase at five
+[0:18:10] to minus 90 degrees at 500. It's 45 at 50. So we're gonna have
+[0:18:21] something like this.
+[0:18:23] Okay. And then finally,
+[0:18:26] for the pole at 100,
+[0:18:29] then we're going to go from zero phase at 10 to minus 90
+[0:18:34] degrees at 100, and it'll be 45 at,
+[0:18:38] 100... Sorry, minus 45.
+[0:18:46] Okay. So it'll look something
+[0:18:48] like this. Okay. And then anywhere where we have not drawn these blue dash lines, then the phase is just I... It will continue as a constant at whatever the nearest point on the dot... On the dash lines is. Right? So up here, this would continue as a constant like that. This would continue as a constant like this and so forth. Okay. So, so I won't draw this because I...
+[0:19:15] This is already going to be a very cluttered,
+[0:19:18] diagram here. Okay.
+[0:19:21] So now,
+[0:19:23] alright, what we want to do is to get the total phase, alright, which I will draw in green.
+[0:19:30] Then, basically, we just want to add all of these up,
+[0:19:36] and we'll be able to check
+[0:19:38] at the end, right, that, as the frequency goes to zero. So all the way on the left, the phase should be zero. As the frequency goes to infinity, then it should be plus or minus a 180 degrees.
+[0:19:51] Okay. So, if we now just... Right. We can add up all these different contributions,
+[0:19:58] to the phase. Alright?
+[0:20:00] And, mostly the contributions will come from,
+[0:20:04] the portions of these curves where the phase has a non zero slope with respect to frequency. That's why we only drew those sections. Okay. So for frequencies less than point two, then we're going to have basically the zero frequency behavior.
+[0:20:21] K. So that's going to look like
+[0:20:24] this.
+[0:20:25] Okay.
+[0:20:26] Then,
+[0:20:29] between point two and one,
+[0:20:32] then we're just going to have
+[0:20:38] this. Alright? Because,
+[0:20:41] the only thing that's contributing a change in the phase is,
+[0:20:44] this
+[0:20:46] simple pull at omega equals two. Right? So the slope over here is going to be
+[0:20:54] minus 45 degrees
+[0:20:57] per decade. Right? Because that's the slope that we get, in this linear approximation
+[0:21:02] from a simple pole. Alright?
+[0:21:06] Then,
+[0:21:07] once we get to frequencies between
+[0:21:11] now one
+[0:21:13] and five,
+[0:21:15] alright, we have
+[0:21:18] minus 45 degree per decade slope here, a plus 45 degree per decade slope here. Those will cancel each other out and
+[0:21:26] we'll
+[0:21:28] just have a constant phase.
+[0:21:30] Right? So this will be constant like this.
+[0:21:34] So this will be at zero degrees
+[0:21:37] per decade in case it's not, that apparent from the
+[0:21:42] picture. Okay?
+[0:21:45] Then between five and ten,
+[0:21:48] right, we have these three,
+[0:21:51] contributing to, the slope. Right? So we have plus 45 per decade, minus 45 per decade, and minus 45 per decade. So that is again going to start, going down at
+[0:22:05] minus 45.
+[0:22:06] Okay. That's terrible
+[0:22:11] line there. So
+[0:22:16] I'm trying to draw it like that. Alright. So this is now going at
+[0:22:21] minus 45 degrees
+[0:22:23] per decade.
+[0:22:25] Okay.
+[0:22:26] Then,
+[0:22:29] from 10 to 20,
+[0:22:32] right, we have now this one comes into play, right, from the, zero... Or sorry, the pole at 100.
+[0:22:40] Right? So we have one plus 45 degrees per decade, three minus 45 degrees per decade. Okay? So this is going to go at minus 90 degrees per decade.
+[0:22:53] Right? So it'll be a
+[0:22:56] steeper slope,
+[0:22:58] here. So this is minus 90 degrees
+[0:23:02] per decade, okay, up to 20.
+[0:23:06] And then, when we're beyond
+[0:23:09] 20,
+[0:23:10] then...
+[0:23:12] Alright. This,
+[0:23:13] pole at omega equal to two no longer contributes. Right? Because it's just gonna be to to the slope because it's just constant. So we have one plus 45 degrees per decade, two minus 45 degrees per decade. So this has gone from... And that will be the case from 20 to
+[0:23:30] 100.
+[0:23:31] Okay.
+[0:23:32] So we're going to go at minus 45 degrees per decade from 20
+[0:23:41] to 100.
+[0:23:42] Right? So that'll look something like this. So this is minus 45 degrees
+[0:23:48] per decade. Okay?
+[0:23:51] Then
+[0:23:54] from 100 to 500, right, this is now leveled off, so it doesn't contribute anything,
+[0:23:59] to the slope. So we have these two poles over here that are each contributing minus 45 degrees per decade to the slope. So that'll be a total of minus 90 degrees per decade. Alright. So maybe that'll be...
+[0:24:17] Right. We'll label this here, minus
+[0:24:20] 90 degrees
+[0:24:23] per decade.
+[0:24:25] Okay? And then, yeah, maybe I'll try to draw
+[0:24:29] dots here between these transition points.
+[0:24:34] Okay.
+[0:24:36] And then from 500 to a thousand,
+[0:24:42] then
+[0:24:43] we will only have this one
+[0:24:47] pole. The pole at omega equal to 100 contributing to the slope. It's gonna contribute minus 45 degrees per decade to the slope,
+[0:24:57] and that will end up bringing us down to
+[0:25:02] a 180... Minus a 180 degrees. So here,
+[0:25:06] the slope is minus 45 degrees
+[0:25:09] per decade.
+[0:25:11] And then
+[0:25:14] the phase will just be constant at that value for higher frequencies.
+[0:25:19] Okay. So, this sketch here is what the phase,
+[0:25:26] Bode plot looks like. Okay? And, as we walked through it, you can kinda see how we constructed it, alright, by just taking into account the contributions
+[0:25:39] of each individual,
+[0:25:41] simple zero or pole, and then just adding them together. Alright? And that got us this full plot over here.
+[0:25:49] Okay. So what are the key points in
+[0:25:54] this first
+[0:25:55] example of constructing a Bode plot. Right? So so, basically, what we did was,
+[0:26:01] we wanted to write
+[0:26:03] the transfer function. Right? And the specified in the problem, this is the voltage transfer function. Right? We wanna write this in
+[0:26:12] the standard form
+[0:26:16] that was given
+[0:26:18] in class
+[0:26:20] or
+[0:26:22] that's described in
+[0:26:24] Ulaby. Okay? And by writing this in the standard form. So, basically, some overall constant in front and then
+[0:26:33] various factors that are either zeros or poles with the constant leading term being one, that makes it more straightforward
+[0:26:42] to
+[0:26:43] generate
+[0:26:44] the Bode plots from that
+[0:26:48] standard form of h of omega.
+[0:26:50] Then the next thing that we did was once we had h of omega in that standard form, we identified...
+[0:26:58] And eventually in the plots,
+[0:27:01] we marked, all the poles
+[0:27:08] and zeros
+[0:27:10] that we found
+[0:27:12] in h omega.
+[0:27:13] Right?
+[0:27:15] And then,
+[0:27:18] right, to generate the magnitude plot...
+[0:27:27] Alright. Basically, what we did was
+[0:27:31] we noted that the the way the linear... This simple linear straight line approximation works is that the transition,
+[0:27:40] okay, from
+[0:27:43] the limiting behavior. That is the behavior corresponding to omega going to zero to the behavior corresponding to omega going to infinity.
+[0:27:52] Right? The transition from those two regimes of behavior.
+[0:27:57] Okay, this occurs
+[0:28:01] exactly
+[0:28:06] at each
+[0:28:09] zero or pole. Right? So it's an abrupt transition
+[0:28:13] from the low frequency limit to the high frequency limit at
+[0:28:18] each zero or pole at the zero or pole frequency. Alright?
+[0:28:23] And then we saw that the effects
+[0:28:27] of each
+[0:28:31] pole or zero
+[0:28:36] on the magnitude plot.
+[0:28:39] Alright. These can be added
+[0:28:46] directly to each other.
+[0:28:50] Okay.
+[0:28:51] And that
+[0:28:53] applies specifically when we're working on the dB scale,
+[0:28:57] right, which is basically the log,
+[0:29:00] the common log of the transfer function.
+[0:29:04] And
+[0:29:05] those contributions are additive, right, because the contributors, the zeros and the poles and the constants,
+[0:29:12] are factors in h of omega.
+[0:29:17] But when we take the log,
+[0:29:19] right, if we take the log of some product, it's just the sum
+[0:29:23] of the logs of the individual factors.
+[0:29:26] Okay. So that's why these different contributions can be just added to each other in the magnitude plot on the dB scale. Right?
+[0:29:34] And then
+[0:29:37] we also can check
+[0:29:39] the limiting behavior
+[0:29:45] of the magnitude
+[0:29:46] at
+[0:29:49] zero
+[0:29:51] and,
+[0:29:53] infinite frequency.
+[0:29:56] Okay. So, that's for the magnitude plot.
+[0:30:02] Now for the phase plot, alright,
+[0:30:06] it was a little bit more complicated. So in the phase plot,
+[0:30:13] alright, what we did was,
+[0:30:16] we had to mark
+[0:30:18] as we did in the magnitude plot all the poles
+[0:30:23] and zeros that we have
+[0:30:26] in h of omega.
+[0:30:28] But then in addition,
+[0:30:30] we also,
+[0:30:32] marked the
+[0:30:34] pole or zero frequency divided by ten
+[0:30:39] and
+[0:30:40] ten times the pole
+[0:30:43] or zero frequency.
+[0:30:45] We mark those points
+[0:30:48] on the frequency axis. Right? Because those are significant points in,
+[0:30:53] the phase plots. And then what we said was that for each
+[0:30:59] pole
+[0:31:01] were zero. Okay?
+[0:31:03] Then we said that the
+[0:31:06] omega going to zero, the low frequency limit, behavior,
+[0:31:12] this occurs
+[0:31:16] when the frequency is less than
+[0:31:20] the pole or zero frequency divided by 10.
+[0:31:27] And the high frequency limiting behavior,
+[0:31:33] This occurs
+[0:31:37] when the frequency is greater than 10 times
+[0:31:42] the pole
+[0:31:43] or zero frequency.
+[0:31:45] And we have
+[0:31:49] just a linear transition,
+[0:31:53] in between.
+[0:31:57] Okay. So, for a simple zero or pull, right, we saw that the phase shift changed by 90 degrees, right, plus or minus 90 degrees depending on whether it is a zero or a pole respectively.
+[0:32:10] And then, so that meant that since the transition occurs over two decades, right, then it's half that amount or plus or minus 45 degrees per decade. That's the slope. Alright?
+[0:32:22] And then, what we did was to sketch,
+[0:32:27] the phase
+[0:32:30] for each
+[0:32:34] zero or pole.
+[0:32:38] Then we added these together.
+[0:32:42] Okay. And we really only, were concerned with the regions of non zero slope since
+[0:32:48] I...
+[0:32:49] The phase will remain flat outside that region. It won't contribute anything to the overall phase load. Right? And then, again, we can check
+[0:32:59] to confirm that we have the right
+[0:33:03] limiting behavior,
+[0:33:08] alright, for
+[0:33:09] the phase at zero frequency
+[0:33:13] and the phase at very high frequency.
+[0:33:17] Okay. So... And that was basically the process that we went through in order to generate the Bode plot in that particular example or the Bode plots.
+[0:33:27] Okay. So now keeping all this in mind, let's look at the next example.
+[0:33:34] Alright, where the transfer function is,
+[0:33:39] one plus...
+[0:33:40] Oops.
+[0:33:44] J times point two omega
+[0:33:46] squared
+[0:33:48] times 100
+[0:33:50] plus j times two omega squared
+[0:33:54] divided by
+[0:33:56] j omega, the quantity cubed
+[0:33:59] times 500
+[0:34:01] plus j omega.
+[0:34:03] Okay.
+[0:34:04] So for this... Right. So now the first thing that we wanna do, as we did before is to put this in standard form. Alright. So here we already have a leading one. Alright. Here we have a leading 100. So we wanna pull that factor out. And it's a 100 squared because this is a second order zero. So we have 100
+[0:34:24] squared.
+[0:34:25] Then we have
+[0:34:27] this factor here. It's one plus... Oops.
+[0:34:34] One plus j omega times point two, which is the same as j omega over five. And then from the second factor, the second order zero, it's one plus. And then when we pull out the factor of,
+[0:34:45] the two factors of 100, we get j omega over
+[0:34:49] 50 squared.
+[0:34:51] Okay.
+[0:34:53] And then in the denominator,
+[0:34:55] alright, we don't have to pull anything out of this. And
+[0:34:59] then from this factor here, we pull out a factor of 500.
+[0:35:03] Alright. So we have 500
+[0:35:05] times j omega cubed
+[0:35:07] times one plus j omega over
+[0:35:11] 500.
+[0:35:13] Alright?
+[0:35:15] And
+[0:35:16] this constant
+[0:35:19] out in front, which encompasses the 100 squared over 500,
+[0:35:23] that is
+[0:35:25] equal to 20.
+[0:35:27] Okay.
+[0:35:28] So now if we look at this... Alright. Let's look at the limiting behavior for the magnitude. So say the magnitude at zero frequency.
+[0:35:38] Right? At zero frequency,
+[0:35:41] then
+[0:35:42] the numerator...
+[0:35:44] Alright. These zero terms will just go to one. This simple zero... Simple pole in the denominator will go to one. But we also have this third order pole at the origin. Right? So this is gonna go overall as basically one over omega cubed as omega goes to zero. So
+[0:36:03] that is going to,
+[0:36:06] become infinite. Alright?
+[0:36:09] And then
+[0:36:11] the magnitude
+[0:36:13] at infinite frequency,
+[0:36:15] right, in the numerator, it's gonna go as omega to the third.
+[0:36:19] Right?
+[0:36:23] Sorry. This was a squared
+[0:36:26] over here. Right? Because we had the square up here. I forgot to write that down. So in the numerator, this is gonna go as omega to the fourth. In the denominator, this is also gonna go as omega to the fourth. So this is just going to approach a constant. Alright?
+[0:36:40] And that constant
+[0:36:43] is go... So it's
+[0:36:45] going to be the following. Right? If we go directly to the dB scale, it's gonna be 20 times
+[0:36:50] the log
+[0:36:51] of whatever constant this whole thing approaches. Right? And so it's gonna have this leading factor here, which is 20.
+[0:37:01] Alright?
+[0:37:02] And then we're going to have,
+[0:37:06] one fifth squared
+[0:37:08] from here,
+[0:37:10] and then one fiftieth squared over here. And then down here, we're going to have,
+[0:37:16] one over 500. So that becomes 20
+[0:37:22] times 500. Right? One over one over 500 is just 500.
+[0:37:26] And then in the denominator, we have five squared
+[0:37:30] from
+[0:37:31] over here, and then we'll have a 50 squared from here. So times 50 squared.
+[0:37:37] Okay.
+[0:37:38] And if we multiply all this out, calculate the log and multiply by 20, we get that this is minus,
+[0:37:46] 15.9
+[0:37:49] dB. Okay. So that's the limiting behavior.
+[0:37:54] As the frequency goes to infinity, it approached then the magnitude of the transfer function approach is a constant. Right? Minus 15.9 dB on
+[0:38:05] the
+[0:38:07] on the dB scale. Okay.
+[0:38:10] The other thing,
+[0:38:12] that we wanna note here is, alright, what were the,
+[0:38:16] zeros and poles? Alright. So if we look at this
+[0:38:21] transfer function here, we can see that we have now second order zeros and omega equal to five and fifty. So let's write that over here. So we have
+[0:38:35] second order
+[0:38:39] zeros
+[0:38:40] at omega equal to five and fifty. Alright. That's in radians per second.
+[0:38:46] And we have
+[0:38:50] a simple pole
+[0:38:52] at
+[0:38:54] omega equal to 500,
+[0:38:57] and we have a third order pole at omega equal to zero. So we have a third order
+[0:39:04] pull
+[0:39:06] at omega equal to zero, and then we have a simple
+[0:39:12] pull
+[0:39:13] at omega equal to
+[0:39:16] 500.
+[0:39:17] Okay. So we wanna keep all that in mind.
+[0:39:19] Now let's go and look at the phase.
+[0:39:25] Okay. So say the phase
+[0:39:27] add very low frequency as omega goes to zero, right, that's going to be... Alright. This... These factors in the numerator will just go to one.
+[0:39:38] This will go to one here. And so we're gonna have one over j omega the quantity cube. In terms of the phase, that's basically a factor of one over j cubed or one over minus j, which is just a factor of j. Right? So the phase of j is 90 degrees.
+[0:39:55] Okay.
+[0:39:56] And then finally,
+[0:39:58] as
+[0:40:01] the frequency goes to infinity,
+[0:40:04] right, then,
+[0:40:05] we're going to have... Right? Each of these zeros
+[0:40:10] and poles
+[0:40:11] will basically go in terms of their j and omega dependence. Right? They're gonna go to
+[0:40:18] j omega to the
+[0:40:20] fourth in the numerator and j omega to the fourth in the denominator.
+[0:40:25] Right? So the j's will cancel each other out and the overall phase will be zero degrees.
+[0:40:30] Okay? At very high frequency.
+[0:40:33] Okay. So now
+[0:40:35] we can take all of this information
+[0:40:38] and
+[0:40:42] generate the Bode plots. Alright? So let's look first
+[0:40:48] at the Bode plot for the magnitude.
+[0:40:55] K. So this is the magnitude of omega
+[0:40:58] on a dB scale. Alright?
+[0:41:01] And
+[0:41:03] let's see. We'll draw the axis
+[0:41:06] here.
+[0:41:07] Okay. And we have we
+[0:41:12] have a a pole, a third order pole at the origin. We're not gonna be able to draw the origin on, the scale, but,
+[0:41:21] we also have a
+[0:41:23] second order zeros at omega equal to five and fifty and a simple pull at omega equal to 500.
+[0:41:30] So
+[0:41:32] call this one,
+[0:41:35] and then
+[0:41:36] say we'll call this five
+[0:41:40] fifty,
+[0:41:44] 500,
+[0:41:46] we'll draw 5,000
+[0:41:48] out here. This is omega, and we'll draw maybe point five
+[0:41:53] here.
+[0:41:55] Okay.
+[0:41:56] And
+[0:41:58] so we want to
+[0:42:03] mark five
+[0:42:07] fifty
+[0:42:12] and five hundred. Okay.
+[0:42:15] And
+[0:42:18] remember as
+[0:42:22] omega goes to infinity,
+[0:42:24] then, the magnitude goes to... It approaches minus 15.9 dB. So let's just draw that, say, here. Minus 15.9
+[0:42:34] on the dB scale. Okay. So now... Alright. We will draw the magnitude
+[0:42:41] plot in green.
+[0:42:44] So
+[0:42:46] at high frequency,
+[0:42:47] which for our purposes, for the magnitude plot means above 500,
+[0:42:52] then
+[0:42:55] the magnitude is just gonna be flat at minus 15.9
+[0:43:01] dB.
+[0:43:03] Okay.
+[0:43:05] And then,
+[0:43:06] if we are between fifty and five hundred...
+[0:43:09] Alright. Let's go back to,
+[0:43:12] the transfer function here. Then between fifty and five... So we're below 500.
+[0:43:17] So this is gonna behave as one.
+[0:43:19] And then
+[0:43:21] all of these will behave in the high frequency limit. So going as j
+[0:43:29] omega. Right? So we have basically omega to the fourth in the numerator, omega cubed in the denominator. So that's gonna go as omega,
+[0:43:37] and, it's going to be a 20 dB,
+[0:43:43] per decade slope. So that would look maybe something like
+[0:43:47] this. So the slope here is 20
+[0:43:53] dB per decade. Alright?
+[0:43:56] Then
+[0:43:58] between
+[0:44:01] five
+[0:44:02] and fifty.
+[0:44:04] Alright.
+[0:44:05] Now this is going to be in the low frequency limit. This is the low frequency limit. These two are in the, high frequency limit. So we have omega squared over omega cubed. That's one over omega. So the slope is gonna be minus 20 dB per decade. So that is going to look like
+[0:44:27] this. Okay. So this slope here is
+[0:44:31] minus 20 dB
+[0:44:34] per decade.
+[0:44:36] Okay?
+[0:44:37] And then finally,
+[0:44:40] when we go below five,
+[0:44:43] a frequency of five, radians per second, then
+[0:44:47] all these factors here will be in the low frequency limit, so they'll behave as one. And we just have a one over omega cubed. Alright? So one over omega cubed is going to have a slope of minus 60 dB per decade. So that's gonna look,
+[0:45:04] say, something like this.
+[0:45:07] Alright. So this slope here is minus 60
+[0:45:11] dB per decade.
+[0:45:13] Okay. So this is what the Bode magnitude
+[0:45:17] plot looks like. Okay?
+[0:45:20] And,
+[0:45:22] basically, the way that we arrived at it was we started off,
+[0:45:27] where
+[0:45:28] the magnitude is constant. Alright? And then in each regime where we... Each frequency range where we know that the behavior will be different because we're crossing some
+[0:45:43] zero or pole frequency, then we just figured out what the slope would be in each of those frequency ranges, and then we constructed the plot accordingly.
+[0:45:53] Okay. So now,
+[0:45:55] let's go ahead and
+[0:45:59] try to generate the
+[0:46:02] phase plot. So we're gonna draw the axis...
+[0:46:05] Phase axis over
+[0:46:07] here.
+[0:46:09] So that's the phase,
+[0:46:11] and
+[0:46:12] let's draw the
+[0:46:19] frequency axis like this.
+[0:46:22] Okay.
+[0:46:23] So
+[0:46:25] the axis will be at
+[0:46:28] zero degrees,
+[0:46:30] and then we'll have,
+[0:46:32] say,
+[0:46:35] 90 degrees,
+[0:46:38] 180 degrees,
+[0:46:41] 270 degrees,
+[0:46:44] 360 degrees,
+[0:46:46] and we'll go to
+[0:46:50] minus 90 degrees here. Alright?
+[0:46:54] And then the frequencies that we're going to want to mark are
+[0:46:58] point five,
+[0:47:01] five,
+[0:47:06] 50.
+[0:47:09] Try to line them up with the magnitude plot.
+[0:47:12] 500
+[0:47:14] and then
+[0:47:16] 5,000.
+[0:47:18] Okay.
+[0:47:19] And
+[0:47:20] let's
+[0:47:23] try to draw... We'll draw some
+[0:47:25] dash lines,
+[0:47:29] right, so that we can
+[0:47:31] keep track of these.
+[0:47:39] Yeah. I can see here that, it would have been,
+[0:47:43] helpful if I had selected some background,
+[0:47:47] that is more like graph paper, if that's available. Okay. But, anyway, we'll continue with this. So now, right, what we want to do is
+[0:48:00] just figure out what the
+[0:48:05] different contributions are from
+[0:48:08] the zeros and the poles. Right? So at omega equal five,
+[0:48:14] right, we have a second order zero.
+[0:48:18] Okay.
+[0:48:20] And so,
+[0:48:21] that's going to... That's this term over here. So at, very low frequency, say omega less than point five, then the phase of this will be zero.
+[0:48:33] Okay. And it'll... So it'll contribute zero phase to the transfer function.
+[0:48:38] And very high frequency,
+[0:48:40] that is omega greater than, say, 50, which is 10 times five, then,
+[0:48:46] this term here will dominate. When we square it, we get j squared or minus one. That'll be a phase of a 180 degrees. Okay? And so, what we will get then is
+[0:49:00] from that one, we'll do these in blue. So we'll have a contribution
+[0:49:07] that goes from
+[0:49:10] zero phase
+[0:49:12] to
+[0:49:14] a 180 degrees between five... Or between point five and fifty, and will be at the midpoint 90 degrees in between.
+[0:49:27] K. So,
+[0:49:29] that second order zero will give us a contribution like this to the phase.
+[0:49:33] Okay.
+[0:49:35] Then we also have a second order zero to omega equal to 50. So by the same reasoning,
+[0:49:42] right, then the phase will go from zero at frequency for this factor here. The phase will go from zero at frequencies below 50 over five. So that's below, five
+[0:49:54] to a 180 at frequencies of 10 times 50 or 500 and higher. Okay. So,
+[0:50:02] we're gonna go from
+[0:50:04] a phase of...
+[0:50:06] Alright. So that's a zero at
+[0:50:10] 50. So we're gonna go from zero phase at five to
+[0:50:16] 180 degrees at 500, and it'll be 90 degrees at the midpoint.
+[0:50:22] So that'll be something like
+[0:50:26] this.
+[0:50:27] Okay.
+[0:50:29] And then
+[0:50:32] we have
+[0:50:34] this simple poll
+[0:50:36] at omega yield to 500. For a poll, we're going to go from a phase of zero at omega less than,
+[0:50:44] 500 over 10, so less than 50, to a phase of...
+[0:50:49] It'll be 90 degrees or j in the denominator. So minus j or minus 90 degrees overall to h of omega. That's the contribution to the phase. At frequencies greater than 10 times 500 or 5,000.
+[0:51:05] So
+[0:51:08] we'll go from zero here
+[0:51:12] to minus 90 here and 45 at the midpoint.
+[0:51:17] So let me try to draw approximately
+[0:51:22] straight line here for the phase like that. Okay.
+[0:51:26] And then for the third order zero at omega equal to zero,
+[0:51:33] Right?
+[0:51:34] That is
+[0:51:36] this factor here. Alright?
+[0:51:39] That phase is constant. Okay? It doesn't go, undergo a transition from a low to high frequency. Alright? That's characteristic of a zero or a pole at the origin. We just have this overall factor of j cubed in the denominator,
+[0:51:55] which is
+[0:51:57] minus j in the denominator or just j in the numerator. So that gives us an overall contribution of 90 degrees. Right? That's the phase of j in the numerator to h of omega. So that means that
+[0:52:12] at very low frequency that is below point five,
+[0:52:17] then our starting phase will be 90 degrees.
+[0:52:23] Okay. So,
+[0:52:24] we have
+[0:52:28] this here first. Right? That's constant.
+[0:52:31] Okay.
+[0:52:32] And then,
+[0:52:34] as we go from point five to five, alright, then we have just this slope contributing,
+[0:52:42] and it's a slope of 90 degrees per decade. So that's gonna take us to here.
+[0:52:49] So this slope here is plus 90 degrees
+[0:52:54] per decade.
+[0:52:55] Okay. Then between five and fifty, we have these two phase factors that are each contributing a slope of 90 degrees per decade. So that's a total of a 180 degrees per decade. So that's gonna take us to here, right, to three sixty.
+[0:53:15] Okay. So here, this slope is a 180 degrees
+[0:53:22] per decade. Okay. So now that's taking us to three sixty. Alright. When we get to three sixty,
+[0:53:29] then
+[0:53:31] what we'll do is we'll... Right. Three sixty is equivalent to zero.
+[0:53:36] So we'll just bring that back down to zero here.
+[0:53:39] Okay? And then we'll continue from there. Between fifty and five hundred, we have,
+[0:53:46] plus 90... A slope of plus 90 degrees per decade here and minus 45 degrees per decade here. So that's gonna be a slope of 45 degrees
+[0:53:58] per decade.
+[0:54:02] And then from 50
+[0:54:05] or 500 to 5,000,
+[0:54:07] then we will have just this here which is minus 45 degrees per decade.
+[0:54:14] So that's gonna bring us back to here.
+[0:54:17] K. So this is minus 45 degrees
+[0:54:21] per decade.
+[0:54:22] And then above 5,000,
+[0:54:25] then the phase will just be constant at zero.
+[0:54:29] And we see that, in fact, that is the correct limiting behavior that we deduced from h of omega.
+[0:54:37] Okay. So so those are the Bode plots up here for the magnitude
+[0:54:43] and then down here for the phase. Okay.
+[0:54:48] So
+[0:54:50] from this
+[0:54:52] part of the problem, what were some additional key points?
+[0:55:03] Okay. One,
+[0:55:05] alright, is that when we constructed the magnitude plot, right, notice that we started
+[0:55:13] over here at high frequency. And we did that because we knew that the magnitude was going to be constant.
+[0:55:21] Alright?
+[0:55:22] There. And
+[0:55:24] it's just easier to construct the plot starting from a known specific value. Alright?
+[0:55:32] And so, the first point to note here, it's that... Is that it's often
+[0:55:37] easier
+[0:55:40] to construct,
+[0:55:43] the magnitude plot.
+[0:55:49] Okay. Starting
+[0:55:54] from a limit,
+[0:55:57] okay, or a point,
+[0:56:01] for which
+[0:56:06] the magnitude
+[0:56:07] goes to some constant,
+[0:56:11] right, that we know and can calculate. Right? In this case, it was
+[0:56:16] the high frequency limit.
+[0:56:21] Okay.
+[0:56:23] And the same applies
+[0:56:29] to the phase.
+[0:56:32] Okay.
+[0:56:34] And then the second
+[0:56:36] additional point that is beyond the points that we noted for part a
+[0:56:40] is that, we saw here,
+[0:56:43] right, the phase actually extended beyond
+[0:56:47] 360
+[0:56:49] degrees. Alright? So if we go outside the range from minus three sixty to three sixty,
+[0:56:54] then, what we wanna do is to bring, the phase plot back to zero because zero, three sixty, and minus three sixty are all the same, alright, in terms of, their trigonometric behavior.
+[0:57:07] Right? So if the phase
+[0:57:11] applied... Or if it extends
+[0:57:15] outside
+[0:57:21] the range
+[0:57:23] from
+[0:57:24] minus three sixty
+[0:57:28] to three sixty, alright, then,
+[0:57:31] what we will typically do is translate.
+[0:57:35] And what you want to do, right, is to translate the phase
+[0:57:40] from one of those extremes,
+[0:57:42] right, whichever one, it was at. So plus or minus three sixty to zero, and then go from there.
+[0:57:49] Okay. So,
+[0:57:51] so that's part b of this problem. Alright?
+[0:57:56] Now we will go to part c.
+[0:58:00] Okay. I think parts c and d are
+[0:58:03] a little bit shorter. Okay. So
+[0:58:07] part c here.
+[0:58:10] Alright. H of omega, it's equal to
+[0:58:15] eight times 10 to the minus two
+[0:58:18] times 10 plus j times 10 omega
+[0:58:22] divided by
+[0:58:24] j omega times 16 minus
+[0:58:28] omega squared plus j times four omega.
+[0:58:32] Okay. So here again, right, we will put this into a standard form. So we have our constant a times 10 to the minus two. Right? Then from this zero, we will factor out a 10,
+[0:58:47] and that'll leave us with one plus
+[0:58:50] j omega.
+[0:58:53] And then in the denominator,
+[0:58:55] we will factor out a 16 from this quadratic pole here. So we have a factor of
+[0:59:04] 16,
+[0:59:06] and then that's times j omega times one
+[0:59:11] and then
+[0:59:13] plus
+[0:59:15] j omega over four
+[0:59:17] minus
+[0:59:18] and then... Or sorry. Plus
+[0:59:21] j omega over four, the quantity square.
+[0:59:26] Alright.
+[0:59:27] And
+[0:59:31] these constant factors in front...
+[0:59:36] Alright. If we multiply those out, right, we have eight times 10 to the minus two times 10, that's point eight. Point eight over 16 is one over 20.
+[0:59:46] Okay.
+[0:59:47] So, looking at
+[0:59:50] this transfer function, we see that we have a simple zero
+[0:59:57] at omega equal to one.
+[1:00:00] And then, we have a
+[1:00:05] simple poll
+[1:00:08] at omega equal to zero.
+[1:00:10] Okay. And then we have a
+[1:00:15] quadratic
+[1:00:19] pole
+[1:00:20] at omega equal to four.
+[1:00:23] Okay.
+[1:00:25] So that's what we have for this transfer function.
+[1:00:28] So now let's look at the
+[1:00:32] low and high frequency limiting behavior
+[1:00:35] for,
+[1:00:36] the magnitude of the transfer function. So at zero frequency or very low frequency,
+[1:00:42] right, then the zero and the pole both behave as one. So we just have this omega in the denominator. So this is going to infinity. Alright?
+[1:00:52] And then,
+[1:00:54] the magnitude
+[1:00:57] at very high frequency, frequency approaching infinity, right, it's going to go as omega over omega q. Right? So one over omega squared. So that's going to go to zero,
+[1:01:08] which is minus infinity
+[1:01:10] on the decimal scale.
+[1:01:12] Okay.
+[1:01:16] In addition... Alright.
+[1:01:18] So this does not really help us that much in terms of identifying
+[1:01:23] a point or a range where the magnitude is constant. Right? Where we can
+[1:01:30] sort of figure out where the magnitude goes vertically, right, on the Bode plot. However...
+[1:01:40] Alright. If we look at the frequency range between one and four,
+[1:01:46] then this term, the zero, is gonna be in the high frequency range. So it's gonna behave as j omega. That cancels out with this j omega down here. Here,
+[1:01:56] since omega is less than four, this is going to be in the low frequency limit, so it'll behave as just one. So for omega between one and four,
+[1:02:06] then the transfer function will behave just as a constant,
+[1:02:11] which as we see here is going to be one twentieth.
+[1:02:15] So what we also see is that
+[1:02:21] m of omega is going to be, again, this is in linear approximation,
+[1:02:26] approximately equal to 20 times the common log of one over 20,
+[1:02:31] which is
+[1:02:33] minus 26
+[1:02:34] dB.
+[1:02:37] And we will have that behavior for one being less than or equal to omega, being less than or equal to four. Okay. So that will allow us to figure out where,
+[1:02:47] the magnitude plot goes on the vertical scale.
+[1:02:52] Now we can look at the phase.
+[1:02:54] So the phase
+[1:02:55] at very low frequency zero. Right? These two factors here, the zero and the quadratic pole are gonna behave as one. And then we'll have this, one over j, right, in
+[1:03:07] the
+[1:03:09] in the transfer function. So that has a phase of minus 90 degrees.
+[1:03:16] Alright.
+[1:03:17] And then finally,
+[1:03:20] the phase at a very high frequency is the frequency goes to infinity.
+[1:03:25] Alright? Then we're going to have... This will behave as j omega, then I'll cancel out with this j omega. So we're gonna have j omega, the quantity squared over here as the dominant term. So that is a factor of minus one. It doesn't matter whether it's in the numerator or the denominator. So it's going to be plus or minus
+[1:03:45] a 180 degrees. Okay. And we'll see which of those it is when we construct
+[1:03:50] the
+[1:03:52] Bode phase plot.
+[1:03:54] Okay. So now with this information in hand, then, we can go ahead and calculate
+[1:04:02] or generate the Bode magnitude and
+[1:04:06] phase plots. Okay. So
+[1:04:10] oops,
+[1:04:12] let's see. For the magnitude plot,
+[1:04:14] alright,
+[1:04:15] we will
+[1:04:19] just draw the axis over here.
+[1:04:23] K. So this is the magnitude plot on the dB scale. Alright?
+[1:04:29] And
+[1:04:31] we'll draw the frequency axis here.
+[1:04:34] Okay?
+[1:04:35] And so, we have
+[1:04:38] a simple zero at omega equal to one and a quadratic pole at omega equal to four. Alright. We're not gonna be able... Since the frequency is also on a log scale, we're not gonna be able to get zero on it. Alright. So
+[1:04:53] for the simple zero at omega equal to one, alright, we're eventually gonna wanna have point one,
+[1:05:02] one,
+[1:05:04] and 10. Alright? Then we have a quadratic pole at omega equal to four. Right? So that would be maybe somewhere
+[1:05:12] here. Okay. So then we're gonna have,
+[1:05:16] point four.
+[1:05:20] Okay. And then
+[1:05:23] 40, something like that. Okay.
+[1:05:28] Okay. So now I...
+[1:05:31] Right. For the magnitude plot, here, the key points are
+[1:05:36] omega equal to one
+[1:05:41] and omega equal to
+[1:05:43] four.
+[1:05:45] Okay.
+[1:05:46] And
+[1:05:47] we're gonna have, say, minus 26 dB. Alright? Because we know that for omega between one and four, then
+[1:05:57] in the linear approximation,
+[1:05:59] the magnitude m of omega on the dB scale is gonna be minus 26 dB.
+[1:06:04] Alright. So that is
+[1:06:07] here.
+[1:06:09] Draw this to make it clear that those are aligned.
+[1:06:14] Okay.
+[1:06:15] And then when we are at frequencies
+[1:06:21] above four, Right? So that's basically in the high frequency range. Then,
+[1:06:27] we're gonna have... This is in the high frequency range, so it'll go as j omega. That'll cancel out with this. We're gonna go as one over omega squared. Alright?
+[1:06:35] And so that is going to give us a slope of minus 40 dB per decade.
+[1:06:40] Alright. So that's gonna come down pretty steeply
+[1:06:45] like this.
+[1:06:50] Okay.
+[1:06:52] And then for frequencies
+[1:06:55] less than one,
+[1:07:00] Alright. Then this will behave as one.
+[1:07:04] This will behave as one. And so we're just gonna have a one over j omega.
+[1:07:10] So that is going to have a slope of minus 20 dB per decade. Right? So one decade is one to point one, and we'll say that's, you know, maybe here. Okay.
+[1:07:22] And so
+[1:07:26] I'll draw this, and then we just
+[1:07:29] continue that. So the slope here
+[1:07:32] is
+[1:07:36] minus 20 dB
+[1:07:39] per decade.
+[1:07:40] Okay. So that is the Bode magnitude
+[1:07:44] plot.
+[1:07:45] Okay.
+[1:07:47] And so now
+[1:07:49] we wanna generate the Bode phase
+[1:07:51] plot.
+[1:07:54] K. So this is the phase.
+[1:07:57] Alright?
+[1:07:58] And
+[1:08:01] let's draw the axis
+[1:08:05] here.
+[1:08:07] Okay. So we're going to mark,
+[1:08:10] point one,
+[1:08:14] point four,
+[1:08:15] one,
+[1:08:17] four,
+[1:08:20] 10,
+[1:08:22] and 40,
+[1:08:24] okay, on the frequency axis.
+[1:08:27] And then,
+[1:08:28] we'll mark
+[1:08:30] 90 degrees. This is zero.
+[1:08:33] And then we'll have
+[1:08:38] minus 90 degrees
+[1:08:41] and minus a 180 degrees.
+[1:08:44] Okay.
+[1:08:45] And
+[1:08:47] so now...
+[1:08:49] Alright. And we will
+[1:08:55] just mark all of these.
+[1:09:05] Okay. And then what we're going to do here as we've done in the previous two parts is we're going to sketch out the contributions of the phase from each of the zeros and poles, and then we'll just add them together.
+[1:09:23] Okay. So we
+[1:09:25] have a simple zero at
+[1:09:29] omega equal to one.
+[1:09:32] Alright. That's this factor over here. So it undergoes a transition from a low frequency, say omega less than point one, a phase of zero, since it behave... This factor just behaves as one, to at high frequency, say omega greater than 10 times one or 10 to a phase of 90 degrees.
+[1:09:52] Okay. So we're gonna go from
+[1:09:55] zero
+[1:09:56] at point one to nine degrees at 10,
+[1:10:01] 45 in the middle.
+[1:10:10] Okay.
+[1:10:11] And then we have a quadratic
+[1:10:15] zero
+[1:10:18] and omega equal to four. Alright? And so that is going to go from a phase of zero at a very low frequency, say, omega less than point four, which is four over 10, to a phase of
+[1:10:34] it'll be a 100 and... Minus a 180 degrees. Right? At a phase,
+[1:10:39] at, frequencies
+[1:10:41] above 10 times four or 40.
+[1:10:44] Okay. So we're gonna go from
+[1:10:48] 0.4
+[1:10:51] to minus a 180
+[1:10:54] at 40,
+[1:10:56] and it'll be minus 90 degrees
+[1:10:59] at
+[1:11:03] at four. Right? We know that it goes,
+[1:11:06] to minus one eighty. Right? Because at omega equal to four, right, this j omega over four squared,
+[1:11:15] right, becomes minus one. That cancels out with this one. And so all we have left is j over here, and that's gonna be a j in the denominator.
+[1:11:25] Its phase is 90 degrees or minus 90 degrees. Okay? Because it's minus j in the numerator. So we know that this is at minus 90, and so at 40, it has to be minus one eighty.
+[1:11:35] Okay. So let me draw this
+[1:11:39] dash line.
+[1:11:45] Okay. Alright. So now, right, we have...
+[1:11:49] Oh, one more thing.
+[1:11:51] Add
+[1:11:54] low frequency. Right?
+[1:11:56] So below point one, the phase is minus 90 degrees. Okay. So that's where we will start.
+[1:12:03] So at minus 90 degrees, below point one. So
+[1:12:10] it's basically like this. Okay?
+[1:12:13] Then,
+[1:12:15] from point one to point four, right, we have only this contributing.
+[1:12:21] So that's at plus 45 degrees per decade.
+[1:12:27] That's gonna be something like this. So this is plus
+[1:12:31] 45 degrees per decade.
+[1:12:35] And then,
+[1:12:37] from point four
+[1:12:39] to 10,
+[1:12:41] alright, then,
+[1:12:43] we have plus 45 degrees per decade minus 90 degrees per decade. Alright? So that is minus 45 degrees,
+[1:12:51] per decade. Alright? So that will bring us back
+[1:12:59] to here.
+[1:13:01] Okay. And then,
+[1:13:04] right, it's gone from one to 10. It's another 45 degrees. So maybe to... So back to here.
+[1:13:14] Okay. So we'll
+[1:13:18] continue that line.
+[1:13:20] And then
+[1:13:22] out here from 10 to 40, then it's going to be, just minus 90 degrees per decade as the slope.
+[1:13:30] So
+[1:13:32] something like this. So here,
+[1:13:40] this is minus 45 degrees
+[1:13:44] per decade. Here, it is minus 90 degrees
+[1:13:49] per decade. Okay?
+[1:13:51] And then I... Once we're above 40,
+[1:13:55] then I... It should continue...
+[1:13:58] It's just constant at minus a 180 degrees.
+[1:14:02] Alright?
+[1:14:03] And
+[1:14:04] I... So that's what we have over here.
+[1:14:08] Okay. So that is
+[1:14:11] this
+[1:14:12] part, part c. Alright?
+[1:14:14] And I
+[1:14:17] think there aren't really any additional
+[1:14:20] key points that are important to note here.
+[1:14:23] It's... It was quite similar to what we did in the previous two parts, except that this time, we have a
+[1:14:31] quadratic,
+[1:14:32] pole right here. And so we just had to think a little bit more about
+[1:14:38] what the limiting behaviors of that would be, how the phase changes and so forth, but,
+[1:14:43] you know, using the ideas that we highlighted in the first two parts.
+[1:14:49] Okay. So now
+[1:14:51] we are finally on part... Oops.
+[1:14:57] We're finally on part d, which is the last part of this problem.
+[1:15:01] Okay. So here,
+[1:15:06] the transfer function is
+[1:15:09] four times 10 to the fourth times omega squared times 100
+[1:15:14] minus omega squared plus j times 50 times omega
+[1:15:21] divided by
+[1:15:22] five
+[1:15:24] plus five times plus... Oops.
+[1:15:29] Plus j times five times omega
+[1:15:32] times 200
+[1:15:34] plus j times two omega
+[1:15:37] cubed.
+[1:15:38] Alright? So, again,
+[1:15:41] we wanna take this and just put it in the standard form. Okay.
+[1:15:46] So,
+[1:15:47] we have the constant four times
+[1:15:50] 10 to the four.
+[1:15:52] Alright. Then, we're gonna factor out a 100 from here, from the quadratic zero.
+[1:15:59] So we have a factor of a 100, then we have omega squared,
+[1:16:04] and then
+[1:16:06] one plus...
+[1:16:07] And then it's
+[1:16:09] j times omega over two. That's from the j 50 omega,
+[1:16:14] minus
+[1:16:15] or plus j
+[1:16:18] omega over 10 quantity squared.
+[1:16:24] Okay. And then in the denominator, we'll factor out a five from this first pole.
+[1:16:32] And then we'll factor out a 200
+[1:16:36] cubed
+[1:16:37] from this third order pull over here. Alright? And then what we have left will be one plus j omega
+[1:16:44] and then
+[1:16:46] one plus
+[1:16:47] j
+[1:16:49] omega over 100
+[1:16:51] q.
+[1:16:53] Okay. So this is now in, the standard form.
+[1:16:57] And this collection of constants
+[1:17:02] out in front, Right? If we calculate that out,
+[1:17:06] then it turns out to be one tenth.
+[1:17:10] Okay.
+[1:17:12] So, if we look at this, what we have here is we have this omega squared in the numerator. So we have a second order
+[1:17:22] zero
+[1:17:26] at omega equal to zero.
+[1:17:28] Then we have this factor here, which is a quadratic zero at omega equal to 10.
+[1:17:36] So we have a quadratic zero
+[1:17:39] at omega equal to 10.
+[1:17:42] Alright. Then we have here a simple pole at omega equal to one.
+[1:17:51] And then finally here, we have a third order poll at omega equal to 100.
+[1:18:05] Okay.
+[1:18:07] So those are the poles and zeros.
+[1:18:12] Okay. And then if we look at the limiting behavior of the magnitude, the magnitude at very low frequency,
+[1:18:19] zero
+[1:18:21] is,
+[1:18:22] these factors here go as one. This is omega squared. So this will go to zero, right, which is, remember, minus infinity
+[1:18:30] dB.
+[1:18:32] Okay?
+[1:18:33] Then
+[1:18:36] the magnitude
+[1:18:37] at very high frequency as omega goes to infinity.
+[1:18:41] Right, this numerator is gonna go as omega to the fourth. The denominator will go as omega to the fourth as well. Okay?
+[1:18:50] And so, what we're gonna have here is
+[1:18:55] that,
+[1:18:56] the magnitude
+[1:18:57] goes
+[1:18:59] as...
+[1:19:00] Right. It's gonna be 20 times
+[1:19:04] the
+[1:19:06] natural log of... We're gonna have,
+[1:19:10] one tenth.
+[1:19:13] Alright.
+[1:19:14] And then we're going to have,
+[1:19:20] from this factor over here, we're going to have one over 100.
+[1:19:26] Alright. One over 10 squared.
+[1:19:28] And then from this down here, we're going to have,
+[1:19:33] 100 cubed.
+[1:19:38] Okay.
+[1:19:39] And so if we multiply all this out, this is 10 to the sixth divided by 10 to the third.
+[1:19:48] Okay. And so, this is going to be 10 to the third over here. We take the natural log... Sorry. The common log of that, that's three. And we have three times 20, that is 60
+[1:20:01] dB.
+[1:20:02] Okay?
+[1:20:04] And
+[1:20:05] then the... For the phase...
+[1:20:09] Alright. The phase
+[1:20:11] at zero,
+[1:20:13] okay,
+[1:20:14] is equal to...
+[1:20:18] Alright. We have... These are all one. This goes to omega squared. This is positive. So the phase at zero is zero degrees.
+[1:20:27] And then the phase at
+[1:20:30] very high frequency, right, as the frequency goes to infinity
+[1:20:34] is going to be, we have j squared over here, which is minus one. And then we have j to the fourth in the denominator,
+[1:20:43] which is just one. So,
+[1:20:45] we have an overall minus sign in the transfer function,
+[1:20:49] and so that's going to have a phase of plus or minus
+[1:20:52] 180 degrees.
+[1:20:55] Okay. So now... Alright.
+[1:21:00] This is what we need in order to construct
+[1:21:03] the
+[1:21:05] Bode plots. Okay. So let's... As usual, we will construct the magnitude plot first.
+[1:21:18] Okay. This is on
+[1:21:19] dB scale.
+[1:21:21] Okay.
+[1:21:22] And,
+[1:21:24] our starting point is going to be 60.
+[1:21:27] Alright? So
+[1:21:32] let's draw our
+[1:21:36] frequency axis here.
+[1:21:39] And then we have,
+[1:21:41] the key points
+[1:21:43] on the frequency axis are,
+[1:21:45] we have a,
+[1:21:50] simple pole at omega equal to one, quadratic zero to make it equal to 10, and a third order pole at omega equal to 100.
+[1:21:57] Okay?
+[1:21:58] And so,
+[1:22:01] we're gonna wanna go from, say, point one,
+[1:22:04] make this one,
+[1:22:07] 10,
+[1:22:11] 100.
+[1:22:12] Make this 1,000.
+[1:22:14] K. So that's omega.
+[1:22:17] And then let's see.
+[1:22:20] We're gonna start off at very high frequency. This is going to be at 60.
+[1:22:31] And so we'll
+[1:22:32] mark these points
+[1:22:36] here.
+[1:22:38] Okay. And then, our
+[1:22:43] poles and zeros are at one
+[1:22:48] ten
+[1:22:51] and
+[1:22:55] one hundred. Okay.
+[1:22:57] So
+[1:22:58] now at,
+[1:23:00] at very high frequency, right, the magnitude,
+[1:23:03] we saw is
+[1:23:05] 60.
+[1:23:10] K. So that's gonna be,
+[1:23:12] say, up here. Alright? And we'll
+[1:23:18] draw this dash line here to show that these are aligned.
+[1:23:22] Okay.
+[1:23:24] And then
+[1:23:28] when we're between
+[1:23:30] omega equal to a 100 and omega equal to 10. Right? So we're below omega equal to a 100. So this factor, just becomes one. Alright?
+[1:23:39] This is omega squared. This is omega squared. So that's omega to the fourth in the numerator.
+[1:23:44] This is omega in the denominator. So that is omega cubed. So this is gonna have a positive slope of 60 dB per decade.
+[1:23:53] Alright. So for one decade,
+[1:23:57] that'll be like this. This is 60 dB
+[1:24:02] per decade.
+[1:24:04] Okay.
+[1:24:05] Then,
+[1:24:07] for omega between one and ten,
+[1:24:11] then
+[1:24:12] this
+[1:24:14] is going to be... This is gonna be in the low frequency,
+[1:24:17] regime.
+[1:24:18] So this will be one.
+[1:24:21] This will be one here. And so we'll just have omega squared over,
+[1:24:26] omega. So that's going to go as omega,
+[1:24:30] which is plus 20 dB per decade.
+[1:24:38] K. So here, this is 20 dB
+[1:24:43] per decade. Alright?
+[1:24:46] And then,
+[1:24:49] say,
+[1:24:50] below that.
+[1:24:54] Okay. Then this goes to one. These are also, behaving in the low frequency limit. So so we'll take those as one. So we just go as omega squared,
+[1:25:04] which, has a slope of 40 dB per decade. Right? So maybe that's... We'll take a point one that'll be minus 60 then.
+[1:25:14] And so the slope will look something like this. So this is a slope of 40
+[1:25:20] dB
+[1:25:22] per decade.
+[1:25:23] Okay. So this is the magnitude,
+[1:25:27] Bode plot.
+[1:25:29] And so now
+[1:25:32] we wanna do the
+[1:25:34] phase plot.
+[1:25:40] K. So this will be the phase.
+[1:25:42] Alright?
+[1:25:44] And
+[1:25:45] let's draw the axis
+[1:25:51] here.
+[1:25:52] Right? So we have point one,
+[1:25:55] one,
+[1:25:58] 10,
+[1:26:00] 100,
+[1:26:03] and 1,000.
+[1:26:19] And we'll mark all of these
+[1:26:23] on the phase plot.
+[1:26:29] Okay. And then
+[1:26:34] for the actual phases, we'll take this to be zero.
+[1:26:38] So the axis is at zero,
+[1:26:40] and we'll go to 90 degrees,
+[1:26:44] 180 degrees,
+[1:26:48] minus 90 degrees,
+[1:26:51] minus one eighty,
+[1:26:55] minus two seventy. Okay.
+[1:26:57] So now,
+[1:27:00] we'll go back to our
+[1:27:04] zeros and poles.
+[1:27:07] Okay. So so the zero at omega equal to zero, that's just the omega square. That doesn't contribute any change to the phase and it and it contributes the constant of zero to the phase. Right? So we don't have to really worry about that as far as the phase plot is concerned. Alright?
+[1:27:22] Then,
+[1:27:23] at omega equal... For the, simple pole, omega equal to one, then we go from a phase of zero for omega less than,
+[1:27:33] one over 10, less than point one, to a phase of minus 90 degrees,
+[1:27:39] at omega equal to 10. Alright?
+[1:27:43] So
+[1:27:46] as usual, we'll draw that in blue. So from point one to zero to 10, it's at minus 90, and it's at minus 45
+[1:27:58] at omega equal to one.
+[1:28:00] So that's gonna look like this.
+[1:28:03] Then we have
+[1:28:09] at omega equal to 10, we have the quadratic zero up here. So that's gonna go from a phase of zero at omega less than equal to one to a phase of
+[1:28:23] a 180 degrees
+[1:28:25] at... So just a factor of minus one at omega greater than or equal to 100.
+[1:28:34] Okay. So we're gonna go from zero
+[1:28:37] to a 180 degrees at 190
+[1:28:41] degrees at 10.
+[1:28:46] K. So that looks like this.
+[1:28:49] And then finally,
+[1:28:51] we have the third order
+[1:28:55] zero,
+[1:28:56] or sorry. Third order pole in the denominator,
+[1:29:00] from this factor in the denominator over here. So this is gonna go from a phase of zero at omega equal to 10 to a phase of,
+[1:29:08] minus
+[1:29:10] 270 degrees. That's j cubed, right,
+[1:29:14] in the denominator
+[1:29:15] at,
+[1:29:16] omega equal to a thousand.
+[1:29:19] Right? So we're gonna go from
+[1:29:22] zero degrees here to minus two seventy
+[1:29:26] at a thousand.
+[1:29:28] Right? And then it'll be
+[1:29:32] halfway
+[1:29:35] at omega equal to 100.
+[1:29:40] K. So that's gonna be something
+[1:29:43] like this.
+[1:29:45] And then for the overall phase plot, alright, we just add these together noting that
+[1:29:52] I... In the low frequency limit, the phase is zero.
+[1:29:57] Okay?
+[1:29:58] So we have a phase of zero
+[1:30:02] up to
+[1:30:04] point one. Okay?
+[1:30:07] And then, from point one
+[1:30:10] to one, right, we have only this contributing. That's a slope of minus 45 degrees per decade.
+[1:30:19] And it's gonna go like this. So that's minus 45 degrees per decade.
+[1:30:25] Then,
+[1:30:28] from one to 10, we have minus 45 degrees per decade from here and plus 90 degrees per decade from here. So that's plus 45 degrees per decade overall.
+[1:30:40] So that's gonna bring us up
+[1:30:42] like this.
+[1:30:44] So this is plus
+[1:30:46] 45 degrees
+[1:30:48] per decade.
+[1:30:49] Alright?
+[1:30:51] Then
+[1:30:53] from 10 to 100,
+[1:30:56] we have
+[1:30:57] plus 90 degrees per decade minus 135
+[1:31:01] degrees per decade. So that's gonna be minus 45 degrees per decade. So that'll bring us to minus 45 here.
+[1:31:11] So this is minus 45
+[1:31:13] degrees per decade.
+[1:31:15] Okay.
+[1:31:16] And then finally, from 100 to a thousand, we have just minus 135
+[1:31:22] degrees per decade from,
+[1:31:24] this third order pole here. So that's gonna bring us down to
+[1:31:30] minus one eighty.
+[1:31:34] So that'll be like this. This is minus 135
+[1:31:38] degrees
+[1:31:40] per decade.
+[1:31:41] Okay?
+[1:31:42] And then,
+[1:31:44] for omega greater than a thousand,
+[1:31:47] this will be flat at
+[1:31:51] minus a 180 degrees.
+[1:31:54] Okay?
+[1:31:55] And that is the entire,
+[1:31:59] Bode phase plot. Okay. And again, right, we basically constructed this,
+[1:32:04] both of these plots using the same ideas and key points that we had highlighted in the earlier parts of this problem.
+[1:32:14] Okay. So that is, this entire example,
+[1:32:18] which hopefully gives you a very good idea of how to construct Bode plots from transfer functions and how to think about and understand them. Okay. So I'll stop the recording
+[1:32:32] here now.

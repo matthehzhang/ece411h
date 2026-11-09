@@ -1,0 +1,560 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:10.000
+Okay, so this is a simple, a Phaser and now, circuit analysis problem.
+
+00:00:10.000 --> 00:00:30.000
+And basically, what we have here is that we are given this a simple circuit over here, along with the source term and the circuit parameters. And we're asked to find the voltage between these 2 terminals labeled a and b so this is an example.
+
+00:00:30.000 --> 00:00:41.000
+The simple, second analysis.
+
+00:00:41.000 --> 00:00:48.000
+Okay, so what we will do is, as usual, we will start off by redrawing the circuit.
+
+00:00:48.000 --> 00:00:53.000
+So we have a current source here.
+
+00:00:53.000 --> 00:01:00.000
+And then a resistor. Okay, the current source we label, I, sub. S.
+
+00:01:00.000 --> 00:01:14.000
+Of T, the resistor has value. R, which specified in the problem, and then we have 2 terminals, positive and a negative terminal labeled A and B, and then we have a capacitor.
+
+00:01:14.000 --> 00:01:18.000
+In series with an inductor connected between A and B.
+
+00:01:18.000 --> 00:01:22.000
+So this is the capacitor C, and an inductor.
+
+00:01:22.000 --> 00:01:34.000
+L and our current source I oft is 35 times the sign of 300 T.
+
+00:01:34.000 --> 00:01:44.000
+Minus 15 degrees. And that's in milliamps. The resistance are is 80 ohms.
+
+00:01:44.000 --> 00:02:01.000
+The inductance. L. Is 15. Millie Henry's, and the capacitance C is 200 micro farads, and what we are asked to do is define the voltage v.
+
+00:02:01.000 --> 00:02:08.000
+Of T right. So the voltage between these terminals here labelled A and B, okay, so how do we go about doing this?
+
+00:02:08.000 --> 00:02:19.000
+The first step. Okay? Yes. To convert the current source term into the standard cosine form that we can use to.
+
+00:02:19.000 --> 00:02:20.000
+Then couch it as a Phaser quantity.
+
+00:02:20.000 --> 00:02:27.000
+Right. So the first step here is convert. I said. S.
+
+00:02:27.000 --> 00:02:33.000
+Of T, which we're given to.
+
+00:02:33.000 --> 00:02:39.000
+The standard cosign for.
+
+00:02:39.000 --> 00:02:50.000
+Okay. And remember the standard cosine form would be to have is, I have I set S of T to be in the form of some constant, a times.
+
+00:02:50.000 --> 00:02:57.000
+The cosine of Omega t plus some phase angle 5.
+
+00:02:57.000 --> 00:03:05.000
+Alright! And here we are given is sub s. T. As the sign of an angle instead of a cosine of the angle.
+
+00:03:05.000 --> 00:03:10.000
+So we need to convert from the sign to the cosine. Okay?
+
+00:03:10.000 --> 00:03:21.000
+So one way to do that is just to remember what the what phase shift is required okay, it's a convert sign to a cosine.
+
+00:03:21.000 --> 00:03:24.000
+Alright! If you don't remember, or you don't want to.
+
+00:03:24.000 --> 00:03:35.000
+I remember that then we can pretty easily deduce what it should be right if we just plot the sign and the cosine.
+
+00:03:35.000 --> 00:03:45.000
+As functions of Omega T. Alright, and the key angles here will be.
+
+00:03:45.000 --> 00:03:58.000
+90 degrees 180 degrees, and then 360 degrees, then minus 90 degrees.
+
+00:03:58.000 --> 00:04:02.000
+And minus a hundred 80 degrees. Alright. So we know that the sign is gonna look like this.
+
+00:04:02.000 --> 00:04:13.000
+Alright! It goes to one and 90 degrees, and it has basically goes back to 0 at 1 80.
+
+00:04:13.000 --> 00:04:23.000
+And it has essentially this kind of shape here. Alright, and then this is the sign.
+
+00:04:23.000 --> 00:04:28.000
+Of mega t right the cosine.
+
+00:04:28.000 --> 00:04:33.000
+Between 0 and 3 60.
+
+00:04:33.000 --> 00:04:41.000
+Basically looks like this. Okay, so this is the cosine.
+
+00:04:41.000 --> 00:04:45.000
+Have mega t right? So those are things that I absolutely you should know.
+
+00:04:45.000 --> 00:05:10.000
+You probably know already from your earlier math courses, and then the cosine goes like that becomes 0 again at minus 90 degrees, and from looking at this picture here, right, we can see that the sign at any given angle alright say, at 0 degree is equal to the cosine.
+
+00:05:10.000 --> 00:05:13.000
+At minus 90 degrees, right, the sign at some angle between 0 and 9 degrees.
+
+00:05:13.000 --> 00:05:23.000
+Here right, is, you can see from this picture going to be equal to the cosine of that angle.
+
+00:05:23.000 --> 00:05:24.000
+90 at 9, at the same phase, minus 10 degrees.
+
+00:05:24.000 --> 00:05:34.000
+Okay, so, if we don't remember, then we can easily.
+
+00:05:34.000 --> 00:05:42.000
+That the sign of some angle, Omega T is equal to the cosine of Omega t.
+
+00:05:42.000 --> 00:05:51.000
+Minus 90 degrees. Okay? And so we can use that. Then to convert, i. Sub. S.
+
+00:05:51.000 --> 00:05:52.000
+Of T as given over here into the standard cosine form.
+
+00:05:52.000 --> 00:06:05.000
+Right. We just subtract 90 degrees from the phase angle which, as it's given, is minus 15.
+
+00:06:05.000 --> 00:06:11.000
+Okay, so let's go ahead and do that. So this then tells us that I said, S of T.
+
+00:06:11.000 --> 00:06:18.000
+Alright is equal to alright. What we're given is that it's 35 times the sign.
+
+00:06:18.000 --> 00:06:27.000
+300 t, right? So Omega is 300, minus 15 degrees, and that is in milliamps.
+
+00:06:27.000 --> 00:06:42.000
+And so that's going to be equal to if we convert milliamps to any 35 million amps is point O 3 5 amps, and then we have the coast side of 300 T.
+
+00:06:42.000 --> 00:06:50.000
+Minus minus 15 minus 90. So that's minus 105 degrees.
+
+00:06:50.000 --> 00:07:01.000
+Alright! So that is, I sub s. Of T. And the standard cosine form, which then means that the corresponding Phaser quantity i. Sub.
+
+00:07:01.000 --> 00:07:08.000
+S. Is equal to 0 point O. 3 5 times E to the minus J.
+
+00:07:08.000 --> 00:07:18.000
+Times, write that a little bit better here times minus 105 degrees.
+
+00:07:18.000 --> 00:07:25.000
+Okay. So now, we have our current source in the standard Phaser form.
+
+00:07:25.000 --> 00:07:35.000
+And so then, with that, what we want to do next is just to formulate.
+
+00:07:35.000 --> 00:07:46.000
+Our circuit. Okay? In the Phaser domain.
+
+00:07:46.000 --> 00:07:51.000
+And then solve it in the Phaser domain. For the voltage vsa ab!
+
+00:07:51.000 --> 00:08:00.000
+Initially as a Phaser. Okay? So if we go ahead and do that.
+
+00:08:00.000 --> 00:08:13.000
+Okay, let's redraw the circuit. Now, as a Phaser circuit.
+
+00:08:13.000 --> 00:08:22.000
+Okay. So now we have our current source as a Phaser Isides, and that is point O, 3 5.
+
+00:08:22.000 --> 00:08:27.000
+E to the minus j, times a hundred 5 degrees. Alright.
+
+00:08:27.000 --> 00:08:34.000
+Our resistor has. Its impedance, is just the resistance itself.
+
+00:08:34.000 --> 00:08:42.000
+Okay, so that's an easy conversion. Then we have our terminals A and B, and the voltage between them.
+
+00:08:42.000 --> 00:08:47.000
+Now is Phaser quantity v. Sub a b.
+
+00:08:47.000 --> 00:08:51.000
+And then we have our capacitor in series with our inductor.
+
+00:08:51.000 --> 00:08:58.000
+The capacitor has complex impedance, one over J. Omega C.
+
+00:08:58.000 --> 00:09:02.000
+And the inductor has complex impedance. J. Omega L.
+
+00:09:02.000 --> 00:09:15.000
+Okay. And so now, we can analyze this phaser circuit using the standard approaches that we are familiar with from conventional time, domain circuit analysis.
+
+00:09:15.000 --> 00:09:19.000
+So here. We'll do a simple node voltage analysis.
+
+00:09:19.000 --> 00:09:27.000
+We'll take this lower note here to be our reference node. So it has a voltage of 0, and then the voltage.
+
+00:09:27.000 --> 00:09:38.000
+At this node up here we'll call that V one but looking at the circuit diagram, we can see easily that V, one is just equal to V sub ab, right?
+
+00:09:38.000 --> 00:09:41.000
+So that's actually what we would like to solve for okay?
+
+00:09:41.000 --> 00:09:49.000
+So now what we want to do is as usual, to apply Kcl.
+
+00:09:49.000 --> 00:09:56.000
+At the node v. One which has voltage va, B. So we're right.
+
+00:09:56.000 --> 00:09:57.000
+Our Kcl equation in terms of V a, B, since that's what we're solving for.
+
+00:09:57.000 --> 00:10:12.000
+Ultimately okay. So then, doing the Kcl, analysis, we have the current flowing out along this branch to the left.
+
+00:10:12.000 --> 00:10:16.000
+That is minus i sub s.
+
+00:10:16.000 --> 00:10:19.000
+Okay. Then we have the current flowing down through the resistor.
+
+00:10:19.000 --> 00:10:30.000
+R that's plus va b over r, and then we have the current flowing out to the right.
+
+00:10:30.000 --> 00:10:42.000
+That's going to be Va, B. Divided by the inductance of these 2 components in or sorry the impedance of these 2 components in series, which is just one over J.
+
+00:10:42.000 --> 00:10:46.000
+Omega c plus j omega. Alright. So this is plus.
+
+00:10:46.000 --> 00:10:52.000
+V. A. B over one over J. Omega, C.
+
+00:10:52.000 --> 00:10:57.000
+Plus j omega L. And those have to add up to 0.
+
+00:10:57.000 --> 00:11:06.000
+Okay, so now, what we can do is I essentially just some complex number algebra.
+
+00:11:06.000 --> 00:11:11.000
+Alright! So we'll group together the terms that are proportional to Va.
+
+00:11:11.000 --> 00:11:15.000
+B. So we have one over R. That's this term over here, plus.
+
+00:11:15.000 --> 00:11:21.000
+And then for this second term over here we will multiply the numerator and the denominator. By J.
+
+00:11:21.000 --> 00:11:25.000
+Omega, C, so it's J. Omega, C.
+
+00:11:25.000 --> 00:11:32.000
+Over one plus or sorry minus.
+
+00:11:32.000 --> 00:11:36.000
+Minus omega squared. Lc, because J. Omega C.
+
+00:11:36.000 --> 00:11:40.000
+Times. J. Omega L. Gives you a minus sign from the J. Squared right?
+
+00:11:40.000 --> 00:11:47.000
+That's where that minus sign came from this times. Vib is equal to.
+
+00:11:47.000 --> 00:11:48.000
+So that's the second term that we gotten. And then we have this minus.
+
+00:11:48.000 --> 00:11:57.000
+Is on the left. Move that to the right hand side that just becomes isobes.
+
+00:11:57.000 --> 00:11:58.000
+So now, this is our equation that we want to now solve for V.
+
+00:11:58.000 --> 00:12:06.000
+A b alright so va b!
+
+00:12:06.000 --> 00:12:21.000
+Then is going to be equal to. I said S. Divided by this quantity in parentheses on the left, so one over r plus j omega C.
+
+00:12:21.000 --> 00:12:26.000
+Over one minus omega squared. L'll see. Hi!
+
+00:12:26.000 --> 00:12:38.000
+And so now, what we want to do is to write this in polar form rather than in essentially this rectangular form that we have here, because we'll want phasers to be in polar form.
+
+00:12:38.000 --> 00:12:48.000
+In order to make the conversion back to the time domain as straightforward as possible.
+
+00:12:48.000 --> 00:12:51.000
+Okay. So if we just take basically the denominator here, right?
+
+00:12:51.000 --> 00:12:57.000
+Well, we're right. I sub s. Separately, and we write it in polar form.
+
+00:12:57.000 --> 00:13:02.000
+Then we have the magnitude which is one over the square root of one over R.
+
+00:13:02.000 --> 00:13:14.000
+Squared plus omega squared CC. Squared over the quantity one minus omega squared, lc.
+
+00:13:14.000 --> 00:13:18.000
+Squared.
+
+00:13:18.000 --> 00:13:19.000
+All right, we're basically taking the real part squared plus the imaginary part squared.
+
+00:13:19.000 --> 00:13:26.000
+And then taking the square root, and we can do that just in the denominator.
+
+00:13:26.000 --> 00:13:35.000
+Alright, because the magnitude of some quantity, say A over B.
+
+00:13:35.000 --> 00:13:41.000
+It's just the magnitude of a over the magnitude of then we have the face of.
+
+00:13:41.000 --> 00:13:48.000
+That's denominator right? The if we take the phase of the denominator to be 5, then we get an overall factor, either the minus J.
+
+00:13:48.000 --> 00:13:53.000
+Phi. Times.
+
+00:13:53.000 --> 00:14:02.000
+And 5. Our phase angle here is the inverse tangent, of Omega, Rc.
+
+00:14:02.000 --> 00:14:09.000
+Over one minus omega squared. Lc, okay? So what we have done here right?
+
+00:14:09.000 --> 00:14:12.000
+You can see that in the denominator here, right?
+
+00:14:12.000 --> 00:14:17.000
+This hi, first term is real. This second term is imaginary, right.
+
+00:14:17.000 --> 00:14:20.000
+So we have the real and imaginary parts of the denominator.
+
+00:14:20.000 --> 00:14:37.000
+The phase of the denominator, then, is the inverse tangent of the imaginary part, divided by the real part alright, so that gives us the inverse tangent of Omega Rc.
+
+00:14:37.000 --> 00:14:43.000
+Over one minus omega squared lc, and then we get an overall phase factor E of E to the minus J times.
+
+00:14:43.000 --> 00:14:53.000
+This phase angle. Phi, because this angle Phi here that we're calculating is the phase of the denominator.
+
+00:14:53.000 --> 00:15:00.000
+When we move the X, the corresponding external phase factor to the numerator, we get a minus sign in the Expo.
+
+00:15:00.000 --> 00:15:05.000
+Alright, and then we have Isides, which we specified earlier.
+
+00:15:05.000 --> 00:15:10.000
+Okay. So now, this is Vsa ab, and at this point we can substitute in the appropriate numerical values right?
+
+00:15:10.000 --> 00:15:19.000
+So let's substitute.
+
+00:15:19.000 --> 00:15:25.000
+Numerical Values.
+
+00:15:25.000 --> 00:15:31.000
+For our various circuit components. Right? So the resistor err.
+
+00:15:31.000 --> 00:15:53.000
+It's 800's the inductor L is 15 Millie Henry's, and is 200 microfarads, and the angular frequency Omega is 300 inverse, or I guess radians per second, or you can also just specify it as inverse seconds.
+
+00:15:53.000 --> 00:16:02.000
+Okay. So now, we wanna take those numerical values and substitute them into this expression.
+
+00:16:02.000 --> 00:16:10.000
+Here. Alright! So we get that vab is equal to one over.
+
+00:16:10.000 --> 00:16:14.000
+Now we have the square root of one over 80 squared right?
+
+00:16:14.000 --> 00:16:21.000
+That's the one over r squared plus. And then oh, alright!
+
+00:16:21.000 --> 00:16:32.000
+It's 300 times 200 microfarads says 3 times 10 of the 2 times 2 times 10 to the minus 4.
+
+00:16:32.000 --> 00:16:38.000
+Alright! So that is 6 times 10 to the minus 2, which is point O, 6. Alright!
+
+00:16:38.000 --> 00:16:56.000
+So in the numerator we have point O 6 squared, and then in the denominator alright, we have one minus, and then Omega squared is 300 squared, and then L is.
+
+00:16:56.000 --> 00:17:08.000
+It's 15 milli, harries Henry. So 15 times 10 to the minus 3, and then see is 2 times 10 to the minus 4.
+
+00:17:08.000 --> 00:17:17.000
+Okay, that's all on this denominator. And this whole thing is squared.
+
+00:17:17.000 --> 00:17:22.000
+And all of this is under square root. Okay? Then, we have our face factor.
+
+00:17:22.000 --> 00:17:28.000
+E to the minus J. Phi, and then we have i, sub s.
+
+00:17:28.000 --> 00:17:49.000
+Which we figured out earlier is point O. 3 5 times E to the minus J times a hundred 5 degrees, and then our phase angle Phi, as we've defined it, is the inverse tangent of Omega Rc. Right?
+
+00:17:49.000 --> 00:17:55.000
+We already figured out that Omega times C. Over here, alright and over here.
+
+00:17:55.000 --> 00:17:58.000
+It's point O. 6. So Omega, Rc.
+
+00:17:58.000 --> 00:18:03.000
+Is point O 6 times r, which is 80.
+
+00:18:03.000 --> 00:18:07.000
+And then we're dividing it by one minus omega squared.
+
+00:18:07.000 --> 00:18:15.000
+Lc, alright, so it's one minus.
+
+00:18:15.000 --> 00:18:28.000
+300 square times L. Which is 15 times 10 to the minus 3 times C, which is 2 times 10 to the minus.
+
+00:18:28.000 --> 00:18:29.000
+Okay, and if we work that out, turns out to be 80.
+
+00:18:29.000 --> 00:18:48.000
+-one point 3 5 degrees. Okay, okay, so now, we can just use our calculators and work at this numerical value for a vap.
+
+00:18:48.000 --> 00:18:57.000
+And so this whole thing back over here. Alright, Hi! Is!
+
+00:18:57.000 --> 00:19:12.000
+12.0 3, and then we have E to the minus J times 81.3 5 degrees, and then we have point O 3 5 times E to the minus J.
+
+00:19:12.000 --> 00:19:20.000
+Times a hundred 5 degrees alright, and now, when we multiply 12.0 3 times point O.
+
+00:19:20.000 --> 00:19:32.000
+3 5, we get point 4 2 one, and then, combining the phase angles, we get E to the minus J 186 point.
+
+00:19:32.000 --> 00:19:41.000
+3 5 degrees, alright! Now we know that each of the plus or minus j times 180 degrees, is minus one.
+
+00:19:41.000 --> 00:19:53.000
+So we can also write this as minus point 4 2 one times E to the minus jay times 6.3 5 degrees.
+
+00:19:53.000 --> 00:20:21.000
+Alright. We also know that Hi, minus a hundred 86.3 5 degrees, is the same angle as 3 60, minus a hundred 86.3 5 degrees, so we can also write this as oh point 4 2 one times E to the jay times 3 60 minus a hundred 86 point
+
+00:20:21.000 --> 00:20:38.000
+3 5, which is 1 73.6 5 degrees. And so that means that our final answer is now, if we write, convert this back to time, domain alright, if we take this Phaser and convert it to the time.
+
+00:20:38.000 --> 00:20:55.000
+Domain. Then we have minus oh point 4 t. One times the cosine of 300 t plus.
+
+00:20:55.000 --> 00:21:00.000
+Sorry this had a minus sign over here.
+
+00:21:00.000 --> 00:21:01.000
+Okay? Because it was minus a hundred, and 86.3 5 degrees.
+
+00:21:01.000 --> 00:21:13.000
+And we pulled that a factor of E to the minus J Times, a hundred 80 degrees, and so that leaves E to the minus J, 6.3 5 degrees.
+
+00:21:13.000 --> 00:21:19.000
+So it's the cosine of 300 t. Minus 6.3 5 degrees.
+
+00:21:19.000 --> 00:21:31.000
+And that's in volts, or we could also write this as V, sub a, b of t is equal to using this form of the Phaser over here.
+
+00:21:31.000 --> 00:21:38.000
+Oh point 4 2 one times the cosine of.
+
+00:21:38.000 --> 00:21:47.000
+300 c. Plus 173.6 5 degrees, and that's involved.
+
+00:21:47.000 --> 00:21:55.000
+Right. So either of these would be okay. Alright. So that is our result.
+
+00:21:55.000 --> 00:21:58.000
+And.
+
+00:21:58.000 --> 00:22:08.000
+Some of the key points to keep in mind here from this example is that when you're doing Phaser circuit analysis, you want to remember to convert any.
+
+00:22:08.000 --> 00:22:18.000
+Say, input signals that you're given into the standard cosine form so that you can turn it into a Phaser easily and correctly.
+
+00:22:18.000 --> 00:22:23.000
+So you want to remember to convert.
+
+00:22:23.000 --> 00:22:29.000
+Any signals that you're giving in the circuit to the standard.
+
+00:22:29.000 --> 00:22:32.000
+Co, sign form.
+
+00:22:32.000 --> 00:22:45.000
+Okay? And of course, that's also how you want it, or the inverse of that is how you want to convert phases that you solve for back into the corresponding time domain. Quantity.
+
+00:22:45.000 --> 00:23:05.000
+Another point to keep in mind here is that, as we saw and illustrated here, the various tools from time, domain, circuit analysis.
+
+00:23:05.000 --> 00:23:10.000
+Alright, that we're already familiar with, and what we used here was node voltage analysis, right?
+
+00:23:10.000 --> 00:23:14.000
+These also applied.
+
+00:23:14.000 --> 00:23:22.000
+In the Phaser domain.
+
+00:23:22.000 --> 00:23:43.000
+Okay. A third point to note is that as we saw early on in this example, it's very convenient to be able to convert easily between the sign and cosign functions, using phase shifts, and you can either just remember I had to do that converion or you can
+
+00:23:43.000 --> 00:24:03.000
+easily derive or remind yourself of what that conversion is, just by sketching out, assign and the cosine functions as a function of the argument all right, which is something that you definitely should be able to do easily and quickly alright. So it's very convenient.
+
+00:24:03.000 --> 00:24:08.000
+And useful. It's to be able.
+
+00:24:08.000 --> 00:24:14.000
+To convert between.
+
+00:24:14.000 --> 00:24:20.000
+Sign and cosine functions.
+
+00:24:20.000 --> 00:24:26.000
+And to be able to do this easily.
+
+00:24:26.000 --> 00:24:30.000
+Using face shifts.
+
+00:24:30.000 --> 00:24:39.000
+Okay, and then, finally, there were a couple facts about these exponential face factors that we use at a couple of points in this example.
+
+00:24:39.000 --> 00:24:48.000
+One is that we recognize that either the plus or minus J times a hundred 80 degrees.
+
+00:24:48.000 --> 00:24:56.000
+This is just equal to minus one alright, and then also one over E to the J. Times.
+
+00:24:56.000 --> 00:24:57.000
+Phi alright. Is the same as E to the minus j times.
+
+00:24:57.000 --> 00:25:08.000
+All right, so that works exactly the same way as I just conventional, exponential factors work right?
+
+00:25:08.000 --> 00:25:13.000
+You have an exponential factor in the denominator, then the exponent, change assigned when you move it to the network.
+
+00:25:13.000 --> 00:25:24.000
+Okay.
+

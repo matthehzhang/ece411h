@@ -1,0 +1,716 @@
+WEBVTT
+
+00:00:03.000 --> 00:00:07.000
+Okay, so this is you'll be problem 8.52.
+
+00:00:07.000 --> 00:00:19.000
+And this is basically a maximum power transfer problem. Okay, so this is an example of.
+
+00:00:19.000 --> 00:00:24.000
+Maximum power, transfer.
+
+00:00:24.000 --> 00:00:32.000
+Calculated in the face for me.
+
+00:00:32.000 --> 00:00:42.000
+Okay, so what we have here is this circuit shown here and what we want to do is to calculate the value of this load impedance. Z, sub.
+
+00:00:42.000 --> 00:00:47.000
+L. So that the power that has dissipated in it is a maximum, since everything else is fixed here.
+
+00:00:47.000 --> 00:00:56.000
+This is then basically a maximum power transfer problem.
+
+00:00:56.000 --> 00:01:04.000
+Okay. So I, in order to solve this problem right? What we'll do is we will start as usual.
+
+00:01:04.000 --> 00:01:21.000
+By redrawing the circuit. So we have a voltage source over here. So it's 6 volts, with a phase angle of 0 which we indicate explicitly here and then.
+
+00:01:21.000 --> 00:01:26.000
+We have a one. Ohm! Resistor!
+
+00:01:26.000 --> 00:01:31.000
+And then an inductor with impedance, Hi, Jay!
+
+00:01:31.000 --> 00:01:34.000
+Times 2 arms!
+
+00:01:34.000 --> 00:01:39.000
+And then.
+
+00:01:39.000 --> 00:01:47.000
+Here we have our load. Okay? So with impedance, C, sub.
+
+00:01:47.000 --> 00:01:53.000
+L. Between terminals, that we label A and B.
+
+00:01:53.000 --> 00:02:00.000
+We have a 20, resistor down here, and then we have. Hey?
+
+00:02:00.000 --> 00:02:05.000
+Capacitor.
+
+00:02:05.000 --> 00:02:11.000
+Up here with impedance minus J. Times 2 ups.
+
+00:02:11.000 --> 00:02:19.000
+Okay, so this is the circuit that we're considering and what we wanna do is choose the impedance.
+
+00:02:19.000 --> 00:02:25.000
+C. Sub l. To maximize.
+
+00:02:25.000 --> 00:02:33.000
+Our power, transfer.
+
+00:02:33.000 --> 00:02:42.000
+Czl right, and then we also want to calculate the average power that is dissipated in the load.
+
+00:02:42.000 --> 00:02:52.000
+As a result. Okay, so what we want to do here is we want to calculate the Thevenin equivalent of the source circuit.
+
+00:02:52.000 --> 00:02:58.000
+That is everything except this load impedance Z sub l. Right.
+
+00:02:58.000 --> 00:03:02.000
+You want to calculate the feminine impedance of this one, we replace Z sub l, basically with an open circuit.
+
+00:03:02.000 --> 00:03:12.000
+We need the 7 in impedance of the source circuit in order to determine Z sub l, because z sub l.
+
+00:03:12.000 --> 00:03:29.000
+Will then be just the complex conjugate of the source circuit, and then we'll need the 7 in equivalent voltage in order to calculate the power that is dissipated.
+
+00:03:29.000 --> 00:03:36.000
+Okay, so we want to calculate.
+
+00:03:36.000 --> 00:03:42.000
+The 7 in equivalence.
+
+00:03:42.000 --> 00:03:47.000
+Of the Source circuit.
+
+00:03:47.000 --> 00:03:51.000
+Alright, which is everything.
+
+00:03:51.000 --> 00:03:54.000
+Except.
+
+00:03:54.000 --> 00:04:07.000
+With these acsymmetries replaced bye, an open circuit.
+
+00:04:07.000 --> 00:04:15.000
+Okay, so to do this alright, let's first calculate the seveninin voltage, which is just going to be the open circuit voltage.
+
+00:04:15.000 --> 00:04:23.000
+Right. That is the voltage between A and B, with replaced by an open circuit.
+
+00:04:23.000 --> 00:04:28.000
+Alright, and so to do that we can use a node voltage analysis.
+
+00:04:28.000 --> 00:04:37.000
+Alright, this terminal here or this node here we take to be ground, and then we have 2.
+
+00:04:37.000 --> 00:04:41.000
+No, at which we need to calculate, or 2 extraordinary nodes with unknown voltages. V. One and v.
+
+00:04:41.000 --> 00:04:44.000
+2. The voltage at this node over here is just 6 volts, right?
+
+00:04:44.000 --> 00:04:54.000
+Because of this voltage source here. So we really only have 2 unknown voltages, and the voltage that we want is V.
+
+00:04:54.000 --> 00:05:02.000
+One, because then that voltage will then just be the fed, and then equivalent voltage. Okay.
+
+00:05:02.000 --> 00:05:09.000
+So the first step here is to calculate.
+
+00:05:09.000 --> 00:05:12.000
+The voltage, v. One.
+
+00:05:12.000 --> 00:05:19.000
+With an open circuit.
+
+00:05:19.000 --> 00:05:23.000
+Between a and B.
+
+00:05:23.000 --> 00:05:30.000
+And then the feminine voltage. Will just be equal to V.
+
+00:05:30.000 --> 00:05:41.000
+One. Okay, so what? We're gonna do here is, let us apply Kcl, add, if you want.
+
+00:05:41.000 --> 00:05:48.000
+Okay, so at V, one over here. Alright, we only actually have 2 branches coming out of here.
+
+00:05:48.000 --> 00:05:59.000
+And so the Kcl equation is v, one minus 6 over one plus v, one minus v, 2 over j, 2 is equal to 0.
+
+00:05:59.000 --> 00:06:08.000
+Alright, so we have. V. One minus 6 over one plus v.
+
+00:06:08.000 --> 00:06:15.000
+One minus v, 2 over, j times 2 is equal to 0.
+
+00:06:15.000 --> 00:06:26.000
+Okay. And I, if we put this in a more standard form, right by grouping the unknown code, unknown variables together.
+
+00:06:26.000 --> 00:06:32.000
+Then, for v. One, we have one minus J. Times one half.
+
+00:06:32.000 --> 00:06:38.000
+The one is from this term the minus J times. One half is from this term over here.
+
+00:06:38.000 --> 00:06:43.000
+Times v. One, and then for v, 2, we have minus v.
+
+00:06:43.000 --> 00:06:49.000
+2 over, j. Times 2, which is plus J. Times one half.
+
+00:06:49.000 --> 00:06:56.000
+Thanks to. That's this term. And then we have minus 6 on the left, which becomes 6 on the right. Okay?
+
+00:06:56.000 --> 00:07:04.000
+So this is one equation. Alright, I'll note here that alright!
+
+00:07:04.000 --> 00:07:09.000
+It's a little bit unusual to do a node voltage analysis where right?
+
+00:07:09.000 --> 00:07:13.000
+This is an open circuit, and we had just this voltage over here.
+
+00:07:13.000 --> 00:07:17.000
+What we could have done also was to just calculate the voltage here.
+
+00:07:17.000 --> 00:07:23.000
+V. 2, and then get the voltage. V. One.
+
+00:07:23.000 --> 00:07:31.000
+Say, by voltage. Division. Okay, that would also work and it's probably around the same.
+
+00:07:31.000 --> 00:07:35.000
+Amount of work.
+
+00:07:35.000 --> 00:07:41.000
+Okay. Cool. We'll go ahead and proceed this way. Then we have Kci denote V.
+
+00:07:41.000 --> 00:07:47.000
+2. Alright! We have this over. Here is our node. V.
+
+00:07:47.000 --> 00:07:52.000
+2, and so the voltage here, or the Kcl.
+
+00:07:52.000 --> 00:07:53.000
+Equation at this node is going to be that the sum of the 3 outgoing currents v.
+
+00:07:53.000 --> 00:08:02.000
+2 minus v. One over J. Times, 2 ohms, that's going to the left, plus v 2 minus 0 over 2.
+
+00:08:02.000 --> 00:08:16.000
+Current going down this way, plus v, 2 minus 6 over minus J, 2 that's the current going up this way is equal to 0.
+
+00:08:16.000 --> 00:08:24.000
+Okay, so we have v, 2, minus v, one over. J times, 2.
+
+00:08:24.000 --> 00:08:32.000
+Alright plus v. 2 over 2. Alright. That first term was the current going to the left.
+
+00:08:32.000 --> 00:08:36.000
+The second term is the current going downward from v. 2, and then plug v.
+
+00:08:36.000 --> 00:08:43.000
+2, minus 6 over, minus J. Times 2. That's the current going up and then to the left.
+
+00:08:43.000 --> 00:08:53.000
+Those have to add up to Z, and if we again combine the terms with the same unknown variables, then for v.
+
+00:08:53.000 --> 00:08:57.000
+One, we have minus v, one over, j times 2. That's J.
+
+00:08:57.000 --> 00:09:02.000
+Times, one half times, v. One. Then we have v.
+
+00:09:02.000 --> 00:09:08.000
+2 over, j times 2 plus v, 2 over minus j times 2.
+
+00:09:08.000 --> 00:09:15.000
+Those 2 terms cancel each other out and so all we're left with is this term, plus one half v.
+
+00:09:15.000 --> 00:09:22.000
+2, and then for this last term, right over here. That's 6 over J.
+
+00:09:22.000 --> 00:09:26.000
+2 on the left, so that is, minus 6 over J. 2 on the right.
+
+00:09:26.000 --> 00:09:34.000
+That's minus 3 over J, or plus j times 3 on the right hand side.
+
+00:09:34.000 --> 00:09:39.000
+And so this is our second term, okay, or second equation, right?
+
+00:09:39.000 --> 00:09:50.000
+For v. One, and v. 2. We can then take these 2 equations and write them as a single matrix equation.
+
+00:09:50.000 --> 00:09:58.000
+So we have one minus J. Times one half, and then J.
+
+00:09:58.000 --> 00:10:07.000
+Times, one half, then J. Times, one half, and just one half operating on V.
+
+00:10:07.000 --> 00:10:14.000
+One and v. 2 is equal to 6, and then jay times 3.
+
+00:10:14.000 --> 00:10:15.000
+Okay, and we only have to solve for V one. Now, we don't need V.
+
+00:10:15.000 --> 00:10:24.000
+2, alright, so we'll solve Guy for V, one by correcter's rule to solve for V.
+
+00:10:24.000 --> 00:10:28.000
+One, bye.
+
+00:10:28.000 --> 00:10:31.000
+Kramer's role.
+
+00:10:31.000 --> 00:10:44.000
+So if you want is equal to right. So remember, what we do is we replace the coefficients for V one in the matrix of coefficients with the column vector of the constants.
+
+00:10:44.000 --> 00:10:49.000
+So it's 6 J. Times 3 jay times one half.
+
+00:10:49.000 --> 00:11:02.000
+What half the determinant of that divided by the determinants, the name of coefficients.
+
+00:11:02.000 --> 00:11:06.000
+Okay. And we can't. If we calculate the determinant of the numerator right?
+
+00:11:06.000 --> 00:11:16.000
+For a 2, by 2 matrix. The determinant is just the product of the diagonal elements minus the product of the off diagonal elements.
+
+00:11:16.000 --> 00:11:21.000
+So we have 6 times one half. That's 3 minus.
+
+00:11:21.000 --> 00:11:30.000
+And then J times 3 times a times. One half is minus 3 halves. So minus negative, 3 halves, that's plus 3 halves.
+
+00:11:30.000 --> 00:11:35.000
+And then in the denominator. Alright, we have one half or one minus J.
+
+00:11:35.000 --> 00:11:38.000
+Times, one half times, one half. So that's one half minus J.
+
+00:11:38.000 --> 00:11:47.000
+Times, one quarter, and then minus the product. Along this opposite diagonal, so minus negative, one quarter.
+
+00:11:47.000 --> 00:11:52.000
+So that is, plus one quarter.
+
+00:11:52.000 --> 00:12:04.000
+Okay? So we have in the numerator, 3 plus 3 hass is 9 halves in the denominator. We have one half plus one quarter. That's 3 quarters, and then minus J times one quarter.
+
+00:12:04.000 --> 00:12:15.000
+We can take this and multiply the numerator and the denominator by 4, and we will get 18 over 3 minus J.
+
+00:12:15.000 --> 00:12:21.000
+And this is the 7 and equivalent voltage of the source.
+
+00:12:21.000 --> 00:12:27.000
+Circuit has a phase. Okay?
+
+00:12:27.000 --> 00:12:32.000
+Now we want to calculate.
+
+00:12:32.000 --> 00:12:48.000
+The 7 equivalent impedance alright, and so to do that what we're going to do is we're going to take the source circuit, and we're going to turn off this 6 volt source Alright.
+
+00:12:48.000 --> 00:12:52.000
+So it becomes just a sort, a short circuit.
+
+00:12:52.000 --> 00:13:12.000
+And the resulting source circuit that we get is the following, so we're gonna turn off the 6 volt source and the circuit that we get as a result is.
+
+00:13:12.000 --> 00:13:16.000
+We have the capacitor up top.
+
+00:13:16.000 --> 00:13:22.000
+Then we have 10, resistor!
+
+00:13:22.000 --> 00:13:27.000
+Then our inductor.
+
+00:13:27.000 --> 00:13:31.000
+Okay. And then.
+
+00:13:31.000 --> 00:13:38.000
+We have our 2 own resistor on the right. Alright, and this is terminal A.
+
+00:13:38.000 --> 00:13:42.000
+This is terminal B. So this is one of this is minus J.
+
+00:13:42.000 --> 00:13:49.000
+Times 2 ohms. This is jay times 2 arms, and this is, see what else?
+
+00:13:49.000 --> 00:13:57.000
+Okay, now, this circuit here. Alright, I, when we look at it, I it's not that obvious, right?
+
+00:13:57.000 --> 00:14:04.000
+At first glance what the potential series and parallel connections are.
+
+00:14:04.000 --> 00:14:05.000
+So we can redraw it in a way that makes those configurations more obvious.
+
+00:14:05.000 --> 00:14:15.000
+Right? So this circuit.
+
+00:14:15.000 --> 00:14:21.000
+Can be redrawn.
+
+00:14:21.000 --> 00:14:29.000
+As the following search, alright, we're gonna have terminal a top here.
+
+00:14:29.000 --> 00:14:35.000
+Try to get these all together, and then Hi terminally over here.
+
+00:14:35.000 --> 00:14:43.000
+Alright? Is this terminal? So we will have a inductor with impedance. J.
+
+00:14:43.000 --> 00:14:50.000
+Times 2 ohms!
+
+00:14:50.000 --> 00:14:54.000
+So we'll draw that one like this.
+
+00:14:54.000 --> 00:15:06.000
+Okay. And then that goes to a node. And then we have from that node a 2 ohm resistor connecting to terminal B, okay, so we'll draw.
+
+00:15:06.000 --> 00:15:10.000
+Now!
+
+00:15:10.000 --> 00:15:18.000
+A 2 arm resistor, and that's connecting to Terminal B, okay, so now we have.
+
+00:15:18.000 --> 00:15:22.000
+We've gotten this component in this component. Alright!
+
+00:15:22.000 --> 00:15:27.000
+Now we also have from this node between the inductor and the 2 arm resistor.
+
+00:15:27.000 --> 00:15:39.000
+That's this node over here. We have this capacitor connected from that node to coming around this way.
+
+00:15:39.000 --> 00:15:46.000
+Terminal beat. Okay? So that capacitor in this diagram.
+
+00:15:46.000 --> 00:15:56.000
+Is really over here, alright, connecting from the node between the inductor and the 2 on capacitor to terminal beat alright.
+
+00:15:56.000 --> 00:16:10.000
+So this is minus J. Times, 2 h, and then finally, this 10, resistor over here connects directly from terminal A to terminal beat.
+
+00:16:10.000 --> 00:16:16.000
+So we can draw that.
+
+00:16:16.000 --> 00:16:19.000
+Over here.
+
+00:16:19.000 --> 00:16:34.000
+Like this. So this is the 10, resistor. Okay. So now, looking at this circuit, it's easier to see which components are in parallel which ones are in series and so forth.
+
+00:16:34.000 --> 00:16:44.000
+Okay, so we can see now very readily that this to own resistor and this capacitor are in parallel with each other.
+
+00:16:44.000 --> 00:16:50.000
+So we'll say that the equivalent resistance of this we'll call that the equivalent right.
+
+00:16:50.000 --> 00:17:00.000
+Alright, then that combination is in series with this inductor that has impedance. J.
+
+00:17:00.000 --> 00:17:01.000
+Times, 20's. So we'll call that combination of 3 components.
+
+00:17:01.000 --> 00:17:08.000
+We'll say that that has an equivalent.
+
+00:17:08.000 --> 00:17:17.000
+Impedance of the equivalent to okay, then Z, equivalent to and parallel with the 10, resistor!
+
+00:17:17.000 --> 00:17:18.000
+Will then be the 7 and equivalent in pedance of the entire source.
+
+00:17:18.000 --> 00:17:33.000
+Circuit. Okay, so let's go ahead and calculate these equivalent impedances so easy, equivalent.
+
+00:17:33.000 --> 00:17:35.000
+One, is, alright. It's these 2 in parallel.
+
+00:17:35.000 --> 00:17:40.000
+The resistance, the tumor resistor, and the minus j, 20.
+
+00:17:40.000 --> 00:17:46.000
+Capacitor. So the equivalent impedance is just the product of the impedances over the sun.
+
+00:17:46.000 --> 00:17:54.000
+So the product is minus jay times 4, and the sum is 2 minus J times 2.
+
+00:17:54.000 --> 00:18:03.000
+Okay, so we can take this and multiply the numerator and the denominator by 2 plus j times 2.
+
+00:18:03.000 --> 00:18:19.000
+So we have minus J times 4 times 2 plus j times 2 divided by, and then 2 minus j times 2 times 2 plus j times 2 is 2 squared, plus 2 squared that's gonna be 8 alright.
+
+00:18:19.000 --> 00:18:20.000
+So in the numerator we have minus J times 4 times.
+
+00:18:20.000 --> 00:18:27.000
+J. Times 2. That's 8 minus J times 4 times 2 is minus J.
+
+00:18:27.000 --> 00:18:32.000
+Times 8, divided by 8. So this is just one minus J.
+
+00:18:32.000 --> 00:18:40.000
+It's a minus sign. Okay? Alright. So that is, these 2 components in parallel.
+
+00:18:40.000 --> 00:18:45.000
+Then the equivalent to is that impedance which is one minus J.
+
+00:18:45.000 --> 00:18:56.000
+In series with J. Times, 20's. So it's the equivalent one course.
+
+00:18:56.000 --> 00:19:00.000
+Jay times, 2 alright, which is just one plus J.
+
+00:19:00.000 --> 00:19:17.000
+Okay, and then finally, the total equivalent impedance between A and B, which is then the 7 and equivalent impedance is just the equivalent to in parallel with the one own resistor.
+
+00:19:17.000 --> 00:19:26.000
+So then we get that Z is equal to z equivalent to in parallel with the one.
+
+00:19:26.000 --> 00:19:32.000
+On resistor! Alright! So again, it's the product of the impedances divided by the sum.
+
+00:19:32.000 --> 00:19:40.000
+So it's one plus j times one divided by one plus j plus one.
+
+00:19:40.000 --> 00:19:46.000
+So that's one plus j over 2 plus. J, okay.
+
+00:19:46.000 --> 00:19:51.000
+And then we can take the numerator and the denominator and multiply by 2 minus J.
+
+00:19:51.000 --> 00:20:14.000
+So we have one plus j times 2 minus J in the numerator, and then we have 2 squared, plus one squared in the denominator, and that gives us in the newerator one times 2 which is 2 plus j times minus j plus one right plus j 2 minus j so plus j, divided by t squared, plus
+
+00:20:14.000 --> 00:20:25.000
+one squared is 5. Alright. So that means that the 7 and equivalent resistance is 3 plus J.
+
+00:20:25.000 --> 00:20:30.000
+Over 5 or point 6, which is 3 fifths.
+
+00:20:30.000 --> 00:20:35.000
+Plus j times point 2, which is one. Fifth. Okay? Alright.
+
+00:20:35.000 --> 00:20:40.000
+So that's the Cabinet equivalent impedance of the source.
+
+00:20:40.000 --> 00:20:49.000
+Alright, and for maximum power transfer.
+
+00:20:49.000 --> 00:20:57.000
+Alright. What we need is that the impedance of the load should be equal to the complex.
+
+00:20:57.000 --> 00:21:01.000
+Conjugate, conjugate of the impedance of the source.
+
+00:21:01.000 --> 00:21:08.000
+Alright. So that means that it's just point 6 minus J times point 2.
+
+00:21:08.000 --> 00:21:21.000
+So this is the impedance of the load that maximizes the power transfer, which is the same in this case as maximizing the power distribution in as a load.
+
+00:21:21.000 --> 00:21:30.000
+Okay. So now, what we wanna do is to calculate.
+
+00:21:30.000 --> 00:21:34.000
+The power.
+
+00:21:34.000 --> 00:21:47.000
+Dissipated in right, for when we have maximize, the power transfer.
+
+00:21:47.000 --> 00:22:15.000
+Okay, so in that case, alright, what we can do is we can note that the current through the load alright is going to be this have an equivalent voltage alright, which we have calculated now divided by the a penis of the load plus the impedance of the source
+
+00:22:15.000 --> 00:22:20.000
+alright. And so this is going to be.
+
+00:22:20.000 --> 00:22:28.000
+With having an equivalent voltage, divided by 2 times the real part of the impedance of the load.
+
+00:22:28.000 --> 00:22:32.000
+Right, because the impedance of the load and the impedance of the source are complex.
+
+00:22:32.000 --> 00:22:49.000
+Conjugates of each other. So when we add them, the imaginary parts will cancel out. And it works out this way, basically because the equivalent circuit for the source is.
+
+00:22:49.000 --> 00:22:57.000
+This?
+
+00:22:57.000 --> 00:23:03.000
+Okay? And then we have Hello.
+
+00:23:03.000 --> 00:23:08.000
+Here, which is the complex, conjugate of the source.
+
+00:23:08.000 --> 00:23:15.000
+Alright. And so then, right obviously, this and this have to be true.
+
+00:23:15.000 --> 00:23:21.000
+Okay, so.
+
+00:23:21.000 --> 00:23:33.000
+Given this, then the average power that's dissipated in the load is going to be one half times.
+
+00:23:33.000 --> 00:23:40.000
+This current. Squared times. The impedance of the load.
+
+00:23:40.000 --> 00:23:44.000
+Alright, or actually, it's the real part.
+
+00:23:44.000 --> 00:23:49.000
+Of this? Okay? Because Z, sub, l, right is actually is complex.
+
+00:23:49.000 --> 00:23:58.000
+It's not purely real or imaginary. Okay, so this, then, will be one half.
+
+00:23:58.000 --> 00:24:12.000
+Okay. And then the real part of I, this is going to be the magnitude of the current square.
+
+00:24:12.000 --> 00:24:18.000
+The magnitude of this square. So it's going to be.
+
+00:24:18.000 --> 00:24:27.000
+Alright, divided by 2 times the real part of Zl.
+
+00:24:27.000 --> 00:24:32.000
+Squared. Alright. This thing here is.
+
+00:24:32.000 --> 00:24:39.000
+Il squared. And then we're gonna multiply that by the real part of.
+
+00:24:39.000 --> 00:24:44.000
+Okay, and.
+
+00:24:44.000 --> 00:24:48.000
+Alright. If we look at this whole thing, then we can see that the real part of Z all over here cancels that with one power of the real part of Zl.
+
+00:24:48.000 --> 00:25:01.000
+Down here, so we're gonna have the magnitude of Ethernet squared, divided by 2 times 2 squared.
+
+00:25:01.000 --> 00:25:07.000
+That's 2 times 4. So that's 8 times the real part of Z sub l.
+
+00:25:07.000 --> 00:25:11.000
+Alright! So this is going to be equal to one eighth.
+
+00:25:11.000 --> 00:25:18.000
+The magnitude of the second voltage squared divine by the real part.
+
+00:25:18.000 --> 00:25:27.000
+Fcl. Alright. And now we just substitute into this the values that we worked at earlier.
+
+00:25:27.000 --> 00:25:35.000
+So the real part of z sub l alright down here.
+
+00:25:35.000 --> 00:25:40.000
+Alright is point 6. Okay? So we have.
+
+00:25:40.000 --> 00:25:50.000
+One over 8 times point 6, and then for Thevenin, the magnitude of v. 7 and squared.
+
+00:25:50.000 --> 00:25:58.000
+Alright. V. 7. Then we calculated up here was 18 over 3, minus J.
+
+00:25:58.000 --> 00:26:06.000
+So we're gonna have this times. The mainitude of 18 over 3 minus J square. Okay?
+
+00:26:06.000 --> 00:26:22.000
+So one over 8 times point 6 8 times point 6 is 4.8 so it's one over 4.8, and then we're gonna multiply this by 18 squared, divided by 3 squared plus one squared alright.
+
+00:26:22.000 --> 00:26:30.000
+And if we multiply all the sound, and calculate the numbers, turns out, this is 6.7 5.
+
+00:26:30.000 --> 00:26:37.000
+What. So this is the average power that is dissipated in the load.
+
+00:26:37.000 --> 00:26:49.000
+Okay? So that's the answer. And we can. Again, I look at what are the key points?
+
+00:26:49.000 --> 00:26:59.000
+In this example? Alright! So the first part of this is that right to solve this problem, we had to calculate the feminine equivalent, voltage, and impedance of our source circuit.
+
+00:26:59.000 --> 00:27:07.000
+So we have to know how to do that, and we have to be reasonably proficient.
+
+00:27:07.000 --> 00:27:12.000
+So you want to be proficient.
+
+00:27:12.000 --> 00:27:19.000
+In calculating.
+
+00:27:19.000 --> 00:27:24.000
+Definite equivalence.
+
+00:27:24.000 --> 00:27:47.000
+Okay. Second part of this or second point that is worth noting here is that when we calculated the Bevenin equivalent impedance alright, we once we, drew the circuit in the right way, so that we could see the parallel and series, Cs connections, easily it was very
+
+00:27:47.000 --> 00:27:55.000
+easy to calculate, the 15 min quotent impedance, but it was a little bit non obvious to be able to recognize how to simplify and draw the circuit in a way that those configurations became obvious.
+
+00:27:55.000 --> 00:28:09.000
+Right. So I it is very useful. Then we can see to recognize.
+
+00:28:09.000 --> 00:28:18.000
+How does simplify circuits?
+
+00:28:18.000 --> 00:28:27.000
+And to be able to do this even when the simplification.
+
+00:28:27.000 --> 00:28:32.000
+Alright. It's not obvious.
+
+00:28:32.000 --> 00:28:39.000
+From the circuit diagram.
+
+00:28:39.000 --> 00:28:55.000
+Okay. And in this case, in this example, it became easier for us to see this when we redrew the circuit in a way that made those configurations more obvious. And so that highlights the point that it's really the circuit.
+
+00:28:55.000 --> 00:28:57.000
+Topology.
+
+00:28:57.000 --> 00:29:06.000
+Alright, not how it's drawn!
+
+00:29:06.000 --> 00:29:10.000
+That's what matters.
+
+00:29:10.000 --> 00:29:22.000
+Okay, and can be very helpful to be able to redraw the circuit in a way that makes those configurations and simplifications more apparent.
+
+00:29:22.000 --> 00:29:30.000
+Okay. And then the third point here is that we needed to be able to recall or.
+
+00:29:30.000 --> 00:29:40.000
+Be able to reasonably, quickly derive.
+
+00:29:40.000 --> 00:29:44.000
+The expressions.
+
+00:29:44.000 --> 00:29:52.000
+Okay, for power calculations.
+
+00:29:52.000 --> 00:29:57.000
+Okay. And we did really more of the latter when we went through this example.
+
+00:29:57.000 --> 00:30:09.000
+Okay.
+

@@ -1,0 +1,409 @@
+[0:00:04] Okay. So this is Ulaby problem 13.16,
+[0:00:09] and this is an example
+[0:00:12] of how we calculate
+[0:00:14] Fourier series coefficients. So this is an example of the calculation
+[0:00:19] of
+[0:00:20] Fourier series
+[0:00:24] coefficients
+[0:00:27] coefficients.
+[0:00:31] Okay. And in this problem here, we have two different waveforms, alright, shown in these images here. And the problem
+[0:00:41] gives us... The problem statement gives us the form of the Fourier series expansion for f one of t,
+[0:00:49] this one here, and it asks us... Let me move this down a little bit.
+[0:00:57] Okay. It asks us to...
+[0:01:00] Knowing the Fourier series expansion of this function here to deduce what the Fourier series expansion is for this function down here. So what we'll do in this example is instead of just taking
+[0:01:15] this Fourier series expansion as a given, we'll actually look at this function and we'll calculate this. And then once we've done that, we'll see how this Fourier series expansion for f one can be used fairly straightforwardly to deduce what the Fourier series expansion is for this function f two over here.
+[0:01:36] Okay. So let's go ahead and get started. If we look at this graph of f one, then we can deduce pretty easily what the corresponding analytical expression,
+[0:01:49] for this is. Because the period of this is four seconds,
+[0:01:55] and,
+[0:01:56] in each period,
+[0:01:58] f one of t increases linearly with time from zero to 20, and then it just repeats that every four seconds.
+[0:02:06] Okay. So from that,
+[0:02:10] what we can deduce is the following. Okay. So for f one
+[0:02:16] of t,
+[0:02:18] right, we have
+[0:02:21] the following analytical expression,
+[0:02:27] okay, which will be useful to us in explicitly computing
+[0:02:31] the Fourier series coefficients for f one. Alright. So we can see pretty easily that f one of t is equal to five
+[0:02:40] times the quantity t minus n times capital t. And that's valid in the interval from
+[0:02:47] n t,
+[0:02:49] n capital t to
+[0:02:53] n plus one times capital t, where t, the period
+[0:02:59] is four seconds
+[0:03:01] and n
+[0:03:03] is any integer. Okay?
+[0:03:07] So what we wanna do now is to use this analytical expression
+[0:03:11] to compute the Fourier series expansion,
+[0:03:15] for f one. Alright? So although it's not required for this problem...
+[0:03:25] Okay. So even though it's not required, I think it's still instructive for the purposes of this example to do it. So
+[0:03:33] now let's go ahead and compute
+[0:03:38] this Fourier series.
+[0:03:43] Okay. The Fourier series expansion for this function f one. So remember, the general form
+[0:03:50] or a general form of the Fourier series expansion is that we can take f one of t to be equal to some constant a naught. Alright? And that's basically just the average value of f one of t over one period
+[0:04:05] plus a sum of terms for n going from one to infinity
+[0:04:11] where we take a superposition of sine and cosine functions.
+[0:04:15] So it's a coefficient a sub n times the cosine of n omega naught t
+[0:04:22] plus another coefficient b sub n times the sine of n times omega naught t.
+[0:04:29] Alright? Where omega naught is the fundamental frequency associated one... With one period. So omega naught is two pi over t. And, of course, what, the Fourier series,
+[0:04:41] expression
+[0:04:42] tells us is that we can take any periodic function
+[0:04:45] and express it as a superposition
+[0:04:49] of sines
+[0:04:51] and... Sine and cosine functions at frequencies that are integer multiples
+[0:04:58] of, the fundamental frequency associated with a single period of that function.
+[0:05:04] Another way of saying that using,
+[0:05:07] more of the language of linear algebra
+[0:05:10] is that we can take,
+[0:05:13] the sine and cosine term, functions
+[0:05:16] at those frequencies
+[0:05:18] to be a basis set for expressing,
+[0:05:22] any periodic function.
+[0:05:24] Okay? And so, what we want to do now is now to calculate these coefficients a naught, a sub n, and b sub n. Alright? So let's start with
+[0:05:37] a naught. Alright? So you may recall from class
+[0:05:43] that, we can compute a naught by taking the average of f one of t over one period. So it's one over t times the integral from zero to t. This is capital t here of
+[0:05:55] f one of t d t. Right? So, hopefully, you can see, pretty clearly this is just taking the average of f one over one period. So f one of t, right, is five,
+[0:06:06] four. The interval zero to t is just five times t. So this is gonna be five.
+[0:06:11] And then capital t is equal to four. So it's five fourths times the integral from zero to four of t
+[0:06:18] dt.
+[0:06:20] Alright. So this is a very easy integral to do. So this is five fourths times,
+[0:06:25] t squared over two evaluated
+[0:06:28] at zero and four. Right? So it's five fourths times...
+[0:06:34] And then evaluated at four, t squared is 16 over two. Evaluated at zero, it's just zero. Okay?
+[0:06:42] And then we can calculate this quite easily.
+[0:06:46] So we have 20 over two, which is just 10. Right? So a naught is 10. Right?
+[0:06:52] And in fact, if you look back
+[0:06:55] at the graph of fund... Of the function f one, right, just essentially by looking at it, and thinking about it a little bit, we can see pretty easily that,
+[0:07:06] the average of f one over one period, right, is 10. Right? Because this is a linear function. It goes from zero to 20, so its average, should be the midpoint, which is 10.
+[0:07:16] Okay. So
+[0:07:20] we can make a little note here in our thinking about this
+[0:07:25] that a naught, alright, the constant coefficient in the four e series expansion,
+[0:07:31] it's really just the average value,
+[0:07:38] alright, of f one
+[0:07:41] of t
+[0:07:43] over one period,
+[0:07:46] capital t. Alright?
+[0:07:48] So we calculated it explicitly here, but one can, deduce that in other ways, in many cases. Alright? And and any correct way will be valid and will give the correct answer. Okay.
+[0:08:02] So now let's go ahead and try to calculate the coefficients
+[0:08:06] a sub n. Alright?
+[0:08:09] So
+[0:08:12] in general, the coefficient a sub n is equal to two over t times the integral from zero to t
+[0:08:19] of f one of t times the cosine
+[0:08:24] of n times omega naught t
+[0:08:28] dt. Okay.
+[0:08:31] So we, arrived at this result in class. Right now, we'll see an example of, the calculation,
+[0:08:39] of this coefficient. Alright?
+[0:08:41] And,
+[0:08:42] again, using the language of linear algebra,
+[0:08:45] a... Another way of thinking about this expression
+[0:08:49] is,
+[0:08:50] to recognize that if we take the sine and cosine functions at these different frequencies to be our basis elements for expressing f one of t, then we're getting the coefficient
+[0:09:01] for,
+[0:09:02] this particular basis element, cosine,
+[0:09:05] of n omega naught t, by taking the projection,
+[0:09:09] which in this case is the integral of f one of t onto the spaces function. So it is analogous if you think just about vectors, say, in three dimensions to taking the dot product of some vector with
+[0:09:24] one of the basis elements. Alright? But this is a more general way of implementing that concept.
+[0:09:32] Okay. So,
+[0:09:34] let's go ahead and try to calculate this now. Alright. So remember t, capital t is four, four seconds. So we have two over four in front of the integral. Then we have the integral from zero to four. And then f one of t, over that interval is just five times t. And then we have the cosine of, remember, omega not is two pi over t, so two pi over four. So this is two pi n over four times t
+[0:10:02] d t. Alright? So this is now... If we multiply out these coefficients in front, two over four is one half, and then we pull the five out of the integral. So we have five halves
+[0:10:13] times the integral from zero to four of t
+[0:10:17] times the cosine. And then the argument of the cosine, we can simplify to pi times n over two times t d t.
+[0:10:28] Alright?
+[0:10:29] So now there are a variety of ways, that we could compute this integral. Alright?
+[0:10:34] Well, here, we will do it fairly explicitly.
+[0:10:39] Alright? And the way that we will do it is
+[0:10:43] to shift it by two seconds in time. Right? So we wanna shift
+[0:10:50] by two seconds
+[0:10:53] in time. Or equivalently, we wanna do a change of variables. We'll call our new variable tau. Right? The Greek letter tau, and we'll take that to be t minus two.
+[0:11:05] Or equivalently, the t is equal to tau plus two.
+[0:11:09] Okay. So now if we change our variable of integration from t to tau, then we get five halves times the integral now from tau going from minus two to two, alright, instead of t going from zero to four. And then, we have t,
+[0:11:27] which is tau plus two
+[0:11:30] times the cosine
+[0:11:32] of
+[0:11:33] pi n over two times t, which is again tau plus two
+[0:11:39] d tau. Alright?
+[0:11:43] And we can write that as,
+[0:11:45] just simplifying it a little bit. Five halves times the integral from minus two to two
+[0:11:52] of tau plus two times the cosine of,
+[0:11:57] and then we just multiply this out. Pi n over two times tau plus pi...
+[0:12:04] Oops. Tau
+[0:12:08] plus pi times n
+[0:12:12] d tau. Right?
+[0:12:15] And so now,
+[0:12:18] we will multiply out, this tau plus two, right, times the cosine, and we'll separate
+[0:12:24] this out into two separate integrals after doing that. So we're gonna have the,
+[0:12:30] five halves
+[0:12:34] out in front.
+[0:12:36] And then
+[0:12:38] from the first term, we would have the integral from minus two to two
+[0:12:42] of just tau times the cosine...
+[0:12:47] Oops. Okay. Cosine of
+[0:12:50] pi n over two tau plus pi n
+[0:12:55] d tau.
+[0:12:57] And then the second term will be two times the integral from minus two to two of now just the cosine
+[0:13:05] of pi n over two times tau
+[0:13:08] plus pi n,
+[0:13:11] again, d tau. Alright? So now we have these two integrals.
+[0:13:17] And if we look at them,
+[0:13:19] we can see that the second integral is clearly equal to zero because what we're doing is we're integrating,
+[0:13:27] the cosine function over some integer number of periods. Alright? With the phase shift, but the phase shift, it doesn't matter. Right? And the number of periods over which we are integrating is just equal to n, right, which is always an integer. So, so that integral is always zero. Alright?
+[0:13:48] What about the first integral over here? Well,
+[0:13:53] we're integrating from minus two to two. Tau
+[0:13:56] is an odd function.
+[0:13:59] Right?
+[0:14:01] The cosine
+[0:14:04] is an even function. So when we are integrating,
+[0:14:08] an odd... So an odd function times an even function is an odd function. And when we integrate over, when we integrate an odd function over an integral that's centered at zero, which this is, then that integral is going to be equal to zero as well. Alright? So what we have finally then is that
+[0:14:29] all the coefficients a sub n are equal to zero.
+[0:14:34] Okay.
+[0:14:35] Now,
+[0:14:37] could we have figured this out some other way?
+[0:14:41] Well, let's go back here and look at f one of t. Alright? So
+[0:14:49] if we take f one of t
+[0:14:51] and,
+[0:14:52] shift it down by 10, right, by this... By its average value.
+[0:14:57] Right? Then once we do that, we can see that f one of t
+[0:15:03] is, you know, shifted down by 10. So f one of t minus 10
+[0:15:07] is going to be
+[0:15:11] an odd function. Alright?
+[0:15:14] So if we go from t to minus t, then, f one of t minus 10 changes sign. Okay. So it's an odd function.
+[0:15:22] And
+[0:15:23] in our expansion here, the coefficients a sub n are for the cosine functions, and the cosine is an even function. Alright? So the projection of an odd function onto an even function is always going to be zero. Right? And we see that here explicitly,
+[0:15:40] having calculated,
+[0:15:43] this integral here, which is that projection. Okay? So if we... In general, if we have some odd function, right, for which we are trying to compute the,
+[0:15:54] Fourier series expansion,
+[0:15:57] right, then the coefficients of the cosine terms are always gonna be zero. Okay?
+[0:16:03] Because
+[0:16:06] an odd function will have no, even function components.
+[0:16:11] Similarly,
+[0:16:12] if we have an even function for which we are trying to compute the Fourier series expansion,
+[0:16:19] that even function will not have any, will have not any nonzero coefficients for the sine terms, right, because the sine is an odd function. Alright?
+[0:16:30] And so that's a useful
+[0:16:33] property,
+[0:16:34] alright, for a series expansions to,
+[0:16:37] keep in mind. Here, we saw it explicitly by actually computing,
+[0:16:42] the coefficients for the cosine. So we should note here,
+[0:16:45] alright, that
+[0:16:51] we could also
+[0:16:53] deduce
+[0:16:55] that
+[0:16:56] all the a sub n's will be equal to zero for all n's not equal to zero. Right? For n equal to zero, it's different because,
+[0:17:05] f one of t has a nonzero
+[0:17:07] average value. Right? And and a naught is the average value over one period.
+[0:17:12] So this is zero.
+[0:17:14] Right? All these other coefficients are zero because f one of t
+[0:17:19] minus 10. Right? So that is shifted, by its average value. Right? This
+[0:17:26] is
+[0:17:28] obviously
+[0:17:30] an odd function.
+[0:17:33] Right? We can see that from the plot. Right?
+[0:17:38] Whereas the cosine
+[0:17:41] of n omega naught t, right, is an even function.
+[0:17:50] Alright? And it's even for all values of n not equal to zero, right, which is... Which are the term... The ones that are relevant for computing
+[0:18:01] these a sub n's with n not equal to zero. Right?
+[0:18:05] And then also, I... The cosine is also an even function
+[0:18:13] for n equal to zero as well, although that doesn't come into play explicitly
+[0:18:17] for the a sub n's where n is not equal to zero. Okay. So those are the coefficients for the cosine terms in the expansion. They're all zero. Alright? What about the coefficients for the sine terms, b sub n? Those,
+[0:18:31] we saw in class,
+[0:18:33] alright, could be computed as two over t times the integral from zero to t
+[0:18:39] of
+[0:18:40] f one of t times the sine
+[0:18:44] of n
+[0:18:45] omega naught t
+[0:18:48] d t. Alright?
+[0:18:50] And so,
+[0:18:52] if we just plug in capital t and f one of t, we get two over four. Right? Because capital t is four times the integral from zero to four of five t. Right? That's f one of t times the sine
+[0:19:07] of
+[0:19:08] two pi n over four. Alright? Omega naught is two pi over capital t. So it's two pi over four times n times t
+[0:19:18] dt.
+[0:19:19] Alright?
+[0:19:20] And,
+[0:19:21] we can write that as,
+[0:19:23] again, five halves. Right? Taking all the constants out in front times the integral from zero to four of t
+[0:19:33] times the sine of
+[0:19:35] pi n over two times t
+[0:19:38] dt.
+[0:19:41] Okay. So now here,
+[0:19:43] in computing this integral, alright, what we're going to use is integration by parts, alright, which is an integration method that should suggest
+[0:19:55] for an integral like this. Because when we integrate by parts, we can bring down the power of,
+[0:20:02] this factor t over here by one so that it just becomes a constant. Alright? So remember that integration by parts says that the integral of u dB is equal to u times v minus the integral of v to u. Right? So
+[0:20:20] the integral of u d v is what we're starting with, and what we wanna do is to figure out, in the integrand here, what should we pick u to be, what should we pick d v to be, in order to, be able to compute this integral over here. Alright?
+[0:20:36] And,
+[0:20:37] our goal is to, take this, factor of t down to a constant. Alright? So that means that we should take u to be equal to t.
+[0:20:49] Alright?
+[0:20:51] And
+[0:20:52] d v then is everything else, which is the sine of
+[0:20:57] I n over two times t
+[0:21:00] d t. Alright? Then d u is equal to d t,
+[0:21:05] and then v is equal to, it's the integral of the sine of pi n over two times t, which is minus two over pi n times the cosine
+[0:21:16] pi n over two times t. Okay.
+[0:21:20] And so now, using the integration by parts formula here. Alright? Then what we have is that
+[0:21:29] b sub n is equal to five halves.
+[0:21:34] And then for
+[0:21:36] u times v, right, we have...
+[0:21:40] And we're gonna be evaluating this at the limits of integration. It is minus
+[0:21:46] two over pi n times t
+[0:21:49] times the cosine
+[0:21:51] of
+[0:21:53] pi n over two times t evaluated
+[0:21:56] at zero and four, the limits of integration. And then for minus v d u, right, we have minus minus, so that's plus.
+[0:22:06] Then we have two over pi n
+[0:22:09] times the integral from zero to four of
+[0:22:14] the
+[0:22:15] cosine of pi n over two times t
+[0:22:18] times d t. Right? So the cosine
+[0:22:22] of pi n over two t
+[0:22:25] dt. Alright? So...
+[0:22:28] Alright. We've done what we wanted. We got rid of the t in the integral. Alright? So then
+[0:22:35] here,
+[0:22:36] alright,
+[0:22:38] this integral here
+[0:22:40] is zero. Okay? Because,
+[0:22:44] again, we're integrating,
+[0:22:46] cosine function over an integer number of full periods. Alright? So that integral is going to be zero.
+[0:22:53] And so what we are left with is
+[0:22:58] five halves,
+[0:23:00] okay, times,
+[0:23:03] and then it's minus
+[0:23:07] two over pi n. Alright?
+[0:23:10] Times... And then,
+[0:23:13] so we're evaluated at four. T is four.
+[0:23:18] And then the cosine of pi n over two times t,
+[0:23:22] is going to be the cosine of two pi n, which is always one. Alright? And then when we evaluate this at the lower limit, it's zero because we have t equal to zero over here. Right? So,
+[0:23:37] this is what we have for our result. And if we multiply this out, right, it's just five times four,
+[0:23:43] times minus one, which is minus 20
+[0:23:48] over pi
+[0:23:50] times n. Okay. So that is what b sub n is.
+[0:23:55] Alright?
+[0:23:57] And
+[0:23:59] now that we have a naught, a sub n, and b sub n, then
+[0:24:05] we can see that f one of t...
+[0:24:08] Alright. It's a naught.
+[0:24:10] If you go back up here,
+[0:24:13] to the general form of the Fourier series expansion, it's a naught, which is 10. Alright? Plus the sum of
+[0:24:21] a sub n times cosine of n omega naught t.
+[0:24:24] All these a sub n's here for n not equal to zero
+[0:24:27] are zero,
+[0:24:30] plus b sub n times,
+[0:24:32] the sine of n omega naught t. So the b sub n's we just computed, they're nonzero. So we just have to substitute them into this expression here.
+[0:24:40] Alright? So we get that f one of t is equal to a naught, which is 10, minus
+[0:24:46] 20 over pi. That's the 20 over pi from what we just calculate. That's the minus 20 over pi from what we just calculated for b sub n times the sum.
+[0:24:56] N goes to one to infinity of one over n. Right? That's this one over n from b sub n over here times the sine
+[0:25:05] of
+[0:25:06] pi n over two times t.
+[0:25:09] Okay.
+[0:25:11] And if we look at that expression
+[0:25:14] and compare it to what was given in the problem
+[0:25:18] up here,
+[0:25:20] alright, it's the same. Okay. So indeed,
+[0:25:24] we've gotten the correct Fourier series expansion, at least the same as the one that's given to the book, which is which is the correct one. And, so that result checks out. Okay.
+[0:25:35] Next,
+[0:25:37] what we wanna do is to figure out how the function f two
+[0:25:42] is related to f one.
+[0:25:45] And then from that,
+[0:25:47] to see if we can then easily deduce
+[0:25:50] from the Fourier series expansion for f one that we just calculated what the Fourier series expansion for f two is over here. Alright?
+[0:25:58] And so if we look at f one and f two, we can see that there are a few relatively straightforward
+[0:26:06] differences. One is that the amplitude of f two is twice the amplitude of f one. Right? It's
+[0:26:14] a total range of 40 rather than 20. Alright? So we'll need to take f one and increase scale it,
+[0:26:22] by a factor of two. Okay?
+[0:26:25] Then you can see that it's,
+[0:26:28] shifted down
+[0:26:30] so that
+[0:26:32] its average value is zero. Okay. So we're gonna have to... After multiplying this by two, we're gonna have to shift it down by 20,
+[0:26:40] okay, to get f to
+[0:26:42] get f two. And then we can see that the period of f two is eight seconds,
+[0:26:49] whereas the period of f one is four, but it's still a linear function in here. So that means that,
+[0:26:55] from f one of t, what we'll wanna do is to take the time axis and divide by two. Alright? And that'll scale out,
+[0:27:04] the
+[0:27:06] period accordingly. So instead of having f one of t, what we really want is f one of one half t.
+[0:27:14] Okay. So putting all of that together,
+[0:27:17] right, basically, what we can see is that from
+[0:27:21] the plots
+[0:27:24] of f one of t
+[0:27:29] and f two of t.
+[0:27:35] Alright. We can see that as I just described,
+[0:27:38] f two of t
+[0:27:40] is equal to two times f one of one half t minus 20. Right? This factor of two over here is the vertical scaling by a factor of two.
+[0:27:51] This minus 20 is the downward shift, And then this one half t is expanding out the time axis so that we get twice the period for f two as we had for f one. Okay?
+[0:28:04] And so now here,
+[0:28:06] since we have the four a series expansion for f one of t, alright, all we have to do is to use that
+[0:28:13] for,
+[0:28:15] now f one down here where we have one half t instead of t,
+[0:28:19] and then that'll give us the four a series expansion for f two of t. Right? So if we just go ahead and do that, then
+[0:28:27] what we get is that f two of t
+[0:28:30] is equal to, right, two times
+[0:28:34] f one of half t.
+[0:28:36] So it's two times 10, which is 20,
+[0:28:40] minus...
+[0:28:41] And then two times... 20 over pi is... So minus 40 over pi
+[0:28:46] times the sum from n
+[0:28:49] equal to one to infinity of one over n times the sine of.
+[0:28:55] And then instead of t, we have one half t in the argument. So it'll be pi n over four times t.
+[0:29:06] Okay. And then, minus 20 over here.
+[0:29:12] Okay.
+[0:29:13] And we can simplify this a little bit. Alright? Because the 20 here and the minus 20 here cancel each other out.
+[0:29:21] And so what we get finally is that f two of t is equal to minus
+[0:29:27] 40 over pi times the sum
+[0:29:31] from n equal to one, to infinity of one over n times the sine of pi n over four times t. And that's the answer.
+[0:29:44] Okay. So,
+[0:29:46] so this is an example of, calculating a Fourier series coefficients and using,
+[0:29:52] the result for one, function to deduce the four a series expansion for,
+[0:29:59] a function that is similar in a certain key ways. Okay. So if we look back at this, what are some of the key points here?
+[0:30:10] Okay. In, thinking about this retrospectively
+[0:30:13] having worked out the answer. One
+[0:30:17] is that when we calculated the Fourier coefficients, it was basically just doing a bunch of integrals. Okay. So
+[0:30:25] the calculation
+[0:30:29] of the Fourier series
+[0:30:35] expansion
+[0:30:38] for f one of t.
+[0:30:40] Right?
+[0:30:41] This... Basically,
+[0:30:45] what it involved was
+[0:30:47] a bunch of straightforward
+[0:30:53] integrals.
+[0:30:56] Alright. And, as we saw, at various stages in this process, there were certain coefficients
+[0:31:03] that, we could see in retrospect,
+[0:31:07] should be zero, just by applying some simple symmetry arguments.
+[0:31:12] Right? And certain
+[0:31:14] coefficients.
+[0:31:19] Alright, can be seen
+[0:31:24] to be zero,
+[0:31:26] alright, essentially by symmetry arguments.
+[0:31:33] Okay. For example,
+[0:31:35] the arguments that we made based on,
+[0:31:38] whether functions were even or odd.
+[0:31:43] Okay. Then,
+[0:31:45] the second point here, right, which relates to, the question that was more explicitly asked for, asked in in this problem is that if we're given the Fourier series for one function, then
+[0:31:58] we could straightforwardly
+[0:32:00] deduce what the Fourier series
+[0:32:03] would be for another function that was related to it in some... In in certain ways by scaling
+[0:32:09] either the vertical or the horizontal axis and also
+[0:32:14] shifting
+[0:32:15] vertically along the vertical axis. Alright. So given
+[0:32:20] the four a series
+[0:32:26] for
+[0:32:27] the function f one of t, which was actually given in this problem, although we saw how that was calculated as well,
+[0:32:34] then
+[0:32:38] computing.
+[0:32:40] And it's really more deducing than computing I here. The four a series
+[0:32:47] for f two
+[0:32:50] of t,
+[0:32:55] it was relatively easy
+[0:32:57] once we saw how f one and f two were related to each other.
+[0:33:04] So what we needed to do was that we needed to recognize
+[0:33:11] how
+[0:33:12] f one of t,
+[0:33:14] right, basically, could be transformed.
+[0:33:21] Into f two of t,
+[0:33:24] alright, by
+[0:33:26] a combination of a vertical shift
+[0:33:31] or actually,
+[0:33:33] probably to put this in the most appropriate order, a scaling
+[0:33:42] by a factor of two, doubling of the period
+[0:33:53] and then vertical shift,
+[0:33:58] okay, of
+[0:34:00] of that result.
+[0:34:02] Okay. And then applying the same transformations
+[0:34:06] to
+[0:34:07] the Fourier series expansion for f one of t, then gave us directly the Fourier series expansion for f two of t.
+[0:34:16] Okay. So that is it for this example,
+[0:34:19] and I'll stop the recording now.

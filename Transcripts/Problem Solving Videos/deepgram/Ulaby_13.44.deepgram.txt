@@ -1,0 +1,281 @@
+[0:00:04] Okay. So this is Ulaby 13.44,
+[0:00:07] and this here is an example
+[0:00:11] of computing
+[0:00:14] for a transforms.
+[0:00:21] Okay. And in this problem, we are given, two different functions. Alright? Two for the two different parts of the problem with numerical values for the parameters as specified here,
+[0:00:33] and we're asked to calculate the Fourier transforms
+[0:00:37] of these two functions here.
+[0:00:41] So let's go ahead and start with this.
+[0:00:44] The first function is f of t.
+[0:00:49] It's either the minus alpha t
+[0:00:52] times the sine of omega one t times the cosine of omega two t
+[0:00:58] times u of t.
+[0:01:00] And alpha is equal to point five
+[0:01:03] inverse seconds.
+[0:01:06] Omega one is equal to four
+[0:01:09] radians per second, and omega two is equal to two
+[0:01:14] radians per second. Alright?
+[0:01:17] And, so we wanna compute the Fourier transform of this function here. Alright? And what we are going to do is we're going to...
+[0:01:27] Basically, we're using the Euler identity to write the sine and the cosine as complex exponential functions. And then
+[0:01:36] when we multiply all this out, we will essentially be taking the Fourier transform of a bunch of complex exponentials,
+[0:01:43] which is relatively straightforward.
+[0:01:45] Alright? So that's how we're gonna proceed with this. So this is going to be either the minus alpha t.
+[0:01:52] And then
+[0:01:53] for the sine of omega one t, we have one over j times two times e to the j omega one t minus e to the minus j omega one t.
+[0:02:05] And then for the cosine of omega two t,
+[0:02:08] we have one half times e to the j omega two t plus e to the minus j omega two t,
+[0:02:16] and all this times
+[0:02:18] u of t. Okay?
+[0:02:21] And so if we multiply all of this out, then we get
+[0:02:26] e to the minus alpha t over j times four. Right? The j times four in the denominator is one over j two times one half.
+[0:02:35] And then for the exponentials,
+[0:02:38] we get either the j
+[0:02:40] omega one plus omega two t.
+[0:02:43] That's this term times this term
+[0:02:46] minus e to the minus j
+[0:02:49] the quantity omega one plus omega two t. That's this term times this term.
+[0:02:56] And then from the other two combinations, we get plus
+[0:03:00] e to the j
+[0:03:02] omega one minus omega two t
+[0:03:05] minus e to the minus j
+[0:03:07] omega one minus omega two t.
+[0:03:11] All of this times
+[0:03:13] u of t.
+[0:03:14] Okay. So now we've written f of t in a form that consists
+[0:03:20] of only, essentially, just complex exponential functions. So let's think about and work out what the Fourier transform is for a complex exponential general.
+[0:03:33] Okay. So in general,
+[0:03:39] right, what do we have is that the Fourier transform... Suppose we're thinking about the Fourier transform of a function e to the minus alpha t
+[0:03:47] times e to the j omega naught t times u of t.
+[0:03:53] Alright? Then
+[0:03:55] writing that out explicitly as an integral, that's gonna be the integral from zero to infinity of e to the minus alpha t
+[0:04:03] times e to the j omega naught t times e to the minus j omega t
+[0:04:09] times
+[0:04:10] d t. Alright?
+[0:04:13] The u of t was factored in by taking the integral just to go from zero to infinity minus... Rather than minus infinity to infinity.
+[0:04:22] And if we integrate this, alright, we have one over
+[0:04:26] minus alpha plus j omega naught minus j omega
+[0:04:31] times
+[0:04:32] e to the minus alpha t
+[0:04:35] e to the j omega naught t,
+[0:04:38] e to the minus j omega t from zero to infinity.
+[0:04:43] Evaluating
+[0:04:45] this over here
+[0:04:47] at infinity minus,
+[0:04:49] its value at zero at infinity,
+[0:04:52] this function
+[0:04:54] inside the square brackets is zero because of the either minus alpha t. And at t equals zero,
+[0:05:01] this function in the square brackets is one. So we just get a minus one from all of this. And then that minus one,
+[0:05:09] we can multiply the denominator by that minus one. And if we do that, what we finally get is one over alpha plus j times omega minus omega naught.
+[0:05:21] Okay. So that is the Fourier transform
+[0:05:25] of,
+[0:05:26] this complex exponential function times u of t generally,
+[0:05:30] and we can use that to compute the Fourier transform of each of these four
+[0:05:37] terms
+[0:05:39] over here in f of t. Alright?
+[0:05:43] So using that, right, f of omega,
+[0:05:46] right, which is the Fourier transform
+[0:05:50] of
+[0:05:52] this function f of t
+[0:05:56] is going to be one over j times four. Right? That's the constant factor that we had from
+[0:06:04] here.
+[0:06:06] Okay.
+[0:06:07] And then for the four complex exponentials,
+[0:06:11] we get one over alpha plus j
+[0:06:14] times
+[0:06:16] omega minus
+[0:06:18] the quantity omega one plus omega two.
+[0:06:22] It's the first one minus one over
+[0:06:26] alpha
+[0:06:27] plus j times omega plus
+[0:06:30] omega one plus omega two. It's the second one.
+[0:06:34] Plus
+[0:06:36] one over alpha
+[0:06:38] plus j times omega minus omega one minus omega two
+[0:06:43] minus
+[0:06:45] one over
+[0:06:47] alpha plus j times omega plus
+[0:06:52] omega one minus omega two.
+[0:06:54] Alright?
+[0:06:58] And
+[0:06:59] so this is equal to
+[0:07:02] one over j times four.
+[0:07:05] And then what we're going to do here is we're going to take the first two terms
+[0:07:10] and put them,
+[0:07:12] over a common denominator, which will be the product of these two denominators here. That means that in the numerator here, we'll have alpha... We'll have this denominator,
+[0:07:23] and the numerator here, we'll have this denominator. And then we'll do the same thing in combining these two terms over here over a common denominator consisting of the product of this denominator and this denominator. Okay. So if we do all that, then what we get from these first two terms is
+[0:07:44] alpha plus j omega.
+[0:07:47] Right? So this is now going to be this denominator here because we're multiplying this fraction by this in the numerator and also in the denominator. So it's alpha plus j omega plus
+[0:08:00] j times omega one plus omega two.
+[0:08:04] Alright? And then minus
+[0:08:07] what we have
+[0:08:09] for
+[0:08:11] this numerator over here, which is going to be
+[0:08:14] this denominator. So minus the quantity
+[0:08:18] alpha plus j omega
+[0:08:21] minus j times
+[0:08:24] omega one plus omega two.
+[0:08:29] All of that divided by the product
+[0:08:34] of these two denominators,
+[0:08:37] which is alpha plus j omega, the quantity squared,
+[0:08:41] plus
+[0:08:42] omega one plus omega two,
+[0:08:44] the quantity squared. Alright?
+[0:08:47] And then we're gonna do the same thing for these two terms over here. So in the numerator, we will get
+[0:09:00] alpha plus j omega
+[0:09:02] plus j times omega one minus omega two
+[0:09:07] minus the quantity
+[0:09:09] alpha plus j omega
+[0:09:12] minus j times
+[0:09:14] omega one minus omega two
+[0:09:18] divided by
+[0:09:21] the common denominator alpha plus j omega squared
+[0:09:25] plus
+[0:09:26] omega one minus omega two squared.
+[0:09:30] Okay.
+[0:09:32] So now...
+[0:09:34] Alright. We can simplify this a little bit because we can see that,
+[0:09:39] in this
+[0:09:40] first term over here,
+[0:09:42] in the numerator, these two terms cancel out.
+[0:09:45] And these two terms can be combined to give us two j times the quantity omega one plus omega two. In this second term over here,
+[0:09:55] this term and this term cancel out.
+[0:09:58] And then this term and this term in the numerator can be combined to give us two j times the quantity omega one minus omega two.
+[0:10:05] Okay. And then if we factor out those j times twos from each of these terms, then that'll cancel out with the j times four in the denominator to give us just one half.
+[0:10:17] So we get one half times... And then what we have left in the first term is omega one plus omega two
+[0:10:24] divided by alpha plus j omega quantity squared plus
+[0:10:29] omega one plus omega two, the quantity squared.
+[0:10:32] And then from this second term over here, we get
+[0:10:37] omega one minus omega two
+[0:10:40] divided by alpha plus j omega squared plus
+[0:10:44] omega one minus omega two squared.
+[0:10:49] Okay. And if we now substitute in the numerical values, which are that alpha is equal to point five inverse seconds,
+[0:10:59] omega one is equal to four radians per second, and omega two is equal to two radians per second,
+[0:11:07] then what we get
+[0:11:10] is that
+[0:11:12] f of omega is equal to... From this first term, have omega one plus omega two. That's four plus two. That's six divided by two. That's three
+[0:11:21] divided by,
+[0:11:23] alpha, which is point five
+[0:11:26] plus j omega quantity squared,
+[0:11:30] and then plus
+[0:11:31] omega one plus omega two, that's six squared. That's 36.
+[0:11:38] And then from the second term, have omega one minus omega two. That's four minus two. That's two times one half. That's one
+[0:11:47] divided by... And then the denominator is point five plus j omega quantity squared plus
+[0:11:53] omega one minus omega two, that's four minus two, that's two squared, that's four.
+[0:12:00] Okay. So that's what we have here
+[0:12:05] for f of omega. Right? The Fourier transform
+[0:12:08] of,
+[0:12:10] the function f of t that was given in the problem.
+[0:12:15] Then part b of this problem
+[0:12:19] is that we're given
+[0:12:21] a function g of t and is equal to t times e to the minus alpha t.
+[0:12:28] And,
+[0:12:29] that is for zero or less than equal to t less than or equal to 10 alpha. For other values of t, this is zero,
+[0:12:36] and alpha is equal to point five
+[0:12:40] inverse seconds. Okay.
+[0:12:42] So
+[0:12:45] here,
+[0:12:47] we can write the Fourier transform explicitly as an integral from zero to 10 alpha
+[0:12:52] of t times e to the minus alpha t e to the minus j omega t
+[0:12:59] d t.
+[0:13:01] Okay. So now for this integral, what we want to do is
+[0:13:06] I... We we can do the integral easily if we can reduce this t to just a constant.
+[0:13:12] And we can do that using integration by parts. Right? So the integral of u times d v is equal to u v minus the integral of v times d u.
+[0:13:23] So what we want to do is...
+[0:13:26] Right. This is the this is the integral that we start with. This is the integral that we wanna be able to compute. And so what we wanna do is to choose u to be such that when we take its derivative,
+[0:13:37] we get rid of this t. Okay? So we can take u, and then what's left has to be something that we can integrate. Alright? But it's just exponentials here so we can integrate those. So we take u
+[0:13:50] to be equal to t,
+[0:13:53] and then
+[0:13:54] d v
+[0:13:56] is either the minus alpha t, either the minus j omega t
+[0:14:01] d t, alright, which we can integrate. Then d u
+[0:14:06] is equal to d t,
+[0:14:09] and then v is equal to minus one over alpha plus j omega
+[0:14:15] times e to the minus alpha t e to the minus j omega t. Alright?
+[0:14:21] So
+[0:14:23] g of omega then is equal to...
+[0:14:31] We started with this integral here, and then we're going to use this right hand side. So u times v evaluated at the limits of integration. So that's t times minus one over alpha plus j omega. So that's minus t over alpha plus j omega.
+[0:14:49] Okay. Times these exponentials,
+[0:14:52] e to the minus alpha t, e to the minus j omega t evaluated
+[0:14:57] from zero to
+[0:14:58] 10 alpha.
+[0:15:00] And then we have minus the integral of v d u. V is this expression here. So this minus and this minus will cancel out. So we get plus
+[0:15:10] one over alpha plus j omega. Right? That's this one over alpha plus j omega here times the integral from zero to 10 alpha
+[0:15:18] of
+[0:15:20] e to the minus alpha t e to the minus j omega t
+[0:15:24] d t. Alright?
+[0:15:27] And so
+[0:15:30] from this first term over here, when we evaluated at the upper limit of integration, we get minus t, which is minus 10 alpha
+[0:15:38] over alpha plus j omega
+[0:15:41] times e to the minus
+[0:15:44] alpha plus j omega
+[0:15:46] times
+[0:15:49] 10 alpha, which is t. And then at the lower limit of integration, which is t equal to zero, then this t over here will give us a factor of zero. So this whole... So this will be zero. Okay?
+[0:16:00] Then from the integral,
+[0:16:03] we get one over alpha plus j omega.
+[0:16:07] And then integrating
+[0:16:09] these
+[0:16:11] complex
+[0:16:12] exponentials,
+[0:16:13] we get e to the minus alpha t, either the minus j omega t divided by minus the quantity alpha plus j omega
+[0:16:21] evaluated at zero and
+[0:16:25] ten alpha.
+[0:16:27] Okay. So I
+[0:16:30] then just carrying over this first term over here, we have minus 10 alpha over alpha plus j omega times e to the minus
+[0:16:40] alpha plus j omega
+[0:16:43] times 10 alpha.
+[0:16:45] And then we have minus,
+[0:16:48] that's this minus sign over here.
+[0:16:53] Then in the denominator, we have alpha plus j omega, the quantity squared. That's this factor and this factor. And in the numerator, we have this evaluated at 10 alpha minus this evaluated at zero. So we have e to the minus alpha plus j omega
+[0:17:11] times 10 alpha
+[0:17:14] minus... And then a t equal to zero, the numerator is just one.
+[0:17:19] Okay. So now,
+[0:17:22] remember, alpha is equal to
+[0:17:25] point five inverse seconds.
+[0:17:28] So if we take that value for alpha and plug it in here,
+[0:17:32] then
+[0:17:33] what we finally get for g omega
+[0:17:36] is
+[0:17:38] minus 10 alpha. Alpha being minus... Being point five is minus five
+[0:17:43] over
+[0:17:44] point five plus j omega.
+[0:17:47] Then we have e to the minus
+[0:17:50] and then 10 alpha, that's five times point five plus j omega.
+[0:17:56] Alright.
+[0:17:57] Minus.
+[0:17:59] And then we have
+[0:18:02] e to the minus five times point five plus j omega
+[0:18:07] minus one
+[0:18:09] divided by
+[0:18:11] point five plus
+[0:18:13] j omega, the quantity squared. Right?
+[0:18:16] And so this
+[0:18:18] is the Fourier transform of the function g of omega. Right? Sorry. G of t that we were given in the problem.
+[0:18:28] Okay. So what are some of the key points here if we think back on what we did in this example?
+[0:18:36] Alright. The first is that when we did part a of this problem,
+[0:18:44] right, back here, we were able to make it relatively simple by converting everything to complex exponentials using the Euler... Essentially, the Euler identity. Alright? And that actually made it quite a bit simpler to compute the Fourier transform because you were just computing the Fourier transform of complex exponentials,
+[0:19:04] which as we saw here is quite straightforward to do. Alright. So first point that we can note here is that
+[0:19:14] complex exponentials
+[0:19:18] and the Euler
+[0:19:20] identity.
+[0:19:23] Okay. These often...
+[0:19:27] And in this case, I did, I can simplify
+[0:19:34] the computation
+[0:19:40] of
+[0:19:41] Fourier transforms,
+[0:19:45] particularly Fourier transforms that involve trigonometric functions. Right? Because we can convert those to complex exponentials.
+[0:19:51] And then, if we're multiplying a bunch of trigonometric
+[0:19:55] functions together, then all we get is a combination of terms that are all just complex exponentials, and the Fourier transforms of those are easy to compute.
+[0:20:06] Then, the second thing that we noted here, was that we saw in part b that if we had Fourier transforms of functions that have, factors that are polynomials of t, then we can use integration by parts to get rid of those, factors of t. In this case, it was just a linear term in t, linear factor in t, and, to get back to essentially just, complex exponentials again. Right? So for Fourier transforms,
+[0:20:41] functions
+[0:20:48] with factors of t
+[0:20:50] or more generally t to the n, right, then integration
+[0:20:59] by parts
+[0:21:01] is often useful.
+[0:21:04] Okay. If we were t to some power, then, we could do
+[0:21:10] multiple n, basically,
+[0:21:13] successive integrations,
+[0:21:14] by parts, and that would bring us down back eventually to,
+[0:21:19] just having a constant again.
+[0:21:22] Okay. So that is it for,
+[0:21:25] this example,
+[0:21:27] and I will now stop this recording.

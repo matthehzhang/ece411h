@@ -1,0 +1,1146 @@
+# 2026-10-14-semiconductors-intro-to-filters: board pages with the speech that accompanied them
+
+23 distinct pages from 57 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0039.jpg  on screen [0:00:00 – 0:10:36]
+<sub>sharpness 1604, ink 2.0 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0024.jpg (0:05:13), f_0036.jpg (0:10:35), f_0038.jpg (0:10:36)</sub>
+
+- [0:00:02] Okay. So I have started the recording,
+- [0:00:07] and just a couple announcements.
+- [0:00:09] The first one is that
+- [0:00:13] I just posted a,
+- [0:00:15] another handout on the Canvas site,
+- [0:00:19] and it is a handout on, it's it's more on, kind of how to do algebra with complex numbers. And as we will see starting later today,
+- [0:00:29] when we start talking about,
+- [0:00:31] the frequency response of, circuits and transfer functions and things like that, a lot of that involves dealing with essentially rational functions of complex numbers. And so,
+- [0:00:45] there are some subtleties,
+- [0:00:47] to how one, does that, and so that's,
+- [0:00:50] a lot of what is addressed in this second hand ad. If you know all this already, then that's perfectly fine. If you want,
+- [0:00:58] you know, some additional background or refresher, then I think that will be very useful. (Second?) announcement is that my office hours today
+- [0:01:09] will be in the afternoon, 02:30 to 4PM, instead of, the usual 11:30 to 11:55AM.
+- [0:01:16] Still be in, EER 3 Dot 802.
+- [0:01:20] Okay. So any questions on any of this or on
+- [0:01:25] what we covered in class or what was covered in the recitation section?
+- [0:01:29] Recitation on Monday, class last week.
+- [0:01:34] Or, I guess, actually, not last week, but on Monday.
+- [0:01:37] Okay. And as you can see, I have my tablet back, so we don't have to use the doc cam this
+- [0:01:45] time. Okay. So if there are no questions,
+- [0:01:48] then what we had been discussing last time was we had started talking about this particular kind of device,
+- [0:01:56] which is a p n junction diode. Okay? And it's basically a p type semiconductor and an n type semiconductor
+- [0:02:04] that are joined together so that electrons and holes can flow back and forth between them. And this kind of physical arrangement
+- [0:02:15] of p type and n type semiconductors in a circuit, it's represented by the diode symbol,
+- [0:02:20] like this. Okay?
+- [0:02:22] And,
+- [0:02:23] what we had gotten to at the end of our last class meeting was that,
+- [0:02:29] if you have this device in equilibrium.
+- [0:02:33] Right, so the p type and the n type sides are in equilibrium with each other, that corresponds to zero voltage being applied across the the diode device. Then
+- [0:02:46] (I...?) What we call the energy band edge diagram. Right? The energy of the conduction band edge and of the valence band edge as a function of position in the device,
+- [0:02:56] it ends up looking like this. Okay? And that we can think of the conduction band edge energy as essentially a potential energy function for the electrons
+- [0:03:07] and the valence band edge energy,
+- [0:03:10] as a potential energy function for holes,
+- [0:03:15] recognizing that to get holes to lower energy...
+- [0:03:19] Or, yeah, to get holes to lower energy,
+- [0:03:22] that actually corresponds to an increase in potential energy because,
+- [0:03:26] really, what you're doing is you're getting electrons
+- [0:03:29] from down here to fill these states up here. Okay?
+- [0:03:33] So,
+- [0:03:34] so this is what essentially the potential energy of the electrons (in?) the holes looks like as a function of position in the p n junction,
+- [0:03:42] and,
+- [0:03:43] you end up getting this,
+- [0:03:46] potential barrier here, right, which we call the... Or potential energy barrier, and the corresponding potential or voltage we call the built in potential of the p n junction.
+- [0:03:57] And, one way we can think about this is that this potential energy barrier is kind of what keeps all these electrons over here on the n side and all the holes on the p side. Right? Because,
+- [0:04:10] these electrons have to get additional potential energy to make it over to the p side. The holes have to get additional potential energy to make it over to the n side. And, in equilibrium,
+- [0:04:20] that potential... Those potential energy barriers exactly counteract
+- [0:04:26] the tendency of the electrons to wanna diffuse to the p side and the holes to wanna diffuse to the n side. Okay? And since they exactly counteract,
+- [0:04:37] then
+- [0:04:39] the net current is zero. Yes. Question?
+- [0:04:44] So is the reason that that potential gets built up is because, like you said, in (an?) equilibrium,
+- [0:04:50] initially, a certain amount of electrons and holes
+- [0:04:54] {(diffuse?)}
+- [0:04:56] across. And then because of that, the
+- [0:04:59] holes that diffused across would be... Make that side positive, and the other side that had electrons go would make it negative, and that's (potential?) difference there.
+- [0:05:10] Yeah. So that's basically,
+- [0:05:12] correct. If we, sort of draw a more elaborate picture here...
+- [0:05:21] Alright. This is the p side.
+- [0:05:24] This is the n side. Alright?
+- [0:05:26] These are the conduction band edge energies. These are the valence band edge energies. Then on the p side, you have
+- [0:05:34] a bunch of these holes,
+- [0:05:36] and on the n side, you have a bunch of
+- [0:05:40] electrons. Right? Now remember,
+- [0:05:44] alright, to get the electrons in the conduction band, they are, donated to the conduction band by donors, donor impurities.
+- [0:05:52] And when that electron goes off to the conduction band and starts being able to move around, what's left behind is a positively charged ion.
+- [0:06:00] Right? So we also have these positively charged...
+- [0:06:05] I'll draw them like this.
+- [0:06:09] Ionized donors in the n type material, and then we have correspondingly negatively charged
+- [0:06:15] ionized acceptors
+- [0:06:17] in the p type material.
+- [0:06:19] Okay?
+- [0:06:20] Now near the junction...
+- [0:06:23] Okay. When... Once you
+- [0:06:25] connect these... Alright. Draw this in
+- [0:06:29] right here. Right? Once you connect these, alright,
+- [0:06:33] you know, originally,
+- [0:06:35] right, the Fermi level was,
+- [0:06:37] say, down here for p type and up here for n type. Right?
+- [0:06:43] Once you connect these,
+- [0:06:45] then,
+- [0:06:47] these electrons,
+- [0:06:49] right, they can find
+- [0:06:52] these holes. Right? And they'll recombine,
+- [0:06:54] but only if they're pretty close to the junction. Alright?
+- [0:06:59] And then,
+- [0:07:01] you know, what you can imagine happening is that
+- [0:07:06] the electrons over here, right, and the... Over here and the holes over here, right, they recombine with each other so they kind of cancel out. Right? Then you have neither the electron or the... Nor the hole left, but what you have left behind are these ionized
+- [0:07:22] dopants.
+- [0:07:23] Okay. So if we
+- [0:07:25] add that
+- [0:07:27] to this picture over here,
+- [0:07:29] alright,
+- [0:07:31] let's say the,
+- [0:07:33] you know, the p n junction is
+- [0:07:36] something like that. Okay?
+- [0:07:38] Then,
+- [0:07:41] we have some of these...
+- [0:07:43] Right? We have ionized
+- [0:07:46] {donor}
+- [0:07:48] atoms on the n side and ionized
+- [0:07:53] acceptor atoms on the p side.
+- [0:07:55] Okay?
+- [0:07:56] And
+- [0:07:57] so (we?) have these
+- [0:08:00] charges now.
+- [0:08:01] And anytime you have charge, you have an electric field, and the integral of the electric field is potential.
+- [0:08:09] Right? So that's actually where this built in potential comes from. It's the potential that is produced by these ionized dopants. Is that is that what you're asking? Yes. Yeah. Okay.
+- [0:08:21] Any other questions?
+- [0:08:24] Okay. So then...
+- [0:08:28] Oops. What we drew up here is kind of the picture of
+- [0:08:33] what happens in equilibrium. Zero voltage applied to the diode. Alright?
+- [0:08:40] What we wanna understand next is what happens if we apply a volt... A non (zero?) voltage. Okay?
+- [0:08:47] And, you
+- [0:08:49] know, we're gonna think about the case where we apply a positive voltage here. Right? So that is positive voltage to the p side relative to the n side. We can think of the n side as being grounded. We apply a positive voltage to the p side. Okay? Now if we apply a positive voltage to the p side of,
+- [0:09:10] the junction, then what that is going to do is it lowers the potential energy
+- [0:09:18] on the p side for the electrons. Right? Because the potential energy is the charge of the electron, which is minus e
+- [0:09:25] times the potential, which is positive. Right? So a positive voltage here will
+- [0:09:32] lower the potential energy for electrons on the p side, and then the potential energy for the electrons on the n side will be unchanged because,
+- [0:09:41] we're saying that this is grounded. Okay? And so what that means then is that
+- [0:09:47] this potential energy barrier for the electrons will be reduced,
+- [0:09:51] and it'll be reduced by an amount that is equal to minus e times that voltage. Right? Because that's the,
+- [0:10:00] potential energy contribution that you're getting from the voltage. Okay? And,
+- [0:10:05] as we'll see shortly, what that will do is, right, it'll then make it easier for the electrons to get over from the n side to the p side and for the holes to get from the p side to the n side, and that is what produces the current that flows
+- [0:10:20] in the p n junction diode.
+- [0:10:22] And as we will see, the nature of the Fermi distribution function then will tell us that that current will increase exponentially
+- [0:10:31] with the voltage. Okay. So that's kind of where
+- [0:10:35] where this is headed. Alright. So the basic idea, right, is that
+
+## page 02  f_0046.jpg  on screen [0:10:36 – 0:13:10]
+<sub>sharpness 2758, ink 3.9 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0040.jpg (0:11:56)</sub>
+
+- [0:10:35] where this is headed. Alright. So the basic idea, right, is that
+- [0:10:40] if we have...
+- [0:10:42] Okay. So when we have a voltage
+- [0:10:47] v, right, we'll take that voltage for now to be positive,
+- [0:10:51] you know, although you could choose to apply negative voltage also. We'll see what happens in that case a little bit later. If we have a voltage v that's positive, This is applied
+- [0:11:05] across the diode.
+- [0:11:08] Then what happens is that
+- [0:11:11] the potential
+- [0:11:15] energy difference,
+- [0:11:19] okay, for electrons.
+- [0:11:23] Alright. We'll think... Explicitly, we had electrons for now, but the same sort of thing happens for the holes. Right? This
+- [0:11:34] is shifted by an amount that is equal to
+- [0:11:38] the voltage's contribution to the potential energy of the electrons on the p side, which is minus e times v. Right? So it's shifted by
+- [0:11:46] this amount
+- [0:11:48] minus e times the voltage v.
+- [0:11:52] Okay.
+- [0:11:54] And so
+- [0:11:57] sorry. What what is e again? E is the,
+- [0:12:01] fundamental charge. Right. So 1.6 times 10 to the minus nineteenth coulombs, you know, (charge?) of the electron.
+- [0:12:08] Okay. So... Alright. So this is the, right, charge.
+- [0:12:16] Magnitude
+- [0:12:17] of
+- [0:12:18] the electron. That's what e is, and then so the charge of the electron is minus e. Okay. So so the situation that we're looking at here is,
+- [0:12:28] right, in a circuit,
+- [0:12:31] we have a diode,
+- [0:12:34] and then now we're applying
+- [0:12:37] this voltage across it.
+- [0:12:40] And a positive voltage corresponds to positive voltage to the p side,
+- [0:12:47] that then
+- [0:12:49] (in?) the semiconductor,
+- [0:12:52] right, corresponds to applying
+- [0:12:57] positive voltage to the p side.
+- [0:13:01] Okay. And then
+- [0:13:03] if we look at this now in terms of the band edge energy diagram,
+- [0:13:10] right, if this is our starting point when the voltage is equal to zero, then,
+
+## page 03  f_0048.jpg  on screen [0:13:10 – 0:13:35]
+<sub>sharpness 2624, ink 3.4 %, colour 0.4</sub>
+
+- [0:13:10] right, if this is our starting point when the voltage is equal to zero, then,
+- [0:13:15] this p side, the left hand side in this diagram, is gonna move lower in energy. Okay? And so what will happen is that the Fermi levels on the p side and the n side will now be different from each other, and the difference will be minus e times v. Right? The change in the potential energy. So if we just draw that out,
+
+## page 04  f_0057.jpg  on screen [0:13:35 – 0:19:12]
+<sub>sharpness 2704, ink 3.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0049.jpg (0:13:38)</sub>
+
+- [0:13:15] this p side, the left hand side in this diagram, is gonna move lower in energy. Okay? And so what will happen is that the Fermi levels on the p side and the n side will now be different from each other, and the difference will be minus e times v. Right? The change in the potential energy. So if we just draw that out,
+- [0:13:39] okay, we have
+- [0:13:40] the Fermi level on
+- [0:13:44] the p side
+- [0:13:46] and
+- [0:13:48] the Fermi level on the inside like this.
+- [0:13:52] Okay?
+- [0:13:53] And what this now looks like
+- [0:14:03] is basically like this. This is the (conduction?) band edge energy. This is the valence band edge energy.
+- [0:14:08] Okay. We have our electrons
+- [0:14:12] on the p side... Or sorry. On the n side, (are?) holes on the n side.
+- [0:14:18] And
+- [0:14:19] what has happened now, right, the
+- [0:14:23] difference
+- [0:14:25] in the framing level is z times v,
+- [0:14:28] and the height of this barrier
+- [0:14:32] now is,
+- [0:14:37] e times the built in, potential minus e times v. So it's lower when we apply this positive voltage.
+- [0:14:45] And so that means that some of these electrons...
+- [0:14:50] Right? Say if you had an electron that was up here in energy,
+- [0:14:54] now that can move across because it's not blocked by the barrier anymore anymore. And the holes, right, some of them, have a high enough potential energy that they can move across,
+- [0:15:05] the junction because they are no longer blocked by the barrier either.
+- [0:15:09] And
+- [0:15:11] that motion of the carriers
+- [0:15:15] means that we will have current flowing in this direction. Yes. Questions? (Let's?) see. (It?) wants to move across, I guess. What's the reasoning for this electron moving?
+- [0:15:26] Oh,
+- [0:15:27] so it is,
+- [0:15:29] it's it's diffusion. Right? So you have lots of
+- [0:15:33] electrons
+- [0:15:34] over here.
+- [0:15:36] (They're?) be away from each other. Yeah. So they're gonna be moving randomly. Right? And so,
+- [0:15:42] you know, some of them will be moving in this direction. Some of them will be moving in this direction.
+- [0:15:48] If we had the same concentration of electrons over here, right, then the electrons from this side that are moving in this direction will be canceled out by the electrons over here that are moving in this direction. But if we have lots of electrons here and very few electrons here,
+- [0:16:05] then we'll have
+- [0:16:07] a lot of electrons that are kind of going like this from this side, but very few
+- [0:16:12] that are going like that. Right? Because you have so few over here. And
+- [0:16:17] (so?) they will no longer cancel each other out. Right? So what'll happen is that,
+- [0:16:23] there will be some net motion of electrons from,
+- [0:16:29] the high concentration area to the low concentration area. So that's what happens in diffusion generally.
+- [0:16:36] And Do they recombine with, like, (more?) holes?
+- [0:16:40] So
+- [0:16:42] once they have diffused across,
+- [0:16:45] then
+- [0:16:47] (they?) will eventually recombine.
+- [0:16:51] Right? So you will lose those electrons, and then, you know, the same, sort of thing will happen with the holes that move to the inside. Right? These electrons
+- [0:17:01] will gradually recombine kind of, you know, as they're moving to the left here in this picture.
+- [0:17:10] But then
+- [0:17:11] what happens then is that in order to maintain
+- [0:17:15] the concentration of holes... Because every time an electron recombines,
+- [0:17:19] then you lose a hole also.
+- [0:17:22] Right? So then you'll have to have some additional holes coming in this way.
+- [0:17:26] And so you'll still have... Even though the
+- [0:17:30] electrons are recombining with a hole, you will still have net motion of carriers because,
+- [0:17:36] over here,
+- [0:17:38] right, mostly what's happening is that you'll have electrons moving to the left and recombining,
+- [0:17:44] but then, you'll have to have holes coming in from the left and moving to the right in order to resupply the empty states that you have to have on the p side. And so so by the time you get out here, the
+- [0:17:58] current... Right? Over over here, the current is carried mostly by the electrons. But then once you get out here, it's it's gonna be carried mostly by the holes.
+- [0:18:06] But but that current basically is gonna be the same.
+- [0:18:09] Okay. So that's, sort of the more detailed picture of,
+- [0:18:14] what the carriers are doing. What we wanna understand here is mostly,
+- [0:18:19] you know, how these electrons get to the other side and how the holes get to the other side in the first place and how that depends on the voltage. And that will then allow us to see
+- [0:18:30] what the current voltage characteristic of a diode looks like. Does that answer your question?
+- [0:18:35] Okay. Any other questions?
+- [0:18:38] Yes. So just to, like, get this straight, because
+- [0:18:42] we're no longer at equilibrium, the Fermi levels can be different? Yes. Either side of the nets.
+- [0:18:49] Yeah. And so,
+- [0:18:51] you know, what that also means then is that at energies up here,
+- [0:18:55] you still have a higher probability of finding electrons over here on the right than on the left.
+- [0:19:01] And so that's why there's still this net motion of the electrons to the left.
+- [0:19:07] Okay. Any other questions?
+- [0:19:10] Okay.
+- [0:19:11] So
+- [0:19:12] so, essentially, what's happening here is that, right, the energy barriers...
+
+## page 05  f_0059.jpg  on screen [0:19:12 – 0:19:13]
+<sub>sharpness 1552, ink 2.0 %, colour 0.2</sub>
+
+- [0:19:12] so, essentially, what's happening here is that, right, the energy barriers...
+
+## page 06  f_0060.jpg  on screen [0:19:13 – 0:20:11]
+<sub>sharpness 2856, ink 4.3 %, colour 0.2</sub>
+
+- [0:19:12] so, essentially, what's happening here is that, right, the energy barriers...
+- [0:19:21] Okay. For electrons
+- [0:19:25] and holes,
+- [0:19:27] right, basically to move,
+- [0:19:30] across the p n junction.
+- [0:19:39] Right? These are shifted
+- [0:19:43] by this amount minus e
+- [0:19:46] times the voltage. Right? So shifted then means that they are reduced,
+- [0:19:51] and the consequence of that
+- [0:19:54] is that the current
+- [0:19:56] is no longer zero.
+- [0:19:59] Okay?
+- [0:20:01] So that is the basic idea.
+- [0:20:03] What we wanna do now is to quantify this, a little bit better. Okay?
+- [0:20:09] And what that involves then
+
+## page 07  f_0062.jpg  on screen [0:20:11 – 0:20:12]
+<sub>sharpness 3118, ink 4.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0061.jpg (0:20:11)</sub>
+
+- [0:20:09] And what that involves then
+- [0:20:12] is using our understanding of,
+
+## page 08  f_0063.jpg  on screen [0:20:12 – 0:20:39]
+<sub>sharpness 3160, ink 4.7 %, colour 0.2</sub>
+
+- [0:20:12] is using our understanding of,
+- [0:20:15] or at least, you know, knowledge of the Fermi distribution function to,
+- [0:20:19] figure out
+- [0:20:21] how many electrons are there,
+- [0:20:23] at sufficiently high energy,
+- [0:20:26] to
+- [0:20:27] diffuse across,
+- [0:20:29] the junction and not be blocked by the barrier, and how does that concentration
+- [0:20:35] depend on the voltage?
+- [0:20:37] Okay. So that's,
+- [0:20:39] what we want to look at
+
+## page 09  f_0065.jpg  on screen [0:20:39 – 0:20:40]
+<sub>sharpness 3138, ink 4.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0064.jpg (0:20:40)</sub>
+
+- [0:20:37] Okay. So that's,
+- [0:20:39] what we want to look at
+
+## page 10  f_0066.jpg  on screen [0:20:40 – 0:20:41]
+<sub>sharpness 3120, ink 4.7 %, colour 0.2</sub>
+
+- [0:20:39] what we want to look at
+- [0:20:41] next.
+
+## page 11  f_0069.jpg  on screen [0:20:41 – 0:20:44]
+<sub>sharpness 1682, ink 2.5 %, colour 0.2</sub>
+
+- [0:20:39] what we want to look at
+- [0:20:41] next.
+- [0:20:42] K. We go.
+
+## page 12  f_0074.jpg  on screen [0:20:44 – 0:21:43]
+<sub>sharpness 2222, ink 3.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0073.jpg (0:21:36)</sub>
+
+- [0:20:45] Okay. And what we will see shortly here is that that concentration of carriers that have enough energy to move across the barrier,
+- [0:20:54] that concentration
+- [0:20:56] will increase exponentially
+- [0:20:58] with the voltage. Okay? So the concentration...
+- [0:21:05] Right? Because then the current, it'll be proportional to that concentration. Right? So the concentration of
+- [0:21:14] electrons or holes
+- [0:21:17] that have an energy
+- [0:21:19] that is higher
+- [0:21:23] than the barrier,
+- [0:21:27] this increases
+- [0:21:31] exponentially,
+- [0:21:36] okay, with
+- [0:21:38] the voltage.
+- [0:21:42] Okay. So
+- [0:21:43] {(I...?)}
+
+## page 13  f_0076.jpg  on screen [0:21:43 – 0:24:00]
+<sub>sharpness 2151, ink 2.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0075.jpg (0:21:43)</sub>
+
+- [0:21:42] Okay. So
+- [0:21:43] {(I...?)}
+- [0:21:45] To see why this is the case,
+- [0:21:48] we can start off by looking at,
+- [0:21:52] again, the situation when we have zero voltage across the p n junction.
+- [0:21:59] Okay. So if we draw
+- [0:22:02] the band edge energy diagram... Right? This is the Fermi level. It is constant across the junction,
+- [0:22:11] and the band edge energy diagram looks like this. This is the conduction band edge energy. This is the valence band edge energy.
+- [0:22:18] Alright. We have
+- [0:22:21] holes over here, electrons
+- [0:22:24] over here.
+- [0:22:26] And what we wanna do is to look at,
+- [0:22:30] in addition,
+- [0:22:34] the Fermi
+- [0:22:36] distribution function. Right? Remember, it varies between zero and one. Okay.
+- [0:22:42] The Fermi level,
+- [0:22:45] right, is here.
+- [0:22:47] And,
+- [0:22:49] basically, what we wanna look at is
+- [0:22:52] what is the Fermi
+- [0:22:55] distribution
+- [0:22:58] function? What is this value
+- [0:23:01] up here? Right? Add an energy that is high enough that if you had an electron there, it could move across the barrier. Okay? It won't be blocked.
+- [0:23:11] And so,
+- [0:23:13] right, this... The height of this barrier here is e times
+- [0:23:19] the built in potential.
+- [0:23:20] Okay?
+- [0:23:22] So so the energy up here is just the energy of the connection (main?) edge e sub c plus
+- [0:23:29] e times VBI.
+- [0:23:31] Okay? So then the Fermi distribution function
+- [0:23:35] is going to be
+- [0:23:37] e
+- [0:23:39] to that energy,
+- [0:23:40] e c plus e VBI,
+- [0:23:45] minus the Fermi energy
+- [0:23:49] over k (b?) t
+- [0:23:51] plus one.
+- [0:23:53] Okay?
+- [0:23:54] And...
+- [0:23:57] Alright. If we look at this, then, we can see that the energy up here is,
+
+## page 14  f_0080.jpg  on screen [0:24:00 – 0:25:51]
+<sub>sharpness 1583, ink 2.0 %, colour 0.2</sub>
+
+- [0:23:57] Alright. If we look at this, then, we can see that the energy up here is,
+- [0:24:04] much higher than the Fermi level. Much higher meaning that is... It is the energy... This energy difference is typically going to be many times,
+- [0:24:12] k sub b times c. Because remember, we figured out, last time that at room temperature, k sub b times t in the denominator of the exponential here is... Of the exponent is, like, one fortieth of an electron volt.
+- [0:24:27] And
+- [0:24:29] the built in potential here is going to be... It's it's sort of of the same order as the band gap. Right? It's somewhat less than the band gap. So it's going to be, you know, since the band gap of silicon is 1.1 eV,
+- [0:24:42] then,
+- [0:24:44] you know, VBI might be maybe point six or point seven eV. And compared to one fortieth, that's much bigger.
+- [0:24:50] Alright? So you're gonna have a large number in the exponent,
+- [0:24:56] and so this exponential is gonna be much greater than one. Alright?
+- [0:25:01] And so this will be
+- [0:25:03] approximately equal to
+- [0:25:06] e to the minus,
+- [0:25:09] and we'll write it as e times the built in potential
+- [0:25:14] plus
+- [0:25:15] e c minus e f
+- [0:25:20] over k b t. Right? So that is our starting point. Okay. So any questions about
+- [0:25:27] sort of what we've done here?
+- [0:25:31] Okay.
+- [0:25:32] So what we wanna do then is
+- [0:25:37] to see how this picture is modified
+- [0:25:40] if we go to a voltage that is
+- [0:25:44] greater than zero. Right? So positive voltage applied to the p side, relative to the n side.
+- [0:25:50] And,
+- [0:25:52] right, what we saw just a few minutes ago is that that lowers the potential energy
+
+## page 15  f_0120.jpg  on screen [0:25:51 – 0:39:47]
+<sub>sharpness 4017, ink 5.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0092.jpg (0:31:29), f_0100.jpg (0:33:08), f_0110.jpg (0:37:18)</sub>
+
+- [0:25:52] right, what we saw just a few minutes ago is that that lowers the potential energy
+- [0:25:58] for
+- [0:26:00] the p side,
+- [0:26:03] right, relative to the n side, right, by an amount
+- [0:26:09] that is equal to,
+- [0:26:12] e times the applied voltage.
+- [0:26:14] And so
+- [0:26:17] the band edge energy diagram now will look something like
+- [0:26:23] this.
+- [0:26:24] Alright. We have our electrons
+- [0:26:26] on the n side, our holes on the p side.
+- [0:26:31] And what's happened here now
+- [0:26:34] is that
+- [0:26:37] this barrier
+- [0:26:38] has been reduced in height by,
+- [0:26:42] e times v. So this is now e
+- [0:26:45] VBI minus
+- [0:26:48] {e v.}
+- [0:26:50] Okay.
+- [0:26:51] So,
+- [0:26:52] you know, we've pulled everything on the p side down to lower energy, so that also reduces the barrier. So now what we wanna do
+- [0:27:01] is, again,
+- [0:27:05] to look at the Fermi distribution function.
+- [0:27:10] Okay.
+- [0:27:12] Right. So,
+- [0:27:15] yeah, over
+- [0:27:16] over here, it's gonna look something...
+- [0:27:24] Right. It looks something like this. Okay.
+- [0:27:29] So now,
+- [0:27:33] alright, we have the Fermi level here.
+- [0:27:36] Right? So the Fermi distribution function is gonna be equal to one half there.
+- [0:27:41] And then
+- [0:27:43] at the height
+- [0:27:46] of the barrier,
+- [0:27:48] now
+- [0:27:50] we wanna look at what
+- [0:27:52] the Fermi distribution function looks like mathematically.
+- [0:27:56] This energy, right, this energy here is now, (right,?) this was
+- [0:28:03] e sub c, this is e sub v. So the energy
+- [0:28:07] up here,
+- [0:28:08] right, at the top of the barrier is going to be e sub c, the conduction band edge energy,
+- [0:28:14] plus
+- [0:28:15] e v b I minus e v now. Okay? So this is going to be... So the Fermi distribution function is gonna be one over, (then?) it's e to the
+- [0:28:27] (e?) c
+- [0:28:28] plus EVBI
+- [0:28:30] minus
+- [0:28:32] EV
+- [0:28:34] minus the Fermi level
+- [0:28:37] over KT.
+- [0:28:39] All this plus one. Alright?
+- [0:28:42] And so...
+- [0:28:44] Alright. It's still gonna be the case,
+- [0:28:47] you know, unless you apply a
+- [0:28:49] very large voltage.
+- [0:28:51] But, usually, it's very difficult to get to that kind of voltage and still have a sustainable,
+- [0:28:56] current (to?) get much beyond that voltage and still have a sustainable current. So it's still going to be the case that
+- [0:29:04] this energy up here is
+- [0:29:07] much greater than the Fermi level, meaning that that energy minus the Fermi level is gonna be many times k sub b times t. So we're still gonna have (a?) big number
+- [0:29:18] in the exponent here, and so
+- [0:29:21] this exponential is gonna be much greater than one, and so we can write this as being approximately equal to... Right? It's gonna be e to the
+- [0:29:32] minus
+- [0:29:35] EVBI
+- [0:29:37] plus
+- [0:29:38] e c
+- [0:29:39] minus e f
+- [0:29:43] over k b t. But then we have this
+- [0:29:46] additional factor due to the
+- [0:29:50] minus eV over here, and it's minus eV over kBT in the denominator so becomes plus eV
+- [0:29:58] over kBT
+- [0:30:00] in the numerator.
+- [0:30:03] And
+- [0:30:05] now if we compare
+- [0:30:07] this expression here to this expression here, right, in both cases,
+- [0:30:12] it is the value of the Fermi distribution functions, the probability of finding an electron at that energy.
+- [0:30:19] It's this
+- [0:30:21] when the voltage is zero.
+- [0:30:24] When the voltage is
+- [0:30:27] positive here, right, we have this factor here,
+- [0:30:30] which is the same as this factor here, but now we're multiplying it by, e to the e (v?) over k b t. And I apologize for the notation here where we have these two e's that mean different things.
+- [0:30:43] This lower e here, obviously, is, 2.71828.
+- [0:30:47] This e up here,
+- [0:30:49] is the charge charge magnitude of the electron. Okay?
+- [0:30:54] But, you know, what we see here is that this concentration of electrons that we have up here with sufficient energy to move across the barrier,
+- [0:31:04] it has increased exponentially with the voltage.
+- [0:31:07] Okay? So we'll have exponentially more electrons that can move across the barrier. Correspondingly,
+- [0:31:13] there will be exponentially more holes that can move across the barrier. And so that means that the current flow that you get, as you increase this positive voltage,
+- [0:31:24] will increase exponentially with that voltage. Okay? And that's the reason why when you have a diode,
+- [0:31:34] and you look at how the current depends on the voltage, that's why it increased exponentially with the voltage. It's basically because of this. Right? So, essentially, the key point that we're seeing here is that this factor here tells us that,
+- [0:31:47] alright, the Fermi distribution function at an energy that is just sufficient to cross the barrier, right, this increases
+- [0:31:56] exponentially
+- [0:32:03] with the voltage.
+- [0:32:05] Okay. We've drawn out kind of the pictures for electrons, but you can see from the diagrams here that, you know, essentially (the?) same thing is gonna happen with the holes because the barrier for the holes is also being reduced by the same amount. Right? So, similarly,
+- [0:32:25] what's happening concurrently is that holes
+- [0:32:29] will diffuse
+- [0:32:34] from the p side
+- [0:32:37] to the n side
+- [0:32:40] of the junction.
+- [0:32:46] Alright. With exponentially
+- [0:32:55] increasing probability
+- [0:33:02] with the voltage. Okay.
+- [0:33:06] (And?) so the consequence of all of this
+- [0:33:09] is that
+- [0:33:12] the overall current
+- [0:33:14] increases
+- [0:33:21] exponentially
+- [0:33:24] with voltage
+- [0:33:26] when the voltage is greater than zero.
+- [0:33:29] Okay.
+- [0:33:31] So,
+- [0:33:32] so any questions on this?
+- [0:33:35] Okay. Yes. Over here and then there. (About?) having the two Fermi levels
+- [0:33:39] at,
+- [0:33:41] where we chose the the higher Fermi level because that's the Fermi level on the (n?) side. Correct?
+- [0:33:47] Yes. Right. So, yeah, so what we're
+- [0:33:50] portraying here is,
+- [0:33:52] the probability of finding electrons up here. Right? So... And electrons specifically on the n side. Right? So that's why the Fermi level on the n side is is the right one to use. Okay. So then in in the middle, would it not be an immediate... Would it be, like, a
+- [0:34:07] similar to the... To,
+- [0:34:09] a reflection of the e f and... Or e c and e v graphs, the Fermi level, would it not immediately drop but decay off in the middle there? Yeah. So so what actually happens in the middle here is... So
+- [0:34:25] {when}
+- [0:34:28] you draw the Fermi level, if you draw a single Fermi level, that sort of implies
+- [0:34:33] that
+- [0:34:34] all the carriers that are described by that Fermi level are kind of in equilibrium
+- [0:34:40] with each other. Okay? Now,
+- [0:34:44] if you're way off on the n side or way off on the p side, then, you know, over here, you have basically just the electrons. They're all in (equilibrium?) with each other, so you can have a well defined Fermi... Single Fermi level here, and that will also describe the concentration of holes down here. Same thing on the p side if you're far away from the junction. When you're at the junction, you have these carriers that are moving back and forth. Right? So you have some electrons from over here that are are crossing the junction. They're over here. And then you have some,
+- [0:35:15] holes
+- [0:35:16] that are crossing the junction over here. And then,
+- [0:35:20] you know, as you have... As as you get to
+- [0:35:24] the...
+- [0:35:25] Say, for the electrons, as you get to the p side, then
+- [0:35:30] you still have some extra electrons.
+- [0:35:33] And then as they recombine,
+- [0:35:35] you'll sort of... They'll... That concentration will kind of revert back to what it would be in equilibrium for the p side. So what it actually looks like is if you're
+- [0:35:45] within the junction or close to the junction, then
+- [0:35:49] the,
+- [0:35:50] you have... The the electrons and the holes are not quite in equilibrium with each other. Right? The electrons are in equilibrium kind of with themselves. The holes are in equilibrium with themselves, but the electrons are not in equilibrium with the holes. They're still in the process of recombining to reach that equilibrium.
+- [0:36:07] So what actually happens is that you have...
+- [0:36:12] Let me run it in a different color here. You have,
+- [0:36:19] you know, a Fermi level for the electrons that
+- [0:36:23] kinda goes like this,
+- [0:36:25] and then a Fermi level for the holes
+- [0:36:29] that kind of goes like this. Okay. So,
+- [0:36:33] you're not quite in an equilibrium situation between the electrons and the holes if you are within or close to the junction, and so you can't use a single Fermi level to describe them. Alright? (And?) so you have a Fermi level for the electrons and a Fermi level for the holes.
+- [0:36:53] In this region over here, they're different from each other, but eventually (they?) become the same. Okay. Okay.
+- [0:36:59] Any other questions? Yes. Oh, yes. Right. Yeah. So since, I mean, electrons are,
+- [0:37:05] like... Even though they have the average energy, there there are variation. Yeah. (So?) that's why you (have?) zero.
+- [0:37:13] There's nonzero probability that you find it above that
+- [0:37:17] energy,
+- [0:37:19] probability. Right? Yes. So
+- [0:37:23] when it's (your?) volts,
+- [0:37:25] there are still... (And?) (how's?) that diffusing over to the high side? (The?) (why?) isn't current just spontaneously
+- [0:37:32] Ah, okay. So that's a good question. So so there are some electrons up here. Right?
+- [0:37:39] You know, the the probability of finding them is much lower. Right? But there are some up here.
+- [0:37:44] But then remember, there are also some
+- [0:37:48] up here.
+- [0:37:50] Okay? And since the Fermi level
+- [0:37:53] is the same,
+- [0:37:55] right, on both the p side and the n side,
+- [0:37:58] you have (the?) concentration of electrons on the p side up at this energy is the same as the concentration of
+- [0:38:07] electrons that you have on the n side at this energy.
+- [0:38:11] So then
+- [0:38:13] this
+- [0:38:15] will cancel out with that.
+- [0:38:19] Okay. You'll you'll have carriers moving from both sides, and they'll cancel each other out. Now down here,
+- [0:38:27] right, you have some electrons up here.
+- [0:38:32] You also have some electrons up here, but there are fewer because
+- [0:38:37] over here, you're only
+- [0:38:40] eVbi minus eV above
+- [0:38:43] the the (conduction?) band edge.
+- [0:38:47] Alright? Over,
+- [0:38:49] over here,
+- [0:38:51] right, basically, you're much farther from the Fermi level. So you have a lot fewer of these electrons up here, than you have over here.
+- [0:39:00] And so the net motion will be...
+- [0:39:03] Right? The electrons moving from the right to the left will... In terms of their contribution to the current, they will outweigh
+- [0:39:11] these electrons here moving to the right because there are so many more of these.
+- [0:39:17] Okay. So that's the more complete picture of what's happening here. Does that answer your question?
+- [0:39:25] Well, I'm gonna have to look back. I think... Yeah. Okay. Yeah. It it happens that way because the Fermi levels are no longer the same on the two sides. That's that's sort of required in order to have net current flow. If the Fermi levels are the same, the current flow would be zero.
+- [0:39:43] Okay.
+- [0:39:45] So
+- [0:39:46] so what we've seen from all this
+
+## page 16  f_0126.jpg  on screen [0:39:47 – 0:40:04]
+<sub>sharpness 1797, ink 2.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0125.jpg (0:40:03)</sub>
+
+- [0:39:46] so what we've seen from all this
+- [0:39:48] is that
+- [0:39:50] {for}
+- [0:39:52] positive voltage,
+- [0:39:54] the current increases exponentially
+- [0:39:57] with the voltage,
+- [0:39:58] and it flows from the p side to the n side in the diode.
+- [0:40:03] Right? But then what happens
+
+## page 17  f_0132.jpg  on screen [0:40:04 – 0:43:49]
+<sub>sharpness 1465, ink 2.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0127.jpg (0:40:38), f_0130.jpg (0:43:48)</sub>
+
+- [0:40:03] Right? But then what happens
+- [0:40:06] if we have
+- [0:40:08] (the?) voltage
+- [0:40:10] less than zero?
+- [0:40:14] Alright. If we just try to generalize
+- [0:40:17] this,
+- [0:40:19] then
+- [0:40:20] it would tell us that, okay, we have...
+- [0:40:25] You know, if we just try to generalize that expression, it would tell us that,
+- [0:40:29] okay, the current (still?) flowing in the same direction, but it becomes exponentially smaller. But that's not quite correct.
+- [0:40:38] Okay. Because if we...
+- [0:40:41] Let's now draw
+- [0:40:42] a picture that corresponds to what happens if we have a negative voltage. Right? So for a negative voltage, right, that's negative voltage applied to the p side, that is raising the potential energy for the electrons on the p side. Okay. So the band edge energy diagram is gonna look...
+- [0:41:03] Oops.
+- [0:41:16] Look like this. Right? This is the conduction band edge energy, the valence band edge energy as usual. Right?
+- [0:41:21] We have our
+- [0:41:26] electrons and holes. And based on what we have said so far, right now,
+- [0:41:32] right, this barrier is much higher. So we should reduce
+- [0:41:36] {(exponentially?)}
+- [0:41:38] the concentration of carriers that have high enough energy, say, and electrons that have high enough enough energy to move over from the n side to the p side.
+- [0:41:48] And that does happen.
+- [0:41:50] But remember
+- [0:41:52] that,
+- [0:41:54] right, we also have some electrons here
+- [0:41:57] and some holes over here.
+- [0:41:59] Okay?
+- [0:42:01] Now
+- [0:42:02] there are a lot more electrons over here than electrons at the same energy over here. Okay?
+- [0:42:09] So,
+- [0:42:10] you will have
+- [0:42:12] net current flowing
+- [0:42:15] in this direction from the electrons
+- [0:42:18] and in this direction,
+- [0:42:22] for the holes. Right?
+- [0:42:25] And so
+- [0:42:27] you will get
+- [0:42:29] current flowing the opposite direction
+- [0:42:32] from these electrons over on the p side and these holes over here on the n side. Okay? But then
+- [0:42:41] as you
+- [0:42:42] make the voltage more negative, that doesn't really change the concentrations of these electrons or these holes. So
+- [0:42:50] these contributions to the currents are roughly constant.
+- [0:42:55] Okay? They just depend on, you know, how many electrons we have over here and how many holes we have over here. Those don't really change with the voltage. Okay?
+- [0:43:04] And so what happens then is that the current
+- [0:43:10] (now?) at negative voltage, it's in
+- [0:43:13] the opposite direction.
+- [0:43:21] And then, also, the current is
+- [0:43:26] roughly independent
+- [0:43:31] of the voltage,
+- [0:43:33] right, when the voltage is less than zero. Right? You'll have kind of an exponential decrease in,
+- [0:43:39] the current flowing to the right (be...?) As you make the barrier higher, but, the biggest effect will be from these carriers here.
+- [0:43:47] And so if you put all this together,
+
+## page 18  f_0172.jpg  on screen [0:43:49 – 0:51:07]
+<sub>sharpness 2620, ink 3.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0133.jpg (0:44:16), f_0141.jpg (0:45:27), f_0152.jpg (0:48:32), f_0155.jpg (0:48:41), f_0161.jpg (0:51:00), f_0165.jpg (0:51:03), f_0169.jpg (0:51:05)</sub>
+
+- [0:43:47] And so if you put all this together,
+- [0:43:50] then what happens
+- [0:43:54] is that the overall
+- [0:43:57] current voltage characteristic,
+- [0:44:02] right, for
+- [0:44:05] a PN junction diode.
+- [0:44:13] Alright. It looks like the following.
+- [0:44:19] Alright. Replying the current as a function of voltage,
+- [0:44:23] and that current
+- [0:44:26] will be... It'll be some constant. We'll call it I naught
+- [0:44:30] times
+- [0:44:32] e to the eV
+- [0:44:34] over k b t. Alright? So this is what is going to give us the exponentially increasing current
+- [0:44:42] as a function of voltage
+- [0:44:46] in... For positive voltages.
+- [0:44:48] And then there will be a minus one
+- [0:44:51] over here.
+- [0:44:52] Right? So that when we have negative voltages,
+- [0:44:56] right, we get a gradually
+- [0:44:58] decreasing... (Exponentially?) decreasing contribution
+- [0:45:01] from this, right,
+- [0:45:04] that exponentially decreasing contribution
+- [0:45:07] corresponds to,
+- [0:45:09] you know, the carriers that we have way up at this high energy over here. And then this minus one comes from
+- [0:45:17] these electrons and these holes,
+- [0:45:19] moving across the junction as shown over here. Right? And it's negative because that current is in the opposite direction.
+- [0:45:27] So this is the overall,
+- [0:45:29] expression that we get for the current in a diode.
+- [0:45:35] And
+- [0:45:36] so if we plot that out, I'll do it in blue here.
+- [0:45:40] Alright. For positive voltage,
+- [0:45:42] it's gonna be increasing
+- [0:45:44] exponentially.
+- [0:45:46] And then for negative voltage,
+- [0:45:49] it's going to kind of exponentially approach some
+- [0:45:53] small value
+- [0:45:55] like this. And then if you go to very negative voltages,
+- [0:45:59] then there are other things that can happen that can cause it to...
+- [0:46:03] That will eventually cause it to do... To
+- [0:46:06] sharply increase.
+- [0:46:08] Okay? But we won't talk about that in detail here.
+- [0:46:12] Okay. So any questions
+- [0:46:14] on this?
+- [0:46:16] Yes. What is the term, for minus... Well, it'd be minus I naught.
+- [0:46:21] Why is that,
+- [0:46:24] I guess, superimposed throughout the entire IV curve? What if the (EC?) (in?) the end... The the Mhmm. Conduction band energy at the n junction is greater than the con... Than the conduction band at the p junction.
+- [0:46:40] Wouldn't those
+- [0:46:41] not want to diffuse? I mean, that I naught term would sort of fall out. Oh,
+- [0:46:46] Yeah. So so the reason that we always have that minus one term there is that...
+- [0:46:57] Okay. There it is. This
+- [0:47:00] contribution
+- [0:47:01] is... Right. Let's just think about the electrons, for a second, and the holes will behave in an analogous way. This contribution here is due to sort of the high energy electrons from the n side moving from the n side to the p side, and that changes
+- [0:47:18] exponentially with the voltage because you're changing the height of that barrier.
+- [0:47:22] This minus one
+- [0:47:26] comes from
+- [0:47:29] the electrons
+- [0:47:31] that you have,
+- [0:47:33] you know, just in equilibrium on the p side. Right, this concentration of electrons
+- [0:47:39] doesn't change
+- [0:47:41] with,
+- [0:47:42] the applied
+- [0:47:43] voltage.
+- [0:47:45] And so,
+- [0:47:47] right, it's going to be constant.
+- [0:47:50] Now I I guess what you were asking if I understood correctly is that, well, if you were applying positive voltage,
+- [0:47:58] then eventually, maybe this would be even lower than that. So so that can happen.
+- [0:48:05] If you apply a large enough voltage, that can happen. But...
+- [0:48:09] And and
+- [0:48:10] this
+- [0:48:13] will not be quite correct when you get to that point. But, usually,
+- [0:48:18] by the time you get to that point, you have a very high current flowing, and then there will be other factors that end up limiting
+- [0:48:26] the current. Okay. Okay. Okay. Yes. So
+- [0:48:32] I think
+- [0:48:33] maybe I learned this (from,?) but I was always told that diodes are kinda like a one way valve or
+- [0:48:40] currents in a sense. If it's possible to have current flowing in the opposite direction through the diode, do we just... Is it just like... Is the magnitude of that just negligible enough for us to treat it that way, or am I thinking about the whole concept of a diode as well?
+- [0:48:58] So so you (were?) not thinking about the concept of a diode or the functionality of a diode, incorrectly. So so back here,
+- [0:49:06] right, there there is current that's flowing in the opposite direction,
+- [0:49:10] but,
+- [0:49:12] it is generally extremely small. Right? So,
+- [0:49:16] many orders of magnitude, like (five?) or 10 orders of magnitude or more, smaller than the current that you would get once this has... Once the diode has turned on. Okay? So so there is this small negative contribution, but,
+- [0:49:31] you know, for most practical circuit purposes,
+- [0:49:36] that is going to be zero.
+- [0:49:39] Okay? Unless you have a really terrible diode, right, then this can be larger, and you have to worry about it a lot. And that's before you reach this kind of behavior, which is called breakdown
+- [0:49:50] of the diode.
+- [0:49:52] And so,
+- [0:49:54] you know, I've kind of... Right. Exponential
+- [0:49:57] increase is something that it looks like zero for a long time, and then all of a sudden it goes...
+- [0:50:03] Alright. It's very high. So, you know, if you were looking at this,
+- [0:50:11] right, sort of zoom (down?) some, right, then
+- [0:50:16] it would look...
+- [0:50:18] Right. This (be?) zero. It would still look like zero, and then all of a sudden,
+- [0:50:24] it'll turn up very rapidly.
+- [0:50:26] Right? (And?) this is probably what you're thinking of.
+- [0:50:30] Okay. Yeah. Did you have a question, Nate? (I...?) The exponential fairness
+- [0:50:35] scaled by, like,
+- [0:50:37] I naught. Like, I guess I'm just I'm just thinking, like, why would... Because, you know, I naught is, like, this really, really low current number. Why are we scaling more exponential like that?
+- [0:50:49] So you will derive that in problem set six.
+- [0:50:55] You know? But
+- [0:50:57] the the short... The, you know, the...
+- [0:51:00] Just briefly, the reason
+- [0:51:02] is that,
+- [0:51:05] you know, what...
+- [0:51:07] So this exponential
+
+## page 19  f_0183.jpg  on screen [0:51:07 – 0:53:36]
+<sub>sharpness 1356, ink 1.8 %, colour 0.6</sub>
+<sub>earlier states of this page: f_0179.jpg (0:53:28), f_0182.jpg (0:53:34)</sub>
+
+- [0:51:07] So this exponential
+- [0:51:10] comes from the nature of the Fermi distribution function and how the probability of finding,
+- [0:51:15] carriers at a given energy changes with with energy and and corresponding with the voltage. This
+- [0:51:22] prefactor over here, it comes from,
+- [0:51:28] you know, what is the probability of finding...
+- [0:51:31] This (was?) not correct. This should be up here.
+- [0:51:35] It comes from the probability
+- [0:51:37] of,
+- [0:51:41] you know, what is the concentration of electrons that you have over here and holes that you have, over here? That ends up also influencing
+- [0:51:50] how many electrons you have up here and how many holes you have down here,
+- [0:51:54] through
+- [0:51:55] essentially what works out to be the same, prefactor.
+- [0:51:59] Okay? So,
+- [0:52:02] you know, so it really comes about because
+- [0:52:05] the concentration of electrons here and of holes,
+- [0:52:08] down here,
+- [0:52:10] those are related to each other. Right?
+- [0:52:14] Because,
+- [0:52:16] essentially, the product
+- [0:52:18] of the electron concentration and the hole concentration,
+- [0:52:21] say, the n side has to be... Is is gonna be constant, and it'll be the same as it is on the p side, concentration of the of the holes and the electrons.
+- [0:52:30] And because that is constant,
+- [0:52:34] then
+- [0:52:35] I...
+- [0:52:36] This prefactor effectively ends up being the same. Okay? Because
+- [0:52:42] right, if the concentration of holes that you had down here were not related to the concentration of electrons and not related to, in the same way, to the concentration of electrons here or the concentration of holes over here, then this would no longer be true. And so if you had different semiconductor materials, right, we're (essentially?)
+- [0:53:03] assuming here these are the same semiconductor materials, say silicon. Right?
+- [0:53:08] If they were different, then you would no longer have that relationship, and, this prefactor would not necessarily be the same.
+- [0:53:18] Okay.
+- [0:53:19] Any other questions?
+- [0:53:22] Does that sorta make sense?
+- [0:53:24] Yeah. Yeah. I guess. Okay. Yeah. Yeah. And you'll see more of that in problem set six.
+- [0:53:31] Okay.
+- [0:53:33] So then the last thing that I'll say is that,
+
+## page 20  f_0186.jpg  on screen [0:53:36 – 0:57:00]
+<sub>sharpness 1697, ink 2.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0184.jpg (0:55:12), f_0185.jpg (0:57:00)</sub>
+
+- [0:53:37] you know, we've been talking about PN junction diodes,
+- [0:53:42] specifically in the context of electric circuits, what the current is as a function of voltage and so forth. But it turns out that
+- [0:53:51] p n junction diodes,
+- [0:53:53] you know, arguably or perhaps inarguably, their most important applications
+- [0:53:58] are not so much for
+- [0:54:01] diodes
+- [0:54:02] that go into a circuit for their electrical functionality.
+- [0:54:07] It is at least as important
+- [0:54:10] technologically
+- [0:54:11] (that?) we have (p?) n junction diodes for their light emitting and light absorption characteristics.
+- [0:54:18] Right? So, for example,
+- [0:54:21] if you look at an LED, right, a light emitting diode,
+- [0:54:32] right, that is basically a p n junction.
+- [0:54:36] And,
+- [0:54:38] you know, through its influence on lighting, it has really changed the world. And what is happening in a PN junction diode is basically when it's operating,
+- [0:54:48] it is a forward biased
+- [0:54:51] PN junction.
+- [0:54:52] Oops.
+- [0:54:58] Okay.
+- [0:54:59] But then,
+- [0:55:01] you know, as you have the electrons moving across the junction and the holes moving across the junction, right, then,
+- [0:55:11] you know, you have some,
+- [0:55:13] holes
+- [0:55:14] and some electrons, right, they're moving across the junction, alright,
+- [0:55:19] then one of the things that can happen is that as they're moving across the junction, you have a pretty high concentration of
+- [0:55:27] electrons here and a pretty high concentration of holes here.
+- [0:55:31] The electron,
+- [0:55:34] alright, it can recombine with the hole,
+- [0:55:38] so it loses energy
+- [0:55:41] and drops down into this empty state.
+- [0:55:44] And in doing so, right, that energy has to go somewhere.
+- [0:55:48] And,
+- [0:55:50] in an LED,
+- [0:55:52] it's designed and optimized so that that energy is given off as a photon. And that's basically what happens in an LED. Alright? So the electrons and the holes,
+- [0:56:06] alright, they recombine.
+- [0:56:10] {Alright?}
+- [0:56:11] And
+- [0:56:13] the energy
+- [0:56:17] lost by the electron
+- [0:56:22] is emitted.
+- [0:56:27] As light. Right? That's basically what's happening in,
+- [0:56:31] like, an LED light bulb or (an?) LED indicator light. Yes. What what does that symbol am I speaking? Oh, sorry. This is h... This is the Greek letter nu,
+- [0:56:40] and this is the standard,
+- [0:56:43] symbology that is used to indicate the energy of a photon. Right? Planck's constant times, this is the frequency of the electron.
+- [0:56:51] Oh, sorry, of the photon.
+- [0:56:54] Okay. So so that is what is done in an l... Or what happens in an LED,
+- [0:57:00] you know, which really has changed the world.
+
+## page 21  f_0205.jpg  on screen [0:57:00 – 1:08:24]
+<sub>sharpness 1453, ink 2.0 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0187.jpg (0:57:36), f_0199.jpg (1:06:06), f_0201.jpg (1:06:07)</sub>
+
+- [0:57:00] you know, which really has changed the world.
+- [0:57:03] And,
+- [0:57:04] you know, kind of the inverse of that
+- [0:57:08] is a solar cell. Right? The idea there is that, again,
+- [0:57:15] it's basically a PN junction
+- [0:57:18] under forward bias.
+- [0:57:27] Okay.
+- [0:57:28] But now what's happening is
+- [0:57:31] that...
+- [0:57:33] Well, we have
+- [0:57:36] positive voltage that's applied here.
+- [0:57:39] Now what's happening is that
+- [0:57:42] you have light
+- [0:57:45] coming in. Alright?
+- [0:57:50] I'll draw it like this,
+- [0:57:52] And
+- [0:57:54] that
+- [0:57:55] photon
+- [0:57:56] can be absorbed
+- [0:57:58] by an electron in the valence band.
+- [0:58:03] And
+- [0:58:05] if that photon has sufficient energy, that electron can move up to the conduction band,
+- [0:58:11] and then
+- [0:58:13] the electron in the hole will move like that. So that corresponds to
+- [0:58:19] current
+- [0:58:21] flowing in,
+- [0:58:23] this direction, so from lower voltage to higher voltage.
+- [0:58:28] Okay?
+- [0:58:29] And so what is happening in a solar cell is that through this kind of process,
+- [0:58:36] the energy of the photon through this absorption process
+- [0:58:41] then gets turned into electrical energy because it causes current to flow from lower voltage to higher voltage. Right? And that corresponds to
+- [0:58:51] energy being supplied, and that energy is coming from the energy of the photon. That is essentially,
+- [0:58:58] what is happening in a solar cell, which, you know, is also changing, the world. So these are,
+- [0:59:07] you know, sort of additional functionalities that you can get from
+- [0:59:13] a (PN?) junction diode that have turned out to be, you know, over the last decade or two, extremely,
+- [0:59:18] important.
+- [0:59:20] Yes. Question. So these are basically this, like, the same process in reverse with these two devices.
+- [0:59:27] Mhmm. What's, like, (a?) mechanical difference that's making them
+- [0:59:32] not, like, do the same thing simultaneously,
+- [0:59:34] I guess?
+- [0:59:35] Oh, so so,
+- [0:59:38] actually,
+- [0:59:42] in an LED,
+- [0:59:43] this process is also occurring.
+- [0:59:45] And in a solar cell,
+- [0:59:48] this process is also occurring,
+- [0:59:50] but the devices are designed and optimized so that in an LED, you're kind of dominated by this process. And in the solar cell, you're dominated by this process.
+- [1:00:02] Yes. (And?) there's probably a question that's gonna take... (If?) you got any longer than (that?) to answer, but I guess just, like, kind of a general idea, like, why are LEDs so good and solar cells so bad? (It?) seems like same process, but kind of like, you know, the reverse. Mhmm. But (like,?) (so?) solar cells are super inefficient, whereas LEDs are... I mean, I know that they're, you know, fairly efficient, but maybe is it just, you know... I guess, yeah, why why (does?) that happen? Yeah. So so there are very long answers to that Yeah. Yeah. Yeah. To that question. In an LED,
+- [1:00:39] right, they are very efficient
+- [1:00:42] compared to, say, an incandescent light bulb,
+- [1:00:46] or to a... Even to a fluorescent light bulb.
+- [1:00:49] You know, they're certainly not a 100% efficient, but they are very efficient.
+- [1:00:54] And,
+- [1:00:55] you know, so part of that is that,
+- [1:00:59] you know, when you forward bias
+- [1:01:02] the,
+- [1:01:04] the PN junction that constitutes an LED,
+- [1:01:08] then,
+- [1:01:10] you know, these these carriers,
+- [1:01:12] they... As they're moving across the junction, they... Most of their energy
+- [1:01:18] can get
+- [1:01:21] (turned?) into light because they're gonna be... They will end up... When they recombine, they're usually pretty close to the band edge. Alright?
+- [1:01:28] And so
+- [1:01:29] there's
+- [1:01:31] not that much loss that,
+- [1:01:34] that can occur through,
+- [1:01:36] you know, losing this extra energy here or this extra energy here. There's loss that can incur through,
+- [1:01:43] you know, other things and such, but,
+- [1:01:47] you know, those are pretty well understood, and they're not as severe as
+- [1:01:51] sort of the non (idealities?) that happen in a solar cell. In a solar cell,
+- [1:01:57] you know, it's it's very hard to make,
+- [1:02:00] the solar cell
+- [1:02:03] (extremely?) efficient.
+- [1:02:05] So, you know, low 20% range is very good efficiency, right, for a solar cell. So part of the reason is that,
+- [1:02:13] sunlight
+- [1:02:15] is very broad spectrum.
+- [1:02:17] Okay? So it has a lot of different photon energies contained with it... Within it, and all those different energy photons
+- [1:02:25] count towards the amount of incident power.
+- [1:02:29] Okay?
+- [1:02:30] Now any photon that has an energy less than the band gap just cannot be absorbed.
+- [1:02:37] Right? Because
+- [1:02:39] {the}
+- [1:02:41] electron down here, right, if it if it gets... (Gets?) absorbed... If it absorbs a photon,
+- [1:02:47] but the photon is too low energy, there will be no state here for it to go into. So the minimum photon energy that can be absorbed is roughly the band gap.
+- [1:02:57] Okay?
+- [1:02:58] Now
+- [1:03:00] if you have a photon that has an energy greater than the bandgap,
+- [1:03:06] right, then that photon,
+- [1:03:08] it counts more towards the amount of incident power.
+- [1:03:11] But what happens is that,
+- [1:03:16] right, you might initially get
+- [1:03:18] a high energy hole and a high energy electron,
+- [1:03:22] but then
+- [1:03:23] very quickly,
+- [1:03:26] those will relax back down to the band edge energy, and then that extra energy is lost as heat. Okay? Because this
+- [1:03:35] process of losing energy is very fast, so it'll happen, you know, almost instantly.
+- [1:03:40] So you lose that extra energy above the band gap. You lose just about all of it Yeah. Through processes like this.
+- [1:03:50] You know, you...
+- [1:03:51] If if you illuminated it only with energy right at the band gap, it would be actually very much more efficient. If you had an LED going into a solar cell somehow, you know, like, it would be a lot better. Yeah. It wouldn't be a 100% efficiency, but it would be a lot better. Yes. Right.
+- [1:04:08] And so,
+- [1:04:09] you know, these
+- [1:04:11] loss mechanisms, not absorbing the low energy photons and then losing the extra energy of the high energy photons,
+- [1:04:17] they dramatically decrease the efficiency
+- [1:04:20] of,
+- [1:04:22] of a solar cell. And then,
+- [1:04:25] you know, you get energy out (the...?) Right? Power. The power you're getting out is the current times the voltage. Right? But the voltage
+- [1:04:35] is going to be less than... The the forward bias voltage of which the solar cell operates is gonna be less than the bandgap.
+- [1:04:42] Okay? Because the built in potential is gonna be less than the bandgap.
+- [1:04:47] And, right, if you look at... Whoops.
+- [1:04:54] Right? What's the current voltage characteristic of
+- [1:04:59] a solar cell when it's illuminated looks like is something like this.
+- [1:05:02] And you wanna operate
+- [1:05:05] at a point where the product of the current and the voltage in the fourth quadrant is the maximum. So it'll be something like this.
+- [1:05:14] So you don't get the full
+- [1:05:16] voltage
+- [1:05:17] (person,?) and you don't get the full current. Right? You kinda get...
+- [1:05:21] You know, what you get is this.
+- [1:05:24] And, you know, (the?) fact that the the current is a little bit lower and the voltage is a little bit lower also cuts down the efficiency. Okay. So all these things then combine
+- [1:05:34] to make, you know, say, a silicon solar cell that has,
+- [1:05:38] you know, low 20%,
+- [1:05:40] range of efficiency is actually really good.
+- [1:05:44] Okay.
+- [1:05:45] And,
+- [1:05:46] you know, there's,
+- [1:05:48] a huge amount of technological work that goes into... You know, if you can make a solar cell one percentage point better, right, that's actually quite valuable.
+- [1:05:58] You know? And
+- [1:06:00] people would, like, kill their mother to get five percentage So,
+- [1:06:08] yeah, so a lot of these kinds of things really are what technologists who work in these areas try to figure out. You know? If if you could make a solar cell that's 5% more efficient, that has a huge impact.
+- [1:06:20] Right?
+- [1:06:22] And these are the kinds of things that, people who work (in?) these types of technologies,
+- [1:06:27] you know, really think about and try to improve.
+- [1:06:30] Yes? Wait. So (for?) instance, (the?) same diode, if sunlight's not hitting the solar cell,
+- [1:06:37] then there would be
+- [1:06:39] only the baseline reverse current. So (would?) it turn into, like, a light emitting diode if the voltage is kept at the same rate, but there's no sunlight?
+- [1:06:49] So, yeah, so if you... So in the absence of sunlight,
+- [1:06:53] then the current voltage characteristic would look... It (just...?) You shifted
+- [1:06:59] Yeah. Upwards. So it'd be like this.
+- [1:07:02] And if you were operating at some point out here,
+- [1:07:06] then
+- [1:07:08] {(it?)}
+- [1:07:10] would behave like a terrible LED.
+- [1:07:16] {(Like,?) turn (off?)}
+- [1:07:18] at night or So
+- [1:07:22] what'll happen is that it'll try to operate at,
+- [1:07:28] you know (you?) know, it... It'll... It's the same idea as here,
+- [1:07:31] right, except that you'll have a tiny box
+- [1:07:34] in here.
+- [1:07:36] Right? Because the current will be...
+- [1:07:39] You know, if if it's
+- [1:07:41] really in absolute darkness, there'll be no,
+- [1:07:45] what's called photocurrent, and it'll just be... It'll be operating at the origin. Alright?
+- [1:07:51] If it's at night, you actually get a little bit of light from,
+- [1:07:56] you know, the moon,
+- [1:07:57] stars, the, you know, reflection off the clouds of,
+- [1:08:01] you know, light from cities and things like that, but it's a very small amount.
+- [1:08:07] Right? So you'll you'll have a tiny box.
+- [1:08:11] Any other questions?
+- [1:08:14] Okay. So
+- [1:08:16] that is everything on semiconductors.
+- [1:08:20] Now we are going to come back in,
+- [1:08:24] the last few minutes today
+
+## page 22  f_0214.jpg  on screen [1:08:24 – 1:12:34]
+<sub>sharpness 2486, ink 3.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0206.jpg (1:09:36), f_0209.jpg (1:10:12), f_0210.jpg (1:11:26)</sub>
+
+- [1:08:24] the last few minutes today
+- [1:08:26] to
+- [1:08:27] circuits.
+- [1:08:28] And what we want to do now is, what we had done earlier was we talked about how to think about and analyze and design circuits,
+- [1:08:38] with sinusoidal signals that are at a fixed frequency, single frequency.
+- [1:08:44] What we now wanna do is to kind of generalize that idea to try to understand what's called
+- [1:08:52] circuit
+- [1:08:56] frequency response.
+- [1:08:59] That is if we look at a circuit and
+- [1:09:03] I, say, understand what it's doing at one frequency, then at another frequency, a whole bunch of different frequencies,
+- [1:09:09] then
+- [1:09:10] what does the behavior of that circuit look like as a function
+- [1:09:14] of frequency?
+- [1:09:16] And
+- [1:09:18] so we will develop a graphical tool. In addition to looking at it algebraically, we'll develop a graphical tool,
+- [1:09:26] to understand and communicate this. This is known as Bode plots.
+- [1:09:32] And then
+- [1:09:34] circuits that are designed to have a particular frequency response are often referred to as
+- [1:09:41] filter circuits
+- [1:09:43] because, you know, usually, what they're doing is they're giving a large response over some range of frequencies and a small response over some other range of frequencies, and that's, you know, kind of what a filter does in some broad sense.
+- [1:09:58] So the reading for this is in
+- [1:10:03] {Ulaby Dahl,}
+- [1:10:06] and it's in chapter nine.
+- [1:10:08] Okay.
+- [1:10:10] So the general idea
+- [1:10:12] is that,
+- [1:10:14] you know, what we refer to as a filter is a circuit that has some particular designed or engineered
+- [1:10:20] response as a function of frequency. Right? So
+- [1:10:26] filters generally
+- [1:10:30] leaders... These are circuits that produce
+- [1:10:37] output signals
+- [1:10:40] that have
+- [1:10:43] various
+- [1:10:46] specific
+- [1:10:48] and typically,
+- [1:10:51] useful, frequency dependence.
+- [1:10:58] Alright. So you can think of it as a circuit that has, say, two input terminals and two output terminals.
+- [1:11:05] Your input signal is at the input terminals. Your output signal is at the output terminals.
+- [1:11:10] And,
+- [1:11:11] you wanna have various types of relationships between, say, the voltage at the input and the voltage at the output. Okay? (And?) then,
+- [1:11:21] the dependence of those relationships on frequency is what we refer to as the, the response of the filter.
+- [1:11:29] Okay. So so what are useful frequency dependencies to have in various types of filter circuits?
+- [1:11:38] We can have
+- [1:11:40] what's called
+- [1:11:41] a highpass filter.
+- [1:11:44] Okay?
+- [1:11:45] And what we mean by this is that if we look at the output compared to the input,
+- [1:11:51] in a highpass filter,
+- [1:11:53] the high (frequency?) signals are trans... Basically, they're transmitted from the input to the output,
+- [1:11:59] quite easily, without much attenuation,
+- [1:12:02] and low frequency signals are strongly attenuated. Right? Sort of, you know, what you would expect. So in this case, what happens is that,
+- [1:12:14] high frequency signals
+- [1:12:17] are transmitted.
+- [1:12:22] Okay. And low frequency signals
+- [1:12:28] are suppressed.
+- [1:12:33] Okay. Then,
+
+## page 23  f_0223.jpg  on screen [1:12:34 – 1:15:45]
+<sub>sharpness 3664, ink 5.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0216.jpg (1:13:45), f_0220.jpg (1:14:56)</sub>
+
+- [1:12:33] Okay. Then,
+- [1:12:35] another possibility is
+- [1:12:37] that you can have
+- [1:12:41] what's called a lowpass filter. Right? And this, you know, by extension and probably pretty obviously means that,
+- [1:12:51] right, low frequency signals
+- [1:12:55] are transmitted,
+- [1:12:59] and high frequencies
+- [1:13:08] are suppressed,
+- [1:13:10] {then}
+- [1:13:12] you can have
+- [1:13:13] what are called bandpass
+- [1:13:18] filters.
+- [1:13:20] And so this means that
+- [1:13:23] signals within
+- [1:13:26] some specified
+- [1:13:32] frequency range,
+- [1:13:36] okay,
+- [1:13:37] are transmitted.
+- [1:13:45] Okay. And then correspondingly,
+- [1:13:48] you can have kind of the inverse of this,
+- [1:13:52] which is a band reject
+- [1:13:56] filter. And here, the (signals?)
+- [1:14:04] within a specified
+- [1:14:11] frequency range
+- [1:14:14] are suppressed.
+- [1:14:18] Okay.
+- [1:14:19] And then associated with this
+- [1:14:22] is
+- [1:14:25] what we often refer to as a passband,
+- [1:14:29] which is the range
+- [1:14:35] of frequencies,
+- [1:14:37] that
+- [1:14:41] are transmitted or sometimes we say passed
+- [1:14:47] by the circuit.
+- [1:14:52] Okay. So these are, some of the typical types of circuit,
+- [1:14:57] filters that we can have,
+- [1:14:59] and we're going to, starting next time, we're going to
+- [1:15:04] try to describe all of this, and understand it quantitatively.
+- [1:15:09] Right? So, we can do this algebraically.
+- [1:15:15] So the circuit frequency response,
+- [1:15:22] Right? This can be described
+- [1:15:27] algebraically
+- [1:15:33] by what we call a transfer function.
+- [1:15:38] That's what we'll start off with.
+- [1:15:43] Okay. It can also be described

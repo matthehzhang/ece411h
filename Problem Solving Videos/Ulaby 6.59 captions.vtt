@@ -1,0 +1,1046 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:17.000
+Okay, let's go ahead and get started. So this is an example. This is you'll be problem 6.59 and it's a second example of the analysis of a second-order OPAM circuit.
+
+00:00:17.000 --> 00:00:21.000
+Okay, so this example here.
+
+00:00:21.000 --> 00:00:25.000
+Alright, is the analysis.
+
+00:00:25.000 --> 00:00:31.000
+Of a second order.
+
+00:00:31.000 --> 00:00:35.000
+Okay.
+
+00:00:35.000 --> 00:00:50.000
+Okay, so we'll see how we combine, sort of the usual approach for analyzing OP-amp circuits, with the presence of capacitors, in this case, 2 capacitors, which will give us a second order circuit.
+
+00:00:50.000 --> 00:01:00.000
+Okay, so to start off with. As usual, we will, I redraw the circuit. Okay, so what we have here Okay.
+
+00:01:00.000 --> 00:01:04.000
+And app app.
+
+00:01:04.000 --> 00:01:13.000
+Okay, the output is over here. So. We have V out. Alright, that is what we will eventually.
+
+00:01:13.000 --> 00:01:19.000
+Be solving for. And we have.
+
+00:01:19.000 --> 00:01:24.000
+2 resistors here. And then we have.
+
+00:01:24.000 --> 00:01:31.000
+At our opamp inputs. The inverting input is connected to the node between these 2 resistors.
+
+00:01:31.000 --> 00:01:39.000
+Alright, so this is. V sub N. Alright, and then at the non inverting input.
+
+00:01:39.000 --> 00:01:45.000
+We have
+
+00:01:45.000 --> 00:01:48.000
+The capacitor.
+
+00:01:48.000 --> 00:01:57.000
+Connected to ground this way. Okay, and then we have A resistor like this.
+
+00:01:57.000 --> 00:02:04.000
+Okay, and then. We have our input. V in.
+
+00:02:04.000 --> 00:02:13.000
+Connected through another resistor. And then we have a capacitor.
+
+00:02:13.000 --> 00:02:19.000
+Coming up like this. Okay, so this is the whole circuit. And this resistor is R one.
+
+00:02:19.000 --> 00:02:30.000
+This one is R 2. This one is R 3. And this one is R 4.
+
+00:02:30.000 --> 00:02:42.000
+And then this capacitor is C one. And this capacitor is C 2. Okay. This note over here we'll call VP, because that's the non-inverting input of the OPM.
+
+00:02:42.000 --> 00:02:50.000
+And among other quantities we're going to want to think about. The voltage across the capacitor C one.
+
+00:02:50.000 --> 00:03:00.000
+And the voltage across the capacitor. C 2. Okay. And our parameters here are that V in.
+
+00:03:00.000 --> 00:03:12.000
+Of T is equal to A. Times the unit step function, U of T. Alright, so remember U of T is a function that is 0.
+
+00:03:12.000 --> 00:03:16.000
+For T less than 0.
+
+00:03:16.000 --> 00:03:24.000
+And it's one for T greater than or equal to 0. Okay. And then. A is a constant.
+
+00:03:24.000 --> 00:03:31.000
+That we take to be 2 volts. The resistor R one. Has a value of 5 kg.
+
+00:03:31.000 --> 00:03:40.000
+R 2 has a value of 10 kilo ohms. R 3.
+
+00:03:40.000 --> 00:03:49.000
+Okay, has a value of 12 kilo ohms. And then R 4. Has a value of 20 kilos.
+
+00:03:49.000 --> 00:03:58.000
+Okay, C one. Is 100 micro farads. And then C 2. Is 200.
+
+00:03:58.000 --> 00:04:06.000
+Microfarex. Okay. And what we want to do here. Is to solve.
+
+00:04:06.000 --> 00:04:09.000
+For V out.
+
+00:04:09.000 --> 00:04:18.000
+Of T, for T. Greater than or equal to 0. So that is once VN of T.
+
+00:04:18.000 --> 00:04:24.000
+Is turned on. Okay. So this is the problem that we would like to solve.
+
+00:04:24.000 --> 00:04:36.000
+And we will start as usual. By figuring out our initial conditions.
+
+00:04:36.000 --> 00:04:42.000
+Okay, so these are the conditions at C equal to 0. Okay, and so if we look at times that are less than or equal to 0.
+
+00:04:42.000 --> 00:04:48.000
+For T less than 0, then V n is equal to 0. So we don't have any.
+
+00:04:48.000 --> 00:04:59.000
+Input voltage, any input signal. All right. And so in that case, we can take VC one.
+
+00:04:59.000 --> 00:05:07.000
+At 0 minus, right? So this is the voltage across the capacitor C one over here. Alright, we can take that to be equal to 0.
+
+00:05:07.000 --> 00:05:17.000
+Alright. And that means that VC one at T equal to 0. Is equal to 0 as well.
+
+00:05:17.000 --> 00:05:27.000
+Since we know that any voltage across the capacitor always has to be continuous, right? If it were not continuous, then the currents in the capacitor would be undefined.
+
+00:05:27.000 --> 00:05:36.000
+Right, so we know the VC one has to be continuous.
+
+00:05:36.000 --> 00:05:45.000
+Okay, and therefore we know that VC one and T equal to 0 is equal to 0. Similarly, we know that VC 2 at 0 minus is equal to 0, right?
+
+00:05:45.000 --> 00:05:53.000
+Because there's been no input, for a long time.
+
+00:05:53.000 --> 00:06:04.000
+And so that means. Because VC 2 also has to be continuous. The VC 2. At t equal to 0 is equal to 0 as well.
+
+00:06:04.000 --> 00:06:16.000
+Alright, and that's because VC 2 also has to be continuous. Right. Now. Well, we were asked to solve for is V out of T, right?
+
+00:06:16.000 --> 00:06:25.000
+Not VC one or VC 2. Okay, but if we have the initial conditions. For I.
+
+00:06:25.000 --> 00:06:34.000
+VC one and VC 2, we can use that information in particular the initial condition for VC one in order to.
+
+00:06:34.000 --> 00:06:49.000
+I determine what the initial condition is for the app. Alright, and the way that we can do that is we can say that since we know that VC one is equal to at t equal to 0 is equal to 0, then we know that VP.
+
+00:06:49.000 --> 00:06:58.000
+Also is equal to 0. Alright. For an ideal opium which we can assume this to be for this problem then VN.
+
+00:06:58.000 --> 00:07:03.000
+Will be equal to VP. So V and is equal to 0. So the voltage here is 0.
+
+00:07:03.000 --> 00:07:14.000
+V out is related to VN simply by voltage division. And so if V n is equal to 0, V out at t equal to 0 will also be equal to 0.
+
+00:07:14.000 --> 00:07:25.000
+Alright, so our chain of reasoning here. Is that VC one of 0 is equal to 0. Alright, so that means that
+
+00:07:25.000 --> 00:07:33.000
+VP, it's equal to 0, which is equal to V n at t equal to 0 is equal to 0 as well.
+
+00:07:33.000 --> 00:07:38.000
+And then because of that, we know that V out.
+
+00:07:38.000 --> 00:07:45.000
+Of 0 has to be equal to 0. So this is going to be, oops.
+
+00:07:45.000 --> 00:07:55.000
+One of the initial conditions. That we will need in this problem. All right, we will also have to have an initial condition for.
+
+00:07:55.000 --> 00:08:02.000
+Eventually a derivative of a voltage with respect to time, right? Because for a second order circuit, we need 2 initial conditions.
+
+00:08:02.000 --> 00:08:23.000
+We will hold off for now. On determining the initial condition for, DV out, DT, because with all these voltages, that are present in the circuit and the different voltages that we could solve for, it's not completely obvious that V out is going to be the voltage that we solve for initially.
+
+00:08:23.000 --> 00:08:32.000
+It'll be the voltage that we'll need in the end, but we may have some intermediate quantity that we'll be working with instead.
+
+00:08:32.000 --> 00:08:40.000
+In this case, it turns out that we won't need that, but I, it's not obvious that that's the case just looking at the problem right now.
+
+00:08:40.000 --> 00:08:47.000
+Okay, so what we'll do instead is We will formulate.
+
+00:08:47.000 --> 00:08:53.000
+A differential equation that we can solve.
+
+00:08:53.000 --> 00:09:01.000
+That will hold for T greater than or equal to 0. Okay, so to do that.
+
+00:09:01.000 --> 00:09:12.000
+Alright, we can first notice. Alright, that I as I just mentioned, and V out are related to each other by voltage division.
+
+00:09:12.000 --> 00:09:22.000
+Right, V. I. Since we have no current, right? The flows into either of the OP-amp inputs or there's no current that flows along this branch here.
+
+00:09:22.000 --> 00:09:38.000
+So V in is simply equal to R 4 over R 3 plus R 4 times VL. Okay, so by voltage division.
+
+00:09:38.000 --> 00:09:47.000
+We know that V in. Is equal to R 4. Over R 3 plus R 4.
+
+00:09:47.000 --> 00:09:56.000
+Times V out. And that's also equal to VP, right, for because V and is equal to VP for an ideal OP-amp.
+
+00:09:56.000 --> 00:10:03.000
+Okay, so that's one piece of information that we'll want to keep in mind.
+
+00:10:03.000 --> 00:10:16.000
+We can if we look at this circuit again. Then we can also see if we try to figure out you know where there's useful information to be had One spot is going to be.
+
+00:10:16.000 --> 00:10:25.000
+This node over here. Alright, we'll label that. Node V one. Alright, so it has a voltage V one.
+
+00:10:25.000 --> 00:10:31.000
+And what we're going to do is we're going to apply. I KCL at this node.
+
+00:10:31.000 --> 00:10:40.000
+Alright, so, when we do that. Okay, then we're going to take the sum of all the outgoing currents to be equal to 0.
+
+00:10:40.000 --> 00:10:46.000
+So the current going out to the left. Is going to be V one minus V in. Over R one.
+
+00:10:46.000 --> 00:10:52.000
+Then the current going out to the right is going to be V one minus VP over R 2. And then the current coming up.
+
+00:10:52.000 --> 00:11:02.000
+This way through the capacitor C 2 is going to be C 2. Times the derivative with respect to time.
+
+00:11:02.000 --> 00:11:14.000
+Of the voltage across C 2, which is V one minus V out. Okay, and so When we apply KCL.
+
+00:11:14.000 --> 00:11:21.000
+At the node V one. The equation we get is for the current coming out. To the left, it was V one.
+
+00:11:21.000 --> 00:11:34.000
+Minus V n over r one. The current going to the right was V one minus VP. Over R 2 and the current going up and through the capacitor C 2.
+
+00:11:34.000 --> 00:11:49.000
+Is C 2 times the derivative. With respect to time of V one minus . Okay. And those whole after add up to 0 So we'll call this equation star.
+
+00:11:49.000 --> 00:12:03.000
+Alright. And so we can see here that we have, so V in is a known function. And so our unknowns are V one.
+
+00:12:03.000 --> 00:12:16.000
+VP and V out. Alright, so. What else? Do we know about this circuit or can we deduce that the circuit and the currents and the voltages?
+
+00:12:16.000 --> 00:12:26.000
+Well, let's look at this. Note here V one again. Alright, and let's think about, what's something else that we can say about the voltage V one?
+
+00:12:26.000 --> 00:12:32.000
+Well, if we look at the voltage V one, we can see that it has this path here through R 2 and C one.
+
+00:12:32.000 --> 00:12:47.000
+To ground, alright. And R 2 and C one here. Effectively, they are in series with each other for an ideal opium because for an ideal opamp There's no current that flows into the OP-amp inputs.
+
+00:12:47.000 --> 00:12:52.000
+So there's no current along this branch. That means that R 2 and C one are in series.
+
+00:12:52.000 --> 00:13:02.000
+So that the voltage V one. Is going to be equal to. I the voltage. Here, which is VP.
+
+00:13:02.000 --> 00:13:13.000
+Plus the voltage across the resistor. R 2. Alright. The voltage across the resistor R 2 is the current.
+
+00:13:13.000 --> 00:13:22.000
+Flowing through R 2 but the current flowing through R 2 is the same as the current flowing through The capacitor C one.
+
+00:13:22.000 --> 00:13:39.000
+Right, because there's no current that flows into the opium non-inverting input. And the current flowing downward through C one is just C one times the derivative with respect to time of the voltage across C one, which we can take to be V sub P, right?
+
+00:13:39.000 --> 00:13:49.000
+Because we have the ground connection down here. Alright, so. So what that reasoning tells us.
+
+00:13:49.000 --> 00:13:58.000
+Is that V one? Is equal to VP. The voltage across the capacitor C one. Plus R 2.
+
+00:13:58.000 --> 00:14:06.000
+Times the current flowing through R 2. Which is C one times DVP.
+
+00:14:06.000 --> 00:14:15.000
+. Alright so let's call this equation. Double start. Alright.
+
+00:14:15.000 --> 00:14:23.000
+And so what we're going to do, right, so this equation here, double star, relates V one to VP.
+
+00:14:23.000 --> 00:14:38.000
+Okay, so if we replace V one here, here. And here by this expression here. Then the only unknowns are going to be in the resulting equation are going to be VP.
+
+00:14:38.000 --> 00:14:49.000
+And VM. Alright, but then From a here, we can see the VP and VM are related to each other by voltage division.
+
+00:14:49.000 --> 00:14:57.000
+So we can replace VP. By R 4 over R 3 plus R 4 VM. And then this equation here.
+
+00:14:57.000 --> 00:15:02.000
+Will only have one unknown, which will be V out. And that's the quantity that we want to solve for.
+
+00:15:02.000 --> 00:15:10.000
+Okay, so that's going to be. Those are the series of steps that we will go through in order to.
+
+00:15:10.000 --> 00:15:18.000
+Come up with a differential equation. For just via. Okay, so if we go through all of that.
+
+00:15:18.000 --> 00:15:24.000
+In more detail. Alright, the first step here is to substitute.
+
+00:15:24.000 --> 00:15:28.000
+I the equation double star.
+
+00:15:28.000 --> 00:15:38.000
+Into the equation star. Alright, so that we replace V one. With this expression here which is in terms of VP.
+
+00:15:38.000 --> 00:15:47.000
+Alright, and so, if we go ahead and do that. We have one over R one plus one over R 2.
+
+00:15:47.000 --> 00:15:57.000
+Times V one. Alright, so we have One over R one. Plus one over R 2. Times V one, which.
+
+00:15:57.000 --> 00:16:11.000
+Now is going to be VP plus R 2 C one. DVPDT. Alright, then we have minus VP over R 2.
+
+00:16:11.000 --> 00:16:14.000
+Alright, so minus.
+
+00:16:14.000 --> 00:16:26.000
+One over R 2 times VP. Alright, and then. From over here, we have. C 2.
+
+00:16:26.000 --> 00:16:33.000
+Times the derivative with respect to time. Of V one, right, this first term in the parentheses.
+
+00:16:33.000 --> 00:16:43.000
+Which is VP plus. R 2 C one. DVPDT. Alright, and then we have minus.
+
+00:16:43.000 --> 00:16:53.000
+C 2 times DV out DT. So minus C 2. Times DV out. .
+
+00:16:53.000 --> 00:17:01.000
+Alright And then the only other term is this one over here. Minus V in over R one. We move that to the right hand side.
+
+00:17:01.000 --> 00:17:08.000
+And that's equal to, V in. Over R one plus VN over R one on the right hand side.
+
+00:17:08.000 --> 00:17:20.000
+Okay. Now, what we want to do is to take all of this and a sort of group.
+
+00:17:20.000 --> 00:17:29.000
+The terms together according to the power of the derivative. Alright, and so if we look at these different terms here, we can see that we have one term.
+
+00:17:29.000 --> 00:17:34.000
+That has a second derivative, a VP with respect to time. Is this term over here? Okay.
+
+00:17:34.000 --> 00:17:45.000
+And so that is going to be. . 2 times C one times C 2. D squared VP.
+
+00:17:45.000 --> 00:17:54.000
+DT squared. Okay, so that takes care of This term here. Then we have.
+
+00:17:54.000 --> 00:18:03.000
+This term over here that's proportional to DVPDT. So we have one over R one plus one over R 2 times R 2 C one DVPDT.
+
+00:18:03.000 --> 00:18:12.000
+When we multiply R 2 . One over R one plus one over R 2, we get one Plus R 2 over R one.
+
+00:18:12.000 --> 00:18:21.000
+Alright, so we have plus one. Plus R 2 over R one. Times C one.
+
+00:18:21.000 --> 00:18:32.000
+Times the VPDT. Alright, that's this term over here. Alright, then we have this term over here, which is just C 2 times DVPDT.
+
+00:18:32.000 --> 00:18:36.000
+So plus C 2.
+
+00:18:36.000 --> 00:18:45.000
+. That takes care of this term over here Then we have minus C 2 times DV out DT.
+
+00:18:45.000 --> 00:18:55.000
+So minus C 2 times. DV out, DT. Okay, so that's this term over here.
+
+00:18:55.000 --> 00:19:04.000
+And then we have. One over R one plus one over R 2 times VP. Minus one over R 2 times VP.
+
+00:19:04.000 --> 00:19:15.000
+So that just leaves us with plus. One over R one times. . That takes care of this term and this term.
+
+00:19:15.000 --> 00:19:24.000
+Alright. So that's everything on the left hand side and then we have V in. Over our one on the right hand side.
+
+00:19:24.000 --> 00:19:34.000
+Okay, now, what we want to do is to, recall as we noted up here.
+
+00:19:34.000 --> 00:19:43.000
+Alright, the VP is equal to R 4 over R 3 plus R 4 times V out. And then substitute that expression in.
+
+00:19:43.000 --> 00:19:55.000
+For VP over here. Alright, so we have the VP. Is equal to R 4. Over R 3 plus R 4.
+
+00:19:55.000 --> 00:20:00.000
+. Okay, and we're gonna take
+
+00:20:00.000 --> 00:20:08.000
+This expression here and substitute it in here for VP, then our only unknown. Is going to be via.
+
+00:20:08.000 --> 00:20:14.000
+Alright, and that'll give us, ultimately our equation that we have to solve for VM.
+
+00:20:14.000 --> 00:20:23.000
+Okay, so. If we make that substitution. Then from this first term over here we have
+
+00:20:23.000 --> 00:20:28.000
+R 2 times R 4.
+
+00:20:28.000 --> 00:20:38.000
+Over R 3 plus r 4. Time C one times C 2. Times d squared v out.
+
+00:20:38.000 --> 00:20:50.000
+DT squared. Alright, then. Grouping together. These 2 terms.
+
+00:20:50.000 --> 00:21:01.000
+Okay, we'll have One plus R 2 over R one. Times C one plus. C 2.
+
+00:21:01.000 --> 00:21:11.000
+All of this times R 4. Over R 3 plus R 4. Okay, times V out.
+
+00:21:11.000 --> 00:21:21.000
+DT. Alright, then we have. This term over here minus C 2.
+
+00:21:21.000 --> 00:21:31.000
+DVD. Alright, and then finally this last term over here. Which is
+
+00:21:31.000 --> 00:21:38.000
+Plus R 4. Over R one times R 3 plus R 4.
+
+00:21:38.000 --> 00:21:47.000
+Times. V out. And that's equal to V in.
+
+00:21:47.000 --> 00:21:55.000
+Over R one. Okay. So now this equation here, it's a second order differential equation for V out.
+
+00:21:55.000 --> 00:22:05.000
+And the only unknown. Variable here is, yeah, right. So this is now, the differential equation that we will eventually want to solve.
+
+00:22:05.000 --> 00:22:13.000
+Before we do that, we will substitute in numerical values for all these different circuit parameters. Okay.
+
+00:22:13.000 --> 00:22:20.000
+So starting over here. On the left. R 2, right that's 10 kilo ohms R 4 is 20 kilowams.
+
+00:22:20.000 --> 00:22:31.000
+So we have 10 K. Times 20 K. R 3 plus R 4, R 3 is 12 K, R 4 is 20 K, so that's 32 K.
+
+00:22:31.000 --> 00:22:41.000
+In the denominator. Then we have C one times C 2. See one is a hundred micro farres or 10 to the minus 4 fads.
+
+00:22:41.000 --> 00:22:51.000
+C 2 is 200 micro farres or 2 times 10 to the minus 4. 2 times 10 to the minus 8.
+
+00:22:51.000 --> 00:22:55.000
+And then D squared V out.
+
+00:22:55.000 --> 00:23:05.000
+DT squared. Okay, then, for the next term. Over here, right? One plus R 2 over R one R 2.
+
+00:23:05.000 --> 00:23:11.000
+Over R one is 10 K over 5 K. So that's 2 plus one is 3. Right.
+
+00:23:11.000 --> 00:23:17.000
+And then C one is 10 to the minus 4. So we have 3. Times 10 to the minus 4.
+
+00:23:17.000 --> 00:23:24.000
+Alright, that's from the one plus R 2 over R one. That quantity times C one, then C 2.
+
+00:23:24.000 --> 00:23:28.000
+Is 2 times 10 to the minus 4.
+
+00:23:28.000 --> 00:23:33.000
+Okay, and then our 4.
+
+00:23:33.000 --> 00:23:41.000
+Over here is 20. R 3 plus R 4. Is 12 plus 20 that's 32. Right, these are in K.
+
+00:23:41.000 --> 00:23:46.000
+Alright. And that's times.
+
+00:23:46.000 --> 00:23:55.000
+DVD Alright, so that takes care of this term over here. Alright then we have minus C 2 times DV out DT.
+
+00:23:55.000 --> 00:24:01.000
+So that's minus 2 times 10 to the minus 4.
+
+00:24:01.000 --> 00:24:10.000
+DV out DT. Okay, and then finally we have this last term. So that is R 4.
+
+00:24:10.000 --> 00:24:20.000
+Which is 20 K over R one. Which is 5 K. Times, R 3 plus R 4.
+
+00:24:20.000 --> 00:24:29.000
+Which is 32 K. Times the app. And that's equal to. Hi.
+
+00:24:29.000 --> 00:24:40.000
+. Over R one. Alright. Okay, so now we want to work out the numbers here.
+
+00:24:40.000 --> 00:24:48.000
+Alright, and so if we work this out. Alright, we have we can cancel out. These case.
+
+00:24:48.000 --> 00:24:58.000
+And then we have. 10 times 20, that's 200. Right, that's, 10 times 20, that's 200 times 2, that's 400.
+
+00:24:58.000 --> 00:25:07.000
+Over 32. 400 is 16 times 2532 is 16 times 2. So this is going to give us.
+
+00:25:07.000 --> 00:25:13.000
+Hi. 25 over 2.
+
+00:25:13.000 --> 00:25:15.000
+And then for the exponent. We have K, which is 10 to the 3 times 10 to the minus 8.
+
+00:25:15.000 --> 00:25:24.000
+So this is times. 10 to the minus 5.
+
+00:25:24.000 --> 00:25:35.000
+Times d squared. V out. DT squared. Then, for this next term over here.
+
+00:25:35.000 --> 00:25:43.000
+Alright, we have 3 times 10 to the minus 4 plus 2 times 10 to the minus 4. That is 5.
+
+00:25:43.000 --> 00:25:53.000
+Times 10 in the minus 4 these case cancel out. The 20 over 32. Cancels out to 5 over 8.
+
+00:25:53.000 --> 00:26:04.000
+So we have 5. Times 5, this 25 over 8. Times 10 to the minus 4 minus 2 times 10 to the minus 4.
+
+00:26:04.000 --> 00:26:09.000
+That's 16 over 8 times 10 to the minus 4. So 25 minus 16 is 9.
+
+00:26:09.000 --> 00:26:19.000
+So we have 9 8 times 10 to the minus 4. DV out.
+
+00:26:19.000 --> 00:26:31.000
+. Alright, so that takes care of actually these 2 terms here and then for the last term over here We have 20 Cancel that the case here.
+
+00:26:31.000 --> 00:26:44.000
+20 over 5 times 32 alright so the 20 over 5 Gives us 4. And one and then 4 over 32 gives us one.
+
+00:26:44.000 --> 00:26:49.000
+And 8. So we have one eighth. And then the KN denominator gives us 10 to the minus 3.
+
+00:26:49.000 --> 00:27:00.000
+So we have plus one eighth. Times 10 to the minus 3. . Out and then V in over R one.
+
+00:27:00.000 --> 00:27:08.000
+V in is 2. Alright, because A, that constant was 2 volts and then R one was 5 K.
+
+00:27:08.000 --> 00:27:15.000
+So we have 2 fifths. Times 10 to the minus 3.
+
+00:27:15.000 --> 00:27:22.000
+On the right hand side. Okay. Now. We can take this equation here.
+
+00:27:22.000 --> 00:27:31.000
+And multiply by. 2 over 25 times 10 to the 5. Okay, so when we do that.
+
+00:27:31.000 --> 00:27:42.000
+Then we get DV out. . Plus And then we have 2 over 25. And so we have.
+
+00:27:42.000 --> 00:27:49.000
+Hi. 2. Canceling out with the eighth they gives us a foreign denominator times 25 in the denominator.
+
+00:27:49.000 --> 00:28:00.000
+That's a hundred in the denominator. So that is going to be
+
+00:28:00.000 --> 00:28:09.000
+100 in the denominator. So that is 10 to the minus 6. Alright, when we combine it with the 10 to the minus 4, then we multiply by 10 to the minus 5.
+
+00:28:09.000 --> 00:28:15.000
+So that's 10 to the minus one. So we have 9 times 10 to the minus one, which is point 9.
+
+00:28:15.000 --> 00:28:19.000
+Okay, so point 9.
+
+00:28:19.000 --> 00:28:27.000
+Times dv out dt. Right. And then for the last term over here. We have 2 over 25 times one eighth.
+
+00:28:27.000 --> 00:28:34.000
+The 2 over the 8 gives us a 4 in the denominator times the 25 the denominator is a hundred in the denominator.
+
+00:28:34.000 --> 00:28:38.000
+So we get 10 to the minus 3 divided by 100. That's 10 to the minus 5.
+
+00:28:38.000 --> 00:28:46.000
+We multiply by 10 to the plus 5, that's one. So we finally get plus just. .
+
+00:28:46.000 --> 00:28:54.000
+Right And then on the right hand side, we have 2 over 25 times 2 over 5. So that's 4 over 125.
+
+00:28:54.000 --> 00:28:59.000
+And then 10 to the 5 times 10 to the minus 3, that's 10 to the 2.
+
+00:28:59.000 --> 00:29:09.000
+So we get. 4 over a hundred 25. Times 10 to the 2. And that turns out that's 400 over 125.
+
+00:29:09.000 --> 00:29:18.000
+That's 3.2. Okay. So, this now.
+
+00:29:18.000 --> 00:29:30.000
+Is the differential equation that we want to solve for V out. Okay. So that becomes our third step.
+
+00:29:30.000 --> 00:29:38.000
+Which is to solve the differential equation.
+
+00:29:38.000 --> 00:29:46.000
+For V out and apply.
+
+00:29:46.000 --> 00:29:50.000
+The initial conditions.
+
+00:29:50.000 --> 00:30:04.000
+Okay, so to solve this. Right, they, execute the usual procedure, which is to solve first the homogeneous equation, which means that we set the right hand side of the equation, the constant to be equal to 0.
+
+00:30:04.000 --> 00:30:12.000
+Alright, the homogeneous equation.
+
+00:30:12.000 --> 00:30:24.000
+Is, D squared. . DT squared plus 0 point 9. DVL DT.
+
+00:30:24.000 --> 00:30:27.000
+Plus V out.
+
+00:30:27.000 --> 00:30:39.000
+Is equal to 0. Alright, and as usual. We're gonna let. V out of T, right, our trial solution is going to be A, some constant.
+
+00:30:39.000 --> 00:30:47.000
+Times e to the st. We substitute that into this equation. Here, in our homogeneous differential equation.
+
+00:30:47.000 --> 00:30:57.000
+And what we get then. Is right since each derivative with respect time brings down a factor of s. We get s squared from the first term.
+
+00:30:57.000 --> 00:31:03.000
+Plus 0 point 9 s from the second term. Plus one from the third term and that's equal to 0.
+
+00:31:03.000 --> 00:31:09.000
+And we saw for S using the quadratic formula. So one half times minus 0 point 9.
+
+00:31:09.000 --> 00:31:20.000
+Plus or minus the square root of point 9 squared, which is point 8 one. Minus 4 times one, so minus 4.
+
+00:31:20.000 --> 00:31:30.000
+And so that ends up being minus oh point 4 5. Plus or minus J. Times. Oh point 8.
+
+00:31:30.000 --> 00:31:41.000
+9 3 Okay. So, what this means. Then is that the solution.
+
+00:31:41.000 --> 00:31:49.000
+To the homogeneous equation.
+
+00:31:49.000 --> 00:32:07.000
+Okay, is the V out? F is equal to, so we have 2 roots for S. I and they are complex conjugates of each other right so they're complex roots so that means that the solution to the homogeneous equation is going to be an exponential.
+
+00:32:07.000 --> 00:32:18.000
+Function e to the minus point 4 5 t. Times a linear combination. Of a sign of point 8 9 3 t and a cosine of point 8 9 3 t.
+
+00:32:18.000 --> 00:32:28.000
+So we have some constant A one. Times the cosine of point 8 9 3. T plus another constant A 2.
+
+00:32:28.000 --> 00:32:37.000
+Times the sign. At point 8 9 3 t. Times e to the minus.
+
+00:32:37.000 --> 00:32:46.000
+Point 4 5 T. Alright. So that is the solution to the homogeneous equation. And then for the particular integral.
+
+00:32:46.000 --> 00:32:51.000
+As usual, right, since the right hand side, the in homogeneous term is just a constant.
+
+00:32:51.000 --> 00:33:03.000
+We can take V out to be a constant, then these derivative terms will go to 0. And we can see immediately here the via, for the particular integral should be just 3.2.
+
+00:33:03.000 --> 00:33:12.000
+Okay, so for the particular integral.
+
+00:33:12.000 --> 00:33:20.000
+What we have is the VM. Is just equal to 3.2. Okay.
+
+00:33:20.000 --> 00:33:27.000
+And so the full solution is just the solution to the homogeneous equation. Plus the particular integral.
+
+00:33:27.000 --> 00:33:36.000
+Alright, so. The full solution.
+
+00:33:36.000 --> 00:33:44.000
+Right, is then it's just that. So it's via. Of t is equal to.
+
+00:33:44.000 --> 00:33:55.000
+A one times the cosine of Point 8 9 3 t. Plus A 2 times the sign. Of point 8 9 3 t.
+
+00:33:55.000 --> 00:34:05.000
+Times, to the minus. Point 4 5 T. Plus 3.2 and that's all in volts.
+
+00:34:05.000 --> 00:34:16.000
+Okay, so this is now the, general form. Of the solution. And what we need to do now is to figure out the constants.
+
+00:34:16.000 --> 00:34:27.000
+A one and A 2. And to do that, what we need are the initial conditions. Alright, so now we apply.
+
+00:34:27.000 --> 00:34:32.000
+The initial conditions.
+
+00:34:32.000 --> 00:34:38.000
+Okay, so the initial condition that we worked out earlier
+
+00:34:38.000 --> 00:34:46.000
+Okay, is the V out at t equal to 0 is equal to 0. Okay, so we're going to apply that.
+
+00:34:46.000 --> 00:34:55.000
+Nice to via. Now 0 is equal to 0. Alright, that's one initial condition. So now we apply.
+
+00:34:55.000 --> 00:35:03.000
+Or we evaluate this expression here at t equal to 0, that's just going to be A one plus 3.2.
+
+00:35:03.000 --> 00:35:10.000
+And we set that equal to 0 right so we have that a one plus 3.2 is equal to 0.
+
+00:35:10.000 --> 00:35:23.000
+Which then means that A one is just minus 3.2. . Okay So now we need a second initial condition on V out.
+
+00:35:23.000 --> 00:35:33.000
+And that initial condition is going to be a condition on the derivative of V out with respect to T evaluated at T equal to 0.
+
+00:35:33.000 --> 00:35:34.000
+Okay, we put off working that out earlier, but we're going to have to work it out.
+
+00:35:34.000 --> 00:35:46.000
+Now, okay, so for our
+
+00:35:46.000 --> 00:35:50.000
+Second initial condition.
+
+00:35:50.000 --> 00:36:02.000
+Right, we need. A value for the derivative. . Yeah and we want to evaluate that at t equal to 0.
+
+00:36:02.000 --> 00:36:11.000
+Okay. Alright. So, how do we do that? Well, let's go back.
+
+00:36:11.000 --> 00:36:20.000
+And look at our. Circuit diagram up here. Okay, so. We had worked out earlier that.
+
+00:36:20.000 --> 00:36:27.000
+At t equal to 0, both VC one and VC 2. Are equal to 0. Okay.
+
+00:36:27.000 --> 00:36:36.000
+So. Since these are both 0. Okay, then I.
+
+00:36:36.000 --> 00:36:43.000
+We can conclude that V one. At t equal to 0 is equal to 0 as well. And then the reason we can do that.
+
+00:36:43.000 --> 00:36:50.000
+Is that a VC one is equal to 0, then VP is equal to 0, therefore V n is equal to 0.
+
+00:36:50.000 --> 00:36:59.000
+Alright, so that's the voltage down here. Then basically by voltage division V out has to be equal to 0 as well.
+
+00:36:59.000 --> 00:37:08.000
+Right. And then since VC 2 is also equal to 0, then V one at T equals 0 has to be equal to 0 as well.
+
+00:37:08.000 --> 00:37:18.000
+Alright, so. One part of our reasoning is the first step in our reasoning. Is that V one.
+
+00:37:18.000 --> 00:37:27.000
+Is going to T equal to 0 is going to be equal to 0. Okay, now once we figure that out.
+
+00:37:27.000 --> 00:37:34.000
+Then we can see that since V one is equal to 0. And VP is also equal to 0 t equal to 0.
+
+00:37:34.000 --> 00:37:45.000
+The voltage across the resistor R 2 is 0, that means the currents. Flowing through RT and T through R 2 at t equal to 0 is 0 as well.
+
+00:37:45.000 --> 00:38:00.000
+Since there's no current that flows. Into the OP-amp input. Then the fact that the current through R 2 is equal to 0 means that the current through C one IC one has to be equal to 0 as well.
+
+00:38:00.000 --> 00:38:14.000
+Alright. But then the current through C one is equal to C one. Times DVP DT, right, since VP is the voltage across C one.
+
+00:38:14.000 --> 00:38:22.000
+So that means that DVP DT is equal to 0 at t equal to 0. That then means that DVN.
+
+00:38:22.000 --> 00:38:28.000
+At t equal to 0, dt at t equal to 0 is also equal to 0. And then that means the DVM.
+
+00:38:28.000 --> 00:38:39.000
+Dt at t equal to 0 is also equal to 0. Okay, so that's chain of reasoning that we apply in order to determine that derivative that the derivative with respect to time at Vm.
+
+00:38:39.000 --> 00:38:45.000
+Evaluated the t equal to 0. Is in fact 0.
+
+00:38:45.000 --> 00:38:54.000
+Okay, so to write that out, basically what we said was that since VC 2.
+
+00:38:54.000 --> 00:39:05.000
+At 0 is equal to 0. And The out. It's equal to 0. I is equal to 0.
+
+00:39:05.000 --> 00:39:11.000
+Then we also have
+
+00:39:11.000 --> 00:39:17.000
+That V one at t equal to 0 is equal to 0. Right, so that's the first step.
+
+00:39:17.000 --> 00:39:24.000
+Alright. I then the next step was that this means
+
+00:39:24.000 --> 00:39:28.000
+The voltage.
+
+00:39:28.000 --> 00:39:36.000
+Across the resistor R 2. Which is V one minus VP.
+
+00:39:36.000 --> 00:39:42.000
+Is 0.
+
+00:39:42.000 --> 00:39:48.000
+And then. We also saw
+
+00:39:48.000 --> 00:39:55.000
+Alright then I R 2 is equal to IC one. Alright, since there's no current that flows into the opium input.
+
+00:39:55.000 --> 00:39:59.000
+Right. So.
+
+00:39:59.000 --> 00:40:07.000
+And this is equal to 0. Okay, so that means that I see one. It's equal to 0, right?
+
+00:40:07.000 --> 00:40:17.000
+Is equal to 0, but that's equal to C one. Times DVP. DT at T equal to 0.
+
+00:40:17.000 --> 00:40:27.000
+Alright, and. We know the VP, right, was equal to R 4. Over R 3 plus R 4.
+
+00:40:27.000 --> 00:40:35.000
+Times V out. Alright, so they're proportional to each other. So then finally this means that DV out.
+
+00:40:35.000 --> 00:40:42.000
+DT evaluated the T equal to 0. I has to be equal to 0. So this is now.
+
+00:40:42.000 --> 00:40:51.000
+Our second initial condition, all right. And we can use that initial condition. To determine the value of.
+
+00:40:51.000 --> 00:40:56.000
+A 2. Alright, we've already gotten a one down here.
+
+00:40:56.000 --> 00:41:02.000
+Okay, so let's take our expression. For via
+
+00:41:02.000 --> 00:41:11.000
+And I. Take the derivative with respect to time. And we're gonna evaluate it at t equal to 0.
+
+00:41:11.000 --> 00:41:19.000
+Okay, so when we take the derivative of via with respect to time. Right, that's the derivative of this expression here.
+
+00:41:19.000 --> 00:41:25.000
+So, as usual, the derivative of the constant is equal to 0. We don't have to worry about that anymore.
+
+00:41:25.000 --> 00:41:31.000
+And then the derivative of this product here is the derivative of the first factor, right, everything in these parentheses.
+
+00:41:31.000 --> 00:41:52.000
+Times the second factor plus the first factor times the derivative. Of the second factor. When we take the derivative of the first factor, we get a factor of point 8 9 3 on the outside and then the derivative of the cosine is minus the sine, the derivative of the sine is minus the cosine.
+
+00:41:52.000 --> 00:41:58.000
+Okay, so the first part of this. It's going to be.
+
+00:41:58.000 --> 00:42:09.000
+Point 8 9 3. Times minus A one. Times the sign. At point 8 9 3 t.
+
+00:42:09.000 --> 00:42:17.000
+Plus A 2. Times the cosine. Of
+
+00:42:17.000 --> 00:42:22.000
+Point 8 9 3 t all this times e to the minus
+
+00:42:22.000 --> 00:42:28.000
+Point 4 5 T. And then when we take. We have to answer that. Hmm.
+
+00:42:28.000 --> 00:42:37.000
+The first term times the derivative of the second term. Let me take the derivative of the second term. Which is the exponential.
+
+00:42:37.000 --> 00:42:44.000
+We bring down a factor of minus point 4 5 in front. Times the exponential and then we just have to multiply it by.
+
+00:42:44.000 --> 00:42:48.000
+This factor in the parentheses here.
+
+00:42:48.000 --> 00:42:59.000
+Okay, so we get Minus. Point 4 5. Times A one. Times the cosine of.
+
+00:42:59.000 --> 00:43:08.000
+Point 8 9 3 T. Plus A 2. Times the sign. 28 9 3 T.
+
+00:43:08.000 --> 00:43:11.000
+Times e to the minus.
+
+00:43:11.000 --> 00:43:21.000
+Point 4 5 T. All of this, we want to evaluate at t equal to 0. And we want to set that equal to 0.
+
+00:43:21.000 --> 00:43:31.000
+Okay. So when we take this whole expression here. And evaluated a t equal to 0. Then, from this first line.
+
+00:43:31.000 --> 00:43:37.000
+Right, the sine of 0 is 0, the cosine of 0 is one. The exponential of 0 is one.
+
+00:43:37.000 --> 00:43:45.000
+So we're just going to get point 8 9 3. Times A 2. So we have point 8 9 3.
+
+00:43:45.000 --> 00:43:52.000
+Times A 2. And then minus.
+
+00:43:52.000 --> 00:44:00.000
+Point 4 5. And then over here, right, we were gonna just gonna have A one inside the square brackets.
+
+00:44:00.000 --> 00:44:07.000
+Times one. Right, so it was just point 4 5. Times A one, and that's equal to 0.
+
+00:44:07.000 --> 00:44:13.000
+So this means that
+
+00:44:13.000 --> 00:44:18.000
+A 2 is equal to.
+
+00:44:18.000 --> 00:44:29.000
+Point 4 5. Overpoint. 8 9 3 a one. Alright, so that's point 4 5.
+
+00:44:29.000 --> 00:44:50.000
+Over point 8 9 3. And then A one, remember is minus 3.2. Okay, and so when we multiply all that in we get minus 1.6 1 3 And so finally, the solution that we get.
+
+00:44:50.000 --> 00:44:54.000
+Is the
+
+00:44:54.000 --> 00:45:04.000
+Of t is equal to 3.2 constant. Minus. 3.2 times the cosine of.
+
+00:45:04.000 --> 00:45:18.000
+Point 8 9 3 t. Plus 1.6 1 3. Times the sign. Point 8 9 3 t times e to the minus.
+
+00:45:18.000 --> 00:45:25.000
+Point 4 5 T all of this in votes.
+
+00:45:25.000 --> 00:45:33.000
+Okay, and this is for T greater than or equal to 0. Okay, so that is the solution.
+
+00:45:33.000 --> 00:45:45.000
+Alright, so as usual, let's do this little retrospective and, review what some of the key points were here.
+
+00:45:45.000 --> 00:46:01.000
+Okay, one, right, is as usual right in the determining in the determination of the initial conditions. Alright, what we wanna do.
+
+00:46:01.000 --> 00:46:07.000
+To determine the initial conditions.
+
+00:46:07.000 --> 00:46:11.000
+Is.
+
+00:46:11.000 --> 00:46:19.000
+Letting any inductors that were not in this problem. But if you had them, what you would do is you would let them go.
+
+00:46:19.000 --> 00:46:23.000
+Become a short circuit.
+
+00:46:23.000 --> 00:46:33.000
+Any capacitors, we had 2 of them here become. Open circuit.
+
+00:46:33.000 --> 00:46:45.000
+And then require that the current through. The inductor and the voltage across the capacitor.
+
+00:46:45.000 --> 00:46:48.000
+Have to be continuous.
+
+00:46:48.000 --> 00:46:58.000
+Okay, and then you pursue the implications of those requirements. Alright. What we saw here.
+
+00:46:58.000 --> 00:47:05.000
+Again, is that in formulating a differential equation and bringing it down to being an equation for just a single variable.
+
+00:47:05.000 --> 00:47:06.000
+Right, what you need to do is just to look at the different current voltage relationships that you have in the circuit.
+
+00:47:06.000 --> 00:47:20.000
+And sort of play around with the equations. Until you're able to get. An equation for a single variable, right?
+
+00:47:20.000 --> 00:47:25.000
+So to formulate
+
+00:47:25.000 --> 00:47:32.000
+A differential equation, which you can then solve. Right then often.
+
+00:47:32.000 --> 00:47:40.000
+We need to play around.
+
+00:47:40.000 --> 00:47:45.000
+With the equations.
+
+00:47:45.000 --> 00:47:55.000
+Get a drive from. Just the basic tools. Of certain analysis.
+
+00:47:55.000 --> 00:48:05.000
+Okay, and What we did in this particular problem. Was basically, we used
+
+00:48:05.000 --> 00:48:19.000
+V one, right? One of the node voltages. As an intermediate variable.
+
+00:48:19.000 --> 00:48:30.000
+And then. We were able to express. V one. In terms of just.
+
+00:48:30.000 --> 00:48:45.000
+VP. Where we knew the VP was proportional to V. Okay, and that was basically the path that we followed to getting a differential equation just for via.
+
+00:48:45.000 --> 00:48:52.000
+And the other point, it's a note here. Is that Right when we.
+
+00:48:52.000 --> 00:49:00.000
+Had to derive our second initial condition, right? That is the initial condition on the derivative of V out with respect to time.
+
+00:49:00.000 --> 00:49:12.000
+I the string of reasoning that we had to go through was a little bit more involved. Than usual and that will sometimes be the case particularly for the derivative.
+
+00:49:12.000 --> 00:49:22.000
+Initial condition. Alright, so the initial condition.
+
+00:49:22.000 --> 00:49:29.000
+For DV out. DT evaluated at T equals 0, right? That's the initial condition.
+
+00:49:29.000 --> 00:49:32.000
+That required.
+
+00:49:32.000 --> 00:49:40.000
+Some additional analysis.
+
+00:49:40.000 --> 00:49:47.000
+Alright, so it wasn't quite as straightforward as. It often is just for determining initial condition for voltage or current.
+
+00:49:47.000 --> 00:49:52.000
+And that's sometimes turns out to be the case. Okay, so that is everything for this example.
+
+00:49:52.000 --> 00:50:02.000
+You'll be.
+

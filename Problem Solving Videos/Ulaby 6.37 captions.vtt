@@ -1,0 +1,914 @@
+WEBVTT
+
+00:00:03.000 --> 00:00:15.000
+Okay, so this is problem 6.3 7. From, and this is an example. Of the analysis of a second order RLC circuit.
+
+00:00:15.000 --> 00:00:19.000
+Okay, so this is analysis.
+
+00:00:19.000 --> 00:00:23.000
+I have a second order.
+
+00:00:23.000 --> 00:00:27.000
+RLC circuit.
+
+00:00:27.000 --> 00:00:43.000
+Okay, so it will be governed by a second order differential equation. This is a little bit different from the earlier examples from You will be that we've done in that it has, as you can see over here, when this switch is closed.
+
+00:00:43.000 --> 00:00:51.000
+This 6 amps source will be present in the circuit. I and this 24 volts source will be present in the circuit.
+
+00:00:51.000 --> 00:01:03.000
+For T going to infinity. So this is a second order our RLC circuit. Hi. With an independent source.
+
+00:01:03.000 --> 00:01:09.000
+Or in this case, independent sources present.
+
+00:01:09.000 --> 00:01:23.000
+For T going to infinity. Okay, and so this means that the differential equation, that we have to solve, the second order differential equation will have will be, will not be a simple homogeneous differential equation.
+
+00:01:23.000 --> 00:01:33.000
+It will have an extra term that will require us to come up with a particular integral to solve the differential equation.
+
+00:01:33.000 --> 00:01:41.000
+Okay, so let's get started. With this. We will as usual start off by Drawing the circuit.
+
+00:01:41.000 --> 00:01:45.000
+So we have a 24 volt source over here.
+
+00:01:45.000 --> 00:01:52.000
+And then we have a resistor. Okay, that resistor. We'll call it R one.
+
+00:01:52.000 --> 00:01:56.000
+And it has a value of 3 ohms.
+
+00:01:56.000 --> 00:02:01.000
+Then we have our switch.
+
+00:02:01.000 --> 00:02:07.000
+Okay, the switch will close. At t equal to 0.
+
+00:02:07.000 --> 00:02:10.000
+Then we have an inductor.
+
+00:02:10.000 --> 00:02:16.000
+Where the inductance L. Is to.
+
+00:02:16.000 --> 00:02:22.000
+Then we have a capacitor.
+
+00:02:22.000 --> 00:02:34.000
+Okay, where the capacitance? C is. Point 5. Billy Farrez?
+
+00:02:34.000 --> 00:02:43.000
+Then we have a resistor. I will call that R 2. That 6 ohms. And then we have.
+
+00:02:43.000 --> 00:02:52.000
+An independent current source over here on the right. With value 6 amps.
+
+00:02:52.000 --> 00:03:03.000
+Okay, these are all connected. At the bottom. Okay, so this is our circuit. And, what we're going to want to do.
+
+00:03:03.000 --> 00:03:13.000
+Is to solve for the current. I said L. Okay.
+
+00:03:13.000 --> 00:03:19.000
+For T greater than or equal to 0. And then in the course of doing that.
+
+00:03:19.000 --> 00:03:24.000
+We'll also want to think about the current. Through the capacitor, we'll call that I sub C.
+
+00:03:24.000 --> 00:03:31.000
+And also the current through the resistor the resistor R 2 will call that I sub R. Okay.
+
+00:03:31.000 --> 00:03:36.000
+And so what we want to do here is
+
+00:03:36.000 --> 00:03:41.000
+To solve for I sub L of T.
+
+00:03:41.000 --> 00:03:48.000
+For T greater than or equal to 0. Okay, so this is the problem, that we would like to solve here.
+
+00:03:48.000 --> 00:03:56.000
+Alright. And the first step, as usual, will be to determine the initial.
+
+00:03:56.000 --> 00:04:01.000
+And then also in this case, we want to determine the final conditions.
+
+00:04:01.000 --> 00:04:09.000
+Okay, ultimately on the current through the inductor I sub l Okay, so if we look at this.
+
+00:04:09.000 --> 00:04:19.000
+Let's think first about what happens. With T less than 0, that is with this switch over here in the open position.
+
+00:04:19.000 --> 00:04:29.000
+Okay, now. For T less than 0. We're going to consider the circuit to have been a steady state for a very long time.
+
+00:04:29.000 --> 00:04:38.000
+And so the current through the capacitor will be 0 because we consider the capacitor. To behave as an open circuit.
+
+00:04:38.000 --> 00:04:46.000
+Alright, so I sub C. At 0 minus, right, that is for T less than 0. Is equal to 0.
+
+00:04:46.000 --> 00:04:59.000
+Alright. In addition, we consider the inductor to behave as a short circuit. Okay, so that means that the voltage across the inductor will be 0.
+
+00:04:59.000 --> 00:05:09.000
+So V sub L. At 0 minus, alright. Will be equal to 0. And because that.
+
+00:05:09.000 --> 00:05:19.000
+Voltage, I is 0. Alright. Then what will happen is that we know that the current through the capacitor.
+
+00:05:19.000 --> 00:05:34.000
+Is 0. The current through the resistor R 2 will have to be 0 as well because if it were non-zero then there would be a 9 0 voltage across the resistor but we know the voltage has to be 0 because the inductor and the resistor in parallel with each other.
+
+00:05:34.000 --> 00:05:43.000
+So that means that the entire current from this current source, 6 amps. Is coming down this way, it's going to have to flow back up.
+
+00:05:43.000 --> 00:05:51.000
+Through the inductor because these 2 other currents are 0 and the switch is open. So that means that I sub L.
+
+00:05:51.000 --> 00:06:02.000
+At t equal to 0 minus. Is going to be minus 6 amps. It's minus. Because I sub l is a current flowing in the downward direction, but we have 6 am flowing in the up.
+
+00:06:02.000 --> 00:06:14.000
+Upward direction. So I at 0 minus is equal to minus 6 amps. Alright. And the other thing that we can note here.
+
+00:06:14.000 --> 00:06:24.000
+Is that the voltage across the capacitor at t equal to 0 minus. All right, then has to be the same as the voltage across the inductor since the capacitor and the inductor are in parallel.
+
+00:06:24.000 --> 00:06:30.000
+So that's going to be 0 as well. Okay. So that's what we have.
+
+00:06:30.000 --> 00:06:49.000
+For T less than 0. Then. At t equal to 0, right, we know that, in general, the current that flows through an inductor has to be continuous because otherwise the voltage across the inductor would be undefined.
+
+00:06:49.000 --> 00:06:59.000
+And the voltage across capacitor has to be 0. So that means because the otherwise the current. Through the capacitor would be undefined.
+
+00:06:59.000 --> 00:07:06.000
+Alright, so taking advantage of the requirement that the current through the inductor has to be continuous.
+
+00:07:06.000 --> 00:07:14.000
+We know that I sub L at t equal to 0 also has to be minus 6 amps. Alright, so we know that I sub L.
+
+00:07:14.000 --> 00:07:25.000
+At t equal to 0 is equal to minus 6 amps. Alright, and this is true. Because I.
+
+00:07:25.000 --> 00:07:29.000
+Has to be continuous.
+
+00:07:29.000 --> 00:07:35.000
+Alright, and so, we're going to want to remember that.
+
+00:07:35.000 --> 00:07:46.000
+And then we also know. That the voltage across the inductor has to be continuous because we know the voltage across the capacitor.
+
+00:07:46.000 --> 00:07:52.000
+Has to be continuous. So v sub c at t equal to 0 is going to be equal to 0.
+
+00:07:52.000 --> 00:08:01.000
+But since the capacitor and the inductor are in parallel, that means that V sub L at t equal to 0 has to be 0 as well.
+
+00:08:01.000 --> 00:08:07.000
+Right, see we know that. Visa. Oops.
+
+00:08:07.000 --> 00:08:21.000
+V sub C at 0. Has to be equal to 0. Since V. Has to be continuous.
+
+00:08:21.000 --> 00:08:37.000
+And so that means the V. At t equal to 0 is 0 as well. Alright. We also know that V sub L in general, B sub L of T is equal to L times.
+
+00:08:37.000 --> 00:08:52.000
+. . Okay So, if V sub T at T equal to 0 is equal to 0, that means that DI sub LDT at T equal to 0 has to be 0 as well.
+
+00:08:52.000 --> 00:08:57.000
+Alright, cause you know the inductance is non-. So this means that DI of L.
+
+00:08:57.000 --> 00:09:03.000
+DT evaluated at T equal to 0. Has to be 0 as well. Okay, and so this is the second boundary condition that we're going to need.
+
+00:09:03.000 --> 00:09:17.000
+Alright, we need 2 boundary conditions. On ISL in order to solve the second order differential equation that we will get for, I sub l.
+
+00:09:17.000 --> 00:09:26.000
+Okay, so those are the 2 initial conditions that we will need. And then. For T growing to infinity.
+
+00:09:26.000 --> 00:09:35.000
+Alright, if we go back and look at the circuit again. Alright, as T goes to infinity. Now, the circuit is again in steady state.
+
+00:09:35.000 --> 00:09:47.000
+This. Switch is now in the closed position. Since the circuit is going to be in steady state, the inductor is going to behave as a short circuit.
+
+00:09:47.000 --> 00:10:02.000
+The capacitor as an open circuit. Okay. And so what we will have is that since the inductor is behaving as a short circuit, the voltage across the inductor will be 0.
+
+00:10:02.000 --> 00:10:10.000
+Okay, since the capacitor is behaving as an open circuit, then the current through the inductor or through the capacitor will be 0 as well.
+
+00:10:10.000 --> 00:10:30.000
+Alright. And we can then also conclude. Then. The current through the resistor is 0 as T goes to infinity because we know the voltage across the resistor R 2 has to be 0.
+
+00:10:30.000 --> 00:10:36.000
+Okay, because it's in parallel with this. I inductor which has 0 voltage across it.
+
+00:10:36.000 --> 00:10:44.000
+So, what, happens then is that, The current through the resistor is 0.
+
+00:10:44.000 --> 00:10:58.000
+The current through the inductor. Sorry, sorry, the capacitor is 0. And so therefore, the current that flows this way And also this 6 amps.
+
+00:10:58.000 --> 00:11:06.000
+All has to be made up . So basically if we apply KCL at this node of here.
+
+00:11:06.000 --> 00:11:15.000
+Alright, then. We know the voltage up here. Is 0 since this is behaving as a short circuit, right?
+
+00:11:15.000 --> 00:11:20.000
+We'll say. We'll call this voltage down here. 0. Okay.
+
+00:11:20.000 --> 00:11:34.000
+So the voltage up here is 0. So that means that flowing this way. I from the 24 volts source through the 3 ohm resistor we have to have 8 amps flowing to the right.
+
+00:11:34.000 --> 00:11:40.000
+Okay, I just buy Ohm's Law, 24 volts over 3. 8 is flowing through the right.
+
+00:11:40.000 --> 00:11:58.000
+6 amps is going to flow out this way. Right, because of this 6 amp. Current source so that means that I sub L is going to have to be the difference which is 2 Okay, so basically what we have for T going to infinity is that we know V.
+
+00:11:58.000 --> 00:12:10.000
+Is going to be equal to 0. Since the inductor is behaving as a short circuit, We know that the, that I sub C is equal to 0 since the capacitor is behaving as.
+
+00:12:10.000 --> 00:12:19.000
+An open circuit. We know that the current, in the resistor has to be equal to 0.
+
+00:12:19.000 --> 00:12:25.000
+Because the voltage across the resistor is equal to the voltage across the inductor, which is 0.
+
+00:12:25.000 --> 00:12:37.000
+Alright, and so this means that, when we apply KCL at that upper node. We get that I sub L as T goes to infinity is equal to.
+
+00:12:37.000 --> 00:12:44.000
+24 volts. Over 3 ohms. Alright, that's flowing in from the left minus The 6. S.
+
+00:12:44.000 --> 00:12:50.000
+That has to flow out, the right. And so it's going to be 2 amps.
+
+00:12:50.000 --> 00:13:05.000
+Alright, so that's our condition that will have to be satisfied as t goes to infinity. Okay, so that's everything that we need to do for the initial and final conditions.
+
+00:13:05.000 --> 00:13:14.000
+Alright. Then the next step. Is to formulate.
+
+00:13:14.000 --> 00:13:21.000
+The differential equation.
+
+00:13:21.000 --> 00:13:32.000
+Okay, that we're going to have to solve. For And so to do that. Right, we apply the usual tools of circuit analysis.
+
+00:13:32.000 --> 00:13:41.000
+So for this circuit, what we will do is We'll do a simple node voltage analysis. Alright, where we take the voltage.
+
+00:13:41.000 --> 00:13:50.000
+At this node up here to be. V one. Alright. And we're going to apply KCL at this node.
+
+00:13:50.000 --> 00:14:01.000
+All right. And so we'll have a current, this is for T greater than 0. So the current flowing out to the left is going to be V one minus 24 volts.
+
+00:14:01.000 --> 00:14:10.000
+Over 3 h, then the current flowing down. Through. I this inductor is going to be I sub L.
+
+00:14:10.000 --> 00:14:18.000
+Alright, the current. Flowing down through the capacitor is going to be. See the capacitance times.
+
+00:14:18.000 --> 00:14:25.000
+The derivative of the voltage across the capacitor with respect to time, the voltage across the capacitor is V one.
+
+00:14:25.000 --> 00:14:33.000
+Alright, and then. Over here, the current through the resistor is just going to be V one over 6 ohms.
+
+00:14:33.000 --> 00:14:40.000
+And then we're gonna have 6 amps flowing out this way. Okay, so if we put all that together.
+
+00:14:40.000 --> 00:14:44.000
+When we apply KCL.
+
+00:14:44.000 --> 00:14:54.000
+At the node V one. We have, going out from the left as I was describing. The current is V one minus 24 volts.
+
+00:14:54.000 --> 00:15:05.000
+Over We'll call it R one. For now. Then the current flowing down through the inductor is I sub L.
+
+00:15:05.000 --> 00:15:15.000
+Then the current flowing down through the capacitor. Is C times DV one DT since the voltage across the capacitor is just V one.
+
+00:15:15.000 --> 00:15:25.000
+Then the current flowing down through the resistor R 2. Is going to be V one. Over R 2.
+
+00:15:25.000 --> 00:15:32.000
+And then the current flowing out. To the right and down, due to the 6 amp independent source is just going to be 6.
+
+00:15:32.000 --> 00:15:39.000
+Ams and all of those added together have to be equal to 0.
+
+00:15:39.000 --> 00:15:47.000
+Okay, so now we'll group together the common terms. So we're gonna have one over r one.
+
+00:15:47.000 --> 00:15:56.000
+Plus one over R 2. Times V one and it takes care of this term in this term. Alright, then we'll have.
+
+00:15:56.000 --> 00:16:05.000
+Plus I sub L. That's this term over here. Then we'll have plus. C times DV one DT.
+
+00:16:05.000 --> 00:16:12.000
+It's this term over here. And then that's going to be equal to. 24 over R one.
+
+00:16:12.000 --> 00:16:18.000
+That's this term move to the right hand side. Minus 6. That's this term move to the right hand side.
+
+00:16:18.000 --> 00:16:28.000
+Okay, so now we have an equation with 2 variables. I sub 2 unknown variables, I sub l and v one.
+
+00:16:28.000 --> 00:16:39.000
+Alright. But we know that V one. Alright, which is among other things the voltage across the inductor.
+
+00:16:39.000 --> 00:16:56.000
+Has to be equal to L. . If we go back to our circuit diagram over here All right, we can see that V one is the voltage across the inductor and so that's going to be equal to L times DIL DT.
+
+00:16:56.000 --> 00:17:05.000
+Okay, so if we take this expression for V one and then plug it in over here in these 2 spots for V one Right.
+
+00:17:05.000 --> 00:17:06.000
+And then. At the same time, right? So we'll go ahead and do that.
+
+00:17:06.000 --> 00:17:13.000
+So we'll have one over R one.
+
+00:17:13.000 --> 00:17:21.000
+Plus one over R 2. Times L. D I L DT. Plus IL plus.
+
+00:17:21.000 --> 00:17:33.000
+And then over here, when we substitute this in for V one over here, we have. . And then we have D squared I L DT squared.
+
+00:17:33.000 --> 00:17:37.000
+Hmm.
+
+00:17:37.000 --> 00:17:44.000
+That's going to be equal to. 24 over R one. Minus 6. Alright.
+
+00:17:44.000 --> 00:17:57.000
+So now, we will plug in. Numerical values. Excuse me. For, the circuit parameters R one, R 2, L, and C.
+
+00:17:57.000 --> 00:18:05.000
+Okay, so our one is 3. So we have one third plus and then R 2 is 6. So we have plus 1 6.
+
+00:18:05.000 --> 00:18:16.000
+Then L is 2 So it's 2 times 10 to the minus 3. Alright, Plus, IL.
+
+00:18:16.000 --> 00:18:25.000
+Plus and then L time C, L is 2 times 10 to the minus 3. C is point 5.
+
+00:18:25.000 --> 00:18:39.000
+Milla Farad still point 5 times 10 to the minus 3. D squared I. DT squared and that's equal to 24 over R one that's 24 over 3 which is 8 minus 6.
+
+00:18:39.000 --> 00:18:48.000
+. 2 Okay, so now. Hi, we just multiply these out. We have one third plus 1 6.
+
+00:18:48.000 --> 00:18:57.000
+So that's one half. Times 2 times 10 to the minus 3. So that's just 10 to the minus 3.
+
+00:18:57.000 --> 00:19:09.000
+Do I? Plus I. Plus and then we have 2 times point 5, that's one. Times 10 to the minus 3 times 10 to the minus 3.
+
+00:19:09.000 --> 00:19:17.000
+That's 10 to the minus 6. So plus 10 to the minus 6. D squared I O.
+
+00:19:17.000 --> 00:19:27.000
+DT squared. Is equal to 2. Alright, so if we just reorder these terms. We have 10 to the minus 6.
+
+00:19:27.000 --> 00:19:38.000
+D squared I L DT squared. Plus 10 to the minus 3. D. Plus IL is equal to 2.
+
+00:19:38.000 --> 00:19:46.000
+Or if we multiply this whole equation by. 10 to the sixth, we have. D squared I O.
+
+00:19:46.000 --> 00:19:52.000
+DT squared plus. 10 to the third.
+
+00:19:52.000 --> 00:20:00.000
+. ILDT plus 10 to the 6 I know, is equal to 2 times 10 to the 6.
+
+00:20:00.000 --> 00:20:10.000
+Okay, so. This equation in this form here or this form here is now. What we need to solve.
+
+00:20:10.000 --> 00:20:21.000
+Okay, so then that brings us to the third step. Which is to solve. The differential equation. Okay.
+
+00:20:21.000 --> 00:20:29.000
+And to do that. Right, the first thing that we'll do is we will solve the homogeneous form of the equation.
+
+00:20:29.000 --> 00:20:36.000
+Which, we can take. Say if we look at this form of the equation over here, it means that we just set the right hand side equal to 0.
+
+00:20:36.000 --> 00:20:47.000
+And so we have that this left hand side here is equal to 0. Alright, so the homogeneous equation.
+
+00:20:47.000 --> 00:20:57.000
+Alright, is that D squared IL. DT squared plus 10 to the third. DI L DT plus 10 to the 6 IL.
+
+00:20:57.000 --> 00:21:06.000
+Is equal to 0. Okay. And we'll solve this in the usual way. Well, LED.
+
+00:21:06.000 --> 00:21:19.000
+Be equal to some constants a. Times e to the s T. Alright, and we substitute that into the homogeneous equation here for I.
+
+00:21:19.000 --> 00:21:27.000
+And when we do that, every time we take a derivative with respect to time, we will bring down a factor of S.
+
+00:21:27.000 --> 00:21:35.000
+Okay. And so we're going to get from the second derivative term. We will get s squared.
+
+00:21:35.000 --> 00:21:43.000
+Plus and then from the first derivative turn. 10 to the third, S. And then from the constant term.
+
+00:21:43.000 --> 00:21:50.000
+Where the the Isabel term 10 to the sixth There will also be an overall factor of A times E to the S T.
+
+00:21:50.000 --> 00:21:55.000
+But we can divide that out because it's never equal to 0. And that's equal to 0.
+
+00:21:55.000 --> 00:22:03.000
+Okay. So this is now just. A quadratic equation for s. And we can solve that immediately.
+
+00:22:03.000 --> 00:22:11.000
+Using the quadratic formula. So we get that S is equal to one half. Times, minus.
+
+00:22:11.000 --> 00:22:22.000
+10 to the third. Plus or minus the square root. Of 10 to the third squared. Which is 10 to the sixth minus 4 times one times 10 to the 6.
+
+00:22:22.000 --> 00:22:25.000
+So minus 4.
+
+00:22:25.000 --> 00:22:34.000
+Times 10 to the 6. Okay, so we can see that the discriminate, right, the quantity under the square root over here is negative.
+
+00:22:34.000 --> 00:22:42.000
+Okay, so we're going to get complex values for s. Alright, so we just work this out.
+
+00:22:42.000 --> 00:22:48.000
+We have minus 10 to the third. This minus a thousand over 2, that's minus 500.
+
+00:22:48.000 --> 00:22:56.000
+Plus or minus. Then we have J. Times one half, right? That's the one half from out here.
+
+00:22:56.000 --> 00:23:02.000
+And then we have the square root of. 4 times 10 to the sixth minus 10 to the 6.
+
+00:23:02.000 --> 00:23:16.000
+So it's the square root. Of 3. Times 10 to the 6. Okay, and if we just calculate that, what we get is minus 500.
+
+00:23:16.000 --> 00:23:26.000
+Plus or minus. And then it's J times. 866. All right, to 3, significant figures.
+
+00:23:26.000 --> 00:23:34.000
+And so, What this tells us then, since we have complex values we have. Complex values for S.
+
+00:23:34.000 --> 00:23:45.000
+Then the solution. To the homogeneous equation is going to be I sub l of t is equal to E to the minus 500 T.
+
+00:23:45.000 --> 00:23:54.000
+Times, a linear combination of 2 terms that we can take to be either complex exponentials.
+
+00:23:54.000 --> 00:24:05.000
+Or signs and cosines. And we'll take them to be signs and cosines because that makes it easier to guarantee that I sub L of T is real.
+
+00:24:05.000 --> 00:24:12.000
+Okay, so from this. We know that the solution.
+
+00:24:12.000 --> 00:24:16.000
+To
+
+00:24:16.000 --> 00:24:21.000
+The homogeneous equation.
+
+00:24:21.000 --> 00:24:37.000
+Is I is equal to e to the minus. 500 T. Times some constants A one. Times the cosine of 866 T.
+
+00:24:37.000 --> 00:24:48.000
+Plus another constant A 2. Times the sign. Of 800 sixty-sixty. Right, that's the standard form for the solution. Okay.
+
+00:24:48.000 --> 00:24:57.000
+And A one and A 2 are constants. That we will have to figure out. Bye, I using the initial conditions.
+
+00:24:57.000 --> 00:25:02.000
+That we derived a little bit earlier. Okay, so that's the solution to the How homogeneous equation.
+
+00:25:02.000 --> 00:25:14.000
+Okay, what we have now is that we have to figure out the particular integral.
+
+00:25:14.000 --> 00:25:24.000
+Okay, so that is just any solution that we can come up with. To I the full differential equation either in this form here or in this form here.
+
+00:25:24.000 --> 00:25:33.000
+All right. So if we look at it in this form over here, all right, then the in homogeneous term, the right hand side is just a constant.
+
+00:25:33.000 --> 00:25:43.000
+Okay, and we know, from what we've talked about before that one solution to that is just to take I sub L to be equal to this constant.
+
+00:25:43.000 --> 00:25:48.000
+Alright, and that works because when you take the derivative with respect to time of a constant, you'll get 0.
+
+00:25:48.000 --> 00:25:54.000
+So these 2 terms will go away and will just be left with I sub L is equal to this constant 2.
+
+00:25:54.000 --> 00:26:06.000
+Okay. So the particular integral is the solution. To the full equation, 10 to the minus 6. D squared.
+
+00:26:06.000 --> 00:26:17.000
+Plus 10 to the minus 3. D. Plus IL is equal to 2. And we know that we can take.
+
+00:26:17.000 --> 00:26:24.000
+I, L of T, one solution to this. Is to take it just to be equal to 2, the constant.
+
+00:26:24.000 --> 00:26:36.000
+So this is a solution. To that equation. And once we have any solution, right, to the equation, any particular integral, then we know the full solution is just that.
+
+00:26:36.000 --> 00:26:41.000
+Plus the solution to the homogeneous equation.
+
+00:26:41.000 --> 00:26:44.000
+Okay, so we know that
+
+00:26:44.000 --> 00:26:48.000
+The full solution.
+
+00:26:48.000 --> 00:26:59.000
+Is that is equal to e to the minus 500 t. Times A one. Times the cosine of 866 T.
+
+00:26:59.000 --> 00:27:08.000
+Plus A 2 times the sign of 866 T. Plus 2 and that is going to be in amps.
+
+00:27:08.000 --> 00:27:21.000
+Alright, so now We have to determine the constants A one and A 2. Alright, and to do that, we're going to apply the boundary conditions.
+
+00:27:21.000 --> 00:27:26.000
+That we arrived at earlier.
+
+00:27:26.000 --> 00:27:33.000
+Okay, and the boundary conditions. At t equal to 0. Were that I sub L at equal to 0 is minus 6.
+
+00:27:33.000 --> 00:27:43.000
+And the I sub LDT. At t equal to 0 is equal to 0. Okay. And so.
+
+00:27:43.000 --> 00:27:50.000
+Alright, the last step here is to apply.
+
+00:27:50.000 --> 00:27:56.000
+Our boundary conditions.
+
+00:27:56.000 --> 00:28:04.000
+Okay, that is that I sub L at 0 is equal to minus 6 amps. Alright, that's the first boundary condition.
+
+00:28:04.000 --> 00:28:14.000
+And if we just substitute t equal to 0. Up here, then, e to the minus 500, to the 0 T is one.
+
+00:28:14.000 --> 00:28:21.000
+The sign of 0 is 0. And the cosine of 0 is one. So we're just gonna get A one.
+
+00:28:21.000 --> 00:28:31.000
+Plus 2, alright. Is equal to minus 6. Alright, so we have A one. Plus 2 is equal to minus 6.
+
+00:28:31.000 --> 00:28:35.000
+Which means that A one.
+
+00:28:35.000 --> 00:28:42.000
+Is equal to. Minus 8.
+
+00:28:42.000 --> 00:28:50.000
+Alright, so now we have A one. We have to figure out a 2 and we get A 2 by applying.
+
+00:28:50.000 --> 00:28:58.000
+The second boundary condition, which is the DIL DT. Evaluated to t equal to 0 is equal to 0.
+
+00:28:58.000 --> 00:29:07.000
+Okay, so what we need to do then is to take the derivative with respect to time. Of this expression here.
+
+00:29:07.000 --> 00:29:16.000
+I set T equal to 0. And then I from that and then set the whole thing equal to 0 and then.
+
+00:29:16.000 --> 00:29:28.000
+Determine from that a 2 since we know a one already Okay, so if we take the derivative of I sub l using this expression that we arrived in
+
+00:29:28.000 --> 00:29:34.000
+Alright, DI. Alright, we're gonna take the derivative of 2 is 0, so we don't have to worry about that anymore.
+
+00:29:34.000 --> 00:29:48.000
+It's really the derivative of this. Expression over here which has 2 factors e to the minus 500 t and then this cosine plus sign term in the square brackets.
+
+00:29:48.000 --> 00:30:01.000
+So this is a product of 2 functions. We take the derivative, then the derivative is going to be the derivative of the first factor times the second factor plus the first factor times the derivative of the second factor.
+
+00:30:01.000 --> 00:30:09.000
+Okay, so the derivative of e to the minus 500 t. Is going to be minus 500.
+
+00:30:09.000 --> 00:30:15.000
+E to the minus 500 T. And we multiply that by the second factor, which is A one.
+
+00:30:15.000 --> 00:30:23.000
+Times the cosine of 8 66 T. Plus A 2. Times the sign of 8 66 T.
+
+00:30:23.000 --> 00:30:31.000
+And then we add to that. The first term. Times the derivative. The second term, right?
+
+00:30:31.000 --> 00:30:40.000
+So it's plus e to the minus 500 t. Okay, and then.
+
+00:30:40.000 --> 00:30:46.000
+We're continuous down here. When we take the derivative. Of what we have in the square brackets.
+
+00:30:46.000 --> 00:30:53.000
+Right, each term is going to give us a factor of 866 from taking the derivative of the cosine or the sine.
+
+00:30:53.000 --> 00:31:01.000
+So it's going to be 866. Times. And then the derivative. As the cosine is minus the sign.
+
+00:31:01.000 --> 00:31:11.000
+So we have minus A one. Times the sign. Of 8 66 T. And then derivative, the derivative of the sine is just the cosine.
+
+00:31:11.000 --> 00:31:17.000
+So we have plus. A 2 times the cosine.
+
+00:31:17.000 --> 00:31:27.000
+Of 866 T. Okay, so that is The expression for derivative of Isabel with respect to T.
+
+00:31:27.000 --> 00:31:31.000
+Okay. And if we take that.
+
+00:31:31.000 --> 00:31:34.000
+And evaluate it.
+
+00:31:34.000 --> 00:31:45.000
+At t equal to 0. Okay, then. From this first term over here. Alright, e to the minus 500 t at t equal to 0 is just one.
+
+00:31:45.000 --> 00:31:54.000
+Cosine term here is going to be one. The signed term is going to be 0. So this whole first term over here will just give us minus 500.
+
+00:31:54.000 --> 00:32:02.000
+Times A one. So it's minus 500. Times A one. Okay.
+
+00:32:02.000 --> 00:32:10.000
+And then. The second term over here, right, we're gonna have e to the minus 500 t, where t equals equal to 0.
+
+00:32:10.000 --> 00:32:15.000
+So this is just one. And then the sign over here will be 0. The cosine will be one.
+
+00:32:15.000 --> 00:32:22.000
+So we're just gonna get 866. Times A 2. So plus 866.
+
+00:32:22.000 --> 00:32:32.000
+Times A 2. Is equal to 0. Okay, and so that means that A 2 is equal to.
+
+00:32:32.000 --> 00:32:41.000
+500. Over 866. A one. Alright, A one is minus 8.
+
+00:32:41.000 --> 00:32:48.000
+Alright, we figured that out of here. So this is minus and then 8 times 500 is 4,000.
+
+00:32:48.000 --> 00:32:58.000
+Divided by 8 66. Okay. And it turns out that if you work this out, that's Mine is 4.6 2.
+
+00:32:58.000 --> 00:33:03.000
+So that's A 2.
+
+00:33:03.000 --> 00:33:07.000
+Okay, so that's the second constant. That we needed to figure out. Now we just take the values that we worked out for A.
+
+00:33:07.000 --> 00:33:19.000
+One and A 2. And we substitute them into this expression here. That we had gotten earlier for I.
+
+00:33:19.000 --> 00:33:31.000
+Alright, so. What we get finally is the I sub L of T. Is equal to minus. Alright, since both A one and A 2 are less than 0.
+
+00:33:31.000 --> 00:33:36.000
+And then it's 8 times the cosine.
+
+00:33:36.000 --> 00:33:46.000
+. 60 Plus. 4.6 2. Times the sign.
+
+00:33:46.000 --> 00:33:50.000
+Of 8 66 T.
+
+00:33:50.000 --> 00:33:54.000
+Times e to the minus.
+
+00:33:54.000 --> 00:34:06.000
+500 T. Plus 2. And it's names.
+
+00:34:06.000 --> 00:34:15.000
+Okay, and so, this is the solution, that we got. And as a check.
+
+00:34:15.000 --> 00:34:18.000
+Okay.
+
+00:34:18.000 --> 00:34:31.000
+We can see that. For T going to infinity If we look at this expression here. Right, this exponential factor, e to the minus 500 T is going to bring this whole first term to 0.
+
+00:34:31.000 --> 00:34:43.000
+And I sub L of T as T goes to infinity from this expression is just going to be 2.
+
+00:34:43.000 --> 00:34:53.000
+Okay, and in fact, that's what we had figured out. Up above here.
+
+00:34:53.000 --> 00:34:58.000
+All right, had to be the case, right? That I sub L for T going to infinity was 2 amps.
+
+00:34:58.000 --> 00:35:06.000
+And so we see that the expression that we've worked out. Down here. Is consistent with that.
+
+00:35:06.000 --> 00:35:14.000
+Okay. And, what the problem also asks us to do.
+
+00:35:14.000 --> 00:35:24.000
+Is. To plot what this looks like for T greater than or equal to 0.
+
+00:35:24.000 --> 00:35:35.000
+Okay, and so I will go to the other. Computer here. And we'll just, paste that plot.
+
+00:35:35.000 --> 00:35:43.000
+In. Let me see if this.
+
+00:35:43.000 --> 00:35:48.000
+Okay, and.
+
+00:35:48.000 --> 00:35:56.000
+Should show up here now.
+
+00:35:56.000 --> 00:36:03.000
+Okay, it may take time. Okay, there we go. Alright, and so this is what it looks like.
+
+00:36:03.000 --> 00:36:11.000
+Alright, so you can see that as we expect. Alright, this starts off at 0. Okay.
+
+00:36:11.000 --> 00:36:18.000
+And then it's slope. Is also, sorry. It's sorry, sorry, starts off at minus 6.
+
+00:36:18.000 --> 00:36:25.000
+It slope is 0. Okay. And, it eventually levels off at 2 hands. Alright.
+
+00:36:25.000 --> 00:36:36.000
+I and then it has kind of this damped oscillation. In here. Right. And that's basically the behavior that we expect.
+
+00:36:36.000 --> 00:36:42.000
+From this functional form. For I sub of T over here.
+
+00:36:42.000 --> 00:36:59.000
+Okay, so that is the full solution. Alright, and if we go through our usual. Sort of review and retrospective analysis process of what the key points.
+
+00:36:59.000 --> 00:37:09.000
+Or here. Alright. And the key steps. First one was that Right, as usual, we determined.
+
+00:37:09.000 --> 00:37:21.000
+The initial. And then here also the final conditions.
+
+00:37:21.000 --> 00:37:28.000
+By letting, the inductor. Go to a short circuit.
+
+00:37:28.000 --> 00:37:33.000
+And a capacitor go to an open circuit.
+
+00:37:33.000 --> 00:37:37.000
+Okay.
+
+00:37:37.000 --> 00:37:43.000
+Right and then analyzing.
+
+00:37:43.000 --> 00:37:49.000
+The resulting circuit.
+
+00:37:49.000 --> 00:37:55.000
+Which is usually quite easy to do. And then once we had done that, that, that gave us.
+
+00:37:55.000 --> 00:38:03.000
+The behavior for T less than 0 before in this example, we close the switch. And then once the switch closes.
+
+00:38:03.000 --> 00:38:11.000
+What we did was we used, the requirements.
+
+00:38:11.000 --> 00:38:22.000
+Then I said, the current. Through any inductor. And the voltage across any capacitor.
+
+00:38:22.000 --> 00:38:26.000
+That these have to be continuous.
+
+00:38:26.000 --> 00:38:34.000
+Okay. So that was the first step that got us our. Initial and final conditions.
+
+00:38:34.000 --> 00:38:50.000
+Then, alright, we had to derive a differential equation. Okay, and, to do that, what we did was we used the differential
+
+00:38:50.000 --> 00:38:54.000
+Current voltage relationships.
+
+00:38:54.000 --> 00:38:57.000
+Alright, 4.
+
+00:38:57.000 --> 00:39:05.000
+Pass it or the inductor, resistor and so forth. To formulate
+
+00:39:05.000 --> 00:39:14.000
+The differential equation that we needed.
+
+00:39:14.000 --> 00:39:25.000
+Alright, and, what we wanted to do was to use. Just basic circuit concepts.
+
+00:39:25.000 --> 00:39:29.000
+To write.
+
+00:39:29.000 --> 00:39:34.000
+The differential equation.
+
+00:39:34.000 --> 00:39:41.000
+In terms of. A single.
+
+00:39:41.000 --> 00:39:49.000
+Unknown variable. Okay, and to do this, usually it requires, basically some playing around.
+
+00:39:49.000 --> 00:39:58.000
+Alright, with the equations. To figure out what is the best way. To count everything in terms of a single unknown variable.
+
+00:39:58.000 --> 00:40:11.000
+Once we have the differential equation. Then had to solve the homogeneous. Equation, then we just use the substitution.
+
+00:40:11.000 --> 00:40:22.000
+That either the current. Or the voltage. I will be of the form of some constant. Times e to the st.
+
+00:40:22.000 --> 00:40:26.000
+So we use that substitution to solve.
+
+00:40:26.000 --> 00:40:33.000
+The home and genius.
+
+00:40:33.000 --> 00:40:47.000
+Equation. And then, as you saw here, it was very helpful that we knew Hi, in the case that we got a complex value of s Right, what the form of the solution would be.
+
+00:40:47.000 --> 00:40:56.000
+So it's useful to know what the form of the solution. I should be. For, real values, distinct real values of x.
+
+00:40:56.000 --> 00:41:06.000
+Complex values of S or a double root. Okay, so it's, useful to know.
+
+00:41:06.000 --> 00:41:12.000
+The form. The solution.
+
+00:41:12.000 --> 00:41:18.000
+For S being real.
+
+00:41:18.000 --> 00:41:21.000
+Complex or
+
+00:41:21.000 --> 00:41:24.000
+A double read.
+
+00:41:24.000 --> 00:41:37.000
+Okay, and then. The last point. To point out here. Is to know that.
+
+00:41:37.000 --> 00:41:41.000
+The solution.
+
+00:41:41.000 --> 00:41:48.000
+To the homogeneous equation.
+
+00:41:48.000 --> 00:41:52.000
+Right then.
+
+00:41:52.000 --> 00:41:59.000
+Corresponds to the transient response.
+
+00:41:59.000 --> 00:42:09.000
+Okay. And then. The particular integral.
+
+00:42:09.000 --> 00:42:13.000
+Corresponds to the behavior.
+
+00:42:13.000 --> 00:42:22.000
+For T going to infinity. Okay. Alright, so if you look back. And.
+
+00:42:22.000 --> 00:42:27.000
+Our solution. Up here, alright, this was the solution to the homogeneous equation. You can see that that is the transient response, right?
+
+00:42:27.000 --> 00:42:39.000
+Because it goes away as T goes to infinity. The particular integral was just this 2 over here and that corresponds to the behavior as T goes to infinity.
+
+00:42:39.000 --> 00:42:56.000
+And that in general will be true. Because the homogeneous equation really it basically corresponds to what the behave what the circuit would do.
+
+00:42:56.000 --> 00:43:04.000
+If there were no, independent sources. In the circuit for T going to infinity. Okay.
+
+00:43:04.000 --> 00:43:17.000
+And then, any non 0 response as T goes to infinity, will correspond to the presence in the effects of the independent source or sources that are present.
+
+00:43:17.000 --> 00:43:31.000
+Okay. And so all of that will be captured in that particular integral. Okay, so that's it for this example and I will stop the recording here.
+

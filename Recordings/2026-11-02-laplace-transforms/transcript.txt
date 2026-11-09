@@ -1,0 +1,942 @@
+[0:00:02] Okay. So I have started the recording as usual.
+[0:00:06] And
+[0:00:07] as always, we'll start with a few announcements.
+[0:00:10] The first couple are pertaining to the homework. So just a reminder that problem set seven,
+[0:00:16] was due today, 9AM, so hopefully, people have turned that in. And then, the next problem set, problem set eight,
+[0:00:23] is due a week from today, so on Monday, November 9. And then the next announcement is that remember that we have semester exam two coming up on Wednesday, November 11. Okay? So
+[0:00:38] the answer sheet template for that exam will be posted hopefully late this week, but definitely by the beginning of next week. And you should make sure, as with the first exam, to bring a copy of the template to the exam. And that'll have to be a hard copy template on which you'll physically write your solutions.
+[0:00:59] The fourth announcement is that I have posted a short, what I've called a checkpoint survey
+[0:01:06] on Canvas, and that is just sort of asking about your experiences in the course so far. And compared to the past few years, I've added a few questions on the survey that pertain to
+[0:01:20] the use and impact of AI,
+[0:01:23] which I think even compared to last year is much more prominent and certainly much more powerful. So if everyone can complete the survey by 11:59PM
+[0:01:34] on Sunday, then that'll be particularly helpful to me in understanding your experiences thus far.
+[0:01:41] The final announcement is that
+[0:01:44] there will be handout on Laplace transform pairs that I'll post on Canvas later this week. That's a topic that we will... That we'll start discussing
+[0:01:54] today.
+[0:01:55] And just to give you a heads up, I will give you a copy of that table for you to use on the final exam, but, of course, you won't have it for the second semester exam because
+[0:02:07] Laplace transforms are not included, in the content on the second, semester exam. So any questions on, these announcements?
+[0:02:18] Okay. Any questions from our last class meeting?
+[0:02:23] Okay. If not, then we will pick up from where we left off. So basically, what we want to do today is we wanna finish up our discussion of,
+[0:02:33] active filter circuits,
+[0:02:35] and that will bring us to the end of what's covered on the second semester exam. And then we will start the discussion of circuit analysis using Laplace transforms, which will not be on the second semester exam, but it will be on
+[0:02:50] the final. Okay. So that's what we have coming up for today.
+[0:02:54] And if you remember,
+[0:02:56] back to... If you think back to what we did last week, when we started talking about active filter circuits, then,
+[0:03:03] we talked about, in our last class meeting,
+[0:03:07] two types of first order active filter circuits. We talked about a highpass filter and a lowpass filter. And actually, one of you, I think, Nathan, you asked this question about whether it's possible to combine multiple circuits like that in order to basically get
+[0:03:24] a higher order filter, which will give you a steeper roll off. And the answer was yes, and our first example today actually shows how this will work. So we want to start off today looking oops,
+[0:03:37] wanted the black pen here.
+[0:03:43] Okay. We'll start off
+[0:03:45] looking at an example
+[0:03:47] of another active filter circuit, which is a cascaded
+[0:03:53] third order
+[0:03:56] lowpass filter.
+[0:04:01] Okay. And what we will see here is that by taking the basic lowpass filter structure that we talked about last Wednesday and
+[0:04:11] constructing a cascade, so taking the output of one stage and using it as the input to
+[0:04:16] another stage, then we can get essentially the same lowpass filter functionality,
+[0:04:22] but
+[0:04:23] with a high... But a higher order filter so that the drop off is steeper. Okay? And so the circuit that we will look at that does this is this one. So it's a pretty big circuit, so you should leave room
+[0:04:36] to,
+[0:04:38] include the entire circuit. So we have an op amp,
+[0:04:41] okay, with its output
+[0:04:43] and two inputs.
+[0:04:46] The,
+[0:04:47] noninverting input is connected to ground, and then we have
+[0:04:54] a
+[0:04:55] voltage source v sub s connected through
+[0:04:59] a resistor. This is a 10 ohm resistor to the inverting input,
+[0:05:03] and then
+[0:05:05] our feedback connection
+[0:05:07] will consist of
+[0:05:11] a
+[0:05:12] resistor
+[0:05:13] and a capacitor in parallel with each other. K. So this will be a
+[0:05:19] 10 kilo ohm resistor and a one
+[0:05:23] nanofarad capacitor,
+[0:05:25] and, this circuit will give us an output voltage v one. Okay? And if you look at this and you look back to what we did last Wednesday, this is basically just the
+[0:05:37] first order active lowpass filter that we looked at last
+[0:05:42] time. Okay. But now what we can do is we can take the output
+[0:05:47] of this stage of the circuit, right, this voltage v one, right, since that is at the output of the op amp, then it'll act, within the limits of the ideal op amp model essentially as,
+[0:05:58] a voltage source.
+[0:06:00] And so we can use that as the input to a second stage of this circuit, which is just another,
+[0:06:07] first order, active lowpass filter. So we're gonna connect this again through a resistor,
+[0:06:14] but now this resistor is going to be a 10 kiloohm resistor,
+[0:06:19] and
+[0:06:21] we will connect that to
+[0:06:23] a second op amp.
+[0:06:26] Okay. So v one is connected through the resistor to the inverting input,
+[0:06:30] and then the noninverting input is connected to ground. Okay? And then
+[0:06:38] we have... Again,
+[0:06:40] in our
+[0:06:44] feedback
+[0:06:46] connection,
+[0:06:47] we have the same configuration of
+[0:06:50] a 10 kilo ohm resistor in parallel with a
+[0:06:55] one nanofarad capacitor.
+[0:06:57] That gives us
+[0:06:59] an output voltage v two.
+[0:07:02] Okay?
+[0:07:03] And then we will have one more stage of this, which is essentially just a repeat of the second stage that we just drew. So where we take, the output v two of the second op amp and connect it through a resistor, which is, again, a 10 kilo ohm resistor,
+[0:07:22] and that is connected to
+[0:07:25] a third op amp,
+[0:07:28] okay, where the noninverting input is again connected to ground.
+[0:07:33] And then we have
+[0:07:35] the same,
+[0:07:37] feedback connection that we had for the other two stages,
+[0:07:43] right, where we have, once again, the 10 kiloohm resistor
+[0:07:47] and the one nanofarad capacitor.
+[0:07:50] And that brings us to the final output of
+[0:07:55] this circuit,
+[0:07:57] which we will call v three. Right? The output voltage of, the third op amp stage in this circuit. Okay?
+[0:08:05] So this is the circuit that we want to analyze,
+[0:08:08] and what we will see is that each successive stage of this circuit
+[0:08:15] gives us basically another factor of
+[0:08:18] pole
+[0:08:19] in the transfer function. So we'll have three of those, and that will give us a third order
+[0:08:24] lowpass filter. Okay. So that's the basic idea.
+[0:08:28] Now if you look at these three stages, alright, you can see that each of them has the same configuration
+[0:08:37] for the feedback connection. Right? 10 kilohm resistor in parallel with a one
+[0:08:41] nanofarad
+[0:08:42] capacitor.
+[0:08:44] Okay? And so, you know, as we did before,
+[0:08:49] alright, we can think of that
+[0:08:51] as
+[0:08:53] in terms of just its impedance.
+[0:08:55] Alright? So this is the the feedback impedance z sub f. Alright?
+[0:09:01] And if we think about the capacitor and the resistor together in that way, then you can see that this
+[0:09:10] has the structure just of an inverting op amp amplifier. Alright? And so if you remember to what we did when we talked about op amp amplifiers,
+[0:09:20] then we know that the
+[0:09:24] output of this is going to be just v one here. It's gonna be minus z f over this resistor over here times the input voltage.
+[0:09:32] What we also have here is
+[0:09:36] that because each of these feedback connections
+[0:09:40] has the same combination of components, right, 10 k resistor in parallel with one nanofarad capacitor,
+[0:09:45] then
+[0:09:47] each of these stages
+[0:09:48] will have
+[0:09:50] a pole in the transfer function, and that pole will be at the same frequency. Right? That frequency,
+[0:09:55] omega naught, is just going to be one over
+[0:10:00] the
+[0:10:02] resistor value times the capacitor value, so RF times CF. And so that is going to be one over
+[0:10:10] 10 kilohms times one
+[0:10:13] nanofarad.
+[0:10:14] And if you work that out, right, that's in the denominator, it's 10 to the fourth times 10 to the minus nine. So that's 10 to the minus five in the denominator, so that becomes
+[0:10:23] 10 to the five in the numerator. Right? And that is in
+[0:10:28] radians per second. Okay. So this is going to be the pole frequency, and it'll be the pole frequency for all
+[0:10:35] the op amp series.
+[0:10:41] Okay. And we'll use this frequency throughout the rest of our analysis of this circuit. So are there any questions to hear?
+[0:10:49] Yes, Jason. In general,
+[0:10:53] creating
+[0:10:54] filters, they, you know, they have a goal. They want to make some, you know, bandpass filter. Do they
+[0:11:01] sort of
+[0:11:02] memorize,
+[0:11:04] for lack of better word, different kinds, different structures of circuits and then just tune the parameters to fit what they need, or do they usually, like, come up with completely new circuits that try to
+[0:11:19] So the answer is, in many cases, it's somewhere in between.
+[0:11:23] So,
+[0:11:26] alright, it's not really practical,
+[0:11:29] to try to memorize every possible configuration, alright, you know, especially once you get to, more complicated functionalities that you might wanna get. But there are certainly, you know, there are some basic building blocks. For example, inverting amplifier, right,
+[0:11:45] or how you do summing or a difference, and, you know, just maybe some of the basic filter circuit structures that are important come up frequently and where it's very useful to have that as just part of your working knowledge. Alright? And then from those, then you can build up kind of more complicated structure... Circuit structures and achieve more complicated functionalities.
+[0:12:12] And then,
+[0:12:14] you know, having some
+[0:12:16] understanding and ultimately intuition
+[0:12:19] for how these different pieces work together and how you can, you know, say, efficiently get a particular function or, you know, really push the limits of the performance of a circuit is very useful as well. And so, you know, basically, a lot of practice and thinking about it
+[0:12:38] is generally how you develop those kinds of capabilities. Is that kind of what you're at... What you're asking? Yeah. Okay. So so any other questions right now?
+[0:12:48] Okay. So let's go ahead and
+[0:12:51] analyze this circuit. We pointed out that each of these stages has the same feedback impedance, z sub f. So let's calculate what
+[0:13:02] that impedance is. Right? It's just the impedance
+[0:13:05] of the resistor in parallel with the capacitor. So that's gonna be the product r sub f of the impedances, r sub f times one over j omega c sub f divided by the sum,
+[0:13:19] r sub f plus one over j omega c sub f. Right? And to simplify this a little bit, we will multiply the numerator and the denominator
+[0:13:29] as usual by
+[0:13:32] j omega
+[0:13:33] c sub f over j omega c sub f.
+[0:13:37] Okay. And
+[0:13:39] if we do that, then what we get is in the numerator, r sub f, and in the denominator, we get one plus j omega
+[0:13:49] r sub f times c sub f. Alright? And so this product here, right, r sub f times c sub f, that's where this frequency omega naught, the pole frequency, comes from.
+[0:14:02] And if we plug numbers,
+[0:14:04] into this, then for r sub f, that's 10 kilohms, so that's 10 to the fourth
+[0:14:10] divided by one plus
+[0:14:12] j omega.
+[0:14:13] And then, r sub f times c sub f, that's one over omega naught, so that's going to be 10 to the minus five. Okay. So, this is the, the feedback impedance.
+[0:14:25] And once we have that,
+[0:14:28] then we know that
+[0:14:31] the voltage v one. Right? That's the output voltage
+[0:14:34] of the first stage,
+[0:14:37] okay, of this circuit is going to be,
+[0:14:42] alright, it's minus
+[0:14:44] z sub f over
+[0:14:46] z sub s. Right? Z sub s is, in this case, it's the 10 ohm resistor that's connected between the input signal and the op amp input times
+[0:14:57] the input voltage v sub s. Right? This is something that
+[0:15:02] perhaps you just remember from the discussion of
+[0:15:06] the inverting amplifier op amp circuit, or you could easily derive it using... By applying KCL, right, at the inverting input of the op amp. Okay. And so what we get from this is
+[0:15:21] z sub f is this expression over here. So we have 10 to the fourth, and then it's divided by this input resistor, 10 ohms. So we have 10 to the fourth over 10, that's 10 to the third,
+[0:15:34] and then in the denominator, one plus j omega,
+[0:15:39] and then r f times c f is 10 to the minus
+[0:15:43] five
+[0:15:44] times
+[0:15:45] v sub s. So that is the voltage v one, the output of... The output voltage of the first stage
+[0:15:52] of
+[0:15:55] this circuit up here. Right? So v one over here. So any questions to hear?
+[0:16:00] Okay. So now what we wanna do is we can take this voltage v one that is produced by the first stage of this circuit and take that to act as just the input voltage of this second stage over here. Alright? And, remember,
+[0:16:21] this voltage v one, since this is the op... Output of the op amp, we can think of it as essentially acting like, just the voltage source. Okay?
+[0:16:30] And
+[0:16:32] so
+[0:16:33] then to get v two,
+[0:16:36] right, v two, the output of the second stage, is going to be just minus the same feedback impedance, z sub f, since that's also the feedback impedance of the second stage,
+[0:16:47] now divided by
+[0:16:51] this resistance over here, right, which is 10 kiloohms, right, rather than 10 ohms.
+[0:16:58] Okay. So we have this over
+[0:17:00] now 10
+[0:17:02] kiloohms,
+[0:17:03] and that is times the voltage v one, which is now acting as the input to the second stage. Okay?
+[0:17:11] And
+[0:17:12] if we just plug in the
+[0:17:15] values and the expressions for for all of this,
+[0:17:19] we have
+[0:17:21] the minus sign over here, and then we have z sub f over 10 kiloohms. So for z sub f, we have 10 to the fourth
+[0:17:32] and then... In the numerator, and then we have 10 kiloohms in the denominator, which is also 10 to the fourth. And then from z sub f, we have one plus j omega times 10 to the minus five.
+[0:17:43] Okay. So that's minus z sub f over 10 kiloohms.
+[0:17:47] And then we have... Oh, yes. Question. If it's like,
+[0:17:50] generally speaking,
+[0:17:52] that once we get the the upper bound goes straight to the other one. Mhmm. And I think of it as, like, you know, you just have c f one, m c f two, m c f three, like, all the way, so on and so forth. Then Yeah. Or the transfer functions get multiplied. Oh, okay. Right. Not necessarily just the feedback. I... And then it's divided by the the Right. Source. Yeah. So that's the additional factor that goes into the transfer function.
+[0:18:20] And that works because,
+[0:18:23] right, the output of each stage is at the output of the op amp. So it really is acting as,
+[0:18:29] a voltage source. So it can draw... You can draw any amount of current, right, within the limits of the ideal op amp model. I can draw any amount of current, and they'll still give you the same voltage. If you had a passive,
+[0:18:39] circuit that had multiple stages like this, and we looked at an example that was kind of like that earlier, then
+[0:18:49] connecting the output of one stage to the next stage would change the behavior of that first stage. Okay? So then you have to be more careful, about how you do that. Here, it's more straightforward.
+[0:19:02] Does that answer your question? That is...
+[0:19:05] It's just you can multiply each transfer function. Yeah. That's a bit essentially how it'll go here. Yes. You you said with passive filters,
+[0:19:15] a different loads would create different function or, like, would alter the original circuit?
+[0:19:22] It would change the behavior of the original circuit in the in the sense that if you had a, an initial stage that had a particular output voltage, right, when it wasn't connected to anything, then if you take that to be the input to another,
+[0:19:39] say, passive stage,
+[0:19:41] then you'll start drawing some currents
+[0:19:43] through that terminal, and that will change the behavior of that first stage. So then you have to analyze the whole thing together.
+[0:19:52] Okay. So
+[0:19:54] so what we have here so far is minus z f over 10 kiloohms,
+[0:19:59] and then that is times
+[0:20:01] the voltage v one. Alright? And v one we calculated up here. So we're gonna multiply this by
+[0:20:08] minus
+[0:20:09] 10 to the third
+[0:20:11] over one plus j omega 10 to the minus five times the original input voltage v sub s. Okay?
+[0:20:20] And if we put all this together,
+[0:20:22] then what'll happen
+[0:20:25] is that these 10 to the fourths will cancel out,
+[0:20:29] The minus signs will cancel out.
+[0:20:36] Okay. And then what you get is,
+[0:20:39] 10 to the third. Alright. That is this
+[0:20:43] 10 to the third over here over... Now it's going to be one
+[0:20:48] plus j omega 10 to the minus five squared. Right? Because we have two factors,
+[0:20:55] two of the pole factors over here in the total of what would be the transfer function for two stages times
+[0:21:03] v sub s. Alright? So you can see that sort of the main effect of adding this second stage
+[0:21:10] to the circuit is to give you another pole factor in
+[0:21:15] what would be the transfer function for two stages. And so now this has become... If this were the end, this would be a second order circuit. Right? Because it has, basically, at high frequencies, omega squared in the denominator.
+[0:21:28] Okay. So any questions to hear?
+[0:21:32] Okay. And then the last step,
+[0:21:35] okay, is
+[0:21:37] to look at the... To calculate the voltage v three.
+[0:21:42] Right? That is,
+[0:21:45] alright, the output of this third stage of the circuit with the voltage v two as its input. And since this third stage is the same in structure and component values as the second stage, then the analysis
+[0:22:01] will be exactly
+[0:22:03] the same. Alright? So to get v three, that is going to be minus
+[0:22:09] the feedback impedance z sub f, again, over 10 kiloohms,
+[0:22:15] now times,
+[0:22:17] its input voltage, which is v two. Okay? So we're going to get... It'll be minus.
+[0:22:24] And then from z sub f, we have 10 to the fourth in numerator. Then from the 10 kiloohms, we have 10 to the fourth in the denominator. And then from z sub f, again, we have one plus j omega 10 to the minus five. Okay? And that is times v two,
+[0:22:40] which is this... Given by this expression over here. So 10 to the third
+[0:22:46] times
+[0:22:47] in the... Or divided by one plus j omega 10 to the minus five quantity squared
+[0:22:54] times
+[0:22:56] v sub s.
+[0:22:58] Okay? And then here, again, we get the 10 to the fourths,
+[0:23:02] in the numerator and the denominator canceling out. So what we finally get is minus
+[0:23:09] 10 to the third over one plus j omega
+[0:23:13] 10 to the minus five now cubed
+[0:23:16] times
+[0:23:19] v sub s. Right? And since v three is the final output of the circuit,
+[0:23:26] then we can calculate the transfer function h of omega. Right? That is going to be the output voltage v three over the input voltage v s,
+[0:23:36] and that is just
+[0:23:39] this prefactor over here. Alright? So it is minus
+[0:23:43] 10 to the third
+[0:23:46] divided by
+[0:23:48] one plus j omega 10 to the minus five
+[0:23:52] now cubed.
+[0:23:54] Okay. So this is the transfer function.
+[0:23:57] And so what we can see
+[0:23:59] is that, alright, we have this factor in the denominator,
+[0:24:04] and that corresponds to having now a third order
+[0:24:11] simple poll.
+[0:24:14] And the pole frequency is omega naught, which we saw earlier is 10 to the fifth
+[0:24:22] radians per second. Okay. So this is the transfer function.
+[0:24:28] Okay? And
+[0:24:30] we can look at the Bode plots, for this. So if we look at the Bode magnitude
+[0:24:36] plot.
+[0:24:41] Okay. And so remember the Bode plots, in the terminology and the convention that's used in Ulaby,
+[0:24:47] the Bode plots are the, basically, the log plots of the magnitude versus the log of frequency and then the plot of the phase versus the log of the frequency,
+[0:24:57] using kind of the linear approximations
+[0:24:59] for the limiting behaviors at low and high frequencies
+[0:25:03] for,
+[0:25:04] for the magnitude and the phase. And so for the magnitude,
+[0:25:13] right, this is the magnitude of the transfer function
+[0:25:17] in dB
+[0:25:19] versus
+[0:25:20] frequency,
+[0:25:21] and we will mark
+[0:25:24] point one
+[0:25:26] omega naught where omega naught is the pole frequency omega naught and 10 omega naught.
+[0:25:35] Okay. And
+[0:25:38] for the low frequency behavior of this, right, we have
+[0:25:43] that this is going to go to... For the magnitude, it's gonna go to 10 to the third, right, because omega is going to zero. And so we're gonna have 20 times the log
+[0:25:52] log base 10 of 10 to the third. The log base 10 of 10 to the third is three, so that's gonna be 60 dB. Okay. So,
+[0:26:00] at low frequencies, this is gonna go to
+[0:26:04] 60 dB.
+[0:26:07] And then,
+[0:26:09] at frequencies below omega naught in the Bode plot, for the linear approximation, we just take this to be constant.
+[0:26:18] And then at high frequencies,
+[0:26:21] right, so frequencies above
+[0:26:23] omega naught, right, then we take the behavior of this to be its linear behavior at very high frequencies where in the denominator,
+[0:26:33] we're going to have... Basically, it'll go as omega cubed in the denominator.
+[0:26:39] So that means that for every factor of 10 increase in the frequency, we're gonna have a factor of 10 cubed or a thousand
+[0:26:46] increase or decrease in the transfer function. Okay? And so
+[0:26:53] a factor of 10 to the third decrease for every factor of 10 increase in the frequency
+[0:27:00] gives us
+[0:27:01] a slope of minus 60 dB per decade. Okay. So this is gonna come down
+[0:27:10] kind of like this. So the slope here is minus 60
+[0:27:15] dB per decade,
+[0:27:17] okay, which is much steeper than what we saw for the first order filter where that slope was minus 20 dB per decade. So instead of going down by a factor of 10
+[0:27:29] for
+[0:27:30] a factor of change in the frequency, it goes down by a factor of a thousand. Yes. So,
+[0:27:34] I guess, what's the, like,
+[0:27:37] real world limit for this? Because, like, the theoretical limit is you could just do this amount
+[0:27:42] of times and get a perfect, like, box, basically. But, like, the real world limit, you know, real stuff,
+[0:27:49] like, how... I guess, why don't you just make, like, oh, let me put, you know, five of them in a row? I mean, these are very cheap parts, I feel like.
+[0:27:59] Yes. So so in principle, you could do that.
+[0:28:02] Although, you know, it's not that cheap and, you know, it doesn't take up zero space or consume zero power.
+[0:28:10] And then a lot of times,
+[0:28:12] in addition to being concerned with... You know, this is... At some level, it's... We're thinking about dependence on frequency, but we're kind of thinking about it in a framework that's largely a DC, framework. So we're not worried about, you know, parasitic effects or frequency response or anything like that of,
+[0:28:30] the...
+[0:28:31] Say, in this case, the op amps.
+[0:28:34] And,
+[0:28:35] as,
+[0:28:37] you know, as you try to push their performance of,
+[0:28:40] a given circuit by, you know, adding things that in principle, you should be able to just cascade in this way, then you start reaching other limits of
+[0:28:50] how these things, you know, how these components will,
+[0:28:54] perform
+[0:28:57] so that, you know, if you have many of these together, there's there's more parasitics that takes longer for it to respond and so forth. And so,
+[0:29:05] in practice,
+[0:29:06] you can only go so far in,
+[0:29:10] sort of cascading,
+[0:29:12] the
+[0:29:13] ideal behaviors and expecting to get the ideal behavior out.
+[0:29:18] It's
+[0:29:21] like...
+[0:29:22] I guess, what's
+[0:29:23] kind of the norm with the game? Should it be that you equally spread it out between each, like, stage or just put it on the meeting one and then have all the other ones kinda be more followers?
+[0:29:35] Oh, so so that depends on,
+[0:29:38] what exactly you're trying to optimize. So, actually, I had a senior design team that was working to build some instrumentation for our lab a few years ago, and
+[0:29:49] one of the things that they had to do was to build,
+[0:29:52] an op amp based circuit that had very high gain,
+[0:29:56] like 10 to the eighth
+[0:29:59] or so
+[0:30:00] because we wanted to amplify a very small
+[0:30:04] current.
+[0:30:05] And then
+[0:30:06] at the same time, have good frequency response.
+[0:30:11] Okay?
+[0:30:13] And so,
+[0:30:15] in that case, right, one of the limitations that,
+[0:30:18] you can have in op amps is that they can only,
+[0:30:23] say,
+[0:30:24] change their output voltage at a certain rate.
+[0:30:28] Okay?
+[0:30:29] And so if you try to get a huge gain in one stage,
+[0:30:34] then the op amp wouldn't be able to change,
+[0:30:37] the output voltage,
+[0:30:38] at a sufficiently high rate to get that gain. So in that case,
+[0:30:45] you you wanna divide up the gain across multiple stages.
+[0:30:50] There are other situations,
+[0:30:52] you know, again, for some other types of instrumentation that we have had in the lab where you also wanna have an extremely high gain,
+[0:30:59] but
+[0:31:00] if it takes,
+[0:31:01] you know, a long time, right, to get, say, a factor of 10 to the 10 gain,
+[0:31:06] long within reason, meaning, like, half a second or something like that, not minutes,
+[0:31:11] then
+[0:31:12] it
+[0:31:14] was fine.
+[0:31:15] But you had to put all these, components into a vacuum system, and so you wanted it to be compact, not dissipate a lot of power and such. So, so then you just put one op amp in that's a high performance op amp and a very high value resistor for, to make essentially an inverting amplifier, and that was, you you know, sort of the preferred,
+[0:31:37] design for for that functionality. So it really depends on what you're trying to optimize for,
+[0:31:44] and and that can be quite different, in different circumstances.
+[0:31:48] So, hopefully, that sort of answers your question. Okay.
+[0:31:52] Any other questions?
+[0:31:54] Okay.
+[0:31:56] So,
+[0:31:57] so that's the magnitude.
+[0:31:59] We also wanna look at the phase.
+[0:32:01] So
+[0:32:02] let's look at the Bode phase
+[0:32:07] plot.
+[0:32:09] Okay. So there, remember,
+[0:32:12] in the Bode plots,
+[0:32:14] the phase
+[0:32:17] is on a linear scale,
+[0:32:19] but the frequency is still on a log scale. So we have point one omega naught,
+[0:32:26] omega naught,
+[0:32:29] and 10 omega naught. Okay?
+[0:32:31] If we look at
+[0:32:35] the transfer function over here, as omega goes to zero,
+[0:32:39] then
+[0:32:40] the phase will be determined by just this factor of minus one. Alright? So minus one,
+[0:32:46] has a phase of a 180 degrees.
+[0:32:50] Okay. So what'll happen is
+[0:32:54] at low frequencies, which remember for the phase plot, we take that to be much lower than the pole frequency. So less than, point one omega naught is the convention that we use here. So it's a
+[0:33:07] 180 degrees.
+[0:33:09] And then,
+[0:33:11] as the frequency increases,
+[0:33:13] what we can see is that,
+[0:33:17] in the denominator, we have this one plus j omega tens times 10 to the minus five. Right? So for that factor,
+[0:33:26] then
+[0:33:27] that will give us a phase angle that is positive and in the first quadrant. Okay? And then it'll be cubed.
+[0:33:35] So then that phase factor will be multiplied by three. Alright?
+[0:33:39] But for now, the key point is that this is going to be positive phase angle, and so it's going to... Since it's in the denominator, it's gonna subtract from the phase of zero. So it's gonna start coming down. The phase is gonna start coming down like this.
+[0:33:55] Okay?
+[0:33:57] And then when we get to very high frequencies, say, omega greater than 10 omega naught,
+[0:34:05] what'll happen here is that
+[0:34:08] this will basically... In the denominator,
+[0:34:10] the phase will be determined by a factor equal to j cubed.
+[0:34:14] Alright?
+[0:34:16] And j cubed has a phase of what?
+[0:34:21] What do you think?
+[0:34:29] Negative.
+[0:34:31] Well, what is what is the what is the phase of j?
+[0:34:36] Right.
+[0:34:37] And so what's the phase of j cubed?
+[0:34:41] Right. So so you can have it as either negative 90 or as two seventy. Right?
+[0:34:48] So... But actually, right, if you think about how this evolves as omega increases, we wanted to take we wanna take it to be two seventy, and that's gonna be subtracted from 180 degrees. So that'll bring us to minus 90 degrees.
+[0:35:07] Okay. So,
+[0:35:10] we'll have this phase out here and then...
+[0:35:16] Alright. The transition will look like this.
+[0:35:19] Okay.
+[0:35:20] So this is what the Bode phase plot looks like for
+[0:35:24] for this third order
+[0:35:28] lowpass filter. Alright? But,
+[0:35:31] you know, the key point that we really wanted to see here was that by having these multiple stages, we could get a
+[0:35:39] steeper roll off outside the the passband of the filter. Okay. So any questions
+[0:35:45] here?
+[0:35:47] Yes, Jason. If it's negative
+[0:35:50] originally, why is the phase one eight... I guess it doesn't matter between one eighty and negative. One eighty and ten. Yeah. So we could have started this... Instead of starting it at one eighty, we could started... We could have started it at minus one eighty. Okay?
+[0:36:05] And then, it would have gone from minus one eighty, you know, down to
+[0:36:11] 180 minus two seventy. Right? But,
+[0:36:16] you know, in general, we kind of wanna have things,
+[0:36:20] you know, closer to zero. Right? So,
+[0:36:23] you know, you can add or subtract some integer multiple of 360 degrees from the phase. It's not gonna change anything,
+[0:36:30] and, you know, it's sort of a convention, right, that,
+[0:36:35] is convenient and often used to,
+[0:36:37] say, alright. The phase... You wanna define the phase so that it's within a certain range, say, minus one eighty to one eighty or,
+[0:36:44] zero to three sixty or something like that.
+[0:36:47] Okay. But if we wanted to, we could have shifted it,
+[0:36:51] by some multiple of three sixty.
+[0:36:54] Any other questions?
+[0:36:56] Okay. So so that's the example that we want to look at of
+[0:37:01] cascaded
+[0:37:03] active filter. Alright?
+[0:37:07] There are some other
+[0:37:09] examples that I've made recordings of that you can take a look at and that will help you to understand further how to think about and design
+[0:37:19] cascaded filter circuits. So you can also see
+[0:37:25] videos that I will post on Canvas of two additional examples.
+[0:37:31] One of them is
+[0:37:34] a cascaded
+[0:37:37] bandpass filter.
+[0:37:42] Okay. So the same idea of cascading.
+[0:37:47] Now in this case, it'll be a lowpass filter with a highpass filter, and then by doing that, you can get a bandpass filter. If you switch the order of the frequencies for the lowpass and the highpass, you could get a cascaded band reject filter. And then the other exam... Example that
+[0:38:06] I'll post a video of is
+[0:38:09] band reject
+[0:38:12] filter design.
+[0:38:16] Okay. And the idea in that example is that you're given a set of parameters that the circuit has to satisfy. So the gain, what the stopband is, and what the roll off has to be,
+[0:38:29] outside of,
+[0:38:31] the band stop, right, where the the band reject region. And then the idea is to design a cascaded filter circuit that actually satisfies
+[0:38:41] all of those conditions. Okay. So
+[0:38:44] so you can take a look at the videos
+[0:38:47] that I'll post to see examples of how those things are done.
+[0:38:53] And then, right, and then there are the problem solving videos that
+[0:38:57] have been posted for the semester, and there are some examples of these types of filters there as well.
+[0:39:04] And so including
+[0:39:06] these videos that I've listed here,
+[0:39:09] that is the end
+[0:39:12] of
+[0:39:13] what you were responsible for
+[0:39:16] for the second semester exam.
+[0:39:20] So semester exam two basically covers
+[0:39:25] to this point.
+[0:39:28] Okay. And then, what we will do after this, which is to discuss... Start our discussion of
+[0:39:37] integral transform techniques and specifically Laplace transforms,
+[0:39:41] will be included on the final but not on the second semester exam. So any questions to hear before we continue with the, next major topic?
+[0:39:52] Okay. So if not, then we'll move on to
+[0:39:58] the last big topic for the course, which is the use of
+[0:40:04] Laplace and Fourier techniques
+[0:40:07] to really
+[0:40:09] broaden the class of behavior... Of input signals, right, that
+[0:40:16] we can have in understanding and analyzing and designing circuits. And we will start off
+[0:40:22] looking at how we use what are called Laplace transforms for
+[0:40:26] analyzing and thinking about circuits. So we wanna look at now the topic of
+[0:40:32] circuit analysis,
+[0:40:36] using
+[0:40:38] Laplace
+[0:40:40] transforms.
+[0:40:45] Okay. And this is discussed
+[0:40:49] in Ulaby et al,
+[0:40:54] and it's chapter
+[0:40:56] 12.
+[0:40:58] Okay.
+[0:40:59] So
+[0:41:01] to put some context,
+[0:41:02] around this,
+[0:41:04] if you think back to what we have been doing over the course of the semester,
+[0:41:10] basically, what we've been doing is we have been looking at time dependent behavior of circuits
+[0:41:16] and gradually expanding
+[0:41:19] the range of input signals for which we can understand
+[0:41:23] and analyze and ultimately design
+[0:41:26] circuits with particular functionalities.
+[0:41:28] Right? So earlier in the semester,
+[0:41:37] right, what we did was we analyzed
+[0:41:43] circuits in the following situations.
+[0:41:55] Okay. At the very beginning of the semester,
+[0:41:58] right, we started off by looking at circuit behavior in the time domain. Alright? Because that's, sort of the most intuitive in some sense because, you know, we kind of function in the time domain. And so what we did was we used the basic circuit laws, KCL, KVL, you know, node analysis and the like,
+[0:42:17] and,
+[0:42:19] we
+[0:42:20] use the relationships between current and voltage in the time domain for the different types of components. So Ohm's law,
+[0:42:27] for a capacitor, the voltage is... Or current is equal to c dV dt and so forth. And we use those to construct differential equations that describe the behavior of currents and voltages in the circuit.
+[0:42:41] And then, we tried to solve those differential equations so that we could get the behavior of the circuits,
+[0:42:47] and we were able to do that but only for, really, the very simplest types of input signals, so constant input voltage or maybe
+[0:42:57] voltages or currents switched on or off,
+[0:43:01] but nothing really more complicated than that. Okay. So what we did first was in the time domain,
+[0:43:13] right, we used
+[0:43:15] differential equations.
+[0:43:22] Okay, to understand
+[0:43:27] the time dependent behavior of circuits,
+[0:43:32] right, the time dependent response,
+[0:43:35] but only
+[0:43:37] for really quite simple
+[0:43:40] input signals.
+[0:43:45] Okay. So that was useful but really quite limiting.
+[0:43:49] Okay?
+[0:43:50] After that,
+[0:43:52] what we did was we moved to the frequency domain, right, which you saw
+[0:43:58] in an introductory way in three zero two and three zero two h,
+[0:44:03] and we said that we could use
+[0:44:05] phasors
+[0:44:06] to understand the steady state response of circuits if we had
+[0:44:10] signals that were sinusoidal signals. Right? So
+[0:44:15] oscillating as sines or cosines at a single fixed frequency.
+[0:44:19] Alright? And that allowed us to
+[0:44:22] understand and think about and, you know, develop some intuition for how circuits behaved
+[0:44:29] at a fixed frequency, right, where you had sinusoidal signals in
+[0:44:35] the circuit. Right? So then, right, the next thing was that in the frequency domain,
+[0:44:46] we used phasor analysis,
+[0:44:52] okay, to understand,
+[0:44:58] the steady state response,
+[0:45:06] Okay. If circuits...
+[0:45:10] Right. The response to sinusoidal signals
+[0:45:18] add
+[0:45:21] a single frequency.
+[0:45:26] Okay.
+[0:45:28] And then we built upon that to think about that frequency then as a parameter that,
+[0:45:35] we could change,
+[0:45:36] not for a single analysis, but it allowed us to,
+[0:45:41] think about how circuits behaved at different frequencies. Okay. So circuit response as a function of frequency that led us to the idea of filter circuits and the like, where you want to engineer a particular type of behavior,
+[0:45:56] as a function of frequency. Okay? But that's still pretty limiting. Right? If you have, for example, a circuit where you have
+[0:46:06] sinusoidal signals at multiple frequencies that are present at the same time, right, then what we've talked about so far doesn't really allow you to do that explicitly if you have non periodic signals, right, then
+[0:46:20] except for very simple cases
+[0:46:23] which you can analyze directly in the time domain, then what we've done doesn't really allow us to treat those kinds of situations either.
+[0:46:31] Alright. So what
+[0:46:34] we wanna do now is to address the question of really how
+[0:46:39] do we understand,
+[0:46:44] okay, circuits
+[0:46:48] that have, in some sense,
+[0:46:53] arbitrary input signals.
+[0:46:58] Okay. Or at least, you know, where the range of possible inputs goes well beyond what we have treated thus far. Okay.
+[0:47:06] And
+[0:47:07] doing this is what these transform techniques, Laplace and Fourier techniques, will allow us to do. Alright? So the idea then is that
+[0:47:22] these transform techniques,
+[0:47:27] basically, what they give us is a systematic way of going from the time domain to the frequency domain,
+[0:47:34] recognizing
+[0:47:36] that analysis in the frequency domain is going to be a lot simpler because you're trading differential equations in the time domain for algebraic equations in the frequency domain,
+[0:47:46] and
+[0:47:47] therefore, you can treat a much wider range of situations in a mathematically tractable way in the frequency domain, and transform techniques are kind of the key in allowing you to make that transition
+[0:48:01] to the frequency domain. So transfer transform techniques,
+[0:48:04] right, what they do
+[0:48:07] is that they allow us to connect
+[0:48:12] a time domain circuit
+[0:48:19] or a little more precisely, time domain description
+[0:48:22] of a circuit. Right? So time domain circuit description,
+[0:48:29] for example, a differential equation,
+[0:48:38] alright, we can go from that to the frequency domain.
+[0:48:47] Alright? And in the frequency domain,
+[0:48:50] things are simpler mathematically because you're dealing with algebraic equations rather than differential equations. Okay. So in the frequency domain,
+[0:49:00] okay, the circuit
+[0:49:04] is described,
+[0:49:08] okay, by algebraic
+[0:49:14] rather
+[0:49:16] than differential equations.
+[0:49:26] Okay. So,
+[0:49:30] so kind of a map, right, of what we are doing here is
+[0:49:35] that...
+[0:49:36] Alright. We have the time domain,
+[0:49:42] and we have the frequency domain.
+[0:49:50] Okay.
+[0:49:51] And in the time domain, right, the way that we describe the behavior of currents and voltages was essentially
+[0:50:02] using differential equations.
+[0:50:08] Okay? And then under sort of limited circumstances,
+[0:50:13] we could solve those differential equations
+[0:50:16] to get
+[0:50:18] current and voltage,
+[0:50:21] okay, as functions of time.
+[0:50:26] Okay. So that's what we did, at the beginning of the semester. Right?
+[0:50:31] What we would like to do is to be able to take a description like this here, a differential equation based description,
+[0:50:39] and
+[0:50:41] go from that to the frequency domain.
+[0:50:45] And
+[0:50:46] the transform approach
+[0:50:50] is basically what allows us to do that. So we'll talk first about
+[0:50:56] Laplace transforms,
+[0:50:58] then we will talk about Fourier techniques, Fourier series and Fourier transforms.
+[0:51:04] Those transform approaches will take us from the time domain to the frequency domain where differential equations
+[0:51:12] become
+[0:51:16] algebraic equations,
+[0:51:19] okay, with frequency as a parameter that appears in those algebraic equations,
+[0:51:25] then,
+[0:51:27] right, they're algebraic equations.
+[0:51:29] We're typically dealing with linear circuits, so we have linear algebraic equations that are very easy to solve. Right? So we can get a solution
+[0:51:39] to the algebraic equations that will give us
+[0:51:43] the current and the voltage,
+[0:51:46] okay, as
+[0:51:48] functions of
+[0:51:52] frequency.
+[0:51:53] Okay?
+[0:51:55] But, you know, since we live in the time domain, very often what we
+[0:52:00] really want or also want is to have a description of the currents and voltages in the time domains. So that means that we also have to be able to go back.
+[0:52:11] So instead of doing the transform, we need to be able to do the inverse
+[0:52:16] transform.
+[0:52:20] Okay. And that will get us back to the current and the voltage as a function of time.
+[0:52:27] Now looking at this,
+[0:52:29] you know, it may seem that this is sort of a roundabout way. It's not obvious that this should be easier.
+[0:52:35] But in fact, this approach here, once you get beyond very simple input signals,
+[0:52:42] will generally be much harder. Right? So this is really much harder.
+[0:52:50] Okay. And
+[0:52:52] going through this process here
+[0:52:55] will be a very powerful approach for treating more complicated situations. Yes. Question. Okay. So the... We haven't done it in transforms,
+[0:53:04] but the only way we are able to get from time domain to frequency domain previously
+[0:53:09] is if our time domain signal was
+[0:53:14] a very, very specific kind of function, which was a sinusoid.
+[0:53:18] Right. Okay. Yeah. I... And so, what these techniques allow us to do is to go to
+[0:53:26] the frequency domain for a much broader set of
+[0:53:30] sort of input signals in the circuit and, therefore, signals that are propagating in in the circuit. Okay.
+[0:53:35] So
+[0:53:37] what we will focus on here in class is mostly
+[0:53:42] discussing,
+[0:53:44] you know, basically how you execute transforms
+[0:53:48] and the like and then
+[0:53:51] how they are applied to
+[0:53:53] different types of circuits. Alright? But in the past,
+[0:53:58] there have often been some questions about, well, you know, how are these things really connected in a more fundamental way, and how can we understand, say, where does...
+[0:54:09] You know, how do you go from, say, phasors to
+[0:54:13] maybe a Fourier series description and from that to to transforms, and how are these really connected
+[0:54:19] to each other in terms of their sort of fundamental mathematical structure?
+[0:54:25] And so
+[0:54:27] what I have also done is
+[0:54:31] a few years ago, I made another recording
+[0:54:34] that talks about that in more detail. Right? So it's basically
+[0:54:40] going from the idea of phasors
+[0:54:43] where you can analyze... You can figure out what's happening at a single frequency.
+[0:54:47] Right? But then going
+[0:54:50] from there to the idea of Fourier series
+[0:54:55] where one can show, and you may have seen a little bit of this in three zero two or three zero two h,
+[0:55:01] it turns out that
+[0:55:03] any
+[0:55:05] periodic signal
+[0:55:06] can be expressed
+[0:55:09] as a sum
+[0:55:11] of signals at different frequencies that are basically multiples where the frequencies are multiples of some fundamental frequency.
+[0:55:19] And then if you're dealing with linear circuits, then you can use superposition
+[0:55:23] to combine the responses to all those frequencies
+[0:55:26] to get the response to any periodic signal. Alright? So that's
+[0:55:32] the leap from phasors to,
+[0:55:36] Fourier series, which allow you to treat any periodic signal.
+[0:55:40] And then from there, you can show, and the video will show, how...
+[0:55:47] If you take the Fourier series approach
+[0:55:50] and you extend it to the limit of,
+[0:55:54] essentially,
+[0:55:56] an infinitely long period,
+[0:55:58] then mathematically, that gets you from Fourier series to Fourier transforms. And one of the things that that allows you to do is that if your period is infinitely long, then essentially, you know, you can take your signal to be anything within reason over that infinitely long period. And so, essentially, what you're able to do then is you can, treat the behavior of circuits in response to nonperiodic signals. Alright? So that's what, Fourier transforms get you and how
+[0:56:26] Fourier transforms are related to Fourier series.
+[0:56:31] And then from there,
+[0:56:34] the video will talk about how,
+[0:56:37] you know, one of the limitations of the Fourier transform approach is that it doesn't allow you to include initial conditions, say things happening at a particular time
+[0:56:47] in a circuit. And, also, it doesn't deal well with situations where you might have a growing signal. Okay? And so
+[0:56:58] I... That then leads to the idea of Laplace transforms,
+[0:57:03] which involves a generalization of the frequency variable to one that, can be complex. Right? You can have it a real and an imaginary component, and doing that
+[0:57:18] allows you to, as we will see, incorporate both initial conditions into one's treatment and also,
+[0:57:25] allows one to treat certain types of growing signals because you can still get the transform integrals to converge. Okay. So, this video, which is optional, the active
+[0:57:37] filter circuit videos are not optional. You should look at those. But this integral transform video is optional if you are interested. So
+[0:57:46] that video
+[0:57:47] sort of walks you through that
+[0:57:50] development as I just described. Right? So you can also see,
+[0:57:55] if you are interested,
+[0:57:57] an optional,
+[0:58:00] video recording.
+[0:58:05] And I'll post all these sometime, hopefully, today, right, on integral transforms.
+[0:58:17] Okay.
+[0:58:18] So,
+[0:58:19] any questions then before we continue?
+[0:58:24] Okay. So in order to,
+[0:58:27] implement and use,
+[0:58:29] these transfer function, transform functions,
+[0:58:32] one of the things that we need to do is to introduce or,
+[0:58:37] in some cases, revisit some basic mathematical functions and kind of recap or introduce,
+[0:58:44] the corresponding properties of these functions. So we wanna look now at,
+[0:58:49] some key
+[0:58:54] mathematical functions
+[0:58:58] and their properties.
+[0:59:02] Okay. That will come up pretty regularly in the use of these transform techniques.
+[0:59:12] And so the reading for this is in
+[0:59:17] Ulaby et al, and this is in section 12 dash one. Okay.
+[0:59:23] So,
+[0:59:24] so there are actually really just two of these that we need to introduce right now. One of them is one that we have seen before in the context of switches,
+[0:59:34] and the behavior of switches,
+[0:59:36] that we talked about early in the semester when we were working in the time domain, and that is,
+[0:59:42] what we call the unit step function.
+[0:59:48] Okay. U of t.
+[0:59:50] Alright.
+[0:59:51] And the unit step function,
+[0:59:55] alright, remember, was a function that is zero
+[0:59:59] for t less than zero, and it is one
+[1:00:02] for t
+[1:00:03] greater than zero.
+[1:00:07] And... Alright. So if we plot it, u of t as a function of time and say, well, I draw t equal to zero
+[1:00:17] here,
+[1:00:18] then the unit step function... Right. This is
+[1:00:23] zero. This is one.
+[1:00:28] Okay. Then the unit step function,
+[1:00:31] right, it's zero for negative times,
+[1:00:34] and it is one
+[1:00:36] for positive times.
+[1:00:39] Okay?
+[1:00:40] When we were using this early in the semester,
+[1:00:44] we said that, you know, we were using this for,
+[1:00:49] you know, basically the operation of a switch closing or opening.
+[1:00:53] So we said at that time that the value of the unit step function at t equal to zero was one. Right? So if we were looking at a transition where a switch was closing, then at t equal to zero, the switch was closed. Okay?
+[1:01:08] So so that is common but not universal. Right? So depending on the circumstance, sometimes, right, u
+[1:01:17] at t equal to zero,
+[1:01:19] can be defined
+[1:01:25] as having a value of zero or sometimes one half
+[1:01:29] or one, right, depending
+[1:01:35] on the circumstances.
+[1:01:41] Okay. But if it matters, we'll generally try to be clear about, you know, how exactly we're defining it. And and there are a lot of circumstances where,
+[1:01:49] you know, it matters in terms of making the mathematics
+[1:01:52] more rigorous, but practically speaking, it doesn't matter so much. Okay.
+[1:01:58] So that's the unit step function. Alright? Oops.
+[1:02:03] Now
+[1:02:05] if we look at this function, then one of the questions that may naturally arise,
+[1:02:12] and,
+[1:02:13] you know, would definitely arise, for example, if
+[1:02:17] we were looking at, say,
+[1:02:19] this unit step function is being maybe a voltage applied to a capacitor.
+[1:02:24] Right?
+[1:02:25] One of the questions is, well, what is the derivative of this function?
+[1:02:30] And, especially,
+[1:02:32] what is the derivative of this function at t equal to zero? Right? For t not equal to zero, it's easy. The derivative is zero. But, at t equal to zero, it's less clear, what that derivative
+[1:02:44] should be.
+[1:02:46] So that brings us to what we call
+[1:02:52] the unit
+[1:02:55] impulse
+[1:02:56] or sometimes what's called
+[1:02:59] the delta function.
+[1:03:04] Okay? And the symbol for this is the Greek letter delta, lowercase delta of t.
+[1:03:10] Okay?
+[1:03:12] And the unit impulse or delta function,
+[1:03:17] delta of t,
+[1:03:20] is defined to be a function that is zero
+[1:03:27] whenever the time is not equal to zero and infinite
+[1:03:34] at t equal to zero
+[1:03:36] with the additional condition
+[1:03:39] that the integral
+[1:03:42] from minus infinity to infinity
+[1:03:45] of the delta function
+[1:03:48] is equal to one.
+[1:03:50] Okay.
+[1:03:53] And so,
+[1:03:57] right, if we try to sketch this out,
+[1:04:01] alright, we're looking at delta of t as a function of t
+[1:04:05] at t equal to zero,
+[1:04:08] then,
+[1:04:09] right, this is going to be a function that is zero everywhere
+[1:04:14] except at t equal to zero. And at t equal to zero,
+[1:04:19] it becomes infinite
+[1:04:21] in such a way that its integral is one.
+[1:04:25] Okay? So, you know, so it's sort of unintuitive
+[1:04:30] what
+[1:04:32] this... What the nature of this function really is. And so one way that can be helpful in thinking about it is to define...
+[1:04:44] You know, in addition to the delta function having these properties, we can also think of the delta function as being,
+[1:04:53] sort of the limit of a function that has some peak, say, a Gaussian function. Right? We can take the delta function to be the limit of that type of function as the width of the function goes to zero.
+[1:05:08] Alright. So a very narrow Gaussian.
+[1:05:11] And the amplitude, the peak value
+[1:05:14] goes to infinity,
+[1:05:17] but in such a way that the integral,
+[1:05:20] is one or remains finite. Okay? And so there are a variety of ways that one can do that. One of them that is quite common is that you can say the delta function,
+[1:05:33] delta of t. We can take it to be the limit
+[1:05:39] as some parameter a goes to zero
+[1:05:43] of one over
+[1:05:46] the absolute value of a times the square root of pi
+[1:05:50] times
+[1:05:51] the exponential of minus
+[1:05:54] t over a, the quantity squared. Okay. So this is, you know, exactly what I was describing. It's a Gaussian peak. Right? Because it goes as e to the minus t over a, the quantity squared.
+[1:06:06] But if you take the limit of a going to zero, then at t equal to zero,
+[1:06:13] it becomes infinite because of this absolute value of a in the denominator,
+[1:06:18] and, also, it becomes,
+[1:06:22] it has zero width because of this a in the denominator of the exponent. Okay?
+[1:06:29] But if you
+[1:06:31] calculate the integral of this from minus infinity to infinity,
+[1:06:35] then what you get is that the integral of this
+[1:06:39] is one independent of a. Okay? So when you take this limit, then the integral remains as one,
+[1:06:47] but it becomes infinitely narrow and infinitely high. Okay. So that's, you know, one way of thinking about the nature of
+[1:06:56] this, delta or impulse function.
+[1:07:00] Okay.
+[1:07:01] And then we can also notice,
+[1:07:06] right, that
+[1:07:08] because of this integral property over here, then,
+[1:07:14] if we were to take to take... Bless you. If we were to take the integral from minus infinity to... And take the upper limit to be, some negative time, right, that integral would be zero.
+[1:07:25] Right?
+[1:07:28] But then, if the upper limit to be... Were to be some positive time, the integral would be one.
+[1:07:35] Okay. So looking at it that way, we can see that
+[1:07:40] the unit step function, u of t,
+[1:07:43] is going to be the integral from minus infinity
+[1:07:46] to the time t
+[1:07:49] delta of t prime
+[1:07:52] d t prime, right, where t prime is the variable of integration.
+[1:07:57] Right? So if t is less than zero, this integral is zero. If t is greater than zero, then this integral is one.
+[1:08:05] Alright?
+[1:08:06] And then if you take the derivative
+[1:08:09] of both sides of this,
+[1:08:13] then what you get on the left
+[1:08:17] is the derivative with respect to time
+[1:08:20] of u at t of t. And then on the right hand side where you're taking the derivative of an integral, so you just get the integrand itself, delta of t. Alright? So,
+[1:08:31] so then what we see here is that this, unit impulse or delta function is indeed
+[1:08:37] the derivative of the unit step function. Okay? And that's what... Or it's one of the things that makes it useful in... When we're using transform techniques more generally.
+[1:08:50] So any questions then to hear? Yes?
+[1:08:53] And what t prime is and why... What would be the derivative of u of t prime? Oh, so t prime here is just the variable of integration.
+[1:09:02] Right? So we could easily... We could equally well have said, well, this is the integral from minus infinity to t of delta of, you know, x
+[1:09:12] d x. Right? It's just the variable of integration
+[1:09:16] as opposed to t prime, the derivative of t. Alright? And then this t over here, the upper limit of integration is the same as this time here.
+[1:09:27] Okay?
+[1:09:28] And then,
+[1:09:30] right, when you take the derivative of this, then it's the integrand evaluated at this limit of integration.
+[1:09:37] Okay. And that's how you get this. Okay.
+[1:09:40] Okay. Is is that what you're asking? Yes. Okay.
+[1:09:44] Yes.
+[1:09:45] Right.
+[1:09:47] Okay.
+[1:09:48] Any other questions to hear?
+[1:09:52] Okay. Now
+[1:09:55] very often when we are using
+[1:09:59] this delta or impulse function,
+[1:10:02] it'll come up in a context where it's being multiplied by some other function. Alright? So from what we've defined so far, right, we can also see
+[1:10:17] that, right, if some other function, we'll call it x of t, right, is a continuous function
+[1:10:30] of time t,
+[1:10:32] right, then
+[1:10:36] we can say the following things. If we have x of t times delta of t, right, that's gonna be the same
+[1:10:43] as
+[1:10:44] x evaluated zero times delta of t. Right? Because the delta function is zero for all values of t less than... Or other than zero. Okay?
+[1:10:55] And
+[1:10:58] then corresponding to that, we can just do a shift in time, x of t times delta of t minus
+[1:11:05] some time capital t
+[1:11:09] is x of capital t times delta of t
+[1:11:12] minus capital t.
+[1:11:14] And
+[1:11:15] then
+[1:11:17] this property here, then if we just integrate
+[1:11:21] both sides of this, right, we'll have the integral from minus infinity to infinity
+[1:11:27] of x of t times delta of t minus
+[1:11:31] capital t dt.
+[1:11:34] And then on the right hand side, if we integrate that from t equal to minus infinity to infinity,
+[1:11:39] then we're just going to get
+[1:11:43] x of t. Right? So, taking some function, multiplying it by the delta function, and integrating it basically just picks out the value of that function at
+[1:11:53] the time when the delta function is nonzero.
+[1:11:57] And this is sometimes referred to as the sampling
+[1:12:02] property
+[1:12:08] of
+[1:12:10] delta of t. Right? Because it's basically sampling the value of the function by which it's multiplied
+[1:12:16] at
+[1:12:17] a particular time. Right? The time when the delta function is nonzero.
+[1:12:22] So any questions to hear?
+[1:12:28] Okay.
+[1:12:30] So, with those kind of mathematical
+[1:12:33] preliminaries,
+[1:12:34] then that brings us
+[1:12:38] to the Laplace
+[1:12:41] transform
+[1:12:43] itself.
+[1:12:45] Okay. And the reading
+[1:12:48] for this is in
+[1:12:53] Ulaby et al, and it's section 12 dash two.
+[1:12:58] Okay? So I'm just going to give you the definition
+[1:13:01] of,
+[1:13:02] the Laplace transform. Right? So this is going to be a mathematical operation
+[1:13:08] that we perform on some function of time, okay, to bring... To make it, into a function of,
+[1:13:16] some other variable that we interpret as the frequency.
+[1:13:19] Okay. So the idea is that
+[1:13:21] given
+[1:13:26] a function of time,
+[1:13:29] alright, we'll call it
+[1:13:31] f of t,
+[1:13:33] then
+[1:13:37] it's Laplace transform.
+[1:13:42] Okay. We call that function capital f,
+[1:13:46] and it'll be a function of some other variable s,
+[1:13:50] which will turn out to be a complex version of the frequency,
+[1:13:54] that Laplace transform, we also write it as the Laplace transform operator. We'll write it as a script l. So it's the Laplace transform operator operating on
+[1:14:07] f of t.
+[1:14:09] And the way that we define
+[1:14:12] the Laplace transform
+[1:14:15] is that f of s,
+[1:14:17] which is the Laplace transform of
+[1:14:20] f of t,
+[1:14:22] it is the integral
+[1:14:24] from
+[1:14:25] zero minus, right, meaning the sort of the left hand side of zero
+[1:14:31] to infinity
+[1:14:34] of our function of time f of t
+[1:14:37] times
+[1:14:38] e to the minus s t
+[1:14:41] dt.
+[1:14:42] Alright? And
+[1:14:44] since we're not integrating over s, then this integral will be a function of s, and that function of s is the Laplace transform.
+[1:15:00] Okay.
+[1:15:01] And this variable
+[1:15:03] s,
+[1:15:06] right, it is a complex
+[1:15:08] variable. So it has a real part
+[1:15:11] that we call sigma, a regulator sigma,
+[1:15:15] and then it has an imaginary part, so plus j times
+[1:15:21] the imaginary part omega. Right? And so sigma and omega
+[1:15:26] are both
+[1:15:29] real. Right? So s
+[1:15:32] is a complex
+[1:15:36] variable.
+[1:15:39] Alright? And it's often called
+[1:15:45] the complex
+[1:15:51] frequency.
+[1:15:52] Okay. And omega here, as we will see, is,
+[1:15:57] the same omega as we have been dealing with, you know, just the the regular frequency that,
+[1:16:03] you know, we're very familiar with already.
+[1:16:06] And then this notation here where we take the lower limit of integration to be zero minus. Right?
+[1:16:14] Right? Basically, that's just explicitly reminding us. It's not universally used,
+[1:16:18] but we will sort of use that notation here. It's just reminding us that the integral can include some initial condition at t equal to zero. Okay. So
+[1:16:28] the zero minus lower limit
+[1:16:37] of integration I indicates
+[1:16:44] that the integral
+[1:16:49] can include
+[1:16:53] an initial condition
+[1:17:01] at t equals zero. And that's how initial conditions come into play, when we use Laplace transforms.
+[1:17:08] So any questions to hear?
+[1:17:13] Okay. If not, then,
+[1:17:16] we will stop here for today, and we'll pick up with this discussion of,
+[1:17:22] Laplace transforms and also inverse Laplace transforms
+[1:17:25] in our, like, next class meeting on Wednesday.
+[1:17:28] And so I will now stop
+[1:17:31] the recording.

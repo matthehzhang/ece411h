@@ -1,0 +1,1193 @@
+# 2026-10-28-active-filters-cont: board pages with the speech that accompanied them
+
+28 distinct pages from 96 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0002.jpg  on screen [0:00:00 – 0:00:03]
+<sub>sharpness 4541, ink 21.1 %, colour 0.6</sub>
+
+- [0:00:03] Okay. Let's go ahead and get started. So,
+
+## page 02  f_0092.jpg  on screen [0:00:03 – 0:08:46]
+<sub>sharpness 2256, ink 3.2 %, colour 0.7</sub>
+<sub>earlier states of this page: f_0003.jpg (0:00:05), f_0021.jpg (0:02:31), f_0027.jpg (0:03:08), f_0032.jpg (0:03:09), f_0046.jpg (0:04:20), f_0054.jpg (0:04:22), f_0062.jpg (0:07:12), f_0066.jpg (0:07:13), f_0070.jpg (0:07:14), f_0071.jpg (0:07:22), f_0077.jpg (0:08:10), f_0088.jpg (0:08:46)</sub>
+
+- [0:00:03] Okay. Let's go ahead and get started. So,
+- [0:00:07] I have started the recording,
+- [0:00:10] and as usual, I just have a few announcements.
+- [0:00:13] The first one is that there's a change to the office hours schedule today.
+- [0:00:18] So I had a meeting that was put on my schedule for this morning, and so instead of having my office hours this morning, I'll have them this afternoon, one to 02:30PM
+- [0:00:27] in the usual location, E R 3 Dot 802.
+- [0:00:31] Second announcement is that problem eight, was posted this morning. Okay? And that'll be due on,
+- [0:00:39] November 9. That's Monday. So a week from (this?) coming Monday. And problem set eight, it's mostly about passive and active filter circuits.
+- [0:00:50] And so... Except for the the sixth problem on the problem set, which has to do with some of the mathematics associated with transforms.
+- [0:00:58] So
+- [0:00:59] the first five problems on that problem set will be on material that'll be included on the upcoming exam. Alright?
+- [0:01:08] Third announcement is just a reminder that problem set seven is due at 9AM
+- [0:01:15] this coming Monday, November 2. And then finally, a reminder again that we have semester exam two that's coming up. It'll be in person in class,
+- [0:01:25] and that'll be on Wednesday, November 11. Okay? And I'll post a,
+- [0:01:31] detailed announcement on the exam, that'll talk about, the rules for the exam, which will be basically the same as the rules for the first exam, and also the material
+- [0:01:41] for which you'll be responsible on that exam. So any questions on the announcements?
+- [0:01:49] Okay. Any questions from our last class meeting?
+- [0:01:54] Okay. If not, then we will pick up from where we left off. So what we were doing last time, was we were talking about, filter circuits,
+- [0:02:06] and we had started to work through
+- [0:02:10] this highpass filter circuit that is basically an RLC
+- [0:02:15] series circuit with the output voltage taken across the inductor. Right? So we worked out,
+- [0:02:22] excuse me,
+- [0:02:24] just using,
+- [0:02:25] voltage division. We worked out what the transform... Or what the transfer function would be,
+- [0:02:30] and then we calculated,
+- [0:02:33] its magnitude and phase.
+- [0:02:36] And remember when we talked about the phase, there was a little nuance,
+- [0:02:40] to that because,
+- [0:02:42] from the nature of the, inverse tangent function, we had to have these two different expressions depending on whether we were below,
+- [0:02:52] excuse me, or above the pole frequency.
+- [0:02:55] Okay? Because
+- [0:02:57] the real part of the denominator (of?) the transfer function changes sign
+- [0:03:02] at
+- [0:03:04] at the pole frequency, and so we have to be careful about how we calculate the phase.
+- [0:03:09] And then what we saw at the very end of our last class meeting was that if we actually sketch out the magnitude as a function of the frequency,
+- [0:03:20] what we see is that it can have fairly different behaviors
+- [0:03:25] right around
+- [0:03:27] the pole frequency omega naught, which is the resonant frequency for the RLC circuit depending on
+- [0:03:33] the value of the quality factor. Okay? So for a high quality factor then,
+- [0:03:39] you can have a sharp peak in,
+- [0:03:42] the magnitude of the transfer function,
+- [0:03:45] although it doesn't have as much effect on the behavior at very low or very high frequencies. And then high quality factor
+- [0:03:53] (is?) associated
+- [0:03:55] basically with having
+- [0:03:57] low loss, so low resistance in the filter. Alright?
+- [0:04:02] So, so this is basically what we got to at the end of the last class. Yes?
+- [0:04:07] Why the...
+- [0:04:10] Well, is there an intuitive reason as to why
+- [0:04:14] a
+- [0:04:15] very high resistance would cause low
+- [0:04:19] resonance and
+- [0:04:21] a very low resistance, (high?) resonance?
+- [0:04:26] Yeah. So, so you can think about it. Right? If you imagine...
+- [0:04:30] Alright. This is the circuit that we had. And if you imagine
+- [0:04:35] that the resistance is very low, right, say going to zero,
+- [0:04:40] then in the limit of zero resistance, all all you have is the capacitor and the inductor.
+- [0:04:48] And
+- [0:04:50] if the impedance goes to zero, then
+- [0:04:54] you sort of get a blowup of the current. Right? So, you get very
+- [0:05:01] high voltage, right, in in that limit, infinitely high voltage. Okay? Because... And there's nothing to disrupt that. Right? It'll just build up without limit. (If?) you have a low resistance,
+- [0:05:14] then,
+- [0:05:17] alright, you'll go from sort of the infinite limit to some finite but high value. Alright?
+- [0:05:25] And...
+- [0:05:26] Alright. So so that can help you to understand why you have a high value for the transfer function. And then associated with that is that it's it's... The higher it is, it's kind of the narrower the peak is. Right?
+- [0:05:39] And, you know, that's basically
+- [0:05:42] {because}
+- [0:05:43] you only can get... You only get that
+- [0:05:48] resonant behavior
+- [0:05:50] right at the resonant frequency.
+- [0:05:54] And if you move a little bit off of it, right, then, you know, once you're off of it a little bit, then the resistance,
+- [0:06:02] will start knocking that down. Okay? And you're knocking it down from a very high value, right, it comes down more sharply.
+- [0:06:10] Okay. So...
+- [0:06:12] Right. And then if you get to a very high resistance,
+- [0:06:16] {that}
+- [0:06:18] buildup of stored energy and therefore voltage in the capacitor and the inductor, it gets knocked down very quickly. Okay. So you don't get that, that peak in the behavior.
+- [0:06:28] Okay.
+- [0:06:30] Okay.
+- [0:06:31] So Yes. When it's,
+- [0:06:34] you know, the the voltage across the inductor is (d?) I (d?) (two,?) (a?) very low resistance.
+- [0:06:39] That current change will be... Oh, as as it's going through its, you know, cycle,
+- [0:06:46] that current change will be very high because
+- [0:06:49] the the (the?)
+- [0:06:52] resistance is low and the current change per time is very high. So the inductive voltage (as?) well. Yeah. Because the current will be very high. And so, therefore, the IDT, right, it kinda scales up Right. With the current. Right. Yeah. Okay.
+- [0:07:06] Any other care... Questions?
+- [0:07:10] Okay.
+- [0:07:11] So
+- [0:07:13] so this is what the magnitude and phase of the transfer function look like for this highpass filter. What we wanna do starting off today is then to look at what the Bode plots, right, which are kind of the linear approximations, what they look like for
+- [0:07:31] this same highpass filter circuit. So we wanna look now at
+- [0:07:35] the Bode plots
+- [0:07:38] for the highpass filter.
+- [0:07:44] Okay. And so to look at the Bode plots, what we'll do once again is that we will take the transfer function
+- [0:07:51] and kind of break it apart into the fundamental factors
+- [0:07:55] whose behaviors we know how to plot, and then we'll we'll we'll put those together to get the Bode plot for the complete transfer function. Okay. So if we look at the transfer function
+- [0:08:05] that we calculated last time,
+- [0:08:08] alright, that's basically
+- [0:08:12] this function up here. Then, we can pretty much see very quickly how this should be, broken up into its constituent factors. Right? We have an omega square... Minus omega squared factor, which is j omega, the quantity squared. Right? So that's going to be (a?) zero at the origin, and because of the square, that'll be a second order zero at the origin.
+- [0:08:35] Then we'll have a constant, which is l times c, and then we have one over this denominator,
+- [0:08:42] which is going to be a quadratic pole. Okay. So those are the constituent factors that
+
+## page 03  f_0094.jpg  on screen [0:08:46 – 0:08:47]
+<sub>sharpness 1434, ink 2.1 %, colour 0.7</sub>
+
+- [0:08:42] which is going to be a quadratic pole. Okay. So those are the constituent factors that
+- [0:08:47] that we have in the transfer function. So we have our constant factor l times c,
+
+## page 04  f_0141.jpg  on screen [0:08:47 – 0:14:19]
+<sub>sharpness 2648, ink 4.3 %, colour 0.6</sub>
+<sub>earlier states of this page: f_0106.jpg (0:10:23), f_0112.jpg (0:10:25), f_0127.jpg (0:11:48)</sub>
+
+- [0:08:42] which is going to be a quadratic pole. Okay. So those are the constituent factors that
+- [0:08:47] that we have in the transfer function. So we have our constant factor l times c,
+- [0:08:52] then we have j omega (the?) quantity squared.
+- [0:08:55] Right? That becomes minus omega squared.
+- [0:08:58] And then we have one over
+- [0:09:01] one
+- [0:09:02] plus j omega r c minus omega squared l c.
+- [0:09:07] Alright? And so we'll call this
+- [0:09:11] a one of omega.
+- [0:09:14] We'll call this factor a two
+- [0:09:17] of omega, and we'll call this last factor here
+- [0:09:21] a three
+- [0:09:23] of omega. Okay?
+- [0:09:25] And
+- [0:09:27] just looking at these different factors here, we can see then that
+- [0:09:32] transfer function h of omega, right, it has
+- [0:09:37] a second order
+- [0:09:41] zero
+- [0:09:42] at the origin.
+- [0:09:44] That's the factor a two of omega, and it has
+- [0:09:49] a quadratic pole
+- [0:09:56] at
+- [0:09:57] a pole frequency,
+- [0:09:59] which
+- [0:10:00] from looking at the quadratic term in the denominator,
+- [0:10:04] alright, we can see that the pole frequency is one over
+- [0:10:09] the square root of l times c, which is equal to the resonant frequency,
+- [0:10:15] of the RLC series circuit. Okay. So (so?)
+- [0:10:20] that's kind of the nature of,
+- [0:10:22] the transfer function in terms of its fundamental factors.
+- [0:10:26] And what we can do now is then to kind of plot these out.
+- [0:10:33] Alright? Construct the Bode plots for each of them. And so the first factor that we have is
+- [0:10:41] just the constant.
+- [0:10:43] Right? So we're gonna plot the magnitude,
+- [0:10:45] and now we're gonna plot that on a dB scale,
+- [0:10:48] on the decibel scale as a function of omega.
+- [0:10:51] And...
+- [0:10:55] Alright. The magnitude, is just a constant. Okay? So,
+- [0:11:00] or, the constant factor is... It's a constant, so its magnitude is also constant.
+- [0:11:04] And so it'll just look something
+- [0:11:07] like that.
+- [0:11:08] And then for the phase,
+- [0:11:13] alright, phi of omega,
+- [0:11:16] then the phase...
+- [0:11:21] Okay. The constant factor is l times c. So that's gonna be positive, so the phase will be zero.
+- [0:11:29] Alright. So it'll be like this.
+- [0:11:31] Okay.
+- [0:11:33] So the phase here
+- [0:11:35] is zero, in this case.
+- [0:11:38] Alright.
+- [0:11:40] The second factor over here
+- [0:11:44] is j omega, the quantity squared. Okay. So that is a second order zero at the origin.
+- [0:11:51] So that is the factor we've called a two of omega.
+- [0:11:58] Okay. And that factor will look something like this. If we look at the magnitude
+- [0:12:05] on
+- [0:12:06] a dB scale,
+- [0:12:08] right, we have,
+- [0:12:10] again, since it's a zero at the origin,
+- [0:12:12] it doesn't have any inherent,
+- [0:12:15] frequency scale, so we'll just call the frequencies
+- [0:12:18] one,
+- [0:12:19] 10, a 100, and so forth.
+- [0:12:23] And say
+- [0:12:25] this will be zero dB. Okay? So that'll be the value of a two,
+- [0:12:32] the magnitude of a two at a frequency of one. Alright? And what happens here
+- [0:12:40] is that since this factor goes as omega squared,
+- [0:12:44] then every time we have an order of magnitude, say it's a factor of 10 increase in the frequency,
+- [0:12:50] the
+- [0:12:52] magnitude of that factor goes up by 10 squared (is...?) Which is a 100, which is 40 dB. Okay. So if we have 40 dB
+- [0:13:02] up here,
+- [0:13:04] then
+- [0:13:07] the way this factor will look on the magnitude Bode plot
+- [0:13:11] is
+- [0:13:13] like this. Right? It'll be a
+- [0:13:16] linear function on this scale that increases
+- [0:13:19] with frequency at a rate of 40 dB
+- [0:13:22] per decade.
+- [0:13:26] Okay.
+- [0:13:27] And then for the phase,
+- [0:13:34] alright, five omega as a function of omega,
+- [0:13:38] then,
+- [0:13:39] what'll happen is that, it's (minus...?) It's j omega the quantity squared. So that's minus omega squared. So the phase is just the phase of minus one, which is a 180 degrees.
+- [0:13:53] And it's independent of frequency. So it'll look like that.
+- [0:13:58] So any questions so far on how we're sort of building up the constituent,
+- [0:14:02] Bode plots to eventually get to the Bode plot for, the full transfer function?
+- [0:14:09] Okay.
+- [0:14:11] So
+- [0:14:12] now we have
+- [0:14:14] the last factor,
+- [0:14:16] which is this quadratic pole over here. Alright? So that is
+
+## page 05  f_0193.jpg  on screen [0:14:19 – 0:18:40]
+<sub>sharpness 2675, ink 4.2 %, colour 0.6</sub>
+<sub>earlier states of this page: f_0143.jpg (0:14:20), f_0157.jpg (0:15:01), f_0163.jpg (0:16:21), f_0166.jpg (0:16:21), f_0167.jpg (0:16:21), f_0183.jpg (0:18:08), f_0191.jpg (0:18:39)</sub>
+
+- [0:14:16] which is this quadratic pole over here. Alright? So that is
+- [0:14:28] (a?) three
+- [0:14:30] of omega. Okay.
+- [0:14:32] And so for that,
+- [0:14:34] right, we're again looking at
+- [0:14:37] the magnitude
+- [0:14:39] on
+- [0:14:40] dB scale
+- [0:14:42] as a function of the frequency.
+- [0:14:45] And then here, we're going to have the pole frequency which is omega naught.
+- [0:14:51] Okay?
+- [0:14:53] Now... And we'll call this line here zero
+- [0:14:56] dB.
+- [0:14:57] Okay. So now if we look at that factor,
+- [0:15:02] then what we can see is that at low frequencies,
+- [0:15:06] right, the limiting behavior here is that this factor will go to one because omega going to zero will get rid of these terms over here. So omega will go to one. So the magnitude is going to be
+- [0:15:20] 20 times the log of one, which is zero. Alright? Zero dB.
+- [0:15:25] And then the phase,
+- [0:15:27] will be, zero degrees. Alright?
+- [0:15:31] When we go to
+- [0:15:34] very high frequencies,
+- [0:15:36] then what will happen is that this
+- [0:15:40] quadratic term over here will dominate. So this is going to go as basically one over minus omega squared LC. Alright?
+- [0:15:50] And, what happens there is that for every factor of 10 increase in the frequency,
+- [0:15:57] the magnitude of this factor will decrease
+- [0:16:01] by a factor of a 100. Alright? So, that's 40 dB. So we're gonna have a slope on the magnitude plot of minus 40 dB per decade. And the phase,
+- [0:16:12] right, it's basically the phase of minus one. So, that could be either plus or minus a 180 degrees. Okay?
+- [0:16:20] So
+- [0:16:23] what we have here on the magnitude plot is that at low frequencies,
+- [0:16:28] we're going to have
+- [0:16:30] (the?) magnitude
+- [0:16:32] approximated
+- [0:16:33] as one, so that's zero dB.
+- [0:16:37] And then at high frequencies, above the pole frequency,
+- [0:16:40] then we're going to have
+- [0:16:42] this
+- [0:16:44] going down,
+- [0:16:45] and it'll be at a slope of minus 40 dB
+- [0:16:50] per decade.
+- [0:16:52] Alright? Because it's gonna go as
+- [0:16:54] one over omega squared, basically.
+- [0:16:59] Then for the phase,
+- [0:17:04] okay, what'll happen is that...
+- [0:17:10] Alright. If we take this line to be zero degrees, right, we're gonna have... This is point one
+- [0:17:16] omega naught where omega naught again is the pole frequency.
+- [0:17:19] This will be omega naught.
+- [0:17:21] This will be 10
+- [0:17:24] omega naught. Okay.
+- [0:17:26] And then we'll mark
+- [0:17:29] minus 90 degrees
+- [0:17:32] and minus a 180 degrees. Okay?
+- [0:17:35] What we said was that at,
+- [0:17:39] at low frequencies, which for the phase plot we take to be less than point one omega naught, then
+- [0:17:46] the phase will be zero.
+- [0:17:48] So it'll look like this.
+- [0:17:51] Then
+- [0:17:52] we said that at (a?) very high frequencies, greater than 10 omega naught, we said that,
+- [0:17:58] basically, the phase will be the phase of minus one, which could be plus or minus a 180 degrees.
+- [0:18:07] To determine which one of those possibilities we should use, we can look at what happens
+- [0:18:13] when omega is equal to omega naught. Alright? Omega naught is one over root LC. So then at that frequency, this last term in the denominator is just going to be minus one. So we'll have one minus one. Those will cancel out. And so this will be... This factor will be equal to one over j omega (r?) c. Okay? So we have a j in the denominator that has a phase of minus 90 degrees.
+- [0:18:38] Okay?
+- [0:18:40] So,
+
+## page 06  f_0196.jpg  on screen [0:18:40 – 0:18:40]
+<sub>sharpness 2614, ink 4.2 %, colour 0.8</sub>
+
+- [0:18:40] So,
+
+## page 07  f_0223.jpg  on screen [0:18:40 – 0:19:32]
+<sub>sharpness 1482, ink 2.2 %, colour 0.5</sub>
+<sub>earlier states of this page: f_0222.jpg (0:19:31)</sub>
+
+- [0:18:40] So,
+- [0:18:42] at omega naught, phase is minus 90 degrees.
+- [0:18:46] And then,
+- [0:18:48] that means that
+- [0:18:55] at
+- [0:18:57] very high frequencies, it'll make more sense,
+- [0:19:01] right, to take the phase to be minus a 180 degrees. So it's gonna go
+- [0:19:07] like this.
+- [0:19:09] Okay.
+- [0:19:10] So
+- [0:19:13] this is what we have for the Bode plots for that quadratic pull factor. So any questions on this?
+- [0:19:23] Okay. And then the last step is
+- [0:19:27] to take
+- [0:19:29] these three plots,
+- [0:19:31] alright,
+- [0:19:32] and basically add them together
+
+## page 08  f_0275.jpg  on screen [0:19:32 – 0:22:12]
+<sub>sharpness 2700, ink 4.6 %, colour 0.6</sub>
+<sub>earlier states of this page: f_0246.jpg (0:21:36), f_0250.jpg (0:21:37), f_0252.jpg (0:21:37), f_0256.jpg (0:21:39), f_0272.jpg (0:22:12)</sub>
+
+- [0:19:32] and basically add them together
+- [0:19:35] to get the Bode plot for the entire transfer function. So now we're gonna be looking at the Bode plot for the entire transfer function.
+- [0:19:44] And then
+- [0:19:49] if we do this for the magnitude
+- [0:19:53] first...
+- [0:19:56] Okay. This will be our,
+- [0:19:59] pole frequency
+- [0:20:00] here.
+- [0:20:02] Then if we look at the constituent factors,
+- [0:20:06] okay,
+- [0:20:08] we have basically
+- [0:20:10] constant
+- [0:20:11] here.
+- [0:20:12] We have
+- [0:20:14] a line with an upward slope of 40 dB per decade here. And then if we look first at low frequency, so less than omega naught. Right? This is sloping upward. This is constant.
+- [0:20:25] This is constant. So we are going to have
+- [0:20:28] an upward...
+- [0:20:30] A rising line. Right? A line with an upward slope that has a slope of 40 dB per decade. That's where we're gonna have (it?) low frequencies for the magnitude
+- [0:20:41] {(and?)}
+- [0:20:43] add
+- [0:20:44] the pole frequency omega naught. Okay. If we look at that,
+- [0:20:50] well, alright. That's what we'll have at low frequency. We'll have an upward
+- [0:20:53] sloping line.
+- [0:20:55] At high frequencies,
+- [0:20:57] then we we have still a constant here.
+- [0:21:02] We have still an upward sloped line over here.
+- [0:21:06] And then from the quadratic pole, we have a downward,
+- [0:21:10] line with a slope of minus 40 dB per decade. So the slopes of this factor and this factor will cancel each other out. Alright? Give... They'll give you (a?) net slope of zero, and then this has a slope of zero. So we're just going to have a a constant
+- [0:21:27] Bode plot,
+- [0:21:28] for the magnitude. Alright? So a horizontal line.
+- [0:21:32] And the value
+- [0:21:35] that we will have for that, if we come back up to the original
+- [0:21:40] transfer function here,
+- [0:21:43] alright, we can see that, as omega goes to infinity,
+- [0:21:47] then what will happen is that the quadratic pole here will go as one over minus omega squared l c.
+- [0:21:56] These other two factors here will go as also minus omega squared LC.
+- [0:22:03] And, so the whole transfer function,
+- [0:22:06] will approach one as omega goes to infinity,
+- [0:22:09] and therefore,
+- [0:22:12] on the log scale, the magnitude
+
+## page 09  f_0320.jpg  on screen [0:22:12 – 0:24:49]
+<sub>sharpness 2670, ink 4.3 %, colour 0.6</sub>
+<sub>earlier states of this page: f_0281.jpg (0:22:14), f_0285.jpg (0:22:15), f_0288.jpg (0:22:15), f_0311.jpg (0:24:47), f_0313.jpg (0:24:48), f_0317.jpg (0:24:49)</sub>
+
+- [0:22:12] on the log scale, the magnitude
+- [0:22:15] is going to go to zero. It'll be 20 times the log of one, which is zero. Okay. So we take this to be zero
+- [0:22:23] dB here.
+- [0:22:25] Then what happens is at high frequencies,
+- [0:22:29] right, it's a horizontal line, at zero dB.
+- [0:22:33] And then at low frequencies,
+- [0:22:36] it is,
+- [0:22:37] a rising line, right, with a slope of
+- [0:22:41] 40... Oops.
+- [0:22:48] 40 dB
+- [0:22:52] per decade.
+- [0:22:54] Okay. So that is the Bode magnitude plot for the entire transfer function.
+- [0:22:59] Sorry. This is omega. You're not omega naught.
+- [0:23:02] And then for the phase,
+- [0:23:06] right, basically, we're just adding up, these,
+- [0:23:10] three constituent phases. So zero degrees, a 180 degrees, and this function here. So that's basically going to give us
+- [0:23:19] this function here shifted upward by a 180 degrees. So instead of going from zero to minus one eighty, it'll go from 180 degrees to zero. Okay. So,
+- [0:23:30] the phase,
+- [0:23:32] Bode plot
+- [0:23:37] will look like this. This is the phase.
+- [0:23:40] K. This is zero degrees.
+- [0:23:42] Say this is 90 degrees.
+- [0:23:45] This is a 180 degrees.
+- [0:23:48] This will be point one
+- [0:23:51] omega naught,
+- [0:23:53] omega naught,
+- [0:23:54] and 10 omega naught.
+- [0:23:58] Okay. And what the Bode plot will look like is
+- [0:24:03] this.
+- [0:24:10] Okay. So any questions on how we constructed the Bode plots for
+- [0:24:15] for this transfer function?
+- [0:24:20] Okay. And one of the things to notice here is that when we constructed the Bode plots, that is using the linear approximations,
+- [0:24:29] right, in the low frequency and high frequency range, then,
+- [0:24:33] we didn't get any sort of unusual
+- [0:24:36] behavior near the pole frequency or near the resonant,
+- [0:24:41] frequency. Right? (This?) is, the shape of this is independent of the quality factor. Right? Whereas
+- [0:24:48] what we saw earlier,
+
+## page 10  f_0323.jpg  on screen [0:24:49 – 0:24:50]
+<sub>sharpness 3143, ink 4.5 %, colour 0.5</sub>
+
+- [0:24:48] what we saw earlier,
+
+## page 11  f_0347.jpg  on screen [0:24:50 – 0:25:43]
+<sub>sharpness 2595, ink 4.0 %, colour 0.6</sub>
+<sub>earlier states of this page: f_0330.jpg (0:24:51), f_0341.jpg (0:25:42), f_0344.jpg (0:25:42)</sub>
+
+- [0:24:48] what we saw earlier,
+- [0:24:51] right at the very beginning of class today and also in more detail last time was that
+- [0:24:56] if you look at the actual transfer function,
+- [0:24:59] then you can have quite different behavior right in the vicinity of the pole or resonant frequency depending on what the quality factor of
+- [0:25:10] of this circuit is. Alright? And so
+- [0:25:15] one of the things that that highlights is that
+- [0:25:20] one of the limitations
+- [0:25:21] of
+- [0:25:23] the linear approximation version of the Bode plots is that
+- [0:25:27] it doesn't capture,
+- [0:25:29] these types of variations in the behavior near the resonant frequency,
+- [0:25:35] but it does capture quite well the behave... The limiting behaviors at low and high frequencies. Okay? So that's something to,
+- [0:25:42] to keep in mind as well.
+
+## page 12  f_0356.jpg  on screen [0:25:43 – 0:25:45]
+<sub>sharpness 2335, ink 3.7 %, colour 0.7</sub>
+
+- [0:25:42] to keep in mind as well.
+- [0:25:45] Okay. So any questions to hear? Yes. In this case, we only have one omega knot. But if there was another,
+
+## page 13  f_0399.jpg  on screen [0:25:45 – 0:31:48]
+<sub>sharpness 1498, ink 2.2 %, colour 0.6</sub>
+<sub>earlier states of this page: f_0360.jpg (0:25:46), f_0362.jpg (0:25:46), f_0368.jpg (0:26:24), f_0369.jpg (0:26:47), f_0373.jpg (0:26:48), f_0388.jpg (0:27:38), f_0389.jpg (0:27:38), f_0394.jpg (0:30:37)</sub>
+
+- [0:25:45] Okay. So any questions to hear? Yes. In this case, we only have one omega knot. But if there was another,
+- [0:25:54] if we if we (added?) in terms of variables (like?) (l's?) and l's,
+- [0:25:59] then how would we work with it if there were multiple
+- [0:26:03] zeros and holes that were not either just one and omega (knot?) (or?) if it was, like, omega knot for the zero and omega knot for the whole?
+- [0:26:12] Oh,
+- [0:26:13] yeah. So, so if it were a more complicated circuit, right, that had more of these kinds of factors, in it just from the configuration of the circuit, then,
+- [0:26:25] right, the (the?) (way?) that you would get the Bode plot, for that, for example, and and the way that you would calculate the transfer function,
+- [0:26:35] you would follow the same sorts of methods that we have used,
+- [0:26:39] but,
+- [0:26:40] you know, working them out would be more complicated. What would then happen is that
+- [0:26:46] instead of just having,
+- [0:26:49] right, a collection of factors like this, you might have an additional factor that,
+- [0:26:54] you know, say, maybe was a,
+- [0:26:57] you know, something rising
+- [0:26:59] at a slope of 20 degrees... 20 dB per decade and then leveling off over here or something like that, you (can?) have additional factors like that.
+- [0:27:10] But then
+- [0:27:12] sort of combining
+- [0:27:14] all of the constituent factors,
+- [0:27:16] that make up the, the transfer function and (therefore?) the Bode plots, you would do that in the same way. Right? So if you had, if there were, say, another
+- [0:27:29] factor that maybe,
+- [0:27:32] you know, kind of went like this, alright, then what would happen is that,
+- [0:27:41] right, at at these low frequencies,
+- [0:27:43] (you?) would have another kind of 20 dB per decade contribution to the slope. So this would go up at 60 dB per decade. Alright? Then,
+- [0:27:55] I... You know, between... We'll call this omega one.
+- [0:27:59] Okay. So it might look
+- [0:28:02] sort of like that. Right?
+- [0:28:04] Then
+- [0:28:08] in between,
+- [0:28:09] right, between omega naught and omega one, right, you have minus 40 dB per decade plus 20 dB per decade. Alright? So that would be minus 20 dB per decade. So (would?) look like that. Okay. I drew that a little bit too far, but, you get the idea. And then,
+- [0:28:28] above omega one,
+- [0:28:30] then,
+- [0:28:31] the slope would go to minus 40 dB per decade because there's a zero contribution to the slope here. So it would look, you know, then maybe something like this. Alright? So, so if you had something else in the circuit that gave you a contribution like that, then what you would get is,
+- [0:28:49] it would be a bandpass filter. Alright?
+- [0:28:53] And
+- [0:28:54] you would be able to... You could exercise more control over the width of the passband by choosing omega naught and omega one appropriately.
+- [0:29:04] Alright? How would you know that omega works greater than omega naught (and?) by how much if they were in terms of l's, r's, and c's?
+- [0:29:12] Oh, so
+- [0:29:14] so so one possibility is that you would just know the values (or?) you'd be given the values. Right? And then you'd be able to figure out whether it was greater than or less than.
+- [0:29:25] You know, another possibility might be that
+- [0:29:29] you might be asked, okay. Design a circuit that has these characteristics, then you would have to select values such that if you wanted this kind of functionality,
+- [0:29:38] right, omega one, was greater than,
+- [0:29:42] omega naught. Right? Or it may be that,
+- [0:29:46] you know, if if you really didn't know the values and you have to account for all possibilities, you could... You would then say something like, well, depending on
+- [0:29:54] whether
+- [0:29:56] omega one is less than or greater than
+- [0:30:00] omega naught, then, you could get different types of, behavior. In in both cases, you would get,
+- [0:30:08] sort of the bandpass filter behavior. Right? If you were to imagine this shifted to the left, then it would still give you, the bandpass behavior, but this slope would only be 20 dB per decade. Right? So it wouldn't drop off as sharply at low frequencies,
+- [0:30:26] but it would be level in the passband. Right? And then that's sort of a trade off of what do you value more. Right?
+- [0:30:32] Okay. Any other questions?
+- [0:30:36] Okay.
+- [0:30:37] So
+- [0:30:39] that sort of brings us to the next topic,
+- [0:30:43] which is
+- [0:30:44] that of the order
+- [0:30:49] of
+- [0:30:50] a given filter. Okay?
+- [0:30:53] So
+- [0:30:54] what we've seen in the different types of filter circuits that we have looked at is that,
+- [0:31:01] you know, depending on the details of the filter circuit, sometimes you get slopes of, in the end,
+- [0:31:07] for the total transfer function, 20 dB per decade. Sometimes you get 40 dB per decade. We saw here how you might be able to get an even steeper slope. Right?
+- [0:31:18] And in each of those cases,
+- [0:31:22] the slope of the Bode plot magnitude line depends
+- [0:31:28] on
+- [0:31:29] the power to which the frequency is taken, right, in the transfer function. Right? It's 20 dB per decade if it's a linear, or inverse linear,
+- [0:31:39] function of omega. It's 40 dB per decade if it's omega squared or one over omega squared and and so forth. Alright? And
+- [0:31:47] so so that brings us to the issue of filter order,
+
+## page 14  f_0420.jpg  on screen [0:31:48 – 0:34:40]
+<sub>sharpness 1965, ink 3.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0400.jpg (0:33:14), f_0416.jpg (0:34:39)</sub>
+
+- [0:31:47] so so that brings us to the issue of filter order,
+- [0:31:51] which basically has to do with the steepness
+- [0:31:56] of
+- [0:31:57] essentially the increase or the drop off as you approach
+- [0:32:00] or move away from the passband of a filter, and it's
+- [0:32:06] essentially determined
+- [0:32:07] by the power of the frequency you have in
+- [0:32:12] the transfer function in that range of frequencies. Right? So if you have
+- [0:32:17] specifically zeros
+- [0:32:20] or poles,
+- [0:32:22] right, (which?) are kind of the frequency dependent
+- [0:32:25] contributions
+- [0:32:26] that you can have to the transfer function, then,
+- [0:32:30] basically, the steepness
+- [0:32:34] of the frequency response.
+- [0:32:41] Alright. Basically, the slope, of that Bode magnitude plot that increases
+- [0:32:48] basically as the order
+- [0:32:53] of zero
+- [0:32:56] or (a?) pole
+- [0:32:57] increases.
+- [0:33:00] Alright? Because remember, the order is essentially the exponent. So, a higher order will give you a higher power of the frequency.
+- [0:33:09] Okay. So that's basically what's happening here.
+- [0:33:12] And
+- [0:33:13] for
+- [0:33:15] a filter as a whole,
+- [0:33:17] we define
+- [0:33:19] the order of the filter in an analogous way. Right? So for a filter as a whole,
+- [0:33:30] what we do is we say that the order
+- [0:33:36] of the filter,
+- [0:33:39] okay, is
+- [0:33:41] it's the absolute value.
+- [0:33:46] Right? So the order is always a positive number. Right? It's the absolute value of
+- [0:33:52] the highest
+- [0:33:55] power
+- [0:33:58] of omega
+- [0:34:00] in
+- [0:34:01] the dominant behavior,
+- [0:34:08] Okay. The transfer function
+- [0:34:11] h of omega,
+- [0:34:12] when
+- [0:34:15] omega is,
+- [0:34:20] in the filter
+- [0:34:22] stopband.
+- [0:34:26] Alright. That is outside of the passband.
+- [0:34:30] Okay. So
+- [0:34:33] so there's a whole bunch of prepositional phrases in there, right, which always makes it harder to understand.
+- [0:34:38] So we'll look at some specific examples here. Alright? So let's go back
+
+## page 15  f_0424.jpg  on screen [0:34:40 – 0:34:52]
+<sub>sharpness 1398, ink 2.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0423.jpg (0:34:52)</sub>
+
+- [0:34:38] So we'll look at some specific examples here. Alright? So let's go back
+- [0:34:48] to the bandpass filter, right, that we looked at,
+- [0:34:51] earlier on. Right? So this was
+
+## page 16  f_0425.jpg  on screen [0:34:52 – 0:35:58]
+<sub>sharpness 1676, ink 2.3 %, colour 0.2</sub>
+
+- [0:34:51] earlier on. Right? So this was
+- [0:34:57] a filter where we had
+- [0:34:59] an input voltage. This is an s down here,
+- [0:35:03] and it was basically going into
+- [0:35:06] an RLC series circuit,
+- [0:35:09] and we took the output voltage to be
+- [0:35:13] across the resistor. Okay. So this is inductor, capacitor,
+- [0:35:18] resistor,
+- [0:35:21] and the output voltage was across the resistor.
+- [0:35:24] And what we worked out for this is that the transfer function, okay, would be
+- [0:35:32] j omega RC
+- [0:35:34] over
+- [0:35:36] one plus j omega RC minus omega squared l squared...
+- [0:35:41] Or sorry, LC.
+- [0:35:48] Okay.
+- [0:35:49] So so this was a bandpass filter. The passband was basically centered around the pole frequency, one over root l c, which is also the resonant frequency of this circuit. And so the (stop?) bands,
+
+## page 17  f_0433.jpg  on screen [0:35:58 – 0:39:48]
+<sub>sharpness 2402, ink 3.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0429.jpg (0:39:02)</sub>
+
+- [0:35:49] So so this was a bandpass filter. The passband was basically centered around the pole frequency, one over root l c, which is also the resonant frequency of this circuit. And so the (stop?) bands,
+- [0:36:06] alright,
+- [0:36:07] are essentially
+- [0:36:09] low frequencies. So omega much less than
+- [0:36:12] omega naught and omega much greater than
+- [0:36:17] omega naught. Okay?
+- [0:36:19] And so the order of the filter is then determined
+- [0:36:23] by
+- [0:36:25] the dependence of the transfer function on frequency
+- [0:36:28] when we are
+- [0:36:30] in these stop bands. Okay. So if we look at omega
+- [0:36:36] much less than omega naught,
+- [0:36:38] okay, then in that case, if we look at the transfer function, the denominator is going to go to one. Alright? Because as omega goes to zero, these terms go away. So the transfer function as a whole will approach, just j omega RC.
+- [0:36:54] Okay. So
+- [0:36:56] the transfer function h of omega (will?) be approximately equal to j omega RC.
+- [0:37:01] Right? That is linear
+- [0:37:03] in frequency. Right? So omega to the first power, right, is how the frequency appears.
+- [0:37:10] So that then means that this is
+- [0:37:15] a first order filter in terms of its behavior at low frequencies.
+- [0:37:21] And then for
+- [0:37:24] high frequencies, right, that's the other stopband,
+- [0:37:27] then
+- [0:37:30] the transfer function h of omega, if we look at the transfer function here again, alright, what we see is that at high frequencies,
+- [0:37:39] the denominator is going to go as minus omega squared LC. Alright?
+- [0:37:47] And so we have
+- [0:37:50] j omega RC in the numerator minus omega squared LC
+- [0:37:55] in the denominator,
+- [0:37:58] And so that gives us that
+- [0:38:02] the transfer function will basically go as r over
+- [0:38:07] j omega l. Alright?
+- [0:38:09] And
+- [0:38:10] the part of this that matters for determining the order of the filter is that you have this
+- [0:38:17] factor here,
+- [0:38:18] the single power of omega in the denominator. Alright?
+- [0:38:22] And so that means that
+- [0:38:25] in this stopband, at high frequencies, this is also
+- [0:38:31] a first order filter.
+- [0:38:33] Okay? And so, and then that will correspond to having a slope at low frequencies in the transfer... In the magnitude of the transfer function of plus 20 dB per decade, and then a slope at high frequencies
+- [0:38:47] for the magnitude of the transfer function of minus 20 dB per decade. Okay? And plus or minus 20 dB per decade is what you get for first order filter.
+- [0:38:59] Okay. So...
+- [0:39:02] Alright. What we see here is that the Bode plots...
+- [0:39:07] Or what we did see,
+- [0:39:09] okay, for the bandpass filter,
+- [0:39:16] right, what we saw
+- [0:39:19] was that these Bode plots showed that the magnitude
+- [0:39:22] has
+- [0:39:24] a slope
+- [0:39:26] of,
+- [0:39:27] alright, it was plus or minus 20 dB per decade
+- [0:39:33] in the stopbands.
+- [0:39:38] Okay. So any questions on these ideas here?
+- [0:39:46] Okay.
+- [0:39:47] Then,
+- [0:39:48] right, what we have looked at what we looked at starting in... At the end of our last class meeting and continuing today
+
+## page 18  f_0442.jpg  on screen [0:39:48 – 0:40:55]
+<sub>sharpness 2422, ink 3.7 %, colour 0.2</sub>
+
+- [0:39:47] Then,
+- [0:39:48] right, what we have looked at what we looked at starting in... At the end of our last class meeting and continuing today
+- [0:39:56] was
+- [0:39:59] the highpass filter.
+- [0:40:02] Okay?
+- [0:40:03] So this,
+- [0:40:05] alright, just to remind you,
+- [0:40:08] was also based on the RLC
+- [0:40:12] series circuit.
+- [0:40:15] But now
+- [0:40:18] where we take the output voltage
+- [0:40:21] to be the voltage across the inductor.
+- [0:40:26] Okay.
+- [0:40:29] So this is the output voltage,
+- [0:40:31] and what we saw here
+- [0:40:34] was that the transfer function
+- [0:40:36] is
+- [0:40:40] minus omega squared (LC?)
+- [0:40:43] over
+- [0:40:44] one plus j omega RC minus omega squared
+- [0:40:49] LC. Okay.
+- [0:40:52] So now here, right, this is a highpass filter. So the stopband
+
+## page 19  f_0466.jpg  on screen [0:40:55 – 0:49:20]
+<sub>sharpness 2179, ink 3.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0452.jpg (0:45:33), f_0460.jpg (0:46:40), f_0462.jpg (0:46:41), f_0463.jpg (0:46:41), f_0464.jpg (0:48:00)</sub>
+
+- [0:40:52] So now here, right, this is a highpass filter. So the stopband
+- [0:40:57] is... We only have one stopband, and it is at low frequencies. Alright? So the stopband here
+- [0:41:07] is omega being much less than the pole and resonant frequency omega naught. Alright? And so if we look
+- [0:41:17] in that range of frequencies, omega much less than omega naught,
+- [0:41:22] at the behavior
+- [0:41:23] of
+- [0:41:24] the transfer function here, we see that the denominator goes to one. Right? So because at very low frequencies, these turns will, become negligibly small. And so the transfer function,
+- [0:41:36] goes as...
+- [0:41:41] Alright. It's going to approach
+- [0:41:43] minus omega squared
+- [0:41:45] l c. Okay.
+- [0:41:47] And so here,
+- [0:41:49] we have omega to the second power
+- [0:41:52] in the behavior of, the transfer function. And so that means that this is going to be
+- [0:42:01] a second order filter. Okay?
+- [0:42:04] And (in?) the Bode plots, that corresponded to the magnitude having a slope of
+- [0:42:12] 40 dB per decade in the stopband. Alright. Yes. Question? When we say very low values of omega, do we indicate that omega times any of the
+- [0:42:24] any of the RL (or?) C is much less than one (is...?)
+- [0:42:30] Because (it...?) In this this, like, generalization is only possible. Omega RC
+- [0:42:36] is
+- [0:42:38] less... Much less than one.
+- [0:42:42] So
+- [0:42:43] so when you compare values,
+- [0:42:45] to each other, you can only compare values that have the same units. Right? So,
+- [0:42:51] so if you just took omega r or omega c, then, right, omega doesn't have the same units as r or c. So... But,
+- [0:43:01] the quantity that does have units of frequency
+- [0:43:04] is
+- [0:43:05] the resonant frequency, right, which is one over root LC. Okay? And that's... So that's the relevant
+- [0:43:12] quantity to compare to.
+- [0:43:15] And,
+- [0:43:18] right, the stopband is omega much less than omega naught. That's where we want to determine the order of the filter. The passband is omega much greater than omega naught, right, where the transfer function approaches a constant and approaches one. Okay?
+- [0:43:35] So
+- [0:43:37] so in
+- [0:43:39] any given circuit,
+- [0:43:41] right, the frequencies that will be relevant for comparison
+- [0:43:45] will generally be,
+- [0:43:47] kind of the nonzero,
+- [0:43:49] pole or zero frequencies.
+- [0:43:52] Okay?
+- [0:43:53] And then
+- [0:43:57] the... You know, where the stopbands are, where the passbands are, and so forth are then, they're kind of bounded by those frequencies or by zero or infinity.
+- [0:44:09] (And?) then, you know, so that's part of it. And the other question is, well, that maybe part of what you're asking is, well, what does much less than mean? Right? Is it 10 times less than or a 100 times less than?
+- [0:44:23] And, you know, that... Again, it it depends a little bit on the
+- [0:44:29] details of what all the parameters are. Right? But,
+- [0:44:33] you know, very roughly speaking,
+- [0:44:36] if you are an order of magnitude below or above, that's usually
+- [0:44:40] sufficiently
+- [0:44:42] much greater than or much less than. And sometimes you can get closer
+- [0:44:47] to this approximation when you are closer to the boundary, but, you know, very roughly,
+- [0:44:53] you know, sort of an order of magnitude off. And, you know, that's part of the idea with, say, the Bode phase plots. Right? We say,
+- [0:45:02] alright, if we're much less than,
+- [0:45:04] you know, the, polar zero frequency or much greater than, then we have the limiting behavior, and we just,
+- [0:45:11] you know, not quite arbitrarily,
+- [0:45:13] but, as the simplest generalization take much less than to be, you know, more than an order of magnitude below and much greater than to be more than an order of magnitude above. Okay. Okay. Is that kind of what you're asking? Yeah. Okay.
+- [0:45:28] Any other questions?
+- [0:45:31] Okay. So,
+- [0:45:33] right. So we see here from,
+- [0:45:35] the nature of the transfer function that this is a second order filter circuit. And corresponding to that,
+- [0:45:43] when we looked at the Bode plots
+- [0:45:47] or, you know, just analyzed the magnitude of the transfer function,
+- [0:45:51] what we saw
+- [0:45:54] was that
+- [0:45:56] the (the?) magnitude of the transfer function (in?) this case,
+- [0:46:01] it has a slope.
+- [0:46:03] It was plus 40 dB
+- [0:46:08] per decade
+- [0:46:09] in the stopband.
+- [0:46:14] Okay. And a slope of plus or minus 40 dB,
+- [0:46:17] is what you get, if you have a second order circuit.
+- [0:46:22] Okay? And you'll get an additional
+- [0:46:25] plus or minus 20 dB, in that slope every time you increase the order by one, right, because you're increasing the power of omega by one.
+- [0:46:35] So any questions on that?
+- [0:46:38] Okay.
+- [0:46:40] So so the next element of filter behavior and filter circuits that we wanna talk about involves
+- [0:46:48] what we call active filters.
+- [0:46:54] Okay. And the reading for this
+- [0:46:58] is in Ulaby
+- [0:47:02] et al, and it is sections
+- [0:47:06] nine dash six
+- [0:47:08] and nine dash seven.
+- [0:47:10] Okay. And the difference here between active filters and what we have (talk...?) Been talking about up to this point, are passive filters,
+- [0:47:19] is that
+- [0:47:21] in passive filters, there are no circuit components that can give you gain, right, such as a transistor,
+- [0:47:28] or,
+- [0:47:29] in our case, an op amp or op amps. Okay?
+- [0:47:36] In active filters,
+- [0:47:38] {I...}
+- [0:47:40] What makes them active filters is that you can have these components that give you gain, and we'll see that explicitly,
+- [0:47:46] in some of our examples,
+- [0:47:48] by using op amps in the filter circuits.
+- [0:47:52] And the advantage of that is that if you have only passive components,
+- [0:47:58] then,
+- [0:47:59] you know, eventually, say, if you cascade multiple units
+- [0:48:03] of, say, a particular kind of filter together, you'll lose some voltage every time. Right? So eventually,
+- [0:48:10] that voltage,
+- [0:48:11] will... It'll gradually be derated, and eventually, it'll get, to be quite (small.?) (It?) can get to be quite small if you have active filters with the possibility of having gain in the circuit, then
+- [0:48:26] you can build that signal level back up, or you can have amplification
+- [0:48:32] combined with filtering. Okay. So so that's what you get by using active filters. So,
+- [0:48:41] definitionally, what we have is that active filters,
+- [0:48:46] right, they contain components,
+- [0:48:53] alright, that can generate
+- [0:48:57] power
+- [0:49:01] and therefore gain.
+- [0:49:07] Okay. And the example,
+- [0:49:09] of this type of component that we have available to us right now
+- [0:49:13] is
+- [0:49:16] op amps. Okay? When you get to a course like ECE four thirty eight, then you'll learn about how transistors
+
+## page 20  f_0480.jpg  on screen [0:49:20 – 0:50:28]
+<sub>sharpness 1348, ink 1.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0476.jpg (0:50:27), f_0479.jpg (0:50:28)</sub>
+
+- [0:49:16] op amps. Okay? When you get to a course like ECE four thirty eight, then you'll learn about how transistors
+- [0:49:23] can
+- [0:49:24] can do this as well. Alright? So the idea then is that
+- [0:49:31] op amp
+- [0:49:33] and other
+- [0:49:36] active filter circuits,
+- [0:49:43] Alright. These can then be cascaded,
+- [0:49:48] okay, to
+- [0:49:51] improve
+- [0:49:53] the gain or the frequency response
+- [0:49:59] or other characteristics of the circuit.
+- [0:50:07] Okay.
+- [0:50:08] So that's the basic idea.
+- [0:50:11] And what we wanna do now is just to talk about some examples (and?) go through some examples of, initially,
+- [0:50:19] some simple
+- [0:50:21] active filter circuits. So any questions before we do that?
+- [0:50:27] Okay.
+- [0:50:28] So the first example that we will look at,
+
+## page 21  f_0550.jpg  on screen [0:50:28 – 1:05:11]
+<sub>sharpness 3003, ink 4.1 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0481.jpg (0:50:48), f_0482.jpg (0:52:48), f_0484.jpg (0:54:21), f_0501.jpg (0:56:19), f_0521.jpg (0:57:14), f_0526.jpg (0:58:03), f_0529.jpg (0:58:05), f_0535.jpg (1:02:27), f_0536.jpg (1:02:27), f_0543.jpg (1:02:44), f_0549.jpg (1:05:10)</sub>
+
+- [0:50:28] So the first example that we will look at,
+- [0:50:34] okay, is
+- [0:50:36] an active
+- [0:50:39] first order
+- [0:50:41] lowpass filter.
+- [0:50:49] Okay. So this circuit
+- [0:50:54] looks like this. So we have an op amp in it now.
+- [0:51:01] Okay. And it'll be a variant on
+- [0:51:05] just the the simple inverting amplifier, right, that we looked at, earlier in the semester. Okay. So we're gonna have
+- [0:51:15] an input voltage,
+- [0:51:18] call it v s as usual, be connected
+- [0:51:22] through a series resistance
+- [0:51:25] (r?) s,
+- [0:51:34] okay, to the inverting input of the op amp.
+- [0:51:38] And then for our feedback connection,
+- [0:51:42] we will have
+- [0:51:44] a resistor
+- [0:51:46] and a capacitor
+- [0:51:48] that are connected
+- [0:51:50] in parallel with each other. So call this r f and
+- [0:51:56] c f. Okay.
+- [0:51:58] {(So?)}
+- [0:52:00] if we... And then this will be the output voltage
+- [0:52:05] over here. Alright?
+- [0:52:08] Just to be explicit about it,
+- [0:52:11] we'll draw it like that. Okay. So this is the circuit that we want to look at. Alright? And if you look at this, right, you can see that it has, it has the same basic structure as just the inverting op amp, amplifier circuit that we looked at earlier,
+- [0:52:28] in the semester.
+- [0:52:30] And,
+- [0:52:31] alright, to make that
+- [0:52:33] comparison,
+- [0:52:37] right, more explicit,
+- [0:52:39] then what we can do
+- [0:52:41] is...
+- [0:52:43] Alright. We can kind of lump, these two basic elements together.
+- [0:52:48] Right? We'll call this the impedance
+- [0:52:51] {(of,?)}
+- [0:52:54] basically, the input the input signal. We'll call that z sub s,
+- [0:52:57] and then we will have the impedance
+- [0:53:00] of the feedback loop z sub f. Alright? And so for the input,
+- [0:53:07] that impedance is just
+- [0:53:09] this series resistance r sub s. Alright?
+- [0:53:13] And then for the feedback connection,
+- [0:53:17] the impedance of that feedback connection
+- [0:53:19] is the impedance of a resistor
+- [0:53:23] in parallel
+- [0:53:25] with a capacitor.
+- [0:53:26] So that equivalent
+- [0:53:28] impedance, oops, is going to be... Right. It's r f times one over j omega c f divided by r f plus
+- [0:53:39] one over j omega
+- [0:53:41] c f. Alright?
+- [0:53:44] We can multiply this by
+- [0:53:47] j omega c f over
+- [0:53:51] j omega c f.
+- [0:53:53] And if we do that...
+- [0:53:55] Alright, what we get then is that this is equal to r f over
+- [0:54:00] one plus j omega
+- [0:54:04] r f c f. Alright. This is
+- [0:54:07] the feedback impedance. Okay. So this is the circuit that we would like to look at. Alright. So any questions on this?
+- [0:54:17] Excuse me.
+- [0:54:18] Okay. So if we look at this (right?) now,
+- [0:54:23] what we wanna do is we wanna calculate
+- [0:54:26] v out as a function of v s. Alright?
+- [0:54:31] And we will do this in the usual way. So if you think back to what we did when we were talking about op amp circuits, essentially, what we wanna do is to apply KCL
+- [0:54:44] at this input node, alright, the inverting input of the op amp. Right? So if we do that,
+- [0:54:53] alright, what we have, we know that the voltage at this input node is zero because by the ideal op amp rules, we know that since the
+- [0:55:05] voltage at the noninverting input is zero because it's connected directly to ground, we know the voltage at the inverting input has to be the same, so it's zero as well. Right? So if we apply KCL, right, we have the current going out this way to the left, which is zero minus v s. So just minus
+- [0:55:22] v s divided by,
+- [0:55:25] the impedance
+- [0:55:27] z sub s.
+- [0:55:29] And then,
+- [0:55:30] the current flowing upward and to the right this way is just zero minus v out divided by z sub f. Right? So minus
+- [0:55:43] v out divided by z sub f,
+- [0:55:47] and then those two have to add up to zero because the current going into the op amp is zero. Alright? So these add up to zero,
+- [0:55:57] and so we get that
+- [0:56:00] v out is equal to minus
+- [0:56:03] z f over z s times
+- [0:56:07] v s.
+- [0:56:10] Right? Which should look familiar to you because that's basically the result that we got for the inverting
+- [0:56:16] op amp amplifier circuit.
+- [0:56:19] Okay? And then once we have that, then we can calculate
+- [0:56:24] the transfer function h of omega. Okay?
+- [0:56:28] And that is equal to
+- [0:56:31] v out over v s. Right? So that is
+- [0:56:36] from
+- [0:56:38] this expression here. Right? It is
+- [0:56:41] minus z f
+- [0:56:45] over z s.
+- [0:56:46] Alright?
+- [0:56:48] And
+- [0:56:51] right over here,
+- [0:56:54] we have z f and z s that we have already figured out. So then we're gonna get minus z f, so minus r f (and?) then divided by z s. So minus r f over r s times one over one plus j omega r f c f. Alright. That's gonna be the transfer function.
+- [0:57:15] Okay. So it is minus
+- [0:57:19] r f over r s times one over one plus
+- [0:57:24] j omega r f
+- [0:57:27] c f. Alright? So what we see here is that, right, we have a constant out here,
+- [0:57:35] and then we have this factor over here, which is a simple (pole?) at omega equal to one over r f, c f. Right? So this is a simple (pull,?)
+- [0:57:49] and
+- [0:57:52] we'll just call it omega naught is equal to one over
+- [0:57:56] RF
+- [0:57:57] c f. Okay.
+- [0:58:00] So from that,
+- [0:58:03] alright, we can quite easily
+- [0:58:05] now construct
+- [0:58:06] the Bode plots. Right? We won't go through the exercise of, you know, breaking it up into the constituent factors and,
+- [0:58:16] you know, constructing the Bode plots for each of those and then combining them because this is simple enough that we can just essentially get it directly.
+- [0:58:23] Okay. So
+- [0:58:27] if we look at the Bode plots...
+- [0:58:33] Okay. We will plot the magnitude first as usual.
+- [0:58:41] Okay. So it's the magnitude as a function of frequency, and we have...
+- [0:58:49] Alright. The pole frequency omega naught over here. Alright?
+- [0:58:53] And, right, basically, what we can see is that
+- [0:58:57] at low frequencies...
+- [0:59:00] Alright. So omega much less than omega naught. This denominator here just goes to one. The second term goes to zero. So the magnitude is going to be r f over r s.
+- [0:59:12] Okay. So what we have then is on the dB scale, then we have
+- [0:59:19] 20 times
+- [0:59:21] the log
+- [0:59:23] of RF
+- [0:59:25] over RS. Right? That's the limiting value as we go to
+- [0:59:30] low frequencies.
+- [0:59:33] Okay. And so we will have this.
+- [0:59:36] And then,
+- [0:59:38] at high frequencies, omega much greater than, the pole frequency omega naught, then this factor here will go as,
+- [0:59:47] basically one over j omega RFCF.
+- [0:59:50] Alright? And the key part of that is that, it goes as one over omega. Alright? And so we will have a downward slope over here,
+- [1:00:02] and that slope will be
+- [1:00:06] minus 20 dB
+- [1:00:08] per decade.
+- [1:00:11] Okay.
+- [1:00:13] And then
+- [1:00:14] for the phase, right, what we have is that,
+- [1:00:21] if we now wanna construct (a?) phase plot,
+- [1:00:25] (five?) omega
+- [1:00:27] as a function of omega, This will be point one omega naught. This will be omega naught. This will be 10 omega naught.
+- [1:00:35] Okay?
+- [1:00:36] This is zero degrees. We'll also mark 90 degrees
+- [1:00:41] and a 180 degrees.
+- [1:00:43] Okay. Add very low frequencies. Right? So less than point one omega naught. Then,
+- [1:00:49] this second term here goes to one, and so we have the phase of minus one, which will take to be a 180 degrees.
+- [1:00:59] As
+- [1:01:00] omega goes to infinity, so very high frequencies,
+- [1:01:04] then this factor will go as one over j omega RFCF,
+- [1:01:09] and so we'll have, in terms of the phase, the relevant factor is the j in the denominator. (All?) right? So that will
+- [1:01:17] make an additional contribution of minus 90 degrees to the phase. Okay. So what we'll have then
+- [1:01:28] oops, okay, is that at low frequencies, have a phase of,
+- [1:01:34] a 180 degrees. Very high frequencies, we have a phase of 90 degrees,
+- [1:01:40] and then
+- [1:01:42] the transition looks like this. Okay. So,
+- [1:01:46] this is what we have for,
+- [1:01:49] this,
+- [1:01:50] active first order lowpass filter. Right? We can see it's a first order filter because it has this minus 20 dB per decade slope corresponding to the linear dependence on omega to high frequencies.
+- [1:02:02] And because it is an active filter, right, we can see that
+- [1:02:08] we can get gain.
+- [1:02:11] Right? That is a magnitude of the transfer function in the passband
+- [1:02:15] that
+- [1:02:16] can be substantially greater than one or zero dB.
+- [1:02:22] Okay? And that can be engineered into the design of the filter by selecting
+- [1:02:29] the feedback and series resistances. Okay. So...
+- [1:02:34] Oh, yes. How about you make the slope even greater?
+- [1:02:38] Or, I guess, (a?) higher magnitude? Yeah.
+- [1:02:41] So so we'll get to this... Or one way that you can do this probably next time, which is that...
+- [1:02:48] Right? If you had a circuit like this
+- [1:02:51] and then you have the output voltage, right, basically given by this, if you then constructed another copy of this same circuit
+- [1:03:01] and
+- [1:03:02] use this v out in the role of v s...
+- [1:03:07] Okay, (remember?)
+- [1:03:09] the output of
+- [1:03:11] an op amp (in?) the ideal op amp model can basically act as an ideal voltage source. Right? So it can play the role of this v s. And then... If you took this output and connect it to to another copy of all of this, then you would get another, basically, another factor like this in the transfer function.
+- [1:03:32] Right. Like, I'll put it into the pins for these, like, (we?) (were?) to stack them, or would I have to put, an op amp?
+- [1:03:42] So that depends on the details of the circuit configuration. But in this case, right, if we're taking the output
+- [1:03:49] of
+- [1:03:50] the
+- [1:03:52] op amp and connecting it directly as the input, say, this point to
+- [1:03:58] the
+- [1:04:00] next unit
+- [1:04:02] that looks like this, okay, then you wouldn't need another op amp in between because,
+- [1:04:09] right, you can, in principle, connect anything to v out here, and it won't change, the output voltage. Right? That's one of the things that you get from, the ideal op amp. From an op amp in the ideal op amp limit.
+- [1:04:22] But if you had,
+- [1:04:24] you know, if if you had back here some more complicated passive
+- [1:04:30] circuit, right,
+- [1:04:32] that was giving you some filtering function and you wanted to add this active
+- [1:04:37] filter
+- [1:04:38] circuit as another unit, subsequently,
+- [1:04:43] then you would have to worry about
+- [1:04:46] how
+- [1:04:47] this resistance here, say, interacted with, the other things that were in the passive circuit. And so in that circumstance,
+- [1:04:54] it may be that you would want to put, say, a, a buffer or something like that in between.
+- [1:04:59] Okay.
+- [1:05:02] But if you're connecting another unit like this at the output, you wouldn't have to. Okay. Does that answer your question?
+- [1:05:08] Okay.
+- [1:05:09] So there are a few things that we wanna note here.
+
+## page 22  f_0551.jpg  on screen [1:05:11 – 1:05:11]
+<sub>sharpness 2124, ink 3.0 %, colour 0.5</sub>
+
+- [1:05:09] So there are a few things that we wanna note here.
+
+## page 23  f_0570.jpg  on screen [1:05:11 – 1:06:00]
+<sub>sharpness 2665, ink 3.8 %, colour 0.5</sub>
+<sub>earlier states of this page: f_0560.jpg (1:05:39)</sub>
+
+- [1:05:09] So there are a few things that we wanna note here.
+- [1:05:15] Okay. One
+- [1:05:17] is that, in this case, the resonant frequency... Not the resonant frequency. The
+- [1:05:23] pole frequency,
+- [1:05:25] it doesn't depend
+- [1:05:30] on
+- [1:05:31] RS. Right? So if we were...
+- [1:05:35] You know, if we
+- [1:05:37] attached to this not an ideal voltage source but
+- [1:05:41] some realistic voltage source, right, represented by a voltage source in series with a resistance,
+- [1:05:46] then
+- [1:05:48] we wouldn't change
+- [1:05:49] the pole frequency because the pole frequency doesn't depend on RS. We would change the gain, right, but not the pole frequency.
+- [1:05:56] Okay?
+- [1:06:00] Another point to note
+
+## page 24  f_0572.jpg  on screen [1:06:00 – 1:06:47]
+<sub>sharpness 2622, ink 4.0 %, colour 0.5</sub>
+
+- [1:06:00] Another point to note
+- [1:06:02] is that,
+- [1:06:04] right, because the op amp... Because the output signal of the circuit is at the output of the op amp, then you can add any load resistance to it, and you won't change that output voltage. Right? So v out,
+- [1:06:22] this will be unchanged,
+- [1:06:26] alright,
+- [1:06:27] for any
+- [1:06:32] load resistance,
+- [1:06:35] say RL,
+- [1:06:36] that's connected
+- [1:06:41] to v out.
+- [1:06:44] And then
+- [1:06:47] it's up here.
+
+## page 25  f_0583.jpg  on screen [1:06:47 – 1:07:17]
+<sub>sharpness 1842, ink 2.8 %, colour 0.2</sub>
+
+- [1:06:47] it's up here.
+- [1:06:49] Alright. The third point to note is that...
+- [1:06:53] Alright. Because this is now an active circuit, you can have gain. Right? So the op amp,
+- [1:06:59] it can provide
+- [1:07:01] gain
+- [1:07:03] in the filter passband.
+- [1:07:10] Okay.
+- [1:07:11] So that is the
+- [1:07:15] sort of (active?) first order lowpass filter.
+
+## page 26  f_0586.jpg  on screen [1:07:17 – 1:07:44]
+<sub>sharpness 1833, ink 2.7 %, colour 0.2</sub>
+
+- [1:07:15] sort of (active?) first order lowpass filter.
+- [1:07:19] The last thing that we'll do today
+- [1:07:21] is
+- [1:07:23] we will look at
+- [1:07:26] a second, also relatively simple example, which is an active
+- [1:07:32] first order
+- [1:07:36] highpass filter.
+- [1:07:42] Okay.
+- [1:07:43] And it has a structure
+
+## page 27  f_0587.jpg  on screen [1:07:44 – 1:08:40]
+<sub>sharpness 0, ink 0.0 %, colour 0.1</sub>
+
+- [1:07:43] And it has a structure
+- [1:07:45] that is quite similar to what we just looked at.
+- [1:07:50] Alright. So we have an op amp
+- [1:07:52] here.
+- [1:07:55] Okay. The,
+- [1:07:58] noninverting input, connect to
+
+## page 28  f_0619.jpg  on screen [1:08:40 – 1:16:48]
+<sub>sharpness 2797, ink 4.1 %, colour 0.4</sub>
+
+- [1:08:55] Okay. So let me
+- [1:08:59] figure out how to get myself
+- [1:09:01] {(back?)}
+- [1:09:03] into... If I can still share here. Okay.
+- [1:09:22] K. So let me
+- [1:09:30] okay. I guess all of these Zoom or IT malfunctions are now preserved forever since this is being recorded.
+- [1:09:37] So...
+- [1:09:38] Okay. So then let's see. So we have... Just gonna update here.
+- [1:09:44] Okay. Alright. So that's working again. So we have just a feedback resistor
+- [1:09:51] over here. Okay? And then
+- [1:09:59] this is our output voltage. Okay. So, again,
+- [1:10:03] right, what we wanna do is we wanna think about
+- [1:10:07] the
+- [1:10:08] input and output
+- [1:10:11] impedances.
+- [1:10:14] Right? So this is going to be
+- [1:10:17] the series input impedance z sub s, and then this will be the feedback impedance z sub f.
+- [1:10:23] So
+- [1:10:24] z sub s here is...
+- [1:10:27] Right. It's r s plus one over
+- [1:10:30] j omega c s, and then the feedback impedance is just RF.
+- [1:10:36] Okay.
+- [1:10:38] And we can analyze this now in exactly the same way,
+- [1:10:41] that we did for the,
+- [1:10:45] let me bring up the
+- [1:10:47] chat box here just in case.
+- [1:10:53] Okay. In the same way that we did the the lowpass filter circuit. Right? So, basically,
+- [1:11:00] again,
+- [1:11:01] if we apply KCL
+- [1:11:03] at the inverting input of the op amp, we get that minus v s
+- [1:11:08] over
+- [1:11:09] z s minus v out
+- [1:11:13] over z f
+- [1:11:16] is equal to zero.
+- [1:11:17] And then if we solve for v out,
+- [1:11:20] we get that it's equal to, once again, minus z f
+- [1:11:24] over
+- [1:11:25] z s times
+- [1:11:28] v s. Alright?
+- [1:11:30] And so
+- [1:11:34] the transfer function is then
+- [1:11:39] the output voltage
+- [1:11:41] over the input voltage,
+- [1:11:43] and so it's going to be
+- [1:11:46] (ZF?) over ZS. So (Rf?)
+- [1:11:50] divided by Rs plus one over j omega CS.
+- [1:11:54] Alright?
+- [1:11:56] So this is going to be...
+- [1:11:58] Or it's minus that. Minus r f
+- [1:12:01] over
+- [1:12:03] r s plus one over j omega
+- [1:12:06] c s.
+- [1:12:08] And then here, we're gonna multiply by j omega c s over j omega c s
+- [1:12:17] so that we get rid of, this fraction in the denominator.
+- [1:12:21] Okay. So we get minus j omega
+- [1:12:25] r f times c s divided by one plus
+- [1:12:31] j omega
+- [1:12:32] r s
+- [1:12:35] times c s. Okay?
+- [1:12:38] And then if we take this
+- [1:12:41] and,
+- [1:12:42] we separate it out into its constituent factors,
+- [1:12:46] then we get
+- [1:12:48] minus r f
+- [1:12:49] c s. Right? (Essentially?) (a?) constant. And then we have
+- [1:12:54] minus... Or sorry.
+- [1:12:57] Plus j omega divided by one plus j omega
+- [1:13:02] r s c s. Okay. And so we see here that we have (a?) simple zero
+- [1:13:11] at the origin.
+- [1:13:13] Right? We have this constant factor out front.
+- [1:13:16] And then, from this term in the denominator,
+- [1:13:20] we see that we have...
+- [1:13:23] Now it's a simple pole
+- [1:13:26] at
+- [1:13:28] a frequency which we will again call omega naught, and it's one over r s
+- [1:13:34] times c s.
+- [1:13:37] Okay.
+- [1:13:38] So
+- [1:13:40] any questions to hear?
+- [1:13:45] Okay.
+- [1:13:47] Now we can go ahead and construct the Bode plots for this transfer function.
+- [1:13:55] Okay. And, again, we will just go directly to, the Bode plot
+- [1:14:01] rather than,
+- [1:14:02] using the intermediary of, the individual factors.
+- [1:14:07] Okay. So we have, right, we're looking at the magnitude
+- [1:14:12] on a dB scale
+- [1:14:15] as a function of frequency.
+- [1:14:18] So we have point one omega naught,
+- [1:14:22] omega naught,
+- [1:14:24] and 10 omega naught. Okay?
+- [1:14:27] And,
+- [1:14:28] what we see is that
+- [1:14:31] right here, this is a highpass filter.
+- [1:14:34] Right? If we are at high frequencies,
+- [1:14:37] then,
+- [1:14:39] in the denominator,
+- [1:14:41] this goes to just j omega (r?) s c s. So we're gonna have the j omega here and the j omega here cancel out. The c s here and the c s here cancel out. So we're just gonna have minus r f over r s. The magnitude of that is just r f over r s. So we're gonna have
+- [1:14:59] 20
+- [1:15:01] times the log
+- [1:15:03] of r s... R f over r s.
+- [1:15:09] Okay.
+- [1:15:11] And
+- [1:15:12] that will be the limiting value of
+- [1:15:15] the magnitude of the transfer function at high frequencies.
+- [1:15:19] And
+- [1:15:21] then at low frequencies,
+- [1:15:23] right, so omega much less than omega naught, then the denominator goes to one, and we just have this j omega over here. And so that is first order in omega. So this is gonna be a first order circuit,
+- [1:15:39] and we're gonna have
+- [1:15:45] a transfer function that looks like... Magnitude that looks like this with a slope of 20 dB
+- [1:15:53] per decade.
+- [1:15:55] So that is the magnitude.
+- [1:15:58] And then for the phase,
+- [1:16:03] right, if we plot that out...
+- [1:16:08] So phi of omega is a function of omega. This is point one omega naught.
+- [1:16:13] This is omega naught.
+- [1:16:16] This is 10 omega naught. Right? This is zero degrees, and we will mark
+- [1:16:22] minus 90 degrees and minus
+- [1:16:25] 180 degrees.
+- [1:16:27] Okay.
+- [1:16:28] And what we see is that
+- [1:16:32] {as}
+- [1:16:33] omega goes to zero, right, so at very low frequencies,
+- [1:16:37] then the denominator here is one. And so we just have, for the phase, the relevant factor is minus j.
+- [1:16:44] So that has a phase of minus 90 degrees.
+- [1:16:48] Okay. So that's gonna be like this.

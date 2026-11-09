@@ -1,0 +1,785 @@
+[0:00:02] Okay, why don't we go ahead and get started. So as you just heard, the class is being recorded.
+[0:00:10] All right. And so let me get rid of this window here. All right. So, you know, just so you know that this is being done mostly for your convenience.
+[0:00:22] All right. So this is ECE 411H. All right. So hopefully all of you are in the right place. All right.
+[0:00:30] We'll always start off with some announcements. Okay. So we have several of those today since today's the first day of class.
+[0:00:38] The first one is that there are two handouts in the back. There is the syllabus and then also the schedule for labs and recitations.
+[0:00:46] So if you haven't picked that up when you came in, then you can go ahead and pick that up now.
+[0:00:52] It'll also these and all the handouts for the class will also be posted as PDFs on the Canvas site. All right.
+[0:01:02] Also, I see that many of you have already noticed that there is a background survey that's posted as a quiz on Canvas.
+[0:01:11] So about two thirds of you have completed that. So thank you very much to those of you who've completed it.
+[0:01:17] If you haven't completed it, then please go ahead and do that at your earliest convenience and ideally by the end of this week,
+[0:01:26] because that is very the results are very helpful to me in thinking about the course and all of your backgrounds and kind of how to pitch things at the appropriate level.
+[0:01:37] All right. So so that will be very useful to me. The labs and recitations, you can see the schedule week by week on the one page handout that's there in the back.
+[0:01:48] Those will start today. OK, so they're on Mondays, 1 to 3 p.m. And the first one, therefore, is today.
+[0:01:56] It'll be a recitation session. OK, so you should go to E R zero dot eight one eight. OK.
+[0:02:04] And what our T.A. Darsh will do in today's recitation is kind of go over, hopefully review some of the basics of a circuit analysis and the like that
+[0:02:17] you learned in 302 or 302 H. But maybe since it's been a year, I may need a little refresher or reminder on.
+[0:02:27] OK, so that'll be today's recitation. The first two sessions are recitations, then we'll start the labs.
+[0:02:34] OK, and both the recitations and the labs are required parts of the course.
+[0:02:41] That's why this is four eleven H and not three eleven H. OK, let's see.
+[0:02:47] So yeah, and the locations are different. All right.
+[0:02:50] Recitations are in a classroom. Zero eight one eight this year. The labs are in a lab.
+[0:02:56] E R one eight two eight. So that's behind the glass doors in the lab area on the first floor. OK.
+[0:03:04] There will be problem sets roughly each one to two weeks.
+[0:03:09] OK, so I have released the first two of those problem sets.
+[0:03:14] All right. So you can download them as PDFs from Canvas. I will not hand them out as hard copies.
+[0:03:20] OK, so you should make sure to keep up with when the problem sets are released and download them from Canvas.
+[0:03:29] All right. The first problem set will be due on Wednesday, September 9th.
+[0:03:34] Right. So you have some time. And then the second will be due shortly thereafter on Monday, September 14th.
+[0:03:41] OK, so that's kind of why I released the two of them together, because there is not that much time between the two of them.
+[0:03:47] All right. And then the later problem sets will be released as we go through the semester.
+[0:03:56] The solutions to the problem sets will be released on typically the day that the problem sets are due.
+[0:04:04] But usually at 6 p.m. OK. And then the last announcements, which I saw that many of you also have acted upon,
+[0:04:13] is that there is a Discord server for the course. All right. This is an unofficial channel for discussions about course material and such,
+[0:04:25] because it's not sanctioned by the university officially.
+[0:04:29] Everything that's official will be here in class or on Canvas. OK.
+[0:04:33] But in the past, students have found the Discord server to be very helpful in kind of chatting with each other about things going on in the class,
+[0:04:41] problems on the problem sets and so forth. And I will monitor it occasionally.
+[0:04:48] And our T.A. Darsh, I think, will monitor it pretty regularly.
+[0:04:52] And we'll try to chime in if it seems like questions are not being answered or things are going off in an unproductive direction.
+[0:05:03] OK. So any questions on any of this? OK. Why don't we go to the syllabus here?
+[0:05:12] Let me go to the right section here. OK. All right.
+[0:05:27] So this is the syllabus, which is an official document for the course. All right.
+[0:05:33] So you have hard copies of this. And I just wanted to go over some of the key points from the syllabus.
+[0:05:39] All right. So my name is Ed Yu. I'm the instructor for the course. Right.
+[0:05:46] We have a graduate T.A. Darsh Shah for the course. Darsh was a student in my section of the course.
+[0:05:57] A few years ago. Then after that, he was an undergraduate assistant in the course.
+[0:06:02] And then now he is our graduate T.A. So so he knows a lot about both the course material and how this particular course is run from both a student perspective and kind of an instructor perspective.
+[0:06:18] And he really loves circuits. So I think he'll be a very good and enthusiastic T.A. for you.
+[0:06:28] The Canvas site you access in the usual way. And you should try to go to the Canvas site quite regularly because there will be announcements about things like schedule changes, updates to course materials and things like that posted on Canvas.
+[0:06:45] All of the problem sets will be posted on the Canvas site. All of the solutions will be posted on Canvas.
+[0:06:51] Things related to the exams and the like will be there as well.
+[0:06:57] You may also have seen that I under the exam preparation materials page on the Canvas site, there are copies of all of the exams that students in this class have taken over the last three offerings.
+[0:07:15] OK, so there are the exams, the score distributions for those exams for the class that actually took them, and then also short answers on a different version of it so that you're not looking at the answers while you're trying to work through the problems.
+[0:07:33] All right, so hopefully those will be useful to all of you in helping you to sort of get a sense of what's expected on the exams and also in preparing for the exams. All right.
+[0:07:48] Our classes will be Monday and Wednesday at 9 a.m. in this room. In addition to the in-person class session here, I will also simulcast the classes over Zoom.
+[0:08:01] And the classes will be recorded. And I'll post the recordings on a discussion board called Lecture Topics, which is sort of a class by class summary of the main things that we covered in each class and then links to handouts or virtual handouts, the class recording, readings in the book and so forth.
+[0:08:26] All right. Now, even though we are simulcasting and recording the class, I strongly encourage everyone to actually come to the class in person.
+[0:08:39] All right. And the reason is that I know from both observation and experience that it's quite easy to become disengaged in something if you're just watching it on Zoom.
+[0:08:54] I attend a lot of my department's faculty meetings over Zoom.
+[0:08:59] And so I know that it is very easy and tempting to go off and check something else or do something else while something is going on in Zoom.
+[0:09:09] So so I very strongly encourage you to come to class and participate in person.
+[0:09:15] You will learn much more that way. You will do better in the class.
+[0:09:21] My observation also is that there's a very strong correlation between coming to class and participating in person and doing well in the class.
+[0:09:29] All right. The correlation coefficient is not one, but it's quite high.
+[0:09:35] All right. So so I very strongly encourage you to participate in that way.
+[0:09:41] I will have office hours after class. So Mondays and Wednesdays, 1030 to a little bit before noon in my office over in EER, which is 3.802.
+[0:09:53] So if you get off the elevators on the third floor, my office is and you go, you turn left, you'll see this big glass walled office and my office is just to the right of that.
+[0:10:05] OK, so it's it's easy to find. If you're not able to come to my office hours and you want to meet with me, then the best thing to do is to send me an email because I actually have two offices, one here on main campus and one at the Pickle Research Campus.
+[0:10:23] And I split my time between those. So if you come by at some random time, you know, there's a good chance that I will not be in my main campus office.
+[0:10:32] I'll be in my Pickle Campus office. But if we arrange a time in advance, then I'll make sure to be at the right location.
+[0:10:40] OK, when you send me an email, please put ECE 411 H in the subject.
+[0:10:47] Otherwise, our spam filter in Outlook might send it to my junk folder and we don't want that to happen.
+[0:10:56] Darsh, the TA, will have office hours as well. I think what he's thinking right now is on Wednesdays, one to three p.m., but I will double check with him on that and also get the location for that.
+[0:11:10] And I'll post that once it's available. The labs then, as I mentioned earlier, are Mondays, one to three p.m. in one of two locations, depending on whether it's a lab or recitation week.
+[0:11:22] There'll be two exams that we'll have. Those will be in class, in person exams on October 7th and November 11th.
+[0:11:34] And then there will also be the final exam. OK, so those will be in class, closed book.
+[0:11:42] If there are any additional materials that are allowed.
+[0:11:46] So, for example, when we get to the last part of the course on transforms, then I'll provide some additional materials to everyone and you'll know what those are in advance.
+[0:11:55] But other than that, it's just the answer sheet, the questions calculator and writing implement.
+[0:12:03] And our policy starting this year is that you have to physically write the exams on paper, not on a tablet or anything like that.
+[0:12:14] OK, so that's all spelled out a little bit later in the syllabus.
+[0:12:19] Course description. We'll talk about that in more detail in a little bit.
+[0:12:24] Prerequisites. All of you who were able to enroll have the prerequisites.
+[0:12:29] All right. So it's basically a sufficient background in math and physics.
+[0:12:33] All right. That's really plus three oh two or three oh two h.
+[0:12:38] OK, so we talked about the course format both in person and over zoom.
+[0:12:45] So the synchronous zoom option is it's basically if you know if you're sick or something like that and you can see the classroom is pretty crowded and you want.
+[0:12:58] You would like not to get other people in the classic.
+[0:13:01] Then you can participate over zoom or if you're really out of it or you're on a trip or something like that, then you can go back and watch the recording.
+[0:13:13] Or sometimes students didn't quite understand everything.
+[0:13:17] So they'll go back and watch the recording maybe on one point five X or something like that.
+[0:13:22] And so so the recordings are also available for for that.
+[0:13:27] What they are not intended for is for you to try to watch four weeks worth of classes two days before the exam because that generally doesn't work.
+[0:13:38] OK, although I can see in my view of zoom who has watched the recordings and when.
+[0:13:48] So I can tell that that's happening and I can see that it definitely does not work.
+[0:13:53] OK, but all of that is available to you if you need it for for good reasons.
+[0:14:00] OK, any questions so far? Yes.
+[0:14:07] Is that going to be entirely. You have to go.
+[0:14:11] So only during the pandemic did I have virtual office hours and it's a little bit cumbersome to have the virtual office hours going on at the same time as in person office
+[0:14:24] hours because it may take me a while to notice someone on there and we do things on the board.
+[0:14:30] It's not as effective. There is the Discord server if you have questions and then there's this AI circuit tutor thing that I put together.
+[0:14:40] And I'll talk about that a little bit later. Yes.
+[0:14:46] But it's just a timeline of when that is available.
+[0:14:50] Oh, so so it is almost certainly the case that the final exam will be.
+[0:14:58] On the day and at the time that corresponds to our class meeting time.
+[0:15:03] You know, that will be confirmed by the university.
+[0:15:08] I think it's usually sometime in.
+[0:15:12] You know, maybe first or second week of November, roughly, that they will confirm that.
+[0:15:17] But, you know, I can say with, you know, probably 99 percent probability that it'll be actually at the day and time corresponding to our class meeting time.
+[0:15:31] I think I've never seen them move it to a different day and time without either a very good reason or sort of at the request of the instructor.
+[0:15:42] So you can take, you know, what's posted on the registrar's website as a very good indication of when that will actually be.
+[0:15:49] But I don't know why the university doesn't confirm it until so late. But that is their timetable.
+[0:15:57] Any other questions? OK, so textbooks.
+[0:16:04] There is one required text for the book.
+[0:16:07] It is in hard copy is this circus textbook by Eulaby and all.
+[0:16:13] We've used this for a while. You know, every book has its strengths and weaknesses.
+[0:16:19] You know, the strength of this one is that it's pretty concise.
+[0:16:23] You know, you can read through it without without a lot of extraneous detail.
+[0:16:27] That is also its weakness. All right.
+[0:16:32] Actually, the other strength of it, which is quite significant, is that the authors make this available as a free PDF,
+[0:16:41] which you can download from the publisher's website, or it's free in exchange for your email address.
+[0:16:47] OK. And so so I think these days most students will just download the PDF and use it as a PDF.
+[0:16:55] And that's much more economical than buying a textbook.
+[0:17:01] That brings us to the next book on the syllabus. So this is a supplementary reference.
+[0:17:08] This is another book on surf circuits that basically covers the same topics by Alexander and Sadiku.
+[0:17:15] This is also one of the standard books on this subject.
+[0:17:18] The strength of this one is that it goes through everything in a lot of detail.
+[0:17:27] All right. So if you want to see that, then this is a good place to look.
+[0:17:32] If you feel that, OK, that's too much.
+[0:17:36] There's a lot of extraneous information that I can figure out for myself.
+[0:17:38] Then, you know, this one goes through it anyway.
+[0:17:42] It also has a large number of problems that you can use for practice.
+[0:17:48] All right. A varying levels of difficulty.
+[0:17:52] And so if you want some additional practice problems, then this is a good source for that.
+[0:17:58] OK. Next on the list is this book here, The Art of Electronics.
+[0:18:03] This is in its third edition now.
+[0:18:07] The copy that I have here in my main campus office is the second edition.
+[0:18:12] When I was a student, we used the first edition.
+[0:18:16] So this book is one of the very standard references in circuits.
+[0:18:24] It's somewhat idiosyncratic in that it reflects the perspective and priorities of the person who wrote it.
+[0:18:33] But it has a ton of really useful information and insights.
+[0:18:39] The material that we'll cover here is kind of scattered through the first several chapters.
+[0:18:47] And then there's a lot of additional material in it as well.
+[0:18:50] So if you want to read something that has a lot of information and reflects the insights of someone who understands really a lot.
+[0:19:02] And it's thought really a lot about circuits, then this is a good source for that.
+[0:19:08] Next on the list is this book here, Nilsson and Riddell.
+[0:19:13] It's also one of the standard references on circuits at the level of this course.
+[0:19:19] The sort of main characteristic of this book that differentiates it is that it has a lot of fairly challenging circuit problems in it.
+[0:19:32] So if you want harder problems, you can go to this.
+[0:19:36] In some cases, they're hard because the numbers don't work out well.
+[0:19:40] That's not that useful.
+[0:19:42] In some cases, they're hard because conceptually, they're more subtle.
+[0:19:45] And that can be useful.
+[0:19:47] But the weakness of this is that it doesn't have that many simple problems.
+[0:19:53] So it launches you immediately into the harder problems.
+[0:19:57] But if you want some of that, then this is a good place to look.
+[0:20:01] And then the last book that I'll point out is this one here.
+[0:20:06] It's actually a Signals and Systems book.
+[0:20:08] It's one of the standard references from a while back, Oppenheim and Wilski.
+[0:20:14] And so this is relevant to what we'll be doing in maybe the last one third of the course or so
+[0:20:23] when we start getting into Laplace and Fourier transforms and Fourier series
+[0:20:29] and how they are applied to circuit analysis.
+[0:20:33] And it has a lot of other information that's sort of 3.13-like.
+[0:20:38] So that's this book here.
+[0:20:41] So those are the books.
+[0:20:43] Any questions on that?
+[0:20:44] Yes.
+[0:20:58] Oh, so I don't have a list of do these and don't do these other ones.
+[0:21:05] If you look at them, if it sort of leads you through these different
+[0:21:12] variations and so forth as circuit, what happens if you do this, then that kind of question
+[0:21:18] is often more of a conceptual question.
+[0:21:19] If it just analyzes the circuit and gives you a bunch of weird numbers, then maybe that's
+[0:21:24] one that doesn't work out as cleanly.
+[0:21:27] Yes.
+[0:21:28] Are these supplementary materials also free?
+[0:21:32] No, they are not.
+[0:21:34] Well, they're in the library.
+[0:21:38] But if you want to buy them or get your own copy, they are not free.
+[0:21:43] And actually, textbooks are quite expensive now.
+[0:21:46] If you wanted to buy Alexander and Sudhiku, the last time I checked, it was somewhere between
+[0:21:51] $150 to $200.
+[0:21:55] And then, so they've gone to this rental model.
+[0:21:58] But even the rental, I think, is at least several tens of dollars.
+[0:22:03] And then you don't have it as a reference at the end if you wanted that.
+[0:22:08] So, yeah, so you can buy them or you can use them from the library and then decide if there's
+[0:22:14] any that you want to buy.
+[0:22:16] Or I will say that there are sometimes PDF copies of books that are available from unauthorized
+[0:22:27] sites on the web.
+[0:22:28] But you have to be very careful.
+[0:22:30] And I don't encourage you to make use of those because there may be other things that
+[0:22:37] come along with them.
+[0:22:40] Any other questions?
+[0:22:42] Okay, so let's see, grading for the course.
+[0:22:47] The homework, the problem sets are worth 5%.
+[0:22:50] Lab is worth 10%.
+[0:22:51] And then the exams are the rest.
+[0:22:54] 25% for each of the semester exams, 35% for the final.
+[0:23:01] What I'll say here is that even though the problem sets only count for 5% of the grade,
+[0:23:10] they are actually the key to your understanding the material and getting the 85% that is associated
+[0:23:18] with the exams.
+[0:23:20] So, I strongly encourage you to do all of the problem sets and to do them in what I'll
+[0:23:28] say is the right way.
+[0:23:30] And we'll talk about that in a little bit.
+[0:23:34] For the exams, all the exams will be written in person.
+[0:23:39] And then what I'll ask you to do is you'll have a few minutes at the end of each exam
+[0:23:44] to scan it on your phone and upload it to Gradescope.
+[0:23:49] And it'll be graded on Gradescope.
+[0:23:53] And then after the exams are graded, then we'll release the results and your graded exams
+[0:24:01] to you also on Gradescope.
+[0:24:03] And then typically we'll give you, for the semester exams, we'll give you a week to look
+[0:24:07] over the exams.
+[0:24:08] And if you have questions about the grading or if you would like a regrade, then you'll
+[0:24:14] have that week to request that.
+[0:24:17] I'll talk about that in more detail as we get closer to the exams.
+[0:24:21] For the final exam, since the final exam schedule and also the grade submission schedule is now
+[0:24:28] very compressed, then the time between when the final exam grades are available and we
+[0:24:36] have to turn to the course grades is much shorter, sometimes only a day or two.
+[0:24:41] So, that turnaround will have to be much quicker, just to give you a heads up on that.
+[0:24:50] Drop policy, this is something, you know, it's required to be in the syllabus.
+[0:24:55] I would say the main thing here is that if you were thinking about dropping the course
+[0:25:00] for whatever reason, then please come and talk to me first so we can discuss, you know,
+[0:25:08] how you're doing, if that's the issue, and, you know, what the best decision would be
+[0:25:14] for you overall.
+[0:25:16] It's not that uncommon that someone thinks they're doing terribly in the course and wants
+[0:25:21] to drop it, but actually they're doing fine.
+[0:25:24] All right, so, you know, so that's something.
+[0:25:28] If you're thinking about this, then, you know, my main advice is to come and talk to me so
+[0:25:33] that we can, I can help you to make an accurate assessment, make the best possible decision.
+[0:25:40] And, you know, it's a situation where you want to try to do better.
+[0:25:43] We can talk about ways to do that.
+[0:25:49] Okay, collaboration and academic integrity.
+[0:25:53] All right, so collaboration, you know, there's more detail here, but the main point is
+[0:25:59] that on the problem sets, I encourage you to collaborate in the sense that you should
+[0:26:04] talk with each other about the course material, the problems, you know, maybe how to approach
+[0:26:09] them and so forth, but in the end, you should sit down by yourself and work out and write
+[0:26:16] out your solutions, all right, because that's really the only way to make sure that you
+[0:26:21] really understand them, and that's what you're going to be required to do on the exams,
+[0:26:26] you know, in an interview setting later on and so forth, all right.
+[0:26:34] You know, academic integrity is basically, you know, you follow the rules that we set out
+[0:26:41] for the course.
+[0:26:43] One of the things that is now required by the university is that we have an official
+[0:26:49] policy on AI, all right, and use of AI in the course.
+[0:26:55] So I have, there's a pretty long section in the syllabus, and this is also reproduced
+[0:27:00] on a page on the Canvas site that talks about AI.
+[0:27:06] Some of this is the AI policy, all right, but then quite a bit of it is kind of the reasoning
+[0:27:14] behind it, because I think that is actually at least as important.
+[0:27:18] Okay, so the policy is that, you know, you are allowed to use AI, you know, I know you
+[0:27:27] probably all use it for various purposes anyway, and in many ways, if it's appropriately
+[0:27:33] used it can be a very powerful tool, all right.
+[0:27:35] So you are allowed to use it, but you are not allowed to use AI to just generate the solutions
+[0:27:44] to the problem sets, and then, you know, copy those solutions down, okay.
+[0:27:53] You know, when it really comes down to it, there isn't that much that I can do to enforce
+[0:27:58] that policy.
+[0:27:59] It's really up to you to follow the policy.
+[0:28:03] The only thing that I can do to enforce it is to say that if you use AI inappropriately,
+[0:28:12] it will be very difficult for you to do well on the exams that count for 85 percent of
+[0:28:17] your grade, okay.
+[0:28:20] Now as far as the thinking behind this is concerned, you know, you have probably wondered
+[0:28:32] if you have used AI, you know, you can see, all right, AI can do all these things, so,
+[0:28:40] you know, last spring I fed the old exams for the course into even the free versions
+[0:28:46] of the various AIs, and they could all solve all of the problems, all right.
+[0:28:52] So you may wonder, okay, why are we spending time learning this stuff, all right.
+[0:28:57] And the reason is that, you know, down the road, you do not want to be in a position
+[0:29:04] where you can easily be replaced by AI.
+[0:29:08] Maybe that will happen to all of us anyway, but, you know, we want to try to do as much
+[0:29:11] as we can to make sure that does not happen, right.
+[0:29:18] So AI is, you know, much better than probably any of us will be.
+[0:29:25] It's already much better than any of us will be at doing things that, you know, are already
+[0:29:32] within the corpus of human knowledge, that we know how to do, all right.
+[0:29:37] You know, the knowledge is all there, the techniques are all there, AI can do them very
+[0:29:41] well, and we're not going to be as fast certainly as AI in doing them, all right.
+[0:29:48] But, you know, there's a boundary between sort of what's known and what is unknown, okay.
+[0:29:56] And you know, it's a pretty jagged boundary because, you know, unknown could mean we don't
+[0:30:01] even know that that question is significant, or it could mean we don't know how different
+[0:30:06] things that seem different are actually connected to each other, right.
+[0:30:11] But in either case, right, AI is actually not very good at figuring out, okay, what in
+[0:30:17] the completely unknown arena is actually interesting and useful, and what are questions that, you
+[0:30:25] know, are important but we just haven't thought of them yet.
+[0:30:29] So that is where people can be useful, all right.
+[0:30:34] But in order to be able to sort of expand that boundary of the known out into the unknown,
+[0:30:42] then it's very important, it's essential that you have enough of what is known, not only
+[0:30:52] is something that you can look up, but something that's part of your working knowledge, all
+[0:30:56] right.
+[0:30:57] You know, if you think about something really simple like the multiplication tables, right,
+[0:31:01] if you had to go and look up what is six times eight every time, you would be very bad at
+[0:31:07] arithmetic, all right.
+[0:31:09] You just know it and you can use it, you know, and there are analogs of this, you know, as
+[0:31:14] you get to things that are more sophisticated, you need to build up the corpus of your working
+[0:31:21] knowledge, the things that you really understand and have internalized, okay.
+[0:31:27] And at this stage in your educations, a lot of the things that you're building up in that
+[0:31:32] way are things that are already known, all right.
+[0:31:37] But it's still essential that you do the hard work of learning and internalizing them,
+[0:31:44] because that is what will allow you later on when you get to the known versus unknown
+[0:31:50] frontier, which can happen pretty quickly.
+[0:31:55] You can actually help to expand that boundary, okay.
+[0:32:00] So that is my pitch to you for, you know, why it is actually important to understand this
+[0:32:08] material and really internalize that understanding so it becomes just part of your thinking and
+[0:32:14] your intuition, okay, because that's the only thing that will allow you to expand that
+[0:32:19] boundary later on.
+[0:32:21] And that is, you know, really the main area where we can have and maintain an advantage
+[0:32:28] over, you know, Clod or ChatTPT.
+[0:32:34] So to help you to make proper use, an appropriate use of AI, one of the things that I did over
+[0:32:43] the summer and it was frighteningly easy to do this, was that I created this AI circuit
+[0:32:51] tutor, all right, that, you know, you can use any AI that you want, but I created this
+[0:32:59] AI circuit tutor as essentially something where you can use AI in an environment where it'll
+[0:33:11] give you, you know, it can give you explanations of concepts that we're covering in the course,
+[0:33:16] ideas that we're covering in the course.
+[0:33:19] It has access to the entire PDF of the book and it's been instructed by me to use terminology
+[0:33:27] and notation that is consistent with the book, right.
+[0:33:31] You can ask it things like, you know, what's a good approach to solving this problem, you
+[0:33:38] know, you can give it an approach that you've tried and say, what's your feedback on this?
+[0:33:44] What it will not allow you to do is to give it a problem or say, you know, refer to a problem
+[0:33:50] in the book and, you know, give you a complete work solution, all right.
+[0:33:56] And then the other constraint is that it only addresses topics that are relevant to ECE and
+[0:34:04] circuits, okay.
+[0:34:05] So it doesn't go outside that domain.
+[0:34:10] So there's a link to the agent here.
+[0:34:16] You have to be logged into your UT chat GPT EDU account to use it.
+[0:34:22] Otherwise you won't be able to get access to it.
+[0:34:24] So you have to log into that version of chat GPT and, you know, I'll just show you a little
+[0:34:37] bit of it here, right.
+[0:34:40] So once you log into it, then when I pasted this into, I guess it didn't retain the resolution,
+[0:34:50] but you know, there's a box here where you can type in your question or upload information
+[0:34:57] and such, all right.
+[0:34:59] And so for example, you might say something like, can you explain the basics of the ideal
+[0:35:05] Op-amp model, right.
+[0:35:07] And then show me an example of say an Op-amp integrator circuit with a particular value
+[0:35:14] of the time constant, right.
+[0:35:16] And what it'll do is it'll answer the question, right.
+[0:35:22] It'll give you kind of the basic ideas of the ideal Op-amp model and then it'll start
+[0:35:28] – I didn't paste the whole thing.
+[0:35:31] I pasted just the start of this in here where it'll talk about, okay, how you build an integrator
+[0:35:38] circuit, all right.
+[0:35:39] We'll talk about that in class as well.
+[0:35:40] You can also see from this that it is not good at drawing circuit diagrams, all right.
+[0:35:46] It's using ASCII characters to try to draw the circuit diagrams and actually these are,
+[0:35:52] as it turns out, not quite correct, okay.
+[0:35:54] But you know, you can kind of get the idea of it, all right.
+[0:36:01] If you say, you know, please suggest some useful approaches for solving a particular
+[0:36:07] problem, then, all right, it can find it in the book.
+[0:36:12] And then it'll say, I can't give you a full work solution but I can give you some
+[0:36:17] tips on how to approach it.
+[0:36:19] My suggestion here is if you're working on, say, a homework problem or, you know, just
+[0:36:26] a problem – a practice problem or something like that, then don't go to this right
+[0:36:32] away, all right.
+[0:36:33] What you should do and what's actually very important for your learning is to spend
+[0:36:37] time actually trying to figure it out for yourself, all right.
+[0:36:42] It is harder.
+[0:36:43] It's more time-consuming but that actually is integral to the process of learning,
+[0:36:48] right, that kind of struggling with it, thinking through, you know, a bunch of
+[0:36:53] things that maybe turned out not to work and then coming upon the – an approach
+[0:36:57] that does work and understanding why, that is really – that's the process of
+[0:37:01] learning.
+[0:37:02] If you circumvent that process, you're not learning as much, all right.
+[0:37:08] You know, but if you've struggled with it for a while and you really can't get
+[0:37:12] it, then you can do this, all right.
+[0:37:17] And then the last thing is the tool is constrained only to address questions that are
+[0:37:26] relevant to electrical engineering and circuits.
+[0:37:30] So if you ask this something, you know, even like this, all right, then it's going
+[0:37:36] to say, all right, this is done within scope, okay.
+[0:37:40] But then, you're right, it redirects in a clever way, right.
+[0:37:44] It says a more useful version would be what makes someone a good circuit designer, right.
+[0:37:49] So I mean this is sort of a joke but it's to illustrate that, you know, you could
+[0:37:54] put anyone in there.
+[0:37:57] I also did this putting in the name of one of the professors in the department in here
+[0:38:01] and it gave the same response, okay.
+[0:38:04] So you know, it sort of keeps you from being distracted and going off track into
+[0:38:11] areas that are not relevant.
+[0:38:14] So that is the AI tool.
+[0:38:17] Now let me go back to the syllabus.
+[0:38:24] Okay, the homework basically we talked about, the exams basically we talked about, all right,
+[0:38:38] all this stuff we've mostly talked about here, all right, accommodations for religious
+[0:38:44] holidays or disability accommodations.
+[0:38:49] The main points here are that, you know, please let me know in advance so that we can make
+[0:38:55] the appropriate arrangements and for disability accommodations the main thing is that, you
+[0:39:02] know, it has to be documented officially by the university and then they will let me
+[0:39:07] know, you know, what accommodations we need to make and then we can discuss it and figure
+[0:39:15] out the best way to do that, okay.
+[0:39:21] Sources of help.
+[0:39:22] So this is something where, you know, by now, since you're in your second year, yes, question.
+[0:39:28] I should ask, for example, what sorts of calculators are we going to use?
+[0:39:34] So you can use any calculator that does not have communication or photographic capability.
+[0:39:43] You know, if it's a calculator that can do linear algebra and things like that, then
+[0:39:48] that's fine.
+[0:39:49] But what I will say is that we can only give you credit for things that are written in your
+[0:39:56] solutions and where we can see your path of reasoning.
+[0:40:01] And in grading the exams, most of the credit is actually for showing us that reasoning
+[0:40:09] and your work and, you know, only a fairly small fraction is for having the correct,
+[0:40:16] say, numerical answer at the end, okay.
+[0:40:19] So the trade-off is that, you know, in the end, we can only give you credit for what's
+[0:40:25] shown explicitly in your solutions that you turn in.
+[0:40:30] Okay, does that answer your question?
+[0:40:32] Okay, any other questions?
+[0:40:35] Okay.
+[0:40:38] Yeah, so sources of help.
+[0:40:41] You know, if you have questions, you should come to my office hours or Darsha's office
+[0:40:45] hours.
+[0:40:47] The recitation sessions are an opportunity to ask questions.
+[0:40:49] The Discord is an opportunity to ask questions.
+[0:40:52] You know, there's often tutoring and such available.
+[0:40:57] If you're not understanding things, then you should try to get yourself back on
+[0:41:02] track as early as possible, all right, because, you know, as with many other
+[0:41:08] science and engineering and math courses, you know, if you don't understand things
+[0:41:12] in the beginning, it's not like it'll suddenly become clear later on.
+[0:41:16] It'll just get worse, okay.
+[0:41:17] So it's important if there are things that you're not understanding to try to resolve
+[0:41:24] that as soon as possible, and we want to help you do that.
+[0:41:30] Classroom evacuation, you know, basically don't panic and do follow directions.
+[0:41:37] Okay, and then last page, finally.
+[0:41:41] This is the tentative schedule for the topics that we'll cover.
+[0:41:45] The semester exams and the final are fixed points, all right, and this is roughly the
+[0:41:56] schedule that we will try to follow.
+[0:42:00] Usually we're not quite able to get to things like two-port networks at the very end,
+[0:42:04] all right, but we'll try to stick pretty close to this schedule, all right.
+[0:42:10] And then for prerequisite knowledge, you know, it's basically math and physics.
+[0:42:18] The math, you should have all in hand already, right, so algebra, pre-calculus,
+[0:42:26] single variable calculus, a little bit on differential equations, a little bit on
+[0:42:31] linear algebra.
+[0:42:33] Actually, the thing that I think is often a bit challenging is understanding how
+[0:42:39] to do algebra with complex numbers, because it seems like that's something that
+[0:42:45] nominally, at least according to my kids and their teachers, this is supposed to be
+[0:42:50] covered in pre-calculus and calculus, but either it is not covered or everyone has
+[0:42:57] forgotten it, okay.
+[0:42:59] So this is something I have a couple of handouts that I'll distribute when we get to the
+[0:43:06] relevant parts of the course a little bit later in the semester.
+[0:43:09] And then for physics, all right, just familiarity with basic concepts in electricity and
+[0:43:18] magnetism, so charge, current, electric, magnetic fields, and then energy and power.
+[0:43:25] And then also remembering that if you're dealing with physical quantities,
+[0:43:29] you need to have units and developing a sense of, you know, what answers are
+[0:43:34] physically reasonable, all right.
+[0:43:37] So if you're designing a circuit and somehow what you're getting is that you need a 10,000
+[0:43:43] volt source, then probably something is wrong, maybe not necessarily, but probably.
+[0:43:49] If it's telling you, oh, you need a million amps, that's definitely going to be wrong.
+[0:43:57] Okay, so getting a sense of what are reasonable values for quantities with units is
+[0:44:05] important as well.
+[0:44:07] So any questions?
+[0:44:10] Okay, let me go back to our notes page here.
+[0:44:27] Okay, so this is EC411H, all right.
+[0:44:39] And this is basically, of course, on circuit theory and it's the honors version.
+[0:44:47] Okay, so the expectations are a little bit higher here and we'll go into things in somewhat
+[0:44:52] more depth than in regular 411 and hopefully that will pay off for you in your understanding.
+[0:44:59] All right, now before we actually launch into the material of the course, I want to sort
+[0:45:08] of put what we're doing here into the broader context of, you know, the field generally
+[0:45:14] and especially sort of the other courses that surround this one, right.
+[0:45:20] So you've all taken ECE302 or 302H, all right.
+[0:45:27] And in those courses, all right, really what you're doing is you're getting an introduction
+[0:45:35] to key circuit concepts and techniques and components, okay.
+[0:45:49] And we're going to build on that in this course, all right.
+[0:45:53] So you learn about resistors, capacitors, inductors, you know, things like KCL, KVL and
+[0:46:04] something about op amps.
+[0:46:06] And you also learn kind of the basics or some of the basics of semiconductor devices and
+[0:46:21] then also frequency domain analysis.
+[0:46:26] Okay, so that's what you have from 302 or, you know, now it's 402, all right.
+[0:46:41] And what we want to do here, okay, is really go into a lot more depth on many of these
+[0:46:52] topics and also expand your understanding into new domains, right.
+[0:46:57] So we're going to talk about, you know, really we're doing just a more extensive and in-depth
+[0:47:10] treatment of linear circuits, okay.
+[0:47:17] So we'll talk about RC and RL circuits, which as I understand it you have talked about some
+[0:47:25] in 302 or 302H already.
+[0:47:28] We'll talk about RLC circuits, all right, which are more complicated because they're
+[0:47:35] governed by more complicated differential equations.
+[0:47:39] And then we'll integrate op amps into all of this as well.
+[0:47:46] We will talk a bit more about solid state devices and semiconductor devices, okay.
+[0:48:04] So in 302 or 302H, I think most of the focus of what you did was on MOSFETs, all right.
+[0:48:12] So what we'll do here is we will complement that by talking about, a little bit more about
+[0:48:18] the physics of semiconductors and how that plays into the behavior of what are called
+[0:48:23] PN junction devices.
+[0:48:25] So many diodes are PN junctions.
+[0:48:29] Also things like LEDs and solar cells and the like are PN junctions and certain types
+[0:48:35] of transistors, bipolar transistors incorporate those as well, all right.
+[0:48:41] So that's what we will focus on in the semiconductor part of the course.
+[0:48:46] And then also what we're doing is building up a set of more powerful tools for analyzing
+[0:48:56] devices or analyzing circuits.
+[0:48:58] So we're looking at more powerful tools, okay, for really AC circuit analysis, all
+[0:49:11] right.
+[0:49:12] So we're understanding in a lot more detail and having tools for developing that understanding
+[0:49:18] a lot more detail of how circuits that have time-dependent behavior function.
+[0:49:25] So we'll start off in this or we'll look at things explicitly in the time domain.
+[0:49:31] Then we'll go to the analysis of circuits with sinusoidal signals which will bring
+[0:49:40] us to phasor analysis.
+[0:49:47] So I think you talked about some of this in 302 or 302H already, right.
+[0:49:51] So complex impedance resistors, capacitors, inductors and things like that.
+[0:49:57] So we will build on that and go into more depth on all of that.
+[0:50:02] Then we'll look in more detail at how we think about the frequency-dependent response
+[0:50:16] of circuits and how we represent that graphically using what are called Bode plots,
+[0:50:26] right.
+[0:50:27] So the dependence of circuit response and frequency is something that's really very
+[0:50:30] central to a lot of what's done in circuit analysis and design generally.
+[0:50:37] And then in the last part of the course we'll talk about transform and series
+[0:50:42] techniques.
+[0:50:43] We'll talk about Laplace transforms, Fourier series and Fourier transforms.
+[0:51:01] And so these are basically, they're mathematical methods that allow you to take a circuit from
+[0:51:07] the time domain.
+[0:51:08] So looking at say voltages and currents as a function of time into the frequency domain
+[0:51:15] where you're doing a lot of the analysis as a function of frequency.
+[0:51:20] And that turns out to be mathematically very convenient because you convert differential
+[0:51:26] equations in the time domain to algebraic equations in the frequency domain.
+[0:51:31] And it's a lot easier to solve algebraic equations than differential equations.
+[0:51:36] And it also gives you insight into what ultimately is the time-dependent behavior of
+[0:51:43] a circuit.
+[0:51:45] Now as far as how this fits into other courses beyond 302, the part of the course on semiconductors
+[0:51:56] and solid state devices, that really is setting the stage for ECE 339, which is the main course
+[0:52:11] on semiconductor physics and devices.
+[0:52:14] I know quite a few people take that even in their sophomore year.
+[0:52:18] So that's something that some of you may come upon pretty soon.
+[0:52:24] This material on transforms, Laplace and Fourier transforms and Fourier series has
+[0:52:32] a lot of commonality with what's done in ECE 313, which is the linear systems and signals
+[0:52:40] course.
+[0:52:41] So what we're doing here is introducing a set of ideas and techniques that you'll also
+[0:52:48] talk about in 313, but here connecting it specifically to how they are applied in the
+[0:52:56] circuit analysis and design domain so that you have a particular application to anchor
+[0:53:03] your thinking.
+[0:53:06] And then all of this together is really setting you up for the next set of circuit courses
+[0:53:14] that come in the curriculum, starting with ECE 438.
+[0:53:24] So that's sort of a little bit more on how this fits into the overall scheme of things
+[0:53:29] in particularly your first couple years here and different areas and ideas in electrical
+[0:53:38] engineering generally.
+[0:53:40] So any questions?
+[0:53:43] So I will typically stop pretty frequently and ask you if you have any questions.
+[0:53:49] So if you have questions, you should definitely ask them because if you're wondering about
+[0:53:54] something, you're probably not the only person who's wondering.
+[0:53:58] I will also ask you at the beginning of each class whether you have any questions.
+[0:54:05] And the reason that I do that is because my hope and expectation is that after each
+[0:54:13] class you'll kind of go back and go over your notes, think about what we talked about
+[0:54:18] a bit, and there very often are things that maybe it seemed pretty clear when we were
+[0:54:25] discussing it in class, but then you go back and look at it and it doesn't quite make as
+[0:54:29] much sense.
+[0:54:30] So then the beginning of the next class is a good opportunity to try to clarify things
+[0:54:38] that maybe weren't so clear after when you looked at them later, either in the immediately
+[0:54:43] preceding class or sometimes earlier than that.
+[0:54:53] So that brings us now to the actual technical content of the course.
+[0:54:58] And we're going to start off here just by reviewing a few of the key things from 302
+[0:55:05] or 302H.
+[0:55:06] So we'll just do a brief review of key circuit topics from 302 or 302H.
+[0:55:24] And you'll have some more of this in the recitation session this afternoon.
+[0:55:32] So sort of the key entities, the building blocks they're going to be working with are the
+[0:55:38] individual circuit components, so resistors, capacitors, and inductors, and then either
+[0:55:44] voltage or current source.
+[0:55:46] So just very quickly, we have resistors, typically R. And for each of these components,
+[0:55:56] one of the defining characteristics of a circuit component is the relationship that
+[0:56:01] that component embodies between voltage and current.
+[0:56:06] So for a resistor, this is given by Ohm's law.
+[0:56:10] The voltage is equal to the current times the resistance.
+[0:56:17] This is the resistor.
+[0:56:19] And the defining parameter is the resistance R. And this is in Ohm's.
+[0:56:28] So this is something that hopefully by now it's almost second nature to you.
+[0:56:33] Then we have capacitors, C. Here, the defining relationship between current and voltage is
+[0:56:47] a differential relationship rather than an algebraic relationship.
+[0:56:51] And it'll be the same with inductors.
+[0:56:53] That is why when you have circuits that have capacitors and or inductors, you end up
+[0:57:00] getting differential equations rather than algebraic equations, because the relationship
+[0:57:04] between current and voltage for those two types of components is a differential relationship.
+[0:57:11] So for capacitors, it is that the current is equal to the capacitance times the time
+[0:57:17] derivative of the voltage.
+[0:57:22] So this is a capacitor.
+[0:57:24] And C here is the capacitance.
+[0:57:31] And this is in farads.
+[0:57:36] And getting to the idea of physically reasonable quantities, one farad is a giant capacitance.
+[0:57:44] So when we're working with capacitors, we could be working with maybe picofarads to
+[0:57:50] perhaps millifarads.
+[0:57:52] But one farad is a big capacitor.
+[0:57:54] You can get one farad capacitors, but that's a lot.
+[0:58:01] And then we have inductors, L. Again, we have a differential relationship between current
+[0:58:10] and voltage.
+[0:58:11] But for an inductor, it is that the voltage is equal to the inductance times the derivative
+[0:58:18] of the current with respect to time.
+[0:58:22] And the symbol for an inductor, it's this little coil thing here.
+[0:58:28] And so L is the inductance.
+[0:58:34] And it is in Henry's.
+[0:58:37] And one Henry is a big inductor.
+[0:58:39] Again, you can find it.
+[0:58:41] But if you think about just the numbers, 1,000 ohms is a pretty typical resistor.
+[0:58:48] But you would be pretty hard pressed to find a 1,000 farad capacitor or a 1,000 Henry
+[0:58:53] inductor.
+[0:58:55] And then we have our sources.
+[0:59:00] So we have voltage sources.
+[0:59:06] And in a voltage source, basically what it is is that it gives you a voltage that is the
+[0:59:14] same regardless of how much current is flowing through that voltage source.
+[0:59:20] It can either be an independent voltage source, which means that the voltage is just explicitly
+[0:59:25] what is specified, or it can be a dependent voltage source, which means that its voltage
+[0:59:32] depends on some current of voltage, not of that component, but somewhere else in the circuit.
+[0:59:39] And dependent sources are often very useful ways of representing the behavior of some
+[0:59:47] more complicated device, like maybe a transistor or something like that, using simple two-terminal
+[0:59:53] linear components.
+[0:59:56] And so with a voltage source, the voltage is specified explicitly or in terms of the current
+[1:00:13] of the voltage elsewhere in a circuit.
+[1:00:22] And the way that we draw these in a circuit is for an independent source, we specify the
+[1:00:30] voltage like this.
+[1:00:35] For a dependent source, instead of a circle, it's a diamond.
+[1:00:47] And the voltage is some function of a voltage or a current somewhere else in the circuit.
+[1:00:57] If it were a function of the voltage of the current actually in this component, it would
+[1:01:02] typically be one of these.
+[1:01:05] And then finally, we have current sources, where instead of the voltage being specified,
+[1:01:16] it's the current.
+[1:01:17] So the current is specified explicitly or in terms of the current of voltage elsewhere.
+[1:01:42] And the way that we draw this in a circuit is for an independent source, with a current
+[1:01:50] i, it's like this.
+[1:01:51] And the arrow shows the direction of this current that we specified.
+[1:02:01] And if it's a dependent source, again, it's in a diamond like this.
+[1:02:12] So the current here now is going to be equal.
+[1:02:14] It's going to be some function of a voltage or a current elsewhere in the circuit.
+[1:02:19] So any questions on these components?
+[1:02:22] Hopefully these are things that are all familiar to you from 302 or 302h.
+[1:02:25] Yes?
+[1:02:27] Like a curved?
+[1:02:30] Yeah, right.
+[1:02:32] Oh, so in principle, a capacitor should be symmetric.
+[1:02:41] So it doesn't matter the direction that you connected it.
+[1:02:45] Yeah, but some types of capacitors, it does matter which is the positive terminal and
+[1:02:52] which is the negative terminal.
+[1:02:53] And then usually, then it's drawn with a curved, one curved terminal to indicate that.
+[1:03:01] And it's just that dependence that comes about because of the physics of how that
+[1:03:10] type of capacitor is actually made.
+[1:03:13] So if the polarity matters, that's typically where you'll see the one curved terminal
+[1:03:17] and one straight one.
+[1:03:20] Any other questions?
+[1:03:25] So resistors, they're much easier to understand.
+[1:03:30] We sort of understand them already.
+[1:03:32] You worked with them a lot in 302 or 302h.
+[1:03:36] We want to talk a little bit more about capacitors and inductors.
+[1:03:47] So one way that we can think of these is that capacitors and inductors are devices
+[1:03:57] that can store energy.
+[1:04:00] In the case of a capacitor, it's storing electric energy.
+[1:04:04] So energy in the form of an electric field or charge.
+[1:04:09] In the case of an inductor, it is energy in the form of a magnetic field or
+[1:04:15] correspondingly current that is associated with that magnetic field.
+[1:04:20] So for capacitors, these are basically, they're circuit components.
+[1:04:36] We can think of them as storing essentially electric charge.
+[1:04:40] So that's store electric charge or equivalently, we can think of them as
+[1:04:55] storing energy in the form of an electric field.
+[1:05:08] Because any time you have charge, that charge produces an electric field.
+[1:05:13] And there is energy, as you may remember, associated with fields.
+[1:05:19] So the energy, say, for an electric field goes as the electric field squared.
+[1:05:24] For a magnetic field, it's the magnetic field squared.
+[1:05:28] So you can think about that either way.
+[1:05:32] And if we kind of sketch out what this looks like physically,
+[1:05:44] the typical way of representing a capacitor is that you have two conducting plates
+[1:06:08] that are separated by some insulating material.
+[1:06:11] So at the top and the bottom here, these are conductors.
+[1:06:22] And then they are separated from each other by an electric insulator.
+[1:06:33] And then the idea is that we can apply a voltage across the capacitor like this.
+[1:06:44] So we attach the terminals of the voltage source to the top and the bottom conductors.
+[1:06:53] And then what happens is that you build up charge, equal and opposite charge Q on the
+[1:07:03] two conductors.
+[1:07:06] And the defining relationship here is that that charge is equal to the capacitance times
+[1:07:13] the voltage.
+[1:07:15] So if you have a large capacitance, then it only takes a little bit of voltage to produce
+[1:07:21] a given amount of charge.
+[1:07:23] But if you have a small capacitance, to get that same amount of charge, you need much
+[1:07:27] more voltage.
+[1:07:29] So the capacitance is sort of a measure of how efficiently this particular device stores
+[1:07:36] electric charge.
+[1:07:39] And then in circuits, we're typically not dealing with charge explicitly.
+[1:07:46] We're dealing with current and voltage.
+[1:07:50] But we know that charge here is, or current, is just the derivative of charge with respect
+[1:07:58] to time.
+[1:08:00] So we might have current flowing this way.
+[1:08:04] And that current then is basically the derivative with respect to time of this charge over
+[1:08:13] here.
+[1:08:14] So you can think of this charge being built up by this current flow over here.
+[1:08:20] And so if we just take the derivative of this expression here with respect to time, then
+[1:08:27] we get that the current, the derivative of Q with respect to time is equal to the capacitance
+[1:08:33] times dv dt, since we're assuming the capacitance is time independent.
+[1:08:39] And this is how we get the defining relationship between current and voltage for the capacitor.
+[1:08:47] So any questions on this?
+[1:08:52] OK.
+[1:08:53] Now just to flesh this out a little bit more and perhaps remind you of a little bit of
+[1:09:01] the intuition that you might have had from a high school physics course, we can look
+[1:09:07] in more detail at kind of the simplest geometry, which is a parallel plate capacitor.
+[1:09:19] So that's basically the geometry that we just drew, like this, where we have voltage
+[1:09:45] that's applied between the top and the bottom of the capacitor.
+[1:09:52] And we want to put some physical quantities here for the different parameters.
+[1:09:59] So we're going to say that these plates have an area we'll call A. There are charges plus
+[1:10:10] Q and minus Q. And then the thickness of the insulator, the separation between these plates
+[1:10:19] we'll call D. And we will say that the material in the interior of the capacitor has some
+[1:10:30] dielectric constant.
+[1:10:36] And we will call that epsilon.
+[1:10:40] And we'll have axes here, x, y, and z.
+[1:10:47] So this is the situation that we want to talk about.
+[1:10:54] And so what we want to do is to derive explicitly what the relationship is in terms of these
+[1:11:03] parameters that we specified here between the charge and the voltage.
+[1:11:09] And then by doing that, that will allow us to figure out what the capacitance is, again,
+[1:11:16] in terms of these parameters, the area, the separation, and the dielectric constant.
+[1:11:22] And that can help to give us a little bit of intuition about what it takes to make a
+[1:11:27] large capacitance or a small capacitance.
+[1:11:33] So if we look at this, then the way that we're going to do this is we want to figure out what
+[1:11:40] the electric field is inside the capacitor over here.
+[1:11:45] And then if we integrate that electric field over this distance here, or as it turns out
+[1:11:53] the electric field is constant, we multiply the electric field by the distance, we'll
+[1:11:56] get the voltage.
+[1:11:59] So we need to figure out what the electric field is in the capacitor as a function of
+[1:12:06] this charge Q. And if we can do that, then we'll get a relationship between the charge
+[1:12:13] and the voltage.
+[1:12:15] So how do we figure out what the electric field is in the interior of the capacitor
+[1:12:23] here?
+[1:12:24] Do you remember?
+[1:12:26] Yes.
+[1:12:27] Yes, Gauss's law.
+[1:12:29] So what Gauss's law says is that the electric field flux that comes out of some volume is
+[1:12:41] related to the total amount of charge that's contained inside that volume.
+[1:12:47] And the trick in using Gauss's law for electrostatic problems is to figure out what's a convenient
+[1:12:57] volume to choose here.
+[1:12:59] So what is the convenient volume to choose here that will allow us to figure out the
+[1:13:03] electric field?
+[1:13:04] OK, maybe this is going too far back.
+[1:13:11] What we want to do is we want to choose something where the electric field flux has a very simple
+[1:13:18] geometric relationship to the volume that you're choosing and where it's very easy
+[1:13:24] to figure out how much charge is inside.
+[1:13:29] And the convenient volume to choose here is a little box that encloses the bottom plate
+[1:13:49] here.
+[1:13:50] That is our volume that we want to choose.
+[1:13:54] And what Gauss's law tells us is that the integral over the surface of this volume
+[1:14:13] of the electric field is equal to the integral over the volume of the charge density rho over
+[1:14:23] epsilon dV.
+[1:14:27] So basically the total charge divided by the dielectric constant.
+[1:14:32] And if we do this, then what we have is that the electric field, we'll call it e, it's a
+[1:14:47] vector between the parallel plates, we know that it has to be in the z direction because
+[1:15:10] there's no variation.
+[1:15:11] We assume this is very large, so there's no variation in the x and y direction.
+[1:15:15] So the electric field is some value e without a vector sign in the z direction.
+[1:15:27] And in addition, the electric field is 0 outside the plates.
+[1:15:38] Again, assuming that the plates have an extremely large area.
+[1:15:45] And so if we use Gauss's law, then we know that that electric field integrated over the
+[1:15:51] surface, it's only going to be the top surface here because that's the only surface that's
+[1:15:55] inside the plates and that has a non-zero dot product with the electric field.
+[1:16:02] So the area of the plate times that electric field is going to be, the charge is minus
+[1:16:11] q, total charge, over epsilon, which means that the electric field is equal to minus q
+[1:16:19] over epsilon a.
+[1:16:20] And the minus sign tells us that in our picture here, the electric field is pointing downward,
+[1:16:29] which we know that it has to because the electric field should point from the positive charge
+[1:16:34] to the negative charge.
+[1:16:36] So that's what we get for the electric field.
+[1:16:40] Once we have the electric field, we have to figure out what the voltage is.
+[1:16:47] But we know, perhaps you remember, that the electric field is just the spatial derivative
+[1:16:56] of strictly speaking the electrostatic potential, but here it's the voltage.
+[1:17:01] So in addition, actually it's the negative of the derivative.
+[1:17:09] So we know that the electric field is minus the gradient of the voltage.
+[1:17:18] Or since this is basically a one-dimensional problem, there's only variation in the z direction,
+[1:17:24] what we really have is that the electric field is equal to minus dv dz in 1D in one dimension.
+[1:17:34] So what we have then is that the electric field is minus dv dz, which is just minus
+[1:17:48] the voltage over the distance because the electric field is constant.
+[1:17:55] If we were to make this box taller inside here, the amount of charge doesn't change.
+[1:18:03] So that means the electric field has to be the same.
+[1:18:06] So we know the electric field is independent of this.
+[1:18:09] And so the derivative of v is just the voltage over the separation.
+[1:18:20] And then once we have this, then we can take this expression for the electric field
+[1:18:25] and this one and set them equal to each other.
+[1:18:29] That gives us our relationship between the charge and the voltage, and therefore the
+[1:18:34] capacitance as well.
+[1:18:36] So now combining these expressions for the electric field, then what we get is minus v
+[1:18:52] over d, which we got from over here, has to be equal to this minus q over epsilon a,
+[1:19:03] which means that q has to be equal to epsilon times a over d times v, and this has to be
+[1:19:13] the capacitance.
+[1:19:16] So that means the capacitance is epsilon a over d.
+[1:19:21] And this is the capacitance of a parallel plate capacitor.
+[1:19:37] So what it tells you is that if you want a large capacitance, you want to have a large
+[1:19:42] area and a small separation.
+[1:19:46] And if you have a structure that has a small area, then that's going to give you a small
+[1:19:52] capacitance.
+[1:19:54] And that actually comes up in many different contexts.
+[1:19:58] So any questions on this?
+[1:20:00] Yes?
+[1:20:03] With the first equation, can you explain why there's a minus sign again with ae equals
+[1:20:09] minus 2 over epsilon?
+[1:20:12] Oh, so on the left-hand side, that's just so e can be positive or negative, the way that
+[1:20:21] we've defined it over here.
+[1:20:25] And so the flux of the electric field through the surface of this red box here is just the
+[1:20:31] electric field inside the plates times the area with no negative sign.
+[1:20:38] But then the negative sign over here, it is because we're looking at the bottom plate
+[1:20:45] and that has charge minus q.
+[1:20:48] So that's the minus q charge over here.
+[1:20:52] And then the electric field being negative here tells us that that electric field is
+[1:20:58] pointing in the minus z direction, which according to how we've defined our axes here
+[1:21:03] is downward.
+[1:21:05] OK.
+[1:21:07] OK, yes?
+[1:21:08] You can find me what rho is and then the...
+[1:21:12] Oh, it is the charge density, right?
+[1:21:15] So charge per unit volume.
+[1:21:17] So when you integrate that, you get the total charge.
+[1:21:22] Any other questions?
+[1:21:24] OK, we will stop here for today and we'll pick up next time with inductors, which
+[1:21:30] I know are less intuitive than capacitors.
+[1:21:34] So we'll spend a little time talking about that at the end of class on Wednesday.
+[1:21:37] So that is it for today and I will now stop the recording.

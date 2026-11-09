@@ -1,0 +1,488 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:08.000
+Okay, so this is, you'll be problem 8.29. Alright.
+
+00:00:08.000 --> 00:00:12.000
+And this is an example.
+
+00:00:12.000 --> 00:00:19.000
+Of again, power, calculations.
+
+00:00:19.000 --> 00:00:25.000
+And the Phaser domain.
+
+00:00:25.000 --> 00:00:43.000
+Okay? And then also, in the course of doing this power calculation, we'll see how source transformations can be applied in the Phaser domain as well, and also source transformations.
+
+00:00:43.000 --> 00:00:55.000
+Yeah, I, okay, so I, this problem involves the circuit shown over here.
+
+00:00:55.000 --> 00:01:06.000
+And the values for the different circuit components are given, and what we're asked to do is to calculate the average power that is disciplated in this resistor.
+
+00:01:06.000 --> 00:01:12.000
+Rl, over here, which is a 3 K resistor. Okay.
+
+00:01:12.000 --> 00:01:17.000
+So let's go ahead. We will redraw the circuit over here.
+
+00:01:17.000 --> 00:01:22.000
+So we have a voltage source. B.
+
+00:01:22.000 --> 00:01:29.000
+And then a resistor are one.
+
+00:01:29.000 --> 00:01:34.000
+Okay, then a resistor. R, 2.
+
+00:01:34.000 --> 00:01:42.000
+Then an inductor with impedance, z sub l.
+
+00:01:42.000 --> 00:01:52.000
+Then a capacitor with impedance, z sub c.
+
+00:01:52.000 --> 00:02:03.000
+Okay. And these are connected to terminals A and B, and those terminals are then connected to a load resistor, r, sub l.
+
+00:02:03.000 --> 00:02:16.000
+Alright, and the voltage source v. As a Phaser is 100 and then we'll specify explicitly that it has a phase angle of 0, and that's in bolts.
+
+00:02:16.000 --> 00:02:22.000
+The resistor. R, one is one Kilohertz resistor, the resistor R.
+
+00:02:22.000 --> 00:02:26.000
+2 is a 0 point 6 kilo ohm resistor.
+
+00:02:26.000 --> 00:02:33.000
+The resistor R. L. The load resistor is a 3 kilone resistor.
+
+00:02:33.000 --> 00:02:42.000
+The impedance of the inductor. Zl is jay times point 8.
+
+00:02:42.000 --> 00:02:51.000
+So 800 j. And then the impedance of the capacitor is minus J.
+
+00:02:51.000 --> 00:02:57.000
+Times 0 point 5. Okay, so minus 500 j, for that.
+
+00:02:57.000 --> 00:03:09.000
+And what we're asked to do is to solve for the average power and the load resistor.
+
+00:03:09.000 --> 00:03:21.000
+Okay, so to do this one approach could be that we could sort of work with this circuit, as it is shown directly here.
+
+00:03:21.000 --> 00:03:44.000
+Say by node voltage analysis, then that would mean that we could choose say this bottom note here to be our reference, node, and then we would have 2 node voltages here, and each to solve, for but we can make things perhaps slightly simpler by using source transformations okay, and if
+
+00:03:44.000 --> 00:03:51.000
+we look at this right, we can see that for the voltage source fee and the resistor R.
+
+00:03:51.000 --> 00:04:01.000
+One alright, we have a voltage source in series, with a resistor, so we can transform that into a current source.
+
+00:04:01.000 --> 00:04:04.000
+In parallel with the resistor, then that resistor, after the source transformation will be in parallel with R.
+
+00:04:04.000 --> 00:04:14.000
+2 over here, and so we can combine those into a single equivalent resistance.
+
+00:04:14.000 --> 00:04:19.000
+So we will have just a current source in parallel with one resistor.
+
+00:04:19.000 --> 00:04:41.000
+Then we can use another source transformation to convert that combination back to a voltage source in series with a resistor and effectively what that will allow us to do is to go from having 2 extraordinary notes here to having just one extraordinary note all right and then at that point we can
+
+00:04:41.000 --> 00:05:01.000
+go ahead and do the a simpler node voltage analysis that will allow us to get the voltage at this note here, and then we can use that directly to get the power that is absorbed or dissipated in the resistor our okay so that will be our approach for solving this
+
+00:05:01.000 --> 00:05:06.000
+problem. Okay, so we're going to use.
+
+00:05:06.000 --> 00:05:12.000
+Source transformations.
+
+00:05:12.000 --> 00:05:17.000
+For this alright, and so for the first transformation, alright!
+
+00:05:17.000 --> 00:05:24.000
+What we'll get is a current source.
+
+00:05:24.000 --> 00:05:46.000
+In parallel with a resistor. Okay, and I, when we do that source transformation, remember when we convert voltage source in series with a resistor to a current source in parallel with the resistor, the resistor has the same value as before the transformation so that's just our one
+
+00:05:46.000 --> 00:05:52.000
+and the current source is going to be the voltage source divided by the resistance.
+
+00:05:52.000 --> 00:05:56.000
+So this is just going to be V.
+
+00:05:56.000 --> 00:06:03.000
+Over. R. One. Okay, and the rest of the circuit is the same.
+
+00:06:03.000 --> 00:06:07.000
+Alright, so we'll have.
+
+00:06:07.000 --> 00:06:13.000
+Another resistor here, which is R. 2. Okay, then we'll have our inductor.
+
+00:06:13.000 --> 00:06:20.000
+That has an impedance. Zl.
+
+00:06:20.000 --> 00:06:25.000
+We'll have a capacitor. Okay, with impedance.
+
+00:06:25.000 --> 00:06:36.000
+Zc, then these are our terminals A and B, and we have our hello and resistor.
+
+00:06:36.000 --> 00:06:43.000
+Out here. Okay. And now, alright, this is our 2 over here.
+
+00:06:43.000 --> 00:06:50.000
+So now these 2 resistors are one and R. 2 are in parallel with each other, so they are equivalent.
+
+00:06:50.000 --> 00:06:56.000
+Resistance is R. One times R. 2 over r, one plus r, 2.
+
+00:06:56.000 --> 00:07:02.000
+Alright! So R. One times. R. 2 is point 6 K.
+
+00:07:02.000 --> 00:07:09.000
+Squared, and R. One, of course, are 2 is 1.6 K.
+
+00:07:09.000 --> 00:07:19.000
+So this is point 6, okay, over 1.6. That is the same as 3 8 k.
+
+00:07:19.000 --> 00:07:28.000
+Right, which is 3750, okay, so.
+
+00:07:28.000 --> 00:07:33.000
+That's one source. Transfer. Alright, then.
+
+00:07:33.000 --> 00:07:47.000
+We can do a second source transformation which converts this current source, which is in parallel with now an equivalent resistance of 375 ohms.
+
+00:07:47.000 --> 00:07:51.000
+We can convert that into a voltage source in series with a resistor.
+
+00:07:51.000 --> 00:07:56.000
+Alright. So if we do that.
+
+00:07:56.000 --> 00:08:00.000
+We have a voltage source.
+
+00:08:00.000 --> 00:08:01.000
+And that's going to be in series with a resistor.
+
+00:08:01.000 --> 00:08:08.000
+That resistor alright has the same value as it has up here. Right?
+
+00:08:08.000 --> 00:08:12.000
+So 375 ohms!
+
+00:08:12.000 --> 00:08:19.000
+Then we have our and inductor.
+
+00:08:19.000 --> 00:08:25.000
+With inductance. Z. Sub l. Then we have.
+
+00:08:25.000 --> 00:08:31.000
+Our capacitor with impedance, z sub c.
+
+00:08:31.000 --> 00:08:39.000
+Right, and then we have our terminals A and B.
+
+00:08:39.000 --> 00:08:50.000
+And our load resistor R. Sub. L. And this voltage source over here.
+
+00:08:50.000 --> 00:08:54.000
+Okay is going to be, its value will be equal to this current.
+
+00:08:54.000 --> 00:08:59.000
+V. Over r, one times. This equivalent resistance, R.
+
+00:08:59.000 --> 00:09:09.000
+One r, 2 over r, one plus r. 2. So this is just v times r, 2 over r, one plus r, 2.
+
+00:09:09.000 --> 00:09:14.000
+Okay. And that is equal to the voltage. V.
+
+00:09:14.000 --> 00:09:19.000
+Alright is 100.
+
+00:09:19.000 --> 00:09:28.000
+And then are 2. Alright is point 6 kilohertz.
+
+00:09:28.000 --> 00:09:34.000
+And then r one plus r, 2 is one k plus point 6 k, so that's 1.6 K.
+
+00:09:34.000 --> 00:09:44.000
+Alright! So this is 100 times 3 8, which is 37.5 vaults. Okay?
+
+00:09:44.000 --> 00:09:48.000
+So this is a 37.5 volt.
+
+00:09:48.000 --> 00:09:56.000
+Voltage source after the source transformation in series with a 375 ohm. Resistor. Okay.
+
+00:09:56.000 --> 00:10:03.000
+Now, what we'll do is we'll just use node voltage analysis.
+
+00:10:03.000 --> 00:10:12.000
+To calculate the voltage here. V. One. We take the bottom node here to be our reference node with voltage of 0.
+
+00:10:12.000 --> 00:10:17.000
+Then v. One will just be the voltage across the load. Resistor. Rl.
+
+00:10:17.000 --> 00:10:22.000
+From which then, we can easily calculate the power that is dissipated.
+
+00:10:22.000 --> 00:10:29.000
+So now we'll proceed in the usual way. We will apply Kcl.
+
+00:10:29.000 --> 00:10:35.000
+At the node. V. One. Right. So the current flowing out to the left.
+
+00:10:35.000 --> 00:10:43.000
+This way it's going to be V, one minus 37.5. Alright.
+
+00:10:43.000 --> 00:10:56.000
+The voltage associated with the source here divided by the total impedance, which is 375 plus.
+
+00:10:56.000 --> 00:11:04.000
+The current flowing. Down this way through the capacitor is the voltage V.
+
+00:11:04.000 --> 00:11:07.000
+One over z, sub, c, and then the current flowing out to the right.
+
+00:11:07.000 --> 00:11:19.000
+This way is beat one over rl, and these all should add up to 0.
+
+00:11:19.000 --> 00:11:26.000
+Okay, so now, what we wanna do is to, as usual, where we want to solve for V, one.
+
+00:11:26.000 --> 00:11:31.000
+So we'll do that by grouping together all the terms that are proportional to V.
+
+00:11:31.000 --> 00:11:42.000
+One. So the first term over here is it's gonna have factor of one over 3 75 plus, and then Z sub l. Alright.
+
+00:11:42.000 --> 00:11:44.000
+If we go up here. Alright. It was jay Times point Ak or J.
+
+00:11:44.000 --> 00:11:51.000
+Times 800!
+
+00:11:51.000 --> 00:11:57.000
+Alright, so it's plus j times 800. Alright, that's this term.
+
+00:11:57.000 --> 00:12:03.000
+Then we have this term over here. V. One over z sub.
+
+00:12:03.000 --> 00:12:11.000
+C, z sub C is minus J, times point 5 k, or minus J.
+
+00:12:11.000 --> 00:12:14.000
+Times, 500. So then we have v. One over minus J.
+
+00:12:14.000 --> 00:12:22.000
+Times 500, which is the same is Jay over 500 times. V.
+
+00:12:22.000 --> 00:12:24.000
+One. And then finally, we have one over. Rl. Times, v.
+
+00:12:24.000 --> 00:12:33.000
+One rl is 3 k. So one over 3,000. All this times. V.
+
+00:12:33.000 --> 00:12:57.000
+One. So now we've gotten these 2 terms, and then we take this term here, the minus 37.5 over 3 75 plus Dl, we move it to the right hand side comes plus 37.5 over 3 75 plus J times 800.
+
+00:12:57.000 --> 00:13:05.000
+Okay, so now, what we will do is we will multiply both sides of this equation by 375 times 375 plus J.
+
+00:13:05.000 --> 00:13:15.000
+Times 800. Okay, so then, what? That'll give us is from this first term over here.
+
+00:13:15.000 --> 00:13:22.000
+That'll just give us one. Since the numerator of the non meter will be the same.
+
+00:13:22.000 --> 00:13:30.000
+Then we will have okay from these 2 terms. Here, we're going to group them together right?
+
+00:13:30.000 --> 00:13:49.000
+And write them as one of 3,000 times one plus j times 6, because 6 over 3, 3,000 is the same, or as one over 500, and then one.
+
+00:13:49.000 --> 00:14:03.000
+We multiply by 375 plus j times 800. We're gonna write that 3 75 plus ij times 800 as 1,000.
+
+00:14:03.000 --> 00:14:17.000
+Times 3 8 plus j times for fits. Alright, because a thousand times 3 8 is 375,000 times 4 fifths is 800.
+
+00:14:17.000 --> 00:14:23.000
+Okay, this times. V, one is equal to 37.5.
+
+00:14:23.000 --> 00:14:29.000
+Okay. Then. So at this point, it's just a matter of doing some more complex algebra.
+
+00:14:29.000 --> 00:14:35.000
+So we have one plus a thousand. Over 3,000 is one third, and then multiplying these 2 complex numbers.
+
+00:14:35.000 --> 00:14:43.000
+Amp. We have one times 3 8. So that's 3, 8.
+
+00:14:43.000 --> 00:14:53.000
+Then we have jay times 6 times, J. Times 4.5, that is, minus.
+
+00:14:53.000 --> 00:14:58.000
+24, over 5. Then we have Jay times 6 times 3, 8.
+
+00:14:58.000 --> 00:15:04.000
+So the 6 over 8 is 3 quarters times 3 is 9, fourth. So J.
+
+00:15:04.000 --> 00:15:07.000
+Times 9 fourths, and then we have one times J. Times 4, fifth.
+
+00:15:07.000 --> 00:15:17.000
+So plus j times 4 fifths. All of this times. V.
+
+00:15:17.000 --> 00:15:26.000
+One is equal to 37.5. Okay? And then we multiply this one third through here.
+
+00:15:26.000 --> 00:15:30.000
+And we were have one, plus, and then one third times 3.
+
+00:15:30.000 --> 00:15:36.000
+8 is one eighth alright, and then minus one third times 24 over 5 is minus 8.
+
+00:15:36.000 --> 00:15:43.000
+Fitz, and then plus one third times, J. Times 9. Fourth is J.
+
+00:15:43.000 --> 00:15:47.000
+Times free force, and then one third times J. Times 4.
+
+00:15:47.000 --> 00:15:52.000
+Fifth is J. Times 4 over 15. All this times. V.
+
+00:15:52.000 --> 00:16:00.000
+One, is equal to 37.5 alright, and then now we combine.
+
+00:16:00.000 --> 00:16:03.000
+The real terms. So they common denominator here between 8 and 5 is 40.
+
+00:16:03.000 --> 00:16:11.000
+All right. So we have 40 over 4 plus 5, over 40.
+
+00:16:11.000 --> 00:16:17.000
+That's 45, over 40 minus. And then this is 64, over 40.
+
+00:16:17.000 --> 00:16:25.000
+So 45 minus 64 is minus 19.
+
+00:16:25.000 --> 00:16:28.000
+Over 40, and then plus jay times, and then 3 quarters, plus 4 fifteenth.
+
+00:16:28.000 --> 00:16:47.000
+The common denominator there is 60, so we have 3. Fourths is 45, over 60, plus 4, 15 is 16 over 60, so 45 plus 16 is 61 over 60.
+
+00:16:47.000 --> 00:16:52.000
+Times, v, one it's equal to 37.5.
+
+00:16:52.000 --> 00:17:01.000
+So that means that v. One is equal to 37.5, divided by minus 19 over fourty.
+
+00:17:01.000 --> 00:17:15.000
+Plus jay times 61 over 60. Okay? And then the average power and the logistor.
+
+00:17:15.000 --> 00:17:20.000
+Rl, right, that's going to. So then the voltage V.
+
+00:17:20.000 --> 00:17:26.000
+One alright! That is just the voltage across. Rl, alright!
+
+00:17:26.000 --> 00:17:34.000
+So that means that the average power dissipated in rl, alright, it's one half times.
+
+00:17:34.000 --> 00:17:37.000
+Hi!
+
+00:17:37.000 --> 00:17:40.000
+The magnitude of the voltage across Rl. Which is just v. One.
+
+00:17:40.000 --> 00:17:54.000
+That magnitude squared, divided by rl, so this is going to be one half, and then rl, is 3 k. So one over.
+
+00:17:54.000 --> 00:17:57.000
+3,000. Okay? Then we have the magnitude of v. One.
+
+00:17:57.000 --> 00:18:09.000
+Given by this expression, here squared. So that's gonna be 37.5 squared over 19 over 40.
+
+00:18:09.000 --> 00:18:12.000
+Minus 19 over 40. If we wanna be preciseive, added squared.
+
+00:18:12.000 --> 00:18:17.000
+All right, since it's square. The minus sign actually doesn't matter.
+
+00:18:17.000 --> 00:18:25.000
+Plus 61 over 60 square. Okay? And then we multiply all the.
+
+00:18:25.000 --> 00:18:31.000
+And it's point 1 8 6 one watts.
+
+00:18:31.000 --> 00:18:37.000
+So this is the average power that iss dissipated and alright.
+
+00:18:37.000 --> 00:18:48.000
+Okay? And that's the results. Okay, so what are the key points that are associated with?
+
+00:18:48.000 --> 00:19:10.000
+This example. Here one is to remember that when we're analyzing circuits in the Phaser domain, then really, all the circuit analysis techniques that we know and understand from the time domain, these are also available in the Phaser domain, and we saw slightly different one here than one
+
+00:19:10.000 --> 00:19:14.000
+that has been used in. I think, the previous examples, which was at use, source transformation.
+
+00:19:14.000 --> 00:19:22.000
+So we shouldn't forget that all of these tools are at our disposal and can simplify things significantly.
+
+00:19:22.000 --> 00:19:31.000
+Particularly when we're working with complex numbers, right? So we wanna remember.
+
+00:19:31.000 --> 00:19:33.000
+Good.
+
+00:19:33.000 --> 00:19:40.000
+All of our circuit.
+
+00:19:40.000 --> 00:19:45.000
+And analysis techniques.
+
+00:19:45.000 --> 00:19:50.000
+Alright. These are also available.
+
+00:19:50.000 --> 00:20:00.000
+Alright. We've used them in the time domain, but they're also available in the Phaser domain.
+
+00:20:00.000 --> 00:20:12.000
+Okay. And we saw here the example of using source transformations.
+
+00:20:12.000 --> 00:20:17.000
+Okay. So that was in the sixth sample.
+
+00:20:17.000 --> 00:20:31.000
+Okay. And then again, the second point here, which is one of the key points in many of these examples, is that it's very important to have good proficiency in working with complex numbers, right?
+
+00:20:31.000 --> 00:20:36.000
+So good!
+
+00:20:36.000 --> 00:20:41.000
+Proficiency and working.
+
+00:20:41.000 --> 00:20:47.000
+With complex numbers.
+
+00:20:47.000 --> 00:20:52.000
+Is important.
+
+00:20:52.000 --> 00:21:01.000
+Okay, so that is it for this example. And I'll stop the recording here.
+

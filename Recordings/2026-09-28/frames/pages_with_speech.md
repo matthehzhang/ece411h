@@ -1,0 +1,458 @@
+# 2026-09-28: board pages with the speech that accompanied them
+
+26 distinct pages from 82 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0008.jpg  on screen [0:00:00 – 0:03:39]
+<sub>sharpness 7105, ink 4.4 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0005.jpg (0:03:38), f_0006.jpg (0:03:38)</sub>
+
+- [0:00:02] Okay, let's go ahead and get started. So I have just started the recording as usual, and we have a few announcements.
+- [0:00:12] Alright, the first one is just a reminder that the fourth problem set was due today, so hopefully everyone has turned that in.
+- [0:00:19] And then the fifth problem set was released last week, and that will be due next Monday, October 5th.
+- [0:00:27] And the fifth problem set basically covers power calculations using phasors and some related topics, so that's what we'll be talking about starting today.
+- [0:00:38] The second announcement is just a reminder that the first semester exam will be next Wednesday.
+- [0:00:45] Okay, so there's a detailed announcement on Canvas about the format of the exam, what material you'll be responsible for, and the like.
+- [0:00:59] But basically what it'll cover is material from the beginning of the semester through our discussion that will start today of power calculations using phasors.
+- [0:01:12] But it will not include calculations pertaining to how we maximize power transfer between a source circuit and a load circuit.
+- [0:01:21] Okay, so the cutoff point will be somewhere around maybe the end of today's class or the early part of Wednesday's class.
+- [0:01:32] And I'll let you know exactly when we reach that point.
+- [0:01:35] And then there are more details on the announcement that's been posted on Canvas.
+- [0:01:41] Okay, so one of the things that you should remember about the exam is that there is an answer sheet template, which has been released now, so you should be able to access that.
+- [0:01:54] I think right now through Gradescope, and then I will post it on Canvas also.
+- [0:02:00] So you'll need to bring a physical copy of that to the class for your exam so that you can write your exam solutions on that.
+- [0:02:09] And then the last announcement is that hopefully you all saw that you have been added to the Gradescope site for this course.
+- [0:02:20] So we'll use Gradescope for the exam grading.
+- [0:02:23] And what you'll do is when you take the exam, after the exam finishes, you'll have about five minutes or so at the end of class to scan your exam using your phone or a tablet.
+- [0:02:37] And then upload the scanned PDF file to Gradescope.
+- [0:02:41] Okay, and to help you prepare for that, then I've created an exam upload practice assignment on Gradescope so that you can debug your scanning and uploading process rather than trying to do it in the actual exam setting when there's limited amount of time to do it.
+- [0:03:04] There's almost always someone who has not done that and has some problem uploading their exam at the end of the exam.
+- [0:03:14] So please test this before you come to the exam.
+- [0:03:18] Okay, so any questions on any of this?
+- [0:03:21] Okay, any questions from last week, either our regular class on Monday or the recording that took the place of Wednesday's class?
+- [0:03:32] Okay, so if not, then we'll pick up from where we left off.
+- [0:03:39] So last week we were talking about how to use phasors to analyze circuits generally.
+
+## page 02  f_0010.jpg  on screen [0:03:39 – 0:03:39]
+<sub>sharpness 3322, ink 2.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0009.jpg (0:03:39)</sub>
+
+- [0:03:39] So last week we were talking about how to use phasors to analyze circuits generally.
+
+## page 03  f_0022.jpg  on screen [0:03:39 – 0:09:49]
+<sub>sharpness 1545, ink 2.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0012.jpg (0:04:39), f_0016.jpg (0:09:06), f_0020.jpg (0:09:36), f_0021.jpg (0:09:49)</sub>
+
+- [0:03:39] So last week we were talking about how to use phasors to analyze circuits generally.
+- [0:03:46] And then we went through in the recording an example of how we can use circuits to basically implement phase shifts in signals and how we analyze such a phase shift circuit,
+- [0:04:01] specifically a cascaded phase shift circuit, using phasors.
+- [0:04:04] Alright, so what we want to do today is to start our discussion of how we do power calculations using phasors.
+- [0:04:13] Okay, so we want to look now at power in AC circuits.
+- [0:04:18] Okay, and the reading for this is generally in ULB et al. in chapter 8.
+- [0:04:32] Okay, and I'll refer you to specific sections of chapter 8 as we cover different topics pertaining to these power calculations.
+- [0:04:42] Alright, so why is this something that we need to pay particular attention to?
+- [0:04:49] Why does it warrant essentially a whole chapter in ULB?
+- [0:04:54] So if we think about power generally and what we've been doing with phasors thus far,
+- [0:05:00] the idea with phasors was that we could take AC circuits, that is circuits that have sinusoidal signals at a specific frequency,
+- [0:05:08] and we could represent those signals using complex numbers.
+- [0:05:12] Those are the phasors for current and voltage.
+- [0:05:16] And essentially we can do everything by doing calculations in the phasor domain and then just taking the real part of the relevant phasor at the end.
+- [0:05:27] Alright, now when we get to power, it's a little bit more complicated because power, remember in general, is a product of current and voltage.
+- [0:05:41] Okay, now if we take current and voltage as phasors, right, they are complex quantities,
+- [0:05:49] and if we try to multiply them together, then it's less obvious that if you take, say, two phasors and multiply them together,
+- [0:05:58] and then take the real part of that product, it's not necessarily that obvious that that is actually going to give you the correct result for power.
+- [0:06:08] In fact, that will not give you the correct result for power.
+- [0:06:11] Okay, so because we have complex quantities and now we're multiplying them together, then we have to be careful about how we calculate power, right?
+- [0:06:22] You know, what we could do is we could take the phasors for current and voltage individually, bring them back to the time domain, right?
+- [0:06:31] We know how to do that, and then do all our power calculations in the time domain, alright?
+- [0:06:39] And then do whatever else we need to do in order to get the quantities that we want.
+- [0:06:43] That will actually work, and that is how we will develop the formalism that will allow us to do power calculations directly in the phasor domain,
+- [0:06:55] which then is easier and more efficient.
+- [0:07:00] Okay, so what we want to do then is to look at power initially in the time domain, think about what are the quantities that we really want with respect to power,
+- [0:07:13] and then see how we can get those in the phasor domain, alright?
+- [0:07:18] But the fundamental problem is that in general, we know that the power, it's always going to be product of the voltage and the current, okay?
+- [0:07:37] And if we're working with DC circuits, that's straightforward because we're always working with real quantities that are not changing with time, alright?
+- [0:07:45] So for DC circuits, it's straightforward, right, to determine, for example, if a particular component in a circuit is supplying power or receiving or dissipating power, alright?
+- [0:08:10] So straightforward to determine if a given circuit component is supplying or dissipating or sometimes we say receiving or absorbing power.
+- [0:08:36] Alright, remember, if you use the passive sign convention, alright, then basically the sign, S-I-G-N, right, of the product of current and voltage will tell you whether that component is supplying or receiving power.
+- [0:08:53] But now if you have a complex quantity, right, you cannot unambiguously say, okay, this is positive or negative, okay?
+- [0:09:03] So then that gives rise to the question of, you know, how do we analyze power in AC circuits, alright?
+- [0:09:13] And how do we think about this in the time domain so that we can correctly translate things to the phasor domain, alright?
+- [0:09:19] So how do we analyze power in AC circuits, right, in both the time and phasor domains?
+- [0:09:46] Okay, so we will start off by looking at power in the time domain, alright, because that is less ambiguous, or it's unambiguous, and it allows us to think about it a little bit more clearly.
+
+## page 04  f_0067.jpg  on screen [0:09:49 – 0:23:02]
+<sub>sharpness 1309, ink 2.0 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0023.jpg (0:10:39), f_0024.jpg (0:11:51), f_0025.jpg (0:11:51), f_0027.jpg (0:14:24), f_0032.jpg (0:17:36), f_0045.jpg (0:18:06), f_0053.jpg (0:20:16), f_0057.jpg (0:21:31), f_0061.jpg (0:21:36), f_0064.jpg (0:22:21), f_0066.jpg (0:23:02)</sub>
+
+- [0:09:46] Okay, so we will start off by looking at power in the time domain, alright, because that is less ambiguous, or it's unambiguous, and it allows us to think about it a little bit more clearly.
+- [0:10:02] So we're going to look at what's called instantaneous and average power, okay?
+- [0:10:14] And both of these are useful quantities, and the reading for this is in Uliby et al. and it's sections 8-1 and 8-2, okay?
+- [0:10:30] So any questions before we start this part of the discussion?
+- [0:10:37] Okay, so the situation that we are going to think about is one where we're looking at power transfer from some active or source circuit to a passive or load circuit,
+- [0:10:51] and that general situation should be familiar to you already from what you did in 302 or 302h, okay?
+- [0:10:59] So we're looking now at the general problem of power transfer between an active circuit, which is the source circuit, okay, and a passive, or what we call a load circuit, okay?
+- [0:11:29] And remember, when we say an active circuit, basically what that means is that the circuit will have at least one independent source, okay?
+- [0:11:41] And then when we talk about a passive circuit, that means a circuit that does not have any independent sources, okay?
+- [0:11:49] So kind of at the block diagram level, then what this looks like is this, right?
+- [0:11:59] So we have some active, all right, it's an AC circuit, and it has a set of output terminals, and those are connected as the inputs to some passive AC circuit, okay?
+- [0:12:25] And this, the active circuit is acting as the source, and the passive circuit is acting as the load, and we have in the time domain some current that is flowing from the source to the load, and then a voltage, all right, V of t, between these terminals, okay?
+- [0:12:50] And in the time domain, working with sinusoidal signals, then we know that the voltage can always be written as some amplitude that we'll call V sub m times the cosine of omega t plus some phase for the voltage, we'll call that phi sub v.
+- [0:13:12] And then the current, i of t, will again be some amplitude times the cosine of omega t plus a phase phi sub i associated with the current signal, okay?
+- [0:13:29] So this is the situation that we now want to try to understand, all right? So any questions on this? Yes?
+- [0:13:36] Do we need to care about the current through the bottom branch?
+- [0:13:40] Oh, well, the current through the bottom branch will be, unless you, it'll just be i of t floating from, or flowing from the right to the left, right? Because this is sort of a closed circuit over here with only two terminals.
+- [0:13:57] So whatever current flows in, basically by KCL, you have to have the same current then flowing out down here. Yes?
+- [0:14:06] I said the AC circuit is here because it doesn't vary with time, but during the transient part, doesn't DC currents even change with time? Sorry, that was a little further up, but doesn't it change with time for DC currents? So, or circuits? So how would you, like, is it still easier and the DC?
+- [0:14:32] Oh, so yeah, so DC circuits mean specifically nothing is changing with time, right? So that would be omega equal to zero here, all right? And then, you know, that's what you covered in 302 or 302h, right? So then it's very straightforward. If you use the passive sign convention, you know whether a particular component is supplying or receiving power, okay?
+- [0:14:56] Now, if you have AC signals such as these, then, as we'll see in a second here, you will know at any instant in time, right? Just by multiplying the current and the voltage, say using the passive sign convention, you'll be able to know at any instant in time whether that particular component that has that current and voltage is supplying or receiving power.
+- [0:15:25] But then, you know, sometimes you may care about that, you know, what's happening at that instant, but then a lot of times what you want is to have a steady state transfer, right, of power from, say, the source to the load. And then, the instantaneous power at a particular time is not sufficient need to think about what's happening over the whole sinusoidal cycle. And we'll see that in a minute.
+- [0:15:53] So is that why even if, you know, I turn on the switch and it's a constant, let's say 10 volt power or voltage source, you know, the power across a certain component like a capacitor could vary with time, but over during steady state, then it's trivial to calculate? Is that what you're saying?
+- [0:16:15] Yeah, or easier to calculate. And then, you know, there are different things that can happen during that transient, but then the DC situation really will refer to that steady state. Okay, any other questions?
+- [0:16:31] Okay, so given this situation that we have here, then one aspect of power that we can think about is what we call the instantaneous power. Okay, and the instantaneous power is basically what it sounds like. It is the power that is, say, transferred to the load.
+- [0:17:07] At some specific time, we'll call t. All right, and the instantaneous power, all right, we'll call it P of t is it's just the product of the current and voltage at that time. All right, so it's V of t times I of t. All right.
+- [0:17:27] And if we use these expressions up here, right, for V of t and I of t, we just take these and substitute them down here, then we can calculate this explicitly, right? This is going to be V sub m times I sub m. Let me see if I can show these both. Yeah, there we go.
+- [0:17:48] V sub m times I sub m times, right, then it's the cosine of omega t plus phi sub v times the cosine of omega t plus phi sub i. All right. And then from here, all right, we can use basically Euler's formula, right, to write these two cosine functions as complex in terms of complex exponentials.
+- [0:18:16] All right. And then that'll make it a little bit easier to sort of separate these into just single sinusoidal or constant terms, right? You can do it that way or you can try to remember or look up the formula for the product of cosines and such. We'll do it with complex exponentials here.
+- [0:18:35] And so remember, the cosine of some angle theta, right, is in general, it's equal to one half times the quantity e to the j theta plus e to the minus j theta. All right. So we can write what we have over here as one quarter, right? Two products of one half or two factors of one half because we have two cosines times V sub m times I sub m.
+- [0:19:03] And then we have e to the j omega t plus phi sub v plus e to the minus j omega t plus phi sub v. All right. That's from the first cosine factor. And then we have e to the j omega t plus phi sub i plus e to the minus j omega t plus phi sub i. All right.
+- [0:19:30] And then here, all right, we can just multiply all this out. All right. So we get one quarter V sub m times I sub m. And then if we just multiply all of this out, then what we get is we have e to the j 2 omega t plus phi sub v plus phi sub i. All right.
+- [0:19:56] That's from the first factor in each set of parentheses plus e to the minus j times 2 omega t plus phi sub v plus phi sub i. All right. That's from the second factor in each of the parentheses.
+- [0:20:14] And then we have the cross terms, which will give us plus e to the j phi sub v minus phi sub i plus e to the minus j phi sub v minus phi sub i.
+- [0:20:33] Okay. And then, right, if we look at these, we can see that one half of the sum of these two is just going to give us the cosine of 2 omega t plus phi sub v plus phi sub i.
+- [0:20:49] And then one half of the sum of these two will just give us the cosine of phi sub v minus phi sub i. All right.
+- [0:20:59] So we can write this as one half v sub m times I sub m times, and then we have the cosine of 2 omega t plus phi sub v plus phi sub i plus the cosine of phi sub v minus phi sub i.
+- [0:21:25] Okay. And this is power, so it's in watts. All right. So any questions on how we got to this?
+- [0:21:32] Okay. So now here, all right, if we look at this, this is now the instantaneous power, all right, that is transferred from the source to the load.
+- [0:21:42] And what we can see is that this has two components. One here that is oscillating at a frequency of 2 omega t. So this is oscillating.
+- [0:21:59] And then we have a second term over here that is constant, actually does not vary with time. Okay. Because the phase angles, phi sub v and phi sub i are constants.
+- [0:22:13] Okay. So we have in the instantaneous power, this part of it that is oscillating, and then part of it that is constant. Okay.
+- [0:22:24] Now, very often, as I mentioned earlier, what we're really interested in is to have steady state power transfer from the source to the load.
+- [0:22:35] Okay. And in order for that to happen, it will have to be the case that if we take this instantaneous power transfer and we average it over one period of the sinusoidal signal, right,
+- [0:22:51] then any steady state power transfer will be just the average over one cycle times the number of cycles. All right.
+- [0:23:00] And so that then tells us that it's also useful to think about what we call the average power. Okay.
+
+## page 05  f_0081.jpg  on screen [0:23:02 – 0:26:11]
+<sub>sharpness 1983, ink 3.0 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0069.jpg (0:24:05), f_0076.jpg (0:24:32), f_0077.jpg (0:24:32)</sub>
+
+- [0:23:00] And so that then tells us that it's also useful to think about what we call the average power. Okay.
+- [0:23:13] The average power is the power that is transferred to the load, right, that we calculate using this instantaneous power, but now averaged over one period of the sinusoidal signal.
+- [0:23:25] All right. So this is now the power that is transferred to the load.
+- [0:23:36] But now averaged over one period of the sinusoidal signal. We'll call that period capital T, and we know that capital T is related to the angular frequency.
+- [0:23:55] It's equal to 2 pi over omega. Okay.
+- [0:24:00] So the average power, which is what we really care about if we're trying to look at power transfer, is going to be the average.
+- [0:24:12] So 1 over T times the integral from 0 to T of the instantaneous power, right, integrated over time.
+- [0:24:22] And we can just take this expression here for the instantaneous power and plug it in here. All right.
+- [0:24:33] And if we do that, then what we get is 1 over T, all right, times the integral from 0 to T of one half V sub m times I sub m times the cosine of 2 omega T plus phi sub v plus phi sub i.
+- [0:24:59] Plus the cosine of phi sub v minus phi sub i dt. Okay.
+- [0:25:10] But now this integral is actually very easy to calculate, all right, because if we're integrating, okay, the curse, oh, here it is, right, if we're integrating, say if we look at this first term in the square brackets, all right,
+- [0:25:27] then we're integrating essentially a constant times the cosine, and we're integrating that over two full periods.
+- [0:25:35] All right. So what is that integral going to give us? 0. Right.
+- [0:25:40] So this first term here, right, this integrates to 0. Then this second term is just a constant, right.
+- [0:25:55] And so if you average a constant, right, the one half times V sub m times I sub m times this cosine of phi v minus phi i, if we average a constant, then we're just going to get that same constant back.
+- [0:26:09] All right. So what that then tells us is that the average power is one half V sub m times I sub m times now the cosine of phi.
+
+## page 06  f_0086.jpg  on screen [0:26:11 – 0:27:22]
+<sub>sharpness 2173, ink 3.1 %, colour 0.1</sub>
+
+- [0:26:09] All right. So what that then tells us is that the average power is one half V sub m times I sub m times now the cosine of phi.
+- [0:26:25] So this is the average power. And again, this is in watts. Okay. Okay. So any questions on this?
+- [0:26:46] All right. So there are two things that we notice here. One is that the average power depends on the difference in phases between the voltage signal and the current signal.
+- [0:27:01] And the average power that's transferred is greatest when the voltage and the current are in phase with each other.
+- [0:27:09] So if we come back to that point in a little while, the part of this that we want to look at right now is this factor of one half that we have left over here.
+- [0:27:20] Okay. So what we would like to do is to understand why do we get this factor of one half, right?
+
+## page 07  f_0096.jpg  on screen [0:27:22 – 0:30:56]
+<sub>sharpness 2541, ink 3.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0090.jpg (0:28:46)</sub>
+
+- [0:27:20] Okay. So what we would like to do is to understand why do we get this factor of one half, right?
+- [0:27:28] Why isn't it just, say, the product of the amplitudes and then to define some other quantities that will allow us to kind of absorb that factor of one half, right, into those other quantities.
+- [0:27:41] So if we do the easy part of that first, right, just defining some alternate version of the amplitude that absorbs this one half, then that is what leads to what we call the root mean square amplitude.
+- [0:27:56] All right. So in addition, okay, to the sinusoidal signal amplitude, all right, so these are V sub m and I sub m, all right, we can define what we call the root mean square values.
+- [0:28:35] And those are V, we call them V RMS and I RMS. Okay. And what we mean by the root mean square is the following.
+- [0:28:51] Let's suppose that we have some electrical signal, we'll call it x of t, all right, and it's some amplitude x sub m times the cosine of omega t plus phi, right?
+- [0:29:10] So this is the general form for, again, some sinusoidal signal and we're calling it x to make it clear that this idea applies to any electrical signal.
+- [0:29:21] It could be a current, a voltage, what have you, you know, rather than, you know, if we use V over here, then you might think, oh, this only applies to voltage.
+- [0:29:28] It actually applies to any signal, okay. And the way that we define the root mean square amplitude is that it is the average over one period of the square of the signal.
+- [0:29:47] Okay, so, and then we take the square root, all right, so we get the original units back.
+- [0:29:56] So it is the average, all right, of the square of the signal, so x squared of t dt, and then that average taken to the one half power, all right, so that what we get back has the units of the original and can be thought of as an amplitude, all right.
+- [0:30:19] And the root mean square amplitude is, it's defined in this way and it is useful to define because it turns out to be relevant for any quantities that are quadratic in the signal.
+- [0:30:38] So say that goes as the voltage squared or the current squared or signals that are quadratic forms in multiple variables, right, so say a product of current and voltage, which is what power is, all right.
+- [0:30:54] So in general, the root mean square amplitude, right, it's relevant for quantities, okay, that are quadratic, okay, in the signal x of t.
+
+## page 08  f_0143.jpg  on screen [0:30:56 – 0:35:45]
+<sub>sharpness 3799, ink 5.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0101.jpg (0:31:12), f_0103.jpg (0:32:45), f_0122.jpg (0:33:34), f_0124.jpg (0:33:35), f_0127.jpg (0:35:36)</sub>
+
+- [0:30:54] So in general, the root mean square amplitude, right, it's relevant for quantities, okay, that are quadratic, okay, in the signal x of t.
+- [0:31:20] And so, for example, you know, if we think about power in a particular component of a circuit, say a resistor, all right, we know that the average or the instantaneous power, say, associated with the resistor,
+- [0:31:36] is going to be i squared of t times the resistance, right, so that's, it's quadratic in the current squared, so when we take the average of this over one cycle, we're going to get something like the root mean square amplitude, all right, coming out of that, all right.
+- [0:31:58] So this is what we have for the power that's dissipated in a resistor, okay. This also comes up if we have quantities that are what we call quadratic forms, okay, in multiple variables.
+- [0:32:28] Okay, so for example, this is what we have just been calculating, in general, the instantaneous power as voltage times the current, okay.
+- [0:32:43] And so, what happens then is, if we actually do this calculation, what we want to do is to calculate this, and now see what the result is in terms of the sinusoidal amplitude x sub m, all right.
+- [0:33:02] And so if we do that, then we get that, all right, 1 over t times the integral from 0 to t of x squared of t dt, all right, this is going to be equal to 1 over t times the integral from 0 to t of, all right, it'll be x sub n squared times the cosine squared of omega t plus phi dt, all right.
+- [0:33:31] All right, this, again, all right, there are a variety of ways that you can calculate this, all right. The way that we're going to do it is we'll just use the formula for the cosine squared in terms of omega t of an angle in terms of the cosine of twice that angle, all right, which you may remember from pre-calculus or calculus or something, all right.
+- [0:33:53] So, this is going to be 1 over t times x sub m squared, then it's the integral from 0 to t, and then just using one of the standard trigonometric formulas, we can write the cosine squared of omega t plus phi as 1 half times the quantity 1 plus the cosine of twice the angle.
+- [0:34:18] So, 2 times omega t, 2 times the quantity omega t plus phi, all right, okay. And, all right, if we do this integral here, then the cosine term over here is going to integrate to 0, right, because we're integrating the cosine over two complete periods.
+- [0:34:45] And then, all we have left is just the one half times 1, right, and if we average one half over one cycle, all right, that's the 1 over t times the integral from 0 to t, all right. Averaging a constant is just going to give us the constant, all right.
+- [0:35:02] So, we get one half times x sub m squared, all right. And, remember, this is equal to x rms squared, all right. And so, what that means then is that the root mean square amplitude is 1 over root 2 times the sinusoidal amplitude, okay.
+- [0:35:36] And now, in terms of the root mean squared amplitude, all right, then say the root mean square amplitudes of the current and the voltage, right, if we go back to our expression for the average power up here, all right, if we take the root mean square amplitudes of, if we write this in terms of the root mean square amplitudes of the current and the voltage,
+
+## page 09  f_0162.jpg  on screen [0:35:45 – 0:36:17]
+<sub>sharpness 3761, ink 5.6 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0150.jpg (0:35:46), f_0160.jpg (0:36:17)</sub>
+
+- [0:35:36] And now, in terms of the root mean squared amplitude, all right, then say the root mean square amplitudes of the current and the voltage, right, if we go back to our expression for the average power up here, all right, if we take the root mean square amplitudes of, if we write this in terms of the root mean square amplitudes of the current and the voltage,
+- [0:36:01] then each of those amplitudes will have a factor of 1 over root 2 absorbed into them. And so, we will then have this entire factor of one half absorbed into the combination of the two root mean square amplitudes.
+- [0:36:17] All right. So, what we get from that, okay, is that the average power then, all right, we know it's one half v sub m times i sub m times the cosine of phi sub b minus phi sub i, right.
+
+## page 10  f_0165.jpg  on screen [0:36:17 – 0:36:18]
+<sub>sharpness 1986, ink 2.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0163.jpg (0:36:17), f_0164.jpg (0:36:18)</sub>
+
+- [0:36:17] All right. So, what we get from that, okay, is that the average power then, all right, we know it's one half v sub m times i sub m times the cosine of phi sub b minus phi sub i, right.
+
+## page 11  f_0167.jpg  on screen [0:36:18 – 0:36:40]
+<sub>sharpness 1595, ink 2.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0166.jpg (0:36:18)</sub>
+
+- [0:36:17] All right. So, what we get from that, okay, is that the average power then, all right, we know it's one half v sub m times i sub m times the cosine of phi sub b minus phi sub i, right.
+- [0:36:38] And now, we can also write that, or we can alternatively write that as, in terms of the rms amplitudes, as v rms times i rms times the cosine of phi sub v minus phi sub i.
+
+## page 12  f_0181.jpg  on screen [0:36:40 – 0:43:04]
+<sub>sharpness 2759, ink 4.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0170.jpg (0:38:24), f_0173.jpg (0:41:30)</sub>
+
+- [0:36:38] And now, we can also write that, or we can alternatively write that as, in terms of the rms amplitudes, as v rms times i rms times the cosine of phi sub v minus phi sub i.
+- [0:36:59] Okay. So, that is how we define root mean square amplitudes. And what we have worked out, it tells us, you know, why the root mean square amplitudes are defined in the way they are, right, as the, as 1 over root 2, which is about 70%, right, of the sinusoidal amplitude.
+- [0:37:20] And, all right, at one level, you know, it may seem sort of trivial, right, you're just absorbing, you're redefining a constant, right, by absorbing this factor of 1 over root 2.
+- [0:37:34] But it is useful and important to know because very often, you know, in the literature or in specs or what have you, what you will see is the rms, is rms quantities, okay.
+- [0:37:46] And so, it's useful to know what they are and where they come from and how they're related to, say, the actual signal that you're dealing with.
+- [0:37:57] Okay. So, any questions to hear? Okay. Now, so now we can come back to this difference in the phases between the voltage and the current, okay.
+- [0:38:12] So, what we see here is that the average power transfer is maximized when the voltage and the current have the same phase, right, the phase difference is 0 because the cosine of 0 is 1.
+- [0:38:27] And it is minimized when the voltage and the current are 90 degrees out of phase, all right, because the cosine of 90 degrees is 0.
+- [0:38:38] So, this phase difference here is sometimes referred to as the power factor angle, okay.
+- [0:38:51] And, all right, this tells us something about what type of load maximizes power transfer generally or makes the power transfer most efficient.
+- [0:39:05] So, one kind of situation we can think about is if we have, say, a purely resistive load, okay.
+- [0:39:17] That is that the load circuit has a Thevenin equivalent impedance that is just purely a resistor, okay.
+- [0:39:27] Remember, since the load circuit is a passive circuit, its Thevenin equivalent voltage is always 0, okay.
+- [0:39:35] And then if we have a purely resistive load, that means that the Thevenin equivalent impedance is just a resistor, okay.
+- [0:39:42] If it is just a resistor, then we know that the phase difference between the voltage and the current has to be 0, all right, because the voltage is just going, it is equal to the current, or it is phases.
+- [0:39:57] The voltage as a phasor is equal to the current as a phasor times the impedance of the load, and the impedance is real, so the current and the voltage will have the same phase, all right.
+- [0:40:07] And that is the situation that maximizes the power transfer, and the average power is just going to be then the RMS amplitudes of the voltage and the current multiplied by the current.
+- [0:40:26] Okay, another possibility is that we have what is called a purely reactive load, okay.
+- [0:40:41] And what we mean by a reactive load is a load that has, where the real part of the impedance is 0, all right.
+- [0:40:50] So no resistive components to the equivalent impedance of the load, it is purely either capacitive or inductive, okay.
+- [0:41:02] In that case, the phase difference between the voltage and the current is going to be plus or minus 90 degrees, all right, depending on whether it is capacitive or inductive, and the average power transfer is going to be 0, okay.
+- [0:41:20] So if we have a load that is just a resistor in terms of a step and equivalent, then we get power transfer, non-zero power transfer, and we get sort of the most power transfer that is possible.
+- [0:41:36] If the load is purely reactive, that is purely capacitive or inductive, there is actually no power that is transferred to the load.
+- [0:41:44] In steady state, what actually happens is that there is energy that is transferred to the load for part of the cycle and then transferred back out over the other part of the cycle.
+- [0:41:56] So it kind of goes back and forth between the source and the load, but it does not get dissipated in the load, all right.
+- [0:42:04] So what is happening there is that if we have a purely reactive load, then what is happening, so for example, purely inductive or purely capacitive, then what is happening is that the energy is stored and released during each period, right, but no power is dissipated in the load.
+- [0:42:55] Okay, so any questions to hear?
+- [0:42:58] Okay, so now that we have kind of these concepts in hand, right, basically we have been working pretty much entirely in the time domain so far.
+
+## page 13  f_0197.jpg  on screen [0:43:04 – 0:47:01]
+<sub>sharpness 1769, ink 2.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0189.jpg (0:43:12), f_0191.jpg (0:44:03), f_0192.jpg (0:44:03), f_0193.jpg (0:44:03), f_0194.jpg (0:45:36), f_0196.jpg (0:46:05)</sub>
+
+- [0:42:58] Okay, so now that we have kind of these concepts in hand, right, basically we have been working pretty much entirely in the time domain so far.
+- [0:43:13] So what we want to do next then is to take what we now understand about power in AC circuits and use it to see how we do power calculations in the phasor domain, all right.
+- [0:43:28] So now we want to look at power calculations using phasors, okay, and the reading for this is in Uliby et al, and it is sections 8-3 and 8-4, okay.
+- [0:44:02] So remember, the general situation that we are looking at is one where we have some active or source circuit, and it is connected to a passive or load circuit, and as we saw earlier, we have a current and a voltage,
+- [0:44:38] and a voltage associated with these terminals, okay, and we said that, all right, the voltage signal was V sub m times the cosine of omega t plus phi sub v, and the current signal is I sub m times the cosine of omega t plus phi sub i, all right.
+- [0:45:05] So this is what we had in the time domain, all right, and we worked with that. What we want to do now is to transform this to the phasor domain, okay.
+- [0:45:16] So if we take that voltage signal and write it as a phasor, right, V twiddle, that is going to be the amplitude V sub m times e to the j phi sub v, all right, and then the current as a phasor is going to be I sub m times e to the j phi sub i, all right.
+- [0:45:45] So what we want to do now is to see, okay, how do we actually calculate, say, the average power now using phasors, all right, so any questions before we do that? Okay, so remember we said that the load circuit, all right, it is a passive circuit, so meaning that it has no independent sources, right,
+- [0:46:15] so its Thevenin voltage is going to be zero, and so the Thevenin equivalent circuit of the load is, it is purely an impedance, all right, so it is going to look like this, and it will have some impedance, we will just call that z here, all right, this is for the load.
+- [0:46:42] Okay, and then the source, right, it will have some in general non-zero Thevenin voltage and non-zero Thevenin impedance, yeah, question?
+- [0:46:51] That is just because we have defined passive as no sources.
+- [0:46:54] No independent sources, right, yes.
+- [0:46:58] Okay, so, all right, so we know that the passive or load part of this circuit, all right, this contains no independent sources, all right, so its equivalent circuit is just an impedance that we are calling z here, all right, so that is what we just drew, and we know that the impedance
+
+## page 14  f_0219.jpg  on screen [0:47:01 – 0:51:13]
+<sub>sharpness 1894, ink 2.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0198.jpg (0:47:01), f_0210.jpg (0:48:06)</sub>
+
+- [0:46:58] Okay, so, all right, so we know that the passive or load part of this circuit, all right, this contains no independent sources, all right, so its equivalent circuit is just an impedance that we are calling z here, all right, so that is what we just drew, and we know that the impedance
+- [0:47:47] all right, we have some current phasor like this, and a voltage phasor like this, all right, so we know that the impedance is just the voltage phasor divided by the current phasor, right, that is generally how they are related to the impedance, so we know that
+- [0:48:09] this impedance is the voltage phasor divided by the current phasor, so that is going to be V sub m over I sub m times e to the j phi sub v minus phi sub i.
+- [0:48:31] Okay, so now we have the current and the voltage as phasors, and we have this impedance associated with the load.
+- [0:48:40] So what we need to do now is to get the power, all right, say the average power, and what we need to do is take what we understand about the average power from looking at it in the time domain and figure out, okay, how do we do, how do we calculate
+- [0:48:59] the same quantity in the phasor domain, all right. Now, in general, right, we know that power has to be some product of current and voltage, okay, but if we are working in the phasor domain, it is not necessarily that obvious how we take the phasors for voltage and current and get the power, right, so one, you know, sort of obvious thing that one might think
+- [0:49:29] is, okay, well, let's take the voltage phasor and the current phasor, we'll multiply them together, and we'll take the real part of that, okay, but if you do that, then what you'll see is that that actually, and you'll see that that does not actually give you the correct expression for the average power, all right.
+- [0:49:51] You know, we could also say, all right, well, power needs to be some product of the voltage and the current, you know, maybe we will take just the real part of the voltage phasor, the real part of the current phasor, multiply those and see what we get, that will not give you the correct answer either, all right, so,
+- [0:50:13] you know, so there are multiple ways that in principle, one could take some kind of voltage and some kind of current and multiply them together, all right,
+- [0:50:24] and so in some sense, when we define a power in the phasor domain, all right, we have some latitude, we want to come up with a definition that will be useful for us, all right, and useful in this context means we want some product of current and voltage,
+- [0:50:42] such that, say, when we take the real part of that product, we will get the average power, all right, so let's say, all right, we will, we have to define some power quantity in the phasor domain, and we want that definition to give us something useful, all right, we could take one of the other things that I described and define that as a power, but it won't be useful because it won't give us some quantity that we're interested in calculating, okay,
+- [0:51:12] so, what we're going to say then is that in the phasor domain, if we want to have a quantity corresponding to power in the phasor domain, what we want is, in general, it will be some complex quantity, okay, we'll call it S, all right, and we know that it has to be a product in some form of current and voltage,
+
+## page 15  f_0233.jpg  on screen [0:51:13 – 0:54:51]
+<sub>sharpness 3703, ink 5.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0220.jpg (0:51:14), f_0226.jpg (0:53:42), f_0227.jpg (0:53:42), f_0230.jpg (0:53:43)</sub>
+
+- [0:51:12] so, what we're going to say then is that in the phasor domain, if we want to have a quantity corresponding to power in the phasor domain, what we want is, in general, it will be some complex quantity, okay, we'll call it S, all right, and we know that it has to be a product in some form of current and voltage,
+- [0:51:49] and then what we're going to require of this particular quantity S that we're going to define now, what we want, we're going to say that we want the real part of that power to be the average power transferred, which is, we know from the time domain, one-half V sub m times I sub m times the cosine of phi sub v minus phi sub m.
+- [0:52:25] Phi sub i, okay, so this is what we want out of this complex quantity S, right, that we're going to essentially consider to be the power in the phasor domain, so now we have to think about, well, how can we take the current and voltage phasors and multiply them in such a way that the real part is going to give us this, okay, so any questions on kind of how we're thinking about this?
+- [0:52:56] Power quantity in the phasor domain, okay, now if we look at this expression here, all right, then we can see, all right, when we take the real part, then we're going to get this cosine, okay, so what that suggests then is that the phase of S is going to have to be phi sub v minus phi sub i, all right,
+- [0:53:26] so then the question is, how do we multiply in some form the current phasor and the voltage phasor such that the phase of that product is going to be phi sub v minus phi sub i, right, if we go back here,
+- [0:53:43] all right, we can see, all right, if we multiply just v times i as phasors, the phase of that is going to be phi sub i, phi sub v plus phi sub i, all right, that's not what we want.
+- [0:53:55] We want phi sub v minus phi sub i, so what that suggests, right, so somehow we have to get the phase here, phi sub i to be minus phi sub i, and so what that suggests is that, well,
+- [0:54:12] maybe the correct way to take the product of the voltage and the current phasors is to take the current phasor, take its complex conjugate, all right, which basically takes all the j's and makes them minus j's, right, that'll give us e to the minus j phi sub i is the phase over here,
+- [0:54:33] then if we multiply that complex conjugate of the phasor i by the phasor v, then the phase of that product is going to be phi sub v minus phi sub i, okay, so what that suggests is, okay, maybe that is the right way to do it, is we take the product of the voltage phasor and the complex conjugate of the current phasor, all right, and in fact, that does turn out to be the correct way to do it.
+
+## page 16  f_0241.jpg  on screen [0:54:51 – 0:54:53]
+<sub>sharpness 3272, ink 4.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0236.jpg (0:54:52), f_0238.jpg (0:54:52)</sub>
+
+- [0:54:33] then if we multiply that complex conjugate of the phasor i by the phasor v, then the phase of that product is going to be phi sub v minus phi sub i, okay, so what that suggests is, okay, maybe that is the right way to do it, is we take the product of the voltage phasor and the complex conjugate of the current phasor, all right, and in fact, that does turn out to be the correct way to do it.
+
+## page 17  f_0243.jpg  on screen [0:54:53 – 0:54:54]
+<sub>sharpness 2478, ink 3.7 %, colour 0.2</sub>
+
+- [0:54:33] then if we multiply that complex conjugate of the phasor i by the phasor v, then the phase of that product is going to be phi sub v minus phi sub i, okay, so what that suggests is, okay, maybe that is the right way to do it, is we take the product of the voltage phasor and the complex conjugate of the current phasor, all right, and in fact, that does turn out to be the correct way to do it.
+
+## page 18  f_0254.jpg  on screen [0:54:54 – 1:03:07]
+<sub>sharpness 2585, ink 3.7 %, colour 0.2</sub>
+
+- [0:54:33] then if we multiply that complex conjugate of the phasor i by the phasor v, then the phase of that product is going to be phi sub v minus phi sub i, okay, so what that suggests is, okay, maybe that is the right way to do it, is we take the product of the voltage phasor and the complex conjugate of the current phasor, all right, and in fact, that does turn out to be the correct way to do it.
+- [0:55:01] So this power here, all right, is going to be, and then we include this factor of one-half, all right, because we know that we have to have that from what we worked out in the time domain, so it's going to be one-half times the voltage times the complex conjugate of the current, and this we refer to as having units of volts times amps, all right,
+- [0:55:32] oops, and this is, we call this the complex power, and it is a power quantity that we are defining in the phasor domain such that when we take the real part of it, we get the average power, yeah, so the two questions, yeah, so you can go first.
+- [0:55:57] Is the reason we couldn't just divide the n i to get phi sub v minus phi sub i is because the amplitude, like, then we'd have the over, the v f over i, like, we needed both the magnitude and the phase to be in that form?
+- [0:56:15] Yeah, so basically, yes, when we're defining a power, right, we know that physically power always has to be some product of current and voltage, not voltage divided by current, right, if we take the voltage divided by the current, you get an impedance.
+- [0:56:31] Okay, yeah, and then you had a question, and then you, oh, so, so watts, you know, typically it refers, or the, you know, the way that we think about watts is that it's some average power quantity, right, or it could be instantaneous power, all right,
+- [0:56:53] it's, so we could also call it watts, but we call it here volts times amps, just to make it explicit that, okay, we've multiplied a voltage times a current, but then we have to go a little bit farther to really interpret that as, you know, sort of a physical power quantity.
+- [0:57:16] Okay, does that make sense? Okay, yes, or actually in the back first, and then, yeah.
+- [0:57:23] We're defining S entirely based on the fact that its real part has to be equal to our real, like, average power, then what is, like, the significance of the arrangement product of S, like, that was it actually left out?
+- [0:57:38] Oh, yeah, so that's a good question. So, so, and so it may seem sort of arbitrary, right, that we chose to do it in this way.
+- [0:57:47] You know, I described it that way to make it clear that, you know, there are, in principle, multiple ways that we could define some power quantity, but we want to choose one that is useful for us.
+- [0:57:56] And the particular choice that we made was this one here, such that the real part of that complex power gives us the average power.
+- [0:58:05] It turns out, as we'll see shortly, that then the imaginary part of this complex power is related to power that is transferred back and forth between the source and the load.
+- [0:58:18] And it turns out that the imaginary part is the, it's the peak power that's transferred back and forth between the load.
+- [0:58:29] And so then, so this definition also gives rise to a natural interpretation for its imaginary part. Okay, yeah, and then you had a question.
+- [0:58:39] Isn't the difference from Watson? Yeah, just like, one is like the physical, it helps distinguish between how much you need to be able to carry versus, I guess, how much you're actually producing.
+- [0:58:58] Like, I don't know the idea, like, you know, one, there are different ideas of like what's actually going on.
+- [0:59:10] You have a, you're somehow delivering power to something, you know, like one is, one is like the maximum amount that it needs to be able to output, and one is the actual output kind of.
+- [0:59:22] So, yeah, so there is a distinction that can be made between, you know, what is the maximum power that the source is producing, right, and how much is actually transferred to the load, right?
+- [0:59:35] So there are many of these, you know, there are multiple quantities that have units of power, right, that are relevant and useful in a circuit generally.
+- [0:59:48] Alright, so volts times amps here, it sort of makes it a little bit more explicit that we're at the stage where, you know, basically we have multiplied current and voltage, right, and that's what we get here.
+- [0:59:59] You know, if we're looking at the power that is transferred, P average, right, then, you know, that's clearly power that's dissipated that can be used to perform work and such, right?
+- [1:00:10] That's what we're getting, or this amps, this is, like, if I'm building that system, I need to be able to carry.
+- [1:00:26] So I wouldn't say that is the definitive distinction, but that's part of the distinction.
+- [1:00:33] And, you know, watts also, you know, in general, it doesn't have to be electrical power, right? It can be other forms of power.
+- [1:00:41] Volts times amps is, you know, again, it makes it more explicit that this is an electrical power quantity, and we're getting it in this particular way, but we have to go a little bit farther, right, to get sort of what we intuitively think of as useful power, right, which is typically watts.
+- [1:01:01] So in that sense, you know, sort of power that you can harness, right, is typically watts. This is not quite that yet. Yes?
+- [1:01:10] So can we in general think of the, sort of the, I thought it was a question, the imaginary part of really having these quantities as the oscillatory part, and the real part is the, well, I guess that will vary, but a lot of times the imaginary is just like the part that sort of represents how much it will shift.
+- [1:01:34] So in the context of, or, you know, for this particular complex power, right, the imaginary part of it has that particular definition, and it is often the case that kind of imaginary quantities.
+- [1:01:54] So for example, the imaginary part of impedance is also, right, it relates to either inductance or capacitance, right, depending on the sign, and that also relates to, you know, in a circuit context, if you think about power or energy for capacitor or inductor, it is stored but not dissipated, right?
+- [1:02:20] So in those senses, the imaginary quantities in the phasor domain often pertain to, you know, sort of inductance or capacitance or, you know, energy storage as opposed to dissipation.
+- [1:02:36] But you have to be a little bit careful. So for example, if you were to just look at voltage as a phasor, then for any nonzero phase, it has a real and imaginary part, right?
+- [1:02:48] But that imaginary part of the voltage does not necessarily correspond to, you know, to say power, energy storage versus dissipation.
+- [1:03:00] Does that sort of answer your question? Okay, any other questions?
+- [1:03:05] Okay, so, and then our notation here, right, is that the asterisk, i*, right, this is the complex conjugate of the phasor i, right, and so it's going to be i sub m times e to the minus j phi sub i, right?
+
+## page 19  f_0258.jpg  on screen [1:03:07 – 1:03:37]
+<sub>sharpness 1756, ink 2.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0255.jpg (1:03:07), f_0256.jpg (1:03:08)</sub>
+
+- [1:03:05] Okay, so, and then our notation here, right, is that the asterisk, i*, right, this is the complex conjugate of the phasor i, right, and so it's going to be i sub m times e to the minus j phi sub i, right?
+- [1:03:32] So in general, when you take the complex conjugate of something, as perhaps you remember, it just means that you take all the j's and you turn them into minus j's, all right?
+
+## page 20  f_0268.jpg  on screen [1:03:37 – 1:06:06]
+<sub>sharpness 2325, ink 3.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0265.jpg (1:04:57), f_0267.jpg (1:04:58)</sub>
+
+- [1:03:32] So in general, when you take the complex conjugate of something, as perhaps you remember, it just means that you take all the j's and you turn them into minus j's, all right?
+- [1:03:42] So that's what we've done here. We can also write this complex power, okay, in terms of the RMS amplitudes, right?
+- [1:03:56] So we can write the complex power s, instead of writing it as one-half times the phasor's v times i*, we can write it as, we can define an RMS phasor, right?
+- [1:04:13] V RMS and i RMS*, right?
+- [1:04:21] Where, right, they're sort of related to the conventional phasors in the usual way, right?
+- [1:04:27] So V RMS is equal to, instead of Vm, it's the RMS amplitude times e to the j phi sub v, and then i RMS is i, the RMS amplitude of the current times e to the j phi sub i, all right?
+- [1:04:48] So any questions to hear? Any other questions?
+- [1:04:52] Okay, now, let's work this out a little bit more explicitly, all right?
+- [1:05:02] And this will allow us to look at sort of the real and the imaginary parts, all right, of the complex power, all right?
+- [1:05:09] So as the complex power, we know is one-half V sub m times i sub m times e to the j phi sub v minus phi sub i, all right?
+- [1:05:22] And so using Orla's formula, we know this is one-half V sub m times i sub m times the cosine of phi sub v minus phi sub i plus j times the sine of phi sub v minus phi sub i, all right?
+- [1:05:46] Or if we write it in terms of the RMS amplitudes, it's V RMS times i RMS times the cosine of phi v minus phi i plus j times the sine of phi v minus phi i.
+- [1:06:02] Okay, so now here, right, now we can see explicitly, all right, that the average power is going to be the real part of this complex power, all right?
+
+## page 21  f_0274.jpg  on screen [1:06:06 – 1:07:02]
+<sub>sharpness 2511, ink 3.8 %, colour 0.2</sub>
+
+- [1:06:02] Okay, so now here, right, now we can see explicitly, all right, that the average power is going to be the real part of this complex power, all right?
+- [1:06:19] So this is the average power that's dissipated in the load circuit, okay?
+- [1:06:34] But then we have the imaginary part of this, right?
+- [1:06:38] We'll call that Q, all right?
+- [1:06:43] That's the imaginary part of S, right?
+- [1:06:46] This is V RMS times i RMS times the sine of phi sub v minus phi sub i, okay?
+- [1:06:59] And this, all right, it turns out I'll just assert it here, but if you sort of play around with things in the time domain, then you should be able to show this.
+
+## page 22  f_0281.jpg  on screen [1:07:02 – 1:08:39]
+<sub>sharpness 1981, ink 3.1 %, colour 0.2</sub>
+
+- [1:06:59] And this, all right, it turns out I'll just assert it here, but if you sort of play around with things in the time domain, then you should be able to show this.
+- [1:07:10] This is the peak power that is exchanged, okay, between the source and the load circuits, okay?
+- [1:07:31] And, you know, you might be able to sort of guess that that's what it would be because this Q, the peak power exchanged,
+- [1:07:46] is if the voltage and the current are in phase, then there's no power exchange, which is sort of what you would expect if there's no inductive or capacitive component to the load, right?
+- [1:07:58] So nothing that can actually store energy.
+- [1:08:01] And it is maximized in amplitude when the voltage and the current are 90 degrees out of phase, right, which corresponds to a load that is purely reactive, right?
+- [1:08:17] Purely inductive or purely capacitive, right?
+- [1:08:20] So if all you have in the load is energy storage, right, then that corresponds to peak power exchange.
+- [1:08:28] If all you have in the load is resistance, then there is no energy that is exchanged, okay?
+- [1:08:36] So it sort of makes sense that, or it's certainly plausible, that this would be how this is interpreted, right?
+
+## page 23  f_0282.jpg  on screen [1:08:39 – 1:09:31]
+<sub>sharpness 2676, ink 4.2 %, colour 0.2</sub>
+
+- [1:08:36] So it sort of makes sense that, or it's certainly plausible, that this would be how this is interpreted, right?
+- [1:08:42] So we can note that this imaginary part Q is non-zero only if the phase of the voltage is not equal to the phase of the current, right?
+- [1:09:02] And then the magnitude of this, this is maximized when phi sub v minus phi sub i is equal to plus or minus 90 degrees, which means that we have a purely reactive load, as we defined it earlier, right?
+- [1:09:27] So it's purely capacitive or inductive.
+- [1:09:31] And so another piece of terminology then is that this quantity Q, the imaginary part of the complex power, is sometimes referred to as the reactive power, okay?
+
+## page 24  f_0296.jpg  on screen [1:09:31 – 1:10:58]
+<sub>sharpness 2227, ink 3.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0290.jpg (1:10:15)</sub>
+
+- [1:09:31] And so another piece of terminology then is that this quantity Q, the imaginary part of the complex power, is sometimes referred to as the reactive power, okay?
+- [1:09:51] And in terms of units, this is sometimes what we use here as volts times amps reactive.
+- [1:10:07] Okay, so that is the reactive power, the imaginary part of the complex power.
+- [1:10:17] And we can also think about this in terms of the impedance of the load, right?
+- [1:10:25] So the load circuit, okay, this has an equivalent impedance, remember we said z, right?
+- [1:10:45] That's the voltage phasor divided by the current phasor, and that is going to, in general, it's going to have a real part and an imaginary part.
+- [1:10:55] We'll call the imaginary part of it x, right?
+- [1:10:59] Because it could be either capacitance or inductance.
+
+## page 25  f_0302.jpg  on screen [1:10:58 – 1:12:44]
+<sub>sharpness 1811, ink 2.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0301.jpg (1:12:44)</sub>
+
+- [1:10:55] We'll call the imaginary part of it x, right?
+- [1:10:59] Because it could be either capacitance or inductance.
+- [1:11:03] And so what we can also do then is we can write the complex power in terms of this impedance, all right?
+- [1:11:15] So we have the complex power s, and it is equal to one-half times v times i star, right?
+- [1:11:28] But then we can write the impedance, or sorry, the phasor v as just i times z, right?
+- [1:11:38] So we can write this as one-half times z times i times i star, or one-half times the magnitude of i squared times the impedance z,
+- [1:11:58] which is going to be, all right, it's the root mean square amplitude squared, and then the impedance is r plus j times x, all right?
+- [1:12:11] And so what we've done here, right, we know that the rms amplitude squared has to be real,
+- [1:12:17] and so what that tells us is that the real part of the complex power is related only to the resistive components of the load impedance,
+- [1:12:33] and the imaginary part of the complex power is related only to the imaginary part of the load impedance, right?
+- [1:12:43] Which is, again, it's sort of what you would expect, but it tells us more explicitly now that the power transfer from the source to the load really depends on,
+
+## page 26  f_0309.jpg  on screen [1:12:44 – 1:15:11]
+<sub>sharpness 1697, ink 2.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0304.jpg (1:13:57), f_0308.jpg (1:14:24)</sub>
+
+- [1:12:43] Which is, again, it's sort of what you would expect, but it tells us more explicitly now that the power transfer from the source to the load really depends on,
+- [1:12:55] and only depends on the resistive part of the load impedance, and the power transfer back and forth between the source and the load depends only on the reactive part of the load impedance, right?
+- [1:13:11] So we have that the average power is now, it's one-half times the magnitude of the current phasor times r, which is i rms squared times r,
+- [1:13:31] and the imaginary part of the complex power, the reactive power, is one-half times the current phasor squared times the imaginary part of the load impedance,
+- [1:13:44] or equivalently, the rms amplitude squared times the imaginary part of the impedance.
+- [1:13:51] So any questions on this?
+- [1:13:56] Okay, and then the last point that we will make is that, right, we know that in a circuit, we have to have conservation of energy, right?
+- [1:14:08] In any closed system, energy has to be conserved, and so what then that also implies is that the complex power is also conserved in the circuit.
+- [1:14:22] In the same way that power is conserved, as you studied in 302 or 302h, in a DC circuit, right, you saw that power is conserved if you calculate the power across all the components.
+- [1:14:33] In the same way, the complex power is also conserved when you calculate the complex power in the phasor domain.
+- [1:14:42] So, the conservation of energy in a circuit then means that we also have that the complex power is conserved in a complete enclosed circuit.
+- [1:15:08] Okay, and that basically happens because we know that if we sum up the average power across all the components,

@@ -1,0 +1,1063 @@
+# 2026-10-05-semiconductors-and-solid-state-devices: board pages with the speech that accompanied them
+
+19 distinct pages from 66 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0009.jpg  on screen [0:00:00 – 0:10:24]
+<sub>sharpness 7314, ink 4.5 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0008.jpg (0:10:24)</sub>
+
+- [0:00:03] Okay. Let's go ahead and get started.
+- [0:00:06] Oh, so my tablet is trying to force a Zoom update, so we don't wanna do that now.
+- [0:00:13] Okay. So I just started the recording. A few announcements to start with as usual. The first one is that
+- [0:00:22] problem set five was due today, so hopefully (everyone?) has turned that in. The solutions will be available later today, but
+- [0:00:31] I think we probably, or we may not have it graded by the time of the exam, but you have the solutions available to you, if you want. Second announcement is a reminder that the first semester exam will be, this Wednesday, okay, October 7.
+- [0:00:47] And so there's,
+- [0:00:48] additional information on the Canvas announcements.
+- [0:00:52] The things you should make sure to do in order to...
+- [0:00:55] Or in addition to preparing for the exam are that, you should make sure to use the,
+- [0:01:02] the dummy template that's been posted on Gradescope and Canvas to, test your scanning and uploading.
+- [0:01:09] And then, also,
+- [0:01:10] you should make sure to bring, printed
+- [0:01:14] physical copy, okay, that is on paper,
+- [0:01:17] of the answer sheet template to the exam. You'll write, the solutions to the exam on
+- [0:01:23] that printed answer sheet template. Alright?
+- [0:01:27] Third announcement is that for today's,
+- [0:01:30] recitation,
+- [0:01:31] that will be an exam review session. So, what Darsh will do is he'll answer any questions that you have.
+- [0:01:38] If you have examples of circuit problems that you'd like to go over, he can do that.
+- [0:01:42] And,
+- [0:01:44] depending on the time, he may do some of the problems from, some of the old exams that have been posted under, exam preparation materials. Okay?
+- [0:01:52] And then the last announcement is that,
+- [0:01:56] the sixth problem set has just been released. Okay. So that'll be due on October 21. Alright?
+- [0:02:03] And that problem set covers maximum power transfer and semiconductors. So problem set six is on material that you're not responsible for for this first semester exam, but you will be responsible for it for the second exam and the final. So any questions on any of this? Yes?
+- [0:02:27] {(So?)}
+- [0:02:33] it's okay to take pictures, but there are many pages, right, to the template. So that's a lot of pictures,
+- [0:02:42] and the uploading may be slower. Also,
+- [0:02:45] our experience is that
+- [0:02:48] photographs
+- [0:02:49] are actually not as high resolution.
+- [0:02:52] They're harder to read than,
+- [0:02:56] scanned,
+- [0:02:57] PDFs.
+- [0:02:58] Okay? So,
+- [0:03:00] our pretty strong suggestion is to
+- [0:03:03] scan it and upload it as a PDF
+- [0:03:07] because the scanning apps are pretty good, and
+- [0:03:10] it'll be easier to read because the paper, sometimes it comes out as gray rather than white,
+- [0:03:18] and that can make the the writing harder to read.
+- [0:03:22] Yes? Should be (very?) specific. Are there any, (practices?) or, like, capacity gaps on Canvas? There are. There's a section on, Canvas called exam preparation materials,
+- [0:03:33] and there are three years of past exams,
+- [0:03:36] for all the different... For the first semester exam, second, and the final.
+- [0:03:40] So they have the exam questions. I think there are short answers, right, like numerical answers and things like that, or symbolic answers for the exams. And there's also, for each exam, a histogram of the score distribution for, the students who... For the class that took that exam so you can kind of assess what the difficulty of this... Of that exam was. Say that the
+- [0:04:01] previous exams are a (fair?) representation of what this exam... Like (as?) far as,
+- [0:04:08] like, content covers and, like, (length?) and all that. So what I will say is that those pass exams are probably the best guide that you'll the best guide that you'll have available to you of what the upcoming exam might be like.
+- [0:04:23] But there are never any guarantees.
+- [0:04:26] Any other questions?
+- [0:04:28] Yes. Yes.
+- [0:04:31] You can use any calculator that does not have sort of communication and photograph capability. So you can't use your phone calculator app, but you can use, like, a graphing calculator and things like that.
+- [0:04:43] Yes.
+- [0:04:51] Any question that you have?
+- [0:04:57] (Number?) s. Why Mhmm. The real part, the average, and the complex part, the p power?
+- [0:05:05] Oh, so... Well, we defined the complex power in the way that we did so that when
+- [0:05:13] we took the real part, we would get the average power. Right? So, you know, there are a variety of different
+- [0:05:20] kind of products of voltage and current,
+- [0:05:24] that we can define in the phasor domain, and we chose this particular definition
+- [0:05:30] {to}
+- [0:05:34] have the property, right, that when we take the real part, it would give us the average power. Right? If we had chosen to define
+- [0:05:43] some power quantity in some other way, then,
+- [0:05:46] you know, we would get the the average power in a different way. For the imaginary part,
+- [0:05:52] you know, it it ends up that
+- [0:05:56] the imaginary part of that complex power
+- [0:05:59] translates to the... Or is the peak power transferred.
+- [0:06:04] You know, it's it's basically because
+- [0:06:06] in order to have power
+- [0:06:09] transfer, you need the current and the voltage to be out of phase, right, to some degree,
+- [0:06:15] because,
+- [0:06:16] you only get that if there is an imaginary component
+- [0:06:19] to the impedance
+- [0:06:22] of the load. Alright? And,
+- [0:06:25] you know, the way that we have defined the complex power,
+- [0:06:29] right, the imaginary part turns out to correspond to the peak power that that is exchanged between the source and the load.
+- [0:06:38] Okay. Yes? I guess, do you have any tips for when to use, I guess, the definition of complex power?
+- [0:06:45] {Yeah. (But?) what (that?) (the?)}
+- [0:06:50] {(complex?)}
+- [0:06:51] conjugate by versus, like, the IRMS squared
+- [0:06:56] are, like, I guess, going through the the the problem set, there were definitely times where one method was easier than another, but I was a little bit unsure of, like, when to use
+- [0:07:06] each of those.
+- [0:07:08] I know they (have?) to be the same thing, but (not?) computationally.
+- [0:07:12] Sometimes one's easier.
+- [0:07:15] Yeah. I wouldn't say there's a hard and fast recipe, right, for doing it one way or the other. As you said, (I...?) You know, one half (v?) I star, right, or,
+- [0:07:28] you know, I r m s squared
+- [0:07:30] times the the impedance of the load. Right? They give you the same thing as they should.
+- [0:07:36] You
+- [0:07:37] know, if you if you have the current and the voltage already, right, then probably one half v I star is easier.
+- [0:07:45] If
+- [0:07:47] it is easy
+- [0:07:49] to calculate or you have already the
+- [0:07:53] impedance of the load, then I... You know, that may very well be easier. Or if I...
+- [0:08:01] You know, the load circuit is kind of a big mess and it'll be hard to calculate its impedance,
+- [0:08:06] then (I...?) You know, maybe it's easier to calculate, one half v I star.
+- [0:08:12] So so there's no hard and fast rule. As you're working through a given problem,
+- [0:08:18] you know, (often?) (I?) would say you can see that I... Alright. I'm I'm closer to,
+- [0:08:25] you know, being able to get the result this way. So so that's probably the easier way, to do it.
+- [0:08:30] Alright. That's,
+- [0:08:32] you know, maybe the the best rule of thumb that I can give you right now.
+- [0:08:37] Any other questions?
+- [0:08:40] Okay.
+- [0:08:41] So any other questions from our last class meeting?
+- [0:08:47] Okay. If not, then we will pick up from where we left off. So what we had done last time was we had started this discussion of semiconductors
+- [0:08:57] and
+- [0:08:58] various types of semiconductor devices. So I kind of reminded you of MOSFET devices, which you learned about in three zero two or three zero two h, and then we talked some about diodes and bipolar junction transistors.
+- [0:09:12] And all of these kinds of devices,
+- [0:09:17] {right,}
+- [0:09:19] They are devices that are made from and whose properties depend on the properties of semiconductor materials. Alright? So
+- [0:09:29] what we wanna do in this part of the course is to
+- [0:09:34] talk about some of the basic physics of semiconductors,
+- [0:09:37] some of which will be (reviewed?) from three zero two or three zero two h,
+- [0:09:41] and then,
+- [0:09:42] use
+- [0:09:43] that understanding
+- [0:09:45] of the basic physics of semiconductors to look in particular at how, (PN?) junction diodes,
+- [0:09:52] behave. Alright? And that
+- [0:09:55] (can?) be built upon to,
+- [0:09:57] understand the behavior of bipolar transistors.
+- [0:10:01] It also comes into play when one is understanding or trying to understand certain aspects of... Actually, many aspects of how,
+- [0:10:09] MOSFETs behave,
+- [0:10:11] and
+- [0:10:13] (p?) n junction diode structures are really the basis for entire other classes of
+- [0:10:19] semiconductor devices that are important in a variety of applications.
+- [0:10:24] Okay. So what we wanna do starting today then is to talk about
+
+## page 02  f_0025.jpg  on screen [0:10:24 – 0:15:07]
+<sub>sharpness 2316, ink 3.8 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0010.jpg (0:10:24), f_0013.jpg (0:12:00), f_0020.jpg (0:14:24)</sub>
+
+- [0:10:19] semiconductor devices that are important in a variety of applications.
+- [0:10:24] Okay. So what we wanna do starting today then is to talk about
+- [0:10:31] some of these specific properties of semiconductors.
+- [0:10:41] Okay. And just
+- [0:10:45] kind of qualitatively,
+- [0:10:46] you know, what are the things about semiconductors that make them useful and powerful for making different types of electronic devices?
+- [0:10:54] One is that they have
+- [0:10:58] moderate electrical connectivity.
+- [0:11:06] Right? So it's intermediate between
+- [0:11:09] insulators, right, which have very low electrical connectivity, and
+- [0:11:15] metals, have very high electrical conductivity. So the electrical conductivity of semiconductors is
+- [0:11:24] higher than that of insulators,
+- [0:11:29] okay, but then lower
+- [0:11:33] than that of metals.
+- [0:11:36] Okay.
+- [0:11:37] And what
+- [0:11:39] especially makes semiconductors very useful and powerful for making different types of devices is that there are various ways
+- [0:11:48] that you can control
+- [0:11:50] the conductivity
+- [0:11:52] of a semiconductor over many orders of magnitude. Alright? And that can be done through,
+- [0:11:59] essentially, what end up being static changes to, the semiconductor, like introducing impurities, what's called doping,
+- [0:12:06] or it can be done, during operation of a particular device, say, by applying a voltage that base... Essentially changes the concentration of electrons in different parts of (a?) device. Okay. So what's especially useful is that the connectivity.
+- [0:12:24] Right, that's the electrical connectivity of semiconductors can be controlled
+- [0:12:33] over, many orders of magnitude.
+- [0:12:43] Okay. And this can be done during operation by applying,
+- [0:12:49] voltage
+- [0:12:50] or when one is making a device by introducing impurities.
+- [0:12:57] Okay. That is
+- [0:13:00] atoms of elements other than what constitutes
+- [0:13:04] the semiconductor itself, say something like silicon. Okay?
+- [0:13:09] And...
+- [0:13:12] Alright. All of this is important and useful because semiconductors are really the foundation
+- [0:13:20] for
+- [0:13:21] a wide range of,
+- [0:13:23] sort of systems and devices and technologies. So, so, essentially, I write all
+- [0:13:30] computer processors,
+- [0:13:35] GPUs,
+- [0:13:37] memory chips.
+- [0:13:41] Right? These are all made from predominantly silicon, alright, which is the most technologically important semiconductor material.
+- [0:13:51] Communications chips.
+- [0:13:57] Alright. The chips that send and receive signals in, for example, your smartphone. Right? These are also all made from semiconductors, lot of them from silicon, but some of them from other types of semiconductor materials.
+- [0:14:10] The display,
+- [0:14:13] right, on a smartphone or a big LCD panel and so forth is
+- [0:14:19] essentially
+- [0:14:20] a giant chip, right, that is fabricated on glass. Alright?
+- [0:14:26] Solar cells,
+- [0:14:30] alright, also are made from semiconductors, predominantly silicon.
+- [0:14:35] (It?) used to be that
+- [0:14:37] the solar cell industry would kind of rely on
+- [0:14:41] extra silicon that was scrapped from the electronics industry, But now, and in fact, this crossover happened probably over fifteen years ago now,
+- [0:14:51] the volume of silicon that is required for solar cells is actually now much larger than that for computer chips. And so,
+- [0:14:58] it is its own,
+- [0:15:00] kind of dominant,
+- [0:15:03] you know, user of certain types of semiconductor materials,
+- [0:15:07] things like LED lighting.
+
+## page 03  f_0032.jpg  on screen [0:15:07 – 0:17:05]
+<sub>sharpness 1547, ink 2.4 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0029.jpg (0:16:55)</sub>
+
+- [0:15:03] you know, user of certain types of semiconductor materials,
+- [0:15:07] things like LED lighting.
+- [0:15:12] Right? LED light bulbs and so forth, which have really transformed
+- [0:15:16] the lighting industry and also
+- [0:15:19] power consumption
+- [0:15:21] are also based on
+- [0:15:24] a different type of semiconductor, gallium nitride, that is able to emit short wavelength light that can be used to create light bulbs and and things like that. And,
+- [0:15:36] you know, that has had an enormous effect on
+- [0:15:39] electrical consumption.
+- [0:15:40] You know, back before the days of LED light bulbs, it used to be that, residential electricity consumption, close to 20% of it was used for lighting.
+- [0:15:50] Now it's more like,
+- [0:15:52] it's less than 5%,
+- [0:15:54] alright, which is a big difference. Okay?
+- [0:15:57] (You?) know, various types of
+- [0:16:00] image sensors.
+- [0:16:03] Right? So the image sensor chip in...
+- [0:16:06] (Right??) The camera in your smartphone, right, for example, is basically a
+- [0:16:12] a silicon chip. Right? And there are a variety of sort of more specialized applications. All of this really depends on semiconductors,
+- [0:16:21] and we want to spend some time talking about semiconductors in this course because
+- [0:16:27] anytime that you are trying to push the performance,
+- [0:16:33] of
+- [0:16:34] an individual device or of a system such as a circuit that employs those devices,
+- [0:16:40] then really understanding
+- [0:16:42] how that device behaves and why it behaves the way it does at a fundamental level, in terms of the underlying semiconductor physics is,
+- [0:16:52] is extremely important. It's really essential in doing that type of engineering at the limits of, performance.
+- [0:16:59] Okay? So
+- [0:17:01] so that's some just sort of very... Some
+- [0:17:05] general thoughts about semiconductors.
+
+## page 04  f_0033.jpg  on screen [0:17:05 – 0:18:06]
+<sub>sharpness 0, ink 0.0 %, colour 0.0</sub>
+
+- [0:17:05] general thoughts about semiconductors.
+- [0:17:07] And so in order to understand them more deeply,
+- [0:17:11] what we wanna look at first
+- [0:17:13] is what is the nature of the states in a semiconductor that are occupied by electrons,
+- [0:17:20] and,
+- [0:17:21] you know, how does that (effect?) influence the way
+- [0:17:25] electrons move around, basically how current is conducted. Alright? So what we wanna do next is look at
+- [0:17:35] electronic states
+- [0:17:38] and what's called the band structure
+- [0:17:44] of semiconductor.
+- [0:17:46] Okay. I'm getting these reminders to update Zoom every five minutes. So, hopefully, I will not accidentally hit close all and update, which will shut this whole thing down. So
+- [0:18:00] we wanna look at...
+- [0:18:02] Oops.
+
+## page 05  f_0035.jpg  on screen [0:18:06 – 0:19:08]
+<sub>sharpness 1613, ink 2.3 %, colour 0.9</sub>
+
+- [0:18:07] Oh, no. Uh-oh.
+- [0:18:10] Okay. Let me
+- [0:18:13] share this again.
+- [0:18:16] Oh,
+- [0:18:18] for some reason, it closed
+- [0:18:22] the app completely.
+- [0:18:25] Okay. I think we're back here.
+- [0:18:34] Okay. I think I have to start Zoom again.
+- [0:18:39] Oh, actually, it's still up. Let me just share again.
+- [0:18:49] Share. Okay. Here we go.
+- [0:19:03] K. If you can avoid using a computer that is owned by UT, then you should avoid it because they take control of the administration of the computer and can be quite cumbersome.
+
+## page 06  f_0054.jpg  on screen [0:19:08 – 0:25:43]
+<sub>sharpness 1287, ink 1.9 %, colour 0.7</sub>
+<sub>earlier states of this page: f_0036.jpg (0:19:09), f_0039.jpg (0:19:33), f_0040.jpg (0:21:03), f_0041.jpg (0:21:03), f_0044.jpg (0:24:00), f_0045.jpg (0:25:15), f_0049.jpg (0:25:16), f_0053.jpg (0:25:43)</sub>
+
+- [0:19:03] K. If you can avoid using a computer that is owned by UT, then you should avoid it because they take control of the administration of the computer and can be quite cumbersome.
+- [0:19:17] Okay. So we wanna look at the electronic states and band structure of semiconductors.
+- [0:19:25] Okay.
+- [0:19:27] And so some of this may be material that you also saw in three zero two or three zero two h, but if not, that's fine because this will also... This will be still self contained, and I think it's useful as a reminder as well. So you may remember
+- [0:19:42] how
+- [0:19:44] silicon atoms
+- [0:19:45] bond together to form the silicon crystal. So we wanna recall,
+- [0:19:50] right, how
+- [0:19:53] silicon atoms,
+- [0:19:57] Right? How they bond together to form
+- [0:20:01] a silicon crystal,
+- [0:20:04] okay, which is the form (in?) which we use silicon to make semiconductor chips and the like. So let's look... (Or?) if we just look at an isolated silicon atom,
+- [0:20:18] okay,
+- [0:20:19] {then}
+- [0:20:21] we will represent that
+- [0:20:23] like this. We have this thing here, which we're using to represent the nucleus of the silicon atom and the electrons in,
+- [0:20:33] the closed,
+- [0:20:34] shells, right, around,
+- [0:20:37] the nucleus.
+- [0:20:38] And then we have the valence electrons,
+- [0:20:41] which we will draw individually.
+- [0:20:44] Right? So this here, this is an electron.
+- [0:20:48] And silicon,
+- [0:20:50] we're not in the science classroom, so there's no periodic table in here. But if you remember what the periodic table looks like, then you can see from the position of silicon in the periodic table that
+- [0:21:03] it has four valence electrons.
+- [0:21:11] Okay. And,
+- [0:21:13] 14,
+- [0:21:14] electrons in total. Alright? Now,
+- [0:21:18] you may remember from a chemistry course that
+- [0:21:23] a typical way that atoms can, bond to each other is by forming covalent bonds, where the electrons are shared, between atoms (and?) those shared electrons then,
+- [0:21:35] if you have a pair of shared electrons, that constitutes the covalent bond. Okay?
+- [0:21:39] And in a silicon crystal,
+- [0:21:45] right, that's how the atoms are bonded together. Right? Each of these
+- [0:21:50] four valence electrons for each silicon atom is shared with a neighboring silicon atom and (helps?) it to form a covalent bond
+- [0:21:59] with that neighboring atom. Okay? And so each of the silicon atoms then is bonded in this way to four of its surrounding atoms. Right? So we can represent this
+- [0:22:12] in two dimensions,
+- [0:22:15] alright, by drawing
+- [0:22:17] just a square array
+- [0:22:19] of
+- [0:22:22] silicon atoms.
+- [0:22:25] Okay. So these are the nuclei and the closed shells,
+- [0:22:30] and each of these atoms
+- [0:22:33] has
+- [0:22:35] four valence electrons
+- [0:22:38] around it.
+- [0:22:41] Okay. We won't draw the ones,
+- [0:22:44] that extend beyond,
+- [0:22:46] the edge here.
+- [0:22:51] Okay. So we have, four valence electrons associated with each,
+- [0:22:56] atom,
+- [0:22:58] and
+- [0:22:59] those valence electrons are shared
+- [0:23:02] with
+- [0:23:04] sort of the corresponding neighboring atom,
+- [0:23:07] right, to form
+- [0:23:10] covalent bonds like this.
+- [0:23:13] Okay. So in red here, these are the covalent bonds.
+- [0:23:21] Okay. And then, again,
+- [0:23:23] these black dots here
+- [0:23:26] represent,
+- [0:23:28] electrons.
+- [0:23:30] Okay. So
+- [0:23:33] so that's what the crystal looks like when we draw it. Each silicon atom is bonded to its four nearest neighbors. Alright? But, actually, the way the crystal looks like in three dimensions
+- [0:23:46] is
+- [0:23:47] like this. Okay? So it's not arranged in a square array.
+- [0:23:52] Instead, what you can see, right, if you look at this red one over here, right, you can see that, right? So these these short bars here represent the covalent bonds, and then these long bars here are
+- [0:24:05] shown just to show you... This has what's called cubic symmetry. Right? You can break this up into
+- [0:24:12] individual cubes. Alright? But if you look at this red atom here, which represents one silicon, each of these things represents a silicon atom. This red one over here, you can see that it's bonded to four of its nearest neighbors
+- [0:24:26] to form, and its nearest neighbors kind of form a tetrahedron.
+- [0:24:31] Right? A pyramid with a triangular base. Okay? And if you just put all these structures together, then you get this arrangement here, which is how the atoms are actually arranged in (a?) silicon crystal. Okay? But, since this is very hard to draw,
+- [0:24:50] on... In a plane, then we will represent it in two dimensions this way with the key, feature here being that each of the atoms has four nearest neighbors
+- [0:25:01] to which it's bonded.
+- [0:25:03] Okay. So that is the kind of the physical structure
+- [0:25:06] of a silicon crystal. Alright. So any... Are there any questions on that?
+- [0:25:14] Okay. So now,
+- [0:25:16] what we wanna think about is
+- [0:25:19] the nature of the states that are occupied
+- [0:25:22] by electrons.
+- [0:25:24] Alright? So we wanna look at the electronic states
+- [0:25:30] that are occupied
+- [0:25:36] by electrons.
+- [0:25:39] Okay.
+- [0:25:40] And, again, we'll start off
+- [0:25:43] looking at what happens in
+
+## page 07  f_0091.jpg  on screen [0:25:43 – 0:46:34]
+<sub>sharpness 2170, ink 3.4 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0059.jpg (0:34:32), f_0082.jpg (0:44:07), f_0084.jpg (0:44:08), f_0088.jpg (0:45:36)</sub>
+
+- [0:25:43] looking at what happens in
+- [0:25:46] just an isolated silicon atom, right, which you may remember
+- [0:25:51] about what you learned about electronic states in atoms from
+- [0:25:56] a high school chemistry course, and then we will see how that
+- [0:26:00] then leads to the electronic states that we have in a silicon crystal. Okay. So if we look first
+- [0:26:09] at just an isolated silicon atom,
+- [0:26:13] okay,
+- [0:26:14] then,
+- [0:26:16] right, if you have just an atom generally,
+- [0:26:20] {(I...?)}
+- [0:26:21] What is the nature of the states that are occupied by electrons in that atom? What do we call them?
+- [0:26:28] Do you remember?
+- [0:26:34] They're orbital states. Right? You have,
+- [0:26:37] like, say, if you have a hydrogen atom, you just have a one s orbital.
+- [0:26:40] And then as you get to bigger atoms, then first you have the one s orbital, then the
+- [0:26:47] two s orbital, then the two p orbital, and then the
+- [0:26:50] three s and three p and three d and so forth. Alright? So,
+- [0:26:55] if we have an isolated atom,
+- [0:26:57] right, if we plot the energy levels that can be occupied by electrons
+- [0:27:02] as a function
+- [0:27:05] of energy,
+- [0:27:09] right, we have (the?) the lowest energy state
+- [0:27:12] is the one s orbital.
+- [0:27:15] Alright. That can be occupied by two electrons.
+- [0:27:18] Then we have the two s orbital.
+- [0:27:20] That can also be occupied by two electrons.
+- [0:27:24] Then we have the two p orbital. Do you remember how many electrons can be occupied by,
+- [0:27:30] in p orbitals?
+- [0:27:33] It's six. Yes. Very good. Okay. And then we have
+- [0:27:38] three s
+- [0:27:39] and three p
+- [0:27:41] and so forth. Alright?
+- [0:27:44] And,
+- [0:27:45] silicon
+- [0:27:47] has 14 electrons in total. Okay. So, essentially, what's gonna happen is that we are going to fill the lowest
+- [0:27:56] 14 states in energy. Alright? Because,
+- [0:28:00] typically,
+- [0:28:01] electrons wanna go to the lowest energy state because that
+- [0:28:06] minimizes the energy of the system. So we can have two electrons
+- [0:28:10] in the one s orbital,
+- [0:28:13] another two
+- [0:28:15] in the two s orbital,
+- [0:28:18] and then six
+- [0:28:23] in the two p orbital. Alright?
+- [0:28:27] That's 10 so far. We have 14.
+- [0:28:32] And then we have
+- [0:28:33] two more in the three s orbital
+- [0:28:37] and then two in the three p orbital.
+- [0:28:42] Okay?
+- [0:28:45] And as you may remember from chemistry,
+- [0:28:48] anytime you have electrons that are in what's called a closed shell, alright, where, you completely occupy the states
+- [0:28:58] of, you know, the same number here, one down here or two over here, right, those are (called?) closed shell electrons, and those don't really participate in chemical reactions and things like that.
+- [0:29:10] Alright. So these are the closed shell
+- [0:29:15] electrons.
+- [0:29:17] And then
+- [0:29:18] these electrons up here, which are in the incompletely filled third shell, Right? These are what we call the valence electrons.
+- [0:29:33] Okay? And it's the valence electrons that
+- [0:29:36] participate in bonding.
+- [0:29:38] They're the ones that carry electrical current (in?) a semiconductor crystal and so forth. Alright? So those are the ones that we'll really be interested in. Okay. So that's what we have if we just have isolated atoms. Alright. So any questions on that?
+- [0:29:56] Okay.
+- [0:29:57] So then,
+- [0:29:59] what we wanna do is to look at
+- [0:30:04] how this changes
+- [0:30:06] when we go to,
+- [0:30:08] a silicon crystal. Right? This arrangement over here where we have atoms that are bonded, to each other to form some larger scale structure.
+- [0:30:18] So we are, again,
+- [0:30:21] going to... Right? We have energy on the vertical axis,
+- [0:30:26] and then we're gonna have position. We'll call that x on the horizontal axis. And what happens
+- [0:30:32] if we have atoms
+- [0:30:35] that are bonded together in a crystal, right, the way that you can imagine it is that if the atoms are very far apart,
+- [0:30:41] right, then each one just looks like an isolated atom. Okay? Because they can't... They don't interact with each other. This atom does not know about this atom. But then as you bring the atoms closer together,
+- [0:30:56] right, imagine that you have this spatial arrangement, but this distance is very large. And then you gradually reduce that distance but keep this same structure.
+- [0:31:06] Then
+- [0:31:08] at some point, the atoms get close enough together,
+- [0:31:12] right, that this atom knows that this atom is
+- [0:31:16] next to it. And the way it knows is that the electronic states, right, basically, the orbital states of the individual atoms, they start to overlap with each other a little bit. Okay?
+- [0:31:28] And when that happens, then eventually, right, you keep bringing them closer together, eventually, they form
+- [0:31:35] the
+- [0:31:36] bonds
+- [0:31:37] between the crystals.
+- [0:31:39] And once those bonds have formed, then it's possible for
+- [0:31:44] the electrons to move.
+- [0:31:47] They can move throughout throughout the crystal. Right? So they can move from one being close to one atom to the next atom to the next atom and so forth, right, because all these states
+- [0:31:57] are overlapping.
+- [0:31:58] Alright?
+- [0:32:00] And,
+- [0:32:01] when that happens,
+- [0:32:03] then what we say is that the crystal,
+- [0:32:07] doesn't so much have the individual orbital states anymore.
+- [0:32:10] It has what are called band states that are states within a certain range of energy that extend throughout the entire crystal structure so that electrons are able to move, through the whole crystal.
+- [0:32:23] Okay. So we have these... When we have a crystal,
+- [0:32:26] then we have
+- [0:32:28] these so called bandstates.
+- [0:32:31] Alright?
+- [0:32:36] At lower energy,
+- [0:32:38] we have what's called the valence band.
+- [0:32:44] Okay? And then at higher energy, we have what's called the conduction band.
+- [0:32:53] Okay?
+- [0:32:55] So these are ranges of energy, right, that have states that can be occupied by electrons. Right? That's basically how you can think about it. And then in between,
+- [0:33:07] there's a gap. Right? There (is?) a range of energies between the valence band and the conduction band where there are no electronic states. Right? So you cannot have,
+- [0:33:16] at least in a structurally perfect and pure semiconductor, you cannot have any states
+- [0:33:21] at energies in this range here. That is called the energy
+- [0:33:30] band gap.
+- [0:33:32] Okay.
+- [0:33:34] Now
+- [0:33:35] what we (wanna?) do first is to think about
+- [0:33:38] what happens when we are at a temperature of zero Kelvin. So absolute zero. Right? The significance of that is that,
+- [0:33:48] at absolute zero,
+- [0:33:50] all of the electrons will go to the lowest
+- [0:33:54] energy state that they can. Okay?
+- [0:33:57] And it turns out that
+- [0:34:00] the number of states available in the valence band
+- [0:34:04] is exactly equal to the total number of valence electrons
+- [0:34:08] in the crystal. So at zero Kelvin, what will happen is that,
+- [0:34:17] right, all of the states
+- [0:34:19] in the valence band
+- [0:34:22] will be
+- [0:34:24] occupied by electrons,
+- [0:34:27] and there will be no electrons
+- [0:34:30] in the conduction band. Okay. So in this situation,
+- [0:34:34] right, all the electrons
+- [0:34:40] are in the valence band,
+- [0:34:45] and none
+- [0:34:47] are in the conduction band.
+- [0:34:53] Okay.
+- [0:34:55] And our terminology over here, e sub c and e sub v,
+- [0:35:00] right, the terminology is simply...
+- [0:35:03] These are what are called the band edge energy. So e sub v is the highest energy
+- [0:35:09] in the valence band,
+- [0:35:11] and e sub c is the lowest energy in the conduction band. Okay? So the difference between these two energies then is the energy band gap. Alright? So
+- [0:35:22] e sub c here
+- [0:35:25] is the maximum energy...
+- [0:35:30] Sorry. E sub v
+- [0:35:32] is the maximum energy in the valence band,
+- [0:35:39] and e sub c is the minimum energy
+- [0:35:44] in the conduction band.
+- [0:35:51] Okay. So so that's the picture at
+- [0:35:55] zero Kelvin.
+- [0:35:56] Alright?
+- [0:35:58] Now if we go to
+- [0:36:00] a nonzero temperature,
+- [0:36:02] right, so temperature greater than zero Kelvin,
+- [0:36:06] then
+- [0:36:09] the bandstructure,
+- [0:36:14] it still stays
+- [0:36:16] essentially the same. Alright?
+- [0:36:21] Okay. So this is the conduction band edge energy. This is the valence band edge energy. Alright? But what happens
+- [0:36:27] at,
+- [0:36:28] temperatures above... Yeah. Question? I (was?) gonna ask, what does it mean to be in the valence band form?
+- [0:36:35] Oh, so (so?)
+- [0:36:38] we'll talk a little bit more about this later. Alright? But it turns out that,
+- [0:36:44] you know, valence band... If we look at (silicon?) crystal, okay, then
+- [0:36:50] valence band and conduction band,
+- [0:36:53] that's sort of the... I'll call it the physics language for the electronic states. Okay?
+- [0:37:00] In the language of chemistry,
+- [0:37:04] the valence band states
+- [0:37:06] are
+- [0:37:08] actually called the bonding orbitals.
+- [0:37:11] Okay? And then the conduction band states are the antibonding orbitals.
+- [0:37:16] Alright? And so,
+- [0:37:19] you know, when you form chemical bonds, what happens is that,
+- [0:37:24] say, the,
+- [0:37:26] right, the three s and the three p states over here, they kind of get mixed together, and they form a new set of states that are the bonding and antibonding orbitals.
+- [0:37:34] The bonding orbitals are,
+- [0:37:37] the states that form these bonds between,
+- [0:37:42] adjacent atoms,
+- [0:37:43] and then the antibonding orbitals are the other states. Right? They're (in?) higher energy,
+- [0:37:49] and they can only be occupied if there is something that gives the electrons enough energy to go to that higher state. So
+- [0:37:57] when we say that
+- [0:37:59] electrons are in the valence band, right, then another way of thinking about it in an equivalent way of saying is is that those are... Those electrons
+- [0:38:10] are the ones that are actually forming the bonds
+- [0:38:13] between
+- [0:38:14] the atoms. Alright?
+- [0:38:18] So that's equivalent essentially to saying that they're in the valence band (is?) is that those are the atoms that are forming the bonds. And then if they're in the conduction band, that means that they're kind of free to move around
+- [0:38:31] through the antibonding orbitals. Is that kind of what you're asking?
+- [0:38:36] {Mobile. (So?)}
+- [0:38:39] it turns out that
+- [0:38:41] in the bonds, the the atoms or or the electrons are also mobile
+- [0:38:46] {(or?)}
+- [0:38:51] not so much only in that area, but you have...
+- [0:38:55] Right? All of these bonds have formed. Right? So you have electrons
+- [0:39:00] in essentially all of the available states.
+- [0:39:03] Right? Now in order for an electron to move, say, from here
+- [0:39:08] to here, right, then
+- [0:39:11] one of the conditions that's required for that to happen is that, there has to be an empty state available here for it to move to.
+- [0:39:19] Okay?
+- [0:39:21] And so if all of these states
+- [0:39:25] are completely filled with electrons,
+- [0:39:28] then
+- [0:39:29] there is no
+- [0:39:31] net motion,
+- [0:39:32] okay, of... You know, the electrons can switch with each other, but there's no net motion because they're all filled. Alright?
+- [0:39:41] Whereas,
+- [0:39:43] if they're in the conduction band, you only have a few electrons
+- [0:39:47] if you're at temperatures above zero Kelvin, and so they can move around through these states. Now what changes then is if you have... Suppose you took one electron out of the valence band, right, out of one of these bonding states, (and?) it went into the conduction band. Then in the valence band, that is in the bonding states, now you had now you have an empty state, say, here. Right? Then an electron from here
+- [0:40:14] can move to that empty state. Right? And if you had another empty state, say, over here, that electron can move to that empty state. Okay. So,
+- [0:40:25] you can get sort of net motion of the electrons,
+- [0:40:29] if you have some empty states
+- [0:40:32] available for electrons to move into.
+- [0:40:36] Alright. Does that sort of answer your question?
+- [0:40:41] Okay.
+- [0:40:43] Yeah. We'll we'll talk more about this,
+- [0:40:47] in a few minutes, so maybe that'll, clarify somewhat. Yes?
+- [0:40:51] Is the definition of (electron?)
+- [0:40:54] {(being?) (induction?) band,}
+- [0:40:56] is it only
+- [0:40:57] defined then... Or (just?) just it only (mapped?) to
+- [0:41:04] where that electron is,
+- [0:41:07] orbital wise or no? (If?) an electron
+- [0:41:11] is in the conduction band, does that mean that it's
+- [0:41:15] in an orbital higher than three p or no?
+- [0:41:20] Yeah. We'll get into this in more detail in a few minutes. But what happens is that,
+- [0:41:25] as you make the transition from the isolated atoms to a crystal,
+- [0:41:30] then,
+- [0:41:31] when you get to the crystal,
+- [0:41:34] structure,
+- [0:41:35] you no longer have these original orbital states. Right? That you have
+- [0:41:40] essentially combinations of these orbital, right, that that form the bonding and the antibonding
+- [0:41:45] orbitals or equivalently the valence band and the conduction band. Yeah.
+- [0:41:50] Okay.
+- [0:41:51] Any other questions right now?
+- [0:41:54] Okay.
+- [0:41:55] So if we're at a temperature above zero Kelvin,
+- [0:42:00] then...
+- [0:42:01] Right. Temperature,
+- [0:42:03] you may remember from a physics course, is basically a measure of
+- [0:42:08] the average energy of a system. Okay? And in this case, we're concerned with the energy of the electrons. Okay. So
+- [0:42:20] (when?) we're at zero Kelvin, the average energy is is (is?) at the lowest possible level. When we are at a temperature above zero Kelvin, then that average energy is higher. Right? But what that also means is that it's not that every electron has that average energy. Some of them have more energy (and?) some of them have less.
+- [0:42:41] Okay? But as soon as you have this extra,
+- [0:42:44] energy, thermal energy, right, the energy due to the temperature around, then there will be a few electrons
+- [0:42:51] that have enough energy to be up here in the conduction band. Okay. So you'll have few electrons
+- [0:42:58] up here,
+- [0:43:00] and then correspondingly,
+- [0:43:03] you will have a few
+- [0:43:05] empty states
+- [0:43:10] down here in the valence band.
+- [0:43:16] Okay.
+- [0:43:17] So then
+- [0:43:19] at a temperature greater than zero Kelvin, right above absolute zero, then instead of all the electrons being in the in the valence band and none in the conduction band, it'll be that most electrons
+- [0:43:34] are in the valence band,
+- [0:43:38] and, we'll have a few
+- [0:43:42] in the conduction band.
+- [0:43:48] Okay. And these electrons that are up in the conduction band,
+- [0:43:52] we just call them electrons.
+- [0:43:57] The empty states in the valence band,
+- [0:44:03] we call them holes. Right?
+- [0:44:06] And... Right? So
+- [0:44:07] our terminology here now is that in a semiconductor, when we talk about electrons,
+- [0:44:16] right, what we will very often mean,
+- [0:44:19] right, is that, we'll... When we say electrons, we will be referring
+- [0:44:24] to
+- [0:44:28] negative charge carriers,
+- [0:44:30] which are the electrons themselves
+- [0:44:34] in the (conduction?) band.
+- [0:44:41] And when we talk about holes,
+- [0:44:47] these will be referring to
+- [0:44:49] missing
+- [0:44:55] electrons in the valence band.
+- [0:45:01] Okay? And they behave
+- [0:45:06] essentially like positive charge carriers.
+- [0:45:14] Right? Because if we have sort of absence of a negative charge, then that'll essentially... And that moves around. That's like it's equivalent to having a positive charge move around. Okay? And
+- [0:45:29] sort of an analogy to help you visualize this is that...
+- [0:45:35] And and for holes in particular,
+- [0:45:37] right,
+- [0:45:39] it's like if you have some liquid in a bottle, alright, then
+- [0:45:44] the electrons are the liquid itself.
+- [0:45:49] The holes, you can think of as being bubbles
+- [0:45:53] in
+- [0:45:54] the liquid. Right? So,
+- [0:45:56] it's often easier, right, if you have a bottle that's, just about full, and it has some bubbles in it, it's easier to think about how the bubbles are moving around than how the liquid is moving around the bubbles. Okay? So, thinking about holes is kind of like thinking about the bubbles in (a?) (a?) nearly full,
+- [0:46:15] volume of liquid. Okay? So that's one way to, kinda visualize it. Alright. So any questions then to here?
+- [0:46:25] Okay. Is this stuff that, you talked about in three zero two or three zero two h?
+- [0:46:31] Okay. Alright. Good. So, hopefully, it's not,
+- [0:46:34] completely mysterious at this point. So so now we have the question of,
+
+## page 08  f_0099.jpg  on screen [0:46:34 – 0:48:05]
+<sub>sharpness 1624, ink 2.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0094.jpg (0:48:00), f_0098.jpg (0:48:05)</sub>
+
+- [0:46:34] completely mysterious at this point. So so now we have the question of,
+- [0:46:40] you know, how do these conduction and valence band states form? I kinda gave you the endpoints, alright,
+- [0:46:45] of what the electronic states look like in an individual atom and in a crystal,
+- [0:46:50] But, you know, what happens in the transition between these states?
+- [0:46:56] And then, you know, how is that related to the bonding?
+- [0:46:59] And then how does the formation of these bands and the presence of these bands relate to the concentrations of carriers that we have that can actually carry current in the semiconductor device, how they move around, and so forth. Right? So really asking,
+- [0:47:14] you know, how do
+- [0:47:19] the conduction and valence band
+- [0:47:23] states form?
+- [0:47:27] Right? How are they related
+- [0:47:33] to this picture where we have the covalent bonds?
+- [0:47:39] And then how are the bands
+- [0:47:47] related to carrier concentrations,
+- [0:47:56] mobility, and the like.
+- [0:48:02] Okay.
+- [0:48:03] So
+- [0:48:05] what we wanna do then is,
+
+## page 09  f_0114.jpg  on screen [0:48:05 – 0:58:41]
+<sub>sharpness 4742, ink 6.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0100.jpg (0:49:45), f_0102.jpg (0:49:45), f_0103.jpg (0:49:46), f_0106.jpg (0:55:12), f_0108.jpg (0:57:03)</sub>
+
+- [0:48:05] what we wanna do then is,
+- [0:48:09] to think about what happens if we have,
+- [0:48:13] some number of atoms that... And we think about
+- [0:48:17] the structure of the silicon crystal as a function of the separation, right, the distance between,
+- [0:48:24] the atoms. So we wanna consider
+- [0:48:27] some number (n?)
+- [0:48:30] of atoms.
+- [0:48:32] Right? So, for example, silicon atoms,
+- [0:48:38] (these?) are separated by
+- [0:48:43] some distance we'll call a. Alright?
+- [0:48:48] And what we wanna look at is how the states are distributed in energy as a function of that separation. Right? Where if they're very far apart, we know that in that limit, we should have the individual atom orbital states, and then if they're sufficiently close together, we have the band states. Right? But what happens in between? Okay. So if we draw a picture, then
+- [0:49:10] what we'll see is that the states
+- [0:49:17] that are occupied by the valence electrons,
+- [0:49:25] these are distributed
+- [0:49:30] in energy,
+- [0:49:32] right, as a function of a,
+- [0:49:38] Alright. It's separation a in the following way.
+- [0:49:46] Okay. So if we draw a picture of this,
+- [0:49:51] alright, we have
+- [0:49:53] energy on the vertical axis
+- [0:49:58] and then this separation
+- [0:50:00] a
+- [0:50:01] on the horizontal axis.
+- [0:50:04] Okay?
+- [0:50:05] And, right, we know
+- [0:50:08] that if the atoms are far enough apart, right, say they're a kilometer apart or a meter apart, right, then they're gonna behave like isolated atoms, and we'll just have the individual atom orbital states. Right? So
+- [0:50:22] at some...
+- [0:50:24] Beyond some minimum distance,
+- [0:50:27] then
+- [0:50:29] these are just gonna behave like isolated atoms.
+- [0:50:32] Okay?
+- [0:50:33] And what we will have
+- [0:50:37] are just
+- [0:50:39] the orbital states.
+- [0:50:41] Alright. Three s states
+- [0:50:43] and the three p states. Right?
+- [0:50:46] And if we have some number (capital?) n of atoms,
+- [0:50:50] then the total number of three s states
+- [0:50:53] is two n. Right? Because each atom has two three s states.
+- [0:50:59] And then the total number of three p states
+- [0:51:02] is
+- [0:51:03] six n.
+- [0:51:07] Okay.
+- [0:51:09] So,
+- [0:51:10] this is our starting point.
+- [0:51:13] Okay? And then as I was describing earlier,
+- [0:51:17] if the atoms move closer together,
+- [0:51:21] then the orbital states from adjacent atoms will start having a little bit of overlap.
+- [0:51:27] Alright?
+- [0:51:29] And once they have that overlap, then what will happen is that you won't... You will no longer have two
+- [0:51:37] {identical}
+- [0:51:38] orbital states, one on each atom. What will happen instead
+- [0:51:42] is that those states will form new states that (can...?) They extend across both of these atoms or in the whole crystal that extend across the whole crystal.
+- [0:51:52] Okay?
+- [0:51:53] And
+- [0:51:55] those states,
+- [0:51:57] each of them has to have a slightly different energy from each other. Right? So what'll happen
+- [0:52:02] is that
+- [0:52:04] the states
+- [0:52:05] that are occupied by the electrons start spreading out an energy a little bit.
+- [0:52:11] And then as you keep moving the atoms closer together,
+- [0:52:15] then...
+- [0:52:19] Alright. The states from the from the original three s orbitals and the original three p orbitals, they start to overlap in energy.
+- [0:52:28] Okay? And then as you keep going, right, what happens is
+- [0:52:32] there'll be some intermediate range of separations of the atoms where these are all just kind of mixed together.
+- [0:52:40] But then eventually,
+- [0:52:46] alright, they will split apart again,
+- [0:52:50] okay, like this.
+- [0:52:54] And in a silicon crystal,
+- [0:52:58] the equilibrium separation that you have in the crystal, right, what you find in nature is actually here,
+- [0:53:05] where I've drawn this dashed line. So this is the separation that corresponds to
+- [0:53:14] a semiconductor crystal.
+- [0:53:17] For example, a silicon crystal. Okay? And so at that point, what has happened is that
+- [0:53:24] the three s and the three p, the original orbital states,
+- [0:53:27] right, they started interacting with,
+- [0:53:30] with each other. They get mixed together,
+- [0:53:33] and then they get separated out again into
+- [0:53:39] a set of states that are at lower energy.
+- [0:53:41] Those are the
+- [0:53:44] valence band states.
+- [0:53:47] Alright?
+- [0:53:48] Or
+- [0:53:50] I... In the language of chemistry,
+- [0:53:52] those states are the bonding orbital states.
+- [0:54:00] Okay.
+- [0:54:02] And then
+- [0:54:03] at higher energy up here,
+- [0:54:06] we have
+- [0:54:12] what we will call the conduction band states,
+- [0:54:17] but we can also refer to as in language of chemistry,
+- [0:54:22] the antibonding
+- [0:54:28] orbitals.
+- [0:54:29] Okay. And then, you know, all this shaded region here,
+- [0:54:34] right, these are
+- [0:54:36] the ranges of energy where
+- [0:54:41] we have electronic states available,
+- [0:54:43] and the separation in energy between the antibonding orbitals and the bonding orbitals, or equivalently between the conduction band and the valence band, that is the energy band gap.
+- [0:55:02] Okay.
+- [0:55:04] So
+- [0:55:05] so this is sort of the more detailed picture of how as you bring atoms closer together, you get, these orbital states interacting and eventually forming these bonding and antibonding orbitals or equivalently valence band and conduction band states.
+- [0:55:21] And it turns out that each of these,
+- [0:55:25] alright, the valence band and the conduction band,
+- [0:55:29] we have
+- [0:55:31] four n states.
+- [0:55:34] Alright. So four n states in the conduction band, four n states in the valence band.
+- [0:55:43] Okay.
+- [0:55:44] Now that is significant... Yes. Question?
+- [0:55:47] Six n state.
+- [0:55:49] (It?) (will?) be two valence band.
+- [0:55:52] Oh, so so this is the total number of states available.
+- [0:55:56] Alright? So each...
+- [0:55:59] So for each atom, right, you have six three p states available, but then only two of those will be occupied.
+- [0:56:05] Okay.
+- [0:56:08] So
+- [0:56:10] in the crystal,
+- [0:56:13] we have states that are occupied
+- [0:56:18] by a total of four n
+- [0:56:21] valence electrons.
+- [0:56:26] Okay. Because we have four valence electrons with each atom, so we have a total of four n valence electrons.
+- [0:56:32] And so those,
+- [0:56:34] at zero Kelvin,
+- [0:56:36] right,
+- [0:56:37] you will completely occupy
+- [0:56:39] all of the valence band states.
+- [0:56:41] You'll have nothing in the conduction band, but then as you increase the temperature,
+- [0:56:46] then,
+- [0:56:47] some of those electrons will have enough energy to be up in the conduction band.
+- [0:56:51] Okay. So so any questions on this basic picture?
+- [0:57:00] Okay.
+- [0:57:01] Now,
+- [0:57:02] there's one other point that is worthwhile to mention here, which is that
+- [0:57:09] if we, start thinking about how these electrons carry current, right, the electrical conductivity in, semiconductor,
+- [0:57:18] then you might think that, okay, most of the most of the electrons are always gonna be in the valence band. Right? There'll only be a small number in the conduction band.
+- [0:57:28] {So,}
+- [0:57:30] intuitively, you might think that, okay, almost all the current is carried by the electrons that are in the valence band because you have so many more electrons. Right? But, actually, that's
+- [0:57:41] not quite the case. Alright? So it is the case that
+- [0:57:46] the current is carried by electrons that are moving through
+- [0:57:50] some combination of the conduction band and the valence band. Right? So in semiconductors, generally,
+- [0:57:59] right, what's happening is that
+- [0:58:04] electric current,
+- [0:58:09] okay, is carried by electrons
+- [0:58:16] moving through the crystal
+- [0:58:24] in either conduction band
+- [0:58:30] or valence band states.
+- [0:58:38] Okay.
+- [0:58:39] But the caveat to this is that,
+
+## page 10  f_0169.jpg  on screen [0:58:41 – 1:12:51]
+<sub>sharpness 3053, ink 4.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0123.jpg (0:59:27), f_0132.jpg (1:01:33), f_0143.jpg (1:07:12), f_0145.jpg (1:07:35), f_0153.jpg (1:08:03), f_0155.jpg (1:08:03), f_0156.jpg (1:09:11), f_0158.jpg (1:09:12), f_0161.jpg (1:11:22), f_0166.jpg (1:11:23)</sub>
+
+- [0:58:39] But the caveat to this is that,
+- [0:58:43] you know, perhaps somewhat unexpectedly,
+- [0:58:47] if you have a band that is completely filled
+- [0:58:50] with
+- [0:58:51] electrons,
+- [0:58:52] then those electrons cannot actually carry any net electrical current. Okay. So the caveat to this is that only
+- [0:59:05] electrons in
+- [0:59:10] a partially filled band
+- [0:59:18] will contribute to the current.
+- [0:59:23] Okay.
+- [0:59:25] And, right, the reason for this is basically that
+- [0:59:29] if you have all the states
+- [0:59:31] in a given band occupied by electrons, right, each of those states
+- [0:59:37] is characterized by some energy. Right? You have a... It's a it's a state at a particular energy, but then each of those states also has
+- [0:59:45] momentum
+- [0:59:47] associated with it. Alright? You can think of it basically as a velocity, right, more intuitively.
+- [0:59:52] And
+- [0:59:55] for every state that has a momentum, say, in this direction
+- [1:00:00] in a band, there will be some other state that has a momentum in the opposite direction.
+- [1:00:05] So if both of those are occupied,
+- [1:00:08] then their motion will cancel each other out.
+- [1:00:11] Okay? And so so if every state is occupied, for everyone going like this, you'll (also?) you'll also have one that's going like this, and so their motion will cancel out. Okay?
+- [1:00:21] But if you only have this and this state is empty,
+- [1:00:25] then you can have some net motion associated with just this one, and that will have some current associated with it. Okay. So
+- [1:00:36] the short version of this is that
+- [1:00:44] if every state
+- [1:00:48] in a band
+- [1:00:53] is occupied, right, then
+- [1:00:59] each electron,
+- [1:01:03] it has a counterpart
+- [1:01:08] electron,
+- [1:01:13] right, in the same band
+- [1:01:20] It's moving in the opposite direction.
+- [1:01:28] Okay. And those will cancel each other out. Okay.
+- [1:01:33] And it's really this
+- [1:01:36] that
+- [1:01:37] makes it so useful to think about holes. Alright? Because
+- [1:01:45] since the (completely?) filled band has no net
+- [1:01:49] has no ability to carry net current, then it's only when you have empty states that you can carry current. Then I... Instead of thinking about
+- [1:01:58] how all the electrons in a completely... In a in a mostly filled band are moving, then
+- [1:02:06] you can talk instead about how the empty states are moving. That's much easier to keep track of,
+- [1:02:12] and that works because the sum of,
+- [1:02:15] the motion of
+- [1:02:18] all the electrons that are filled and all the electrons that that would have been present in these empty states, that has to add up to zero. Right? So keeping track of just the empty states is a lot easier. Yes? Technically,
+- [1:02:27] both bands can carry current in undoped (the?) silicon crystal.
+- [1:02:32] Really,
+- [1:02:33] it's just because of the electrons that are in the conduction band. Like, even though both bands are carrying it, it's because that they left the the holes in,
+- [1:02:44] the valence bands.
+- [1:02:46] (They?) can actually carry around.
+- [1:02:48] Right? So, yeah, so in a,
+- [1:02:53] structurally perfect and pure semiconductor where the only place that electrons from the valence band can go is up to the conduction band, then it is the case that having electrons in the conduction band,
+- [1:03:06] then, you know, each one has some associated empty state in the valence band that are left behind. Right?
+- [1:03:13] You can have current that is carried
+- [1:03:16] both by... Or, you know, there will be a contribution to the current from the electrons in the conduction band. There will also be a contribution of the current from the holes in the valence band. Right?
+- [1:03:30] But,
+- [1:03:31] you know, as as you noted, the presence of the of the holes in the valence band is always gonna be associated with, the presence of electrons in the conduction band. Now if you introduce some impurity atom, right, in in doping, which you may have talked about in in three zero two or three zero two h, then,
+- [1:03:51] those impurities can pull some electrons out of the valence band. Right? So those electrons, they'll just be,
+- [1:03:59] right, at the impurity atom, not up in the conduction band.
+- [1:04:03] But in that case, the holes that are left behind in the valence band can still carry current. Okay?
+- [1:04:09] So in that situation,
+- [1:04:11] there isn't the same connection between electrons in the conduction band and holes in the valence band. Does that answer your question? Yeah. Okay. Yes. Yeah. But truly where individual electrons in this huge lattice are not throughout their entire journey in the conduction band, but they keep...
+- [1:04:31] Like, they'll be in the conduct... Conduction band for a brief moment and go back down. But in general,
+- [1:04:37] the the cumulative amount is,
+- [1:04:41] you know, whatever
+- [1:04:42] whatever the equation says it will be.
+- [1:04:48] So so, basically, yes. So it is the case that,
+- [1:04:52] you know, say if you had just what's called an intrinsic semiconductor, structurally perfect, no, impurities,
+- [1:04:58] then
+- [1:05:00] a nonzero temperature. You'll you'll have some electrons in the conduction band, some holes in the valence band.
+- [1:05:06] Those can each
+- [1:05:08] move around, right, due to a voltage and... Or or what have you. But it will also be the case that, you know, if if you labeled some electron up here, right, that came from some state down here, that electron up here, that particular electron may
+- [1:05:25] drop back down into an empty state down here. But then on average, whenever one of these electrons drops down, another one will go up to the, conduction band and and then carry current in,
+- [1:05:39] you know, a similar way. And since there's a net movement in one direction, the
+- [1:05:44] the the average
+- [1:05:46] the average (net?) net direction will be in in the (current?) then or in the direction of the current? Yes. Then the net motion of,
+- [1:05:55] the electrons in the conduction band and the net motion of the
+- [1:05:59] holes in the valence band will each, contribute to the electrical current.
+- [1:06:04] Okay. Any other questions?
+- [1:06:08] Okay. So,
+- [1:06:11] right, it's because of this...
+- [1:06:13] Right? Because
+- [1:06:17] a completely filled band,
+- [1:06:25] right, carries no electric current.
+- [1:06:31] Alright. Then
+- [1:06:35] instead of thinking about
+- [1:06:41] the electrons moving
+- [1:06:46] in an almost filled
+- [1:06:54] valence band.
+- [1:06:57] We can think about
+- [1:07:02] (and?) also calculate,
+- [1:07:03] how
+- [1:07:05] the
+- [1:07:08] empty states
+- [1:07:14] are moving in the band.
+- [1:07:19] Okay.
+- [1:07:22] (And?) these empty states
+- [1:07:27] are what we call holes.
+- [1:07:32] Okay. And, again, you can kind of use the bubble in a liquid analogy. Right? Instead of thinking about how the liquid is moving around, we're thinking about how the bubbles, are moving around. Okay? And if the bottle is completely full,
+- [1:07:45] then, there's no net motion of the liquid within the bubble. Alright? Individual,
+- [1:07:50] say, liquid molecules may move around, but there's no net change in the distribution of that liquid.
+- [1:07:56] Okay. So any questions to there?
+- [1:08:01] Okay.
+- [1:08:02] So,
+- [1:08:04] so we've sort of, you know, we've waved our hands about, you know, how,
+- [1:08:09] okay, if we're at a nonzero temperature, then there'll be some electrons in the conduction band, and some empty states in the valence band. Right? But we wanna be more quantitative
+- [1:08:18] about this. Okay?
+- [1:08:20] So,
+- [1:08:21] now we wanna talk about,
+- [1:08:25] okay, the occupation of states
+- [1:08:32] by electrons. Right? So what is the probability
+- [1:08:35] that a state, say, in the conduction band or in the valence band, or more generally, that a state at a given energy, what is the probability
+- [1:08:44] that that state will be occupied by an electron, say, at a given temperature?
+- [1:08:49] And that leads us to
+- [1:08:53] what we call the Fermi distribution function.
+- [1:09:02] Okay. So is this something that you discussed in three zero two or three zero two h?
+- [1:09:07] Okay. So this is new. Alright. So...
+- [1:09:12] Alright. We said earlier that,
+- [1:09:15] okay. If you have electrons in some physical system, in this case, in a semiconductor,
+- [1:09:20] they will tend to want to occupy
+- [1:09:23] the states that are at the lowest energy, right, because that, minimizes the energy of the system as a whole. But if you have some extra energy around, say, thermal energy associated with nonzero temperature, then there'll be some electrons that are not in the lowest possible energy state, but at some higher energy. Okay?
+- [1:09:41] And so what we would like to have is
+- [1:09:45] some
+- [1:09:46] function that will allow us to calculate
+- [1:09:50] at a given energy
+- [1:09:52] what is the probability that
+- [1:09:55] a state at that energy will be occupied by an electron. If we if we have that, then we can calculate the probability that, say, a state at an energy in the conduction band will be occupied, the probability that a state at an energy in the valence band will be empty, and we can then calculate,
+- [1:10:13] you know, how many electrons will be around in the conduction band, how many holes in the valence band. Okay. So that's the idea of the Fermi distribution function.
+- [1:10:20] And what the Fermi distribution function tells us is what is the probability that a state at a given energy will be occupied by an electron. Okay. So the probability
+- [1:10:38] that a state
+- [1:10:44] at some energy, we'll call it e, right, the probability of that is occupied
+- [1:10:53] by an electron.
+- [1:10:56] Right? This is given
+- [1:11:00] by what we call
+- [1:11:01] the Fermi distribution function.
+- [1:11:13] Okay.
+- [1:11:16] And, typically, we represent this by f
+- [1:11:20] of e. Alright?
+- [1:11:22] And... Right. So there's a lot of statistical physics and such, which if you take ECE three thirty nine, you may learn about some of it. I'll just give you the result
+- [1:11:35] that comes from that kind of analysis,
+- [1:11:38] which is that the Fermi distribution function
+- [1:11:41] has the mathematical form. It's one over
+- [1:11:45] e
+- [1:11:46] to the energy minus a reference energy
+- [1:11:50] (e?) sub f, called the Fermi level or the Fermi energy
+- [1:11:53] {(over?)}
+- [1:11:55] Boltzmann's constant times the temperature
+- [1:11:59] plus one. Okay. So this... In this expression here, k sub b
+- [1:12:04] is
+- [1:12:09] the Boltzmann constant.
+- [1:12:13] Okay. And,
+- [1:12:16] right, if we look at this expression
+- [1:12:18] here, we can see we have energies in the numerator,
+- [1:12:23] and we have
+- [1:12:25] the Boltzmann constant times temperature in the denominator.
+- [1:12:28] So the Boltzmann constant is basically just... It's a constant that converts temperature to an equivalent energy.
+- [1:12:36] Alright? So we should have units of energy over temperature, say, joules per Kelvin. Right? And so the numerical value of this is 1.381
+- [1:12:46] times 10 to the minus
+- [1:12:49] 23,
+
+## page 11  f_0174.jpg  on screen [1:12:51 – 1:12:53]
+<sub>sharpness 4791, ink 6.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0170.jpg (1:12:51), f_0171.jpg (1:12:52), f_0173.jpg (1:12:52)</sub>
+
+- [1:12:53] joules per Kelvin.
+
+## page 12  f_0177.jpg  on screen [1:12:53 – 1:12:55]
+<sub>sharpness 2629, ink 3.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0175.jpg (1:12:53)</sub>
+
+- [1:12:53] joules per Kelvin.
+
+## page 13  f_0181.jpg  on screen [1:12:55 – 1:12:57]
+<sub>sharpness 5195, ink 7.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0178.jpg (1:12:56), f_0179.jpg (1:12:56), f_0180.jpg (1:12:56)</sub>
+
+- [1:12:56] Be careful where I rest my hand here. Let me try to do this.
+
+## page 14  f_0184.jpg  on screen [1:12:57 – 1:13:01]
+<sub>sharpness 2626, ink 3.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0182.jpg (1:12:57), f_0183.jpg (1:12:57)</sub>
+
+- [1:12:56] Be careful where I rest my hand here. Let me try to do this.
+
+## page 15  f_0185.jpg  on screen [1:13:01 – 1:13:02]
+<sub>sharpness 5383, ink 8.0 %, colour 0.2</sub>
+
+- [1:12:56] Be careful where I rest my hand here. Let me try to do this.
+
+## page 16  f_0187.jpg  on screen [1:13:02 – 1:13:03]
+<sub>sharpness 4741, ink 6.8 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0186.jpg (1:13:02)</sub>
+
+- (no speech captured in this span)
+
+## page 17  f_0189.jpg  on screen [1:13:03 – 1:13:03]
+<sub>sharpness 2182, ink 2.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0188.jpg (1:13:03)</sub>
+
+- (no speech captured in this span)
+
+## page 18  f_0190.jpg  on screen [1:13:03 – 1:13:03]
+<sub>sharpness 1355, ink 1.8 %, colour 0.2</sub>
+
+- (no speech captured in this span)
+
+## page 19  f_0203.jpg  on screen [1:13:03 – 1:17:54]
+<sub>sharpness 2329, ink 3.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0195.jpg (1:15:50), f_0200.jpg (1:17:53)</sub>
+
+- [1:13:04] Okay. I'm just gonna not try to write on the edge here. It's 1.381
+- [1:13:09] times 10 to the minus 23
+- [1:13:13] joules per Kelvin. Alright? T here
+- [1:13:17] is the temperature
+- [1:13:23] in Kelvin.
+- [1:13:25] And then
+- [1:13:27] this e sub f over here,
+- [1:13:33] right,
+- [1:13:34] this is the... We call it the Fermi energy
+- [1:13:41] or sometimes the Fermi level.
+- [1:13:47] And
+- [1:13:48] it is basically... It is the energy
+- [1:13:55] at which
+- [1:13:57] f of e is equal to one half. Right? So, in some sense, it's sort of the dividing line, dividing energy between the range where,
+- [1:14:06] you have a higher probability of, (state?) being occupied by an electron and a lower probability. Right? So
+- [1:14:13] so that's what the Fermi level or Fermi energy is. And if you look at this expression here, right, what you can see
+- [1:14:20] is that,
+- [1:14:22] you know, physically,
+- [1:14:23] this expression makes sense because what you would expect is that
+- [1:14:29] at very low energies, states that are very low energies should have a high probability of being occupied by an electron. Right? States that are very high energies,
+- [1:14:38] should have a low probability of being occupied by an electron. Right? And if you look at this expression here, if e
+- [1:14:46] is very low, say (much?) lower than the Fermi level, the Fermi energy,
+- [1:14:51] then you'll have a negative value in this exponent.
+- [1:14:56] Right? So e to the e minus e f over k t... K b t is going to be very small. Right? So this will look like one over one plus something very small. So the probability
+- [1:15:07] of a state at that low energy being occupied by an electron will be very close to one, right, which is what you would expect. When e is equal to the Fermi energy, then we have e to the zero, which is one. Right? So we have one half,
+- [1:15:23] right, as the value of the Fermi distribution function.
+- [1:15:27] And if we are at very high energies,
+- [1:15:30] then,
+- [1:15:32] right, we'll have a large positive value in this exponent. So e to the e minus e f over k (b?) (T?) will be very large,
+- [1:15:40] and the probability of this very high energy state being occupied by an electron will be, correspondingly very small. Right? So, physically,
+- [1:15:48] this all makes,
+- [1:15:50] should make sense to you or at least be plausible to you. Right?
+- [1:15:54] The other thing that
+- [1:15:57] we'll note just finishing up is that if we have a pure perfect semiconductor. Right? So in
+- [1:16:05] a pure
+- [1:16:07] and structurally perfect
+- [1:16:10] semiconductor,
+- [1:16:15] right, then
+- [1:16:17] we know that
+- [1:16:19] the concentration of electrons and the concentration of holes, they have to be the same as each other. Right? Because the only way that you get electrons in the conduction band is by leaving behind holes in the valence band. Right? So the concentrations
+- [1:16:35] of electrons,
+- [1:16:38] we'll call that concentration n.
+- [1:16:41] And of holes,
+- [1:16:44] we'll call that concentration p. Right? N and p correspond basically to negative (positive?) charge carriers. Right? These have to be equal to each other.
+- [1:16:59] Alright. So in some sense, right, what that means then is that the probability of finding empty states in the valence band and of finding
+- [1:17:09] filled states in the conduction band, alright, these have to be sort of similar to each other. Alright?
+- [1:17:17] And so,
+- [1:17:19] what that then suggests is that the, in this situation, the Fermi level should be near the middle of the band gap. Right? Not necessarily exactly in the middle, but near the middle. Alright? And and that, in fact, turns out to be the case. Right? So
+- [1:17:34] the framing level then
+- [1:17:37] is near
+- [1:17:39] the middle
+- [1:17:43] of the energy band gap.
+- [1:17:50] Okay. So what we will do,
+- [1:17:53] next time, which will be, next Monday,

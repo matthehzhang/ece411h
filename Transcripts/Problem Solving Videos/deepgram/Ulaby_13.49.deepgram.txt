@@ -1,0 +1,750 @@
+[0:00:03] Okay. This is UOB problem 13.49,
+[0:00:07] and this is an example of,
+[0:00:11] once again, circuit analysis
+[0:00:14] using Fourier transforms.
+[0:00:26] Okay. So the problem, that we are addressing is shown,
+[0:00:30] here on the left. There's actually
+[0:00:35] a misprint in the statement of the problem. The problem in the book says the circuit in figure p 13.19,
+[0:00:43] but that's actually not correct.
+[0:00:46] The
+[0:00:47] circuit in that figure doesn't include any, output voltage.
+[0:00:52] What they actually meant was the circuit and figure p 13.18,
+[0:00:59] which is shown down here.
+[0:01:00] And
+[0:01:02] so what we are asked to solve for is this output voltage v out labeled here,
+[0:01:09] given
+[0:01:11] an input f of t,
+[0:01:14] where,
+[0:01:15] f of... I sub s of t is equal to f of t given by this triangular
+[0:01:21] waveform shown here. Okay. So part a asks us to derive an expression for v out using Fourier analysis
+[0:01:29] in terms of
+[0:01:31] these circuit parameters here, r one, r two, and c,
+[0:01:35] and then... And a and capital t.
+[0:01:40] Part b
+[0:01:41] asks for a plot of the output voltage with specific numerical values for all these parameters.
+[0:01:48] And then part c asks for a plot with a different value of the capacitance,
+[0:01:55] point three three millifarads instead of point three three microfarads.
+[0:02:00] Okay. So let's go ahead and get started on this. And so we will start off as usual by redrawing the circuit.
+[0:02:10] So we have a current source I sub s of t.
+[0:02:17] And then a resistor r one,
+[0:02:22] another resistor r two,
+[0:02:25] and then
+[0:02:28] a capacitor c.
+[0:02:36] Okay. And,
+[0:02:38] we are asked to solve for
+[0:02:40] this output voltage.
+[0:02:43] Alright?
+[0:02:44] The circuit diagram also has
+[0:02:47] currents I one and I two labeled here. We'll use I two,
+[0:02:53] in part of what we work out.
+[0:02:58] The,
+[0:02:59] circuit parameters
+[0:03:01] in part
+[0:03:03] b of this problem are that r one is equal to 500 ohms,
+[0:03:08] r two is equal to two kiloohms,
+[0:03:11] and then c is equal to point
+[0:03:14] three three microfarads.
+[0:03:18] Okay. And then
+[0:03:22] the input waveform,
+[0:03:24] I sub s of t,
+[0:03:30] okay, is basically a
+[0:03:33] triangular
+[0:03:35] waveform, not a periodic triangular waveform, just a triangular waveform
+[0:03:45] that looks like this.
+[0:03:49] Okay. So so here,
+[0:03:54] the form of this is that
+[0:03:56] I sub s of t is equal to a over capital t
+[0:04:01] times the time t for zero less than equal to t less than equal to capital t, and it is zero
+[0:04:09] outside of that interval.
+[0:04:12] And
+[0:04:14] in part b of the problem and part c, we take a equal to five amps
+[0:04:19] and then t equal to three milliseconds.
+[0:04:24] Okay. So, let's go ahead and
+[0:04:28] solve this problem. Alright. So what we're going to do here is we're going to, take this circuit. We're gonna transform it to the frequency domain,
+[0:04:38] including,
+[0:04:39] computing the Fourier transform
+[0:04:41] of I sub s of t given by this expression here. Right? So that we have all its different frequency components.
+[0:04:49] We will analyze the circuit in the frequency domain to obtain v out as a function of frequency. And then we'll have to compute the
+[0:04:58] inverse Fourier transform,
+[0:05:00] of that to get v out of t.
+[0:05:04] Alright? So that's how we're going to proceed here. So if we're working
+[0:05:10] in the frequency domain,
+[0:05:13] right, we wanna have our source I sub s of t transformed to the frequency domain. So that would be I sub s... Capital I sub s of omega.
+[0:05:22] Right? So that is the Fourier transform
+[0:05:25] of
+[0:05:27] I sub s of t. Alright?
+[0:05:30] And that is given formally by the integral from minus infinity to infinity of I sub s of t times e to the minus j omega t
+[0:05:41] dt.
+[0:05:43] Okay.
+[0:05:45] And if we substitute into that,
+[0:05:48] this expression here for I sub s of t, which is valid between zero and capital t, then we have the integral
+[0:05:56] from zero to capital t of a over t times t times e to the minus j omega t
+[0:06:04] dt.
+[0:06:06] Okay. So here,
+[0:06:09] now, we wanna deal with this factor of t over here in the integrand, and so we're going to deal with that by doing integration by parts. So remember what integration by parts says is that the integral of u dB
+[0:06:22] is equal to u times v minus the integral of v d u. Okay. So this is the integral that we're starting with over here. This is what we will... I have to compute after doing the integration by parts.
+[0:06:36] And so, what we will want to do then is since we have d u over here, alright, we want to pick u
+[0:06:45] such that it allows us to take the derivative of t so that it becomes just a constant in this integral over here rather than a factor of t. Alright? And then, whatever is left in here as dV has to be something that we can integrate. Alright? So we can do that by choosing u to be equal to t
+[0:07:07] and d v to be equal to the rest of it, either the minus j omega t
+[0:07:12] d t.
+[0:07:14] Right? A over t here is a constant, so we can just pull that outside the integral. We don't have to worry about it until later on.
+[0:07:23] So then d u is equal to d t, and v is equal to minus one over j omega times e to the minus j omega t.
+[0:07:34] Alright?
+[0:07:36] So
+[0:07:38] if we then
+[0:07:39] use integration by parts to
+[0:07:43] work with this integral over here, we have the constant factor of a over t, which we take to the outside.
+[0:07:51] And then
+[0:07:53] for u times v, we have t times minus one over j omega times e to the minus j omega t evaluated at the limits of integration zero and t. So we have minus t
+[0:08:06] over j omega
+[0:08:08] times e to the minus j omega t evaluated at zero and t.
+[0:08:14] And then for minus the integral of v d u, then we have minus minus here. So that becomes plus one over j omega times e to the minus j omega t times d t. Alright? So we have plus
+[0:08:31] the integral from zero to t of one over j omega
+[0:08:35] e to the minus j omega t
+[0:08:39] d t.
+[0:08:43] Okay. And then,
+[0:08:46] if we evaluate this first term over here, then evaluating at the upper limit, we get minus capital t over j omega times e to the minus j omega capital t. And then at the lower limit of integration, this becomes zero
+[0:09:02] because of this t over here, which, takes on a value of zero.
+[0:09:07] So we get a over t.
+[0:09:10] And then from this first term over here, we have minus capital t
+[0:09:16] e to the minus j omega capital t
+[0:09:19] over j omega
+[0:09:21] plus...
+[0:09:23] And then from the integral,
+[0:09:25] we have one over j omega, which we pull to the outside.
+[0:09:28] And then we're integrating e to the minus j omega t, and that is minus one over j omega times e to the minus j omega t
+[0:09:38] evaluated at the limits of integration zero and capital t.
+[0:09:43] Okay.
+[0:09:45] And so then,
+[0:09:47] if we go ahead and we'll just carry this first term down, and then we'll evaluate this second term over here. So we have a over t
+[0:09:57] times minus t e to the minus j omega capital t
+[0:10:02] over j omega.
+[0:10:04] And then we have
+[0:10:08] minus one over,
+[0:10:10] j omega,
+[0:10:12] the quantity squared.
+[0:10:14] Okay. So that gives us,
+[0:10:17] minus
+[0:10:19] one over
+[0:10:21] j omega, the quantity squared.
+[0:10:23] And then,
+[0:10:25] we have e to the minus j omega t evaluated capital t minus, the same thing evaluated at zero. That is e to the minus j omega capital t minus one.
+[0:10:37] Okay. And then,
+[0:10:40] if we just
+[0:10:42] rearrange this slightly,
+[0:10:44] we'll have a over t, and then
+[0:10:48] we'll factor out an omega squared in the denominator.
+[0:10:52] Right? That takes this omega squared out here. Then we have j squared in the denominator.
+[0:10:57] That becomes minus one that cancels out this plus sign.
+[0:11:01] Alright?
+[0:11:03] And then from this term over here, we'll get a
+[0:11:08] j omega
+[0:11:09] in, the numerator. Okay. So we have a over t omega squared,
+[0:11:15] and then we have one
+[0:11:18] plus
+[0:11:20] j omega t
+[0:11:22] times e to the minus j omega t
+[0:11:27] minus one. Alright? So
+[0:11:32] so this is what we get finally for I sub s of
+[0:11:37] omega. Okay?
+[0:11:44] So now with this, what we want to do is we want to go back to
+[0:11:51] the circuit up here. Alright?
+[0:11:54] And,
+[0:11:55] we want to figure out this output voltage v out in the frequency domain.
+[0:12:01] And the way that we can do that is to compute,
+[0:12:05] in the frequency domain, this current I two of omega,
+[0:12:09] which we can do by current division since we know that the total current is I sub s of omega,
+[0:12:16] and that current gets divided between I one and I two since this branch and these, this part of the circuit here are in parallel.
+[0:12:25] Alright. So we can get I two by current division. And then once we have I two, then v out is just the impedance associated with the capacitor,
+[0:12:34] which is one over j omega c times I two.
+[0:12:38] Alright. So, what we wanna do next then is to analyze
+[0:12:50] the circuit
+[0:12:52] in the frequency domain
+[0:12:58] with
+[0:12:59] the impedance of the capacitor
+[0:13:02] being one over j omega c.
+[0:13:05] Okay. So if we do that, then as I was describing,
+[0:13:10] the current I two in the frequency domain can be obtained by current division. So that's going to be r one, the impedance of
+[0:13:20] the other branch of the two parallel branches
+[0:13:23] divided by the sum of the impedances of the two branches,
+[0:13:27] which is r one plus r two plus
+[0:13:31] one over j omega c.
+[0:13:33] All of this times the total current that gets divided I sub s. Right? And then once we have I two,
+[0:13:42] then
+[0:13:43] v out is just going to be the impedance of the capacitor
+[0:13:48] times I two since v out is the voltage across the capacitor and I two is the current through the capacitor. So that's going to be one over j omega c
+[0:13:58] times I two.
+[0:14:01] And,
+[0:14:02] I two is given by this expression here, where I s is given by this expression over here.
+[0:14:12] Okay.
+[0:14:13] So now
+[0:14:16] this means that we can write v out
+[0:14:21] as being equal to,
+[0:14:26] this expression here I two times one over j omega c. Right? So we're gonna have a factor of j omega c that we're introducing in the denominator.
+[0:14:36] So what we get then is in the numerator, we still have r one.
+[0:14:40] Alright. That's this r one from up here. And in the denominator, when we multiply this by j omega c, we get one
+[0:14:48] from this one over j omega c times j omega c plus
+[0:14:53] j omega
+[0:14:54] times r one plus r two
+[0:14:57] times c.
+[0:14:59] All this times
+[0:15:00] I sub s.
+[0:15:02] I sub s is given,
+[0:15:05] by this expression up here. Okay. This is a
+[0:15:10] plus sign here. Alright?
+[0:15:12] And so if we take that and we substitute it in here for I sub s,
+[0:15:19] then what we get is that v m is equal to a times r one
+[0:15:26] over t times omega squared.
+[0:15:30] K. We'll try to keep these all, visible. Right? So we have a over t omega squared times r one. That gives us this factor here.
+[0:15:41] Then we have
+[0:15:43] what's in the square brackets,
+[0:15:45] for I sub s up here divided
+[0:15:49] by this denominator over here. Okay. So we have
+[0:15:54] one plus
+[0:15:58] j omega t times e to the minus j omega t
+[0:16:09] minus one in the numerator
+[0:16:11] divided by
+[0:16:13] one plus j omega
+[0:16:15] r one plus r two times c
+[0:16:20] in the denominator.
+[0:16:22] Okay. So now this is our expression for v out.
+[0:16:26] And,
+[0:16:27] to work with this further,
+[0:16:31] what we are going to do is we're going to bring this omega squared
+[0:16:36] back in here, and we're going to separate out,
+[0:16:40] this expression into
+[0:16:42] three terms corresponding to these three different terms in,
+[0:16:47] the numerator. So that'll give us a one, a r one over t.
+[0:16:54] And then we will have,
+[0:16:56] for this first term here corresponding to the one, it is e to the minus j omega t
+[0:17:03] divided by... Now we're bringing the omega squared inside,
+[0:17:07] the square brackets. So we have omega squared times one plus j omega
+[0:17:14] r one plus r two
+[0:17:17] times c. Alright?
+[0:17:20] Then from the second term, right, it's j omega t times e to the minus j omega t in the numerator.
+[0:17:27] This omega will cancel out with one power of omega in the denominator. So we're going to get in the numerator
+[0:17:34] j times t
+[0:17:36] e to the minus j omega t
+[0:17:39] divided by, in the denominator, omega times one plus j omega
+[0:17:45] r one plus r two times c.
+[0:17:51] And then from the third term over here, this minus one in the numerator, we're gonna get minus
+[0:17:58] one over omega squared times one plus j omega
+[0:18:02] r one plus r two times c.
+[0:18:07] Okay.
+[0:18:09] So now we have v out of omega,
+[0:18:14] right, written in this form here, and we are going to need to figure out how to calculate the inverse Fourier transform of this. So, what we're going to need to do is to take this
+[0:18:25] and express it in a way that allows us to,
+[0:18:31] easily identify,
+[0:18:33] say, the frequency side of known Fourier transform pairs or
+[0:18:40] that we can calculate the... Such that we can calculate the Fourier transform,
+[0:18:45] explicitly,
+[0:18:46] relatively easily. Okay. So,
+[0:18:49] let's look at these three terms here. Alright? We can see this
+[0:18:54] third term out here is one that we can deal with, fairly easily. Because if we do a partial fraction expansion of this,
+[0:19:03] then,
+[0:19:04] we'll get this into a form of basically a sum of simple poles,
+[0:19:09] and that's something that we know how to, for which we know how to compute the Fourier transform. Alright?
+[0:19:16] Basically, it's going to be,
+[0:19:18] exponentials.
+[0:19:20] Alright?
+[0:19:21] Then
+[0:19:23] these other terms over here, alright, we have,
+[0:19:28] these exponential factors.
+[0:19:31] The j times capital t here is just a constant, so we don't really need to worry about that. And then we have, various combinations of poles in the denominator.
+[0:19:40] Alright? So we're gonna deal with this term here first,
+[0:19:44] and we will deal with this by computing its partial fraction expansion.
+[0:19:50] And then from there, we'll look at this term over here. We'll compute the partial fraction expansion of
+[0:19:59] just the
+[0:20:00] part...
+[0:20:02] Taking the numerator to be one. So, basically, just the denominator portion of this.
+[0:20:06] We'll figure out how to deal with the exponential later. This first term is the same as this third term over here times e to the minus j omega t. Alright? So by understanding how we can deal with the exponential over here, that will also allow us to deal with this, this particular term.
+[0:20:25] Okay. So we're starting off with this third term on the right.
+[0:20:30] So we're gonna let... Let's define a function. We'll call it capital f one of omega, and we'll take that to be one over
+[0:20:38] omega squared times one plus j omega
+[0:20:43] r one plus r two times c.
+[0:20:49] Okay. I... And then we'll deal with the minus one here later. Alright. So for this, alright, what we want to do is to compute
+[0:21:00] its partial fraction expansion.
+[0:21:02] Right? So that's gonna be k one over omega plus k two over
+[0:21:08] omega squared
+[0:21:10] plus l one over one plus j omega
+[0:21:15] r one plus r two times c. Right? And k one, k two, and l are just constants. Alright? And we saw, when we talked about Laplace transforms, how we can calculate these.
+[0:21:29] Okay. K two is equal to,
+[0:21:32] right, omega squared times f one of omega.
+[0:21:36] Right? Evaluated at
+[0:21:39] omega equal to zero.
+[0:21:41] And, if we just take this expression here for f one multiplied by omega squared, so we cancel out this omega squared in the denominator, evaluate this as a may... At omega equal to zero, we can see this is just one.
+[0:21:56] Then k one
+[0:21:58] is equal to the derivative
+[0:22:01] with respect to omega
+[0:22:03] of omega squared f one of omega
+[0:22:08] evaluated at omega equal to zero again.
+[0:22:11] Okay?
+[0:22:13] And,
+[0:22:15] for this, right, if we have omega squared times f one, that's one over one plus j omega r one plus r two times c.
+[0:22:23] And if we take the derivative of that with respect to
+[0:22:28] omega,
+[0:22:29] then we will get in the numerator
+[0:22:32] minus j
+[0:22:34] times r one plus r two times c
+[0:22:38] divided by the denominator squared. So one plus j omega times r one plus r two times c, the quantity squared.
+[0:22:46] This evaluated at omega equal to zero.
+[0:22:50] When we set omega equal to zero, the denominator becomes one. So this is now minus j times r one plus r two
+[0:22:59] times c. Alright?
+[0:23:02] And then finally,
+[0:23:05] for the residue l one,
+[0:23:08] that is given by one plus j omega times r one plus r two times c times f one of omega.
+[0:23:18] This evaluated at omega equal to
+[0:23:22] its value at the pole, which is j times one over
+[0:23:27] r one plus r two times c. Okay.
+[0:23:31] And,
+[0:23:33] if we take one plus j omega times r one plus r two times c, multiply it by f one of omega, right, then we're just going to get one over omega squared.
+[0:23:42] And,
+[0:23:43] if we calculate one over omega squared for this value of omega, then we're going to get minus
+[0:23:50] r one plus r two, the quantity squared times c squared.
+[0:23:55] Okay. So those are our three, residues that we need for the,
+[0:24:00] partial fraction expansion of this function f one of omega. Okay?
+[0:24:05] And then
+[0:24:07] that gives us the result
+[0:24:10] that f one of omega is equal to,
+[0:24:15] k one
+[0:24:18] over omega. Right? So that's k one is this. So minus j
+[0:24:23] times r one plus r two times c
+[0:24:27] over omega over omega
+[0:24:29] plus k two over omega squared. K two is one, so plus one over omega squared.
+[0:24:37] And then
+[0:24:38] plus l one over one plus j omega r one plus r two c. So l one is this. So we have minus
+[0:24:47] r one plus r two squared times c squared divided by one plus j omega
+[0:24:54] r one plus r two times c.
+[0:24:57] Okay. So now
+[0:25:00] we have f one of omega in a form with these three terms here where,
+[0:25:07] we can compute its
+[0:25:10] inverse Fourier transform. Right? Taking this back to the time domain using various entries from,
+[0:25:17] the table in ULEB. That's table 13 dash four that contains,
+[0:25:23] common Fourier transform pairs.
+[0:25:25] Alright. So then from here,
+[0:25:29] from
+[0:25:32] Ulaby et al, table
+[0:25:36] 13 dash four,
+[0:25:40] right, the results that are going to be relevant
+[0:25:43] are that
+[0:25:45] the sine function
+[0:25:48] of t,
+[0:25:49] right,
+[0:25:51] forms a Fourier transform pair with two over j omega,
+[0:25:57] then that the absolute value of t
+[0:26:01] forms a Fourier transform pair with minus two
+[0:26:05] over omega squared,
+[0:26:07] and then that e to the minus a t times u of t
+[0:26:11] forms a Fourier transform pair with one over a plus j omega.
+[0:26:19] Okay.
+[0:26:20] So using these results
+[0:26:23] and what we computed for f one of omega up here, then what we get is that for this first term over here,
+[0:26:32] right, we get... We use this result. Right? This Fourier transform pair, the sine of t, forms a Fourier transform pair with two over j omega.
+[0:26:41] And... Right. So we get that f
+[0:26:45] one of t.
+[0:26:47] Right? The inverse Fourier transform of f one of omega up here is...
+[0:26:52] The first term is going to give us r one plus r two times c over two
+[0:27:00] times the sine of t.
+[0:27:02] Alright?
+[0:27:04] Then the second term, one over omega squared,
+[0:27:07] okay, is going to give us minus one half times the absolute value of t.
+[0:27:13] So minus one half times the absolute value of t.
+[0:27:17] And then this third term over here is going to give us,
+[0:27:23] minus r one plus r
+[0:27:26] two times c.
+[0:27:28] Right? We're gonna pull out a factor of r one plus r two times c from the denominator. They cancels with one power of those up here, and we will have,
+[0:27:39] one over r one plus r two c plus j omega. And then the end result of that is that this third term gives us,
+[0:27:50] in the time domain,
+[0:27:52] r one plus r two times c
+[0:27:55] times e to the minus t
+[0:27:59] over
+[0:28:00] the quantity r one plus r two times c
+[0:28:04] times u of t.
+[0:28:08] Okay. So that is
+[0:28:10] the
+[0:28:11] Laplace transform... The Fourier transform
+[0:28:15] this function f one of t. Okay.
+[0:28:18] So we're gonna keep that result in mind because we're gonna use it later.
+[0:28:26] Okay. Now
+[0:28:30] let's go back
+[0:28:32] to v out. Right. This is v out.
+[0:28:38] Okay. And let's think about how to deal with this term over here. So as an intermediate step to dealing with this term, then what we're going to do is we're gonna think about a function
+[0:28:49] in the frequency domain that is just one over omega times the quantity one plus j omega r one plus r two times c.
+[0:28:58] Alright?
+[0:29:00] So let us... Let
+[0:29:02] now another function.
+[0:29:05] We'll call it f two of omega.
+[0:29:08] We'll take that to be one over omega times one plus j omega
+[0:29:12] times r one plus r two times c. Right?
+[0:29:17] And
+[0:29:19] we want to perform a partial partial
+[0:29:22] fraction expansion of this. Okay? So we're gonna get k one over omega
+[0:29:29] plus
+[0:29:30] l one over one plus j omega times r one plus r two times c.
+[0:29:38] Alright?
+[0:29:40] And we need to compute,
+[0:29:42] these residues k one and l one.
+[0:29:46] So k one, right, we know is just going to be omega times f two of omega
+[0:29:53] evaluated at omega equal to zero. Okay? And so if we multiply f two by omega, we cancel out this omega in the denominator. We evaluate what's left at omega equal to zero. That's just one.
+[0:30:05] Okay?
+[0:30:08] Then
+[0:30:10] we have l one,
+[0:30:13] and that is one plus j omega times the quantity r one plus r two times c times
+[0:30:21] f two of omega evaluated at omega equal to
+[0:30:25] j
+[0:30:28] times one over
+[0:30:30] r one plus r two times c.
+[0:30:33] Okay?
+[0:30:34] And if we if we take one plus j omega r one plus r two times c, multiply by f two of omega, then what we get is just one over omega. We're gonna evaluate that at this value of omega over here. And so that gives us minus j
+[0:30:51] times r one plus r two times c. Okay?
+[0:30:58] And so that means that
+[0:31:02] f two of omega,
+[0:31:04] right, it's partial fraction expansion is given over here with k one equal to one, l one equal to minus j times the quantity r one plus r two times c. So f two of omega then is one over omega
+[0:31:19] minus
+[0:31:20] j
+[0:31:22] times r one plus r two times c
+[0:31:26] divided by
+[0:31:28] one plus j omega
+[0:31:30] r one plus r two
+[0:31:32] times c. Alright?
+[0:31:35] So now here...
+[0:31:37] Okay. These are... Once again, these are
+[0:31:40] results
+[0:31:41] in the frequency domain that we can look up in,
+[0:31:45] Ulaby et al table 13 dash four. And using that, then, we can directly write down what the corresponding
+[0:31:54] inverse trans... Inverse Fourier transformed time domain functions are. So now, again,
+[0:32:01] at this point,
+[0:32:04] we're using results
+[0:32:09] from
+[0:32:12] Ulaby et al,
+[0:32:15] table 13 dash four, alright,
+[0:32:19] then what we get is that f two...
+[0:32:23] Oops.
+[0:32:29] F t, okay, is equal to... So for one over omega, right, we use the,
+[0:32:40] Fourier transform pair that the sine of t forms a Fourier transform pair with two over j omega or equivalently,
+[0:32:48] one over omega forms a Fourier transform pair with j over two times the sine of t.
+[0:32:54] So we have
+[0:32:56] j over two times the sine
+[0:33:00] of t from the one over omega, and then from minus j times r one plus r two c over one plus j omega r one r two c,
+[0:33:11] then,
+[0:33:12] we use
+[0:33:16] this,
+[0:33:17] Fourier transform pair over here. And what we get is that,
+[0:33:23] we have minus j
+[0:33:25] times e
+[0:33:27] to the minus t
+[0:33:29] over
+[0:33:30] r one plus r two times c
+[0:33:35] times u of c. Okay? So
+[0:33:42] this is the inverse Fourier transform of f two of omega.
+[0:33:48] Okay. So now
+[0:33:50] what we want to do is to go back to our expression for
+[0:33:55] v out over here
+[0:33:59] and write this in terms of our functions f one of omega and f two of omega
+[0:34:07] and whatever else we need.
+[0:34:10] And if we do that,
+[0:34:14] then what we get
+[0:34:19] is the v out
+[0:34:21] of omega
+[0:34:23] is a r one over t.
+[0:34:26] Okay. That's our overall,
+[0:34:28] factor out in front. And then from that first
+[0:34:33] term in our expression for v out, that we had up above, we get e to the minus j omega t times
+[0:34:43] f one of omega. Right? That's
+[0:34:51] this term over here. Alright? Because f one of omega is just this one over omega squared or it's it's one over omega squared times this quantity in the parentheses here.
+[0:35:02] Alright? This second term is going to be j times t times e to the minus j omega t times f two of omega. Right? Because f two of omega was one over omega times this quantity in the parenthesis. And then this third term over here is just going to be minus f one of omega.
+[0:35:23] So if we come back down here and write that down, the second term is plus j times t times e to the minus j omega t times
+[0:35:34] f two omega,
+[0:35:35] and then the third term is minus f one
+[0:35:40] of omega.
+[0:35:42] Okay. So, we know how to transform,
+[0:35:45] f one of omega, to the time domain. Right? This will just give us f one of t, right, which we calculated
+[0:35:56] up here.
+[0:35:58] Alright. These other two terms have these exponential functions either the minus j omega t in them. Right? The j t here is just a constant, so we don't really have to
+[0:36:09] work too hard to deal with that. We just keep multiplying by it. Alright? But to deal with the exponential factors,
+[0:36:17] then what we want to do is to take advantage of
+[0:36:21] what's known as the time shift property of Fourier transforms. And that's something that we discussed in class and also it's in Ulaby
+[0:36:30] at all table 13 dash five, the table of Fourier transform properties.
+[0:36:36] Okay. So to transform
+[0:36:43] the app of omega
+[0:36:47] to the time domain,
+[0:36:52] Alright. What we also need to do is,
+[0:36:54] we can note,
+[0:36:57] the time shift property.
+[0:37:07] For a transforms.
+[0:37:13] Okay. And this is in...
+[0:37:17] You'll be at all
+[0:37:19] table thirteen dash five.
+[0:37:23] Okay.
+[0:37:24] And what the time shift property,
+[0:37:26] tells us is that f of t minus some constant t naught in the time domain
+[0:37:33] forms a Fourier transform pair with either the minus j omega
+[0:37:37] t naught times f of omega, where f of t and f of omega themselves form a Fourier transform pair. Right? So this says that
+[0:37:49] an exponential phase factor
+[0:37:52] in
+[0:37:53] the frequency domain corresponds to a shift in time in the time domain. So that will allow us to deal with these exponential factors that show up here
+[0:38:06] and here in v out of omega. Alright?
+[0:38:11] And so if we use
+[0:38:13] this property here along with
+[0:38:16] the f one of t and the f two of t that we calculated
+[0:38:20] several minutes ago,
+[0:38:22] alright, then what that will finally give us
+[0:38:26] is
+[0:38:31] that v out of t is equal to the following.
+[0:38:34] See if we can keep that there. So it's going to be a r one over t.
+[0:38:42] And then from this first term, this is going to give us, just a,
+[0:38:49] it'll give us small f one of t,
+[0:38:53] but evaluated
+[0:38:55] at a time shifted time t minus capital t.
+[0:39:00] Okay. And so that is going to then be... If you go back and look at, what we had for f one of t.
+[0:39:09] Right? It's this. So we're gonna get
+[0:39:13] these three terms evaluated not a t, but a t minus capital t. Okay?
+[0:39:22] So if we write those down, then it's going to be
+[0:39:26] r one plus r two times c
+[0:39:30] over two
+[0:39:31] times the sine
+[0:39:33] of t minus capital t
+[0:39:36] minus
+[0:39:38] one half the absolute value, not of t, but of t minus capital t
+[0:39:43] minus
+[0:39:45] r one plus r two times c
+[0:39:48] times e to the minus, and then it's t minus capital t divided by r one plus r two times c
+[0:39:57] times u of t minus capital t.
+[0:40:01] Okay?
+[0:40:04] Then
+[0:40:05] here from this second term, we're going to have
+[0:40:10] lowercase f two of t times j t, but f two of t is going to be evaluated not at t but at t minus capital t. So f two was given by,
+[0:40:23] this expression over here. So we're going to evaluate this at t minus capital t and multiply it by j times t. Alright?
+[0:40:33] And so if we do that,
+[0:40:37] alright, then we get
+[0:40:39] minus
+[0:40:41] capital t over two
+[0:40:44] times the sine of t minus capital t,
+[0:40:47] alright,
+[0:40:48] plus
+[0:40:50] capital t
+[0:40:52] times
+[0:40:53] e to the minus
+[0:40:55] t minus capital t over
+[0:40:58] r one plus r two times c
+[0:41:01] times u of
+[0:41:04] t minus capital t.
+[0:41:07] And then finally,
+[0:41:10] we will have minus,
+[0:41:12] and then from f one of omega, when we perform the inverse Fourier transform of that, we just get... We get minus f one of t.
+[0:41:21] Alright? And so that is going to be minus
+[0:41:27] r one plus r two
+[0:41:29] times c over two times
+[0:41:32] the sine of t
+[0:41:35] plus
+[0:41:36] one half times the absolute value of t plus
+[0:41:42] r one plus r two times c times e to the minus t
+[0:41:47] over r one plus r two times c
+[0:41:53] times u of t. Alright?
+[0:41:57] And
+[0:41:58] we will write this in a slightly different way now for the final result,
+[0:42:05] alright, just by grouping the terms
+[0:42:07] a little bit differently. So we have a r one over t out in front.
+[0:42:14] And then to start off with, we will put together,
+[0:42:17] these
+[0:42:18] terms here that have the exponential
+[0:42:23] exponentially
+[0:42:25] decaying functions over here. Alright?
+[0:42:28] And so first, we'll have
+[0:42:31] the exponentially decaying function evaluated at, just t.
+[0:42:35] So we will have
+[0:42:37] r one plus r two times c times e to the minus t
+[0:42:43] over r one plus r two c
+[0:42:48] times u of t. Alright. That's this term here.
+[0:42:53] And then for these two terms here,
+[0:42:56] we're going to have
+[0:43:00] t minus
+[0:43:02] the quantity r one plus r two times c. Both of those times
+[0:43:08] the exponential factor now evaluated at t, minus capital t times the unit step function at t minus capital t. So we're going to have plus
+[0:43:18] t minus
+[0:43:20] r one plus r two times c
+[0:43:25] times e to the minus
+[0:43:28] t minus capital t over r one plus r two
+[0:43:33] times c
+[0:43:34] times u of t minus
+[0:43:36] capital t. Okay?
+[0:43:39] So that takes care of this term
+[0:43:42] and this term.
+[0:43:44] Then we will have our terms that are proportional to the sine function. Again, we will start with,
+[0:43:52] this one that is not time shifted.
+[0:43:55] So we have minus
+[0:43:58] one half
+[0:43:59] r one plus r two times c
+[0:44:04] times the sine of t. Right? That's this function here... This term here. And then we'll have
+[0:44:12] these two terms here,
+[0:44:15] and we'll write those as minus
+[0:44:18] one half
+[0:44:20] times t
+[0:44:22] minus
+[0:44:23] the quantity r one plus r two c, alright, times
+[0:44:29] the sine of
+[0:44:32] t minus capital t. Right? So that's this term
+[0:44:35] and this term.
+[0:44:38] And then finally,
+[0:44:39] we will have,
+[0:44:41] the terms that have the absolute
+[0:44:44] value,
+[0:44:46] of t.
+[0:44:47] Okay. So we have plus
+[0:44:50] one half times the absolute value of t, that's this term,
+[0:44:56] minus
+[0:44:58] one half times the absolute value of t minus capital t. That is
+[0:45:04] this term here,
+[0:45:07] and that is everything.
+[0:45:15] Okay. So that is the result from
+[0:45:18] for part a.
+[0:45:20] Alright?
+[0:45:22] So we've calculated analytically an expression for v out of t,
+[0:45:28] in terms of, the parameters r one, r two, c, capital a, and capital t. Alright?
+[0:45:36] Part b
+[0:45:38] asked us to...
+[0:45:40] If we go back to the statement of the problem back here,
+[0:45:49] Okay. It asked us to plot v out using these numerical values, alright, for these different parameters.
+[0:45:59] And so for that, I...
+[0:46:02] What I will do is I will just paste in
+[0:46:09] from the solutions.
+[0:46:14] K. So let me do that on the other
+[0:46:17] computer here.
+[0:46:39] Okay. Let's see if that pasted in
+[0:46:43] here.
+[0:46:46] Okay. It should be showing up soon.
+[0:46:56] Okay. There it is. So,
+[0:46:59] so I sub s of t, remember, is this function here. Right?
+[0:47:04] And then
+[0:47:06] v out. Right? Basically, what you can see is that
+[0:47:10] as I sub s is increasing, then we're gradually... Basically, we're gradually charging up the capacitor. Right? Because v out is the voltage across the capacitor. So we're gradually charging it up. When the current turns off,
+[0:47:24] then we are discharging
+[0:47:27] the
+[0:47:31] we're discharging the capacitor. Alright? So it discharges like this. Okay. So that is part b.
+[0:47:38] Alright?
+[0:47:39] Then
+[0:47:42] part c
+[0:47:43] is that we change
+[0:47:47] c
+[0:47:49] from
+[0:47:50] point three three microfarads
+[0:47:53] to
+[0:47:54] point three three millifarads.
+[0:47:57] Okay?
+[0:47:58] And, if we do that, right, basically, what we should expect is that the time constant,
+[0:48:05] for
+[0:48:07] discharging
+[0:48:09] should
+[0:48:10] increase.
+[0:48:11] Okay?
+[0:48:12] And so
+[0:48:15] what we'll do here is we will
+[0:48:22] paste that in as well.
+[0:48:44] Yes. Grab this.
+[0:48:50] K.
+[0:48:51] And
+[0:48:58] Paste that in,
+[0:49:04] and we will wait for that to show up.
+[0:49:22] Okay. And it looks like this. So, basically, what we see is that...
+[0:49:29] Right. The charging doesn't necessarily look that different. But, actually, it is different because
+[0:49:35] if you look up here,
+[0:49:38] right, it's charging up to...
+[0:49:41] This is times
+[0:49:42] 10 to the minus...
+[0:49:46] Right. So so on this scale here, it's 1,500.
+[0:49:50] Alright?
+[0:49:52] This scale up here, this is only single digits. Okay? So,
+[0:49:56] it is... The capacitor is actually charging up much more slowly, and it's also discharging,
+[0:50:01] much more slowly. Alright? So, basically, what happens is that when the capacitance is increased,
+[0:50:06] then the characteristic time constant, which is the quantity r one plus r two times c,
+[0:50:11] correspondingly
+[0:50:13] increases as well. And so the charging and discharging of the capacitor is much slower,
+[0:50:18] which is what the numerical results basically show us. Right? So when the capacitance
+[0:50:24] is increased
+[0:50:29] from
+[0:50:30] point three microfarads
+[0:50:33] to point three three
+[0:50:36] millifarads,
+[0:50:37] right, then what happens is that the exponential
+[0:50:49] time constant,
+[0:50:50] r one plus r two times c, right, for the
+[0:50:58] capacitor charging
+[0:51:03] and decay.
+[0:51:09] And then correspondingly,
+[0:51:15] v out of t,
+[0:51:19] alright,
+[0:51:26] it increases
+[0:51:29] by
+[0:51:31] factor of 10 to the third. Alright? And we see that in the numerical results.
+[0:51:37] Okay. So what are the key points if we go back and look at what we did here?
+[0:51:44] What are the key points and,
+[0:51:46] perhaps lessons,
+[0:51:48] that we can draw from this?
+[0:51:50] Okay. The first is that... Alright. Once again, if you watch some of the other, examples, when we're doing circuit analysis by Fourier transform,
+[0:52:00] what we do essentially is
+[0:52:03] we take the known source voltages and or occurrence,
+[0:52:08] and we compute their Fourier transforms so we see what
+[0:52:12] different frequency components
+[0:52:15] those source voltages and or occurrence contain. Right? Then we analyze the circuit in the frequency that is the phasor domain so that we obtain the response of the circuit, whatever quantity we are trying to solve for as a function of frequency. Right? That works at each different frequency. Right? And so we get a function of frequency.
+[0:52:37] And then once we have that function of frequency,
+[0:52:41] then we perform the inverse Fourier transform
+[0:52:46] to
+[0:52:47] bring it back to the time domain, which is where we typically want our,
+[0:52:51] final result. And to do that, what we wanna do is to take our function
+[0:52:56] in the frequency domain
+[0:52:58] and put it into a form that,
+[0:53:01] allows us to more straightforwardly
+[0:53:04] compute or look up the inverse Fourier transform. Right? Either by looking at, so the common Fourier transform pairs in,
+[0:53:13] table 13 dash four of Ulaby or, by taking advantage of,
+[0:53:20] some of the,
+[0:53:22] known properties of, Fourier transforms, which are listed and summarized in table 13 dash five. Okay. So,
+[0:53:31] the first point is that if we're doing
+[0:53:37] a Fourier transform
+[0:53:43] circuit analysis,
+[0:53:45] then,
+[0:53:47] essentially, what we're doing... What we want to do is we wanna compute
+[0:53:53] the Fourier transform
+[0:53:57] or transforms of
+[0:54:00] our known source
+[0:54:05] voltages
+[0:54:07] and or currents,
+[0:54:10] Right. That tells us,
+[0:54:13] what is... What are the components of those known source voltages and or currents at different frequencies?
+[0:54:19] And then once we have that, we can analyze the behavior of the circuit as a function of frequency. Right? So, essentially, add each, different frequency and the frequency that is basically the phasor domain. Right? So then
+[0:54:36] we analyze the circuit
+[0:54:40] and the frequency,
+[0:54:42] right, basically, that is the phasor
+[0:54:48] domain.
+[0:54:49] Alright?
+[0:54:51] Once we've obtained our result in the frequency domain... Right? So once the desired voltage or current
+[0:55:05] right. Here it goes. And or current
+[0:55:09] is obtained
+[0:55:15] in the frequency domain,
+[0:55:19] then what we want to do is,
+[0:55:22] to put that function or those functions in a form that is easily transformed back to the time domain using either known Fourier transform pairs or,
+[0:55:35] the various properties of Fourier transforms. Right? So we wanna use
+[0:55:40] known
+[0:55:43] Fourier transform pairs.
+[0:55:50] Right? Ulaby.
+[0:55:52] That's in Ulaby table
+[0:55:55] 13 dash four
+[0:55:59] and or for you transform properties.
+[0:56:04] Those are in table
+[0:56:06] 13 dash five, right, to compute
+[0:56:15] the inverse
+[0:56:20] for a transforms
+[0:56:25] and thereby to obtain
+[0:56:28] our results
+[0:56:31] in the time domain,
+[0:56:35] okay, which is where we typically want them.
+[0:56:38] And so
+[0:56:41] what we did with respect to the latter in this particular example was we used the time shift property of Fourier transforms
+[0:56:49] to handle exponential
+[0:56:51] factors that were present in the frequency domain. Right? So here,
+[0:56:58] we used the time shift property.
+[0:57:09] Right? A four d transforms
+[0:57:15] to handle
+[0:57:20] the exponential factors
+[0:57:25] that were present in the frequency domain.
+[0:57:29] Okay. That's not the only way to do it, but, I think in this case, it was actually the simplest way to do it.
+[0:57:37] Okay. So that is everything for this example, and I'll stop the recording now.

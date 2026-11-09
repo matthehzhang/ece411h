@@ -1,0 +1,129 @@
+[0:00:03] Okay. So this is Ulaby
+[0:00:05] problem 9.4,
+[0:00:07] and this is an example
+[0:00:12] of, calculating the resonant frequency
+[0:00:18] of a simple
+[0:00:21] RLC circuit.
+[0:00:26] Okay. So we will start as usual by redrawing
+[0:00:30] the circuit. Okay. So
+[0:00:33] our circuit is very simple here.
+[0:00:37] It has a resistor
+[0:00:39] value r,
+[0:00:42] then an inductor of value l,
+[0:00:46] and a capacitor of value c.
+[0:00:52] Okay. And our,
+[0:00:55] circuit parameters here are that r is one
+[0:00:58] kiloohm,
+[0:01:00] l is
+[0:01:02] 10 millihenries,
+[0:01:04] and c
+[0:01:06] is 10 nanofarads.
+[0:01:08] And what we're asked to do here
+[0:01:12] is to determine the resonant frequency
+[0:01:20] of the circuit. And what we mean here by the resonant frequency
+[0:01:24] is the frequency at which the input impedance,
+[0:01:28] right, we'll call that z sub I.
+[0:01:31] Right? That is the impedance,
+[0:01:33] between these two terminals here. Alright? If we were to connect something to these terminals out here, then what would the impedance of this circuit look like? That's what, z sub I is. And the resonant frequency
+[0:01:47] is the frequency at which the input
+[0:01:50] impedance,
+[0:01:54] alright, which we've called z sub I here, is purely real.
+[0:02:03] Okay. So this is a fairly straightforward calculation.
+[0:02:07] Essentially,
+[0:02:08] what we can do to calculate the input impedance is to just calculate the impedance of this resistor
+[0:02:16] in parallel
+[0:02:17] with the series connection of the inductor and the capacitor. Okay. So we can pretty much calculate that directly.
+[0:02:26] Alright. The, input impedance is...
+[0:02:30] Right. Anytime you have two impedances in parallel, then the equivalent impedance is the product, of the two impedances divided by the sum. So,
+[0:02:40] the product
+[0:02:42] is r,
+[0:02:44] and then, the other impedance is,
+[0:02:47] that of the inductor and the capacitor in series with each other. So we have j omega l for the inductor plus one over j omega c for the capacitor.
+[0:02:57] And then we divide by the sum of the impedances,
+[0:03:02] which is r plus j omega l plus one over j omega c. Okay?
+[0:03:09] And if we take this and we multiply both the numerator and the denominator
+[0:03:16] by j omega c, then in the numerator, we get r times one minus omega squared l times c.
+[0:03:25] And in the denominator,
+[0:03:27] we get one
+[0:03:29] minus omega squared l times c plus j omega
+[0:03:33] r c. Okay.
+[0:03:36] So this is now our expression for the input impedance z sub I. And in order to determine,
+[0:03:44] the frequency at which, this quantity is purely real, then what we want to do is to put it in the standard rectangular form. Okay? So to do that, we will, as usual, multiply the numerator and the denominator
+[0:04:00] by the complex conjugate of the denominator. That is by one minus, omega squared l c minus j omega r c. Okay. So if we do that, then what we get
+[0:04:14] is that the input impedance is
+[0:04:17] r times one minus omega squared l c times one minus omega squared l c minus j omega RC.
+[0:04:27] Okay. And then in the denominator,
+[0:04:30] we have basically the magnitude of this,
+[0:04:33] quantity,
+[0:04:34] up here in the denominator squared. So that is going to be one minus omega squared l c,
+[0:04:42] squared
+[0:04:43] plus
+[0:04:44] omega squared r squared
+[0:04:46] c squared. Okay.
+[0:04:49] And
+[0:04:51] if we then take the new... Take this and then in the numerator, separate out the real and imaginary parts,
+[0:05:00] then what we get for the real part is r times one minus omega squared l c times the real part of, this term in the parenthesis here, which is one minus omega squared l c. So we have r
+[0:05:13] times one minus omega squared l c, the quantity squared.
+[0:05:17] And then the imaginary part of the numerator is this minus j omega RC times r times one minus omega squared LC. So we have minus j times omega
+[0:05:29] r squared c
+[0:05:31] times one minus omega squared l c.
+[0:05:35] And then the denominator is still the same. One minus omega squared l c quantity squared plus omega squared r squared
+[0:05:44] c squared. Okay. So now, we can see that...
+[0:05:50] Excuse me.
+[0:05:51] The imaginary part of z sub I is zero
+[0:05:56] when this second term here in the numerator
+[0:06:00] is zero. And we can see that that happens when one minus omega squared l c is equal to zero or equivalently omega is equal to one over root l c. Okay. So, we can easily see now that the imaginary part
+[0:06:17] of z sub I is equal to zero
+[0:06:21] when one minus omega squared l c is equal to zero,
+[0:06:26] which means that omega is equal to one over the square root of l times c.
+[0:06:32] Alright. So that is
+[0:06:34] one over the square root of... And then l, remember, was 10 millihenries.
+[0:06:39] So that is 10 to the minus two. Right? 10 times 10 to the minus three. And then c was 10 nanofarads, so that is 10 to the minus eight.
+[0:06:49] So times 10 to the minus eight.
+[0:06:53] Okay. So that is,
+[0:06:54] the square root of 10 to the minus 10, which is 10 to the minus five. It's in the denominator. So that then becomes 10 to the five
+[0:07:04] radians per second. Alright. That is the resonant frequency
+[0:07:09] of the circuit. Okay. And that's basically,
+[0:07:13] that's essentially all there is to,
+[0:07:15] solving this problem. So what are the key points here?
+[0:07:22] Okay. One
+[0:07:24] is that, this was really just a very simple phasor analysis. Alright? So the phasor analysis
+[0:07:34] of this circuit,
+[0:07:38] it really was relatively simple.
+[0:07:44] Okay.
+[0:07:47] But then the second part of this is,
+[0:07:50] kind of, what was the point of this problem? Or, perhaps more precisely,
+[0:07:56] you know, what happens
+[0:08:00] at the resonant frequency?
+[0:08:08] Okay.
+[0:08:09] And
+[0:08:12] if we look up at the circuit over here, alright, we can see that,
+[0:08:19] basically, the resonant frequency omega equal to one over root LC,
+[0:08:23] that corresponds to the frequency at which the
+[0:08:27] impedances
+[0:08:28] of the inductor and the capacitor. Right? Since they're in series, we just add those together. And at the resonant frequency,
+[0:08:36] those impedances
+[0:08:37] cancel each other out because the impedance of the inductor is j omega l. Right? The impedance of the capacitor is one over j omega c or equivalently minus j over omega c. Right? So it's possible at the resonant frequency for the total impedance to be zero.
+[0:08:55] Then this branch here will be a short circuit.
+[0:08:59] And when this is a short circuit, then the resistor ends up not playing any role in the in the circuit. And so the input impedance will actually be zero.
+[0:09:10] Okay. So that's what the resonant frequency corresponds to,
+[0:09:15] in this case. Alright? And in fact, from this expression here, we can see that indeed because of this one minus omega squared LC squared factor here in the real part of the e sub I, right, we can easily confirm mathematically that
+[0:09:31] at the resonant frequency,
+[0:09:33] the real part and the imaginary part of the input impedance are zero. So the total input impedance is is zero. So what's happening here at the resonant frequency is,
+[0:09:43] in this particular case,
+[0:09:48] the input impedance
+[0:09:50] goes to zero. Right?
+[0:09:54] And that happens because
+[0:09:56] the branch
+[0:10:00] with the inductor
+[0:10:02] and the capacitor in series,
+[0:10:08] it has zero impedance.
+[0:10:12] So, basically, you have a short circuit
+[0:10:19] between,
+[0:10:21] the input terminals.
+[0:10:26] Okay. And so, if you have, say, even a little bit of voltage,
+[0:10:31] that's applied between those terminals, then you go... Get a very large current. So very large response for a very small input.
+[0:10:38] And, that is, in general, characteristic that you often see in a resonant circuit or other resonant system. Okay? And we see that very explicitly
+[0:10:50] in, the case of this very simple circuit here.
+[0:10:54] Okay. So that's everything for this example,
+[0:10:57] and I will now stop the recording.

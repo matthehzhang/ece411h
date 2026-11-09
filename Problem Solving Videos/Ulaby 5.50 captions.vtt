@@ -1,0 +1,431 @@
+WEBVTT
+
+00:00:05.000 --> 00:00:13.000
+Okay, so this is an example of a, a first order RL circuit. Okay, so this example here.
+
+00:00:13.000 --> 00:00:18.000
+Is a first order.
+
+00:00:18.000 --> 00:00:21.000
+RL circuit.
+
+00:00:21.000 --> 00:00:34.000
+Okay, the solution is relatively straightforward. But it's sort of interesting that it ends up being a first order circuit that is it's governed by a first order differential equations.
+
+00:00:34.000 --> 00:00:45.000
+Even though it has 2 inductors. Okay, and as we go through it, then we'll see why that turns out to be the case.
+
+00:00:45.000 --> 00:00:51.000
+Okay, so let's go ahead and get started. This is you will be, problem 5.50.
+
+00:00:51.000 --> 00:00:59.000
+Alright. Okay, so, the first thing that we'll do is we will, redraw the circuit here.
+
+00:00:59.000 --> 00:01:04.000
+Okay, so we have a current source.
+
+00:01:04.000 --> 00:01:11.000
+Okay, then we have a resistor.
+
+00:01:11.000 --> 00:01:19.000
+Or not. Okay, and then we have switch.
+
+00:01:19.000 --> 00:01:26.000
+Okay, that has 2 possible positions. Okay, position. Here we'll label this as position one.
+
+00:01:26.000 --> 00:01:32.000
+We'll label this as position 2. And at t equal to 0, the switch moves from position one.
+
+00:01:32.000 --> 00:01:44.000
+To position 2, right? And then for the rest of the circuit. We have. And inductor in series with a resistor.
+
+00:01:44.000 --> 00:01:55.000
+Like this. And then. Another combination like that over here. So this inductor will call L one.
+
+00:01:55.000 --> 00:02:02.000
+This one will call R one. This resistor will call R 2 this inductor we will call L 2.
+
+00:02:02.000 --> 00:02:15.000
+Okay, and we have currents. I won. And I too, right, which I basically are the current through the inductors, alright, that we want to solve for.
+
+00:02:15.000 --> 00:02:25.000
+Okay. And, our parameters here are that I not is equal to 6 million. Okay, or not.
+
+00:02:25.000 --> 00:02:36.000
+. One is equal to 10 ohms. R 2 is equal to 40 ohms.
+
+00:02:36.000 --> 00:02:45.000
+L one is equal to. One Henry. And L 2 is equal to 2 Henry's.
+
+00:02:45.000 --> 00:02:54.000
+Okay, and then, what happens here is that the switch.
+
+00:02:54.000 --> 00:03:00.000
+Moves from position one.
+
+00:03:00.000 --> 00:03:03.000
+To position 2.
+
+00:03:03.000 --> 00:03:10.000
+At t equal to 0. And given that we want to solve.
+
+00:03:10.000 --> 00:03:14.000
+For I one of T.
+
+00:03:14.000 --> 00:03:23.000
+And I 2 of T. Okay, for T. Being greater than or equal to 0. Okay, so, the first step.
+
+00:03:23.000 --> 00:03:39.000
+As usual is going to be that we need to determine the initial conditions. . All right. And so to do that, what we want to recognize is that for T less than, right, so the first step here.
+
+00:03:39.000 --> 00:03:45.000
+Is to determine initial conditions.
+
+00:03:45.000 --> 00:03:53.000
+That is, what happens for times less than or equal to 0 and in particular, for t equal to 0.
+
+00:03:53.000 --> 00:03:57.000
+Okay, so for times less than 0.
+
+00:03:57.000 --> 00:04:05.000
+Alright, what we want to do is to recognize that The inductors are going to behave as short circuits.
+
+00:04:05.000 --> 00:04:14.000
+Okay. And so really we just have, these 2 resistors are one in R 2 and then this resistor over here, are not.
+
+00:04:14.000 --> 00:04:28.000
+All right. And so we have a very simple circuit configuration, the current source I not. And we have the resistors are not our one and R 2 in parallel with each other.
+
+00:04:28.000 --> 00:04:37.000
+Okay, so we want to recognize that L one. And L 2. For times less than 0, they behave.
+
+00:04:37.000 --> 00:04:44.000
+As short circuits.
+
+00:04:44.000 --> 00:05:03.000
+Okay, and. So to solve for I one and I 2. For times less than 0 then essentially what we want to do is I, we could use current division, although it's a little bit more complicated when we have, 3 resistors in parallel.
+
+00:05:03.000 --> 00:05:15.000
+All right. Or we can just, do a very simple node voltage analysis. So we can take the voltage, we can take the spot of node here to be our reference node at which the voltage is equal to 0.
+
+00:05:15.000 --> 00:05:27.000
+And then this node up here, we will take. To be a node with voltage V one and We can apply KCL at that node.
+
+00:05:27.000 --> 00:05:35.000
+And that will then eventually allow us to solve for I one and I 2. Okay. So we just do that.
+
+00:05:35.000 --> 00:05:41.000
+Note voltage analysis. We're gonna apply KCL. At the node V one. Right.
+
+00:05:41.000 --> 00:05:58.000
+And so see if we can get all this. On the screen here. So then, for that node, which includes this whole, part of the circuit over here, then the What we wanna do as usual is to take the sum of the outgoing currents.
+
+00:05:58.000 --> 00:06:14.000
+To be equal to 0. So the current going out this way along this branch is minus I 9. Okay, the current flowing down through the resistor or not is V one over R 9.
+
+00:06:14.000 --> 00:06:24.000
+The current flowing down through the resistor R one over here since L one is behaving as a short circuit, it's going to be V one over R one.
+
+00:06:24.000 --> 00:06:32.000
+And then the current flowing. Through R 2 since L 2 is also behaving as a short circuit just going to be V one over R 2.
+
+00:06:32.000 --> 00:06:45.000
+So plus V one over R 2. This is equal to 0. Alright, and so what we have is that Hi, one over R not.
+
+00:06:45.000 --> 00:06:52.000
+Plus one over r one plus one over r 2. Times V one.
+
+00:06:52.000 --> 00:07:00.000
+Is equal to I not. Alright, or if we solve. For V one. And we just substitute in the numerical values that we have.
+
+00:07:00.000 --> 00:07:12.000
+Then V one is going to be equal to I naught. Over here, which is 6 milliamps.
+
+00:07:12.000 --> 00:07:20.000
+Divided by, the quantity one over r naught plus one over r one plus one over r 2, which is going to be.
+
+00:07:20.000 --> 00:07:26.000
+One over 12. Right, because our non is 12 ohms. Plus one over R one.
+
+00:07:26.000 --> 00:07:36.000
+So one over 10 ohms. I plus one over 40 since R 2 is equal to 40. All right.
+
+00:07:36.000 --> 00:07:43.000
+Hmm. And if we just calculate this out, then what we get is that the is equal to 28.
+
+00:07:43.000 --> 00:07:51.000
+Point 8 million volts. Alright. And then once we have V one.
+
+00:07:51.000 --> 00:08:05.000
+Then this is now for times less than 0. Okay, so. To get I one at 0 minus that is a times less than 0, that's going to simply be V one over R one.
+
+00:08:05.000 --> 00:08:19.000
+I too at 0 minus is going to be V one over R 2. Alright, and so what we get then is that I 1 0 minus that is at times less than 0.
+
+00:08:19.000 --> 00:08:24.000
+It's going to be V one over R one. So that's going to be 28.8.
+
+00:08:24.000 --> 00:08:32.000
+Millivolts over R one. 10 ohms. So that's going to be 2 point.
+
+00:08:32.000 --> 00:08:42.000
+8 8. Millions, right? I too, at 0 minus. It's gonna be V one over R 2.
+
+00:08:42.000 --> 00:08:47.000
+So that's 28.8.
+
+00:08:47.000 --> 00:08:57.000
+Millivolts divided by and then R 2 is 40. So this ends up being oh point 7 2.
+
+00:08:57.000 --> 00:09:10.000
+Millions. Okay, so these are the currents. At times less than 0. Alright, but we know also that for inductors The current has to be continuous.
+
+00:09:10.000 --> 00:09:14.000
+If it's not continuous, then the voltage would across the inductor would end up being undefined.
+
+00:09:14.000 --> 00:09:24.000
+Alright, and so since the currents have to be continuous, including at t equal to 0, then we know that I one at 0 has to be also be 2.8 million.
+
+00:09:24.000 --> 00:09:41.000
+I too at T equal to 0 also has to be point 7 2 million. Alright, so now the argument that we make is that Since the inductor currents.
+
+00:09:41.000 --> 00:09:47.000
+Have to be continuous.
+
+00:09:47.000 --> 00:09:51.000
+Alright, then.
+
+00:09:51.000 --> 00:10:03.000
+We also have that I 1. 0 is 2.8 8. Millions. And I too at t equal to 0.
+
+00:10:03.000 --> 00:10:13.000
+Is 0 point 7 2. Millions. So we want to remember these results. Because we'll use them in a few minutes.
+
+00:10:13.000 --> 00:10:19.000
+Okay, so now we have the initial conditions that we need.
+
+00:10:19.000 --> 00:10:25.000
+The second step then is to formulate
+
+00:10:25.000 --> 00:10:31.000
+The differential equation.
+
+00:10:31.000 --> 00:10:40.000
+I for t greater than or equal to 0. Okay. And we're actually gonna have 2 differential equations, one for I one.
+
+00:10:40.000 --> 00:10:48.000
+And one for I 2. Okay, so Let's go back. And look at the circuit over here.
+
+00:10:48.000 --> 00:10:57.000
+So at t equal to 0, this switch moves from position one to position 2, right? So it's making this connection over here.
+
+00:10:57.000 --> 00:11:05.000
+So that means that V one. Is going to be 0, okay, because Now there's a short circuit.
+
+00:11:05.000 --> 00:11:12.000
+Over here, right, between this node down here and this node up here. So that means that the voltage.
+
+00:11:12.000 --> 00:11:21.000
+Across, this inductor L one and this resistor R one. Alright, that total voltage has to be equal to 0.
+
+00:11:21.000 --> 00:11:32.000
+The voltage across the inductor L one is L one times the I one DT. And then the voltage across the resistor, our one is just I one times R one.
+
+00:11:32.000 --> 00:11:40.000
+So the sum of those has to be equal to 0. Alright, so we get that. L one.
+
+00:11:40.000 --> 00:11:55.000
+Times the I one DT. Plus I one times R one. Has to be equal to 0. Okay, so that is now our differential equation for I one.
+
+00:11:55.000 --> 00:11:57.000
+Alright.
+
+00:11:57.000 --> 00:12:10.000
+Now, we go back up here. We can also see that we have essentially the same differential equation for I 2 except with L 2 and R 2 instead of L one and R one.
+
+00:12:10.000 --> 00:12:24.000
+And the reason, right, is that L one and R one over here. Are in parallel with the combination l 2 and r 2 over here Alright, so the voltage across.
+
+00:12:24.000 --> 00:12:30.000
+R 2 and L 2, which are in series with each other, the voltage across that series combination.
+
+00:12:30.000 --> 00:12:37.000
+Also has to be 0, right? Because the switch is now at position 2 over here. Alright, and so that means that.
+
+00:12:37.000 --> 00:12:48.000
+I 2 times R 2. Plus L 2 times DI 2 DT. That's some has to be equal to 0.
+
+00:12:48.000 --> 00:13:01.000
+Okay, so what we get. For I too is that L 2 times the I 2 DT. That's the voltage across the inductor I too.
+
+00:13:01.000 --> 00:13:08.000
+Plus I 2 times R 2, that's the vulture across the resistor R 2.
+
+00:13:08.000 --> 00:13:20.000
+That also has to be equal to 0. Okay, now we just have to solve. These 2 differential equations, all right, and we can solve each one independent of the other, right?
+
+00:13:20.000 --> 00:13:26.000
+Because this equation only involves I one, this equation only involves I 2. Alright, and so We take this equation over here.
+
+00:13:26.000 --> 00:13:32.000
+We'll work this one out first. Then we get that DI one.
+
+00:13:32.000 --> 00:13:41.000
+DT is equal to minus. R one over L one. Times I one. Alright.
+
+00:13:41.000 --> 00:13:48.000
+R one is 10 ohms. . One is one Henry. So this is minus 10 times I one.
+
+00:13:48.000 --> 00:13:55.000
+Alright. And then the solution to that. Is that I one of T. Is equal to.
+
+00:13:55.000 --> 00:14:03.000
+Some constant A. Times e to the minus 10. T.
+
+00:14:03.000 --> 00:14:12.000
+Alright. And we know that I one at t equal to 0. Has to be 2.8 8 m.
+
+00:14:12.000 --> 00:14:19.000
+So that tells us immediately that A. This constant here has to be 2.8 8 milliamps as well.
+
+00:14:19.000 --> 00:14:29.000
+So what we finally get is I one of T. Is equal to 2.8 8. Times e to the minus 10 t.
+
+00:14:29.000 --> 00:14:33.000
+And that's in Milliamps.
+
+00:14:33.000 --> 00:14:44.000
+So that's our solution for I one. Okay. Now for I 2, we can do essentially the same thing except we're gonna have L 2 and R 2 instead of L one and R one.
+
+00:14:44.000 --> 00:14:50.000
+Alright, so if we take this equation over here. Alright, and just rearrange it a little bit.
+
+00:14:50.000 --> 00:15:01.000
+We get is equal to minus R 2. Over L 2 times I 2. So R 2 is. 40 ohms, L 2 is 2 Henry's.
+
+00:15:01.000 --> 00:15:13.000
+So 40 over 20 or 40 over 2 is 20. So we get minus 20. I too. So that means that I 2 of T.
+
+00:15:13.000 --> 00:15:21.000
+Is equal to some constant, we'll call it now B. Alright, times e to the minus 20.
+
+00:15:21.000 --> 00:15:29.000
+Okay. Now here we worked out earlier that our initial condition for I 2 is that I too at t equal to 0 is point 7 2 million.
+
+00:15:29.000 --> 00:15:39.000
+So that means that this constant B has to be point 7 2 milliamps as well. So we finally get that I 2 of T.
+
+00:15:39.000 --> 00:15:48.000
+Is equal to oh point 7 2. E to the minus 20 T. And that's in Milliamps.
+
+00:15:48.000 --> 00:15:57.000
+Okay, so that is the full solution. And I too as functions of T for t greater than or equal to 0.
+
+00:15:57.000 --> 00:16:02.000
+Right. And. We can confirm.
+
+00:16:02.000 --> 00:16:11.000
+Again, as we expect that I one as T goes to infinity. Is 0 and I too. See goes to infinity is equal to 0.
+
+00:16:11.000 --> 00:16:19.000
+Alright, we can see that very clearly from just the mathematical forms of I one and I 2 over here.
+
+00:16:19.000 --> 00:16:28.000
+And that's what we expect to be the case. Because looking at the circuit over here when the switch goes from position one to position 2.
+
+00:16:28.000 --> 00:16:39.000
+Then the circuit that remains over here for T greater than or equal to 0. Has no active sources, so all the voltages in the currents, because of these resistors will eventually decay to 0.
+
+00:16:39.000 --> 00:16:51.000
+Okay, so this is the result that we expect that I won and I too as T goes to infinity should go to 0.
+
+00:16:51.000 --> 00:17:00.000
+Okay, so that's the solution. Alright, and, let's. Just take a little step back.
+
+00:17:00.000 --> 00:17:11.000
+I and do a bit of retrospective analysis of this. Which is something that in general is very useful to do anytime you're working through problems.
+
+00:17:11.000 --> 00:17:19.000
+Okay, so some of the key points here are right, what we did first was to determine.
+
+00:17:19.000 --> 00:17:28.000
+The initial conditions.
+
+00:17:28.000 --> 00:17:40.000
+Okay, and we do that when we do that. We let capacitors become open circuits.
+
+00:17:40.000 --> 00:17:47.000
+We let inductors become short circuits.
+
+00:17:47.000 --> 00:17:56.000
+And then require. That's what we require. That, the voltage across the capacitor.
+
+00:17:56.000 --> 00:18:05.000
+And the current I. Through an inductor have to be continuous.
+
+00:18:05.000 --> 00:18:11.000
+Okay, sometimes that gives you the initial condition that you need directly. Sometimes you have to do a little bit more.
+
+00:18:11.000 --> 00:18:18.000
+Analysis in order to arrive at the actual the initial condition that you actually need for the quantity that you're trying to solve.
+
+00:18:18.000 --> 00:18:28.000
+Okay, then I The next step was to formulate.
+
+00:18:28.000 --> 00:18:37.000
+The differential equations. Alright, in this case for I one and I 2.
+
+00:18:37.000 --> 00:18:43.000
+We just we do that using. Standard.
+
+00:18:43.000 --> 00:18:52.000
+Circuit analysis tools.
+
+00:18:52.000 --> 00:18:58.000
+Okay, then we solve. Alright, so these are first order differential equations, so they're quite easy to solve.
+
+00:18:58.000 --> 00:19:05.000
+And then we solve, and determine.
+
+00:19:05.000 --> 00:19:09.000
+Or Constance?
+
+00:19:09.000 --> 00:19:16.000
+From the initial conditions.
+
+00:19:16.000 --> 00:19:25.000
+Okay, for each first sort of differential equation you need one. Initial condition, which typically will be the value of the quantity that you're solving for at t equal to 0.
+
+00:19:25.000 --> 00:19:35.000
+Okay, and the third point. That will make here is that even though this circuit He had 2 inductors.
+
+00:19:35.000 --> 00:19:46.000
+It ends up being a first order circuit. That is, it's governed by first order differential equations because the currents and the voltages.
+
+00:19:46.000 --> 00:19:53.000
+In the inductors don't depend on each other. Okay, they can be determined independently so you just get first order.
+
+00:19:53.000 --> 00:19:59.000
+I equations. Alright, so this is
+
+00:19:59.000 --> 00:20:05.000
+First order. Circuit.
+
+00:20:05.000 --> 00:20:19.000
+Even though 2 inductors are present.
+
+00:20:19.000 --> 00:20:28.000
+And that ends up being the case. Because the inductor currents.
+
+00:20:28.000 --> 00:20:37.000
+Okay, this these can be determined.
+
+00:20:37.000 --> 00:20:42.000
+Independent of each other.
+
+00:20:42.000 --> 00:20:59.000
+Okay, if they depended on each other, then we would end up typically getting a second order. A differential equation, which will give us a second order circuit, which is something that we will talk about a little bit later.
+
+00:20:59.000 --> 00:21:09.000
+Okay, so that's everything for this example here. And I will now, stop the recording.
+

@@ -1,0 +1,620 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:05.000
+Okay, so this is, you'll be problem 8.23.
+
+00:00:05.000 --> 00:00:16.000
+And this is a simple example of power. Calculations in the Phaser domain.
+
+00:00:16.000 --> 00:00:22.000
+Okay, so this is oops.
+
+00:00:22.000 --> 00:00:29.000
+An example of power, calculations.
+
+00:00:29.000 --> 00:00:36.000
+And the Phaser domain.
+
+00:00:36.000 --> 00:00:49.000
+Okay. And this is a little more complicated than just simple current or voltage capculation, because to get power, remember what you need to do is to multiply current.
+
+00:00:49.000 --> 00:01:04.000
+And since both of those in the Phaser domain are complex, then it's not entirely obvious how their product should translate to a real quantity that corresponds to power.
+
+00:01:04.000 --> 00:01:15.000
+Okay. So we saw how that works in class. And in this example, we'll go through a simple example of how that kind of calculation is.
+
+00:01:15.000 --> 00:01:31.000
+And so what this example involves is this quite simple circuit of here, and what the problem is asking is for us to calculate the power that is dissipated or absorbed by each of the passive elements?
+
+00:01:31.000 --> 00:01:40.000
+The 2 resistors and the capacitor, and then correspondingly, the power that is supplied by the independent voltage source.
+
+00:01:40.000 --> 00:01:44.000
+Okay. So we'll start as usual.
+
+00:01:44.000 --> 00:01:48.000
+By redrawing the circuit. So we have a voltage source which in the time domain is V.
+
+00:01:48.000 --> 00:01:54.000
+Sub, s, of T.
+
+00:01:54.000 --> 00:01:59.000
+And we have a resistor. R. One.
+
+00:01:59.000 --> 00:02:08.000
+Another resistor are 2, and then a capacitor. C.
+
+00:02:08.000 --> 00:02:16.000
+Okay. And this is the entirety of the circuit and the voltage source.
+
+00:02:16.000 --> 00:02:24.000
+Ft. Is 60 times the cosine, the 4,000 t that's in vaults.
+
+00:02:24.000 --> 00:02:28.000
+The resistor. R, one it's 200 ohms.
+
+00:02:28.000 --> 00:02:45.000
+Are 2 is a hundred ohms, and the capacitance C is 2.5 micro farads, and what we are asked to do here is to solve for the average power.
+
+00:02:45.000 --> 00:02:53.000
+Call that piece of average so solve for the average power that is absorbed.
+
+00:02:53.000 --> 00:03:00.000
+Bye, each passive element.
+
+00:03:00.000 --> 00:03:07.000
+So that's our one. Alright. 2, and see!
+
+00:03:07.000 --> 00:03:13.000
+And the average power that is supplied.
+
+00:03:13.000 --> 00:03:33.000
+Bye, the source. Okay? So the first step here is going to be to transform this to the Phaser domain.
+
+00:03:33.000 --> 00:03:34.000
+Okay. And in doing this we won't redraw the circuit, because it's very simple.
+
+00:03:34.000 --> 00:03:37.000
+We'll simply write down the Phaser quantities all right.
+
+00:03:37.000 --> 00:03:51.000
+So v sub s. The source as a Phaser is just 60 and it's volts alright, because that is the amplitude of these, the best in the time domain.
+
+00:03:51.000 --> 00:03:57.000
+It's already in the standard cosine form, and the phase angle is 0.
+
+00:03:57.000 --> 00:04:06.000
+Okay? And the angular frequency is 4,000 Radians per second.
+
+00:04:06.000 --> 00:04:12.000
+Alright! This is 4,000 over here. Okay, the impedance of the resistor R.
+
+00:04:12.000 --> 00:04:15.000
+One. It's just this resistance. So it's 200 ohms.
+
+00:04:15.000 --> 00:04:19.000
+The impedance of the resistor. Art. 2 is just.
+
+00:04:19.000 --> 00:04:23.000
+It's resistance. So that's 100 of them.
+
+00:04:23.000 --> 00:04:27.000
+And the impedance of the capacitor is whatever J.
+
+00:04:27.000 --> 00:04:43.000
+Omega c alright. So that's one over Jay Omega is 4 times 10 to the 3, and then see the capacitance is 2.5 times 10 to the minus 6.
+
+00:04:43.000 --> 00:04:49.000
+Okay, so 4 times 2.5 is 10. So we have 10 times 10 to the third.
+
+00:04:49.000 --> 00:04:51.000
+This's 10 to the fourth times 10 to the minus 6.
+
+00:04:51.000 --> 00:04:52.000
+That's 10 to the minus 6. That's 10 to the minus 6. That's 10 to the minus 2 in the denominator.
+
+00:04:52.000 --> 00:04:57.000
+So that's 100 in the numerator.
+
+00:04:57.000 --> 00:05:00.000
+Then we have Jay and the denominator that's minus J.
+
+00:05:00.000 --> 00:05:06.000
+In the newer. So this is total minus J times 100.
+
+00:05:06.000 --> 00:05:11.000
+Okay. And that can also be written in, okay.
+
+00:05:11.000 --> 00:05:29.000
+So now, what we need to do is to determine the current or the voltage right associated with each of these passive elements, and eventually we'll need to determine the current associated with the voltage source as well alright the easiest way to do this is
+
+00:05:29.000 --> 00:05:37.000
+to we can take the voltage at this lower note to be a 0 by picking that as a reference node.
+
+00:05:37.000 --> 00:05:41.000
+Then we want to figure out this voltage. V. One.
+
+00:05:41.000 --> 00:05:47.000
+At this node up here. Once we have that we can get everything else that we need quite easily.
+
+00:05:47.000 --> 00:05:48.000
+Okay. So to get v one, then there are a couple of ways that we could proceed.
+
+00:05:48.000 --> 00:05:58.000
+One is that we could use voltage division alright by computing the impedance of R.
+
+00:05:58.000 --> 00:05:59.000
+2 and C in parallel with each other, and then using voltage division.
+
+00:05:59.000 --> 00:06:16.000
+Since we know that R. One is in series with this parallel combination, the other thing that we could do, or another thing that we could do is essentially to do a very simple node vtage analysis, right?
+
+00:06:16.000 --> 00:06:17.000
+With just one unknown note voltage. V. One over here and applied Kcl.
+
+00:06:17.000 --> 00:06:26.000
+At this node. Alright, so we will go ahead and do node voltage.
+
+00:06:26.000 --> 00:06:33.000
+Approach alright. So we want to apply Kcl.
+
+00:06:33.000 --> 00:06:36.000
+At the node that we've labeled with voltage. V.
+
+00:06:36.000 --> 00:06:44.000
+One. Okay? So if we look at the circuit diagram, the current going out to the left is V one minus vs.
+
+00:06:44.000 --> 00:06:46.000
+As a Phaser over R. One. The current going down through the resistor R.
+
+00:06:46.000 --> 00:06:50.000
+2 is just v, one over R. 2, and the current flowing to the right through the capacitor is v. One.
+
+00:06:50.000 --> 00:07:00.000
+Over z sub, c, which is one over J. Omega, C.
+
+00:07:00.000 --> 00:07:04.000
+Alright! So we just write that down. Then, applying Kcl.
+
+00:07:04.000 --> 00:07:10.000
+At the node. V. One. We have v. One minus vs.
+
+00:07:10.000 --> 00:07:16.000
+Over our one. That's it, current coming out to the left, plus v. One over R.
+
+00:07:16.000 --> 00:07:21.000
+2. That's the current going down, plus the one over one over J.
+
+00:07:21.000 --> 00:07:24.000
+Omega C is the current going to the right end?
+
+00:07:24.000 --> 00:07:40.000
+Yeah, and those have to add up to 0. Okay? So now, substituting in numerical values, we have and grouping together all the terms that are proportional to V one, then we have one over r one times, v, one.
+
+00:07:40.000 --> 00:07:45.000
+So that's one over 200.
+
+00:07:45.000 --> 00:07:49.000
+This term, and then we have one over R. 2 times V.
+
+00:07:49.000 --> 00:07:55.000
+One. So that's plus one over 100. That's this term.
+
+00:07:55.000 --> 00:07:58.000
+And then we have V one over one over J. Omega, C.
+
+00:07:58.000 --> 00:08:09.000
+That's v one over minus J, times 100. So that's a equivalent to J over 100 times. V.
+
+00:08:09.000 --> 00:08:15.000
+One. Alright. So we have, plus jay over 100 times. V.
+
+00:08:15.000 --> 00:08:16.000
+One, and then we have minus vs. Over R. One on the left, so that becomes vs over R.
+
+00:08:16.000 --> 00:08:27.000
+One on the right, and that is 60.
+
+00:08:27.000 --> 00:08:36.000
+Over 200. Okay? Now, we can take this equation and we multiply the equation by 200.
+
+00:08:36.000 --> 00:08:40.000
+Alright! To get rid of all these denominators.
+
+00:08:40.000 --> 00:08:43.000
+So then 200 times one over 200 is one, plus 200 over 100.
+
+00:08:43.000 --> 00:08:49.000
+That's 2 more. So that's 3 plus. And then 200.
+
+00:08:49.000 --> 00:08:59.000
+Over 100 is 2. So J. Times 2 times, v. One, and then 60, over 200 times 200 is 60.
+
+00:08:59.000 --> 00:09:08.000
+Okay, and then solving for V one, we get the V one is equal to 60 over 3 plus j times 2.
+
+00:09:08.000 --> 00:09:16.000
+Okay, then for this, we can multiply the numerator and the denominator by 3 minus J.
+
+00:09:16.000 --> 00:09:28.000
+Times, 2. So we get 60 times 3, minus J times 2, and we divide that by 3 squared, plus 2 squared. Alright.
+
+00:09:28.000 --> 00:09:31.000
+So we get 60 in the numerator. We have 60 times 3.
+
+00:09:31.000 --> 00:09:38.000
+So 180, minus J. Times 60 times 2. That's a hundred 20, divided by 3 squared, plus 2 squared.
+
+00:09:38.000 --> 00:09:45.000
+That's 9 plus 4, which is 13. Okay? So this is what we have for V, one.
+
+00:09:45.000 --> 00:09:50.000
+Okay. Now, to calculate the.
+
+00:09:50.000 --> 00:09:51.000
+Power. That's absorbed by the resistor.
+
+00:09:51.000 --> 00:09:59.000
+R, one. The easiest thing to do at this point is to calculate the voltage across our one.
+
+00:09:59.000 --> 00:10:04.000
+So we'll take that to be vs, minus v.
+
+00:10:04.000 --> 00:10:12.000
+Okay, so vs, minus v, one, alright, it's going to be 60, minus.
+
+00:10:12.000 --> 00:10:18.000
+What we just calculated for. V. One, which is a hundred 80 over 13, minus J.
+
+00:10:18.000 --> 00:10:35.000
+Times 120 over 13. Alright. So for the real part of this we have 60, which is 780, over 13, minus 180, over 13.
+
+00:10:35.000 --> 00:10:47.000
+So that is 600, over 13, and then minus negative. So that's plus j times 120 over 13.
+
+00:10:47.000 --> 00:10:48.000
+Okay, so that's the voltage across the resistor.
+
+00:10:48.000 --> 00:10:53.000
+R, one alright, and then the voltage across R.
+
+00:10:53.000 --> 00:10:56.000
+2 is just v. One. The voltage across the capacitor is also V.
+
+00:10:56.000 --> 00:10:58.000
+One. Okay, so let's calculate now the power that is absorbed by each of the passive components.
+
+00:10:58.000 --> 00:11:10.000
+We'll start with R. One. So the power, the average power absorbed by R.
+
+00:11:10.000 --> 00:11:17.000
+One is going to be. Hi, as we know. Alright, it's vs minus v, one.
+
+00:11:17.000 --> 00:11:22.000
+The voltage across the resistor squared over 2 times. R.
+
+00:11:22.000 --> 00:11:30.000
+One alright. So that is equal to one half. That's the 2 in the denominator, one over R.
+
+00:11:30.000 --> 00:11:34.000
+One. It's one over 200, right? Since R. One is 200, and then I the quantity vs. Minus v.
+
+00:11:34.000 --> 00:11:43.000
+One squared. So that is going to be the magnitude of this quantity.
+
+00:11:43.000 --> 00:11:54.000
+Here squared, which is 600 over 13 squared, plus 1 20 over 13 squared right?
+
+00:11:54.000 --> 00:12:04.000
+And if we then just calculate this out numerically, what we get is 5.5 3 8, what?
+
+00:12:04.000 --> 00:12:05.000
+So that is the average power that is absorbed by the resistor.
+
+00:12:05.000 --> 00:12:12.000
+R, one.
+
+00:12:12.000 --> 00:12:22.000
+Okay, then we have the resistor are 2 alright, and we proceed in largely the same way.
+
+00:12:22.000 --> 00:12:28.000
+The power, the average power that's absorbed by the resistor are 2, is the voltage across R.
+
+00:12:28.000 --> 00:12:29.000
+2 alright, which, if we go back and look at the circuit diagram, here, right the voltage across R. 2 is just V.
+
+00:12:29.000 --> 00:12:37.000
+One.
+
+00:12:37.000 --> 00:12:43.000
+So it's that voltage it's the magnitude of that voltage squared over.
+
+00:12:43.000 --> 00:12:50.000
+2 times R. 2. So we have one half. Again. That's the 2 in the denominator times, one over. R.
+
+00:12:50.000 --> 00:12:56.000
+2 that's one over 100, since R. 2 is 100 ohms times.
+
+00:12:56.000 --> 00:13:01.000
+V, one squared, either the magnitude of V, one squared v.
+
+00:13:01.000 --> 00:13:02.000
+One alright, we figured out, is this quantity over here?
+
+00:13:02.000 --> 00:13:08.000
+1 80, over 13, minus J. Times 120, over 13.
+
+00:13:08.000 --> 00:13:35.000
+So the magnitude of that squared is 180 over 13 squared, plus 120 over 13 squared. And I, if we calculate all of this numerically, it's 1.3 8 5 walks. So that's the average power that is absorbed by the resistor are 2.
+
+00:13:35.000 --> 00:13:48.000
+Okay, now we have. And then, finally, we have the capacitance.
+
+00:13:48.000 --> 00:14:01.000
+Alright, the power, the average power is one half times the real part of the voltage times.
+
+00:14:01.000 --> 00:14:18.000
+The current, the complex conjugate. Okay? And we know that in general the say, the voltage for any passive component is equal to the current times.
+
+00:14:18.000 --> 00:14:40.000
+The impedes. Alright. So the average power, then, is one half times the real part, and if we I substitute this in here for Z, then we get the magnitude of the current squared times, the impedance.
+
+00:14:40.000 --> 00:14:55.000
+Now the magnitude of the current squared is always going to be a real quantity, and for a capacitor the impedance is always purely imaginary.
+
+00:14:55.000 --> 00:14:59.000
+Okay, so this quantity in the square brackets will then also be purely imaginary.
+
+00:14:59.000 --> 00:15:03.000
+So the real part of this is going to be 0. Alright!
+
+00:15:03.000 --> 00:15:08.000
+So that means that, as we should know already, right?
+
+00:15:08.000 --> 00:15:16.000
+Basically, since the impedance of the capacitor is.
+
+00:15:16.000 --> 00:15:20.000
+Purely imaginary.
+
+00:15:20.000 --> 00:15:31.000
+Okay, then, what we have is that necessarily the average power that is absorbed by the capacitor is 0.
+
+00:15:31.000 --> 00:15:39.000
+Okay, so those are the passive components. Now, we have the source.
+
+00:15:39.000 --> 00:15:51.000
+Okay, and what the problem is asking us to do is to calculate the power that is supplied by the source, and as part of doing that, we'll also try to verify that.
+
+00:15:51.000 --> 00:16:01.000
+In fact, that power is being supplied. Okay. So for the source, then quote, we calculate the power we have the voltage as a phaser.
+
+00:16:01.000 --> 00:16:09.000
+The voltage is just 60 60 volts, and we need the current which we will define to be in this direction.
+
+00:16:09.000 --> 00:16:18.000
+Here. Okay, so the current, I said, S, is going to be a V one minus vs over r, one.
+
+00:16:18.000 --> 00:16:28.000
+Okay? And by defining the currents this way to be flowing into from the circuit into the positive terminal of the source.
+
+00:16:28.000 --> 00:16:43.000
+Then we can use the passive sign convention, which which tells us that when we calculate the average power, and we define the we define the voltage always to be positive.
+
+00:16:43.000 --> 00:16:48.000
+Basically, and then the current to be flowing into the positive terminal.
+
+00:16:48.000 --> 00:17:12.000
+Okay, then, what happens is that when we calculate the average power as one half the real part of the voltage times, the complex conjugate of the current, then, when that is positive, it means that the power is being absorbed when it's negative it means that it's being
+
+00:17:12.000 --> 00:17:27.000
+supply. Okay? So the sign of the power that we calculate this way will tell us that whether the powers being absorbed or supplied, and we should be able to verify that in fact, the power is being supplied.
+
+00:17:27.000 --> 00:17:31.000
+So we wanna note here.
+
+00:17:31.000 --> 00:17:41.000
+That the current isides. Alright. This is defined.
+
+00:17:41.000 --> 00:17:45.000
+To be entering the positive.
+
+00:17:45.000 --> 00:17:49.000
+Terminal.
+
+00:17:49.000 --> 00:17:52.000
+Of the Source.
+
+00:17:52.000 --> 00:18:07.000
+Okay? And then, if we define the current relative to the voltage in that way, then, when the apple is less than 0, that means that the power is being supplied.
+
+00:18:07.000 --> 00:18:16.000
+And what that corresponds to physically, of course, is that when the average power 0, that basically means that the current is going to be negative.
+
+00:18:16.000 --> 00:18:23.000
+So that means the current is actually flowing from the negative terminal to positive terminal within the that component.
+
+00:18:23.000 --> 00:18:34.000
+In this case the independent voltage source, and we know that in general current flowing from a lower voltage to a higher voltage, corresponds to power, being supplied by that component.
+
+00:18:34.000 --> 00:18:43.000
+Okay, so then calculate this current, I said, S, right, it's going to be V one minus.
+
+00:18:43.000 --> 00:18:49.000
+Vs. Over our one. So that's one over 200.
+
+00:18:49.000 --> 00:18:52.000
+And then up here we calculated vs, minus v, one.
+
+00:18:52.000 --> 00:18:53.000
+All right. We needed that to get the power dissipated in the resistor. R.
+
+00:18:53.000 --> 00:19:06.000
+One so vs, minus v, one is this, that means that v, one minus vs is just the negative of this expression.
+
+00:19:06.000 --> 00:19:18.000
+Here, okay, so it's going to be minus 600, over 13 minus J, times 1, 20 over 13.
+
+00:19:18.000 --> 00:19:26.000
+Okay. And multiplying this app, we have minus 600, over 200, which is minus 3.
+
+00:19:26.000 --> 00:19:36.000
+Over 13, and then we have minus J. Times, and then 1, 20, over 200 is 3, over 5.
+
+00:19:36.000 --> 00:19:43.000
+So that is, minus J times 3 over, 5 times 13, which is 65.
+
+00:19:43.000 --> 00:20:10.000
+Okay? So that's the current. And then the average power associated with the source is one half times the real part voltage. As a phaser times the current, the complex conjugate of the cards. As a Phaser, so that is one half it's a real part. Visa best is just 60.
+
+00:20:10.000 --> 00:20:17.000
+And then I said, S. Star, alright, i. Sub s. Is this so that it's complex?
+
+00:20:17.000 --> 00:20:24.000
+Conjugate is minus 3 over 13 plus jay times 3 over six-five.
+
+00:20:24.000 --> 00:20:54.000
+Alright. And so that means that the average power associated with the source is then one half times 60 times minus 3, over 13, and if we just calculate this out numerically, turns out to be minus 6.9 2 3, what alright, so this is the average power, associated with the same and that corresponds
+
+00:20:56.000 --> 00:21:05.000
+to 6.9 2 3 oops.
+
+00:21:05.000 --> 00:21:16.000
+Stuck a little bit 6.9 2 3 watts supplied.
+
+00:21:16.000 --> 00:21:22.000
+By the source.
+
+00:21:22.000 --> 00:21:29.000
+Okay, so that is final result and alright as we expect.
+
+00:21:29.000 --> 00:21:34.000
+If we add up all of these powers right?
+
+00:21:34.000 --> 00:21:47.000
+5.5 3 8 plus 1.3 8 5 alright 5.5 3 8 here, plus 1.3 8 5 plus 0, and then minus 6.9 2 3.
+
+00:21:47.000 --> 00:21:53.000
+Then we get 0, which is what we expect by conservation of energy, and therefore power. Alright.
+
+00:21:53.000 --> 00:21:57.000
+So as expected.
+
+00:21:57.000 --> 00:22:05.000
+The average power, so the source plus the average power associated with R.
+
+00:22:05.000 --> 00:22:12.000
+One plus the average power associated with R. 2 plus. Yeah, average power associated with the capacitor.
+
+00:22:12.000 --> 00:22:19.000
+That's all equal to 0. Alright, which is what we expect to happen.
+
+00:22:19.000 --> 00:22:23.000
+Okay, so what are the? Some of the key points?
+
+00:22:23.000 --> 00:22:27.000
+In this example.
+
+00:22:27.000 --> 00:22:35.000
+One is that alright in general.
+
+00:22:35.000 --> 00:22:39.000
+Alright. Remember that the average power is equal to one half times.
+
+00:22:39.000 --> 00:22:49.000
+The real part of the Voltage Times. The complex conjugate the current alright.
+
+00:22:49.000 --> 00:22:54.000
+And so for a resistor.
+
+00:22:54.000 --> 00:22:58.000
+Or a capacitor?
+
+00:22:58.000 --> 00:23:02.000
+Or an inductor.
+
+00:23:02.000 --> 00:23:08.000
+Okay. What happens then is right. We know that in general the voltage is equal to the current times.
+
+00:23:08.000 --> 00:23:25.000
+The impedance. So that means that the average power for this type of passive component is always going to be one half times real part of the magnitude of the current squared.
+
+00:23:25.000 --> 00:23:38.000
+Times the impedance or equivalently one half the real part of the voltage squared, divided by the impedance. Okay.
+
+00:23:38.000 --> 00:23:53.000
+And one of the consequences of this is, that for a capacitor or an inductor, since the impedance is purely imaginary, then the power that is absorbed or supplied is going to be 0.
+
+00:23:53.000 --> 00:23:56.000
+Okay.
+
+00:23:56.000 --> 00:24:02.000
+So, whereas for a resistor alright for a physical resistor, the impedance is always real and positive.
+
+00:24:02.000 --> 00:24:11.000
+So resistor will always dissipate or absorb power, so resistors.
+
+00:24:11.000 --> 00:24:29.000
+Alright, they can only absorb, that is, dissipate.
+
+00:24:29.000 --> 00:24:40.000
+Out capacitor and an inductor. Alright. These kind of.
+
+00:24:40.000 --> 00:24:44.000
+Dissipate any power.
+
+00:24:44.000 --> 00:24:51.000
+Alright, basically, since the impedance.
+
+00:24:51.000 --> 00:24:56.000
+In those cases Zc. And Zl. For a capacitor and inductor.
+
+00:24:56.000 --> 00:25:07.000
+Respectively. These are purely imaginary.
+
+00:25:07.000 --> 00:25:15.000
+Okay? And then the third point that we will note here is that right?
+
+00:25:15.000 --> 00:25:30.000
+We were able to deduce, as you saw, that the voltage source was supplying power by using the passive software convention. All right. So do employee.
+
+00:25:30.000 --> 00:25:35.000
+The Passive Sign Convention.
+
+00:25:35.000 --> 00:25:41.000
+Alright! Then the current!
+
+00:25:41.000 --> 00:25:44.000
+Has to be defined.
+
+00:25:44.000 --> 00:25:49.000
+As entering.
+
+00:25:49.000 --> 00:25:54.000
+The positive.
+
+00:25:54.000 --> 00:25:58.000
+Voltage, terminal.
+
+00:25:58.000 --> 00:26:05.000
+And that means entering the positive voltage terminal from the circuit.
+
+00:26:05.000 --> 00:26:29.000
+Right, not from inside that component alright. And then, if we define things in this way, then what happens is that when the average power that's calculated this way is less than 0, that means the power is supplied.
+
+00:26:29.000 --> 00:26:36.000
+And then, when the average power, finding this way is greater than 0, that means the power.
+
+00:26:36.000 --> 00:26:40.000
+Is.
+
+00:26:40.000 --> 00:26:46.000
+Dissipated, or.
+
+00:26:46.000 --> 00:26:52.000
+Absorbed. Okay, so that is everything. For this example.
+
+00:26:52.000 --> 00:26:58.000
+And and I'll now stop the recording.
+

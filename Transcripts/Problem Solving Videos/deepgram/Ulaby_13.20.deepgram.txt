@@ -1,0 +1,803 @@
+[0:00:03] Okay. So this is Ulaby problem 13.20.
+[0:00:08] Okay. And this is an example
+[0:00:11] of circuit analysis.
+[0:00:18] Using
+[0:00:19] Fourier series.
+[0:00:25] Okay. So the problem that we have here is that we are given this circuit here that has two inductors,
+[0:00:33] and we're told that, the source of voltage, v sub s over here, is given by this waveform.
+[0:00:41] Okay? And what we need to do is first to calculate the Fourier series representation of I of t. Right? So we'll need to analyze this circuit using a Fourier series expansion for b sub s. Okay, we need to come up with that expression in terms of,
+[0:01:00] these parameters r one and r two, l one and l two. Then in the second part, what we're asked to do is to calculate
+[0:01:08] numerically
+[0:01:10] the first five terms in this Fourier series expansion of I of t using these numerical values, and then construct a plot of I of t and v s of t
+[0:01:22] from their Fourier series expansions.
+[0:01:25] Okay. So
+[0:01:27] let's go ahead,
+[0:01:29] and we'll start off as usual by redrawing the circuit and the key... Collecting the key pieces of information.
+[0:01:38] Okay. So the circuit is
+[0:01:41] like this.
+[0:01:46] K. So two resistors, two inductors, and a voltage source.
+[0:01:50] This is v sub s of t. The resistors are r one and r two.
+[0:01:56] The inductors are l one and l two. Okay?
+[0:02:01] And
+[0:02:02] v sub s
+[0:02:06] of t. Right? This is time in
+[0:02:10] milliseconds.
+[0:02:11] You know, one millisecond, two milliseconds.
+[0:02:14] This is zero, say minus one. Okay. And then we have two volts
+[0:02:21] and
+[0:02:22] 10 volts. Okay.
+[0:02:25] And
+[0:02:29] the
+[0:02:33] input voltage v sub s
+[0:02:36] basically looks like this. It's a square wave,
+[0:02:42] okay, that goes between two volts
+[0:02:45] and
+[0:02:46] 10 volts with a period of two seconds. Alright. So the period here...
+[0:02:53] Or two milliseconds rather is two milliseconds.
+[0:02:57] Okay?
+[0:02:58] And so what we're asked to do is basically to solve
+[0:03:03] for
+[0:03:06] I of t. Right? And then once we have that, then we want to obtain some numerical values and plots using
+[0:03:15] the following numerical values
+[0:03:18] for the circuit parameters. The resistances are 10 ohms,
+[0:03:23] and the inductances are
+[0:03:26] 10 millihenries each.
+[0:03:28] Okay. So this is the problem that we're solving. Part a is to compute I of t in terms of r one, r two, l one, and l two.
+[0:03:41] So the first step in that is going to be compete... To compute
+[0:03:50] the Fourier series
+[0:03:52] for v sub s of t. Alright? And that will give us the, basically, the phasor components in,
+[0:04:00] v sub s in the phasor domain or in the frequency domain. Okay. So
+[0:04:09] v sub s
+[0:04:11] is this function over here,
+[0:04:13] and we can see that,
+[0:04:18] alright, the period as we noted is two milliseconds.
+[0:04:22] So that means that the fundamental frequency omega naught, which is two pi over the period,
+[0:04:27] is
+[0:04:29] 1,000
+[0:04:31] pi
+[0:04:34] radians per second. Okay?
+[0:04:37] And the Fourier series expansion
+[0:04:40] for v sub s of t
+[0:04:42] is a naught plus sum
+[0:04:46] from n equal to one to infinity
+[0:04:48] of
+[0:04:50] a sub n
+[0:04:52] times the cosine
+[0:04:54] of n omega naught t plus
+[0:04:56] b sub n times the sine
+[0:05:00] of n omega naught t. Alright?
+[0:05:03] And
+[0:05:05] we wanna calculate these coefficients.
+[0:05:07] Okay? So a naught. Right? Remember, this is just the average value of,
+[0:05:14] v sub s of t. Okay? So it's going to be one over the period. So one over two milliseconds. We'll write the... Milli is just a small n. Let's remember that that means a factor of 10 to the minus three.
+[0:05:27] Okay. And then we're gonna integrate from zero to one millisecond. Alright. If we look at
+[0:05:35] this waveform here, from zero to one millisecond is just two
+[0:05:40] d t. That's two volts.
+[0:05:43] And then from one millisecond
+[0:05:46] to two milliseconds,
+[0:05:48] alright, that's from here to here, it's 10 volts. So 10
+[0:05:53] d t.
+[0:05:56] Okay. And so this is now,
+[0:06:01] right, it's 10 plus two. Alright. When you do the integrals,
+[0:06:05] divide it milli,
+[0:06:07] divided by two milli. So we have 10 plus two, which is 12 milli divided by two milli,
+[0:06:14] and that is just six. Okay? And if we look at this waveform here,
+[0:06:19] then, hopefully, it's fairly clear to you that, in fact, the average value of this over one period from,
+[0:06:27] time zero to time two milliseconds, the average value of this, blue waveform here is in fact six volts. Alright. And that's what we just calculated.
+[0:06:37] Okay. What about the coefficients
+[0:06:40] a sub n? That is the coefficients of the cosine terms in the expansion.
+[0:06:44] Those coefficients are actually all zero. Okay. And the reason for that is that the cosine function is an even function of t.
+[0:06:55] But looking at the waveform here, we can see that the waveform is clearly... Right? If if we shift it,
+[0:07:01] down by its average value, that is by six, we can see that the waveform is clearly
+[0:07:08] an odd function. Okay. Once it's been shifted down. So...
+[0:07:13] Right. An odd function will not have any
+[0:07:16] even Fourier components in it. So all the coefficients a sub n for n not equal to zero are zero. Right? And this is because
+[0:07:27] the function v sub s of t minus its average value a naught has odd symmetry.
+[0:07:38] So it has no even function components to it.
+[0:07:41] Okay.
+[0:07:42] What about the coefficients v sub n for the sine terms of the expansion? Right. These are given by the expression two over t times the integral over one period, so from zero to t, of v sub s of t times the sine of n omega naught t
+[0:08:01] dt.
+[0:08:03] Okay?
+[0:08:05] And so this is going to be two
+[0:08:08] over two... Over capital t, which is 2,000,002.
+[0:08:13] Alright. And then,
+[0:08:15] we have for the end... For this integral,
+[0:08:18] right, v sub s has two different values. Either it's two volts from zero to one millisecond and it's 10 volts from one to two milliseconds. So we're gonna break this up into two integrals. The first one is two times the integral from zero to one millisecond
+[0:08:35] of the sine
+[0:08:37] of 1,000
+[0:08:39] pi
+[0:08:41] n t
+[0:08:43] d t.
+[0:08:45] And then the second
+[0:08:47] is 10 times the integral from one millisecond
+[0:08:52] to two milliseconds
+[0:08:54] of the sine
+[0:08:57] of 1,000
+[0:08:58] pi
+[0:08:59] n
+[0:09:02] t
+[0:09:03] d t.
+[0:09:06] Okay. So now, let's just go ahead and compute these integrals.
+[0:09:12] Alright. So for this factor on the outside, two over 2,000,000, that's one over... And then we'll write million now as explicitly 10 to the minus three.
+[0:09:22] Okay. And then when we do,
+[0:09:25] this first integral, right, we have the factor of two. And then when we integrate the sign, we get a factor of one over minus one over 1,000 pi n in front. So we have minus two
+[0:09:37] over 1,000
+[0:09:39] pi n in front,
+[0:09:42] and then the cosine of 1,000
+[0:09:45] pi n t.
+[0:09:48] Right? Evaluated from zero to one millisecond
+[0:09:52] minus
+[0:09:54] 10, and then, it's the same integrand.
+[0:09:57] So, it's 10 over
+[0:10:01] 1,000 pi n. We get the minus sign here from doing the integral as well, and then it's the cosine of
+[0:10:08] 1,000 pi n t,
+[0:10:12] from one milli
+[0:10:14] to two milli.
+[0:10:17] Okay. All of that times,
+[0:10:19] this leading factor of one over 10 to the minus three.
+[0:10:23] Okay. So now,
+[0:10:26] we'll pull out the factor of minus one
+[0:10:28] in front, and we'll pull out this factor of 1,000 pi in the denominator,
+[0:10:33] of each term out in front as well.
+[0:10:36] So the one thousands time 10 to the minus three will just give us one. Right? So we get minus and then it's one over pi since we put... We're pulling out this pi over here as well. And also, we'll pull out the factor of n and then the denominator. So minus one over pi times n.
+[0:10:55] And then
+[0:10:57] for the first term over here, we have two. Right? We've pulled out the factor of minus,
+[0:11:04] one over 1,000 pi times n times...
+[0:11:08] And then, we have,
+[0:11:11] the cosine
+[0:11:13] of...
+[0:11:14] And then it's 1,000 pi times n times 10 to the minus three. So that's just, the cosine of pi times n
+[0:11:22] minus
+[0:11:24] the cosine of... And then at the lower limit t is equal zero. So it's just the cosine of zero, which is one.
+[0:11:32] Okay. And then for the second term over here, again, we've pulled out the factor of minus one over 1,000 pi n. So we have plus 10
+[0:11:42] times,
+[0:11:44] the cosine of
+[0:11:46] 1,000 times milli, that's one,
+[0:11:49] times t, that's two. So two pi... The cosine of two pi n, which is one, right, for all integer values of n.
+[0:11:57] Alright. Minus...
+[0:11:59] And then we have the cosine of pi times n when we evaluate,
+[0:12:05] this at t equal to 1,000,000. Right? Because it's the cosine of 1,000 times 10 to the minus three, that's one times pi times n. So just the cosine of pi times n. Alright?
+[0:12:19] All this times minus one over pi n.
+[0:12:22] Okay.
+[0:12:23] And,
+[0:12:24] if we just simplify this a little bit, we have minus one over pi times n.
+[0:12:30] And then we have
+[0:12:32] minus two plus 10, that's eight.
+[0:12:37] And then we have two cosine of pi n minus 10 cosine of pi n. So that's minus eight
+[0:12:43] times the cosine of pi n.
+[0:12:48] Okay. Or, we can write that as eight over pi times n times the cosine
+[0:12:55] of pi times n
+[0:12:57] minus one. Okay.
+[0:13:01] And
+[0:13:03] so that is b sub n.
+[0:13:06] And so now we can take
+[0:13:10] these values that we've computed for a naught, which is six, a sub n, which is zero, and b sub n, which is this expression down here. And we'll just plug them back into
+[0:13:22] this Fourier series expansion
+[0:13:25] over here.
+[0:13:26] And if we do that,
+[0:13:30] what we get is that b sub s of t is equal to six
+[0:13:34] plus... And then it's eight over
+[0:13:37] pi
+[0:13:39] times the sum and going from one to infinity
+[0:13:43] of
+[0:13:46] the cosine of pi n
+[0:13:50] minus one
+[0:13:52] divided by n. Alright. That n is this n over here. Okay.
+[0:13:58] Times the sine of 1,000
+[0:14:02] pi n t. Alright?
+[0:14:05] Now we can simplify this a little bit more
+[0:14:09] by noting that the cosine
+[0:14:11] of pi times n minus one
+[0:14:16] is equal to... If n is odd,
+[0:14:19] right, then this is equal to minus two because the cosine of pi n for n odd is minus one. So this is minus two if n is odd, and it's zero
+[0:14:30] if n is even because the cosine of pi n of n is even is, just equal to one, and one minus one is zero. Okay?
+[0:14:39] And so we can also write that
+[0:14:42] v sub s of t is equal to six and then minus
+[0:14:48] 16 over pi times the sum over odd values
+[0:14:53] of n going up to infinity
+[0:14:56] of one over n times
+[0:15:00] the sine
+[0:15:02] of 1,000
+[0:15:04] pi n t.
+[0:15:06] Alright? So that's,
+[0:15:08] those are both correct
+[0:15:11] ways of writing the Fourier series expansion for v sub s of t.
+[0:15:17] Okay.
+[0:15:18] Now once we have that, right, what we want to do is to analyze,
+[0:15:24] the circuit in the phasor domain. Because now what we have is v sub s of t expressed as a linear combination or a superposition
+[0:15:35] of,
+[0:15:36] multiple frequency components where the frequency... The angular frequencies are 1,000 pi n. Okay?
+[0:15:43] So
+[0:15:45] what we do next then is to analyze,
+[0:15:50] the circuit
+[0:15:56] in the phase domain.
+[0:15:59] Okay.
+[0:16:00] And so, let's take v sub s of t here. Alright? And we'll express it in the standard cosine form, which means converting this sine into a cosine
+[0:16:13] by including a phase shift of minus 90 degrees. Alright. So we can write v sub s of t as being equal to six minus 16 over pi times the sum
+[0:16:26] over odd values of n going to infinity of one over n times the cosine
+[0:16:33] of 1,000 pi n t minus 90 degrees.
+[0:16:38] Okay?
+[0:16:40] And
+[0:16:43] we can write that as in a slightly different way, six minus 16 over pi times the sum
+[0:16:51] over odd values of n going up to infinity of one over n times the cosine. And instead of writing a thousand pi n all the time, we'll just write that as omega sub n times t
+[0:17:04] minus 90 degrees,
+[0:17:06] where omega
+[0:17:08] sub n is 1,000
+[0:17:11] pi times n.
+[0:17:13] Okay.
+[0:17:14] So now that we have v sub s of t with each of its terms in the standard cosine form, then what we wanna do is to write it in the frequency domain essentially as a superposition of phasors.
+[0:17:30] K. So we get the v sub s is equal to six. Alright. That's the constant terms... Term. Alright.
+[0:17:37] And then
+[0:17:39] plus
+[0:17:40] 16 over pi times the sum over
+[0:17:45] odd values of n going up to infinity of one over n times a phase factor either the j times 90 degrees.
+[0:17:53] And the way that we arrived at that was we recognize that
+[0:17:58] we have the minus sign over here. Alright?
+[0:18:02] And then we... From this cosign over here, we would have ordinarily
+[0:18:07] e to the minus j times 90 degrees.
+[0:18:11] But if we take minus e to the minus j times 90 degrees,
+[0:18:16] right, that is minus...
+[0:18:18] And then e to the minus j times 90 degrees is minus j. So that's just j,
+[0:18:25] and that is the same as either the j times
+[0:18:27] 90 degrees.
+[0:18:29] Okay. So that's how we convert this minus sign here to a plus sign, and we get this phase factor either the j 90 degrees over here. Okay.
+[0:18:39] So now we have,
+[0:18:40] our source v sub s in, the frequency domain, essentially in phasor form. Okay. And so now we want to write down,
+[0:18:53] the circuit
+[0:18:56] in phasor form as well.
+[0:19:00] K. We're equivalently just in the frequency domain.
+[0:19:10] Okay. So now we have our voltage source in phasor form, resistors r one and r two, and then the impedances
+[0:19:18] in the frequency domain of the inductors are j omega l one and j omega l two.
+[0:19:25] And we're gonna try to compute the current here as a phasor as well. And to do that, what we'll do is we'll... Essentially, we'll use a simple node voltage analysis. We'll take the bottom node, to have a voltage of zero.
+[0:19:39] That means that this node up here, it has a voltage v one. And what we're gonna do is to solve
+[0:19:46] for v one,
+[0:19:48] alright, just by applying KCL,
+[0:19:51] at the node v one. And then I, we can see very easily,
+[0:19:55] is
+[0:19:57] just v one divided by r two plus j omega l two.
+[0:20:02] Okay. So that'll be our route, to getting I in, the frequency or phasor domain. Once we have that, then, we'll be able to translate it back into the time domain. Alright?
+[0:20:14] Using sort of the inverse of the process that we use to cat... To get capital v sub s over here.
+[0:20:21] Okay. So now we wanna apply KCL
+[0:20:24] at the node v one. Okay?
+[0:20:27] And so that means then just that, right, we take the sum of the outgoing currents to be zero. Current going out to the left is v one minus v s
+[0:20:38] over r one.
+[0:20:40] The current current going down through, the inductor j omega l one is v one over j omega
+[0:20:49] l one.
+[0:20:50] And then the current going out to the right
+[0:20:53] is v one divided by r two plus j omega l two.
+[0:21:01] And those all have to add up to zero.
+[0:21:04] So now if we group together all the terms proportional to v one,
+[0:21:09] we get
+[0:21:10] one over r one
+[0:21:12] plus one over j omega l one
+[0:21:16] plus one over
+[0:21:18] r two plus j omega
+[0:21:21] l two. All this times v one is equal to
+[0:21:25] v s
+[0:21:27] over r one. That's from this term over here, which loses this minus sign when we move it to the right hand side of the equation.
+[0:21:35] Okay.
+[0:21:36] And
+[0:21:38] so then dividing both sides of that equation by this big expression in the parentheses,
+[0:21:43] then what we get is that v one is equal to
+[0:21:49] v s divided by r one times this expression here in the parentheses.
+[0:21:57] So that is one plus
+[0:22:02] r one over j omega l one
+[0:22:05] plus
+[0:22:06] r one over r two plus j omega l two.
+[0:22:11] Alright?
+[0:22:14] And so now from here,
+[0:22:17] okay, what we can say is
+[0:22:23] we're gonna multiply this by
+[0:22:25] r two plus j omega l two over r two plus j omega l two. Right? That basically
+[0:22:33] gets rid of this r two plus j omega l two in the denominator of the denominator over here. Alright?
+[0:22:39] And if we do that,
+[0:22:42] then we get the v one is equal to v sub s times r two plus j omega l two.
+[0:22:49] And then in the denominator, we have one plus r one over j omega l one. Those are the first two terms over here times this r two
+[0:23:02] plus j omega
+[0:23:04] l two.
+[0:23:05] And then from this third term here, we just get r one. We multiply by r two plus j omega l two. So plus r one. Alright?
+[0:23:16] And,
+[0:23:17] if we just take this denominator
+[0:23:20] and multiply this
+[0:23:22] here out a little bit more and then group together the real terms,
+[0:23:27] and separately the imaginary terms,
+[0:23:30] then what we get is in the denominator, the same thing, v s times r two plus
+[0:23:36] j omega l two. And then divided by in the denominator,
+[0:23:40] we have
+[0:23:42] r one from over here. And then from r two times one,
+[0:23:47] we have plus r two.
+[0:23:51] And then the other real term comes from r one over j omega l one times j omega l two,
+[0:23:56] which gives us
+[0:23:58] r one times l two over l one.
+[0:24:02] Then we have the imaginary terms from,
+[0:24:05] the cross terms in in this product. So we have from,
+[0:24:12] r one over j omega l one times r two, we get minus j times r one r two over omega omega l one. So j times minus
+[0:24:22] r one r two over omega l one. Alright. We get the minus sign by moving the j from the denominator to the numerator.
+[0:24:30] And then plus
+[0:24:33] one times j omega l two, which is j times omega l two. Like this.
+[0:24:40] Okay.
+[0:24:42] So that's v one.
+[0:24:45] Alright.
+[0:24:46] Now to get the current
+[0:24:49] I, we take v one and divide by r two plus j omega l two.
+[0:24:56] Alright? So that basically cancel that division, cancels out this r two plus j omega l two in the numerator.
+[0:25:04] So that means
+[0:25:05] that we get that I,
+[0:25:07] which is v one
+[0:25:09] over r two plus j omega l two,
+[0:25:13] is equal to
+[0:25:16] just v sub s in the numerator divided by the same denominator, which is r one plus r two plus r one
+[0:25:25] l two over l one plus j times minus
+[0:25:30] r one r two over omega l one
+[0:25:34] plus omega l two.
+[0:25:40] Okay. So now here,
+[0:25:42] we will,
+[0:25:44] clean this up a bit more, by getting rid of the fractions in the denominator. We will do that by multiplying,
+[0:25:52] the numerator and the denominator by,
+[0:25:55] j omega l one. So j omega l one over j omega l one.
+[0:26:03] Okay.
+[0:26:05] And when we do that, then what we get is in the numerator,
+[0:26:10] we have j omega l one times v sub s, which we'll write at the end, divided by n in the denominator,
+[0:26:18] we get...
+[0:26:20] Right now, we'll write the real terms first. Right? So the real terms come from here. So we have j times j, which is minus one. So minus one times minus r one r two, then the omega l one, they're canceling out with the omega l one in the denominator over here. So we just get plus r one r two.
+[0:26:38] And then from the second term, we get minus
+[0:26:42] from j times j omega squared l one l two. So minus
+[0:26:48] omega squared
+[0:26:51] l one l two.
+[0:26:53] And then from j omega l one times
+[0:26:57] this first set of terms over here, we get plus
+[0:27:01] j omega,
+[0:27:03] and then it's l one times r one plus r two
+[0:27:08] plus
+[0:27:10] r one
+[0:27:12] l two. Alright? All of this times
+[0:27:16] v sub s. Alright?
+[0:27:19] Here now,
+[0:27:21] right, this is I as a function of any frequency omega.
+[0:27:26] Right? But we are specifically concerned here since we're working with Fourier series with omega being able to n times the fundamental frequency omega naught
+[0:27:38] with omega naught equal to 1,000 times
+[0:27:44] pi. Alright?
+[0:27:47] And so
+[0:27:48] if we,
+[0:27:49] substitute for omega, if we substitute n times omega naught,
+[0:27:57] then what we get is that the current I is equal to
+[0:28:02] j
+[0:28:03] times n times omega naught l one
+[0:28:08] divided by
+[0:28:10] r one r two
+[0:28:12] minus
+[0:28:14] n squared omega naught squared
+[0:28:16] times l one l two
+[0:28:19] plus j times n times omega naught
+[0:28:23] times
+[0:28:24] l one
+[0:28:26] r one plus r two
+[0:28:28] plus r one l two. Alright. All of this times
+[0:28:34] v sub s.
+[0:28:37] Okay. So now, alright, what we wanna do is
+[0:28:44] we wanna take this prefactor here for v sub s, alright, and
+[0:28:50] write it in polar form. Alright? That is with a magnitude
+[0:28:55] and a phase angle. Okay?
+[0:28:58] And so the magnitude of this is going to be just the magnitude of the numerator divided by the magnitude of the denominator. Right? The magnitude of the numerator is clearly just n omega naught L1. Alright. So we have N omega naught L1 in the numerator.
+[0:29:17] And then the magnitude of the denominator
+[0:29:20] is the square root of the real part squared
+[0:29:24] plus the imaginary part squared. Alright? So we're gonna get the square root of
+[0:29:31] r one r two minus n squared omega naught squared
+[0:29:37] l one l two quantity squared
+[0:29:40] plus
+[0:29:41] n squared omega naught squared
+[0:29:44] times
+[0:29:46] l one r one plus r two
+[0:29:50] plus r one l two quantity squared.
+[0:29:54] All of this
+[0:29:57] under the square root.
+[0:29:59] And then we have phase factors.
+[0:30:03] So we're going to have
+[0:30:07] e to the j
+[0:30:09] 90 degrees. That's from this factor of j that was here in the numerator. Right? So we can't forget about that. And then if we take the... This denominator here to have a phase angle of phi,
+[0:30:24] then,
+[0:30:25] we're going to get a phase factor in the numerator of either the minus j
+[0:30:31] times phi.
+[0:30:32] All of this times
+[0:30:34] v sub s. Alright. This v sub s is this v sub s over here. Okay?
+[0:30:40] And
+[0:30:42] the phase factor phi,
+[0:30:45] right, which is the phase
+[0:30:47] of
+[0:30:48] this denominator over here, is a 180 degrees
+[0:30:52] times... Or minus
+[0:30:55] the inverse tangent of
+[0:31:00] l one times r one plus r two plus r one l two times n
+[0:31:08] omega naught
+[0:31:10] divided by
+[0:31:13] n squared
+[0:31:15] omega naught squared l one l two
+[0:31:18] minus r one r two. Alright? So,
+[0:31:22] so the way that we get the minus sign here is because we switched the order, right, of these two, terms over here. Right? Here, it's r one r two minus n squared, etcetera. Here, it's n squared, etcetera, minus r one r two. So that's how we get the minus sign, in front. Right?
+[0:31:39] And,
+[0:31:40] it is 180
+[0:31:42] minus this inverse tangent here instead of just being minus this inverse tangent.
+[0:31:48] And,
+[0:31:50] the reason for that is as follows.
+[0:31:53] Right? It turns out that
+[0:31:56] over here, right, the real part of this denominator here is actually always going to be negative.
+[0:32:04] Right? And the reason for that is that n is going to be greater than or equal to one. Alright. We're,
+[0:32:12] not including the constant term right now because that'll... Because of the end of the numerator, they'll turn out to be, zero. Okay?
+[0:32:21] But what happens is that omega naught squared, l one, l two, is always greater than r one times r two for the values of, l one, l two, r one, and r two that we're using in this problem. Remember, l one and l two are 10 millihenries each, so 10 to the minus two each.
+[0:32:42] Omega naught is 1,000 pi. So on the left, we're gonna get from omega naught squared. We're gonna get 10 to the six times pi squared. And then from l one times l two, we're going to get 10 to the minus four.
+[0:32:57] R one and r two, remember, are 10 ohms each. So we're gonna get 10 to the two. Right? A 100. And so the left hand side is a 100 pi squared. The right hand side is a 100. Right? So clearly,
+[0:33:10] this inequality always holds. And so that means that this real part in the denominator is negative.
+[0:33:18] Okay?
+[0:33:19] Let me draw a little
+[0:33:22] picture here.
+[0:33:24] Okay. Then...
+[0:33:28] So we're looking at the denominator. Right? So the real part is negative.
+[0:33:33] Right?
+[0:33:36] The imaginary part we can see here is always positive. Right? So maybe up here somewhere. Right? So that means that we're always
+[0:33:45] out here something like this,
+[0:33:48] and so that should be the angle phi. Alright? But, actually,
+[0:33:52] if we were to take the numerator or... So the imaginary part divided by the real part and take the inverse tangent of that, what we would actually get
+[0:34:02] is
+[0:34:05] this angle here.
+[0:34:08] Okay? And that's not the angle. And say if you were to plug it into your calculator and do it, you would get this angle here.
+[0:34:16] And so to get this angle here, we actually need to add a 180 degrees to it. Okay? It has the same inverse tangent, but it's in the second quadrant, which is correct rather than the fourth quadrant, which is incorrect. Okay? So that's why it's one eighty minus this inverse tangent here instead of just minus this inverse tangent.
+[0:34:37] Okay.
+[0:34:39] So that's a similar issue to what we encountered when we talked about phasors generally earlier in the semester.
+[0:34:48] Okay.
+[0:34:49] So now what we wanna do is
+[0:34:53] we wanna take the Fourier series expansion for v sub s, which we worked out earlier.
+[0:35:00] Alright?
+[0:35:01] It is
+[0:35:05] this
+[0:35:07] up here.
+[0:35:08] Alright?
+[0:35:09] And we're gonna plug it into the expression that we had for I,
+[0:35:14] and then that's going to help us to get the, the different phase or components of I.
+[0:35:22] Alright?
+[0:35:23] So what we need to do now is
+[0:35:28] we wanna use
+[0:35:31] the four a series
+[0:35:38] expansion
+[0:35:39] for
+[0:35:42] v sub s that we worked out earlier. Right? So we're gonna take that and and we're gonna plug it into here for v sub s. Alright?
+[0:35:49] So we're... We get that I is equal to... Right. So the first term in the Fourier series expansion for v sub s,
+[0:35:58] if we go back up here,
+[0:36:02] with six, that's at a frequency of zero.
+[0:36:05] Okay?
+[0:36:08] And so that corresponds to n being zero up here. Right? And so we're actually gonna get no contribution to I from that because it's six times zero. Right?
+[0:36:19] Then
+[0:36:20] for
+[0:36:23] the nonzero positive values of n, right, we have plus 16 over pi times the sum over the odd values of n of one over n times e to the j 90 degrees.
+[0:36:34] Alright?
+[0:36:35] And that's going to be multiplying
+[0:36:40] these factors over here. Right? So the one over n will cancel this n out over here, and then we'll have everything else. Okay. So we're gonna get plus
+[0:36:51] then a 16 over pi
+[0:36:54] times the sum
+[0:36:58] over odd values of n.
+[0:37:00] And then since the one over n in v sub s cancels out with this n over here, we just have omega naught
+[0:37:08] times l one
+[0:37:10] divided by... And then we have the square root of,
+[0:37:15] now we'll write... We'll take... Since this is squared, right, we can just... I change the order of this and it doesn't matter. Right? Because minus one squared is one. So we have n squared omega naught squared,
+[0:37:28] l one l two
+[0:37:30] minus r one r two, the quantity squared,
+[0:37:33] plus
+[0:37:35] n squared omega naught squared
+[0:37:38] times l one
+[0:37:42] r one plus r two
+[0:37:44] plus r one l two
+[0:37:47] quantity squared.
+[0:37:51] Okay. Times...
+[0:37:53] And then we have
+[0:37:56] e to the minus j phi. Right? That's this factor over here times e to the j
+[0:38:04] 90 degrees.
+[0:38:06] That's this factor here.
+[0:38:08] And then in addition,
+[0:38:11] we have from v sub s another factor of e to the j 90 degrees.
+[0:38:18] Okay. And then,
+[0:38:23] when we multiply these phase factors,
+[0:38:25] we have either the 180 degrees here. From either the minus j phi, we get e to the minus one eighty degrees
+[0:38:33] or e to the minus j times one eighty degrees. So those will cancel each other out. And so for the phase, we'll just have e to the plus
+[0:38:42] because it's minus minus j times this inverse tangent over here.
+[0:38:48] Okay. So if we write all that out, then we get I
+[0:38:52] is equal to six times zero,
+[0:38:55] right, which is zero. So just 16 over pi times the sum
+[0:39:02] over odd values of n going to infinity.
+[0:39:07] Then
+[0:39:08] this big expression here, omega naught over l one divided by the square root of n squared omega naught squared l one l two
+[0:39:18] minus r one r two quantity squared
+[0:39:21] plus
+[0:39:22] n squared omega naught squared
+[0:39:25] times
+[0:39:26] l one
+[0:39:28] r one plus r two plus
+[0:39:31] r one l two
+[0:39:33] quantity squared,
+[0:39:35] all of that
+[0:39:37] under the square root.
+[0:39:39] And then e to the plus j times
+[0:39:43] the inverse tangent
+[0:39:45] of...
+[0:39:48] And then it's
+[0:39:50] this argument up here. So
+[0:39:54] l one times
+[0:39:56] r one plus r two
+[0:39:59] plus r one l two times n omega naught
+[0:40:04] divided by
+[0:40:06] n squared omega naught squared
+[0:40:08] l one l two
+[0:40:11] minus r one,
+[0:40:13] r two.
+[0:40:15] Okay. So
+[0:40:17] now
+[0:40:21] we wanna convert this back to the time domain,
+[0:40:25] and, that is going to correspond each one of these terms in the Fourier series expansion. Alright?
+[0:40:33] In the phasor or frequency domain has its corresponding
+[0:40:38] time domain component,
+[0:40:40] which we know how to,
+[0:40:42] write,
+[0:40:43] from our earlier... From our discussion of phasors earlier in the semester. So we just have to convert each of these phasor terms, basically, in... Back into the time domain. And then
+[0:40:55] the sum of all those will then be the Fourier series expansion of IoT in the time domain.
+[0:41:01] Okay. So in the time domain,
+[0:41:07] right, what happens is that now this becomes
+[0:41:12] the following. We'll see if we can fit this all on one line here.
+[0:41:18] Alright. So I of t is equal to 16 over pi times the sum
+[0:41:25] over odd values of n going to infinity of... Then it's omega naught l one
+[0:41:32] divided by the square root of n squared omega naught squared
+[0:41:38] l one l two minus r one r two squared
+[0:41:43] plus n squared omega naught squared times l one
+[0:41:47] r one plus r two
+[0:41:50] plus r one l two squared.
+[0:41:56] Alright. All of this. Now what the phase factor does is it contributes a phase to the cosine. Right? So now it's the cosine of
+[0:42:06] n omega naught t,
+[0:42:08] plus
+[0:42:09] this phase,
+[0:42:11] which is the inverse tangent
+[0:42:13] of
+[0:42:16] l one times r one plus r two
+[0:42:20] plus r one l two times n
+[0:42:23] omega naught
+[0:42:26] divided by
+[0:42:28] n squared omega naught squared l one l two
+[0:42:32] minus r one r two.
+[0:42:35] Okay.
+[0:42:37] And
+[0:42:38] so this
+[0:42:45] is
+[0:42:46] our answer for IFT in the time domain expressed as a Fourier series expansion,
+[0:42:53] right,
+[0:42:55] as a function of,
+[0:42:57] the parameters r one, r two, l one, l two, and omega naught. Alright? So your omega naught, remember, is 1,000
+[0:43:11] times pi.
+[0:43:13] Okay. So that is the result for part a.
+[0:43:18] Then
+[0:43:20] part b, right, asks us to take this expression
+[0:43:26] and substitute in
+[0:43:29] specific numerical values for the resistors and the inductors, right, and compute the first five terms in the four a series expansion of I of t. Right? So we take r one and r two to be equal to 10 ohms,
+[0:43:43] l one and l two to be equal to 10 millihenries,
+[0:43:47] And then remember, omega naught is
+[0:43:51] 1,000 pi. Okay.
+[0:43:54] So then, if we plug those values into this big expression up here, then what we get is that I of t
+[0:44:03] is equal to
+[0:44:04] 16 over pi
+[0:44:07] times the sum
+[0:44:10] over odd values of n up to infinity
+[0:44:13] of... And then in the numerator, right, we have omega knot, which is thousand pi times l one, which is 10 millihenries
+[0:44:21] or point o one. Thousand times point o one is 10. So we have 10 pi
+[0:44:28] divided by... And then in the denominator,
+[0:44:32] we have omega naught squared. So that's 10 of the six
+[0:44:38] pi squared times l one times l two.
+[0:44:42] They are each 10 to the minus two. So we have 10 to the six times 10 to the minus four. That's a 100.
+[0:44:48] Then we have our pi squared
+[0:44:50] and then the n squared
+[0:44:53] minus r one r two.
+[0:44:55] That's minus 10 times 10, which is a 100
+[0:44:59] squared
+[0:45:01] plus...
+[0:45:03] And then over here, right, we have omega naught squared. That's going to be 10 of the six times pi squared times n squared. So we have 10 to the six
+[0:45:13] pi squared times n squared.
+[0:45:15] And then l one times r one plus r two. R one plus r two is 20 times point o one is point two.
+[0:45:25] And then r one l two, that's 10 times point o one. That's point one
+[0:45:30] quantity squared.
+[0:45:35] Okay. And then we have
+[0:45:39] the cosine
+[0:45:41] of
+[0:45:43] 1,000
+[0:45:45] I n t. Right? That's n omega naught t
+[0:45:49] plus
+[0:45:52] the inverse tangent
+[0:45:53] of...
+[0:45:55] And then in the numerator here, right, that's basically just...
+[0:46:00] It's the the l one times r one plus r two plus r one l two is just point two plus point one. That's point three
+[0:46:09] times n times omega naught. So that's a thousand
+[0:46:14] I times n
+[0:46:16] divided by
+[0:46:18] and then the denominator in the argument of the inverse tangent is just what's inside the parentheses here. Right? Because that's this expression here. So it's going to be
+[0:46:30] 100
+[0:46:32] times
+[0:46:34] pi squared n squared minus one.
+[0:46:38] Okay?
+[0:46:39] And we just simplify this
+[0:46:42] a little bit more, right, then
+[0:46:46] this pie and the pie down here,
+[0:46:49] right, these cancel out. Okay?
+[0:46:52] Then we get,
+[0:46:55] if we take the denominator
+[0:46:57] and
+[0:46:59] under the square root, we factor out a factor of 10 to the fourth, then that becomes 10 to the two
+[0:47:06] outside the square root. Alright? And then 10 over 10 of the two becomes a 10 in the denominator. Alright? And then we'll have the 16, which we can put in the numerator.
+[0:47:16] Okay. So,
+[0:47:18] we'll get the sum
+[0:47:21] over
+[0:47:22] I values of n. And then we have 16
+[0:47:27] in the numerator
+[0:47:29] and then 10 in the denominator. And what we have left under the square root is going to be pi squared n squared minus one quantity squared
+[0:47:40] plus...
+[0:47:42] And then over here,
+[0:47:44] we have
+[0:47:45] point three squares. That's point o nine times 10 to the six. That is nine times 10 to the fourth. We factored out the 10 to the fourth. So we just have nine
+[0:47:58] times
+[0:47:59] pi squared times n squared.
+[0:48:02] Oops.
+[0:48:05] All of this under the square root.
+[0:48:07] Then we have the cosine of 1,000
+[0:48:11] I n t
+[0:48:14] plus
+[0:48:16] the inverse tangent. And then
+[0:48:19] all we have here from these numerical factors is point three times a thousand, that's 300,
+[0:48:24] divided by 100, that's three.
+[0:48:27] So that's three pi n
+[0:48:30] divided by
+[0:48:32] pi squared n squared
+[0:48:34] minus one. Okay.
+[0:48:37] So now that is a relatively simple form that we can then use
+[0:48:44] to calculate,
+[0:48:46] to do some numerical calculations.
+[0:48:49] Okay. So
+[0:48:51] we're gonna calculate the first five terms in the full expansion, which includes the even terms. And we... But we know the even terms are zero. Right? So those will be easy. So for n equal to one,
+[0:49:03] we have from this prefactor here, right, it's 16
+[0:49:09] over 10 times the square root of... And then it's pi squared times one squared, which is pi squared minus one squared
+[0:49:18] plus
+[0:49:19] nine pi squared times one squared. So just nine pi squared.
+[0:49:23] Alright.
+[0:49:24] Times the cosine
+[0:49:27] of
+[0:49:28] 1,000
+[0:49:30] pi times t, again, since n is equal to one, plus
+[0:49:35] the inverse tangent of, in the numerator, three pi,
+[0:49:40] in the denominator,
+[0:49:42] pi squared minus one.
+[0:49:45] And if you calculate all that out, what you get is point one two three six
+[0:49:52] times the cosine of
+[0:49:54] 1,000 pi t,
+[0:49:57] plus
+[0:49:59] 46.74
+[0:50:00] degrees.
+[0:50:02] Okay.
+[0:50:04] For n equal to two, alright,
+[0:50:07] the result is zero. Okay. We saw that earlier.
+[0:50:13] For n equal to three, okay, then again using this expression here, we get 16
+[0:50:21] over 10
+[0:50:23] times the square root of,
+[0:50:25] now it's going to be pi squared n squared with n equal to three is nine pi squared minus one, the quantity squared, plus... And then we have nine pi squared n squared with n equal to three. That becomes 81
+[0:50:39] pi squared.
+[0:50:42] Okay. Times the cosine now of
+[0:50:46] 3,000 pi
+[0:50:48] t, right, since n is three over here,
+[0:50:52] plus
+[0:50:55] the inverse tangent of
+[0:50:58] nine pi, that's three pi n divided by
+[0:51:02] nine pi squared minus one. Okay.
+[0:51:05] And if you calculate that out numerically, you get point o one seven three four
+[0:51:12] times the cosine
+[0:51:14] of
+[0:51:16] 3,000
+[0:51:18] pi times t
+[0:51:20] plus
+[0:51:22] 17.85.
+[0:51:24] Alright?
+[0:51:26] Then
+[0:51:27] the n equal to four term, we saw earlier. All the even terms are zero. So that term is zero. And then finally,
+[0:51:36] for n equal to five,
+[0:51:39] we get 16
+[0:51:41] over 10 times the square root of... Then it's pi squared n squared is 25
+[0:51:47] pi squared then minus one squared
+[0:51:51] plus. And then we have nine pi squared times n squared. That's nine times five squared, which is nine times 25, which is 225
+[0:52:00] pi squared.
+[0:52:03] All the end of the square root.
+[0:52:05] And then it's the cosine of
+[0:52:09] 5,000 pi times t
+[0:52:11] plus
+[0:52:14] the inverse tangent of
+[0:52:16] three pi n, which is 15 pi divided by pi squared n squared minus one, 25 pi squared minus one.
+[0:52:24] Okay. If we calculate that out
+[0:52:27] numerically,
+[0:52:28] it's point zero zero six
+[0:52:32] three nine four
+[0:52:34] times the cosine of
+[0:52:38] 5,000 pi t
+[0:52:40] plus
+[0:52:41] 10.86
+[0:52:42] degrees.
+[0:52:45] Okay. So all of this
+[0:52:52] alright. These are the first five terms
+[0:52:55] in the Fourier expansion
+[0:52:57] of
+[0:52:58] I of t.
+[0:53:01] Okay.
+[0:53:02] So that's part b.
+[0:53:05] Then part c
+[0:53:07] asks for the plots,
+[0:53:09] okay,
+[0:53:10] of
+[0:53:15] I of t and v sub s of t.
+[0:53:18] I...
+[0:53:19] And so I will just take those
+[0:53:23] from the solutions
+[0:53:26] and paste them in.
+[0:53:43] K. And they should show up
+[0:53:45] for us
+[0:53:47] shortly here.
+[0:54:01] Okay. There we go. Alright. So what you can see here, this is v sub s. And,
+[0:54:07] right, you can see that it looks, very much like the idealized waveform,
+[0:54:12] that we saw in the problem statement except it has, this little ringing over here because these are computed, with a finite number of
+[0:54:21] terms. And so you can still see it pretty prominently. You'll always get a little bit of this
+[0:54:27] even with a large number of terms.
+[0:54:29] And then down here, right, what you see is
+[0:54:34] I of t. And so what you can see is that the the current, it is sort of gradually
+[0:54:42] builds up with a time constant that is determined by
+[0:54:47] the values of the circuit parameters.
+[0:54:50] Okay.
+[0:54:52] So
+[0:54:56] this was a fairly long example.
+[0:54:59] What are some of the key points
+[0:55:03] that we can extract from this? Right? If we, go back and think about, what we did here.
+[0:55:10] Right?
+[0:55:11] One
+[0:55:12] is that when we're doing Fourier series circuit analysis, really, what we're doing is we're breaking up our, typically, our input signals
+[0:55:21] into
+[0:55:23] a superposition of components at different frequencies. Alright? At any single frequency, it's really just the same as doing phasor analysis, alright, which we looked at in a lot of detail and very extensively earlier in the semester. And then we use the idea of superposition,
+[0:55:41] which we can apply to any linear circuit to combine the results at different frequencies just by adding them together. Okay? And that's really what,
+[0:55:51] for a series circuit analysis comes down for comes down to. It's breaking, our inputs up into individual frequency components, analyzing each frequency essentially,
+[0:56:02] in the phasor domain, and then combining those results, which we know we can do using superposition.
+[0:56:09] Alright? So
+[0:56:11] Fourier circuit analysis or Fourier series
+[0:56:20] circuit analysis,
+[0:56:24] Right? Essentially, it's based
+[0:56:27] on phasors.
+[0:56:31] Right? Plus, it
+[0:56:34] works because for linear circuits, we can do superposition.
+[0:56:41] Okay.
+[0:56:43] Another point that we can note here was... Remember,
+[0:56:48] we saw
+[0:56:49] that
+[0:56:51] when we were computing
+[0:56:53] the,
+[0:56:55] Fourier series expansion
+[0:56:58] of our input voltage, we saw that,
+[0:57:02] all of the coefficients of the cosine terms were zero because,
+[0:57:07] the signal for which we are computing the Fourier series,
+[0:57:10] was,
+[0:57:11] an odd function. Right?
+[0:57:14] Once we subtracted off the average value and the cosine is an even function, therefore, the coefficients of all the cosine terms in the expansion have to be zero. Okay?
+[0:57:25] And
+[0:57:26] in general...
+[0:57:32] Okay.
+[0:57:33] These types of symmetry considerations
+[0:57:42] So for example,
+[0:57:44] on versus even functions.
+[0:57:49] K. These types of symmetry considerations, right, they can be very powerful
+[0:57:58] in determining
+[0:58:04] the values
+[0:58:07] of certain
+[0:58:11] Fourier series coefficients.
+[0:58:18] And in particular, in determining when some of them are zero.
+[0:58:24] And then the third point that we'll note is that as we were doing this example, we
+[0:58:30] had to do quite a bit of complex algebra.
+[0:58:34] Okay? And so
+[0:58:36] having good accuracy and proficiency in complex algebra is very helpful in solving these types of problems. Right? So accuracy
+[0:58:48] and proficiency
+[0:58:52] in complex algebra.
+[0:58:58] Are important.
+[0:59:04] Okay. So that is it for,
+[0:59:07] this example.
+[0:59:08] Okay. And I will now stop the recording.

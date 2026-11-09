@@ -1,0 +1,1004 @@
+[0:00:03] Okay. Let's go ahead and get started. So this is the recording,
+[0:00:08] that takes the place of the class that we would have had on,
+[0:00:12] Wednesday, September 23. Okay. So what we did at the end of our light regular... Last regular class meeting was we talked about phasors and specifically about phasor diagrams,
+[0:00:26] which were a way of
+[0:00:29] essentially,
+[0:00:30] more easily representing and visualizing
+[0:00:33] the phase relationships among,
+[0:00:35] different voltages and currents, in a circuit. So, this idea of looking at,
+[0:00:43] phase shifts of signals at different components,
+[0:00:46] then also, it showed us that,
+[0:00:49] it was possible even using something quite simple,
+[0:00:53] such as,
+[0:00:54] a series RLC circuit that we were able to get signals at
+[0:01:00] a variety of phases relative to, say, the input signal. Okay? And so that suggests that
+[0:01:09] using a circuit to achieve a particular phase shift is something that,
+[0:01:13] you know, is certainly an achievable and could be a useful functionality for circuits. Okay. So what we wanna do today is start off by talking about phase shift circuits.
+[0:01:30] Okay. And the reading for this
+[0:01:35] is in Ulaby
+[0:01:40] et al, and it is section seven dash eight. Okay. And a phase shift circuit is basically... It's exactly what it sounds like. It is a circuit where,
+[0:01:51] the goal is to be able to get some output signal, say, a voltage that has some well defined and controllable or engineerable
+[0:02:01] phase shift relative to,
+[0:02:03] an input signal. Okay?
+[0:02:06] Now,
+[0:02:07] before we look at how this can be done, it's worth,
+[0:02:12] thinking a little bit about why this might be a useful thing to do. Okay? And it turns out that,
+[0:02:20] having a circuit that will produce a particular phase shift is actually something that is extremely useful, for example, in communications,
+[0:02:31] signals contexts.
+[0:02:33] Okay. So it turns out that if we're looking at, communication systems...
+[0:02:41] So in communication systems,
+[0:02:46] right, one of the ways that information can be encoded
+[0:02:50] is that if you have a carrier signal. So that is a signal that
+[0:02:55] is at some particular frequency. Right? So a sinusoidal signal.
+[0:03:00] If you then think about how can information be encoded in that signal. If we just have a a pure sinusoidal signal with a constant amplitude and phase,
+[0:03:12] that actually doesn't carry any significant amount of information. You have to modulate something about that signal in order to carry that information.
+[0:03:21] So one way that you can imagine doing it is to
+[0:03:25] modulate the the amplitude
+[0:03:29] as a function of time. Another way that you can imagine doing it is to modulate the phase. Now modulating the amplitude might seem like the more intuitive way of doing it, and perhaps it is the more intuitive way of doing it. But if you're modulating the amplitude, then, there are actually a lot of things that can,
+[0:03:48] influence the amplitude of the signal.
+[0:03:51] You know, you can get small variations due to variety of extraneous,
+[0:03:55] influences, and so
+[0:03:57] that can be very susceptible to noise. And, also, it takes power
+[0:04:02] to,
+[0:04:03] say, increase the amplitude of a signal. Okay? So there are a number of reasons that that might not be the optimal way to do it.
+[0:04:13] Right? Another way that you could do it is to modulate the phase of a signal. And if you have a constant amplitude but you modulate the phase,
+[0:04:22] you... You're not changing the power. And it turns out that there are
+[0:04:27] very good ways using circuits to
+[0:04:31] both shift the phase of a signal and also to detect a phase shift very sensitively. So phase modulation is actually
+[0:04:40] very useful way to encode information
+[0:04:44] in a carrier signal in a communication system. Okay. So
+[0:04:50] one way,
+[0:04:52] okay, to encode
+[0:04:55] information,
+[0:04:59] okay, is to modulate
+[0:05:04] the phase
+[0:05:08] of a carrier signal,
+[0:05:14] okay, that has some angular frequency
+[0:05:21] omega.
+[0:05:23] Okay. And the carrier signal, right, with nonzero angular frequency,
+[0:05:27] you know, right, it's it's often very important and useful to have that carrier rather than just, say, sending a DC signal. Because if you are,
+[0:05:36] say, sending a signal
+[0:05:38] wirelessly,
+[0:05:40] okay, or optically,
+[0:05:42] then
+[0:05:43] you
+[0:05:45] inherently have to have something that is a wave. And that means that it has to have a nonzero frequency. Right? And then... So that will be the carrier frequency of the carrier signal. Okay. So to see how this works,
+[0:06:00] let's imagine
+[0:06:02] that we have some data stream. Right? So, it's digital data. So it goes between zero and one.
+[0:06:10] And let's imagine that,
+[0:06:18] Okay. We have,
+[0:06:20] right, basically, a stream of bits,
+[0:06:23] alright, that maybe looks something
+[0:06:29] like this. Right? So it'd be zero one zero one one zero and so forth. And this is a function of time. Okay. So so this is the digital information, the digital signal that we want to encode.
+[0:06:44] And then
+[0:06:48] we have some carrier signal.
+[0:06:51] Okay? So then,
+[0:06:53] the carrier signal...
+[0:06:55] Alright. Let's
+[0:07:02] sort of extend these boundaries
+[0:07:04] down farther so we can keep track of them.
+[0:07:14] Okay. So let's imagine the carrier signal. Right? It looks something
+[0:07:19] like this.
+[0:07:27] Oops.
+[0:07:34] Okay. My intent here is to
+[0:07:37] draw a signal that has a fixed frequency.
+[0:07:42] Okay. Although my artistic skills here are not the greatest. Okay. So so this is the carrier signal, and it is at some fixed frequency
+[0:07:56] fixed angular frequency omega. Right?
+[0:08:00] And, also, it has an unvarying phase. Alright?
+[0:08:05] Then what we wanna do
+[0:08:08] is use this data stream over here to modulate the phase of the carrier. Right? So we might say, okay. When the data stream reads zero,
+[0:08:18] then the phase of the carrier will be, just its original phase. Right? The phase is unchanged.
+[0:08:25] Whereas
+[0:08:26] if,
+[0:08:27] the data, signal is one,
+[0:08:30] then, let's say, the phase,
+[0:08:34] of the carrier signal will be, shifted by a 180 degrees.
+[0:08:39] So it'll just become the negative of itself.
+[0:08:42] Okay. So then if that is our phase shifting scheme,
+[0:08:50] right, we can look at what the modulated carrier signal looks like.
+[0:08:55] Okay.
+[0:08:57] So, originally...
+[0:09:03] Right? When the data stream is, read zero, the phase is the same.
+[0:09:08] Alright? But now over here, in this region, the... Or in this interval, the data stream reads one. So we wanna shift the phase of this signal by a 180 degrees. Alright? So,
+[0:09:23] alright, say, making it the, the negative. Okay.
+[0:09:30] And so if we do that,
+[0:09:32] alright, then what happens
+[0:09:35] is that,
+[0:09:37] we get
+[0:09:45] something like this.
+[0:09:47] Okay?
+[0:09:48] And then
+[0:09:49] here, when it goes back to zero, right, then we have, the original data stream or the the original carrier signal.
+[0:09:58] Alright. So it looks like this.
+[0:10:01] And then...
+[0:10:08] Alright. So over here, we go back to zero, and so
+[0:10:16] it goes like this. Alright?
+[0:10:19] Let me draw this a little bit better here. Okay. And then over here, alright, the data stream goes to one, and so
+[0:10:28] we get shifted by a 180 degrees again. Alright? So we go
+[0:10:43] alright. Say... Well, yeah, that's not a very good drawing there. Let me try to draw that a little bit better.
+[0:10:50] Okay. So
+[0:11:10] Okay. So something like this. Right? And then it goes back to
+[0:11:16] zero again.
+[0:11:19] Yeah. Yeah. For some reason, this keeps
+[0:11:21] disappearing.
+[0:11:24] Okay. So so that's the... Basically, the idea of how one
+[0:11:30] might be... Modulate the phase of a carrier signal to carry information. Alright? My poor artistic skills on
+[0:11:39] notes here, not notwithstanding.
+[0:11:42] And so this scheme
+[0:11:44] for using phase shifts to encode information,
+[0:11:49] right, this is known
+[0:11:53] as it's called phase shift key.
+[0:12:02] Okay. Or a PSK.
+[0:12:04] Alright.
+[0:12:05] And,
+[0:12:07] right, for the basic idea here, then we can see that in order to implement this,
+[0:12:12] we need to have a circuit that allows us to shift the phase
+[0:12:17] of a current or a voltage. Okay? So to implement,
+[0:12:26] phase shift keying or PSK, right, then we need
+[0:12:33] a circuit that shifts the phase.
+[0:12:43] Okay, of a current
+[0:12:51] or voltage. Okay.
+[0:12:53] And,
+[0:12:54] so what that
+[0:12:56] means then is that...
+[0:13:00] Alright. If we represent
+[0:13:02] our phase shift circuit here as
+[0:13:05] sort of a a box, whose structure... Circuit structure is yet to be determined,
+[0:13:14] Right. So this is our phase shift circuit.
+[0:13:17] What we want is to be able to have
+[0:13:21] some input
+[0:13:23] to
+[0:13:24] the phase shift circuit.
+[0:13:26] Alright. We'll call that v n
+[0:13:29] of t. And let's imagine that that is...
+[0:13:33] We'll call it an amp... We'll have an amplitude of v one
+[0:13:36] times the cosine
+[0:13:39] of omega t. And
+[0:13:43] then what we want
+[0:13:44] from the phase shift circuit
+[0:13:47] is for it to give us some
+[0:13:50] output voltage, v out of t,
+[0:13:53] that is some amplitude v two
+[0:13:57] times the cosine
+[0:13:59] of omega t plus phi. Right? So phi here is the phase shift. And, ideally, what we wanna be able to do is to design this circuit here such that it will give us a particular value of the phase shift.
+[0:14:17] Okay. So let's see how, this can be done. We'll look at an example here.
+[0:14:23] Okay.
+[0:14:24] And, the example,
+[0:14:26] will be of what we call a cascaded
+[0:14:31] phase shift circuit.
+[0:14:40] Okay. And what we mean by cascaded here is that we will have
+[0:14:46] subcircuits within the full circuit,
+[0:14:49] such that
+[0:14:51] each sub circuit will give us a phase shift of a certain amount. And then if we want to build up a bigger phase shift, then the idea is to take,
+[0:15:02] the output of one,
+[0:15:05] sub circuit and use it as the input to,
+[0:15:10] what we call a second stage of the circuit so that you get, an additional phase shift. And then you can keep using the output of one stage as the input to the next stage. And as you build these up, then you can gradually build up larger and larger phase shifts. Okay? So what we will do here is we will look first
+[0:15:32] at,
+[0:15:33] sort of an individual stage. That is an individual sub circuit of the full circuit that gives us some phase shift, and then we'll see how those units can be concatenated. Right? The output of one being used as the input of another so that you can build up a larger phase shift. Okay. So the first step in this is just to look at
+[0:16:00] what the phase shift would be from
+[0:16:04] a simple RC
+[0:16:06] circuit.
+[0:16:11] Okay.
+[0:16:13] So the circuit that we will look at here is one where we have
+[0:16:17] some
+[0:16:21] input voltage,
+[0:16:23] and we'll take that to ham... Have amplitude v in,
+[0:16:27] and then it'll be times the cosine of omega t. Alright. So that's in the cosine form already.
+[0:16:36] And then we'll have
+[0:16:40] a capacitor
+[0:16:45] and a resistor.
+[0:16:53] Okay. So we have this. This is our capacitor with capacitance c, resistor with resistance r,
+[0:16:59] and we want to look at the voltage across the capacitor
+[0:17:04] and the voltage across the resistor.
+[0:17:08] Right? There will be a current
+[0:17:10] I
+[0:17:11] flowing here. Right?
+[0:17:13] And,
+[0:17:14] we wanna see or we wanna get a sense of what kinds of phase shifts we can get if we take our output terminals to be across the capacitor and also what kind of phase shifts that we can get if we take our output terminals to be across the resistor. Okay?
+[0:17:31] So if we look at this circuit, then, we can see that since this is basically a simple loop, then we can get the current.
+[0:17:40] Now working in the phasor domain, we can get the current as a phasor just by applying KVL around
+[0:17:47] this loop. Okay. So using phasors,
+[0:17:50] we do that. We can see that the voltage across the capacitor plus the voltage across the inductor should be equal to the voltage associated with the voltage source. So we have one over j omega c
+[0:18:03] plus r times the current I.
+[0:18:07] Alright. When we multiply this out, right, the one over j omega c times I, right, that's the impedance of the capacitor times the current. That'll give us the voltage as a favor... As a phasor across the capacitor, then r times I will give us the voltage as a phasor across the resistor. Okay? And the sum of those two voltages
+[0:18:28] has to be equal to
+[0:18:30] the voltage
+[0:18:32] associated with the voltage source
+[0:18:34] v in as a phasor.
+[0:18:37] Okay. So that means that
+[0:18:39] if we just solve for the current phasor, we get v in
+[0:18:44] as a phasor divided by r plus one over
+[0:18:50] j omega c. Alright?
+[0:18:54] So that is the current.
+[0:18:57] And then to get the voltage across the capacitor,
+[0:19:01] we multiply that current by the impedance of the capacitor, one over j omega c. To get the voltage across the resistor, we multiply by the impedance of the resistor, which is just r. Okay? So for the capacitor,
+[0:19:14] we have v sub c as a phasor is one over j omega c times the current I. Right?
+[0:19:23] And then...
+[0:19:24] Alright. So that's equal to... If we take
+[0:19:27] one over j omega c and multiply it by I over here, we can see that we get v n over
+[0:19:34] one, right, from one over j omega c times j omega c plus j omega RC from the resistive,
+[0:19:42] term over here. So we get
+[0:19:46] v n
+[0:19:47] over
+[0:19:48] one
+[0:19:50] plus j omega
+[0:19:52] RC.
+[0:19:53] Okay.
+[0:19:54] Now here, what we will do is we will multiply this by the complex conjugate of the denominator
+[0:20:02] so that in the denominator, we will get a real quantity, the square of the magnitude
+[0:20:08] of
+[0:20:10] this denominator here. And then we'll have that complex conjugate in the numerator that will make it very easy to figure out what the range of possible phases is going to be. So we're gonna multiply by one minus
+[0:20:23] j omega r c over one minus j omega r c,
+[0:20:29] okay, which we know we're we're always allowed to do. We're just multiplying by one. Alright? And if we do that, then what we get is
+[0:20:38] one minus j omega RC
+[0:20:41] over
+[0:20:42] one plus omega
+[0:20:45] r c, the quantity squared times
+[0:20:50] v n. Okay. I... And it's very easy to see here now looking at this,
+[0:20:57] factor over here what the range of possible phases is,
+[0:21:02] for VC over v n. Right? And then this will tell us what the range of possible phase shifts is... Will will be for the voltage across the capacitor relative to the voltage input.
+[0:21:15] Okay.
+[0:21:17] And then,
+[0:21:18] right, we can do the analogous thing for the voltage across the resistor.
+[0:21:23] That is going to be the resistance r
+[0:21:26] times the phasor I.
+[0:21:29] And so that,
+[0:21:31] right, if we
+[0:21:33] multiply this by r over here, we get r
+[0:21:39] over r plus one over j omega c times
+[0:21:44] b n.
+[0:21:46] This,
+[0:21:47] alright, we can multiply by
+[0:21:50] j omega c over j omega c. Alright? Basically, to get rid of,
+[0:21:56] the one over j omega c in the denominator here.
+[0:22:00] Right? If we do that, we get
+[0:22:03] j omega r c
+[0:22:05] over
+[0:22:06] one plus
+[0:22:08] j omega r c, alright, times
+[0:22:13] b n.
+[0:22:15] Okay. Then from here,
+[0:22:18] we can do the same thing that we did
+[0:22:21] up here, alright, which is to multiply this by the complex conjugate of the denominator, one minus j omega r c over one minus j omega r c. Alright?
+[0:22:34] And if we carry out that multiplication,
+[0:22:37] then you can see that we get,
+[0:22:40] what we get in the numerator
+[0:22:42] is
+[0:22:44] omega RC, the quantity squared.
+[0:22:47] Right? That's from the j omega RC times minus j omega RC, right, plus
+[0:22:56] j omega RC.
+[0:22:58] That's from this one over here times j omega RC.
+[0:23:03] And then in the denominator, we get one plus
+[0:23:07] omega r c, the quantity squared, all this times
+[0:23:12] v n.
+[0:23:14] Okay. So this is what we have for v c over here. This is what we have for v r over here. Alright? Now if we take
+[0:23:23] these two results and we think about, say, for the voltage across the capacitor,
+[0:23:29] what is the range of phase shift angles that we can get for
+[0:23:34] VC
+[0:23:36] relative to VN. That is what is the range of possible phase angles for this factor over here? One minus j omega RC over one plus the quantity omega RC squared. Right? And it's very easy to see that as a complex number,
+[0:23:54] this is going to have to be in the fourth quadrant of the of the complex plane. Right? Because the real part is positive.
+[0:24:01] The imaginary part is negative.
+[0:24:05] Okay. So we see that the range of possible phase angles of this quantity here,
+[0:24:12] and therefore, the range of possible phase shifts that we can get for the output being the voltage across the capacitor
+[0:24:18] will be from zero to minus 90 degrees. Right? That's the range of angles in the fourth quadrant of the complex plane. Alright? So relative
+[0:24:32] to the input voltage,
+[0:24:35] then the voltage across the capacitor,
+[0:24:38] right, has
+[0:24:40] a phase angle
+[0:24:44] that ranges
+[0:24:46] between minus 90 degrees
+[0:24:52] and zero degrees. We'll call phi sub c the
+[0:24:56] the phase
+[0:24:57] shift if the output is taken across the capacitor.
+[0:25:01] Alright?
+[0:25:03] Now if we take the output to be the volts across the resistor,
+[0:25:07] then we're looking at this factor over here and what its
+[0:25:12] range of phase angles is going to be. And here, we can see that this factor has to be in the first quadrant. Right? Because it has positive real part and positive imaginary part. So that means the range of phase angles of this
+[0:25:28] has to be between zero and plus 90 degrees.
+[0:25:32] Okay. So
+[0:25:35] the voltage
+[0:25:37] p r, right, is phasor.
+[0:25:39] Right? This has
+[0:25:41] phase angle
+[0:25:45] relative to v n that is between zero
+[0:25:51] and
+[0:25:53] ninety degrees.
+[0:25:55] Okay.
+[0:25:56] And so what we see is that depending on,
+[0:25:59] where we take the output to be, that is where we put the output terminals, then we can get phase shift angles,
+[0:26:06] from minus 90 degrees to 90 degrees. Alright?
+[0:26:12] I...
+[0:26:13] Right. So what we see then is that
+[0:26:16] this particular RC circuit,
+[0:26:20] right, depending on the values of the circuit parameters, right, it shifts
+[0:26:26] the phase
+[0:26:30] of an output voltage.
+[0:26:37] You can shift it to either positive or negative values.
+[0:26:41] Right? Or using terminology that is often employed for phase shifts, we can have
+[0:26:49] the phase shift either
+[0:26:54] lead
+[0:26:55] the original signal that corresponds to a phase being greater than zero degrees,
+[0:27:01] or
+[0:27:04] we say that it can lag
+[0:27:07] the
+[0:27:08] original signal. So
+[0:27:10] that means the phase shift is less than zero degrees. Right? So it can shift the
+[0:27:17] phase of the output to either lead or lag
+[0:27:21] that...
+[0:27:24] Of the input voltage.
+[0:27:30] Okay. And for the RC circuit, the range of phase shift angles is from minus 90 degrees to plus 90 degrees. Okay.
+[0:27:39] So so that functionality we can get even just from a very simple RC circuit.
+[0:27:47] Alright?
+[0:27:49] But one of the limitations here is that we can only get phase shifts between minus 90 degrees and plus 90 degrees. Alright? So there may be circumstances where,
+[0:27:58] we would like to get,
+[0:28:00] a phase shift that is outside that range. Right? Say we wanted to... Say, if we want a phase shift of maybe a 180 degrees or a 120 degrees. Okay?
+[0:28:10] So then to do that,
+[0:28:12] the... This simple RC circuit is not sufficient. We need something more. Alright?
+[0:28:18] And,
+[0:28:19] what we will look at next is a scheme where we take
+[0:28:23] basic units, which are just the RC circuit that we just looked at, and we concatenate them. That is we take the output of one
+[0:28:32] circuit structure like that and use it as the input for another circuit structure that's also the RC circuit.
+[0:28:40] And then what'll happen is that we'll get some phase shift from that first subunit,
+[0:28:47] and then we'll get an additional phase shift from the next subunit.
+[0:28:53] And if we string these together, then we can get progressively larger phase shifts. Okay? And so that idea of stringing
+[0:29:02] these circuits together and kind of getting the composition of the functionalities
+[0:29:08] or not exactly, but in some sense, the composition of those functionalities that is successively larger phase shifts in this case, that's called cascading
+[0:29:18] these
+[0:29:19] circuit stages. So we will now look at
+[0:29:25] this idea of the cascaded
+[0:29:32] phase shifting circuit.
+[0:29:35] Okay.
+[0:29:37] And
+[0:29:38] for this...
+[0:29:41] Okay. The basic idea... Qualitatively, the idea
+[0:29:45] or conceptually.
+[0:29:46] Alright. The idea is that we have multiple stages.
+[0:29:51] Okay. Each of which has some basic functionality. So let's say this is
+[0:29:57] phase shifter one.
+[0:30:00] Right? Then
+[0:30:03] it will have
+[0:30:04] some input,
+[0:30:07] the NFT,
+[0:30:11] and it'll produce some output.
+[0:30:15] And we will call this
+[0:30:20] stage one.
+[0:30:22] What we then wanna do is to take that output
+[0:30:25] and use it as the input
+[0:30:29] to a second stage,
+[0:30:31] which is now another
+[0:30:34] phase shifter.
+[0:30:38] Okay.
+[0:30:41] It'll produce
+[0:30:42] its output,
+[0:30:46] and we'll call this stage two. Alright? In the simplest cases,
+[0:30:50] each stage is identical,
+[0:30:52] but they actually are not required to be identical. So you can have,
+[0:30:58] different,
+[0:30:59] circuit structures at each stage depending on,
+[0:31:02] what is the eventual functionality that you would like to achieve.
+[0:31:06] Okay? And then you just keep doing this
+[0:31:10] until you reach the end.
+[0:31:15] Alright. So we will call that
+[0:31:19] phase shifter
+[0:31:22] n.
+[0:31:25] Okay.
+[0:31:26] And that will give us our final
+[0:31:31] output voltage,
+[0:31:33] and this is going to be now stage
+[0:31:37] n.
+[0:31:38] Okay. And
+[0:31:43] the specific con... So this is a very general,
+[0:31:46] concept here of stringing these functional units together, And,
+[0:31:51] we will look at this now specifically in the case of constructing a cascaded phase shifting circuit that will allow us to get phase shifts that are outside the range
+[0:32:03] of just from minus 90 degrees to plus 90 degrees. Okay. So if we want to get
+[0:32:13] phase shifts,
+[0:32:16] we want this to be, say, greater than 90 degrees
+[0:32:21] or
+[0:32:24] less
+[0:32:25] than minus 90 degrees, right, then what we can do is we'll see is that we can
+[0:32:32] cascade,
+[0:32:36] okay, multiple
+[0:32:40] phase shifting circuits.
+[0:32:49] Okay.
+[0:32:50] So
+[0:32:51] let's
+[0:32:53] look at now a specific instance of this. Okay. So we'll have
+[0:33:02] an input
+[0:33:03] we'll call d sub s of t.
+[0:33:13] Okay.
+[0:33:14] And
+[0:33:15] we're gonna take that input signal, and it's going to go to...
+[0:33:20] Alright. Just an RC
+[0:33:22] circuit here.
+[0:33:26] Okay. Like this.
+[0:33:30] Okay. So this is the capacitance.
+[0:33:33] This is the resistance.
+[0:33:34] Alright?
+[0:33:35] And this here is going to be...
+[0:33:38] We'll call this stage one of this cascaded phase shifting circuit. Alright?
+[0:33:44] And then we will take the output of this, which is the voltage across the, resistor,
+[0:33:50] and we will use it as the input to another stage
+[0:33:55] that looks just like this first stage over here. Alright. So we are again going to have a capacitor.
+[0:34:09] Okay. Capacitance c, resistance r.
+[0:34:13] For simplicity, we will take the second stage to look just like the first stage.
+[0:34:19] So this is now
+[0:34:21] stage two.
+[0:34:24] Okay. And then we will have one more
+[0:34:28] stage of this.
+[0:34:37] K. Like this,
+[0:34:38] capacitance,
+[0:34:40] resistance,
+[0:34:42] and
+[0:34:43] this will be our output,
+[0:34:47] v out of t.
+[0:34:50] Okay.
+[0:34:51] And so
+[0:34:54] what we're gonna do here is we're going to take
+[0:34:59] b sub s of t to be,
+[0:35:03] some amplitude capital b sub s times the cosine
+[0:35:06] of omega t.
+[0:35:08] We will take omega,
+[0:35:11] our angular frequency to be 10 to the third
+[0:35:15] radians per second,
+[0:35:18] pass it in c to be one
+[0:35:21] microfarad
+[0:35:23] resistance r to be one
+[0:35:26] kilohm.
+[0:35:27] Okay.
+[0:35:29] And,
+[0:35:30] we wanna think about
+[0:35:32] the voltages
+[0:35:34] at each of these nodes here. This is v two.
+[0:35:38] This is v one.
+[0:35:40] Okay?
+[0:35:43] And
+[0:35:44] for each of these, at the end of each stage, there will be some
+[0:35:50] phase shift that we get relative to vis a vis. Right? So,
+[0:35:55] right, at the output,
+[0:35:57] I'd say the phase
+[0:35:59] is shifted
+[0:36:03] by some phase
+[0:36:06] phi out.
+[0:36:08] Okay?
+[0:36:09] And then,
+[0:36:10] say, after the second stage, so the voltage v two over here, then the phase
+[0:36:20] of that voltage relative to Versus, it's gonna be shifted by
+[0:36:26] some phase
+[0:36:28] angle phi two. Okay. And so what we wanna do here is to solve for, the phase shift, after the second stage,
+[0:36:37] in this whole structure.
+[0:36:39] And then
+[0:36:42] what is the final,
+[0:36:44] phase shift of v out relative to v s? Okay. So this is what,
+[0:36:50] we wanna do. And so to do that, what we need to do is to solve for, v two and v out, and we will do this using phases.
+[0:37:00] Okay?
+[0:37:01] Now if we look at this circuit, then we can see that...
+[0:37:07] Right. One way that we can proceed, which is, really the most straightforward way to proceed,
+[0:37:13] is,
+[0:37:15] to use node analysis
+[0:37:17] to get the voltage v two as a phasor.
+[0:37:21] Okay. Then from that, we'll be able to get the phase shift phi two. And then once we have v two, then we can just use voltage division to get v out.
+[0:37:34] And then correspondingly, the phase phi out. Alright. So that's how we're going to solve this problem here.
+[0:37:41] Okay. So let's use...
+[0:37:44] We use node analysis.
+[0:37:50] Okay.
+[0:37:51] And
+[0:37:52] so
+[0:37:55] in node analysis, right, what we wanna do is we take our unknown variables to be v one and v two, right, the voltages at the extraordinary nodes,
+[0:38:05] and then we apply
+[0:38:07] KCL
+[0:38:09] at each of those nodes. Alright? So when we apply KCL, say, at v one, right, we're gonna take, the sum of the outgoing currents as phasors, to be zero. So
+[0:38:22] at the node v one, then we have the current going out this way to the left. Alright. So that's going to be the phasor v one
+[0:38:33] minus
+[0:38:34] the voltage source, as a phasor v s divided by the impedance
+[0:38:41] of the capacitor.
+[0:38:43] Right?
+[0:38:44] Then,
+[0:38:46] the current going
+[0:38:47] down this way through the resistor
+[0:38:50] is going to be
+[0:38:52] v one over the resistance r.
+[0:38:58] And then the current going to the right
+[0:39:00] through this capacitor over here is going to be v one minus v two
+[0:39:07] over
+[0:39:09] the impedance of the capacitor.
+[0:39:11] And the sum of all these currents has to be zero by KCL,
+[0:39:17] and the impedance of the capacitor here is, as usual, one over j omega c.
+[0:39:23] So
+[0:39:25] that is one of our KCL equations.
+[0:39:28] Then we get second KCL equation by applying
+[0:39:34] KCL at this node over here, v two. Alright? So for this node, the current going out to the left is going to be v two minus v one over z sub c. So we have
+[0:39:49] v two minus v one
+[0:39:51] over
+[0:39:54] z sub c. Alright?
+[0:39:57] Then we have the current flowing down through this resistor,
+[0:40:01] which is just v two
+[0:40:04] over r.
+[0:40:06] And then we have the current flowing out to the right over here,
+[0:40:11] and that is going to be v two over,
+[0:40:15] the impedance of the capacitor plus the impedance of the resistor. So that is going to be
+[0:40:23] b two over z c plus r.
+[0:40:27] And those have to all add up to zero.
+[0:40:32] Okay.
+[0:40:34] So now we have... Right. In the usual way, applying node analysis, we have our two unknown
+[0:40:40] voltages,
+[0:40:41] v one and v two, which are now phasors,
+[0:40:44] and we have two linear equations
+[0:40:47] for those two unknowns.
+[0:40:49] And so that's a system that,
+[0:40:52] we know that we should be able to solve. Okay. So if we take, this first equation up here and just group our unknown coefficients,
+[0:41:01] then for v one,
+[0:41:03] we're going to have
+[0:41:06] one over r, that's this term, plus
+[0:41:09] two
+[0:41:12] over z sub c. Right? That's
+[0:41:15] this term and this term. Right?
+[0:41:19] That
+[0:41:20] times v one.
+[0:41:22] And then for v two, from this over... Term over here, we have minus
+[0:41:28] one over z c
+[0:41:30] times v two.
+[0:41:32] And then the last term is this one over here, which if we move it to the right hand side, is one over z c times
+[0:41:41] v sub s. Alright?
+[0:41:44] So that's from the first KCL equation that is at the node v one. And then from the second KCL equation down here,
+[0:41:53] okay, then what we get is,
+[0:41:56] excuse me, minus one over z c
+[0:42:01] times v one. Right? That's this term over here.
+[0:42:06] And then for v two, we have one over r, this term,
+[0:42:11] plus
+[0:42:13] one over z c,
+[0:42:15] that's this term, plus one over z c
+[0:42:20] plus r, that's this term over here. Right?
+[0:42:24] That is times v two,
+[0:42:26] and this whole thing is going to be equal to zero. Okay.
+[0:42:31] So now we have, two equations
+[0:42:34] for two unknowns. Our two unknowns are v one and v two.
+[0:42:38] What we wanna solve for is v two. Okay? So, you can do that any way that you would like. We will do it using Cramer's rule, okay, because that allows us easily to solve for v two without, having to solve for v one. Okay. So let's solve
+[0:42:58] for v two now. Alright. You can do it however you would like.
+[0:43:03] We'll do it by Kramer's rule.
+[0:43:09] Okay.
+[0:43:10] And so by Cramer's rule v two, it's going to be in the numerator.
+[0:43:15] What we do is we take the,
+[0:43:19] column vector of of constants, one over z c v s and zero, and we use it to replace the coefficients of v two over here, and then we take the determinant of the resulting
+[0:43:31] matrix of of coefficients. So if we do that, then we get,
+[0:43:37] it is one over z c
+[0:43:41] squared
+[0:43:42] times
+[0:43:44] v sub s.
+[0:43:47] And then in the denominator,
+[0:43:49] we have the matrix of coefficients
+[0:43:52] or we have the determinant of the matrix of coefficients. So that is going to be one over r plus two
+[0:44:00] over z c
+[0:44:02] times one over r plus one over z c
+[0:44:06] plus one over
+[0:44:08] z c plus r.
+[0:44:10] Okay.
+[0:44:12] And then we have
+[0:44:13] minus
+[0:44:15] one over z c
+[0:44:17] square.
+[0:44:19] Okay.
+[0:44:21] So that's what we have for v two.
+[0:44:24] And then,
+[0:44:28] once we have v two...
+[0:44:34] K. If we look at our original circuit up here, right, once we have the voltage v two, then since the capacitor and the resistor here are in series, right, since this is, just a stub over here, then v out, we can get by voltage division. Right? V out is going to be, r over,
+[0:44:54] r plus z c times v two, right, by voltage division.
+[0:45:02] Okay. So v out
+[0:45:05] then is going to be equal to r
+[0:45:08] over z c plus r
+[0:45:11] times v two.
+[0:45:13] We know this by voltage division.
+[0:45:20] Okay. So
+[0:45:22] now let's go ahead and,
+[0:45:24] try to calculate these putting
+[0:45:27] numbers in from,
+[0:45:31] what we specified
+[0:45:33] up here. Okay.
+[0:45:35] So
+[0:45:42] we come back down here.
+[0:45:45] Right? So from v two,
+[0:45:48] the expression that we have over here, right, what we're going to do is we're first going to replace z sub c by one over j omega c. Okay. So
+[0:46:00] v two is equal to... In the numerator,
+[0:46:04] we have one over z c, the quantity squared. So one over z c is just j omega c. When we square it, we get minus
+[0:46:13] the quantity omega c squared. Right? We'll write the Versus, at the end.
+[0:46:20] And then in the denominator,
+[0:46:22] right, what we have is
+[0:46:26] we have one over r plus... And then two over z c is j times
+[0:46:32] two omega c,
+[0:46:35] and then we have
+[0:46:37] one over r. Right? So that what we just wrote down is this term here. Then from this term over here, we have one over r plus j omega c plus...
+[0:46:46] And then one over z c plus r is j omega c over
+[0:46:52] one plus
+[0:46:53] j omega r c.
+[0:46:55] Okay?
+[0:46:57] And then finally,
+[0:46:59] for minus one over z c squared, that is going to give us plus
+[0:47:05] omega c, the quantity squared.
+[0:47:08] All of this times
+[0:47:11] v sub s.
+[0:47:13] Okay.
+[0:47:14] So now
+[0:47:16] what we wanna do is to multiply
+[0:47:21] by r squared
+[0:47:23] over r squared. Alright? And that will allow us to, among other things, get rid of the one over r's in here.
+[0:47:33] Okay.
+[0:47:35] So
+[0:47:37] we carry out that multiplication,
+[0:47:39] then we get... In the numerator, we get minus omega
+[0:47:43] r
+[0:47:45] c
+[0:47:46] quantity squared.
+[0:47:49] And then in the denominator,
+[0:47:54] if we distribute out the r square... So one factor of r goes here and one factor of r goes here, we get one plus
+[0:48:04] j times two
+[0:48:06] omega RC
+[0:48:08] times one plus
+[0:48:12] j omega RC
+[0:48:14] plus
+[0:48:17] j omega RC over one plus
+[0:48:20] j omega RC
+[0:48:23] Mhmm.
+[0:48:25] Plus
+[0:48:27] omega RC, the quantity squared.
+[0:48:31] Okay.
+[0:48:32] So now, alright, you see that,
+[0:48:36] throughout this expression,
+[0:48:38] the various non numerical parameters,
+[0:48:41] right, they always appear in this combination omega times r times c.
+[0:48:47] Okay. So what is that equal to numerically? Omega,
+[0:48:51] remember, is 10 to the third radians per second. R
+[0:48:54] is one kilo ohm,
+[0:48:57] and c, the capacitance, is one
+[0:49:00] microfarad.
+[0:49:02] Right? So that's 10 to the third
+[0:49:04] times 10 to the third
+[0:49:06] times 10 to the minus six,
+[0:49:09] and that's one. So omega RC is just equal to one. Okay? So that makes our numerical calculations
+[0:49:18] much simpler.
+[0:49:20] Okay. So we get
+[0:49:22] in the numerator
+[0:49:24] here now.
+[0:49:26] Okay. We get... It's just gonna be minus one.
+[0:49:30] Okay.
+[0:49:32] And then in the denominator,
+[0:49:35] right, from over here, we get one plus j times two
+[0:49:41] times one
+[0:49:43] plus...
+[0:49:45] And this is j.
+[0:49:47] Alright. That's from the j omega RC over here. And then this over here is j over one plus j.
+[0:49:56] Okay.
+[0:49:57] And then,
+[0:49:58] over here, we just get plus one.
+[0:50:03] Okay.
+[0:50:06] Now here,
+[0:50:07] right, if we look at
+[0:50:09] this j over one plus j in the denominator,
+[0:50:13] right, we have j over one plus j. Okay.
+[0:50:17] So...
+[0:50:19] Alright. Simplify that. Let's multiply that by the complex conjugate of the denominator. So one minus j or... Over itself.
+[0:50:26] One minus j over one minus j.
+[0:50:30] Okay. And so then, what we get here is
+[0:50:35] j times one minus j divided by... And then one plus j times one minus j is just two.
+[0:50:42] Okay?
+[0:50:44] And
+[0:50:45] so when we multiply this out, we have one half
+[0:50:49] times...
+[0:50:51] And then j times
+[0:50:55] j times minus j over here is just one,
+[0:51:00] and then
+[0:51:01] j times one over here is j. So one half times one plus j. Alright. So that's what we have for this j over one plus j over here. Right?
+[0:51:15] So now if we substitute that in, we get minus one
+[0:51:21] over one plus j times two
+[0:51:24] times one plus j. And then for j over one plus j, we write, plus one half plus j times one half. Okay.
+[0:51:35] And then plus one.
+[0:51:38] Okay. And then
+[0:51:40] simplifying that a little bit more, we have minus one in the numerator times one plus j times two.
+[0:51:48] And then,
+[0:51:51] for this term over here, we have one plus one half, which is three halves, plus j plus j times one half, which is j times three halves. So we have three halves
+[0:52:01] times
+[0:52:03] the quantity one plus j, alright,
+[0:52:06] plus one.
+[0:52:08] Okay.
+[0:52:09] And so now just continuing to simplify this, we still get minus one in the numerator.
+[0:52:15] And then,
+[0:52:17] we have in the denominator,
+[0:52:20] we have three halves.
+[0:52:22] That's this three halves over here. And when we multiply one plus j times two by one plus j,
+[0:52:30] we're going to get one
+[0:52:33] plus
+[0:52:34] j times three
+[0:52:36] minus
+[0:52:37] two.
+[0:52:39] Okay? And then plus one. Alright?
+[0:52:44] Oops.
+[0:52:48] Okay.
+[0:52:50] And then now we simplify this a little bit more where we have minus one.
+[0:52:55] And then in the denominator,
+[0:52:57] we have one minus two, that's negative one times three halves, that's negative three halves,
+[0:53:05] plus one, that's negative one half. So we have negative one half.
+[0:53:09] And then for the imaginary part, we have three halves times j times three, so plus
+[0:53:15] j times
+[0:53:17] nine halves. Alright?
+[0:53:20] And then here,
+[0:53:22] now,
+[0:53:23] right, you should be,
+[0:53:25] very familiar with this process here. We multiply by the complex conjugate
+[0:53:30] of,
+[0:53:31] the denominator over itself. So we have minus one half minus j
+[0:53:37] times nine halves over minus one half minus j
+[0:53:42] times nine halves.
+[0:53:45] Okay.
+[0:53:46] And,
+[0:53:51] right, if we multiply that out, we can see that...
+[0:53:56] Right. The minus one here
+[0:53:59] and
+[0:54:00] the minus signs in here will cancel each other out. So in the numerator,
+[0:54:06] we just get one half
+[0:54:10] plus j times nine halves.
+[0:54:14] And then in the denominator,
+[0:54:16] right, we have this denominator multiplied by its complex conjugate.
+[0:54:21] So that product is gonna be the real part squared plus the imaginary part squared. So we get one quarter
+[0:54:28] plus
+[0:54:30] 81 over four. Alright?
+[0:54:33] And then we're going to get,
+[0:54:35] right? It'll be four or or it's it's 82 over four in the denominator.
+[0:54:41] So that's two over 41.
+[0:54:44] Right? And then
+[0:54:46] times
+[0:54:47] one half plus j times
+[0:54:50] nine halves. Alright. So that is going to be one over 41
+[0:54:56] times one plus j times nine.
+[0:55:00] Alright?
+[0:55:01] And
+[0:55:04] this is equal to v two
+[0:55:07] over
+[0:55:09] v s. Alright?
+[0:55:14] So what we did... Yeah. So back here,
+[0:55:17] right, this was v two over Versus Right? We divided both sides here by,
+[0:55:22] by Versus Okay.
+[0:55:27] Okay. So we have one over 41 times the quantity one plus j times nine. Right?
+[0:55:34] And,
+[0:55:36] so we can figure out the phase of that very easily.
+[0:55:39] That's the phase phi two. Right? It's the phase of v two relative to v s. Okay. So that is going to be
+[0:55:48] the inverse tangent of the imaginary part nine divided by the real part one. Alright?
+[0:55:57] And if you calculate that,
+[0:55:59] by plugging it into your calculator, you should get that this is
+[0:56:03] 83.7
+[0:56:04] degrees.
+[0:56:09] Okay. So that is the phase that we have
+[0:56:13] after two stages
+[0:56:16] of
+[0:56:18] these phase shifting circuits. Right? So
+[0:56:23] over here. Okay.
+[0:56:26] So that is not quite
+[0:56:29] over 90 degrees. Alright?
+[0:56:32] So what we wanna do now is to figure out what v out is. Right? So what the voltage will be after this
+[0:56:39] third stage
+[0:56:43] of,
+[0:56:44] our cascaded phase shifting circuit. Okay? And for v out, we can get that just by voltage division.
+[0:56:57] Okay.
+[0:57:00] So
+[0:57:02] then
+[0:57:03] v out
+[0:57:07] as a phasor. Right? That's going to be equal to r
+[0:57:11] over z c plus r
+[0:57:14] times
+[0:57:15] v two.
+[0:57:19] Alright. So that's r
+[0:57:21] over
+[0:57:22] one over j omega c
+[0:57:25] plus r
+[0:57:26] times
+[0:57:28] v two.
+[0:57:30] Alright. Then this,
+[0:57:33] alright, we can multiply
+[0:57:35] by
+[0:57:39] j omega c
+[0:57:45] over j omega c.
+[0:57:48] And if we do that, we get
+[0:57:51] j omega RC over one plus
+[0:57:56] j omega RC times
+[0:57:59] v two.
+[0:58:01] K. And remember, omega RC was equal to one.
+[0:58:07] Okay. So if we make that substitution, then in the numerator, we're just gonna have j. And in the denominator, we're gonna have one plus j
+[0:58:16] times
+[0:58:19] v two. Alright?
+[0:58:22] And then remember we saw
+[0:58:30] up here, right, the
+[0:58:35] j over one plus j is equal to one half times the quantity one plus j.
+[0:58:42] Okay. So if we make that substitution, we have one half times one plus j
+[0:58:50] times v two. Okay.
+[0:58:53] And,
+[0:58:54] we saw just a few minutes ago
+[0:58:57] that
+[0:58:58] v two was equal to one over 41 times the quantity one plus j nine times v s. Right?
+[0:59:06] So
+[0:59:07] we take this. We divide both sides of this equation by v s, right, then what we get is that v out
+[0:59:20] over v s is equal to one half times one plus j
+[0:59:26] v two
+[0:59:28] over v s. Alright?
+[0:59:31] So that's one half times one plus j, and then v two over v s
+[0:59:39] from up here,
+[0:59:41] right, is one over 41 times quantity one plus j nine. So we have
+[0:59:47] times one over 41
+[0:59:50] times one
+[0:59:51] plus j times nine.
+[0:59:54] Alright?
+[0:59:55] And if we multiply,
+[0:59:57] this out, right, we're gonna get
+[1:00:01] one over 41
+[1:00:04] times one half. And then one plus j times one plus j nine is gonna be one
+[1:00:10] plus
+[1:00:12] j times 10
+[1:00:15] minus nine.
+[1:00:17] Alright?
+[1:00:19] And then...
+[1:00:20] So we're gonna have
+[1:00:26] one over 41,
+[1:00:29] and then one minus nine, that's minus eight, and then times one half is gonna be minus four.
+[1:00:35] And then we have the one half times j times 10, so that is plus j times five.
+[1:00:44] Okay.
+[1:00:45] So this now
+[1:00:50] is
+[1:00:52] v out over v s. Okay.
+[1:00:57] Now
+[1:00:58] if you were to plug this
+[1:01:00] into your... If you were to take this and say, alright. Well, the phase angle of
+[1:01:09] this quantity here then should just be the inverse tangent of five over minus four. Alright?
+[1:01:17] Then,
+[1:01:18] that will actually give you the incorrect answer.
+[1:01:23] Okay?
+[1:01:24] And the reason
+[1:01:27] is that...
+[1:01:29] Alright. We can see it
+[1:01:32] if we plot things out
+[1:01:34] in the two dimensional complex plane like this. Alright? So we have...
+[1:01:43] If we neglect the one over 41
+[1:01:46] over here. Alright. Well, we're... We'll keep it. Right? So the imaginary part of... Or the real part of this is minus four over 41. Right? So say that's over here, minus four
+[1:01:59] over 41.
+[1:02:00] The imaginary part is
+[1:02:04] five over 41.
+[1:02:05] So here, say five
+[1:02:08] over 41.
+[1:02:10] Alright. So v out over v s is a complex number here
+[1:02:16] on, the two dimensional complex plane. Right?
+[1:02:21] Like this.
+[1:02:22] Okay.
+[1:02:23] But
+[1:02:24] if you were to take
+[1:02:26] this here and say, alright. Well, the
+[1:02:31] the phasing... So the phase angle that we want
+[1:02:37] is this. Alright?
+[1:02:40] And you can see that it clearly is greater than 90 degrees. Alright?
+[1:02:45] But if you were to take
+[1:02:48] this expression here and say, oh, well, the phase angle of this is just the inverse tangent of five over minus four.
+[1:02:57] If you were to plug that into your calculator and calculate it, then
+[1:03:02] the angle that you will actually get
+[1:03:06] is a negative phase angle.
+[1:03:09] It is this angle here. Right? This is minus
+[1:03:15] the inverse tangent
+[1:03:17] of five over four or, equivalently, the inverse tangent of five over minus four. Okay? And the reason is that...
+[1:03:26] Right. When we define a function, it's sort of nice for it to be single valued. And your and your calculator, right, it wants the function to be single... That it can calculate to be single valued. And so in order to make the inverse tangent single valued, right, you can see here from this little,
+[1:03:44] plot
+[1:03:45] that,
+[1:03:47] right, there's clearly more than one angle that has,
+[1:03:52] an inverse tangent
+[1:03:54] of,
+[1:03:55] or that is the inverse tangent of five over minus four. Right? And so it's the question of which one, should you pick.
+[1:04:03] The calculator picks whatever angle is in the range between minus 90 degrees and plus 90 degrees. And in calculus,
+[1:04:11] that is how the inverse tangent function is typically defined. Right? It's... As a value,
+[1:04:17] right, its range is between minus 90 degrees and 90 degrees. Okay. But in this case,
+[1:04:26] that's the incorrect answer. Right? What we want actually
+[1:04:29] is
+[1:04:31] that plus a 180 degrees, that gives us the correct phase angle
+[1:04:37] phi out. Right? So in this case, what we want is for phi out
+[1:04:44] to be... We have to add a 180 degrees
+[1:04:47] because of this issue that I was just describing to
+[1:04:52] what we have formally, which is the inverse tangent of... Or minus the inverse tangent of five over four.
+[1:04:59] And if you calculate that,
+[1:05:02] it's a 128.7
+[1:05:03] degrees. Okay. And from this diagram here, right, that looks, about right.
+[1:05:11] So this
+[1:05:14] is the actual correct result.
+[1:05:18] We can also verify it over here,
+[1:05:21] alright,
+[1:05:22] by noticing
+[1:05:24] that...
+[1:05:26] Alright. If we look at this, okay, one half times one plus j,
+[1:05:31] that clearly has a phase angle
+[1:05:34] of 45 degrees.
+[1:05:37] Alright. The one over 49... One over 41 times the quantity one plus j times nine.
+[1:05:45] Alright. We just calculated up here.
+[1:05:47] That has that has a phase angle of 83.7 degrees.
+[1:05:55] Okay.
+[1:05:57] And so if we put these together,
+[1:05:59] then...
+[1:06:03] Alright. And the product of these two
+[1:06:06] is,
+[1:06:07] the actual... It should... It's it's the same as this. Right? So it should have the same phase angle. And if we add these two phase angles together, then clearly, get 128.7
+[1:06:19] degrees. Okay. So that checks out. Alright.
+[1:06:23] And so this is an issue that one has to be,
+[1:06:27] somewhat careful of in calculating
+[1:06:31] the phases
+[1:06:32] of,
+[1:06:33] complex numbers in the way that we are going to be using them. Here, you have to be cognizant of,
+[1:06:40] you know, which is the correct value,
+[1:06:44] of the phase angle given that the inverse tangent function is multivalued.
+[1:06:49] Okay?
+[1:06:51] And
+[1:06:52] kind of drawing out a little picture like we have over here or visualizing it... This picture in your head is,
+[1:07:02] you know, usually a very good way of determining,
+[1:07:06] which
+[1:07:08] is actually the correct phase angle. Is it directly the inverse tangent, or do you have to,
+[1:07:13] shift it by a 180 degrees? In this case, what we saw was that you had to shift it by a 180 degrees.
+[1:07:20] Okay.
+[1:07:22] Now
+[1:07:23] the last thing... Right? So what we see here then is that now we actually have gotten
+[1:07:29] a phase shift angle of greater than 90 degrees. Alright? And we did that by using this cascaded phase shifter. Alright? So we see now that the cascaded
+[1:07:42] phase shifter,
+[1:07:44] it gives us
+[1:07:47] phase angle
+[1:07:49] phi f that is greater than 90 degrees, which,
+[1:07:54] you could not get from just a single stage. We didn't quite get there with the values that we selected using,
+[1:08:01] two stages, but three stages didn't get us there. Okay?
+[1:08:06] A trade off here, though, is that as we add more and more stages, if we're only using passive components, right, resistors,
+[1:08:15] capacitors, and inductors,
+[1:08:18] then,
+[1:08:19] what will inevitably happen is that the amplitude of the voltage will decrease.
+[1:08:26] And we can see that by comparing
+[1:08:32] the magnitude of
+[1:08:34] v two over v s, right, which is... It's basically,
+[1:08:39] the,
+[1:08:40] the amplitude,
+[1:08:41] the relative amplitude that we get after two stages
+[1:08:44] to the magnitude of v out over v s, which is the
+[1:08:51] relative,
+[1:08:52] magnitude that we get after the third stage.
+[1:08:56] Alright. So the trade off here
+[1:09:00] is that the amplitude,
+[1:09:05] okay, of the voltage,
+[1:09:09] it decreases
+[1:09:12] as more stages are added.
+[1:09:20] Okay.
+[1:09:21] I... And so, for example, if we look at the magnitude of v two over the magnitude of v s, alright,
+[1:09:30] what we saw
+[1:09:35] up here,
+[1:09:37] right, is that this is one over 41 times the quantity one plus j times nine. So the magnitude of this is the square root of one over 41 squared plus
+[1:09:50] nine over 41 squared.
+[1:09:54] Okay. So this is gonna be square root of one over 41
+[1:09:58] squared plus
+[1:10:00] nine over 41 squared.
+[1:10:03] Right? If you calculate that, then you get around point two two.
+[1:10:07] Okay.
+[1:10:09] We can compare that to
+[1:10:14] the magnitude of the m over the magnitude of the s. Right? That's the relative amplitude that we get after the third stage.
+[1:10:26] Alright, we saw
+[1:10:27] up here,
+[1:10:29] right, v out
+[1:10:31] over v s is this. So the magnitude of this is
+[1:10:37] the square root of four over 41 squared plus five over 41 squared.
+[1:10:43] Okay. So we've had the square root of
+[1:10:47] four over 41 squared plus
+[1:10:51] five over 41 squared.
+[1:10:54] And if you calculate this,
+[1:10:56] you get that it's, point one six. Okay. So,
+[1:11:01] the magnitude of the the amplitude of the voltage signal is decreasing as we're adding more stages.
+[1:11:06] Alright. So in order to rectify that, and we will see this later on in the course when we talked about, when we talked about active, filter circuits and the like, then the way that you can, rectify this is you can introduce,
+[1:11:23] components into your circuit that will give you gain. Alright? And,
+[1:11:29] the way that we will do this is to use op amps. Right? That's basically the
+[1:11:36] the component that we have at our disposal right now that will give us gain. Right? So this
+[1:11:41] problem of decreasing voltage amplitude, this can be addressed
+[1:11:49] by using
+[1:11:52] an op amp
+[1:11:56] for amplification.
+[1:12:03] Okay. So that is everything that we wanted to say about,
+[1:12:08] phase shift circuits.
+[1:12:11] So that's what we'll finish up with for this recording.
+[1:12:14] And what we will do in our next class meeting is we will start talking about,
+[1:12:21] how we do calculations of power,
+[1:12:24] using phasers.
+[1:12:25] And there, it's a little bit more complicated because we're going to be taking
+[1:12:32] complex quantities, say voltage and current, and multiplying them by each other. And so we have to be a little bit more careful about how we go from that complex quantity to
+[1:12:44] the power of which ultimately is a real quantity. Okay. So we'll start discussing that in class on Monday.
+[1:12:53] Okay. So that is it for the
+[1:12:56] for the recording,
+[1:12:58] and I will now stop the recording.

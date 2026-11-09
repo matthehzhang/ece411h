@@ -1,0 +1,317 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:13.000
+Okay, so this is you'll be problem 6.10 and this is an example of how to determine initial and final conditions.
+
+00:00:13.000 --> 00:00:20.000
+For currents and voltages in an R LC circuit. Okay, so this is an example.
+
+00:00:20.000 --> 00:00:24.000
+Determining
+
+00:00:24.000 --> 00:00:27.000
+Initial.
+
+00:00:27.000 --> 00:00:33.000
+And final conditions.
+
+00:00:33.000 --> 00:00:38.000
+Okay, for an RLC circuit.
+
+00:00:38.000 --> 00:00:51.000
+And this is something that is important and very useful because doing so is often the first step or certainly one of the first steps in solving any RLC circuit problem.
+
+00:00:51.000 --> 00:01:04.000
+Okay, so the circuit that we're considering here is the one shown in the problem statement. And what we're asked is to determine the values of all of these currents and voltages.
+
+00:01:04.000 --> 00:01:12.000
+At t equal to 0, which is when this switch closes. And then to determine the values of a subset of these.
+
+00:01:12.000 --> 00:01:21.000
+The ones shown over here. As T goes to infinity. Okay. And so.
+
+00:01:21.000 --> 00:01:29.000
+To get started, let us Hi, draw the circuit.
+
+00:01:29.000 --> 00:01:34.000
+Okay, so we have a 24 volt source.
+
+00:01:34.000 --> 00:01:38.000
+A 12 ohm resistor.
+
+00:01:38.000 --> 00:01:50.000
+And then we have our switch. Down here. Okay, it's initially in the open position. And then it goes to the close position at t equal to 0.
+
+00:01:50.000 --> 00:01:57.000
+Then we have a capacitor.
+
+00:01:57.000 --> 00:02:02.000
+A resistor.
+
+00:02:02.000 --> 00:02:10.000
+And an inductor for the rest of our circuit. I and so
+
+00:02:10.000 --> 00:02:18.000
+We have a capacitor, it has value C. And then we have the voltage across the capacity to find.
+
+00:02:18.000 --> 00:02:25.000
+With the polarity shown here. We have the current, flowing, into the capacitor.
+
+00:02:25.000 --> 00:02:36.000
+This is an And we have. The voltage of the resistor defined this way. And the current flowing through the resistor.
+
+00:02:36.000 --> 00:02:44.000
+Then we have the current flowing through the inductor. And, the voltage. Across the inductor.
+
+00:02:44.000 --> 00:02:52.000
+Like this, okay. And, what we were asked. Is to calculate. All of these.
+
+00:02:52.000 --> 00:03:01.000
+For T equal to 0. And then, smaller set of these. For T going to infinity.
+
+00:03:01.000 --> 00:03:12.000
+Alright, and so Let's think first about what happens when T is less than 0. That is with the switch here in the open.
+
+00:03:12.000 --> 00:03:20.000
+Position. Okay, so in that case. What happens is that the capacitor behaves as an open circuit.
+
+00:03:20.000 --> 00:03:28.000
+And the inductor behaves as a short circuit. Okay, so capacitor.
+
+00:03:28.000 --> 00:03:37.000
+Behaves as Open circuit. And then the inductor behaves.
+
+00:03:37.000 --> 00:03:42.000
+As
+
+00:03:42.000 --> 00:03:56.000
+A short circuit, okay. And so, what we can see. Very quickly is that I sub C at 0 minus that is for times less than 0 leading up to T equal to 0.
+
+00:03:56.000 --> 00:04:02.000
+Then because the capacitor is behaving as an open circuit. The current through the capacitor is 0.
+
+00:04:02.000 --> 00:04:11.000
+Alright, now. Because the current through the capacitor is 0. Alright, then.
+
+00:04:11.000 --> 00:04:23.000
+And we also know that the inductor behaves as a short circuit. And therefore the voltage across the resistor.
+
+00:04:23.000 --> 00:04:39.000
+Is 0 as well. Alright, and therefore the current. Through the resistor is 0 then we know that the potential here, the voltage here is the same as The voltage at this node down here.
+
+00:04:39.000 --> 00:04:44.000
+We also know since, I sub C is equal to 0. That the current through this resistor is 0, right?
+
+00:04:44.000 --> 00:04:54.000
+Because the switch is in the open position. So therefore the voltage here. Is 24 volts.
+
+00:04:54.000 --> 00:05:01.000
+So we know the voltage here is 24 volts. The voltage here is 0. So that means that V.
+
+00:05:01.000 --> 00:05:11.000
+At 0 minus is minus 24 volts. Alright. Now, from this. We can deduce immediately.
+
+00:05:11.000 --> 00:05:20.000
+That V sub C. And 0, right, when the switch. Has closed is also minus 24 volts.
+
+00:05:20.000 --> 00:05:32.000
+And the reason we know that is that the voltage across the capacitor always has to be continuous. Because the current is equal to C times DVDT for a capacitor.
+
+00:05:32.000 --> 00:05:42.000
+And so if V is not. Continuous, then the current is undefined. Alright. So that's the first.
+
+00:05:42.000 --> 00:05:51.000
+Initial condition that we determine. From what I just described. We also know that the current through the resistor.
+
+00:05:51.000 --> 00:06:00.000
+At 0 minus is equal to 0. Right, the reasoning there was that the Induction behaves as a short circuit.
+
+00:06:00.000 --> 00:06:06.000
+And so the voltage across the I resistor is 0. Alright, and therefore the current. Through the resistor has to be 0, right?
+
+00:06:06.000 --> 00:06:17.000
+So we also know that the voltage. Across the resistor. It's equal to 0 minus is equal to 0.
+
+00:06:17.000 --> 00:06:26.000
+Now for the inductor. Alright, since it's a short circuit, we know that the voltage across the inductor has to be 0.
+
+00:06:26.000 --> 00:06:32.000
+Alright, we also know that the current has to be 0. We can easily deduce that the current has to be 0.
+
+00:06:32.000 --> 00:06:45.000
+Because we just saw that the current through the resistor is 0. The current along this branch here is 0 and so therefore the current through the inductor I sub L has to be 0 as well.
+
+00:06:45.000 --> 00:06:57.000
+Alright, so we also have that I said L at 0 minus is equal to 0. And V sub L, 0 minus is equal to 0.
+
+00:06:57.000 --> 00:07:09.000
+Because the current in an inductor also has to be continuous. Alright, since the voltage is equal to L times DIDT for an inductor, then if.
+
+00:07:09.000 --> 00:07:22.000
+The inductors current is not continuous. Then the voltage will be under defined. Therefore, Isabel has to be continuous and we can immediately conclude that I sub l at 0.
+
+00:07:22.000 --> 00:07:30.000
+Also has to be 0. Okay, so that's the second. Of the initial conditions that we can determine.
+
+00:07:30.000 --> 00:07:40.000
+Okay, so now let's think about what happens at T equal to 0. Alright, so it's equal to 0.
+
+00:07:40.000 --> 00:07:49.000
+The switch in the circuit closes. Alright. No. We just saw a few minutes ago.
+
+00:07:49.000 --> 00:08:00.000
+That V sub C of 0 is equal to minus 24. Both. Okay. So.
+
+00:08:00.000 --> 00:08:13.000
+When the switch is closed here, then this node. Is that the same voltage as this terminal of the resistor This node is 24 volts.
+
+00:08:13.000 --> 00:08:24.000
+Below that okay And so we know that, therefore V. Has to be equal to minus 24 volts.
+
+00:08:24.000 --> 00:08:29.000
+Alright, so, from the fact that V sub C at 0 is equal to minus 24 volts.
+
+00:08:29.000 --> 00:08:39.000
+We can also conclude that V sub R. At 0 is equal to minus 24 volts.
+
+00:08:39.000 --> 00:08:47.000
+Okay, once we have that. Alright, then We can determine what I sub R is just from Ohm's law, right?
+
+00:08:47.000 --> 00:08:54.000
+V sub r is minus 24 volts. So I sub r is equal to just the voltage minus 24 volts.
+
+00:08:54.000 --> 00:09:05.000
+Over the resistance 80'clock. So I sub r is equal to minus 3 amps, meaning that is flowing in the upward direction along this branch.
+
+00:09:05.000 --> 00:09:10.000
+Okay, so I sub r.
+
+00:09:10.000 --> 00:09:21.000
+At 0, equal to. Minus 24 volts, which is Visa bar at 0. Divided by And that's equal to minus 3.
+
+00:09:21.000 --> 00:09:27.000
+Amps. So that's I sub r at 0.
+
+00:09:27.000 --> 00:09:37.000
+Okay, now. You can go back and look at the circuit diagram. Right, we know that, the voltage between This term, this node and this node is minus 24 volts.
+
+00:09:37.000 --> 00:09:49.000
+Right. So say 0 here minus 24 up here. Therefore, V sub L has to be minus 24 volts as well.
+
+00:09:49.000 --> 00:10:01.000
+Alright, because the inductor is in parallel with the resistor. So V. A 0 is equal to minus 24 volts.
+
+00:10:01.000 --> 00:10:08.000
+As well. Okay. Then
+
+00:10:08.000 --> 00:10:15.000
+The last thing that we have to determine.
+
+00:10:15.000 --> 00:10:28.000
+Okay, is I sub C. Alright, add. T equal to 0. So to get I sub C, all right, we can just apply KCL at this node here.
+
+00:10:28.000 --> 00:10:34.000
+Alright, so we know what I sub R is. Alright, at T equal to 0. It's minus 3 amps.
+
+00:10:34.000 --> 00:10:44.000
+We know that I sub l at t equal to 0 0. So therefore I sub c has to be equal to minus 3 amps as well.
+
+00:10:44.000 --> 00:10:55.000
+Alright. And so. The last of the initial conditions that we get is I sub c at t equal to 0.
+
+00:10:55.000 --> 00:11:03.000
+This is equal to by KCL. I sub r 0 plus. I said L at 0. And this is minus 3.
+
+00:11:03.000 --> 00:11:08.000
+Amps. Alright, because I some R 0 is minus 3 amps, I said L is 0.
+
+00:11:08.000 --> 00:11:12.000
+So this is I sub c at t equal to 0.
+
+00:11:12.000 --> 00:11:19.000
+Okay, so those are the 6. Initial conditions, right, that we have a t equal to 0.
+
+00:11:19.000 --> 00:11:28.000
+Then the other part of the problem. Is to look at what happens when T goes to infinity. Alright, so here.
+
+00:11:28.000 --> 00:11:35.000
+Alright, let's, let's redraw the circuit. Right. In its configuration for T going to infinity.
+
+00:11:35.000 --> 00:11:47.000
+Where now because things have been static for a very long time. Then we can again replace the capacitor with an open circuit and the inductor with a short circuit.
+
+00:11:47.000 --> 00:11:54.000
+So we have our 24 volts source. Here.
+
+00:11:54.000 --> 00:11:58.000
+We have a 12 ohm resistor.
+
+00:11:58.000 --> 00:12:14.000
+Okay, now with the switch closed. Alright, we just draw that as a wire. And then our capacitor, we replace with an open circuit.
+
+00:12:14.000 --> 00:12:24.000
+Okay, we have our 8 ohm resistor here. And then our inductor. We replace with a short circuit.
+
+00:12:24.000 --> 00:12:32.000
+Okay, so this is now what the circuit looks like. And we have the voltage across the capacitor like this.
+
+00:12:32.000 --> 00:12:42.000
+The current through the capacitor like this the voltage across the resistor like this. The current through the resistor like this.
+
+00:12:42.000 --> 00:12:49.000
+The current through the inductor like this and then the voltage. Across the inductor like that.
+
+00:12:49.000 --> 00:12:58.000
+Okay, so, so from here, then it's very easy to determine. What the final conditions are, that the problem is asking for.
+
+00:12:58.000 --> 00:13:10.000
+Hi, it's asking for the voltage across the inductor as T goes to infinity. We know that has to be 0 because The end is behaving as a short circuit.
+
+00:13:10.000 --> 00:13:20.000
+Alright. Since the voltage across the inductor is 0. Then we know that the voltage across the resistor has to be 0 as well, right?
+
+00:13:20.000 --> 00:13:27.000
+Because they were in parallel. So the voltage across the resistor at t equals infinity is equal to 0.
+
+00:13:27.000 --> 00:13:36.000
+Since the voltage across the resistor is 0. Then the current through the resistor, T going to infinity has to be 0 as well.
+
+00:13:36.000 --> 00:13:55.000
+That was one of the final conditions that was asked for. And because of this short circuit here. Then this terminal here and this terminal here, the open circuit terminals for the capacitor, they're really all part of the same note.
+
+00:13:55.000 --> 00:13:58.000
+Alright, so we know that V sub C.
+
+00:13:58.000 --> 00:14:08.000
+Of infinity is equal to 0. As well. Alright, then. The final quantity that, is asked for is I sub L.
+
+00:14:08.000 --> 00:14:14.000
+Alright, and I sub L we know has to be 0 because I sub r is, 0. Alright.
+
+00:14:14.000 --> 00:14:29.000
+And I sub C. Is 0 as well. Okay. Because of the open circuit so we know that of infinity has to be 0.
+
+00:14:29.000 --> 00:14:39.000
+As well. This is basically. Because of KCL. Okay, so this is what we have for the initial conditions.
+
+00:14:39.000 --> 00:14:47.000
+That are I asked for in this problem for various currents and voltages. And what we will see.
+
+00:14:47.000 --> 00:15:01.000
+In subsequent examples as we work through a fuller analysis, various different types of RLC second-order circuits is that these initial conditions then can also be used.
+
+00:15:01.000 --> 00:15:13.000
+To arrive at initial conditions for. The derivatives of various currents and voltages and we'll need initial conditions for Both, the basic.
+
+00:15:13.000 --> 00:15:17.000
+Current or voltage and or voltage quantities and also their derivatives. In order to fully analyze and understand second order.
+
+00:15:17.000 --> 00:15:32.000
+Circuits because the arbitrary constants that show up in. A second order differential equation, you need 2 initial conditions in order to solve for them.
+
+00:15:32.000 --> 00:15:43.000
+Typically those will be. The value of. Okay, the current or voltage itself and also the value of its derivative.
+
+00:15:43.000 --> 00:15:49.000
+Okay, so that's, this example.
+

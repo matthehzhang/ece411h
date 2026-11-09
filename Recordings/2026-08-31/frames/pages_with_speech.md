@@ -1,0 +1,782 @@
+# 2026-08-31: board pages with the speech that accompanied them
+
+31 distinct pages from 91 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0014.jpg  on screen [0:00:00 – 0:07:44]
+<sub>sharpness 1836, ink 2.7 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0002.jpg (0:00:03), f_0004.jpg (0:04:48), f_0007.jpg (0:06:50), f_0013.jpg (0:07:44)</sub>
+
+- [0:00:04] Okay, let's go ahead and get started.
+- [0:00:08] So I've started the recording as usual.
+- [0:00:12] So we just have a couple quick announcements.
+- [0:00:15] The first one is just a reminder about the problem sets.
+- [0:00:19] Okay, so the first problem set is due on Wednesday, September 9th.
+- [0:00:24] Okay, so that's a week from this coming Wednesday.
+- [0:00:27] And then the second problem set is due on Monday, September 14th.
+- [0:00:32] Okay, so that's the next class meeting after September 9th.
+- [0:00:35] And the problem sets will be turned in as PDF files on Canvas,
+- [0:00:41] the corresponding assignments.
+- [0:00:42] Okay, the second announcement is about an upcoming schedule change.
+- [0:00:48] So this is for the week of September 14th through 18th.
+- [0:00:52] So I'll be traveling in the early part of the week.
+- [0:00:56] I will be able to be here for class on Monday.
+- [0:01:00] That's the 14th, but most likely not for September 16th.
+- [0:01:05] So what I'll do instead is for the class that we would have ordinarily on September 16th,
+- [0:01:11] I will record a class and then post the recording on Canvas.
+- [0:01:18] Okay, and so you'll be able to review the recording there.
+- [0:01:22] And then you should make sure to view that recording before our next class meeting
+- [0:01:29] after that, which will be Monday, September 21st.
+- [0:01:33] Okay, and the sequence of topics will be that the recording
+- [0:01:38] corresponding to the class on September 16th will pick up from wherever we finish
+- [0:01:44] on September 14th, and then we'll start from the end of the recording on the 21st.
+- [0:01:49] Okay, so any questions on these announcements?
+- [0:01:54] Okay, any questions from our last class meeting?
+- [0:02:00] Okay, so I just wanted to mention one thing from our last class meeting.
+- [0:02:04] There was this handout from last time on kind of tips for approaching the problem
+- [0:02:10] sets and some of that carries over two exams.
+- [0:02:13] And I just wanted to emphasize what I think is the most important point
+- [0:02:18] from that handout, which is that as you spend time doing the homework or
+- [0:02:25] doing other practice problems, old exams, what have you,
+- [0:02:31] I know that it can be tempting, all right?
+- [0:02:34] After you have finally solved some problem,
+- [0:02:37] I tried various things that maybe didn't work and
+- [0:02:40] then finally came up with an approach that did work.
+- [0:02:44] It is very tempting to say, thank God I finished this problem,
+- [0:02:48] I'm gonna move on, all right, and do the next problem.
+- [0:02:51] But actually, what you should do is once you have solved any particular problem,
+- [0:02:58] you should take a few minutes and kind of go back and think about what you did,
+- [0:03:04] all right, and why maybe some of the approaches that you tried initially
+- [0:03:09] did not work and what it was about what you did that finally did work
+- [0:03:17] that made that correct and effective.
+- [0:03:20] And whether there are lessons that you can take from solving that problem
+- [0:03:26] that you should keep in mind that might help you in similar situations
+- [0:03:31] if you're faced with similar problems later on, all right?
+- [0:03:35] And that retrospective process is actually very useful and
+- [0:03:41] important in really getting the most out of the time and
+- [0:03:45] the effort that you put into solving the problem sets,
+- [0:03:48] practice problems, and the like.
+- [0:03:50] So when I was a student a very long time ago,
+- [0:03:54] one of the things that I would do is that for
+- [0:03:59] any problems that were not sort of very easy,
+- [0:04:03] then after I figured out the solution, I would actually go back and take,
+- [0:04:09] when I started off, I sort of accepted that whatever I was working out,
+- [0:04:13] that was going to be scrap paper.
+- [0:04:14] That was not what I was going to turn in.
+- [0:04:16] And then after I solved the problem, I would go back and write up the solution
+- [0:04:21] and sort of explain, both to myself and whoever would be grading it,
+- [0:04:28] what the key elements of the solution were, what my reasoning was, and so forth.
+- [0:04:31] And that process was actually very helpful in enabling me to really internalize
+- [0:04:38] the understanding that came from that problem.
+- [0:04:40] Okay, so you don't have to do it that way, but I'm just telling you,
+- [0:04:44] from my experience, one thing that worked for me.
+- [0:04:48] Okay, so that's really the most important point from this handout,
+- [0:04:53] and I hope that all of you will practice some version of that
+- [0:04:59] when you are approaching the problems in this course.
+- [0:05:02] Okay, so any questions on that?
+- [0:05:06] Okay, so what we want to do today is to start talking about op-amps, right?
+- [0:05:11] So operational amplifiers, okay?
+- [0:05:18] And the reading for this is in Uliby et al.
+- [0:05:27] And the first part of what we'll talk about is in chapter four.
+- [0:05:35] And then also, we will talk about some things from section five-six
+- [0:05:41] in chapter five, all right?
+- [0:05:43] So what we'll do is I'll just review for you kind of the basic
+- [0:05:49] characteristics of op-amps, all right, which I understand from the background
+- [0:05:53] survey you're all familiar with already.
+- [0:05:56] And then we'll talk about some of the types of DC circuits that
+- [0:06:03] we can make from op-amps, all right?
+- [0:06:05] And I see from the background survey that there are varying degrees of recall
+- [0:06:11] on how to make different types of op-amp circuits.
+- [0:06:14] So pretty good for amplifiers, right, inverting and non-inverting amplifiers.
+- [0:06:20] And it seemed like the things like summing amplifiers, different amplifiers,
+- [0:06:27] and so forth were a little fuzzier.
+- [0:06:30] So we'll spend some time on that as well.
+- [0:06:33] And then we'll talk about circuits that have multiple op-amps and
+- [0:06:37] then circuits that have op-amps plus, say, capacitors or inductors, right?
+- [0:06:43] Which behave a little bit differently and give you different functionality.
+- [0:06:48] Okay, so that's what we have coming up for the next couple classes.
+- [0:06:52] So to start off, we just want to recap what the basic characteristics of op-amps
+- [0:06:58] are, what the different connections are, how we think about them, and
+- [0:07:02] what the basic functionality is.
+- [0:07:03] And then we'll take that and use that functionality to arrive at different
+- [0:07:09] types of circuits that we can make from op-amps.
+- [0:07:12] So we look first at just what are the basic op-amp characteristics,
+- [0:07:22] okay, that we need to be concerned about.
+- [0:07:25] And this is covered specifically in Uliby and
+- [0:07:36] its sections 4-1 and 4-2 of chapter 4.
+
+## page 02  f_0027.jpg  on screen [0:07:44 – 0:12:36]
+<sub>sharpness 2697, ink 4.0 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0017.jpg (0:10:23), f_0022.jpg (0:12:20)</sub>
+
+- [0:07:36] its sections 4-1 and 4-2 of chapter 4.
+- [0:07:46] Okay, so the circuit symbol for an op-amp,
+- [0:07:51] as you probably all recall, is this, all right?
+- [0:07:55] So it has three kind of functional,
+- [0:07:59] two functional input terminals and one output terminal, all right?
+- [0:08:03] So VP, VN, and then VO for the output.
+- [0:08:09] And then each of these has current associated with it as well,
+- [0:08:14] IO for the output current flowing out of the op-amp and then I sub P.
+- [0:08:20] And I sub N for the input currents flowing into the op-amp.
+- [0:08:26] And then finally and importantly,
+- [0:08:30] we have the power supply connections,
+- [0:08:35] which have, or can have current associated with them as well, all right?
+- [0:08:42] And the terminology here, just so we are all starting from the same
+- [0:08:47] foundation, is that VP is what we refer to as the non-inverting or
+- [0:08:53] sometimes the positive input voltage, all right?
+- [0:08:56] And when we talk about amplifiers, we'll see why that terminology makes sense.
+- [0:09:02] So this is the non-inverting or
+- [0:09:08] sometimes what we call the positive input voltage.
+- [0:09:19] Okay, VN is then the inverting or
+- [0:09:26] sometimes we call it the negative input voltage.
+- [0:09:36] Okay, not necessarily because their values are always positive or negative,
+- [0:09:41] but because they are connected to the non-inverting to the positive
+- [0:09:46] symbol terminal and the inverting to the negative symbol terminal, right?
+- [0:09:50] And then VCC and minus VCC are the supply voltages.
+- [0:09:56] So plus VCC is the positive supply voltage.
+- [0:10:04] And then minus VCC is the negative supply voltage and
+- [0:10:14] VO is the output voltage, okay?
+- [0:10:22] And then we have these five different currents, right?
+- [0:10:26] That are associated with the connections to the op amp.
+- [0:10:30] And considering the op amp as a whole,
+- [0:10:33] then we know that basically by conservation of charge,
+- [0:10:39] these five currents have to satisfy KCL, all right?
+- [0:10:42] So by KCL, all right, we have to have that the output current IO,
+- [0:10:50] which is the only one of these that we've drawn coming out of the op amp,
+- [0:10:55] has to be equal to the sum of the input currents, which is I sub p plus I sub n plus
+- [0:11:02] I sub plus plus I sub minus, all right?
+- [0:11:06] And the key thing here is to remember that these power terminals have
+- [0:11:11] current associated with them.
+- [0:11:13] So we cannot say very often in circuits, as you probably recall,
+- [0:11:17] we won't draw these power connections explicitly.
+- [0:11:21] And so it might be tempting to say, well, by KCL,
+- [0:11:25] the sum of the input currents should be equal to the output current.
+- [0:11:28] But that's not correct,
+- [0:11:29] because we also have currents associated with these power terminals.
+- [0:11:34] Okay, so any questions to hear?
+- [0:11:37] Yes.
+- [0:11:40] Positive, but they're not actually necessarily the higher voltage,
+- [0:11:47] but for plus VCC and minus VCC, and those be inverted where the plus VCC is
+- [0:11:52] actually negative 10 volts and minus 10 volts.
+- [0:11:59] You would not typically do that,
+- [0:12:01] because there are components that are inside the op amp, transistors and the like.
+- [0:12:08] And those do not behave symmetrically, right?
+- [0:12:11] So it does matter, right?
+- [0:12:14] Yeah, any other questions?
+- [0:12:18] Okay, so of course, when we have op amps in circuits,
+- [0:12:24] then what we want to do is to understand what the functionality of the op amp is.
+- [0:12:29] And really what we mean by the functionality of the op amp is what is
+- [0:12:33] the input or what is the output, say the output voltage VO as a function of the inputs, right?
+
+## page 03  f_0034.jpg  on screen [0:12:36 – 0:18:04]
+<sub>sharpness 3440, ink 5.0 %, colour 0.3</sub>
+<sub>earlier states of this page: f_0028.jpg (0:13:31), f_0029.jpg (0:14:04)</sub>
+
+- [0:12:33] the input or what is the output, say the output voltage VO as a function of the inputs, right?
+- [0:12:41] Say the input voltages VP and VN, all right?
+- [0:12:45] And it turns out that even though VP and VN can be specified independently of each other,
+- [0:12:55] for the op amp, what really matters in terms of the functionality of the op amp
+- [0:13:00] is the difference between the two input voltages, so VP minus VN, all right?
+- [0:13:06] So when we talk about the functional behavior of the op amp,
+- [0:13:11] which we'll represent using what we call the transfer characteristic, right?
+- [0:13:15] Basically the output voltage as a function of the input voltage,
+- [0:13:19] what we're going to look at specifically is the output voltage
+- [0:13:23] as a function of the difference of the input voltages,
+- [0:13:27] so as a function of VP minus VN, all right?
+- [0:13:30] So the functional behavior, all right, or what we call the transfer characteristic,
+- [0:13:48] okay, of an op amp, this can be plotted in the following way.
+- [0:14:02] Okay, so we're going to make a plot here of the output voltage VO
+- [0:14:14] as a function of the difference of the input voltages, VP minus VN, all right?
+- [0:14:20] And we're going to recognize that because the power supply voltages are plus VCC
+- [0:14:28] and minus VCC, then we're not able to exceed the bounds,
+- [0:14:36] the output voltage is not able to exceed the bounds of those supply voltages, okay?
+- [0:14:41] So plus VCC will be the maximum value of VO, minus VCC will be the minimum value of VO, okay?
+- [0:14:49] And what the transfer characteristic looks like is that if we are close to the origin,
+- [0:14:57] that is at small values of VP minus VN, then we have this linear relationship like this
+- [0:15:08] between VO and VP minus VN, and then if we go outside this range, so farther from VP equal to VN,
+- [0:15:19] then this linear relationship cannot continue to very large differences
+- [0:15:25] because then the output voltage would be too large in magnitude, okay?
+- [0:15:29] So what happens is that we have what's called saturation of the op amp,
+- [0:15:35] where the output voltage VO just gets pinned at one of the supply voltages, okay?
+- [0:15:43] So this is what the transfer characteristic of the op amp looks like,
+- [0:15:49] and so you can see that there are basically three regions of behavior here, okay?
+- [0:15:58] We have this region, okay, in here, right?
+- [0:16:05] Where we're very close to the origin, right?
+- [0:16:08] VP being equal to VN, and we have a linear relationship between VO and VP minus VN.
+- [0:16:15] So this region here is what we call the linear region of behavior of the op amp,
+- [0:16:24] and in the linear region, okay, what we have is that the output voltage VO is equal to some constant,
+- [0:16:35] basically the slope of that green curve, A times VP minus VN,
+- [0:16:42] and this parameter A is what's called the open loop gain of the op amp,
+- [0:16:53] and this is typically very large, okay?
+- [0:16:58] So on the order of, say, 10 to the 4th to 10 to the 8th, okay?
+- [0:17:03] So that curve, or this line here, is very steep, right?
+- [0:17:07] Which means that if we are in the linear region,
+- [0:17:11] we have to be very close to the condition that VP is equal to VN,
+- [0:17:15] and you probably remember from the ideal op amp model that the idealization of this is that
+- [0:17:21] we assume that the input voltages are always equal to each other, okay?
+- [0:17:27] And then outside the linear region, we have what are called the saturation region.
+- [0:17:32] So over here on the right, where we're pinned at the positive supply voltage,
+- [0:17:37] we call that the positive saturation region, and then over here on the left,
+- [0:17:48] where we're pinned at the negative supply voltage, we call that the negative saturation region, okay?
+- [0:18:01] And typically, when we are working with op amps in circuits, at least for the circuits that we
+
+## page 04  f_0045.jpg  on screen [0:18:04 – 0:19:38]
+<sub>sharpness 1396, ink 2.1 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0042.jpg (0:19:37), f_0044.jpg (0:19:38)</sub>
+
+- [0:18:01] And typically, when we are working with op amps in circuits, at least for the circuits that we
+- [0:18:09] are discussing in this course, then we are typically going to assume,
+- [0:18:15] and this is the same thing that you probably did in 302 or 302H, we're going to assume
+- [0:18:19] that we are always in the linear region, because the circuits that have these op amps will have
+- [0:18:26] been designed in a way that basically keeps the circuit and the op amp in its linear region of
+- [0:18:33] behavior, okay? So, all right, we'll typically assume, all right, that the op amp is operating in
+- [0:18:54] its linear region. Okay, so any questions to hear? All right, yeah, hopefully this is all
+- [0:19:05] coming back to you from 302 or 302H. So the next step from here, right? So we have
+- [0:19:12] kind of a graph, right, of what the output voltage looks like as a function of the input voltage,
+- [0:19:19] then the next step is to try to take that behavior, and specifically the behavior in the linear region
+- [0:19:26] of the op amp, and represent that using an equivalent circuit, okay? And so what we'll do
+- [0:19:34] is we will define an equivalent circuit model for the op amp that captures its behavior
+
+## page 05  f_0046.jpg  on screen [0:19:38 – 0:21:36]
+<sub>sharpness 1319, ink 1.8 %, colour 0.1</sub>
+
+- [0:19:34] is we will define an equivalent circuit model for the op amp that captures its behavior
+- [0:19:43] in the linear region of behavior of the op amp, and then we will see how taking certain limits
+- [0:19:52] of that equivalent circuit then leads us to the ideal op amp model, and then the ideal op amp
+- [0:19:58] model is what we'll actually use for actually looking at and thinking about circuits that
+- [0:20:04] employ op amps. Okay, but first we want to look at the op amp equivalent circuit model. Okay,
+- [0:20:20] so this is an equivalent circuit model specifically for the linear region of operation of the op amp.
+- [0:20:35] Okay, so to represent this equivalent circuit, we're going to draw it inside the op amp
+- [0:20:47] circuit symbol. So we're going to make a bigger symbol here so we can fit it in there,
+- [0:20:51] right? Okay, so this is now our op amp. We have our inputs, input voltage is Vp and Vn, our output
+- [0:21:01] voltage Bo, and then we have our output current Io and our input currents Ip and In. Okay, now
+- [0:21:14] this equivalent circuit has three components, right? Two resistors and a dependent source.
+- [0:21:22] So one component is going to be a resistor that connects the two inputs to the op amp.
+- [0:21:33] Alright, so it's going to look like this, alright? We call that resistor R sub i,
+
+## page 06  f_0060.jpg  on screen [0:21:36 – 0:33:54]
+<sub>sharpness 1551, ink 2.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0051.jpg (0:32:58), f_0058.jpg (0:33:53), f_0059.jpg (0:33:54)</sub>
+
+- [0:21:33] Alright, so it's going to look like this, alright? We call that resistor R sub i,
+- [0:21:45] right? And the voltage across that resistor is Vp minus Vn, obviously, because those are
+- [0:21:53] the terminals to which it's connected. That's one component of the equivalent circuit.
+- [0:22:00] And then the other two components are connected to the output, alright? We have a resistor,
+- [0:22:13] let's see, which we'll call Ro, right? And then we have a dependent source that's connected to
+- [0:22:25] ground and this dependent source has, it's a dependent voltage source and its voltage is this
+- [0:22:36] open loop gain A times the voltage across Ri which is Vp minus Vn, alright? And that is the entire
+- [0:22:48] equivalent circuit for the op amp, yes? I guess the dependent source, which ground is it connected to?
+- [0:23:00] Oh, so while we have the supply voltages and if those are symmetric then, right, the ground is the
+- [0:23:06] midpoint of that. And so that's typically what happens here. It doesn't matter so much
+- [0:23:18] that this is connected to ground, right? What that does is it allows the voltage up here
+- [0:23:27] to be well defined, alright? And also provides a source for the current that eventually flows
+- [0:23:35] through the output. Okay, so that's really what that ground is doing. Does that answer your
+- [0:23:39] question? Yeah. Okay, yeah? So you mentioned that this is for the linear region of operation
+- [0:23:44] and a circuit change if it's not in this region, like, because it's like, aren't the components set
+- [0:23:48] already? Yes, so the components that actually make up the op amp are fixed, right? Because it's a chip,
+- [0:23:57] right, that you buy and plug in. What we always have to keep in mind is that an equivalent circuit
+- [0:24:07] is, it's not the actual circuit that is in the op amp, it is a representation of what is actually
+- [0:24:15] in the op amp that gives the same electrical behavior at the terminals within the region
+- [0:24:23] of operation that we're interested in, right? So this equivalent circuit here does a reasonably good
+- [0:24:30] job of describing the behavior, at least the DC behavior of the op amp in its linear region
+- [0:24:36] of operation. Now if we go outside that region, say into the saturation regions, then as we saw
+- [0:24:42] from the transfer characteristic, the op amp just looks like a voltage source, right? So that doesn't
+- [0:24:50] mean that the components inside the op amp are changing. What it means is that, you know,
+- [0:24:57] there's more complexity inside the actual op amp than is represented by this equivalent circuit.
+- [0:25:04] And so when you go outside the linear region, what's actually in the op amp behaves according
+- [0:25:10] to what we saw in the transfer characteristic, and using the components that we have available for,
+- [0:25:17] you know, linear circuits, our equivalent circuit representation has to change in order to
+- [0:25:23] represent that behavior correctly. That's what you're asking? Yeah. Okay, any other questions?
+- [0:25:29] Okay, so we have this equivalent circuit, and there are three parameters, right? There's the
+- [0:25:37] open loop gain, and then there are these two resistors, ri and ro, for basically the input
+- [0:25:44] resistance and the output resistance, respectively. Okay, so let's look a little more closely at
+- [0:25:51] those parameters. So we're going to have, we'll make a little table here that shows
+- [0:25:57] what parameter we're talking about, what the typical value or range of values is for that
+- [0:26:06] parameter, and then what we'll see is that these are generally either very large or very small,
+- [0:26:14] and so there will be kind of an idealized value for each of these parameters that will then lead
+- [0:26:18] us to the ideal op amp model, right? So then we have, unless you, the so-called ideal value
+- [0:26:30] that corresponds to the behavior that we see in the ideal op amp model, right? So our parameters,
+- [0:26:37] we have a, which is the open loop gain, okay, and we saw a few minutes ago when we were talking
+- [0:26:49] about the transfer characteristic, that the typical range of values is 10 to the 4th to 10 to the 8th,
+- [0:26:55] and that's a very large value, right? If you, say, take it to be 10 to the 6th, right? That's a million,
+- [0:27:02] and so what that means then is that, right, if A here is 10 to the 6th, then if Vp minus Vn, if
+- [0:27:12] they're different by only a microvolt, 10 to the minus 6 volts, that already gets us to an
+- [0:27:17] output voltage of one amp, right? If they differ by 10 microvolts, which is still a very small
+- [0:27:23] voltage, then that gets us to an output voltage of 10 amps, all right? So that green curve in
+- [0:27:31] the transfer characteristic is very steep, and, you know, sort of the idealization of something
+- [0:27:37] that is almost vertical, right, is the useum, okay, it is just vertical, which corresponds to the slope
+- [0:27:43] being infinite, okay? And the ideal op-amp model, as we'll see a little bit later, that corresponds to
+- [0:27:51] the condition in the ideal op-amp model that the input voltages are always equal to each other,
+- [0:27:57] okay? Then we have R sub i. This is what we call the input resistance,
+- [0:28:08] right, because it's basically the resistance that,
+- [0:28:13] the inputs see when they're connected to the op-amp, all right? And the input resistance
+- [0:28:20] is typically very large, right? 10 to the 6th to 10 to the 13th might be a typical range of values.
+- [0:28:29] The resistance is very high, right? So since the resistance is very high, then the idealization of
+- [0:28:37] that is that we assume that that resistance is infinitely large, right? And that's what we assume
+- [0:28:43] in the ideal op-amp model, and that corresponds in the ideal op-amp model to the condition that
+- [0:28:50] the currents, should be an arrow here, right, the currents blowing into the op-amp inputs are 0,
+- [0:28:58] right? Because if we assume that R i is infinite and the currents are non-zero, then that would
+- [0:29:08] correspond to infinite voltages, right, which is not going to happen, right? So that's the input
+- [0:29:15] resistance, and that is where basically the approximation in the ideal op-amp model that
+- [0:29:24] the input currents are 0, it ultimately comes from. Then we have R o, this is the output resistance,
+- [0:29:37] all right, because it's the resistance connected to the output, and a typical range of values here
+- [0:29:43] is maybe 1 to 100 ohms, this is ohms, all right? So this is actually quite a small value,
+- [0:29:52] right? And so in the ideal op-amp model, we assume that the output resistance is 0, okay?
+- [0:30:01] Now if we look at the equivalent circuit model, what we see to be the effect of a non-zero output
+- [0:30:10] resistance R o is that if the current, if the output current is very large, then there can be
+- [0:30:18] a non-negligible voltage drop across this output resistance, right? So what this output resistance
+- [0:30:26] represents is it's sort of, it's something that limits the amount of current that can come out
+- [0:30:34] of the op-amp, all right, at its output. If we assume that this output resistance is 0,
+- [0:30:43] now basically what it means is that in principle any amount of current can come out of the op-amp
+- [0:30:49] output and we will still get this voltage over here at the output. Yes, question here and then here.
+- [0:30:56] We also assume that it's 0 because there's limits from our actual rails that are also
+- [0:31:04] like are going to prevent us from like that mattering in the U.S., or is it a product of that?
+- [0:31:10] Yeah.
+- [0:31:12] You mean the amount of current that can flow in from the power supplies?
+- [0:31:17] Yeah, yeah.
+- [0:31:18] So ultimately it can be related to that, right, because you can't draw infinite
+- [0:31:25] currents into the op-amp, but then there are typically other components that are inside the
+- [0:31:31] op-amp that will effectively give you some resistance, right? And that I think ends up
+- [0:31:37] being more of a limiting factor. Okay, because you could always, in principle, you could always
+- [0:31:43] connect a bigger power supply, right? Yeah. Yes.
+- [0:31:48] If we want there to be no discernible voltage drop between like gain,
+- [0:31:55] yeah, between here and here, yeah. Yeah, but why do we even have a resistance stream there,
+- [0:32:00] I guess? Why don't we just connect it directly, like just this part?
+- [0:32:05] Oh, so the resistance here, it's not that we are choosing arbitrarily, right, to connect a
+- [0:32:14] resistance there. It is that this resistance is representing something that we actually have
+- [0:32:20] inside the op-amp, right? Because, you know, you have wires, you have other components, and there,
+- [0:32:28] in general, will be some non-zero resistance associated with them. And so this resistor here,
+- [0:32:35] RO, is basically representing the electrical effect, you know, in some lumped form of what's
+- [0:32:42] happening internally. It's not that we're choosing to put a resistor there, it's that this is how
+- [0:32:48] the op-amp behaves, so we have to have it to represent that behavior correctly. Any other questions?
+- [0:32:53] Okay, so, all right, and then finally we have the supply voltages, right? So we didn't draw the
+- [0:33:06] supply voltages explicitly here, but we always have to remember that they're present. And when we draw
+- [0:33:11] op-amp circuits, very often we will not include the supply voltages explicitly because it kind of
+- [0:33:19] clutters up the circuit diagram. But we should always remember that they are present, right? So Vcc
+- [0:33:27] is the supply voltage, and the typical range of values might be, it's specific to the,
+- [0:33:37] there's a particular supply voltage that is typically specific to an op-amp, right? And
+- [0:33:42] kind of the typical values are maybe 5 to 24 volts. And this is something where there isn't
+- [0:33:48] some ideal value that we assume, it is just what the appropriate supply voltage is for a particular
+- [0:33:53] op-amp, okay? Now, as I've been describing, the ideal values for these three parameters
+
+## page 07  f_0067.jpg  on screen [0:33:54 – 0:34:22]
+<sub>sharpness 1583, ink 2.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0061.jpg (0:33:58), f_0066.jpg (0:34:21)</sub>
+
+- [0:33:53] op-amp, okay? Now, as I've been describing, the ideal values for these three parameters
+- [0:34:05] then give rise to the behavior that corresponds to the ideal op-amp model, okay? And each
+- [0:34:13] approximation that we make here gives rise to a particular aspect of the ideal op-amp model,
+- [0:34:21] all right? So the idea then is that the ideal parameter values, okay, for the op-amp equivalent
+
+## page 08  f_0102.jpg  on screen [0:34:22 – 0:41:54]
+<sub>sharpness 3389, ink 5.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0068.jpg (0:35:31), f_0069.jpg (0:35:31), f_0071.jpg (0:36:00), f_0072.jpg (0:37:48), f_0076.jpg (0:38:14), f_0080.jpg (0:38:16), f_0092.jpg (0:39:08), f_0095.jpg (0:39:09), f_0098.jpg (0:39:09)</sub>
+
+- [0:34:21] all right? So the idea then is that the ideal parameter values, okay, for the op-amp equivalent
+- [0:34:40] circuit model, right, these ideal values then lead to what we call the ideal op-amp model.
+- [0:34:58] Okay, and for pretty much all the circuit analysis that we're going to do in circuit design,
+- [0:35:06] then we're going to use the ideal op-amp model, right? So we're going to use this for most of our
+- [0:35:20] op-amp circuit analysis and design. Okay, so as I described, the approximation that the open loop
+- [0:35:36] gain is, right, the approximations that we're making, right, are that the open loop gain A is
+- [0:35:43] infinite, the input resistance i, r i is infinite, and the output resistance r o is 0. And the
+- [0:35:54] consequences of these, or the implications of these idealizations are that if we assume that the
+- [0:36:04] open loop gain is infinite, that leads to the condition in the ideal op-amp model that
+- [0:36:10] the input voltages are equal, the idealization that the input resistance is infinite, right, leads
+- [0:36:21] to the condition that the input currents, i p and i n, are 0. And then the idealization that the
+- [0:36:29] output resistance is 0, then basically what that does is it allows the op-amp to provide whatever
+- [0:36:37] amount of current is required at the output to get these other two conditions here to be true.
+- [0:36:45] Okay, so this third approximation, then the implication of that is that the output
+- [0:36:58] can provide any value for the output current i o that's required, okay, to satisfy
+- [0:37:11] the other two conditions, right, that the input voltages are equal to each other
+- [0:37:16] and the input currents are 0, okay. And these conditions here are what we sometimes refer to
+- [0:37:30] as the golden rules of op-amp behavior, right. So these are what we call sometimes the golden rules
+- [0:37:42] of op-amp behavior. Okay, and then finally we also have to always remember that the output voltage
+- [0:37:56] has to be within the supply voltages. Okay, so any questions to here? Yes.
+- [0:38:05] Why is it that like the conditions that we assume for the ideal op-amp will lead to b p equals b n?
+- [0:38:12] Oh, so it is because, right, if a is assumed to be infinitely large,
+- [0:38:24] right, then if v p were not equal to v n, the output voltage would be infinite, right. So the
+- [0:38:37] approximation that a is infinite then basically requires that v p be equal to v n,
+- [0:38:45] all right, and then, all right, when you have infinity times 0 it can be anything, and it turns
+- [0:38:51] out that that anything is, right, whatever output voltage is required to get the other two things to
+- [0:38:55] be true. Okay, yes. Oh, yeah, so this is an important point here. So the question is, it's basically
+- [0:39:13] what it comes down to is why can we always assume or under what conditions can we assume that
+- [0:39:19] the op-amp is in its linear region of behavior? And so by saying that we're going to be in the
+- [0:39:27] linear region, we're going to assume the ideal op-amp model holds, that implicitly is also
+- [0:39:33] assuming that the circuit is designed in a way that allows that to be true under a reasonably
+- [0:39:41] wide range of conditions, and for that to be true it is generally the case that the op-amp
+- [0:39:48] is connected in a way that you have negative feedback, right, so some connection often through
+- [0:39:54] a resistor between the output and the inverting input of the op-amp, because if you don't have
+- [0:40:00] that then the op-amp will not kind of be driven back to the condition that v p is equal to v n,
+- [0:40:10] and you know you can if you look at the transfer characteristic, I assume you talked about this in
+- [0:40:16] 302 or 302h, if you look at the transfer characteristic you can kind of see how having the
+- [0:40:25] output connected to the n kind of drives you back to the origin on the transfer characteristic,
+- [0:40:31] whereas if you don't have that, say if you have the output carried connected to v p, then that'll
+- [0:40:39] actually drive you out into saturation, okay, so yeah, so that's a good point, we want to make a note
+- [0:40:47] right, that the ideal op-amp model, okay, an operation in the linear region of the op-amp's
+- [0:41:05] behavior, right, these, the fact that we're doing that, right, typically assumes that the op-amp
+- [0:41:19] has negative feedback, okay, that is that the output is connected to v n, which is often through
+- [0:41:42] a resistor, although it doesn't have to be, okay, so yeah, so that's a good point, does that answer
+- [0:41:48] your question? Okay, any other questions? Okay, so let's now look at some examples of
+
+## page 09  f_0110.jpg  on screen [0:41:54 – 0:41:56]
+<sub>sharpness 1717, ink 2.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0109.jpg (0:41:56)</sub>
+
+- [0:41:48] your question? Okay, any other questions? Okay, so let's now look at some examples of
+
+## page 10  f_0111.jpg  on screen [0:41:56 – 0:42:46]
+<sub>sharpness 1782, ink 2.7 %, colour 0.2</sub>
+
+- [0:41:48] your question? Okay, any other questions? Okay, so let's now look at some examples of
+- [0:41:59] op-amp circuits, which will be essentially different types of amplifiers, and an amplifier,
+- [0:42:04] its basic functionality is that it takes an input voltage or current, in this case would typically
+- [0:42:10] it'll be input, the input voltages, and it gives as an output some multiple of that input,
+- [0:42:21] all right, so the first example of this that we'll look at, which is probably familiar to you from 302
+- [0:42:30] or 302h, is what we call the non-inverting op-amp amplifier, all right, so this circuit,
+
+## page 11  f_0124.jpg  on screen [0:42:46 – 0:48:11]
+<sub>sharpness 3382, ink 5.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0112.jpg (0:42:46), f_0116.jpg (0:45:18), f_0123.jpg (0:48:00)</sub>
+
+- [0:42:30] or 302h, is what we call the non-inverting op-amp amplifier, all right, so this circuit,
+- [0:42:49] it looks like this, right, here's our op-amp, okay, these are the inputs and the output, v p
+- [0:43:00] and v n, all right, and the output v o, and the way this circuit is designed is that we have
+- [0:43:11] some input voltage, we'll call it v sub s, and then we have two resistors connected to the output,
+- [0:43:30] we'll call them r1 and r2, and then v sub n, all right, the inverting input is connected to this
+- [0:43:41] node between r1 and r2, all right, and this is the non-inverting op-amp amplifier circuit,
+- [0:43:50] and we should note here, all right, that the power supply connections plus or minus vcc
+- [0:44:05] are not explicitly shown, all right, but they have to be present, okay, so we're not showing them in
+- [0:44:21] the circuit diagram, but if you're actually building this circuit, say on a breadboard or something,
+- [0:44:26] you have to connect the power supplies, yes. Oh, why is it called like a non-inverting op-amp?
+- [0:44:31] Oh, so we'll get to that in a second, what we will see is that the output voltage
+- [0:44:39] is proportional to this input v sub s, and the proportionality constant is positive,
+- [0:44:45] right, that's, and so that's called non-inverting, what we'll look at next is a circuit that gives us
+- [0:44:53] an output voltage that is also proportional to the input voltage, but the proportionality constant
+- [0:44:57] is negative, and that'll be called an inverting, yes. So the idea that generally inverting your
+- [0:45:02] output voltage connected to other thermal in operating, I mean as long as it's in-
+- [0:45:10] Yeah, for these kinds of amplifiers, that's generally what will happen, yeah.
+- [0:45:15] Okay, so, all right, so what we want to do then is now to analyze this circuit and show
+- [0:45:24] what, and figure out what the output voltage has to be as a function of the input v sub s,
+- [0:45:29] all right, and to do that, all right, essentially the easiest way to do it as you may remember
+- [0:45:37] is to recognize that the input currents, okay, I sub p and I sub n, right, the currents going
+- [0:45:50] into the inputs of the op-amp are both zero, okay, so that means that there's no current
+- [0:46:00] flowing along this way, okay, so R1 and R2 are effectively in series, all right, because they
+- [0:46:06] always have to have the same current as each other, and so we can use voltage division to get the
+- [0:46:13] output voltage v o as a function of v n, then we know from the ideal op-amp rules that v n has to
+- [0:46:19] be equal to v p, and then from this connection here we know that v p is equal to v s, so then
+- [0:46:26] that will give us v o as a function of v s, and then we'll be done, okay, so that's basically
+- [0:46:32] how we analyze this, all right, so essentially by voltage division, okay, at the node v n,
+- [0:46:47] all right, that's basically this node here, all right, because this is all connected,
+- [0:46:52] right, and that works, we can apply voltage division because I sub n is equal to zero,
+- [0:47:02] and then we'll have to recognize that v n is equal to v p, right, which is one of the ideal op-amp rules,
+- [0:47:09] okay, so what voltage division tells us is that v n, the voltage at this node here,
+- [0:47:17] right, it has to be equal to R2 over R1 plus R2 times v o, right, so that means that v o is equal to
+- [0:47:32] R1 plus R2 over R2 times v n, but then we know that v n is equal to v p, all right, because
+- [0:47:46] that's the behavior that we have for an ideal op-amp, and we know that v p
+- [0:47:50] is equal to v s because v s is connected to v p, and so that then gives us that v o
+- [0:47:59] is equal to R1 plus R2 over R2 times v s, all right, so what we see here is that
+- [0:48:10] we do indeed from this circuit, whoops, get an output voltage v o that is proportional,
+
+## page 12  f_0126.jpg  on screen [0:48:11 – 0:48:12]
+<sub>sharpness 3779, ink 5.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0125.jpg (0:48:12)</sub>
+
+- [0:48:10] we do indeed from this circuit, whoops, get an output voltage v o that is proportional,
+
+## page 13  f_0128.jpg  on screen [0:48:12 – 0:48:13]
+<sub>sharpness 3715, ink 5.9 %, colour 0.2</sub>
+
+- [0:48:10] we do indeed from this circuit, whoops, get an output voltage v o that is proportional,
+
+## page 14  f_0129.jpg  on screen [0:48:13 – 0:48:13]
+<sub>sharpness 3140, ink 4.8 %, colour 0.2</sub>
+
+- [0:48:10] we do indeed from this circuit, whoops, get an output voltage v o that is proportional,
+
+## page 15  f_0133.jpg  on screen [0:48:13 – 0:48:14]
+<sub>sharpness 2490, ink 3.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0130.jpg (0:48:13)</sub>
+
+- [0:48:10] we do indeed from this circuit, whoops, get an output voltage v o that is proportional,
+
+## page 16  f_0135.jpg  on screen [0:48:14 – 0:49:21]
+<sub>sharpness 1982, ink 2.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0134.jpg (0:49:21)</sub>
+
+- [0:48:10] we do indeed from this circuit, whoops, get an output voltage v o that is proportional,
+- [0:48:19] it's directly proportional to the input v s, and we have a positive constant of proportionality,
+- [0:48:25] that's where the non-inverting terminology comes in, and we can see that by choosing
+- [0:48:33] the values of the resistors appropriately, we can get any value of this proportion of the
+- [0:48:40] gain factor here, this proportionality constant that is greater than one, all right, so that is
+- [0:48:47] the non-inverting amplifier, so any questions on this? Yes?
+- [0:48:56] Well, so if you had R1 equal to zero, you could, so you can get very close, but there's always a
+- [0:49:05] little bit of resistance, right, if you have wires and things like that, so yeah, so you could get kind
+- [0:49:08] of arbitrarily, or you know, practically speaking, you get very close to one, but it's hard to get
+- [0:49:15] exactly equal to. Okay, any other questions? Okay, so the next example that we'll look at
+
+## page 17  f_0138.jpg  on screen [0:49:21 – 0:49:22]
+<sub>sharpness 1803, ink 2.7 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0136.jpg (0:49:21)</sub>
+
+- [0:49:15] exactly equal to. Okay, any other questions? Okay, so the next example that we'll look at
+
+## page 18  f_0140.jpg  on screen [0:49:22 – 0:49:22]
+<sub>sharpness 1622, ink 2.3 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0139.jpg (0:49:22)</sub>
+
+- [0:49:15] exactly equal to. Okay, any other questions? Okay, so the next example that we'll look at
+
+## page 19  f_0141.jpg  on screen [0:49:22 – 0:49:41]
+<sub>sharpness 1583, ink 2.4 %, colour 0.2</sub>
+
+- [0:49:15] exactly equal to. Okay, any other questions? Okay, so the next example that we'll look at
+- [0:49:28] is an inverting op amp amplifier, okay, and so here, as we were discussing briefly a few minutes ago,
+
+## page 20  f_0167.jpg  on screen [0:49:41 – 0:58:39]
+<sub>sharpness 2386, ink 3.5 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0142.jpg (0:50:24), f_0147.jpg (0:54:16), f_0150.jpg (0:54:17)</sub>
+
+- [0:49:28] is an inverting op amp amplifier, okay, and so here, as we were discussing briefly a few minutes ago,
+- [0:49:45] right, we want to have a configuration where we still have negative feedback, so output connected
+- [0:49:51] to the inverting input, but then to get inverting amplification, that is proportionality with a
+- [0:49:58] negative proportionality constant, what we want to do is to connect the input signal to the inverting
+- [0:50:08] input rather than the non-inverting input, okay, so that circuit is going to look like this,
+- [0:50:15] okay, here's our op amp, these are our inputs, right, so this is V0, this is Vn, this is Vp,
+- [0:50:33] right, we're going to have a resistor connecting the output to the inverting input
+- [0:50:39] for negative feedback, we'll call that resistor R sub f, and then we're going to have an input
+- [0:50:46] voltage, input signal V sub s, and we want to connect that through a resistor to the input
+- [0:51:03] V sub n, the inverting input V sub n, right, so we'll call that resistor R sub s, and then V sub p
+- [0:51:10] will be connected to ground, okay, and you can see here, right, since we're connecting
+- [0:51:16] the non-inverting input to ground, then we need this resistor over here because if we had
+- [0:51:23] V s directly connected to V n, then we wouldn't be able to get V n equal to V p,
+- [0:51:30] except for the special case that V s is equal to zero, which is not that interesting, okay,
+- [0:51:36] so we have this resistor over here that allows this voltage V n to go to zero, okay, for non-zero
+- [0:51:44] V s. Okay, so this is the circuit, and basically what we want to do here is recognize that V n is
+- [0:51:53] equal to zero and apply KCL at this node here, right, the inverting input of the op amp,
+- [0:52:01] right, so we want to apply KCL at the node V sub n, also noting that V n is equal to V p
+- [0:52:22] for an ideal op amp, and that implies then that V n being equal to V p has to be equal to zero,
+- [0:52:32] okay, so if we recognize that V n is equal to zero and we apply KCL at this node here, then,
+- [0:52:40] right, remember what KCL tells us is that the sum of the currents flowing out of this node
+- [0:52:47] has to be zero, okay, and the current flowing into the op amp is zero, so we just have the sum of
+- [0:52:55] this current over here flowing through R s and this current over here flowing through R f, the
+- [0:52:59] sum of those things has to be zero, okay, so the current flowing out to the left through R s,
+- [0:53:07] that current is going to be zero minus V s, so just minus V s over R s, all right, so we have minus
+- [0:53:14] V s over R s, and then the current flowing up this way through R f is going to be zero minus V o,
+- [0:53:25] so just minus V o over R f, so minus V s over R s minus V o over R f is equal to zero, right,
+- [0:53:34] that's what KCL tells us, and we just solve that for V o and we get that V o is equal to minus R f
+- [0:53:43] over R s times V s, okay, and so here, right, we see that indeed this is giving us inverting
+- [0:53:55] amplification, right, so direct proportionality between V o and V s with a negative proportionality
+- [0:54:02] constant, and we can get any value of that negative proportionality constant by choosing appropriate
+- [0:54:08] values for the resistors, so any questions to hear? Okay, so the next example that we will look at
+- [0:54:23] is an inverting summing amplifier, okay, so what we want here is a circuit that will take,
+- [0:54:41] say, two input voltages and then give us amplified versions of each
+- [0:54:49] with inversion, so some negative constant times each input voltage, and then we want to add those
+- [0:54:55] together, that's the summing part of it, okay, now, so this is something that you probably saw in 302
+- [0:55:04] or 302h, but before we look at the circuit that does this, let's think a little bit about
+- [0:55:11] what happened and how we analyzed the, say, the inverting op amp amplifier, all right,
+- [0:55:21] because this summing functionality is, it's sort of a mathematical representation, effectively, of
+- [0:55:30] kind of the physics of these circuits generally where,
+- [0:55:36] all right, the summing function is a manifestation of KCL, right, because what KCL says is that the
+- [0:55:44] sum of all the currents flowing out of a particular node has to be zero, right, so it's a condition,
+- [0:55:52] it's a mathematical condition on the sum of currents, all right, but each of those currents
+- [0:55:59] is proportional to a voltage, all right, and we saw that over here, all right, the current
+- [0:56:06] flowing out to the left along this branch was minus VS over RS, the current flowing out this
+- [0:56:12] way through RF was minus VO over RF, okay, and it is always going to be the case that
+- [0:56:21] the current is going to be some function of voltage, so KCL then really is a condition that
+- [0:56:27] is imposed on a sum of voltages in a circuit, okay, so if we keep that in mind and we think about
+- [0:56:37] what is the functionality that we want for an inverting summing amplifier? What we want
+- [0:56:43] is for VO here to be equal to a term like this for one input voltage and then we want to be able
+- [0:56:53] to have a second input voltage and have it give us a term over here on the right-hand side of this
+- [0:56:58] equation that looks in form just like this, right, some negative constant times that second input
+- [0:57:05] voltage, and so thinking about sort of that idea of what KCL really is representing, a
+- [0:57:16] condition on a sum of currents which can then be converted in a circuit to a condition on a
+- [0:57:21] sum of voltages, then how do you think we should modify this circuit here if we had a second input
+- [0:57:30] voltage such that we would get say minus RF over RSVS minus some other ratio of resistances
+- [0:57:40] times that second input voltage? Yes, to this one, yes, yeah, that's exactly right, right, because see
+- [0:57:56] if we think about the fact that we were applying KCL over here and this connection here gave us
+- [0:58:04] this term minus VS over RS, if we wanted a second term that looks just like that,
+- [0:58:12] then the obvious way to get it is to make another connection over here to the inverting input
+- [0:58:18] that is our second voltage source connected through a resistor to VN, and that will give us
+- [0:58:27] another current term that looks basically like this in the KCL equation and it would give
+- [0:58:32] us the term that we want on the right-hand side for VO. So that way of thinking then will help us
+
+## page 21  f_0169.jpg  on screen [0:58:39 – 0:58:40]
+<sub>sharpness 1512, ink 2.2 %, colour 0.2</sub>
+
+- [0:58:32] us the term that we want on the right-hand side for VO. So that way of thinking then will help us
+
+## page 22  f_0181.jpg  on screen [0:58:40 – 1:05:14]
+<sub>sharpness 3117, ink 4.6 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0170.jpg (1:00:00), f_0175.jpg (1:00:50), f_0176.jpg (1:00:50)</sub>
+
+- [0:58:32] us the term that we want on the right-hand side for VO. So that way of thinking then will help us
+- [0:58:44] not only to analyze some circuits that were presented with but also to understand, okay, if we
+- [0:58:53] were presented with the task of designing some circuit that gave this behavior, this way of
+- [0:58:59] thinking about the circuit that I just talked about, then will help us to understand, okay,
+- [0:59:05] how would we actually get that functionality? Okay, so the reasoning here then is that we want
+- [0:59:15] to notice that for the inverting amplifier that we just looked at, what we saw was that KCL
+- [0:59:31] applied at the node VN, that imposed a condition on basically the sum of in that case two voltages,
+- [0:59:53] right, so in that case it was VS and VO and those sums were weighted by resistors and series
+- [1:00:07] with those sources, okay, with those voltages,
+- [1:00:15] right, and so thinking about the circuit and about KCL in that way then suggested the strategy for
+- [1:00:22] how to make, how to get the summing functionality, right, so this suggests now a strategy, okay,
+- [1:00:34] for creating an inverting summing amplifier, okay, and that strategy is basically to make,
+- [1:00:58] oops, all right, to make a circuit that looks like just the inverting amplifier but has this extra
+- [1:01:12] second source connected to it, so this is the output voltage, we have VN and VP,
+- [1:01:21] right, so we still have our feedback resistor and then, so we'll call that RF again,
+- [1:01:34] VP is still connected to ground, okay, what we had originally, if it was just an inverting amplifier
+- [1:01:47] with some input voltage, now we'll call that V1, connected through a resistor R1 to VN and so now
+- [1:01:55] we just want to add to that another set of components that looks just like that,
+- [1:02:03] all right, so we'll call that V2 through a resistor R2 connected to VN, all right,
+- [1:02:11] and then we're going to apply KCL at VN again, all right, and if we do that, right, we can very
+- [1:02:20] easily see that this will give us the functionality that we want, all right, so the current flowing
+- [1:02:25] out to the left through R1, right, since VN being equal to VP has to be equal to zero,
+- [1:02:31] then the current flowing out to the left through R1 is just minus V1 over R1,
+- [1:02:38] the current flowing down this way through R2 is just minus V2 over R2,
+- [1:02:46] and then the current flowing up this way through RF is minus VO over RF, those currents have to sum
+- [1:02:56] to zero, okay, and then if we solve for VO, then what we get is that it's equal to minus RF
+- [1:03:04] over R1 times V1 minus RF over R2 times V2, all right, and this is exactly the functionality
+- [1:03:18] that we wanted, and looking at this and understanding kind of the way of thinking
+- [1:03:25] that we just described, then you should be able to see very easily how to generalize this if
+- [1:03:31] you wanted to have more input voltages that were all summed together with negative coefficients.
+- [1:03:39] Okay, so any questions on this? Yes? I would know we might go
+- [1:03:44] future, but like generally speaking, forward applications of a circuit like this one.
+- [1:03:51] Oh, so there are actually quite a lot of circumstances where you want to be able to add
+- [1:03:59] input signals, right, so maybe a very simple situation would be you have, you want to generate
+- [1:04:08] some signal that's a DC offset plus some AC component, all right, on top of it, then
+- [1:04:18] you can get, it's pretty easy to get a DC voltage, right, that's basically just the battery or
+- [1:04:23] some power supply, and then you might have some oscillator that's generating an AC voltage but
+- [1:04:30] centered on zero, right, and then you need to add them, all right, so this would be one way to do it.
+- [1:04:40] Yes, yeah, because you know sort of the functionality that we want to understand
+- [1:04:56] what the functionality of this circuit as a whole is, and you know typically if you're looking
+- [1:05:04] at the function of the circuit you want to see what the output is as a function of some input
+- [1:05:08] signals that you're providing to it. Okay, so let's look at another example,
+
+## page 23  f_0212.jpg  on screen [1:05:14 – 1:07:09]
+<sub>sharpness 3578, ink 5.1 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0186.jpg (1:05:15), f_0190.jpg (1:07:02), f_0199.jpg (1:07:07), f_0205.jpg (1:07:08), f_0209.jpg (1:07:09)</sub>
+
+- [1:05:08] signals that you're providing to it. Okay, so let's look at another example,
+- [1:05:20] all right, which is similar, it's the non-inverting summing amplifier.
+- [1:05:33] Oh, okay, why isn't this called the subtracting amplifier instead of the inverting summing? So
+- [1:05:40] so actually the probably last example that we will look at today is what's called a difference
+- [1:05:51] amplifier, all right, and so what that does is it takes two input voltages and
+- [1:05:59] computes their, you know, gives them each some gain and then computes the difference
+- [1:06:05] of the results, right, so that, so the terminology subtracting amplifier is probably, you know,
+- [1:06:12] imply something that is more like that because inverting summing amplifier, right, if you think
+- [1:06:18] about this functionality over here, right, you could also write that as V0 is equal to minus
+- [1:06:28] quantity RF over R1 V1 plus RF over R2 V2, right, so that shows a little more explicitly that,
+- [1:06:38] you know, really what we have here is there is a summing function that's going on and then an
+- [1:06:43] inverting function that's going on, so that is where that terminology comes from, whereas a
+- [1:06:51] subtracting amplifier, that terminology probably implies something more like taking a difference
+- [1:06:56] which we'll see in a few minutes, so hopefully that answers that question. Okay, so for the
+- [1:07:03] non-inverting summing amplifier, basically what we want to do is to go back to the non-inverting
+
+## page 24  f_0243.jpg  on screen [1:07:09 – 1:08:06]
+<sub>sharpness 4668, ink 7.0 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0217.jpg (1:07:10), f_0220.jpg (1:07:11), f_0230.jpg (1:08:03), f_0232.jpg (1:08:04), f_0236.jpg (1:08:04), f_0240.jpg (1:08:05)</sub>
+
+- [1:07:03] non-inverting summing amplifier, basically what we want to do is to go back to the non-inverting
+- [1:07:11] amplifier over here, right, and apply this same idea, right, of okay, we get another term in KCL
+- [1:07:20] by attaching a source, a signal source, through a resistor to the appropriate input, in that case
+- [1:07:31] it'll be VP rather than VN, right, because we want a non-inverting summing amplifier, but we have to
+- [1:07:37] make one more change here because if that was all that we did, VP would still be equal to VS,
+- [1:07:45] right, because VS is directly connected over here, so what we also need to do then is to put
+- [1:07:51] a resistor in here, okay, and then that will allow VP to be some weighted average of the two inputs
+- [1:07:59] rather than always being equal to this one that's directly connected, okay, but with that
+- [1:08:03] modification then that will get us to the non-inverting summing amplifier, okay, so again
+
+## page 25  f_0258.jpg  on screen [1:08:06 – 1:08:51]
+<sub>sharpness 3395, ink 5.0 %, colour 0.4</sub>
+<sub>earlier states of this page: f_0247.jpg (1:08:06), f_0249.jpg (1:08:07), f_0250.jpg (1:08:07)</sub>
+
+- [1:08:03] modification then that will get us to the non-inverting summing amplifier, okay, so again
+- [1:08:10] what we're doing here, right, we're going to use the idea, right, that KCL imposes a condition
+- [1:08:27] on the sum of voltages and we'll apply that to the non-inverting amplifier circuit, okay,
+
+## page 26  f_0268.jpg  on screen [1:08:51 – 1:09:36]
+<sub>sharpness 1804, ink 2.7 %, colour 0.1</sub>
+<sub>earlier states of this page: f_0263.jpg (1:08:53)</sub>
+
+- [1:08:27] on the sum of voltages and we'll apply that to the non-inverting amplifier circuit, okay,
+- [1:08:53] so if we do that then what we have is this circuit here, this is VO, this is VP and VN,
+- [1:09:11] all right, we still have our two resistors here and then our feedback connection like this,
+- [1:09:23] all right, and then now, all right, this might be our first input voltage V1 connected through
+
+## page 27  f_0271.jpg  on screen [1:09:36 – 1:11:31]
+<sub>sharpness 2634, ink 3.8 %, colour 0.2</sub>
+
+- [1:09:23] all right, and then now, all right, this might be our first input voltage V1 connected through
+- [1:09:38] a resistor R1 and then we have a second one V2 connected through a resistor R2 and then we'll
+- [1:09:52] call these R3 and R4, okay, and then, all right, the analysis of this is also pretty straightforward,
+- [1:10:06] we can again apply voltage division at the node VN, right, which is this node over here, right,
+- [1:10:16] we can do that, remember, because the current flowing into the op amp here is zero, all right,
+- [1:10:23] and so voltage division tells us that VN is equal to R4 over R3 plus R4 times VO, which means that VO
+- [1:10:36] is equal to R3 plus R4 over R4 times VN, all right, and then what we're going to do is we'll apply KCL
+- [1:10:50] at the node VP over here, okay, so we will have that VP minus V1 over R1, all right, that's the
+- [1:11:03] current flowing to the left here through R1 plus VP minus V2 over R2, that's the current flowing
+- [1:11:16] through the resistor R2 over here, also flowing through the left through to the left through R2,
+- [1:11:24] those have to add up to zero because there's no current flowing this way into the op amp input,
+- [1:11:31] and so that means then that if we just group our voltages together, we have 1 over R1 plus 1 over R2
+
+## page 28  f_0330.jpg  on screen [1:11:31 – 1:13:58]
+<sub>sharpness 2104, ink 2.9 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0292.jpg (1:12:48), f_0310.jpg (1:13:40), f_0323.jpg (1:13:42)</sub>
+
+- [1:11:31] and so that means then that if we just group our voltages together, we have 1 over R1 plus 1 over R2
+- [1:11:44] times VP is equal to V1 over R1 plus V2 over R2, all right, this coefficient here is R1 plus R2
+- [1:11:59] over R1 times R2, all right, so if we multiply by the reciprocal of that,
+- [1:12:09] all right, then what we get is that VP is equal to R2 over R1 plus R2 times V1 plus
+- [1:12:21] R1 over R1 plus R2 V2, all right, so now we have VP in terms of our input voltages,
+- [1:12:35] and then going back up here we can recognize that VN has to be equal to VP, and so we plug in VP
+- [1:12:42] over here and then we'll get VO in terms of V1 and V2, all right, and then we'll be done,
+- [1:12:48] so we'll make use of the fact here that VP is equal to VN, and so what we finally get then is that VO
+- [1:12:57] is equal to R3 plus R4 over R4 times, that's from up here, all right, and that is times VP,
+- [1:13:14] which is R2 over R1 plus R2 times V1 plus R1 over R1 plus R2 times V2, so this is the
+- [1:13:30] non-inverting summing amplifier, okay, so any questions on this? Okay, so let's look at
+- [1:13:46] another example here, which is the difference amplifier, okay, that I alluded to earlier,
+- [1:13:57] all right, so here, right, in order to get a difference, then what you would expect is that
+
+## page 29  f_0346.jpg  on screen [1:13:58 – 1:18:08]
+<sub>sharpness 2314, ink 3.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0338.jpg (1:14:46), f_0340.jpg (1:17:24)</sub>
+
+- [1:13:57] all right, so here, right, in order to get a difference, then what you would expect is that
+- [1:14:04] we should have this basic unit that we're adding, input voltage source in series with a resistor,
+- [1:14:10] we should have one of those connected to the inverting input, another one connected to the
+- [1:14:14] non-inverting input, all right, and that's basically what we have, all right, so this circuit is going to
+- [1:14:21] be like this, okay, so this is VO, VN and VP, okay, we have a feedback connection between VN and VO,
+- [1:14:49] and then we'll have, okay, one input voltage V1 connected through a resistor R1 to VN,
+- [1:15:05] and then we will have another input voltage V2 connected through a resistor, call this R2,
+- [1:15:19] through a resistor R3 to the non-inverting input VP, all right, but here, right, so we could just
+- [1:15:28] leave it at that, but it would be nice if we had a little more flexibility to adjust the voltage
+- [1:15:35] at VP so that it's not always equal to V2, because in this configuration it'll always be equal to V2
+- [1:15:41] because there's no current flowing this way, all right, so in order to give us that flexibility,
+- [1:15:46] we will add another resistor here like this, R4, so now R3 and R4 form a voltage divider so that VP
+- [1:15:55] doesn't have to be equal to V2, all right, and so for this circuit, what we'll see, all right,
+- [1:16:05] is that if we apply KCL at VN, right, over here, then what we're going to get is
+- [1:16:16] VN minus V1 over R1, that's the current flowing through the left, or through R1 to the left,
+- [1:16:22] plus VN minus VO over R2 is equal to zero, all right, so that means that 1 over R1 plus 1 over R2
+- [1:16:34] times VN is equal to, or okay, minus 1 over R1, V1, is equal to 1 over R2 VO, all right,
+- [1:16:57] this over here is R1 plus R2 over R1 R2, all right, so that means that VO is going to be equal to
+- [1:17:10] R1 plus R2 over R1 VN minus R2 over R1 times V1, oops, okay, and then to get VP which is equal to VN,
+- [1:17:30] then we just apply voltage, we apply voltage division over here, all right, and this will be
+- [1:17:34] the last thing that we'll do here, so we have voltage division at Vp, right, and that tells us that
+- [1:17:48] Vp is equal to R4 over R3 plus R4 V1 or V2, okay, and then we can take
+- [1:18:03] that and substitute it in over here for VN, all right, and then we're done, so we get that VO
+
+## page 30  f_0358.jpg  on screen [1:18:08 – 1:18:49]
+<sub>sharpness 1742, ink 2.2 %, colour 0.2</sub>
+<sub>earlier states of this page: f_0354.jpg (1:18:48)</sub>
+
+- [1:18:03] that and substitute it in over here for VN, all right, and then we're done, so we get that VO
+- [1:18:12] is equal to R1 plus R2 over R1 times R4 over R3 plus R4 times V2 minus R2 over R1 V1,
+- [1:18:30] okay, so here, all right, we see this is giving us a weighted difference between V2 and V1,
+- [1:18:42] so any questions on this? Okay, let me do just one other thing here very quickly,
+
+## page 31  f_0362.jpg  on screen [1:18:49 – 1:19:12]
+<sub>sharpness 2015, ink 2.6 %, colour 0.1</sub>
+
+- [1:18:42] so any questions on this? Okay, let me do just one other thing here very quickly,
+- [1:18:53] so we'll look at another example here which is what we call the voltage follower or sometimes
+- [1:19:02] a buffer, all right, which is an extremely simple circuit, all right, it is basically just
+- [1:19:12] an op amp, okay, like this, output, VP and VN, right, and we connect VN directly to the output,

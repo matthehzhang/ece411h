@@ -1,0 +1,250 @@
+[0:00:03] Okay. So this is Ulaby problem 9.33,
+[0:00:07] and this is an example... Oops.
+[0:00:13] Okay. And this is an example of
+[0:00:17] a calculation
+[0:00:19] of a transfer function.
+[0:00:25] Okay. And also,
+[0:00:27] construction of Bode plots
+[0:00:31] for an RLC,
+[0:00:33] what will turn out to be a lowpass
+[0:00:37] filter circuit.
+[0:00:40] Okay. So
+[0:00:42] the circuit that we wanna analyze is the one shown here. Okay. And the resistor r has a value of a 100 ohms. The inductance is point one millihenries, and the capacitance is one microfarad.
+[0:00:55] So we wanna calculate the voltage transfer function,
+[0:00:59] generate
+[0:01:00] the Bode plots, which for this example here, we'll do in the linear approximation
+[0:01:07] and determine the cutoff frequency.
+[0:01:11] Okay. So let's go ahead and, as usual,
+[0:01:15] redraw the circuit.
+[0:01:20] K. So we have an inductor,
+[0:01:24] capacitor,
+[0:01:28] and
+[0:01:32] a resistor.
+[0:01:40] K. So the circuit looks like this. The input voltage...
+[0:01:44] Oops.
+[0:01:46] I wanna...
+[0:01:47] I have this as a phasor.
+[0:01:50] The input voltage is at the left hand terminals,
+[0:01:54] and the output voltage is at the right hand terminals. Okay? And we have an inductance l, a capacitance c,
+[0:02:03] and a resistance r.
+[0:02:05] Okay? And what we wanna do here is to
+[0:02:11] calculate the transfer... The voltage transfer function, right,
+[0:02:15] which is the output voltage
+[0:02:18] over the input voltage.
+[0:02:20] Alright? And then
+[0:02:23] I... We want to construct the Bode plots
+[0:02:30] for resistance of a 100 ohms,
+[0:02:33] inductance of point one
+[0:02:36] millihenries,
+[0:02:37] and a capacitance
+[0:02:39] of one
+[0:02:40] microfarad.
+[0:02:42] And then, we wanna calculate,
+[0:02:46] the cutoff frequency
+[0:02:49] and the Bode plot slope.
+[0:02:54] That is the magnitude slope,
+[0:02:57] for high frequencies. Alright. So much greater than, the cutoff frequency.
+[0:03:04] Okay. So, that's the problem that we wanna solve.
+[0:03:09] And so for the first part, alright, we wanna calculate this output voltage over here,
+[0:03:16] and we can do that, simply by applying KCL
+[0:03:20] at this upper node here. Right? So we'll take the voltage down here to be zero, then the voltage at this upper node
+[0:03:28] is actually just, v naught or v out.
+[0:03:32] And so
+[0:03:35] we wanna apply KCL
+[0:03:38] at that node. Okay?
+[0:03:41] And so if we do that, what we have is that for the current going out to the left through the inductor,
+[0:03:49] then that current is v o over v I over the impedance of the inductor, which is j omega l.
+[0:03:58] Then the current flowing down through the capacitor
+[0:04:02] is v o over the impedance of the capacitor, which is one over j omega c.
+[0:04:09] And then the current flowing down this way through the resistor
+[0:04:13] is just v o over r, and that's equal to zero. Right? The sum of those three currents, has to be equal to zero. So from here,
+[0:04:23] we just take,
+[0:04:25] this equation, and we group together the terms that are proportional to,
+[0:04:30] v o. And then
+[0:04:34] we can move this term here that's proportional to VI to the right hand side, and then we just solve for VO over VI.
+[0:04:42] So,
+[0:04:43] for the terms proportional to VO, we have
+[0:04:47] coefficients one over j omega l, that's from this term here,
+[0:04:51] plus
+[0:04:54] j omega c, it's from this term here,
+[0:04:57] plus one over r, it's from this term here. All of these are multiplying v o, and then that's equal to one over j omega l
+[0:05:06] times
+[0:05:08] v I, which we have moved to the right hand side. Alright?
+[0:05:13] Now we can take this equation and we can multiply
+[0:05:19] it by
+[0:05:20] j omega l. Okay? And so then on the left hand side, j omega l times this first term gives us one.
+[0:05:30] Then j omega l times this third term here gives us j omega
+[0:05:36] l over r.
+[0:05:38] And then j omega l times the second term here gives us minus omega squared
+[0:05:45] l c. Alright? Because j squared gives us minus one, all this times v o. And then on the right hand side, we just have v I because multiplying by j omega l cancels this factor out. Right? And so now it's very easy for us to calculate the transfer function h.
+[0:06:05] Alright. This is v o over v I.
+[0:06:09] And so this is just going to be
+[0:06:13] one over
+[0:06:14] one plus j omega
+[0:06:17] l over r minus omega squared l c. Alright?
+[0:06:21] Or if we write this in a form that
+[0:06:25] makes it a little bit easier for us to determine the
+[0:06:30] cutoff frequency,
+[0:06:32] alright, then we can write it as one over
+[0:06:36] one plus
+[0:06:38] j omega
+[0:06:39] l over r.
+[0:06:41] And then,
+[0:06:43] the standard form
+[0:06:44] is that this is now j omega over omega c, the quantity squared. Alright?
+[0:06:54] And comparing
+[0:06:56] this expression here to this expression here, we can see that omega c is just one over root
+[0:07:03] l c. Alright?
+[0:07:09] So, this is the transfer function that we were asked, to calculate. Alright?
+[0:07:17] Now for the second part of the problem,
+[0:07:20] what we're asked to do is to, construct the Bode plots. Right? So, we have that omega c,
+[0:07:29] is equal to
+[0:07:31] one over root LC.
+[0:07:34] So that's one over the square root of l is,
+[0:07:38] point one millihenries.
+[0:07:39] So that's 10 to the minus four.
+[0:07:42] And then c is one microfarad.
+[0:07:46] So that's 10 to the minus six
+[0:07:48] all under the square root. Okay. So we have one over the square root of 10 to the minus 10. That's one over 10 to the minus five or just 10 to the five,
+[0:07:59] and that is in radians
+[0:08:02] per second. Okay.
+[0:08:06] We can also
+[0:08:08] compute
+[0:08:10] the value of the transfer function at that cutoff frequency.
+[0:08:14] Alright? So that is just going to be...
+[0:08:18] Right. If we look at
+[0:08:20] this expression over here, alright, we have one one over one plus
+[0:08:27] and then j omega l over,
+[0:08:32] r, right, is
+[0:08:36] j and then,
+[0:08:39] it's times
+[0:08:42] omega, right, which is 10 to the fifth.
+[0:08:46] And then l over r, l is point one millihenries. That's 10 to the minus four. And then r is 100 ohms. So it's 10 to the minus four over 10 to the two. That's 10 to the minus six.
+[0:08:59] Let me write that five
+[0:09:04] a little better here.
+[0:09:06] Right? 10 to the five. Alright. And then we have this term over here. Omega is equal to omega c. Right? So this is just, j squared which is minus one.
+[0:09:18] Okay. And so this one and this minus one cancel each other out. And so what we get is one over point one times j or
+[0:09:30] 10 over j. Alright?
+[0:09:32] I... And so that means
+[0:09:35] that
+[0:09:37] the magnitude of the transfer function at omega c
+[0:09:42] is equal to 20
+[0:09:45] times the log
+[0:09:47] of 10. Alright? Which is just 20 dB.
+[0:09:53] Okay.
+[0:09:54] We
+[0:09:56] can also see from the form that we have for h of omega that the magnitude of the transfer function at zero frequency.
+[0:10:05] Right? So setting omega equal to zero here, we can see that h of omega is just equal to zero.
+[0:10:12] So the magnitude
+[0:10:14] of h of omega on the dB scale is 20
+[0:10:18] times... Sorry. The
+[0:10:21] the transfer function is just one. Alright? So it's 20 times the log of one,
+[0:10:25] which is zero dB.
+[0:10:29] Okay. So we get this, because h
+[0:10:33] at zero is equal to one.
+[0:10:36] Okay. So then, with this information,
+[0:10:39] we can go ahead and
+[0:10:41] draw
+[0:10:43] the Bode magnitude plot.
+[0:10:48] Okay. So this is the magnitude of the transfer function
+[0:10:53] in dB.
+[0:10:54] Alright?
+[0:10:56] So we'll take this to be zero dB, take this to be 20 dB,
+[0:11:02] and then the cutoff frequency is 10 to the fifth.
+[0:11:06] Okay. So this is omega.
+[0:11:08] And,
+[0:11:10] we know that
+[0:11:12] at zero frequency and for frequencies
+[0:11:17] much less than the cutoff frequency, generally, the
+[0:11:21] magnitude
+[0:11:22] is
+[0:11:24] in dB. It's zero because h is very close to one. So that's gonna be
+[0:11:32] like this. K. So I'm plotting this in green. Alright?
+[0:11:36] Then,
+[0:11:38] we calculated
+[0:11:39] up here,
+[0:11:41] alright, that the magnitude of the transfer function on the dB scale,
+[0:11:45] at the cutoff frequency is 20 dB. So that's gonna be up here.
+[0:11:52] K. So this is gonna look something like this.
+[0:11:55] And then,
+[0:11:57] when we go to
+[0:11:59] high frequencies,
+[0:12:01] alright, where omega is much greater than omega c, then this quadratic term in the denominator is going to dominate. And the transfer function in terms of its magnitude is just going to go as one over omega squared. So that is going to give us a slope of minus 40 dB per decade. Right? So it's gonna look,
+[0:12:23] say, something like
+[0:12:25] this
+[0:12:26] where this slope is minus 40 dB
+[0:12:32] per decade. Okay. So that is the,
+[0:12:36] magnitude,
+[0:12:37] Bode plot.
+[0:12:39] Then for the phase...
+[0:12:42] Okay,
+[0:12:43] we
+[0:12:45] know that the phase
+[0:12:47] at zero frequency...
+[0:12:51] Right? At zero frequency, the transfer function is just one, and the phase of that is zero. So the phase
+[0:13:00] at zero frequency is zero degrees.
+[0:13:04] At the cutoff frequency,
+[0:13:08] okay,
+[0:13:10] we saw here, right, that h,
+[0:13:14] the transfer function, is just 10 over j. The phase of 10 over j is minus 90 degrees because the phase of j is 90 degrees and it's in the denominator.
+[0:13:24] Alright? So, the phase at omega c is minus 90 degrees.
+[0:13:31] And the phase
+[0:13:33] at very high frequency as we go to infinity,
+[0:13:37] right,
+[0:13:38] is,
+[0:13:40] right, at very high frequency, this term in the denominator is going to dominate. So we have basically minus omega squared, in the denominator.
+[0:13:50] The phase of that is minus 180 degrees.
+[0:13:55] Alright. It's minus one eighty minus... Rather than plus one eighty,
+[0:13:59] alright. We know that'll have to be the case because at omega c, the phase is 90 degrees, not minus 90 degrees.
+[0:14:06] Okay. So with that information, we can go ahead and construct the
+[0:14:14] Bode phase plot.
+[0:14:16] Okay. And so let's say this is 10 to the four,
+[0:14:20] This is 10 to the five.
+[0:14:23] This is 10 to the six.
+[0:14:25] Alright. This is zero degrees
+[0:14:28] and then, say, minus 90 degrees
+[0:14:31] and minus a 180 degrees.
+[0:14:34] Right? And we'll draw the,
+[0:14:36] the Bode plot curve itself in green. Right? So at low frequencies, that is below 10 to the fourth. Right? 10 to the fourth is,
+[0:14:45] the cutoff frequency, 10 to the fifth divided by 10.
+[0:14:48] So we're in the low frequency limit. Phase is zero.
+[0:14:52] Right? At, omega c, the phase is minus 90.
+[0:14:56] And then at
+[0:15:00] 10 to the sixth at very high frequency. So
+[0:15:03] 10 times omega c or higher. So 10 to the six or higher, the phase is going to be a 180 degrees. Alright. Like this. Or minus a 180 degrees.
+[0:15:14] Okay. And then we will have
+[0:15:21] or we assume,
+[0:15:23] that the transition is linear like this. So this is the Bode phase plot.
+[0:15:30] Okay. And then
+[0:15:33] finally,
+[0:15:36] right, what we're asked is to calculate
+[0:15:38] the
+[0:15:40] Bode plot slope for omega much greater than omega c. Right? And we actually did that already
+[0:15:48] up here. Right? It's minus 40 dB per decade, and that's basically because
+[0:15:54] at high frequencies,
+[0:15:56] the transfer function h goes as one over omega squared.
+[0:16:01] Okay. So as noted
+[0:16:07] in part b, right,
+[0:16:12] slope of the magnitude plot,
+[0:16:15] right, at high frequency. That is for omega much greater than the cutoff frequency.
+[0:16:19] Alright. It's minus 40
+[0:16:22] dB per decade.
+[0:16:26] Okay. And we were able to see this
+[0:16:35] by noting that
+[0:16:37] at high frequencies,
+[0:16:39] the transfer function basically goes as one over minus omega squared LC. It's the omega squared part of the denominator that matters here. Right? This is what we have for omega much greater than omega c.
+[0:16:53] And
+[0:16:54] I... So what would happens is that a 10 x change, for example,
+[0:17:01] in omega,
+[0:17:03] right, it changes
+[0:17:07] h of omega
+[0:17:09] by
+[0:17:10] 10 to the minus two. It divides it by a 100, right, times.
+[0:17:15] And,
+[0:17:17] two orders of magnitude decrease
+[0:17:19] is minus 40 dB.
+[0:17:22] K. So that's how we get minus 40 dB per decade.
+[0:17:26] Okay.
+[0:17:27] So that's it for,
+[0:17:29] this example here.
+[0:17:31] And so I will stop the recording.

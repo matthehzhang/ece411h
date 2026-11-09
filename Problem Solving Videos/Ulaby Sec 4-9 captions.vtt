@@ -1,0 +1,563 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:16.000
+Okay, so this is an example of the analysis and understanding of a circuit with multiple opamps. Alright, the circuit that we're going to look at here is the instrumentation amplifier.
+
+00:00:16.000 --> 00:00:34.000
+Alright, so this is a circuit that is discussed in section 4 dash 9. Of you will be and it has some very interesting characteristics and utility which we'll get to as we I see how this circuit actually functions.
+
+00:00:34.000 --> 00:00:42.000
+Okay, so to analyze this circuit, let's go ahead and as usual. Redraw it, right?
+
+00:00:42.000 --> 00:00:52.000
+So we can, become more familiar with. The layout of the circuit. Alright, so we have one OP-amp here, call number one.
+
+00:00:52.000 --> 00:01:01.000
+Alright, it has. It's 2 inputs. Alright, this, the non inverting input is connected to an input voltage V one, right?
+
+00:01:01.000 --> 00:01:12.000
+And then we'll call this voltage down here. VN one. Alright, and the output voltage here will call VO one.
+
+00:01:12.000 --> 00:01:30.000
+And. We have our feedback. Connection over here between via one and VN one that's a resistor we'll call our one Then we have a second OP-amp.
+
+00:01:30.000 --> 00:01:38.000
+I'll draw down here. Okay, we'll call this opium number 2. And it has.
+
+00:01:38.000 --> 00:01:47.000
+It's 2 inputs. The, non-inverting input of this OP-amp, opamp number 2, is an input voltage v 2.
+
+00:01:47.000 --> 00:01:54.000
+Okay, and then. We'll call the output of this opium VO 2. And then the inverting input will call V and 2.
+
+00:01:54.000 --> 00:02:08.000
+Okay. And here, again, we have
+
+00:02:08.000 --> 00:02:13.000
+Okay, here we go.
+
+00:02:13.000 --> 00:02:19.000
+Okay, we have a feedback resistor. And then we have. Hey, Resistor connected between VN one and VN 2.
+
+00:02:19.000 --> 00:02:29.000
+All right, so we'll call this resistor. Here connecting VN one and VN 2 will call that R 2.
+
+00:02:29.000 --> 00:02:37.000
+It's a variable resistor as in indicated by this arrow here. Through the resistor. And we'll call this resistor here.
+
+00:02:37.000 --> 00:02:45.000
+R 3. Alright. So if we just stop for a minute and look at this particular configuration.
+
+00:02:45.000 --> 00:02:54.000
+Alright, then what you can see is that we just consider opamp number one. By itself, it looks kind of like.
+
+00:02:54.000 --> 00:03:06.000
+A non inverting amplifier for V one except that R 2 here instead of being connected to ground is connected to the inverting input of opium number 2.
+
+00:03:06.000 --> 00:03:23.000
+And similarly, for opium number 2 here it looks kind of like a non-inverting amplifier for v 2 except that again the resistor R 2 instead of being connected to ground here is connected to VN one.
+
+00:03:23.000 --> 00:03:43.000
+Alright. And so, we, see from that that for via one and VO 2, for VO one, we should expect that it should have a term that is proportional to V one with some positive coefficient because that's what a non-inverting amplifier would give you.
+
+00:03:43.000 --> 00:03:53.000
+For VO 2, we would expect that, it should have a term that is proportional to V 2 with a positive coefficient, for the same reason.
+
+00:03:53.000 --> 00:03:58.000
+And then because of this connection R 2 between V and one and VN 2, we would expect that via one has another term that includes a contribution.
+
+00:03:58.000 --> 00:04:13.000
+V 2. VO 2 would have a second term that includes a contribution from V one. And we'll see as we work through this problem that indeed.
+
+00:04:13.000 --> 00:04:19.000
+That is the case. Okay, so now with these 2 off with these first 2 OP-amps here.
+
+00:04:19.000 --> 00:04:28.000
+What we get our our output voltages via one and VO 2. From the outputs of those opiums.
+
+00:04:28.000 --> 00:04:43.000
+And those. Are going to serve as inputs to the third opium in this circuit. Right, we call that opamp number 3.
+
+00:04:43.000 --> 00:04:51.000
+Okay, the output of this. Final opium opium number 3. Is our output voltage VO.
+
+00:04:51.000 --> 00:04:59.000
+Okay. And the inputs will call them VN 3. And VP 3. Alright, and.
+
+00:04:59.000 --> 00:05:13.000
+What's gonna happen here is that via one and VO 2 will serve as inputs to AMP number 3 in what you'll see shortly is essentially the difference amplifier.
+
+00:05:13.000 --> 00:05:18.000
+Okay, so here we're going to have
+
+00:05:18.000 --> 00:05:25.000
+Feedback resistor like this between VO and VN 3 I will call that resistor R 4.
+
+00:05:25.000 --> 00:05:31.000
+And then we will have. Via one coming in as an input.
+
+00:05:31.000 --> 00:05:41.000
+To VN 3 through a resistor R 5. And then we will have VO 2. Coming in.
+
+00:05:41.000 --> 00:05:52.000
+As an input to VP 3. That resistor has the same value. R 5. And then we have another resistor here.
+
+00:05:52.000 --> 00:05:57.000
+. Okay, so this is what you may remember from class to be essentially for opium 3 over here.
+
+00:05:57.000 --> 00:06:06.000
+It's basically the difference amplifier configuration with input voltages VO one and VO 2.
+
+00:06:06.000 --> 00:06:15.000
+So we would expect VO to be, I said it'll have 2 terms, one of which is that basically correspond to some weighted difference between via one and VO 2.
+
+00:06:15.000 --> 00:06:28.000
+Okay. I and then from what we said earlier then we should be getting some difference between V one and V 2.
+
+00:06:28.000 --> 00:06:32.000
+For VO and what we want to do through this analysis. Is to work out what exactly the relationship is between VO and V one and V 2.
+
+00:06:32.000 --> 00:06:47.000
+All right. And why this particular configuration is useful, right? So what sort of motivates this particular design.
+
+00:06:47.000 --> 00:06:58.000
+Okay, so When we talked about multiple opium circuits generally. Right, one of the things that we said was that the way to approach them.
+
+00:06:58.000 --> 00:07:08.000
+Is typically that you start with the OP-amps that are closest to the known inputs. In this case, the known inputs are V one and V 2.
+
+00:07:08.000 --> 00:07:14.000
+So we start with OP-amps number one and 2, and we figure out what their output voltages are.
+
+00:07:14.000 --> 00:07:28.000
+Alright, in terms of the inputs B one and B 2. Okay, and then once we have those Then we move on to the next OP-amp or set of OP-amps in the circuit, which in this case is opium number 3.
+
+00:07:28.000 --> 00:07:49.000
+Taking via one and VO 2 as its inputs. And then we just sort of proceed in that way through the signal along the signal path through the circuit starting from where we know the voltages which are V one and V 2 for OP-amps one and 2 and then just sort of working our way eventually to the output VO.
+
+00:07:49.000 --> 00:07:58.000
+See you. Okay, so let's go ahead then. With following this process. So.
+
+00:07:58.000 --> 00:08:15.000
+Isn't it? The behavior for opamp number one. All right, basically what we want to do here is to apply KCL at the node VN one and recognize that VN one is equal to V one.
+
+00:08:15.000 --> 00:08:24.000
+Okay, and so what we have Then is if we apply KCL. At the node.
+
+00:08:24.000 --> 00:08:38.000
+VN one, right, then the current. Going out this way to the right is . N. One, which is just V one minus VO one over R one.
+
+00:08:38.000 --> 00:08:47.000
+So we have V one minus VO one. Over R one. Then we have the current coming down this way through R 2.
+
+00:08:47.000 --> 00:08:55.000
+That is going to be V one. Minus the voltage at this node, VN 2, but that voltage is just V 2.
+
+00:08:55.000 --> 00:09:00.000
+Alright, because V 2 is going directly to this input and DN 2 has to be equal to B 2.
+
+00:09:00.000 --> 00:09:09.000
+So the current flowing down through R 2 is just V one minus V 2 over R 2. So we have plus.
+
+00:09:09.000 --> 00:09:13.000
+V one minus V 2 Over R 2. And those add up to 0 because the current flowing along this branch here has to be 0, right?
+
+00:09:13.000 --> 00:09:28.000
+Because there's no current in the ideal OP- model that flows into the OP-amp input. So from here.
+
+00:09:28.000 --> 00:09:39.000
+Yeah, we can solve for. One in terms of V one and B 2. And what we get is that VO one.
+
+00:09:39.000 --> 00:09:51.000
+Is equal to V one plus. R one over R 2. Times V one minus V 2. So that's what we get from applying KCL at.
+
+00:09:51.000 --> 00:10:01.000
+This node here VN one Alright, the next step then is to apply KCL. At the node DN 2.
+
+00:10:01.000 --> 00:10:07.000
+All right, so at the inverting input of OP-amp number 2. Okay. And so there.
+
+00:10:07.000 --> 00:10:19.000
+Right, we do the same thing. We know that VN 2 is equal to V 2. Alright, and if we look at the current flowing out this way, to the right through R 3.
+
+00:10:19.000 --> 00:10:27.000
+That current is going to be. The voltage across R 3, which is V 2 minus VO 2 over R 3.
+
+00:10:27.000 --> 00:10:36.000
+So we have v 2. Minus VO 2 over R 3. And then we add to that the current flowing up.
+
+00:10:36.000 --> 00:10:44.000
+Through the resistor R 2. Which is V 2 minus the voltage here, which we saw earlier is V one.
+
+00:10:44.000 --> 00:10:52.000
+Divided by R 2. So we have plus. V 2 minus V one. Over R 2.
+
+00:10:52.000 --> 00:10:55.000
+And by KCL, those have to add up to 0 because the current flowing down this way along this branch is 0, right?
+
+00:10:55.000 --> 00:11:07.000
+Because we have no current flowing into the inverting input of opium to according to the ideal OP-amp model.
+
+00:11:07.000 --> 00:11:13.000
+So now we can take this expression here and solve it for VO 2. And we get the VO 2.
+
+00:11:13.000 --> 00:11:23.000
+Is equal to v 2. Plus. R 3 over R 2. Times v 2 minus.
+
+00:11:23.000 --> 00:11:35.000
+V one. So now we have VO one and VO 2 expressed in terms of the no input voltages V one and V 2 and also the resistor values.
+
+00:11:35.000 --> 00:11:43.000
+Okay. Alright, so then, given those, then the next step is to use those as inputs.
+
+00:11:43.000 --> 00:12:03.000
+For this third outamp over here and just analyze the behavior of this third OP-amp. I and that should be pretty straightforward because we should be able to recognize this as the different amplifier configuration and we can analyze it in the same way as we did.
+
+00:12:03.000 --> 00:12:27.000
+Just to recap that. If we look first at what is happening at VP 3, right, we can see that since there's no current flowing along this terminal going into the not inverting and put of opium number 3 then these lower resistors are for an R 5 simply act as a voltage divider so we can get used voltage division.
+
+00:12:27.000 --> 00:12:42.000
+To get VP 3. I in terms of VO 2. Alright, so. The next step is that we use voltage division.
+
+00:12:42.000 --> 00:12:52.000
+At the node VP 3. Okay, and we get the VP 3 then is equal to R 4.
+
+00:12:52.000 --> 00:13:01.000
+Over R 4 plus R 5 Times. 2 Okay, then. We go up to the other input.
+
+00:13:01.000 --> 00:13:08.000
+The inverting input of opium number 3 and in the usual way. Hi, we now apply KCL at this node here.
+
+00:13:08.000 --> 00:13:25.000
+So the sum of the outgoing current through this upper resistor R 5. And the outgoing current through the upper resistor R 4 those 2 currents have to add up to 0 because the current along this branch here.
+
+00:13:25.000 --> 00:13:31.000
+Going into the inverting input of opium number 3 is by, the ideal opium model.
+
+00:13:31.000 --> 00:13:40.000
+That current is 0. Okay, so then if we apply now KCL.
+
+00:13:40.000 --> 00:13:53.000
+At VN 3, then the current flowing. To the left here through R 5. Is
+
+00:13:53.000 --> 00:14:00.000
+Alright, it's VN 3 minus VO one over R 5. Alright, so we have.
+
+00:14:00.000 --> 00:14:04.000
+. N. 3 minus VO one
+
+00:14:04.000 --> 00:14:18.000
+Over R 5. And then we add to that. The current flowing. I to the right here so the outgoing curve for BN 3 through upper resistor R 4 that is VN 3 minus VO.
+
+00:14:18.000 --> 00:14:28.000
+Over R 4. So plus VN 3. Minus VO. Over R 4.
+
+00:14:28.000 --> 00:14:33.000
+What we're ultimately trying to get is VO, so we can solve this for VO.
+
+00:14:33.000 --> 00:14:41.000
+Alright, it's going to be. We just multiply. The equation by R 4 and move VO to the other side of the equation.
+
+00:14:41.000 --> 00:14:51.000
+We get the VO is equal to VN 3. Plus R 4 over R 5. Times VN 3.
+
+00:14:51.000 --> 00:14:58.000
+Minus VO one. Okay. So now we have, if you look here, we have this equation here.
+
+00:14:58.000 --> 00:15:06.000
+That expresses VO in terms of VN 3 and VO one. Alright.
+
+00:15:06.000 --> 00:15:14.000
+We have here already in terms of V one and V 2. Vn 3 is equal to VP 3.
+
+00:15:14.000 --> 00:15:20.000
+All right, VP 3 we have over here in terms of VO 2.
+
+00:15:20.000 --> 00:15:33.000
+And VO 2, we have in terms of V one and D 2. Alright, so by putting all of that together, then we will be able to get VO in terms of just V one and V 2, which is what we wanted to do.
+
+00:15:33.000 --> 00:15:43.000
+Yeah, so then. The next step here, I, as I've been describing, is to solve.
+
+00:15:43.000 --> 00:15:46.000
+For VO.
+
+00:15:46.000 --> 00:16:02.000
+In terms of . One And V 2. Okay, so, what we have. From this equation over here that we got by applying KCL at VN 3, we have that VO.
+
+00:16:02.000 --> 00:16:11.000
+Is equal to, and if we just group together. This term and this term over here. We have that it's equal to R 4.
+
+00:16:11.000 --> 00:16:17.000
+Plus r 5. Over our 5.
+
+00:16:17.000 --> 00:16:25.000
+Times VN 3. R 4 over R 5. Times via one. Right.
+
+00:16:25.000 --> 00:16:29.000
+Vn 3.
+
+00:16:29.000 --> 00:16:36.000
+We know in the ideal OP- model has to be equal to VP 3 because those are the 2 inputs to opium number 3.
+
+00:16:36.000 --> 00:16:48.000
+And VP 3 we saw here. Is equal to R 4. Over R 4 plus R 5. Times.
+
+00:16:48.000 --> 00:16:54.000
+All right And so now if we take.
+
+00:16:54.000 --> 00:17:06.000
+This expression here. And substitute it in here for VN 3. Alright then this R 4 plus R 5 over R 5 times R 4 over R 4 plus R 5.
+
+00:17:06.000 --> 00:17:23.000
+Those partially cancel out. Just to give us our 4. Over R 5 times VO 2 and we have then minus R 4 over R 5 times VO one So what we get is R 4 over R 5 times the quantity.
+
+00:17:23.000 --> 00:17:35.000
+VO 2 minus VO one. Alright. And. Then finally, if we take the expressions.
+
+00:17:35.000 --> 00:17:48.000
+Here and substitute them into this equation for VO 2 and. What we get is
+
+00:17:48.000 --> 00:18:00.000
+R 4 over R 5. Right times and then for VO 2 minus VO one, we will get one term that is just V 2 minus V one from these first 2 terms over here.
+
+00:18:00.000 --> 00:18:06.000
+So we have this times v 2 minus v one. Right. And then we have. Plus R 4 over R 5.
+
+00:18:06.000 --> 00:18:24.000
+Alright, that's still. This art 4 over R 5 over here. Times this. Term R 3 over R 2 times V 2 minus V one minus our one over R 2 times V one minus V 2.
+
+00:18:24.000 --> 00:18:33.000
+So that's going to give us. R 4 over R 5 times the quantity. R 3 over R 2 plus
+
+00:18:33.000 --> 00:18:45.000
+R one over R 2. Times. V 2 minus v one. And this is plus r one over r 2 instead of minus r one over r 2.
+
+00:18:45.000 --> 00:18:48.000
+Because we're multiplying it by V 2 minus V one, whereas up here we had V one minus V 2.
+
+00:18:48.000 --> 00:18:58.000
+Alright, so by flipping the order of this V one minus V 2. We cancel out the minus sign that would have appeared before our one.
+
+00:18:58.000 --> 00:19:06.000
+Over R 2. Okay. And so then finally. If we group.
+
+00:19:06.000 --> 00:19:14.000
+These terms all together.
+
+00:19:14.000 --> 00:19:26.000
+What we get is the VO is equal to R 4. Over R 5. I right you can see that factor is common to this term and this term.
+
+00:19:26.000 --> 00:19:37.000
+And then we have. R one plus R 2. Plus R 3. Over R 2 times V 2 minus V one.
+
+00:19:37.000 --> 00:19:44.000
+And what we did there was that the first and third terms in the numerator here come from this R one and this R 3.
+
+00:19:44.000 --> 00:19:49.000
+And then the second term, R 2, right? That gives us R 2 over R 2 and that's just one.
+
+00:19:49.000 --> 00:19:59.000
+Which is the implicit one that we have here multiplying this. Alright, so this is then
+
+00:19:59.000 --> 00:20:15.000
+The final answer. Now, we can simplify this and even a bit further. If we choose a bunch of these resistors to have the same value as each other.
+
+00:20:15.000 --> 00:20:27.000
+All right, in particular, we can choose our one, our 3, our 4 and R 5 to have the same value as each other, say we'll call it R.
+
+00:20:27.000 --> 00:20:35.000
+Then this equation that we this expression that we arrived at down here. It becomes even simpler.
+
+00:20:35.000 --> 00:20:39.000
+Alright, so if we choose.
+
+00:20:39.000 --> 00:20:55.000
+R one, equal to R 3 equal to R 4 equal to R 5. We just call that common value R, which is A not uncommon thing to do if you're building a circuit then often is simpler just to choose a bunch of the resistors to have the same.
+
+00:20:55.000 --> 00:21:05.000
+Value and that means that if you pick them all from the same batch they're more likely to have really the same value as opposed to being a few percent off.
+
+00:21:05.000 --> 00:21:19.000
+From each other. Right. Which is sort of what the spec would typically minimum, So if we choose, all these resistors to have the same value and call that value R.
+
+00:21:19.000 --> 00:21:29.000
+Then this this pre factor here are 4 over r 5 just becomes one. And what we get is the VO then is equal to.
+
+00:21:29.000 --> 00:21:39.000
+One plus 2 are that 2 r comes from the r one plus r 3. Divided by R 2. Times v 2 minus v one.
+
+00:21:39.000 --> 00:22:00.000
+Okay. So. What we see here is that now we get for the output of this instrumentation amplifier circuit, we get the difference between v 2 and v one multiplied by some constant gain factor either the more complicated one here or the simpler one.
+
+00:22:00.000 --> 00:22:10.000
+Down here. Alright. And that gain factor. Can be adjusted by adjusting the value of R 2.
+
+00:22:10.000 --> 00:22:19.000
+Alright, which we said was a variable. Resistor. So, you can build a single circuit if you include that variable resistor in that circuit, then you can get different gain factors just by, you know, turning a screw or something like that.
+
+00:22:19.000 --> 00:22:26.000
+On the variable resistor.
+
+00:22:26.000 --> 00:22:38.000
+Alright, so what we have then is that The instrumentation.
+
+00:22:38.000 --> 00:22:46.000
+Amplifier it acts. As an amplifier.
+
+00:22:46.000 --> 00:22:54.000
+For the voltage difference.
+
+00:22:54.000 --> 00:22:58.000
+Okay.
+
+00:22:58.000 --> 00:23:10.000
+Minus V one. With again. That is adjustable.
+
+00:23:10.000 --> 00:23:14.000
+Through the variable resistor R 2. Alright, now you might ask, well, you know, that's pretty similar to what the difference amplifier gave us.
+
+00:23:14.000 --> 00:23:30.000
+With only one OP-amp. Right, so why don't we just use the difference amplifier, right, which was actually the right hand portion of this circuit over here.
+
+00:23:30.000 --> 00:23:37.000
+Why did we have this other stuff? Back here. Alright. And there are a couple of reasons for this.
+
+00:23:37.000 --> 00:23:45.000
+One is that if you go back in your notes and look at What's the difference amplifier?
+
+00:23:45.000 --> 00:23:56.000
+Hey, us in terms of the output, it did give us, difference between The 2 input voltages.
+
+00:23:56.000 --> 00:24:02.000
+With one having a positive gain factor, the other having a negative gain factor. But those gain factors were different.
+
+00:24:02.000 --> 00:24:08.000
+Okay. And if you look back at that expression. It's actually not that easy. You have to be.
+
+00:24:08.000 --> 00:24:17.000
+You have to have very precise resistor values in order for, those coefficients to have exactly the same magnitude.
+
+00:24:17.000 --> 00:24:31.000
+Whereas the way the instrumentation amplifier is designed here then you naturally get those. Voltages having the same gain factor and that becomes important.
+
+00:24:31.000 --> 00:24:44.000
+If what you want to measure are small differences. Between, the 2 input voltages. And that's actually quite a common scenario where you want to measure some small Voltage difference, the instrumentation amplifier.
+
+00:24:44.000 --> 00:24:59.000
+Will be much better at doing that because you buy design, get the same magnitude, gain factor for both voltage inputs and so you can very sensitively amplify just the difference.
+
+00:24:59.000 --> 00:25:11.000
+Between the 2 input voltages okay alright, so one advantage here is that
+
+00:25:11.000 --> 00:25:17.000
+This is on. Makes it easier.
+
+00:25:17.000 --> 00:25:21.000
+To measure.
+
+00:25:21.000 --> 00:25:25.000
+Very small values.
+
+00:25:25.000 --> 00:25:33.000
+V 2 minus V one, right? That's often important. The other advantage.
+
+00:25:33.000 --> 00:25:38.000
+That you get is that these input right? We draw them in the circuit as being just ideal voltage sources.
+
+00:25:38.000 --> 00:26:01.000
+All right, but in real life, very often, I, you know, if you're trying to measure something or control something, you're getting your voltage not necessarily from an ideal voltage source but something that's more like essentially a realistic voltage source where there's some series resistance.
+
+00:26:01.000 --> 00:26:10.000
+Right in there as well. And in just the difference amplifier. Right, which is just this right hand portion of I the circuit over here, if you had an input voltage that had some.
+
+00:26:10.000 --> 00:26:25.000
+Series resistance associated with it, that would actually affect the game. Alright, because it would effective that series resistance would effectively contribute to our 5 here.
+
+00:26:25.000 --> 00:26:45.000
+And our 5 over here. Right. And so you would get your circuit output would be, quite sensitive to that series resistance, or more generally the detailed characteristics of whatever is providing your input voltage.
+
+00:26:45.000 --> 00:26:51.000
+Now, in the instrumentation amplifier circuit, you can see that the input voltage is V one and V 2.
+
+00:26:51.000 --> 00:27:03.000
+They are connected directly to the opium input. And so that means that if say V one were not an ideal voltage source, but some.
+
+00:27:03.000 --> 00:27:11.000
+Something more like a realistic voltage source that had some series resistance. That series resistance wouldn't matter because there would be no current flowing through it.
+
+00:27:11.000 --> 00:27:23.000
+Alright, because this opium input draws no cart. And so the other or another advantage that the instrumentation amplifier circuit gives us is that it doesn't draw any input.
+
+00:27:23.000 --> 00:27:34.000
+Correct. Or in, another way of saying it is that it has very large ideally an infant input resistance.
+
+00:27:34.000 --> 00:27:45.000
+And so that makes. The performance and the behavior of the circuit. Much less sensitive to the details of the output resistance of your source voltages.
+
+00:27:45.000 --> 00:27:52.000
+Okay. And that can be very important. As well. Right.
+
+00:27:52.000 --> 00:27:58.000
+So the other advantage that we get here.
+
+00:27:58.000 --> 00:28:11.000
+Okay, is that I the instrumentation amplifier?
+
+00:28:11.000 --> 00:28:17.000
+Right, it has a very large. And.
+
+00:28:17.000 --> 00:28:24.000
+For an ideal opamp, it's actually infinite.
+
+00:28:24.000 --> 00:28:31.000
+Okay, input resistance.
+
+00:28:31.000 --> 00:28:41.000
+Right, which means that No current. Flows. From
+
+00:28:41.000 --> 00:28:45.000
+The signal sources.
+
+00:28:45.000 --> 00:28:54.000
+Okay, and this ends up being important if you have any kind of realistic input circuit that has non-zero series.
+
+00:28:54.000 --> 00:29:05.000
+Alright, so this. Is an important characteristic.
+
+00:29:05.000 --> 00:29:10.000
+Okay, for.
+
+00:29:10.000 --> 00:29:16.000
+Realistic input circuits.
+
+00:29:16.000 --> 00:29:25.000
+That have non-zero.
+
+00:29:25.000 --> 00:29:39.000
+Series resistance. Okay, so, so this completes the discussion of the instrumentation. And this example really serves 2 purposes.
+
+00:29:39.000 --> 00:29:47.000
+One is that it's an example really serves 2 purposes. One is that it's an example of how we analyze circuits that have multiple or that have multiple opiums.
+
+00:29:47.000 --> 00:29:54.000
+Okay, the one thing that we didn't do explicitly. Is to check that the intermediate output voltages.
+
+00:29:54.000 --> 00:30:12.000
+Alright, VO one. And VO 2 here, right? What we should also have done if we were being meticulous about it would be to check to make sure that neither of those exceeded the supply voltages.
+
+00:30:12.000 --> 00:30:14.000
+For opamps one and 2. Right. But that's something that could be relatively straightforwardly done.
+
+00:30:14.000 --> 00:30:27.000
+If you would like, right? So, but We saw the main ideas of how we analyze a circuit with multiple OP-amps, right?
+
+00:30:27.000 --> 00:30:36.000
+And then in addition, this allowed us to introduce a specific circuit, the instrumentation amplifier circuit that actually has very useful functionality.
+
+00:30:36.000 --> 00:30:50.000
+And to understand some of the reasons why. It provides a useful function and actually is. Is quite common.
+
+00:30:50.000 --> 00:31:01.000
+Alright. So that's it for this example. Of the instrumentation amplifier. And I'll stop the recording.
+

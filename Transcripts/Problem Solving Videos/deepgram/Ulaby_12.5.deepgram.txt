@@ -1,0 +1,967 @@
+[0:00:05] Okay.
+[0:00:06] This is Ulaby problem 12.5,
+[0:00:09] and this is an example
+[0:00:12] of the calculated... Several examples of the calculation of Laplace transforms.
+[0:00:18] K. So this is an example of calculation
+[0:00:22] of Laplace transforms.
+[0:00:29] Okay. And the focus here is on,
+[0:00:32] some of the kinds of functions that,
+[0:00:35] one might be likely to encounter in,
+[0:00:38] various circuit analysis problems. Okay. So we'll just go through these one by one.
+[0:00:44] Alright. So we'll start with part a here.
+[0:00:47] Okay.
+[0:00:48] And for a,
+[0:00:50] the function that we have in the time domain is h one of t,
+[0:00:55] and
+[0:00:57] this is given by 12 t times e to the minus three
+[0:01:02] times t minus four
+[0:01:04] times u of t minus four. We'll remember, as usual, u of t is the unit step function.
+[0:01:12] Okay.
+[0:01:15] Sort of as a preliminary step, let's think about this function and
+[0:01:20] what is the core of this that we can build upon in order to compute the Laplace transform. And the core function here is really the exponential function here times
+[0:01:33] the unit step function.
+[0:01:35] Alright. So we're gonna let... We're gonna define a function f one of t,
+[0:01:40] and we'll take that to be either the minus three t
+[0:01:44] times
+[0:01:45] u of t.
+[0:01:47] And if that were the function that, we were dealing with, then its
+[0:01:53] Laplace transform
+[0:01:55] would be capital f one of s,
+[0:01:58] and this is just one over s plus three. And you can get that by looking at,
+[0:02:04] the table, table 12 dash two in Ulaby. Okay. So from here, right, how do we start from this function which has this Laplace transform,
+[0:02:16] and how do we build upon it to get this full function over here?
+[0:02:21] The first thing that we can see is that
+[0:02:25] if we do a time shift, if we replace t in f one of t by t minus four, then we will get this part
+[0:02:33] of the function h one.
+[0:02:36] Okay. So let's do that first. We'll use the time shift property.
+[0:02:47] Of Laplace transforms
+[0:02:50] to
+[0:02:52] go from t to t minus four. And that's a useful thing to do because,
+[0:02:57] we know how f one of s, how this Laplace transform changes
+[0:03:03] if we introduce a time shift in the time domain. Alright?
+[0:03:07] And,
+[0:03:08] what we have is that f of
+[0:03:12] t minus, some time shift capital t times u of t minus capital t.
+[0:03:20] It's Fourier transform
+[0:03:22] is
+[0:03:23] either the minus t
+[0:03:25] s
+[0:03:26] times
+[0:03:28] f of s. Okay. So if we know, the Fourier transform... Or sorry. The Laplace transform
+[0:03:34] of some function just f of t, such as f one of t over here, and then we shift it in time in the time domain, then this tells us what the corresponding Laplace transform is of the time shifted function. Okay? So what we wanna do then is we'll say we will let...
+[0:03:55] Now we'll define a function f two of t.
+[0:03:58] Okay.
+[0:04:00] And we'll take that to be the time shifted version of f one of t. So it's either the minus three
+[0:04:08] times t minus four times u of t minus four. Okay. So so we've shifted it by four in the time domain.
+[0:04:17] So this is just our function f one
+[0:04:20] at t minus four. Okay?
+[0:04:23] And,
+[0:04:25] we can also write that... Or that's also equal to f one of t minus four times u of t minus four. Alright?
+[0:04:33] Because f one,
+[0:04:36] of t minus four already can... Contains the unit step function over here. Alright? And so if we multiply by the unit step function again, then it doesn't matter. We just get the same thing. So we're free to do that, and that brings it into the form, that we can use, over here. Alright?
+[0:04:54] So now that we have
+[0:04:56] this
+[0:04:57] being equal to f two of t,
+[0:05:00] then
+[0:05:01] we know that it's for... This Laplace transform
+[0:05:05] is e to the minus four s because capital t here is four. So e to the minus four s times,
+[0:05:13] f of s and specifically f one of s, which is one over s plus three. Okay. So that means that
+[0:05:22] f two of s
+[0:05:24] is equal to either the minus four s. Right? That's this factor over here
+[0:05:31] times
+[0:05:32] one over s plus three.
+[0:05:35] Right? That's this capital f of s over here where since we're talking about the function f one, it's Laplace transform is f one of s over here one over s plus three. That's how we get this one over s plus three down here. Okay. So now we've gotten the Laplace transform of
+[0:05:54] this part of h one of t. Now we have to figure out how to deal with this additional factor of t over here.
+[0:06:03] And the way that we deal with that is to use,
+[0:06:07] what's known as the frequency differentiation property
+[0:06:10] of, Laplace transforms, which you can get from, you will be at all. From table 12 dash one, it's property number nine. Okay?
+[0:06:21] So
+[0:06:22] the next step then
+[0:06:24] is to use
+[0:06:27] what's called the frequency
+[0:06:36] differentiation property of Laplace transforms.
+[0:06:42] Okay. And
+[0:06:44] this says that if you have a function t
+[0:06:48] times f of t in the time domain
+[0:06:53] and, you know the Laplace transform of just the function f of t, then the Laplace transform of t times f of t is minus the derivative
+[0:07:05] with respect to f or with respect to s of
+[0:07:09] f of s, where capital f of s is the Laplace transform of f of t. And,
+[0:07:16] we got this from
+[0:07:20] Ulaby et al. Table
+[0:07:24] is 12 dash one,
+[0:07:26] and it's entry number nine in that table. Okay.
+[0:07:30] So,
+[0:07:31] what we're going to do then is we're going to define yet another function. We'll call it f three
+[0:07:37] of t. Alright. That's equal to t times f two of t.
+[0:07:44] Alright. So that is
+[0:07:46] t
+[0:07:47] times e to the minus three,
+[0:07:50] t minus four times t minus four times u of t minus four.
+[0:07:55] Okay. And you can see that that is almost the entire function
+[0:08:01] h one over here. Right? Except for this constant 12, which is very easy,
+[0:08:06] to incorporate. We just multiply the final result by 12. We just have to remember to do that at the end.
+[0:08:13] Okay. So we have this function f three of t.
+[0:08:17] And, since it's t times f two of t,
+[0:08:23] then
+[0:08:24] we know that
+[0:08:27] the Laplace transform of f three of t, capital f three of s, is going to be equal to minus the derivative with respect to s of f two
+[0:08:38] of s.
+[0:08:40] Right? F two of s, we figured out up here. Okay? So this is now minus the derivative
+[0:08:47] with respect to s
+[0:08:49] of f two of s, which is e to the minus four s times one over s plus three.
+[0:08:57] Okay. And so now we just have to take the derivative
+[0:09:01] of this function here with respect to s.
+[0:09:05] And if we do that, we get minus.
+[0:09:08] That's this, first minus sign over here.
+[0:09:13] And then when we take the derivative of this product, e to the minus four s times one over s plus, three,
+[0:09:23] When we take the derivative of that, then what we get is
+[0:09:28] the derivative of... Right. It's the derivative of the product. So it's the derivative of the first term times the second plus the first term times the derivative of the second. Okay. So
+[0:09:39] the first fact... The derivative of the first factor is minus four
+[0:09:44] e to the minus four s. We multiply that by the second factor, one over s plus three.
+[0:09:50] And then we have the derivative of the second factor, which is minus one over s plus three, the quantity squared times... And then times the first factor, to the minus four s. So we get minus
+[0:10:05] either the minus four s times one over s plus three quantity square.
+[0:10:12] Okay.
+[0:10:13] And
+[0:10:14] so if we just simplify this a little bit, we pull out the overall factor of
+[0:10:20] either the minus four s
+[0:10:23] and we multiply through by this minus sign over here, which gets rid of this minus sign
+[0:10:28] and this minus sign. And so we get
+[0:10:32] four
+[0:10:33] over s plus three
+[0:10:36] plus
+[0:10:37] one
+[0:10:38] over s plus three quantity squared.
+[0:10:42] Okay. So that's f three of s.
+[0:10:45] And then finally,
+[0:10:48] we just have to multiply
+[0:10:53] by our constant that we had in h one,
+[0:10:57] which was 12. Alright. If we go back
+[0:11:01] to here, right, that's this constant 12
+[0:11:04] over here.
+[0:11:07] Okay. And then to incorporate that, all we have to do is to multiply f three of s by 12.
+[0:11:14] And so if we do that, then finally, we get h one of s, that is the Laplace transform of our original function h one is equal to 12
+[0:11:26] e to the minus four s
+[0:11:29] times
+[0:11:30] four
+[0:11:31] over s plus three plus
+[0:11:34] one
+[0:11:36] over s plus three
+[0:11:38] squared.
+[0:11:39] Right?
+[0:11:40] And
+[0:11:43] that is our result.
+[0:11:45] Okay.
+[0:11:47] And so, if we go back and look at what we did, then what were the key points here?
+[0:11:58] Okay. The first point was that the way that we approach this was that we started with a basic Laplace transform result. Alright? And that is the Laplace transform of just the exponential function times the unit step function. Right? That's something that, we know or can look up easily in our Laplace transform table. Alright?
+[0:12:19] And then
+[0:12:21] what we did was we used a succession of properties of Laplace transforms to build up from this basic,
+[0:12:30] result over here to
+[0:12:32] this
+[0:12:33] full
+[0:12:35] function for which we're computing the Laplace transform
+[0:12:38] in this problem. Alright? So we wanna start...
+[0:12:43] Or what we did here was to start
+[0:12:47] with
+[0:12:50] just the basic Laplace transform result,
+[0:12:54] alright, which is the Laplace transform of an exponential times the unit step function.
+[0:13:00] Right? So here, it was that either the minus three t times u of t
+[0:13:05] forms a Laplace transform pair with one over s plus three.
+[0:13:09] Okay?
+[0:13:11] And then
+[0:13:13] from there,
+[0:13:15] what we did was to use
+[0:13:19] a number of Laplace transform properties
+[0:13:24] in succession.
+[0:13:30] Okay. Then here's what we did was first,
+[0:13:33] we use the time shift property,
+[0:13:36] alright, which introduced
+[0:13:38] an additional exponential factor
+[0:13:40] in
+[0:13:41] the Laplace transform,
+[0:13:44] then
+[0:13:45] the frequency derivative property.
+[0:13:53] Okay. We're multiplying by t in the time domain corresponded to taking minus d d s in the s domain. Right?
+[0:14:03] Then we just multiply
+[0:14:09] by
+[0:14:11] our constant. Right? Which just multiplies the Laplace transform by the same constant.
+[0:14:16] And then that got us to our result.
+[0:14:19] And then the third, thing that we did
+[0:14:24] was to make use of the fact that the unit step function
+[0:14:29] is... If you multiply it by,
+[0:14:32] itself,
+[0:14:33] then you just get the same thing. Because zero times zero is zero, one times one is one. Right? And in fact, that's true for any power
+[0:14:41] of the unit step function. Okay. So we made use of that observation and property of the unit step function as well. Okay. So that is it for part a.
+[0:14:54] Okay. So now
+[0:14:56] move on to part b,
+[0:14:58] okay, which is another
+[0:15:02] Laplace transform example. The function for which we wanna compute the Laplace transform is h two of t, and it is 27
+[0:15:11] t squared
+[0:15:13] times the sine
+[0:15:16] of six t
+[0:15:18] minus 60 degrees
+[0:15:21] times u of t. Alright?
+[0:15:24] So we're going to approach this in a very similar way. We wanna start off with just some basic Laplace transform result that we can build upon. Alright?
+[0:15:35] And so what we're going to start with here is
+[0:15:40] to
+[0:15:42] look at this sine of 60 minus 60 degrees. But instead of using the sine as our basic function, we're going to use a complex exponential.
+[0:15:52] Alright?
+[0:15:54] So let's let our function... We'll define a function f one of t that we can work with, and we'll take this to be e to the... It could be plus or minus j
+[0:16:05] times six t minus
+[0:16:08] 60 degrees
+[0:16:10] times u of t.
+[0:16:12] Alright?
+[0:16:14] And then it's Laplace transform f one of s is
+[0:16:20] e to the minus or plus j times 60 degrees.
+[0:16:26] That's just this e to the plus or minus j times minus 60 degrees,
+[0:16:32] out here in front, which is just a constant. Right? And plus or minus when you multiply the minus sign, gives you minus or plus.
+[0:16:42] And then,
+[0:16:44] for the exponential,
+[0:16:47] part of it, either the plus minus j times six t,
+[0:16:50] then we have one over
+[0:16:53] s
+[0:16:54] minus or plus
+[0:16:56] j times six.
+[0:17:02] Okay.
+[0:17:03] So
+[0:17:07] this is,
+[0:17:08] the basic result that we're gonna start with. Okay?
+[0:17:12] And,
+[0:17:13] what we'll do here is now we will combine the complex exponentials
+[0:17:19] so that we get,
+[0:17:21] the sign,
+[0:17:23] of the same argument. Alright? So we're gonna let
+[0:17:28] now a call
+[0:17:30] this new function f two of t.
+[0:17:33] That is the sine
+[0:17:36] of six t minus 60 degrees times u of t. Right? So that's just this function over here. These two factors over here. Alright?
+[0:17:46] And
+[0:17:48] that's one over two j,
+[0:17:51] okay, times
+[0:17:53] e to the j
+[0:17:56] 60 minus 60 degrees
+[0:17:59] minus e to the minus j
+[0:18:02] 60 minus
+[0:18:03] 60 degrees times u of t.
+[0:18:07] Okay. So, this is just a a basic,
+[0:18:11] property of complex exponentials. Right? You can combine them in this way to get trigonometric functions.
+[0:18:16] And so now we can take each of these and use this result here to write the Laplace transform of each of these terms and therefore of f of f two of t directly.
+[0:18:30] So
+[0:18:31] if we do that, we get that f two of s is equal to one over two j.
+[0:18:38] Okay. And then,
+[0:18:40] we have... For this first term over here, e to the j times 60 minus 60 degrees,
+[0:18:47] then we have,
+[0:18:49] that's basically
+[0:18:52] this result over here taking the top sign. Alright? So we get e to the minus j times 60 degrees
+[0:19:03] divided by s minus j times six
+[0:19:08] minus.
+[0:19:09] Right? That's this minus sign over here. And then we want the Laplace transform in either the minus j times 60 minus 60 degrees times u of t. That's this result here taking the bottom sign corresponding to the minus sign over here. So that is going to be e to the
+[0:19:28] plus
+[0:19:29] j times 60 degrees
+[0:19:32] divided by
+[0:19:34] s plus
+[0:19:35] j times six.
+[0:19:38] Okay.
+[0:19:39] And then
+[0:19:41] from here, right, what we wanna do is to put this in a slightly more, what will turn out to be a slightly more convenient form.
+[0:19:50] And we'll do that by taking these two terms
+[0:19:54] and putting them over a common denominator. The common denominator is going to be s minus j six times s plus j six. Those are complex conjugates of each other. So when we multiply them to get the common denominator, that common denominator is just going to be s squared plus 36.
+[0:20:14] Okay. And then in the numerator, we're going to get this e to the j times 60 degrees times s plus j six minus e to the j 60 degrees times s minus j six. K. So we write that out.
+[0:20:28] We have our initial
+[0:20:30] factor one over two j, then we have e to the minus j 60 degrees
+[0:20:36] times s plus j times six minus e to the plus j times 60 degrees times s minus j times six
+[0:20:47] divided by
+[0:20:49] the common denominator,
+[0:20:51] is s squared plus 36. Right? Which is s minus j six times s plus j six.
+[0:21:00] Okay. And then if we take this
+[0:21:03] and just rearrange things slightly,
+[0:21:06] then we can see if we take the terms up here that are... That have a factor of s. Right? Is s times e to the minus j 60
+[0:21:16] minus,
+[0:21:18] e to the plus j times 60 degrees. And then we're dividing by two j,
+[0:21:24] and so that is actually minus the sine of 60 degrees. So from
+[0:21:31] this term and this term, we get minus s times the sine
+[0:21:38] of 60 degrees.
+[0:21:40] And then
+[0:21:42] here from,
+[0:21:44] j six times e to the minus j 60 degrees plus... Because we have minus minus,
+[0:21:52] j six times e to the plus j 60 degrees divided by two j, the j in the denominator will cancel this j and this j here in the numerator, and then we were going... We're going to get six
+[0:22:05] times
+[0:22:06] e to the j 60 degrees plus e to the minus j 60 degrees over two, which is just the cosine of 60 degrees. So we're gonna get plus six
+[0:22:16] times the cosine of 60 degrees
+[0:22:20] divided by s squared plus
+[0:22:23] 36.
+[0:22:26] Okay. So this is now the Laplace transform
+[0:22:30] for this function here, the sine of six t minus 60 degrees times u of t. Right?
+[0:22:36] Then from here,
+[0:22:39] alright,
+[0:22:40] we have to figure out how to deal with this factor of t squared,
+[0:22:44] multiplying
+[0:22:45] f two of s. And,
+[0:22:48] to do that, we can take advantage again of the frequency differentiation property.
+[0:22:55] Okay. But now for t squared rather than just t. So we're gonna use,
+[0:23:02] again, the frequency
+[0:23:08] differentiation property.
+[0:23:14] Okay.
+[0:23:16] As it's given in Ulaby,
+[0:23:18] it is the t times f of t forms a Laplace transform pair with minus
+[0:23:25] d d s
+[0:23:28] f of s. Right? Where f of t and f of s form a Laplace transform fair... Pair. This is from
+[0:23:39] Ulaby et al. Table
+[0:23:43] 12 dash one is property number nine. Okay?
+[0:23:48] But we can easily generalize this,
+[0:23:51] alright,
+[0:23:52] to higher powers of t. Alright? So, for example, we can let, say, g of t be equal to t
+[0:24:01] times f of t,
+[0:24:04] and then g of t forms... Will take it to form a
+[0:24:09] Laplace transform pair with capital g of s,
+[0:24:13] then
+[0:24:14] t
+[0:24:16] times g of t forms a Laplace transform pair with minus derivative with respect to s
+[0:24:25] of g of s. Right?
+[0:24:28] But then
+[0:24:29] instead of g of t over here, we can write t times f of t, then we get on that left hand side, t squared times f of t.
+[0:24:40] And it forms a Laplace transform pair with
+[0:24:45] minus d d s of minus d d s of f of s. So
+[0:24:51] minus one squared
+[0:24:53] d squared d s squared
+[0:24:56] f of s. Okay?
+[0:24:59] And then if we just basically keep on,
+[0:25:03] doing that, then we can come up with, the expression for, in general,
+[0:25:09] the Laplace transform of t to some power n times f of t. And what you get is the t to the n
+[0:25:18] of f of t
+[0:25:20] forms a Laplace transform pair with minus one to the n,
+[0:25:25] d n,
+[0:25:26] d s n
+[0:25:29] of f of s.
+[0:25:31] Okay.
+[0:25:32] So, so this is the property that we're going to use now.
+[0:25:37] So we're going to let
+[0:25:42] f three of t, okay, be equal to now
+[0:25:46] t squared
+[0:25:48] times f two of t, where f two of t,
+[0:25:53] alright, was
+[0:25:55] this function here. Right? Sine of six t minus 60 degrees times u of t.
+[0:26:00] And so when we multiply that by t squared, we get almost the whole function h two except for this constant 27, and we'll just multiply by that constant at the end.
+[0:26:10] Okay. So f three of t is equal to t squared times f two of t, which is t squared times
+[0:26:18] sine of six t minus 60 degrees
+[0:26:23] times u of t. Alright?
+[0:26:27] And we can use this frequency
+[0:26:30] differentiation property,
+[0:26:32] alright, to
+[0:26:34] compute now the four... The Laplace transform of f three of t in terms of the Laplace transform of f two of t, which we just computed.
+[0:26:50] Up here, that's f two of s. Okay.
+[0:26:54] Okay. So using this frequency differentiation property, we get that f three of s,
+[0:27:01] right, the Laplace transform of f three of t is equal to the second derivative.
+[0:27:09] Alright. So we're applying
+[0:27:11] basically this formula here.
+[0:27:14] Okay? Because we have a t squared. So we have the minus one squared, which is one, and it's the second derivative, d squared d s squared of
+[0:27:23] now the Laplace transform of the sine of 60 minus 60 degrees times u of t. And we just figured out a few minutes ago that that is minus s
+[0:27:34] times the sine of 60 degrees plus six
+[0:27:39] times the cosine of 60 degrees
+[0:27:42] divided by s squared
+[0:27:46] plus 36.
+[0:27:47] Okay?
+[0:27:48] So
+[0:27:50] we'll take one derivative of that first.
+[0:27:53] Okay.
+[0:27:54] That is going to be, when we take the derivative of this with respect to s, it's the derivative of the numerator
+[0:28:02] times the denominator
+[0:28:04] minus the numerator times the derivative of the denominator divided by the denominator square. Right? That's the,
+[0:28:12] quotient rule, right, basically, for taking derivatives.
+[0:28:15] So
+[0:28:18] the derivative of the numerator with respect to s is just minus the sine of 60 degrees.
+[0:28:23] So we have minus the sine
+[0:28:25] of 60 degrees. That times now the denominator, s squared plus 36,
+[0:28:32] minus the numerator times the derivative of the denominator. The derivative of the denominator is just two s, and then the numerator is minus s
+[0:28:42] times the sine of 60 degrees
+[0:28:45] plus six
+[0:28:47] times the cosine of 60 degrees.
+[0:28:50] All of this will be divided by the denominator squared, s squared plus 36,
+[0:28:56] the quantity squared.
+[0:28:57] Okay.
+[0:28:59] So,
+[0:29:01] here,
+[0:29:02] before we take another derivative,
+[0:29:05] let's see if we can, simplify
+[0:29:09] this expression in the square brackets here a little bit. Alright? If we look at this and we look at
+[0:29:17] the terms proportional to s squared,
+[0:29:19] we have minus s squared times the sine of 60 degrees
+[0:29:23] plus,
+[0:29:24] because we have minus sign here, minus sign here, s squared
+[0:29:29] times two times the sine of 60 degrees. So that's going to give us overall s squared
+[0:29:36] times the sine of 60 degrees.
+[0:29:39] Alright?
+[0:29:41] Then we can look at the terms proportional to s. Alright?
+[0:29:46] There's only one term. It's minus two s times six times the cosine of 60 degrees. So that's minus
+[0:29:54] 12
+[0:29:55] times
+[0:29:57] s
+[0:29:58] times the cosine of 60 degrees.
+[0:30:02] And then finally, we have, the terms that are the constant term, which is minus 36 times the sine of 60 degrees. So minus 36
+[0:30:13] times the sine of 60 degrees
+[0:30:17] divided by
+[0:30:19] s squared plus 36
+[0:30:21] quantity squared.
+[0:30:24] Okay. So now we can take the derivative
+[0:30:27] of,
+[0:30:28] this.
+[0:30:30] Alright? And when we do that, again, we're gonna use the,
+[0:30:34] quotient rule, right, for taking,
+[0:30:36] derivatives.
+[0:30:38] And so it's the derivative of the numerator,
+[0:30:42] right, which is two s times the sine of 60 degrees minus 12 times the cosine
+[0:30:50] of 60 degrees times the denominator,
+[0:30:54] so times s squared plus 36, the quantity squared,
+[0:30:59] minus the numerator times the derivative of the denominator. Right? The derivative of the denominator is two
+[0:31:06] s squared plus 36
+[0:31:08] times two s.
+[0:31:10] We multiply that by the numerator,
+[0:31:13] which is s squared times the sine of 60 degrees
+[0:31:17] minus 12 s times the cosine 60 degrees
+[0:31:22] minus 36
+[0:31:25] times the sine
+[0:31:27] of 60 degrees.
+[0:31:29] Right? All of this
+[0:31:32] divided by
+[0:31:34] s squared plus thirties... The denominator squared. So s squared plus 36
+[0:31:39] to the fourth power.
+[0:31:41] Okay.
+[0:31:42] Now here,
+[0:31:45] we can
+[0:31:47] cancel out an overall factor of s squared plus 36 for the numerator and the denominator. Right? If we do that, we get two s
+[0:31:56] times the sine of 60 degrees minus 12 times the cosine of 60 degrees times s squared plus 36,
+[0:32:05] just to a single power,
+[0:32:07] minus...
+[0:32:08] And then we have two times two s, so that's four s.
+[0:32:13] Alright. We've canceled out. Now this s squared plus 36, and so we have just this last term over here, which is s squared times the sine 60 degrees
+[0:32:25] minus 12
+[0:32:26] s
+[0:32:27] times the cosine of 60 degrees
+[0:32:31] minus 36
+[0:32:33] times the sine of 60 degrees.
+[0:32:36] All of this divided by s squared plus 36,
+[0:32:42] not to the fourth,
+[0:32:46] now to the third because we canceled out one power from the numerator and the denominator.
+[0:32:53] Okay. So now let's, try to simplify the numerator a bit here. So let's go by powers of s. So let's look at,
+[0:33:03] the terms proportional to s cube. We have from this term times this term, two s cube times the sine of 60 degrees.
+[0:33:12] And then from this four s times s squared, we have minus four s cube times the sine of 60 degrees. So that gives us minus two
+[0:33:23] s cubed
+[0:33:25] times the sine of 60 degrees.
+[0:33:27] Right? And then for the terms proportional to s squared, we have minus 12 cosine of 60 degrees times s squared,
+[0:33:36] and then plus
+[0:33:39] 48,
+[0:33:40] four times 12 s squared times the cosine of 60 degrees. So that's plus 36
+[0:33:47] s squared
+[0:33:49] times the cosine
+[0:33:51] of 60 degrees.
+[0:33:54] And then if we look at the terms proportional to s, alright, we have two s times the sine of 60 degrees times 36.
+[0:34:03] Right? That's 72,
+[0:34:05] s times the sine of 60 degrees.
+[0:34:08] And then we have,
+[0:34:09] minus minus s plus four
+[0:34:12] times 36.
+[0:34:13] That's a 144
+[0:34:16] s times the sine of 60 degrees. So it's a 144 plus 72,
+[0:34:22] that's 216
+[0:34:26] s times the sine
+[0:34:30] of 60 degrees.
+[0:34:32] And then finally, we have,
+[0:34:34] the constant term, which is minus
+[0:34:38] 12
+[0:34:39] times 36 times the cosine of 60 degrees. Right? 12 times 36
+[0:34:45] is 360
+[0:34:46] plus,
+[0:34:48] 72.
+[0:34:49] So that is 432.
+[0:34:52] So minus 432
+[0:34:55] times the cosine
+[0:34:57] of 60 degrees.
+[0:34:59] All of this
+[0:35:01] divided by s squared plus
+[0:35:04] 36
+[0:35:05] cubed.
+[0:35:07] Okay.
+[0:35:09] So that is
+[0:35:12] f three of s. Right? The Laplace transform of
+[0:35:16] this.
+[0:35:17] And to get the final result, we just have to multiply
+[0:35:23] by
+[0:35:24] this constant 27.
+[0:35:27] Alright. And then we'll be done.
+[0:35:32] Okay. So the last step here is to multiply
+[0:35:39] by our leading constant
+[0:35:43] here, which is 27.
+[0:35:45] Right?
+[0:35:46] And so finally, get that h two of s is equal to... Right. It's 27
+[0:35:51] times f three of s. Right? This is what we just calculated up here.
+[0:35:57] And so that is going to be, right, if we just multiply this through, minus 27 times two. So that's minus 54
+[0:36:07] times s cubed
+[0:36:09] times the sine
+[0:36:12] of 60 degrees.
+[0:36:14] Then we have 27 times 36.
+[0:36:18] That's 972.
+[0:36:22] Okay, times
+[0:36:24] s squared times the cosine of 60 degrees.
+[0:36:27] Then we have from this term, 27 times 216.
+[0:36:33] So that's plus
+[0:36:35] 5,832
+[0:36:37] s
+[0:36:38] times the sine
+[0:36:41] of 60 degrees.
+[0:36:44] And finally, minus
+[0:36:46] 27 times 432,
+[0:36:49] that's
+[0:36:51] 11,664
+[0:36:55] times the cosine
+[0:36:57] of 60 degrees.
+[0:36:58] All of this
+[0:37:01] divided by
+[0:37:04] s squared plus
+[0:37:06] 36, the quantity cubed.
+[0:37:08] And now if we just evaluate the sine and the cosine of 60 degrees. Right? The sine of 60 degrees is root three over two. The cosine of 60 degrees is one half.
+[0:37:21] Okay. And so finally,
+[0:37:24] what we get is that h two of s is equal to... It ends up being minus
+[0:37:30] 46.77
+[0:37:34] s cubed
+[0:37:36] plus
+[0:37:38] 486
+[0:37:40] s squared
+[0:37:42] plus
+[0:37:43] 5,051
+[0:37:45] s
+[0:37:47] minus
+[0:37:51] fifty eight thirty two.
+[0:37:57] Okay.
+[0:37:58] And,
+[0:37:59] that is divided by s squared
+[0:38:03] plus 36,
+[0:38:05] the quantity q.
+[0:38:08] Okay.
+[0:38:09] So...
+[0:38:12] Alright. So that is the answer
+[0:38:18] to the second part.
+[0:38:20] And there are a few additional key points.
+[0:38:29] To note here. Alright?
+[0:38:32] First is... Right. Again, right, our basic strategy here,
+[0:38:39] once again, was to start with a basic result for Laplace transforms.
+[0:38:45] Alright?
+[0:38:47] All the way back up here. This was just the Laplace transform for a complex exponential,
+[0:38:54] and then we just sort of built upon it using
+[0:38:57] the basic properties of Laplace transforms and other simple mathematical tools. Right? Expressing the sign as a sum of complex exponentials,
+[0:39:07] then using frequency differentiation and multiplying by the constant in the end. Okay. So we started
+[0:39:19] with a basic result
+[0:39:23] for Laplace transforms
+[0:39:27] and then built upon it.
+[0:39:35] Using
+[0:39:38] properties of Laplace transforms,
+[0:39:40] right,
+[0:39:42] and
+[0:39:44] other mathematical tools.
+[0:39:52] Okay.
+[0:39:55] The second point to note here is,
+[0:39:58] as we showed, that this property of frequency differentiation,
+[0:40:03] right, can be generalized
+[0:40:04] to,
+[0:40:06] derivatives of arbitrary order. Right? And correspondingly,
+[0:40:10] powers of t or or arbitrary powers of t. Right? So this property of
+[0:40:16] frequency differentiation,
+[0:40:21] right, it generalizes
+[0:40:26] to
+[0:40:31] arbitrary powers
+[0:40:33] of t
+[0:40:35] and then correspondingly,
+[0:40:37] derivatives,
+[0:40:42] okay, of arbitrary order.
+[0:40:49] Alright. And the key result that we derived
+[0:40:54] in this example was the t to the n
+[0:40:59] f of t forms a four... A Laplace transform pair with minus one to the n,
+[0:41:05] the derivative d n d s n
+[0:41:09] of
+[0:41:10] f of s.
+[0:41:12] Okay.
+[0:41:14] And then the third point
+[0:41:16] that,
+[0:41:17] we should note here is that the Laplace transform of
+[0:41:22] e to the minus a t
+[0:41:25] times u of t.
+[0:41:26] Right?
+[0:41:28] This is one over s plus a.
+[0:41:31] Alright. We knew that. And this works even
+[0:41:36] for complex values
+[0:41:42] of a. Okay.
+[0:41:44] So that was the other, useful thing or another useful thing that we got out of this example.
+[0:41:50] Okay. So let's continue now. Alright?
+[0:41:54] Now we'll move on to part c
+[0:41:58] of this problem. Alright? And so now we have the function h three of t,
+[0:42:04] and it is 10
+[0:42:07] t cubed
+[0:42:08] e to the minus two t times u of t. Alright? And
+[0:42:15] so here,
+[0:42:17] right, one way we could do this is to look directly at, table 12 dash two in Ulaby, and we can actually,
+[0:42:25] read off the result pretty much directly from the table. Alright? So
+[0:42:31] from table
+[0:42:34] 12 dash two is entry number eight
+[0:42:40] of Ulaby et al. Right?
+[0:42:43] We can see directly,
+[0:42:49] alright, that...
+[0:42:51] Alright. T to the N minus one, E to the minus AT
+[0:42:56] times U of T. Right? If... So if look at that, you can see that's, right, pretty much directly
+[0:43:01] the form of this here with n equal to four. Right? This forms a Laplace transform pair
+[0:43:08] with
+[0:43:09] n minus one factorial
+[0:43:12] divided by s plus a to the n.
+[0:43:17] And so here in this example,
+[0:43:21] n is equal to four. Alright? And so we can just take that result
+[0:43:28] and use it directly to get the Laplace transform of h three of t. So capital h three of s,
+[0:43:36] it'll be 10
+[0:43:37] times n minus one. So that's three factorial
+[0:43:42] divided by,
+[0:43:45] s plus...
+[0:43:46] And then a is equal to two.
+[0:43:49] Alright? To the fourth.
+[0:43:51] Alright? Because n is equal to four. Three factorial, that's three times two times one, that's six. So six times 10 is 60
+[0:43:59] divided by s plus two
+[0:44:03] to the fourth. Alright?
+[0:44:05] So,
+[0:44:06] this is the, the answer. Right?
+[0:44:10] But it's
+[0:44:11] perhaps not quite as instructive,
+[0:44:14] to just read it off the table. We can actually derive this result using frequency differentiation. And in fact, this will allow us to derive...
+[0:44:23] Essentially, see
+[0:44:24] how
+[0:44:26] this entry in the table comes about. Right? So we can drive
+[0:44:34] this
+[0:44:36] using, again, this property of
+[0:44:41] frequency differentiation
+[0:44:46] for Laplace transforms.
+[0:44:48] Alright. So we're gonna take
+[0:44:51] our basic function,
+[0:44:53] right, f one of t. We'll take that to be either the minus two t
+[0:44:58] times u of t.
+[0:45:00] Then we know that f one of s, it's Laplace transform,
+[0:45:04] is one over s plus two.
+[0:45:06] Okay.
+[0:45:10] Then, when we multiply this,
+[0:45:13] right, then here...
+[0:45:17] Right. We need to multiply this by t q. Alright. So... And then that'll allow us to use this property of frequency differentiation,
+[0:45:25] which in the previous part of the... Of this example,
+[0:45:29] we derive for arbitrary
+[0:45:31] powers of t and correspondingly arbitrary orders of differentiation.
+[0:45:37] So we're gonna use frequency... The frequency differentiation
+[0:45:50] property of Laplace transforms.
+[0:45:53] Right? That is that
+[0:45:55] t to the n f of t forms a Laplace transform pair with minus one to the n times d d n
+[0:46:04] d s n
+[0:46:07] of f of s. Right?
+[0:46:10] I... And so we're going to now let
+[0:46:15] f two of t, right, be
+[0:46:18] t cubed
+[0:46:20] e to the minus two t
+[0:46:22] times
+[0:46:23] u of t, which is t cubed times
+[0:46:27] f one of t. Alright?
+[0:46:32] And using this frequency...
+[0:46:34] This generalized frequency differentiation property,
+[0:46:37] then we see that f two of s,
+[0:46:40] right, the Laplace transform of f two of t over here
+[0:46:44] is going to be equal to minus one
+[0:46:47] cubed
+[0:46:49] times the third derivative,
+[0:46:51] d cubed d s cubed
+[0:46:54] of one over s plus two.
+[0:46:57] Okay. And it's relatively easy to take successive derivatives of one over s plus two.
+[0:47:04] Alright. So this is gonna be
+[0:47:07] minus one cubed.
+[0:47:09] And then if we take one derivative
+[0:47:12] explicitly, we'll have d squared d s squared of the derivative of one over s plus two, which is minus one over s plus two
+[0:47:22] quantity squared.
+[0:47:24] Alright?
+[0:47:25] Then
+[0:47:27] we can take one more derivative of this with respect to s, and then we'll also pull this minus one, to the outside. So we have our minus one cubed,
+[0:47:38] and then the minus one now that we're pulling out in front of the
+[0:47:43] derivative.
+[0:47:45] And then we have d d s of the derivative of one over s plus two, the quantity squared,
+[0:47:51] which is
+[0:47:53] minus two over s plus two, the quantity
+[0:47:57] cubed.
+[0:47:59] Okay.
+[0:48:00] And then we can pull this minus two out in front and take the final derivative of... With respect to s of this. Now it's gonna be one over s plus two, the quantity cubed.
+[0:48:13] So we're gonna have minus one cubed
+[0:48:15] times minus one. Now pulling out the minus two times minus two.
+[0:48:21] And then taking the derivative with respect to s of one over s plus two quantity cube, we get minus three
+[0:48:28] divided by s plus two
+[0:48:32] to the fourth.
+[0:48:34] Okay. So this is now
+[0:48:36] minus one cubes times minus one times minus two times minus three divided by s plus two
+[0:48:46] to the fourth. Alright?
+[0:48:49] And so we see here all the minus signs cancel out, and they will always can... All cancel out. So we just get three factorial
+[0:48:57] divided by s plus two
+[0:49:01] to the fourth,
+[0:49:02] which is six over s plus two
+[0:49:06] to the fourth. Okay? And so now,
+[0:49:10] by just seeing how this worked out, you can start to see,
+[0:49:15] or hopefully completely see, right, where this n minus one factorial comes from and why this is s plus a to the nth power.
+[0:49:24] Alright?
+[0:49:25] So then from here,
+[0:49:28] alright, the last step is just to multiply
+[0:49:34] by
+[0:49:36] our overall constant factor
+[0:49:39] in h three,
+[0:49:41] which was 10.
+[0:49:45] Right? That's
+[0:49:46] this 10
+[0:49:48] up here.
+[0:49:51] Okay.
+[0:49:52] And so what we get then is h three of s is equal to 10.
+[0:49:58] Right? This is f two
+[0:50:00] of s.
+[0:50:02] F two of s.
+[0:50:04] Right?
+[0:50:05] Or...
+[0:50:08] Alright. If we
+[0:50:11] plug in f two of s, given explicitly here, over here, we get 60
+[0:50:17] over s plus two quantity to the fourth power.
+[0:50:22] Right? Which is the answer. To same thing that we got reading directly from the table. Okay? But with a little bit more explanation
+[0:50:31] and hopefully where you can see how this comes from what we had derived previously or how it can be arrived at from what we had derived previously.
+[0:50:41] Okay. Let's move on to part d.
+[0:50:45] Now we have a function h four of t.
+[0:50:49] This is five
+[0:50:50] times
+[0:50:52] t minus six times u of t minus three. Okay.
+[0:50:58] So here,
+[0:51:00] the new twist is that we have two different time shifts. Right? By six over here and by three over here. Alright?
+[0:51:09] But, actually, you know, we don't have to think of this as a time shift at all. We can just think of this as two terms, and then the six is just a constant. So
+[0:51:18] we can write this as h four of t. We can also write it as
+[0:51:24] five t
+[0:51:26] times u of t minus three,
+[0:51:30] minus
+[0:51:31] 30
+[0:51:32] times u
+[0:51:36] of t minus three. Okay.
+[0:51:39] So from here, right,
+[0:51:43] this is zero. This is step zero, our usual step zero.
+[0:51:47] What is the basic function that we wanna start with? It's really just the unit step function.
+[0:51:52] So f one of t, take it just to be
+[0:51:55] u, but we'll take it to be u of t minus three.
+[0:51:59] Alright?
+[0:52:00] And then reading from the table in Ulaby,
+[0:52:05] we know that the corresponding Laplace transform
+[0:52:09] is either the minus three s
+[0:52:11] over s.
+[0:52:13] We could also arrive at that, by recognizing that the Laplace transform of just u of t is one over s and then using the time shift property, which gives us the additional factor of either the minus three s. Alright. So either way would be fine.
+[0:52:29] Then
+[0:52:32] from here...
+[0:52:33] Oops.
+[0:52:38] For the first term,
+[0:52:39] since we have this additional factor of t, we can... We know that we can use the
+[0:52:44] the simple first order frequency
+[0:52:47] differentiation property. Right? So we're gonna use
+[0:52:53] frequency
+[0:52:58] differentiation,
+[0:53:00] right, which is that
+[0:53:02] we know that t times f of t forms a Laplace transform pair with minus d d s
+[0:53:11] f of s. Okay. Where f of t and capital f of s form a Laplace transform pair.
+[0:53:19] And so,
+[0:53:20] using
+[0:53:22] that, we can pretty much immediately go to figure out the Laplace transform of h four of t. So capital h four of s is for the first term over here, it's going to be minus five times the derivative with respect to s
+[0:53:40] of the Laplace transform of u of t minus three, which is either the minus three s
+[0:53:47] over s.
+[0:53:49] And then for this second term over here, it's going to be minus 30. And then we just have the Laplace transform of u of t minus three,
+[0:53:58] which is e to the minus three s
+[0:54:01] over s.
+[0:54:03] Okay.
+[0:54:04] So now we just have to work this out. Alright?
+[0:54:08] And so we have for the first term minus five,
+[0:54:13] And then we're taking the derivative
+[0:54:15] of this function over here, either the minus three s over s. Alright?
+[0:54:22] And so if we use, say, the quotient rule, then the derivative of this is minus three times s times e to the minus three s.
+[0:54:34] Alright. Minus
+[0:54:37] e to the minus three s times one. So just e to the minus three s divided by s squared.
+[0:54:45] And then we'll just carry, over the second term 30
+[0:54:49] minus 30 times either the minus three s
+[0:54:53] over s. Alright?
+[0:54:56] And then if
+[0:54:59] we just separate out these two terms here, then from the first term, we get minus five times minus three, that's 15,
+[0:55:09] e
+[0:55:10] to the minus three s, then we have s over s squared, which is just s in the denominator.
+[0:55:16] Then we have plus five,
+[0:55:18] that's this minus five times minus one, right, times
+[0:55:25] e to the minus three s
+[0:55:28] over s squared,
+[0:55:30] and then carrying down that last term again, minus 30 e to the minus three s
+[0:55:36] over s.
+[0:55:37] Right?
+[0:55:39] So then...
+[0:55:45] Okay. The first term and the third term work out to, minus 15 e to the minus three s over s. And so we're gonna have, we can pull out an overall factor of five
+[0:55:58] either the minus three s.
+[0:56:01] And then we have
+[0:56:02] one over s squared.
+[0:56:04] That's from this term over here. And then from the combination of these two terms, we get minus
+[0:56:11] three
+[0:56:13] over s.
+[0:56:15] And that's the answer.
+[0:56:20] Okay.
+[0:56:21] So that was a relatively simple,
+[0:56:24] example
+[0:56:26] there. Right?
+[0:56:29] Now we'll go to part e.
+[0:56:33] Okay. So this here was part d.
+[0:56:37] Right. So now we'll go to part e,
+[0:56:40] of this problem, right,
+[0:56:42] which
+[0:56:43] is to compute the Laplace transform of our function
+[0:56:47] of a function h five of t, which is 10
+[0:56:51] e to the minus three t
+[0:56:54] times u
+[0:56:56] of t minus four.
+[0:56:58] Okay.
+[0:56:59] So,
+[0:57:00] again,
+[0:57:02] right. What's the basic function that we wanna start with? It's going to be, an exponential times the unit step function. So we'll let
+[0:57:10] f one of t, it'll be either the minus
+[0:57:14] three t times u of t. Right?
+[0:57:19] Then f one,
+[0:57:21] it's,
+[0:57:22] Laplace transform is one over s plus three. Okay.
+[0:57:28] So how do we make use of that given that we have u of t minus four over here? Alright. Well, let's rewrite things slightly.
+[0:57:40] We can write h five of t
+[0:57:43] to be equal to... It's 10 e to the minus three t
+[0:57:47] u of t minus four.
+[0:57:50] Okay?
+[0:57:52] But we can equally well write that as 10.
+[0:57:56] Right?
+[0:57:57] And then we'll introduce a factor of either the minus 12,
+[0:58:01] which will then allow us to write
+[0:58:03] times either the minus three
+[0:58:07] t minus four. Alright? So we've multiplied by either the minus 12 and then through this four over here, either the plus 12. So that's just multiplying by one times u of t minus four.
+[0:58:18] Okay?
+[0:58:22] And
+[0:58:24] we can write this now as
+[0:58:26] 10
+[0:58:28] e to the minus 12.
+[0:58:30] And then
+[0:58:32] this product over here, e to the minus three times the quantity t minus four times u of t minus four is just f one
+[0:58:41] of t minus four.
+[0:58:43] Okay.
+[0:58:44] And then we can multiply by u of t minus four again. Right? Because that doesn't change anything.
+[0:58:51] So it's 10 either the minus 12
+[0:58:53] f one of t minus four
+[0:58:56] times u of t minus four.
+[0:59:00] Okay.
+[0:59:01] And then once we've done that, that allows us to use the time shift property
+[0:59:07] to
+[0:59:08] determine
+[0:59:09] the
+[0:59:10] Laplace transform of f one of t minus four times u of t minus four.
+[0:59:16] Okay. So now we can use the time shift property.
+[0:59:26] Alright. Which is that
+[0:59:29] f of t minus t
+[0:59:31] times u of t minus t
+[0:59:35] forms a Laplace transform pair with either the minus s t
+[0:59:39] times f
+[0:59:41] of s. Right? We use that,
+[0:59:44] also in one of the earlier parts of this example.
+[0:59:48] Okay.
+[0:59:50] And so that means that
+[0:59:52] the Laplace transform of small h five of t, capital h five of s is 10
+[1:00:01] e to the minus 12
+[1:00:03] times
+[1:00:04] e to the minus four s
+[1:00:07] times the Laplace transform of our original function f one. Alright?
+[1:00:13] And up here, right, capital f one of s is one over s plus three.
+[1:00:19] Alright. So what we get then is that
+[1:00:23] h five of s is equal to 10,
+[1:00:27] e to the minus 12,
+[1:00:29] e to the minus four s
+[1:00:32] over s plus
+[1:00:34] three.
+[1:00:36] Or if we work out the numerical value for 10 e to the minus 12,
+[1:00:41] it's 6.14
+[1:00:44] times
+[1:00:45] 10 to the minus five
+[1:00:47] e to the minus
+[1:00:49] four s
+[1:00:51] over s plus three.
+[1:00:56] And that's the answer for part e.
+[1:01:00] So there's one additional point that we can note here.
+[1:01:06] Alright. If we think about, what we did in this problem,
+[1:01:11] and that is that
+[1:01:14] what we did here was we deliberately introduced
+[1:01:19] an additional time shift over here because that then allowed us to use the time shift property of Laplace transforms. Right? So it may have looked like we were making things a little bit more complicated, but that was actually a route to making it, more tractable. Right? So in this case,
+[1:01:38] time shifts
+[1:01:40] or a time shift, right, or more generally, potentially other
+[1:01:48] modifications.
+[1:01:53] Alright. These can be deliberately
+[1:01:57] introduced,
+[1:02:06] Right. To enable
+[1:02:09] the various useful properties
+[1:02:15] of Laplace transforms
+[1:02:17] to be applied.
+[1:02:22] Okay.
+[1:02:23] And here,
+[1:02:25] we did this so that we can use the time shift
+[1:02:28] property
+[1:02:33] of
+[1:02:34] the Laplace transform.
+[1:02:38] Okay. So that was part e,
+[1:02:43] and now we were... We are at last
+[1:02:47] at part f of this. This is the last part of this example.
+[1:02:51] Okay. And so we have a time domain function h six of t,
+[1:02:58] and it is four times either the minus two
+[1:03:04] t minus three
+[1:03:08] u of t minus four. Okay?
+[1:03:11] And the idea here is actually pretty similar to,
+[1:03:15] what we did in part e. Alright?
+[1:03:19] What we're going to do is we're going to introduce
+[1:03:21] an
+[1:03:23] additional
+[1:03:24] time shift over here so that we can use the time shift property of Laplace transforms.
+[1:03:29] So
+[1:03:31] the basic function that we're gonna be working with
+[1:03:35] is, again, exponential function,
+[1:03:38] e to the minus two t
+[1:03:41] u of t.
+[1:03:44] Alright. Then f one
+[1:03:47] of s is one over s plus two.
+[1:03:50] Okay?
+[1:03:52] And so we're gonna take...
+[1:03:57] Alright. We have the h six of t is equal to four
+[1:04:01] e to the minus two times t minus three
+[1:04:05] u of t minus four.
+[1:04:08] Alright. So now we will... What we wanna do is to have the same time shift in the unit step function and in this exponential function over here. So we'll have four
+[1:04:18] e to the minus two,
+[1:04:21] then it's either the minus two times
+[1:04:24] the quantity t minus four. Right? So we've multiplied by either the minus two over here. And then by changing this from three to four, we've multiplied by e to the plus two. Alright?
+[1:04:40] Times u of t minus four.
+[1:04:43] Okay.
+[1:04:45] And so this is four
+[1:04:47] e to the minus two. And then it's our function f one,
+[1:04:52] but now time shifted. So f one of t minus four.
+[1:04:56] Alright? And we can multiply as, as we did before by the unit step function without changing anything. Four is... So it's four e to the minus two f one of t minus four
+[1:05:07] u of t minus four. Okay?
+[1:05:10] And then from here, now we can use
+[1:05:20] the time shift property,
+[1:05:22] that is that f
+[1:05:24] of t minus some time shift capital t times u of t minus capital t forms a Laplace transform pair with either the minus s t.
+[1:05:35] F of s.
+[1:05:37] Okay.
+[1:05:38] And so finally,
+[1:05:41] that gives us the capital h six of s. The Laplace transform of h six of t
+[1:05:48] is four
+[1:05:49] e to the minus two
+[1:05:52] times e to the minus four s. Right? That's this time shift factor over here times,
+[1:05:59] f one of s.
+[1:06:04] Right, which we have from up here is one over s plus two.
+[1:06:09] And so what we finally get then is that h six
+[1:06:14] of s
+[1:06:16] is four
+[1:06:18] e to the minus two
+[1:06:20] e to the minus four s over s plus two.
+[1:06:25] And, if we calculate numerically four times e to the minus two,
+[1:06:30] it is o point five four
+[1:06:33] one three,
+[1:06:35] and then we have e to the minus four s over s plus two.
+[1:06:43] Okay. And so that is the result for, this last part of this example.
+[1:06:49] And so that completes
+[1:06:51] the
+[1:06:53] solutions to Ulaby problem 12.5.
+[1:06:57] K. So I will stop the recording now.

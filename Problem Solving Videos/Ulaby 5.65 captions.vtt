@@ -1,0 +1,446 @@
+WEBVTT
+
+00:00:04.000 --> 00:00:27.000
+Okay, so this is, problem 5.6 5. And this is an example. Of a first order opamp RC circuit.
+
+00:00:27.000 --> 00:00:40.000
+Okay, so, what we'll do, it has 2 parts. The first part of the problem is to analyze the circuit and, come up with an expression for the output voltage in terms of these parameters.
+
+00:00:40.000 --> 00:00:49.000
+And then the second part of the problem is to evaluate that numerically for the parameter values shown here.
+
+00:00:49.000 --> 00:00:57.000
+Okay, so let's go ahead and. Get started. We will start off as usual by I'd redrawing.
+
+00:00:57.000 --> 00:01:07.000
+This circuit. Okay, so this is our opamp. The non-inverting input is connected to ground.
+
+00:01:07.000 --> 00:01:18.000
+And then we have a resistor. R 2 going to the inverting input, and then we have.
+
+00:01:18.000 --> 00:01:28.000
+The input connected to that. I threw a resistor. So the resistor here is R one. And then the input voltage.
+
+00:01:28.000 --> 00:01:40.000
+VS of T. Is equal to A times U of T. Okay, U of T is remember it's the unit step function.
+
+00:01:40.000 --> 00:01:47.000
+So it is 0. For T less than 0 and it's one. For T greater than or equal to 0.
+
+00:01:47.000 --> 00:01:56.000
+Okay, so that's the unit step function. And then, for our Feedback connection, we have a resistor.
+
+00:01:56.000 --> 00:02:11.000
+R 3. And that is in parallel. With a capacitor. See, okay, and this is our output voltage over here.
+
+00:02:11.000 --> 00:02:19.000
+Okay. And. Well, we wanna do for the first part of this problem is to solve.
+
+00:02:19.000 --> 00:02:29.000
+For V out of T. For T greater than or equal to 0. Okay, so to do this.
+
+00:02:29.000 --> 00:02:34.000
+The first step is that as usual.
+
+00:02:34.000 --> 00:02:43.000
+Okay, we will, determine the initial conditions.
+
+00:02:43.000 --> 00:02:52.000
+Okay, that is for t less than or equal to 0. And in particular, we're interested in I v out at t equal to 0.
+
+00:02:52.000 --> 00:03:00.000
+Okay, so now to figure this out. Let's think about the voltage. Across the capacitor.
+
+00:03:00.000 --> 00:03:08.000
+I will call that voltage VC. With the polarity that I have shown here. And.
+
+00:03:08.000 --> 00:03:14.000
+For times less than 0, then that voltage, we're going to assume that there's no charge.
+
+00:03:14.000 --> 00:03:22.000
+I across or no charge, I contain on the capacitor. So then, for T less than 0.
+
+00:03:22.000 --> 00:03:31.000
+So for T less than 0. VC. Alright, so that's a 0 minus, right?
+
+00:03:31.000 --> 00:03:40.000
+That's equal to 0. And then I. Since we know that the voltage across the capacitor always have to has to be continuous.
+
+00:03:40.000 --> 00:03:50.000
+If it's not continuous, then there will be an undefined current. So by the continuity.
+
+00:03:50.000 --> 00:03:59.000
+Of any voltage across the capacitor. We know that VC of 0 also has to be equal to 0.
+
+00:03:59.000 --> 00:04:19.000
+Okay, now. We also, know that the voltage at this node here, right, this is effectively v sub and the voltage at the inverting input because even though we have the resistor R 2 here, remember that one of the ideal opamp rules is that there's no current.
+
+00:04:19.000 --> 00:04:24.000
+That flows into the input, of an OP-amp. So there's no current that flows through R 2, therefore the voltage at this input has to be the same as the voltage here.
+
+00:04:24.000 --> 00:04:37.000
+All right. The voltage to the non-inverting input of the OP-amp is 0 because it's connected directly to ground.
+
+00:04:37.000 --> 00:04:51.000
+So we know that this voltage here has to be 0 as well. And if v sub c at t equal to 0 is equal to 0, then we know that v out has to be i v out.
+
+00:04:51.000 --> 00:05:00.000
+At t equal to 0 has to be 0 as well. Okay. So. All of this means that V out.
+
+00:05:00.000 --> 00:05:13.000
+At t equal to 0. Is equal to 0. So we want to remember that. Okay, so then once we have this initial condition, then what we wanna do is to formulate
+
+00:05:13.000 --> 00:05:18.000
+The differential equation.
+
+00:05:18.000 --> 00:05:21.000
+Hmm.
+
+00:05:21.000 --> 00:05:31.000
+That we have to solve. For T greater than or equal to 0. Okay, and So to do that, right, this is a relatively simple OP-amp circuit.
+
+00:05:31.000 --> 00:05:39.000
+So, Alright, what we want to do is as usual, we will apply KCL.
+
+00:05:39.000 --> 00:05:45.000
+Add the input of the opium in this case the not the inverting input of the opium.
+
+00:05:45.000 --> 00:05:53.000
+So at this node here that we've labeled v sub in which has a voltage of 0. Okay, so we're gonna apply KCL.
+
+00:05:53.000 --> 00:06:04.000
+Add the OP ed. . Alright And we know that v sub n is equal to 0. Okay, so if we do that.
+
+00:06:04.000 --> 00:06:08.000
+Then what we're going to do.
+
+00:06:08.000 --> 00:06:17.000
+Okay, we just as usually we want to take the sum of the outgoing currents to be equal to 0 There's no current flowing out this way through R 2.
+
+00:06:17.000 --> 00:06:24.000
+Okay, so that doesn't come into play at all. The current going out to the left. Is 0 minus v sub s.
+
+00:06:24.000 --> 00:06:32.000
+So that's just minus v sub s over r one. The current going this way through R 3 is 0 minus v out.
+
+00:06:32.000 --> 00:06:39.000
+So just minus v out over r 3. And the current flowing up this way through the capacitor.
+
+00:06:39.000 --> 00:06:49.000
+Is. The capacitance C times the derivative with respect to time. Of 0 minus v out.
+
+00:06:49.000 --> 00:06:55.000
+So it's minus c times dv out dt.
+
+00:06:55.000 --> 00:07:02.000
+Okay, so applying KCL now as I just described. At the node, that we've labeled v.
+
+00:07:02.000 --> 00:07:11.000
+We have the current going out to the left. Which is minus VS over R one. Then we have the current going out.
+
+00:07:11.000 --> 00:07:15.000
+Through R 3, which is minus V out.
+
+00:07:15.000 --> 00:07:22.000
+Over R 3 and then we have the current going out through the capacitor which is minus C. Times via.
+
+00:07:22.000 --> 00:07:28.000
+DT and all of that adds up to 0. Okay, so if we just rearrange this.
+
+00:07:28.000 --> 00:07:36.000
+Slightly. We have C. Times DV out. DT plus.
+
+00:07:36.000 --> 00:07:53.000
+One over R 3. Times V out is equal to minus VS. Over R one. Or if we divide both sides of this equation by See, then we have DV out.
+
+00:07:53.000 --> 00:08:06.000
+DT plus One over R 3 times C. Times V out. Is equal to minus vs. Over R one times C.
+
+00:08:06.000 --> 00:08:13.000
+Okay, so this is now. An inhomogeneous differential equation. And the way that we solve this.
+
+00:08:13.000 --> 00:08:20.000
+Is that we first set the right hand side equal to 0. That will give us what we call the homogeneous equation.
+
+00:08:20.000 --> 00:08:27.000
+We solved that. And then we add to that. Any solution that we can come up with.
+
+00:08:27.000 --> 00:08:37.000
+To this full equation over here. We call that the particular integral. And the sum of the. Solution to the homogeneous equation.
+
+00:08:37.000 --> 00:08:46.000
+And the plus the particular integral will give us our full solution. Okay, so let's look first at the.
+
+00:08:46.000 --> 00:08:49.000
+Homogeneous equation.
+
+00:08:49.000 --> 00:08:54.000
+And it's solution.
+
+00:08:54.000 --> 00:09:00.000
+Okay, so for this, the homogeneous equation is DV out.
+
+00:09:00.000 --> 00:09:11.000
+DT plus. One over R 3 times C. Times V out is equal to 0. Alright, or equivalently.
+
+00:09:11.000 --> 00:09:18.000
+DV out DT is equal to minus. One over R 3 times C.
+
+00:09:18.000 --> 00:09:26.000
+Times V out, right? This equation here. Alright, we know that the solution to this. Is just the exponential function.
+
+00:09:26.000 --> 00:09:32.000
+All right. So we know that.
+
+00:09:32.000 --> 00:09:40.000
+V out of T. Alright, which at this point we are taken to be the solution of just the homogeneous equation.
+
+00:09:40.000 --> 00:09:47.000
+Right, that's equal to a constant. We'll call that constant B. Times e to the minus t.
+
+00:09:47.000 --> 00:09:52.000
+Over R 3 C. Alright, so this is the solution.
+
+00:09:52.000 --> 00:09:58.000
+To the homogeneous.
+
+00:09:58.000 --> 00:10:07.000
+Equation. Alright. Now in addition, We need to figure out.
+
+00:10:07.000 --> 00:10:10.000
+The particular integral.
+
+00:10:10.000 --> 00:10:14.000
+Okay. And.
+
+00:10:14.000 --> 00:10:25.000
+For this equation here, right, we know that a solution to this, the particular a particular integral is to take v out to be a constant.
+
+00:10:25.000 --> 00:10:35.000
+Since the right hand side here, the inhomogeneous term is just a constant. Cause we know that VS for times greater than equal to 0 is just equal to a constant we call A.
+
+00:10:35.000 --> 00:10:42.000
+If we take the out to be a constant, this derivative term goes to 0. And then the out.
+
+00:10:42.000 --> 00:10:51.000
+Will be equal to this right hand side times R 3 times C, which is minus. R 3 over R one times V sub S.
+
+00:10:51.000 --> 00:10:59.000
+Alright, so by that line of reasoning, we get this particular integral. Is that V out is equal to minus.
+
+00:10:59.000 --> 00:11:10.000
+R 3 over R one. Times v sub s. Okay, and so putting together the solution to the homogeneous equation and this particular integral.
+
+00:11:10.000 --> 00:11:14.000
+We get to the full solution.
+
+00:11:14.000 --> 00:11:27.000
+Now is. The V out. Of t is equal to this constant B. Which we will have to figure out from the initial condition.
+
+00:11:27.000 --> 00:11:37.000
+Alright, times e to the minus t. Over R 3 C. Minus R 3 over R one.
+
+00:11:37.000 --> 00:11:45.000
+Times v sub s or. Since. V, since V. S.
+
+00:11:45.000 --> 00:11:53.000
+Is just equal to A. A constant for t greater than or equal to 0 this is just b times e to the minus t.
+
+00:11:53.000 --> 00:12:04.000
+Over R 3 times C. Minus R 3 over R one times. This constant A. And that's for T greater than or equal to 0.
+
+00:12:04.000 --> 00:12:14.000
+Okay, so then the final thing that we need to do is to figure out What this constant be? All right.
+
+00:12:14.000 --> 00:12:28.000
+But we know for that our initial condition. For V out that we work out up here. Is the V out at t equal to 0 has to be equal to 0.
+
+00:12:28.000 --> 00:12:37.000
+Okay, so we know that And t equals 0 has to be equal to 0. Right, so that means that the, right, if we just.
+
+00:12:37.000 --> 00:12:45.000
+Substitute t equal to 0 in here, this exponential becomes one. So B minus R 3.
+
+00:12:45.000 --> 00:12:52.000
+Over r one times a is equal to 0. Or equivalently B has to be equal to R 3.
+
+00:12:52.000 --> 00:13:00.000
+Over R one times A. And so if we take this. And substitute it in here for B. Alright.
+
+00:13:00.000 --> 00:13:03.000
+Then what we finally get.
+
+00:13:03.000 --> 00:13:13.000
+Is the V out of T is equal to R 3. Over R one times A. Alright, times.
+
+00:13:13.000 --> 00:13:21.000
+E to the minus T. Over R 3 C. Minus one.
+
+00:13:21.000 --> 00:13:40.000
+Okay, so this is our solution for. Alright, for this circuit up here. And then for part B, all we'll need to do is to substitute into the expression we just worked at.
+
+00:13:40.000 --> 00:13:47.000
+The numerical values for the parameters. That are given in the problem here. Okay, so let's go ahead.
+
+00:13:47.000 --> 00:13:57.000
+And do that. So for part B, what we do is we take our one. To be one K, one kilo ohm.
+
+00:13:57.000 --> 00:14:05.000
+R 2, 5 kilo ohms. Or 3. It's 2 kilo ohms.
+
+00:14:05.000 --> 00:14:17.000
+The capacitance is equal to point 2 5. Millie Farads. And then A, the input voltage we take to be 12 volts.
+
+00:14:17.000 --> 00:14:26.000
+Alright. And if we just substitute those into V out. That we just worked out in part A. Then we get this is equal to.
+
+00:14:26.000 --> 00:14:30.000
+So we have
+
+00:14:30.000 --> 00:14:36.000
+R 3 over R one. So that's 2 K over one K. That's just 2.
+
+00:14:36.000 --> 00:14:47.000
+Times A, which is 12 volts. So it's going to be 24. And then we have e to the minus t over r 3 c minus one.
+
+00:14:47.000 --> 00:14:56.000
+Alright, so we have E to the minus. T over and then R 3 times C is 2 K times point 2 5 milliarids.
+
+00:14:56.000 --> 00:15:04.000
+Alright, so that's 2 times. Point 2 5. That's point 5. K times Millie, that's one.
+
+00:15:04.000 --> 00:15:13.000
+Alright, so we have T over point 5. Minus one or if we write this in a slightly different form.
+
+00:15:13.000 --> 00:15:24.000
+Equal to 24 times e to the minus 2 t. Minus one and that's in votes.
+
+00:15:24.000 --> 00:15:34.000
+Okay, and so this is the answer for the second part of the problem. Alright, with the numerical values I included.
+
+00:15:34.000 --> 00:15:40.000
+So if we, take a little step back. And look at what were the key points. And steps.
+
+00:15:40.000 --> 00:15:53.000
+Here. Alright, the first. Is that I As usual, right, what we had to do was to first determine.
+
+00:15:53.000 --> 00:15:58.000
+The initial conditions.
+
+00:15:58.000 --> 00:16:07.000
+Alright, it was since this is a first order circuit, we only needed one initial condition, on V out of T at T equal to 0.
+
+00:16:07.000 --> 00:16:12.000
+Okay. And we do this, we determine that by letting
+
+00:16:12.000 --> 00:16:20.000
+As usual, capacitances go to open circuits.
+
+00:16:20.000 --> 00:16:28.000
+Alright, if we had inductors in this problem, we would have let them become short circuits.
+
+00:16:28.000 --> 00:16:32.000
+And then.
+
+00:16:32.000 --> 00:16:50.000
+We require that. Any current? Sorry, any voltage, across the capacitor. Any current through an inductor has to be continuous.
+
+00:16:50.000 --> 00:16:58.000
+Okay. And then. What we did after that was we just followed the standard process. For analyzing.
+
+00:16:58.000 --> 00:17:07.000
+Any OP-amp circuit, right? Wish for a circuit like this was essentially applying KCL at the opamp input, right?
+
+00:17:07.000 --> 00:17:15.000
+And then that gave us the differential equation, which we were able to formulate in terms of VM, and then we just solved that for via.
+
+00:17:15.000 --> 00:17:20.000
+Alright, so we followed.
+
+00:17:20.000 --> 00:17:24.000
+Just the standard process.
+
+00:17:24.000 --> 00:17:29.000
+For opium.
+
+00:17:29.000 --> 00:17:32.000
+Circuit analysis.
+
+00:17:32.000 --> 00:17:45.000
+Alright. And then once we obtain the differential equation, we solved.
+
+00:17:45.000 --> 00:17:48.000
+The resulting differential equation.
+
+00:17:48.000 --> 00:17:57.000
+Right, which is basically just say a math problem, alright. In this particular problem. What we had for T greater than 0.
+
+00:17:57.000 --> 00:18:03.000
+Was not a homogeneous solution. It was in in homogeneous equation. It was an in homogeneous equation.
+
+00:18:03.000 --> 00:18:11.000
+So we required both. The solution to the homogeneous equation and also a particular integral. All right, the form of the particular integral was relatively simple because the inhomogeneous term was just a constant.
+
+00:18:11.000 --> 00:18:22.000
+All right. And we know how, to obtain the particular integral in, that situation.
+
+00:18:22.000 --> 00:18:32.000
+Alright, so I We'll also note here that this circuit
+
+00:18:32.000 --> 00:18:40.000
+Required a particular integral.
+
+00:18:40.000 --> 00:18:48.000
+As part of the solution.
+
+00:18:48.000 --> 00:18:55.000
+Basically since. We have an active source.
+
+00:18:55.000 --> 00:19:01.000
+Present for T greater than 0. So since an active source is present.
+
+00:19:01.000 --> 00:19:06.000
+For T greater than or equal to 0.
+
+00:19:06.000 --> 00:19:11.000
+Okay. And then the other thing that we can.
+
+00:19:11.000 --> 00:19:28.000
+Notice here is that. Alright, if we look back at our solution. For the homogeneous equation, the solution to the homogeneous equation was basically the transient response, right?
+
+00:19:28.000 --> 00:19:36.000
+So it's a response that decays to 0. As he goes to infinity and we sort of expect that to be the case.
+
+00:19:36.000 --> 00:20:01.000
+Because the homogeneous equation corresponds to this circuit when there is no active input all right and so we should only expect the the transient solution and for that solution to decay to 0 as t goes to infinity, then the particular integral will tell us what the limiting case of T going to infinity, I will give because that is
+
+00:20:01.000 --> 00:20:12.000
+determined by the driving action of the active source. Okay, so the other point that we want to note here is that
+
+00:20:12.000 --> 00:20:21.000
+Solution to the homogeneous equation.
+
+00:20:21.000 --> 00:20:24.000
+Right, this yields.
+
+00:20:24.000 --> 00:20:31.000
+What we call the transient response.
+
+00:20:31.000 --> 00:20:36.000
+Which means that, that's the response that.
+
+00:20:36.000 --> 00:20:40.000
+It's a case to 0.
+
+00:20:40.000 --> 00:20:52.000
+As T goes to infinity. Alright. And then the particular integral.
+
+00:20:52.000 --> 00:20:56.000
+This gives the response.
+
+00:20:56.000 --> 00:20:59.000
+For T.
+
+00:20:59.000 --> 00:21:12.000
+Going to infinity. Alright. Okay, so that is it for this example and I will now stop the recording.
+

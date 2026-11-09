@@ -1,0 +1,780 @@
+[0:00:04] Okay. So this is a recording on,
+[0:00:08] what we're calling integral transform techniques.
+[0:00:16] Okay. So
+[0:00:17] these techniques
+[0:00:20] include
+[0:00:21] things like the Laplace transform and also the Fourier transform that we'll be talking about during the rest of the semester.
+[0:00:29] And kind of the reason for making this recording is that in Ulaby and actually in, I think, just about every other elementary circuits textbook,
+[0:00:41] When they get to the sections on Laplace transforms and Fourier techniques,
+[0:00:47] there isn't really very much discussion of
+[0:00:50] where these come from mathematically, how they're related to each other
+[0:00:54] and such, and how to understand them.
+[0:00:57] Mostly,
+[0:00:58] you know, there's maybe a little bit of discussion of that, and then the books pretty much launch right into
+[0:01:05] the relevant formulas and how to use them. Okay. So what I wanted to do in this recording is to step back a little bit and talk about how do we
+[0:01:17] really motivate
+[0:01:20] and understand
+[0:01:25] transform techniques
+[0:01:31] such as the Laplace transform, the Fourier transform.
+[0:01:34] And then later on in three thirteen, you'll talk about what's called the z transform.
+[0:01:39] How do we do this rather
+[0:01:45] than simply applying
+[0:01:51] a bunch of formulas?
+[0:01:57] Okay. So so this is not essential
+[0:02:01] for
+[0:02:02] what we'll be doing at least initially, and we'll touch on pieces of this later on. But I think it's very helpful with respect to understanding to see some of this upfront. Okay? So that's what we'll do here in this recording. Right? Now to start off with,
+[0:02:21] you might think back to what you might have learned
+[0:02:24] or seen in three zero two or three zero two h if you took the new version of three zero two or three zero two h with respect to what we call Fourier series. If you don't remember that or if you did not take a new version of those courses, then that's perfectly fine. We'll talk about these in more detail later, and I'll just kind of hit the key points that are relevant to us right now in the recording here. Alright. So
+[0:02:53] let's recall or perhaps recall,
+[0:02:56] this concept of
+[0:02:59] Fourier series,
+[0:03:01] okay, from,
+[0:03:03] at least the new ECE
+[0:03:06] three zero two
+[0:03:09] and three zero two h. Alright?
+[0:03:12] And,
+[0:03:13] basically,
+[0:03:14] the idea of Fourier series and what's called Fourier's theorem is is that if you have any periodic signal, right, so the signal repeats after some period, say, t,
+[0:03:27] then
+[0:03:28] it's possible to express that signal as a sum of sing... Of sinusoidal signals
+[0:03:37] at a series of frequencies that are equal to the fundamental frequency associated with the period t. That's two pi over t plus
+[0:03:47] frequencies that are integer multiples of that frequency. Alright? So
+[0:03:53] let's let some signal... We'll call it f of t. Let's let this be
+[0:04:02] a periodic signal,
+[0:04:05] okay, with some period
+[0:04:08] capital t. Alright?
+[0:04:10] And by periodic,
+[0:04:12] right, what we mean, just to be careful about this here, is that f of t is equal to f of t
+[0:04:20] plus
+[0:04:22] any integer n times the period capital t, and that has to be true for all integer values of n. Right? The symbol capital z here is the symbol that's typically used for integers in mathematics. So this has to be true for all integers n
+[0:04:39] and
+[0:04:41] for any time t,
+[0:04:44] Right? Between minus infinity
+[0:04:46] and infinity. Right? That's what it means to be a periodic function. So it just repeats itself after some period of time capital t, and we call that period capital... We call capital t the period. Alright?
+[0:05:00] Now
+[0:05:02] it turns out then that as long as this function f of t is what we'll call here just a a reasonable function, meaning that
+[0:05:11] it's sufficiently smooth, meaning it has, you know, reasonable derivatives and is sufficiently nondiverging.
+[0:05:19] Right? It doesn't go to infinity or minus infinity all over the place. Then we can do this thing that I described. We can express f of t as a sum of sinusoidal signals. Alright? So what Fourier's theorem says,
+[0:05:34] in a nutshell, is that if
+[0:05:38] this function f of t
+[0:05:40] is
+[0:05:41] what we'll call...
+[0:05:44] We'll just say a reasonable function.
+[0:05:49] Alright. Meaning that it's sufficiently smooth.
+[0:05:56] And nondiverging.
+[0:06:01] Okay. And in the careful statement of phrase theorem,
+[0:06:05] this is stated much more precisely and rigorously, but this is good enough for us now.
+[0:06:11] Then what Fourier's theorem says
+[0:06:15] is that we can write f of t as a sum of a constant, basically, a zero frequency signal,
+[0:06:25] right, plus
+[0:06:27] a series.
+[0:06:29] Right? So a sum from n equal to one to infinity
+[0:06:32] of a superposition,
+[0:06:35] basically, of sinusoidal signals. Alright? So some coefficients
+[0:06:39] a sub n times the cosine
+[0:06:42] of n omega naught t plus other coefficients b sub n times the sine of n omega naught t. Alright? Where omega naught here,
+[0:06:56] okay, is
+[0:06:58] the angular frequency associated with the period capital t. Alright? So it's just two pi over capital c.
+[0:07:05] And then
+[0:07:06] a naught, a sub n, and b sub n are basically just constants, alright, that we can calculate. Alright?
+[0:07:16] And so so what you see here is that what Fourier's theorem says is that
+[0:07:23] any periodic signal f of t, any periodic function f of t, right, can be written in this form. Right? A constant,
+[0:07:31] which is basically a zero frequency signal plus a sum of the sinusoidal signals shown here. Right? And so these, you can see now, are at frequencies which are
+[0:07:43] equal to the fundamental angular frequency associated with the period capital t. Right? That's the case n equal to one. And then
+[0:07:53] integer multiples of that. Okay?
+[0:07:58] And if we use the Euler identity or the Euler's formula, right, to write the cosine and the sine as complex exponentials,
+[0:08:07] then we can see that
+[0:08:09] another way that we can write this
+[0:08:12] is
+[0:08:13] that we can write f of t as a sum
+[0:08:16] from n going to minus infinity
+[0:08:18] to infinity
+[0:08:21] coefficients c sub n. Again, these coefficients are just constants. Alright? Although for each n, it can be a different constant times the complex exponential
+[0:08:32] e to the j
+[0:08:34] and omega knot t. Right? Where, again, here, omega knot is two pi over t. Okay?
+[0:08:43] And
+[0:08:44] these ways of writing f of t, right, these are what we call
+[0:08:51] Fourier series.
+[0:08:54] Okay?
+[0:08:56] And
+[0:08:57] so what this says then is that... Or what this implies, okay, is that since we can write now any periodic function, right, or periodic, say, electrical signal in a circuit in this form here, right, what we can then do is we could use, say, phasors, right, to calculate
+[0:09:20] the response of the circuit, right, all the other voltages and currents and so forth at the frequencies
+[0:09:31] omega naught and n times omega naught. Right? And then once we have all of those, we can combine them by superposition. That is just add them together,
+[0:09:42] and we will get the response of the circuit
+[0:09:45] for
+[0:09:46] this
+[0:09:48] periodic signal that is not necessarily sinusoidal.
+[0:09:51] Alright? So
+[0:09:54] this idea of the Fourier series
+[0:09:57] will allow us to analyze and think about and understand circuits that
+[0:10:04] that operate with any periodic signal, not just sinusoidal signals. Alright? And that's a very powerful extension.
+[0:10:12] Okay?
+[0:10:13] And so, right, one of the things that this implies, right, then is that by analyzing,
+[0:10:22] okay, a linear circuit's
+[0:10:24] behavior...
+[0:10:31] Okay. And this qualified here that this has to be a linear circuit is important because,
+[0:10:36] remember, we can only apply superposition
+[0:10:39] to linear circuits and linear systems. Right? Not nonlinear circuits or systems. Alright? So by analyzing a linear circuit's behavior, right, add
+[0:10:50] all these frequencies.
+[0:10:54] Right? So if frequencies, we'll call them omega sub n.
+[0:10:58] Right?
+[0:10:59] So that's two pi times n over the period capital t, right, or equivalently n times omega naught. Right? By analyzing, say, using phasors,
+[0:11:10] the
+[0:11:12] behavior of the circuit at all these different frequencies,
+[0:11:15] then by superposition...
+[0:11:18] Right? So now we can understand
+[0:11:23] that circuit's behavior.
+[0:11:28] Now
+[0:11:30] for any periodic signal,
+[0:11:36] right, using this idea of superposition.
+[0:11:44] Okay. So by using
+[0:11:47] the idea of superposition,
+[0:11:49] right, what this has allowed us to go to
+[0:11:52] is from being able to analyze circuits at only a single frequency
+[0:11:57] with a sinusoidal signal to analyzing circuits with any periodic signal. Right? So that's a
+[0:12:05] major expansion of the situations that that we can consider.
+[0:12:12] Okay. The other thing that we want to point out here
+[0:12:16] or the next thing that we wanna point out here is that, say, if we look at this form
+[0:12:22] of f of t over here, right, the sum
+[0:12:26] from n equal to minus infinity to infinity
+[0:12:29] of
+[0:12:31] these coefficients c sub n times e to the j n omega naught t. Alright?
+[0:12:37] If we know all the coefficients
+[0:12:40] c sub n,
+[0:12:41] right, that contain... Those coefficients, right, the set of coefficients c sub n contain
+[0:12:49] all the information that we need in order to construct
+[0:12:53] f of t. Or, actually, we need to know omega naught as well. Right? So we need to know the period and the coefficient c sub n. Alright? But once we have that, we have all the information that we need in order to determine what f of t is. And so in that sense, we can think of the full set of these coefficients, c sub n, as being
+[0:13:17] a representation
+[0:13:19] of the signal f of t, but now in the frequency domain. Right? So the coefficient c sub n tell us for each frequency
+[0:13:28] omega n, right, which is n times omega naught, c sub n tells us,
+[0:13:33] right, how much of the signal f of t is made up of a sinusoidal of the frequency
+[0:13:40] omega n or n times omega naught. Alright? So we also want to point out here, right, that...
+[0:13:52] Alright. The set of coefficients.
+[0:13:58] Right? So we'll call the the... That set c sub n. Right?
+[0:14:04] This set of coefficients,
+[0:14:06] right, represents...
+[0:14:10] We can say that it represents f of t in the frequency domain.
+[0:14:21] Okay. Because
+[0:14:22] the coefficients here, each one corresponds to a particular frequency. So we can think of c sub n as being, in some sense, a function of frequency,
+[0:14:32] and these coefficients contain
+[0:14:35] all the information that we need about f of t. Right? So we can think of those coefficients in this way as being a representation of f of t, but now in the frequency domain rather than in the time domain. Alright?
+[0:14:51] Another piece of terminology,
+[0:14:53] alright, that we will introduce here is that of basis functions.
+[0:15:00] Okay? So if we look at these expressions here
+[0:15:04] for
+[0:15:06] f of t, right, using Fourier's theorem, right, what... Say, this one down here is saying is that f of t
+[0:15:14] can be written... Any any periodic
+[0:15:17] function f of t can be written as a sum
+[0:15:21] of terms that are proportional to e to the n omega... A e to the j and omega not t. Alright?
+[0:15:29] And so these functions, e to the j and omega naught t, those functions,
+[0:15:36] then what we say is they constitute a set of basis functions for periodic signals f of t. And what we mean by a set of basis functions means that
+[0:15:47] if we take the entire set of basis functions, then we can take linear combinations of those, and we can use them to express any periodic signal. Right?
+[0:15:58] And
+[0:16:00] perhaps a more intuitive
+[0:16:02] way of thinking about that is
+[0:16:05] by the correspondence between basis functions
+[0:16:08] and basis vectors
+[0:16:10] in just, say, a three-dimensional space like we're accustomed to to living in here. Right? So in three-dimensional space... And you may have seen this in
+[0:16:21] a calculus based physics course or perhaps even a noncalculus based physics course. Right? We have vectors
+[0:16:29] in three-dimensional space. Alright? And if you think about
+[0:16:34] all the possible vectors that you can have in a three-dimensional space,
+[0:16:39] then
+[0:16:40] we can write any vector in a three-dimensional space as a linear combination
+[0:16:46] of unit vectors. Right? That is vectors of length one,
+[0:16:51] one of which points in the x direction, one of which points in the y direction, and one of which points in the z direction. Right? So with that set of three basis vectors, we can take linear combinations of those and construct any vector in three-dimensional space. Right? So that set of three vectors,
+[0:17:11] we call a set of basis vectors for three-dimensional space. Right? Univectors in the x, y, and z direction.
+[0:17:19] And in a very analogous way,
+[0:17:22] saying that we have a set of basis functions,
+[0:17:26] either the j and omega naught t for all the possible value... An integer values of n, right, that...
+[0:17:35] Right? That's saying that those basis functions... If you take linear combinations of those basis functions, you can
+[0:17:43] use them to express
+[0:17:45] any periodic
+[0:17:48] signal or function
+[0:17:50] that we've called here f of t. Alright. So...
+[0:17:55] Right. In the language
+[0:18:01] of linear algebra.
+[0:18:07] Right? Or perhaps more familiarly
+[0:18:11] to you, vectors. Right?
+[0:18:13] Then
+[0:18:15] the set of functions either the j and omega naught t,
+[0:18:20] alright, or...
+[0:18:22] Alright. We saw up here, it didn't have to be just the complex exponentials.
+[0:18:28] It could be
+[0:18:29] the sine and cosine functions, right, including the n equal to zero term over here. Right? So
+[0:18:36] sines and cosines plus one, right, can be taken to be
+[0:18:42] a
+[0:18:43] set of basis functions for periodic functions as well. Right? So
+[0:18:48] the set of functions cosine of n omega naught t
+[0:18:52] and the sine of n omega naught t.
+[0:18:56] Right? And, I guess, one for n equal to zero. Right?
+[0:19:01] Either one of these can serve
+[0:19:07] as a set of what we call
+[0:19:13] basis functions,
+[0:19:15] okay,
+[0:19:16] for any periodic
+[0:19:21] function
+[0:19:25] of t. Right? And this idea of basis functions is one that comes up
+[0:19:32] almost ubiquitously
+[0:19:34] in any discussion of, say, linear systems,
+[0:19:37] linear signals,
+[0:19:39] and then as a subset of that circuits and and the like. So that's something that you'll probably encounter many times throughout your educations if you have not encountered it already.
+[0:19:51] Okay. So
+[0:19:53] so now we're at a point where we can analyze circuits using Fourier series for
+[0:20:00] any periodic signal. Alright?
+[0:20:03] So then
+[0:20:05] at this point, it's natural to ask the question, well, what about nonperiodic signals? Can we treat those? Alright. So what about
+[0:20:16] non periodic signals?
+[0:20:22] Okay.
+[0:20:23] And so here,
+[0:20:25] alright, if we think about it a little bit,
+[0:20:29] if we take a periodic signal,
+[0:20:32] but we let the period become very large. Right? Say, we'll let the period capital t go to infinity.
+[0:20:39] Right? Since for the periodic signal, it can have any dependence on time. You know, within reason, it can have any dependence on time within that period. If we take the period to go to infinity,
+[0:20:50] then, effectively,
+[0:20:51] that allows us to treat nonperiodic signals as well as periodic signals. Right? So if we take the period
+[0:21:02] to go to infinity, right, then this periodic function f of t
+[0:21:08] is effectively
+[0:21:11] nonperiodic.
+[0:21:16] Okay.
+[0:21:17] And so all we have to do then is to figure out, well, how do we sensibly take the limit of capital t, the period, going to infinity?
+[0:21:28] Alright?
+[0:21:30] When we do that, then what we will see shortly is that the Fourier series,
+[0:21:36] instead of being a sum
+[0:21:39] over
+[0:21:41] sort of discretely spaced frequencies,
+[0:21:44] in the limit of the period going to infinity, the spacing between the frequencies gets closer and closer until it approaches zero. Right? Because omega naught is two pi over the period. Right? So omega naught in the limit of t going to infinity, omega naught is going to zero. And what we will have, say, looking down here at the Fourier series in the form of complex exponentials is that this sum
+[0:22:11] over
+[0:22:13] all these discretely spaced frequencies,
+[0:22:16] it then becomes
+[0:22:17] an integral
+[0:22:19] over frequency. K. Frequency is going from minus infinity to infinity.
+[0:22:24] And, effectively,
+[0:22:26] this coefficient
+[0:22:28] c sub n, right, which we can think of as a function of frequency, say, omega n. Right? This coefficient
+[0:22:36] then becomes
+[0:22:41] it becomes
+[0:22:42] a function of frequency that contains all the information
+[0:22:47] about f of t
+[0:22:50] and
+[0:22:52] a
+[0:22:53] modified version of that function c sub n, then it's what we call the Fourier transform.
+[0:23:00] Okay?
+[0:23:01] So how does this work? Right? As we take the limit or when we take the limit of the period going to infinity, what happens is that
+[0:23:10] the Fourier series,
+[0:23:15] right, then becomes
+[0:23:21] a Fourier integral.
+[0:23:24] Okay.
+[0:23:25] And
+[0:23:29] this will lead us to the Fourier transform.
+[0:23:39] Okay. So
+[0:23:41] let's see how this works out. Alright. We'll take the,
+[0:23:46] oops, the Fourier series.
+[0:23:51] Okay. I don't know why it showed up there. We'll take the Fourier series in the complex exponential form. Alright? So the sum from n going to minus infinity to infinity
+[0:24:03] of
+[0:24:04] c sub n times e to the j n omega naught t, right,
+[0:24:10] with omega naught equal to two pi over t.
+[0:24:14] Okay?
+[0:24:17] What we will see later on in the semester, right, but I'll just give it to you as
+[0:24:23] a result right now,
+[0:24:26] is basically the expression that we can use to calculate
+[0:24:30] c sub n. Alright?
+[0:24:35] So
+[0:24:36] this expansion will hold
+[0:24:39] when we take c sub n to be equal to one over t
+[0:24:44] times the integral from minus t over two
+[0:24:48] to plus t over two of f
+[0:24:53] of t prime
+[0:24:54] times e to the minus j and omega nine t prime...
+[0:25:01] D t prime.
+[0:25:02] Right? Or we can write it
+[0:25:06] as a function
+[0:25:09] of frequency, say, omega sub n. Right? Remember, omega sub n is just n times omega naught. Right? We define that
+[0:25:22] up over here. Right?
+[0:25:25] So we can take c to be a function of frequency as well, and then we write it as one over t times the integral from minus t over two to plus t over two of f of t prime,
+[0:25:40] e to the minus j omega sub n times t prime,
+[0:25:45] right,
+[0:25:46] d t prime.
+[0:25:48] Okay?
+[0:25:49] Now
+[0:25:51] in these integrals here, notice that I've used this variable t prime. The prime here does not indicate differentiation.
+[0:25:59] Okay? It's just that we're using... We have a different variable here. We use
+[0:26:06] t prime. The t part reminds us that this is a time variable, and the prime tells us that it's different from this t over here. Right? And it's really just a dummy variable of integration. Right? So when we carry out this integral, since we're integrating over t prime, then
+[0:26:23] once we do the integral, there's no t prime left. There's only omega sub n left, right, which is why this is a function of omega sub n. So we'll just make a note here
+[0:26:33] in case it wasn't clear that t prime here
+[0:26:36] is
+[0:26:38] a variable.
+[0:26:41] Right? It's the variable of integration.
+[0:26:50] Right?
+[0:26:52] It's not
+[0:26:54] the derivative
+[0:27:00] of t. Okay.
+[0:27:04] And so...
+[0:27:09] Alright. If... So if if you're curious about
+[0:27:13] how we get this, okay, I'll sketch out
+[0:27:17] sort sort of of very roughly how how this happens. Right? So if we have f of t,
+[0:27:22] right, it's the sum from n going to... From minus infinity
+[0:27:27] to infinity of c sub n, e to the j n omega naught t. Right?
+[0:27:35] If we take this whole thing
+[0:27:37] and multiply it by
+[0:27:40] e to the
+[0:27:43] minus j
+[0:27:46] times...
+[0:27:47] We'll call it n naught, some specific integer
+[0:27:50] n. Right? We'll call it n naught
+[0:27:53] times omega naught t. Right?
+[0:27:56] Then what we have is
+[0:28:00] e to the minus j and not omega not t
+[0:28:05] times f of t. Right?
+[0:28:08] And that is equal to, right, the sum
+[0:28:11] for n going from minus infinity to infinity of
+[0:28:15] c sub n times
+[0:28:18] e to the j
+[0:28:20] n minus n naught.
+[0:28:22] Right? Omega naught times t.
+[0:28:25] Alright?
+[0:28:27] Now
+[0:28:29] if we take both sides of this equation
+[0:28:34] and we integrate it over one period, say, minus t over two to t over two, multiply it by one over t, right,
+[0:28:47] then on the left hand side, we get one over t times the integral from minus t over two to t over two times,
+[0:28:56] right, f of t e to the minus j n naught omega naught t
+[0:29:02] dt.
+[0:29:04] And then on the right hand side, right,
+[0:29:09] we get one term in this sum where n is equal to n naught. Right? Because n naught is any... Some one particular integer. So when n is equal to n naught, right,
+[0:29:21] then
+[0:29:24] this exponential is zero. Right? So let's pull that term out of this sum. We have one over t times the integral from minus t over two to t over two of
+[0:29:37] c sub n naught, right,
+[0:29:40] times one
+[0:29:42] dt plus
+[0:29:44] the sum over
+[0:29:46] all the other values of n that are not equal to n of one
+[0:29:51] over t times c sub n.
+[0:29:56] Right? The integral from minus t over two to t over two times e to the j
+[0:30:04] n minus n naught omega naught t d t. Right? Where this exponent here is not zero anymore. Alright?
+[0:30:14] And it turns out... Right. It's a little bit tricky to do it, but you can show that this
+[0:30:21] integral here
+[0:30:24] actually goes to zero for any n not equal to n naught. And so all we have left over here is this constant
+[0:30:32] integrated from minus t over two to t over two. Right?
+[0:30:36] When we take in a constant and integrate it, we just get the length of the integral over... Of the interval over which we're integrating. That's just that's just t.
+[0:30:46] Right? So we're gonna get
+[0:30:48] one over t times t times c sub n naught, which is just c sub n naught. Alright?
+[0:30:55] And so that finally gets us to
+[0:30:58] this coefficient being equal to this integral over here, which is basically this result that we have up here. Right? So that's just kind of sketching out how you get to that in case you're interested. Alright?
+[0:31:14] Now what we wanna remind ourselves here of is that,
+[0:31:19] again,
+[0:31:20] right, when we have this expression here for f of t, then all the information
+[0:31:26] about the function f of t
+[0:31:29] is essentially... Is contained
+[0:31:31] in the set of these coefficients here. Right?
+[0:31:36] Or, equivalently, in c as a function of omega sub n. Alright? So, again,
+[0:31:42] we'll remind ourselves that
+[0:31:47] the set of all these
+[0:31:50] coefficients, c
+[0:31:52] as a function of omega sub n, right, that set
+[0:31:59] contains
+[0:32:01] all the information,
+[0:32:08] alright, that's required
+[0:32:12] to represent
+[0:32:15] the function f of t, but now
+[0:32:18] it's a representation in the frequency domain.
+[0:32:25] Okay. Because c sub n... C c of omega sub n, alright, is effectively... It's a function of of frequency, and it doesn't have time in it at all. Alright?
+[0:32:36] So
+[0:32:40] this c
+[0:32:42] as a function of omega n here, this integral here is eventually what is going to be the Fourier transform. Actually, t times this. Right? It's what is going to be the
+[0:32:53] Fourier transform. Alright? So in order to get to that, right, we need to think a little bit carefully
+[0:33:00] about
+[0:33:01] how we take the limit of t going to infinity. Alright? Because...
+[0:33:08] Alright. We're multiplying by one over t. So if we take the limit of t going to infinity, then this factor becomes zero over here. And, obviously, we don't want all these coefficients to be zero. Alright? So we have to figure out
+[0:33:22] how we really... How we correctly take the limit of t going to infinity here. Alright? And to do that,
+[0:33:31] let's let...
+[0:33:33] We'll call it delta omega, right, be two pi
+[0:33:38] over the period t. Alright?
+[0:33:41] Then
+[0:33:43] when we write the Fourier series for f of t, right,
+[0:33:48] in complex exponential form, it's the sum
+[0:33:53] of n going from minus infinity to infinity.
+[0:33:56] Alright?
+[0:33:57] Then we have
+[0:34:01] the coefficients,
+[0:34:03] c sub n or, equivalently, c
+[0:34:05] of omega n. Alright? That's given by one over t times this integral. Alright? So we're gonna write down this integral here. Right? And then we're gonna pull out this factor one over t,
+[0:34:19] and we'll include it in a factor of delta omega that we'll write at the end. Alright? So
+[0:34:26] from the coefficient c sub n, then we'll just retain the integral here. Right? So the integral from minus t over two to t over two. Right? So note that we are not yet taking the limit of t... Capital t going to infinity.
+[0:34:39] Alright? Then it's the integral of f of t prime
+[0:34:43] e to the minus j
+[0:34:45] omega sub n times t prime,
+[0:34:48] d
+[0:34:50] t prime.
+[0:34:52] Alright? And then we have e to the j omega sub n t. Alright?
+[0:34:58] Then
+[0:34:59] for the one over t, right, that we pulled out of here, we're going to write one over two pi times delta omega.
+[0:35:10] Okay.
+[0:35:12] And the thing that we wanna notice here is that this thing that we have
+[0:35:18] in the square brackets here, right, this thing... Alright. This is a function
+[0:35:26] of
+[0:35:28] only frequency, omega sub n, alright, because we're integrating
+[0:35:32] over time.
+[0:35:34] And,
+[0:35:35] again, as we just said, all the information about f of t is contained
+[0:35:41] in
+[0:35:42] this function of omega n over here. Alright?
+[0:35:46] So now we can take this expression
+[0:35:50] and take the limit as t goes... Capital t goes to infinity. Alright. So that'll make the lower and upper limits of this integral minus infinity and infinity respectively.
+[0:36:02] Then
+[0:36:03] this quantity here, delta omega, which is two pi over capital t,
+[0:36:08] that will go to zero.
+[0:36:11] Okay?
+[0:36:12] But we're taking an infinite sum over here. Alright?
+[0:36:18] And if you remember back to what you might have done in your calculus course,
+[0:36:25] what happens then
+[0:36:27] is now in the limit
+[0:36:30] of t going to infinity,
+[0:36:32] right, if you have a sum
+[0:36:35] from n going from minus infinity to infinity
+[0:36:39] of something, right, it could be anything
+[0:36:42] times delta omega, right, where delta omega is becoming infinitesimally
+[0:36:49] small,
+[0:36:50] then that infinite sum
+[0:36:53] becomes an integral now from minus infinity to infinity
+[0:36:57] of
+[0:36:58] this same thing over here. Right? Same thing that we had over here, we keep over here, but it's an integral from minus infinity to infinity d omega.
+[0:37:09] Alright?
+[0:37:11] And then the other thing
+[0:37:13] that we can do is that these frequencies omega sub n,
+[0:37:18] right, when the period capital t was finite, these were discrete
+[0:37:24] quantities. Right? Two pi n over capital t.
+[0:37:28] But when capital t goes to infinity,
+[0:37:31] then the omega n's become a continuous variable. So we'll just call it omega,
+[0:37:36] right, which is a continuous variable.
+[0:37:45] Okay.
+[0:37:46] So now...
+[0:37:48] Right, once we take the limit of t going to infinity,
+[0:37:52] right, then from this expression that we have up here, right, f of t,
+[0:37:59] now we can write as...
+[0:38:01] We have one over two pi here, so we'll pull that out in front.
+[0:38:05] Right? It's one over two pi times the integral from minus infinity to infinity
+[0:38:10] of...
+[0:38:12] Alright. That's converting this sum here to an integral as we said we could do over here. And then we have inside the square brackets.
+[0:38:23] Now we have an integral from minus infinity to infinity of
+[0:38:29] f of t prime
+[0:38:31] e to the minus j omega t
+[0:38:33] times
+[0:38:35] t t prime rather, d t
+[0:38:39] prime.
+[0:38:40] And then we have, right, this e to the j omega t
+[0:38:46] and then
+[0:38:48] d omega. Alright? So now effectively,
+[0:38:52] right, if you look at this, right, we have... Instead of the sum over all these discrete complex exponentials,
+[0:38:59] we have an integral
+[0:39:02] discrete exponentials with these coefficients here. We have an integral over a continuous variable in
+[0:39:09] frequency omega
+[0:39:11] of
+[0:39:12] this quantity here, which is playing the role of those coefficients. Actually, one over two pi times this integral is playing the role of those coefficients times this complex exponential e to the j omega t. Alright?
+[0:39:25] And
+[0:39:26] just as in the Fourier series,
+[0:39:29] right,
+[0:39:30] the coefficients,
+[0:39:34] right, this
+[0:39:35] times this includes all the information that we need about
+[0:39:42] the function f of t. But now in the frequency domain,
+[0:39:46] this integral here
+[0:39:49] includes all the information that we need now about
+[0:39:53] f of t, but, again, in the frequency domain. And this integral here, alright, that's inside the square brackets,
+[0:40:01] alright, we call this... It's a function of omega. So we'll call it capital f of omega,
+[0:40:07] and this
+[0:40:08] is
+[0:40:09] what we refer to as the Fourier
+[0:40:13] transform,
+[0:40:17] okay,
+[0:40:19] of
+[0:40:20] f of t. And depending on the context and the convention followed by different practitioners or textbooks, sometimes,
+[0:40:30] the factor of one over two pi is included in here, or sometimes it's square root of this that's included in here. But the main thing really is this integral. Right? And this is what we call the Fourier transform of f of t. And
+[0:40:47] I... As I've been describing, we can think of it as being the representation
+[0:40:53] of this particular signal, which in the time domain,
+[0:40:57] we write as... And represent as f of t. In the frequency domain, we can write and represent it as its Fourier transform capital f of omega. Alright?
+[0:41:09] And
+[0:41:10] in either case,
+[0:41:12] f of t or capital f of omega contain all the information that we need in order to completely specify
+[0:41:20] that signal. Alright? So this function capital f of omega,
+[0:41:26] right, the Fourier transform,
+[0:41:28] this is
+[0:41:33] the frequency domain
+[0:41:40] representation
+[0:41:42] of
+[0:41:43] f of t.
+[0:41:45] And
+[0:41:46] in this way, it is similar,
+[0:41:51] alright, to how,
+[0:41:54] say, for phasors...
+[0:41:57] Right. Remember,
+[0:41:59] alright, this complex favorite phasor, v total, which is the amplitude times either the j five. Right? This is... Essentially, it's the frequency domain
+[0:42:17] representation of
+[0:42:20] v of t, right, being the same amplitude, v sub n times the cosine
+[0:42:26] of omega t plus a phase shift phi. Right?
+[0:42:30] And it's also similar.
+[0:42:32] Right now, I'm not saying identical. I'm saying similar.
+[0:42:35] Right? And
+[0:42:37] for the Fourier series,
+[0:42:44] Okay. The coefficients
+[0:42:51] c sub n, right, represents
+[0:42:58] f of t
+[0:42:59] in the frequency domain.
+[0:43:07] Okay. So that is the Fourier transform.
+[0:43:11] Okay? So if we have some
+[0:43:15] nonperiodic signal, alright, in the time domain and we want to figure out how to work with that in the frequency domain, then we can take the Fourier transform of that signal. That gets us to the frequency domain.
+[0:43:30] And then
+[0:43:32] that Fourier transform function, capital f of omega, basically tells us how much
+[0:43:38] of
+[0:43:39] any given frequency is
+[0:43:42] necessary to accurately represent that nonperiodic signal in in the time domain.
+[0:43:49] Okay.
+[0:43:50] So so that is the Fourier transform. And so that then allows us to treat not only periodic signals, but also what the Fourier transform gets us is the ability to treat
+[0:44:03] nonperiodic signals, alright, that extend from
+[0:44:07] time equal to minus infinity to infinity.
+[0:44:10] Alright?
+[0:44:11] So that, again, is a major expansion, right, of
+[0:44:17] the range of situations and signals that we can treat in circuits. And, hopefully, what we've seen... What you've seen here is how we can go from Fourier series
+[0:44:29] to, in the infinite for... In the infinite period limit, the Fourier transform.
+[0:44:35] So then the last thing that we wanna think about is
+[0:44:40] what if we have a signal that,
+[0:44:44] you know, is is not periodic
+[0:44:46] but also
+[0:44:48] leads to
+[0:44:51] a four a transform
+[0:44:52] that
+[0:44:54] is
+[0:44:55] tricky to calculate
+[0:44:57] or undefined.
+[0:44:58] Right?
+[0:44:59] And it's easier to think of examples of this than you might think. Right?
+[0:45:05] So now that we have the four a transform,
+[0:45:09] what about
+[0:45:14] signal like,
+[0:45:17] say, f of t is equal to just the unit step function? Alright?
+[0:45:22] Now we know we can treat that directly using
+[0:45:26] the differential equation approach, right, because this is very simple. But,
+[0:45:32] you know, it... For the Fourier transform, right, if what we're saying is that that can treat any non periodic signal, then you would think that it should be able to treat something like this. And it can, but it's tricky. Alright?
+[0:45:46] Another
+[0:45:49] example, alright, would be
+[0:45:53] f of t equal to, say, t squared
+[0:45:58] u of t. Alright?
+[0:46:01] You know, something that is growing with time. You might have a signal that's growing with time if you have some... Something that's unstable. Right?
+[0:46:10] And so it would be nice to be able to treat that as well. Right? So so what happens if we take f of t to be one of those forms, but... And then we try to calculate the Fourier transform.
+[0:46:21] Right?
+[0:46:23] So say f of t is equal to u of t.
+[0:46:26] Right? Then
+[0:46:28] f of omega,
+[0:46:30] alright, capital f of omega, the Fourier transform,
+[0:46:34] would be
+[0:46:35] the integral from minus infinity to infinity
+[0:46:38] of u of t,
+[0:46:40] either the minus j omega t dt. Alright?
+[0:46:45] We'll call this variable of integration here t now instead of t prime again because it it doesn't matter what we call. Right? So we'll just save ourselves having to write the primes.
+[0:46:53] Right? Then this is going to be from the definition of the unit step function. It'll be the integral from zero to infinity of either the minus j omega t
+[0:47:02] d t. Right?
+[0:47:05] This integral here
+[0:47:06] is tricky to calculate.
+[0:47:16] Right? And if you think about it for a bit, then you'll see
+[0:47:21] why it's tricky to calculate because it's not clear what the sine or the cosine of infinity is. Alright?
+[0:47:29] It is possible to define things mathematically in a way that you can calculate this, but it's not so easy. Alright?
+[0:47:36] And what about
+[0:47:38] a second example? F of t is equal to t squared
+[0:47:43] u of t.
+[0:47:44] Then the Fourier transform, capital f of omega, would be the integral from zero to infinity of t squared
+[0:47:53] e to the minus j omega t
+[0:47:55] dt. Alright?
+[0:47:58] You know, this is worse than tricky. This does not converge.
+[0:48:02] Alright?
+[0:48:12] Okay. So...
+[0:48:14] Right. So we can't deal with this using,
+[0:48:17] actually, any of the tools that we have developed up to this point. Alright?
+[0:48:23] Unless we are willing to try to solve, you know, what may be a not so easy differential equation to solve. Alright?
+[0:48:31] So then the question is, well, you know, is there some other transform like technique that we can use to treat that kind of sit... Those kinds of situations? Alright?
+[0:48:42] Now
+[0:48:44] if we look at, right, these two integrals here, right, this one and this one,
+[0:48:50] then,
+[0:48:52] you know, this is tricky to calculate. This one doesn't converge.
+[0:48:55] What would solve both of those problems
+[0:48:58] is if we just had,
+[0:49:02] say,
+[0:49:03] a decaying exponential factor
+[0:49:06] in
+[0:49:07] each of these integrands. Alright? So... Alright. If we just had
+[0:49:12] an e to the minus,
+[0:49:15] say, sigma t in here, right, where sigma is some
+[0:49:21] real number that's posit... That's greater than zero. We just had e to the minus sigma t here... T over here. Right? Sigma is some real number greater than zero. Then, right, this decaying exponential will solve all of these problems. Okay?
+[0:49:36] And so
+[0:49:40] what we can say then is, well, let's
+[0:49:43] generalize
+[0:49:45] our thinking about
+[0:49:46] what appears
+[0:49:48] in this exponential here. Instead of having it be just a pure imaginary number, j omega, okay,
+[0:49:57] Let's allow this to be complex.
+[0:50:01] Okay?
+[0:50:03] And we'll call that complex variable. That complex, basically, a complex version of... We'll call it the frequency.
+[0:50:11] Alright? We will call that variable
+[0:50:14] s. Alright? So what we can do
+[0:50:20] now is that we can define
+[0:50:26] a complex
+[0:50:29] frequency.
+[0:50:31] We'll call it s,
+[0:50:33] and it'll have a real part, sigma,
+[0:50:37] plus an imaginary part, j times omega. So sigma and omega here are real.
+[0:50:44] Okay. Omega in here is just the frequency that we are accustomed to dealing with. Sigma now is something new. Right?
+[0:50:56] Okay. So we can define... We're just gonna define
+[0:51:00] now this
+[0:51:01] gen... More general variable. Alright? Instead of just j omega, we'll take it to have a real component as well,
+[0:51:08] and we will stick that in this exponential over here. Alright? And so we'll consider
+[0:51:19] an alternative
+[0:51:24] to the Fourier transform.
+[0:51:30] Right? And this alternative
+[0:51:32] is going to be
+[0:51:39] a new transform function.
+[0:51:42] Okay. We'll call it nef now of s, right, that is defined
+[0:51:51] in what we call... Instead of calling it the frequency domain, we'll call it the s domain.
+[0:51:58] Right? Because that's the variable that we're using,
+[0:52:01] or
+[0:52:02] we can call it... And it's called
+[0:52:05] both of these things in books and literature in the field.
+[0:52:11] We'll call this the complex frequency domain.
+[0:52:19] Okay.
+[0:52:21] And
+[0:52:23] so this function
+[0:52:25] f of s now
+[0:52:27] is going to be the integral from zero... Well, and we'll say zero minus explicitly
+[0:52:33] for for a reason that I'll describe in a minute to infinity.
+[0:52:37] It's the integral of f of t e to the minus s t
+[0:52:42] d t, where s now
+[0:52:47] is
+[0:52:48] a complex number
+[0:52:51] or can be a complex number. Okay?
+[0:52:55] And
+[0:52:57] our notation here with the zero minus, right, this indicates
+[0:53:09] explicitly,
+[0:53:12] right, that f of zero is included
+[0:53:19] in the interval.
+[0:53:23] Okay. This notation...
+[0:53:26] The notation is used this way in Ulaby,
+[0:53:30] but in other sources, you may just see this written as not zero minus, but just as zero. So the integral from zero to infinity. Alright? But in the context of
+[0:53:41] this setting here, then it should be taken to include
+[0:53:46] the
+[0:53:48] value of the integrand at t equal to zero. Alright?
+[0:53:54] And then
+[0:53:55] the other point to note here is that, right, if we were really making this analogous to, the Fourier transform, then the integral would go from minus infinity to infinity, not zero to infinity. Right?
+[0:54:08] There are circumstances where this particular transform can be defined that way. But
+[0:54:14] for our purposes,
+[0:54:15] we will define it from zero to infinity. It makes things a little bit simpler because
+[0:54:21] by taking the integral from zero to infinity,
+[0:54:24] then for the real part of s being positive, then we know this is gonna converge. Right? So we include
+[0:54:35] only
+[0:54:37] t greater than equal to zero in the interval rather
+[0:54:44] than
+[0:54:47] the full range of t going from minus infinity to infinity.
+[0:54:52] Because otherwise,
+[0:54:57] the integral
+[0:55:03] it wouldn't converge,
+[0:55:06] right, for
+[0:55:08] the real part of s
+[0:55:10] being
+[0:55:12] nonzero. It wouldn't necessarily converge.
+[0:55:17] Right. And often, it wouldn't converge. Alright. Because,
+[0:55:22] right, in in one direction, you would be getting a growing exponential rather than a decaying exponential one direction in time. Okay.
+[0:55:32] But once we have the possibility of
+[0:55:36] this exponential
+[0:55:37] being complex and that is having a decaying real component, alright, then
+[0:55:44] all these kinds of integrals
+[0:55:46] will converge nicely,
+[0:55:49] and this transform will be well defined and nice and convergent and so forth. Alright?
+[0:55:55] So
+[0:55:59] now,
+[0:56:00] right, if we have f of t equal to u of t
+[0:56:04] or
+[0:56:07] f of t equal to, say, t squared times u of t
+[0:56:12] and many other things that could not be treated, right, using Fourier transforms. Alright? In this case, now this alternate transform f of s,
+[0:56:24] it can easily
+[0:56:26] be computed,
+[0:56:30] alright,
+[0:56:32] as long as the real part of s
+[0:56:36] is positive. Alright? Because then the integral will have a decaying exponential,
+[0:56:42] right, and sufficiently large... And the decaying exponential will kill just about any...
+[0:56:48] Right? It'll allow this converge
+[0:56:50] for, you know, any non exponentially growing function within reason for f of t. Alright? And if f of t is exponentially growing, you just have to pick the real part of s large enough to cancel that out. Okay.
+[0:57:05] So now
+[0:57:07] this new transform function f of s, this is what we call the Laplace transform.
+[0:57:22] Okay.
+[0:57:23] And
+[0:57:24] among other things, right, what it allows us to do,
+[0:57:29] right, is that it allows us to analyze
+[0:57:36] signals that have
+[0:57:40] initial conditions
+[0:57:45] at t equal to zero, right, because that's one of the boundaries of the integral.
+[0:57:51] And,
+[0:57:54] right, that are constant
+[0:57:59] or growing
+[0:58:02] as t goes to infinity. And there are circumstances where that can be useful as well. Okay. So so those are the tools that we'll be introducing and working with over the remainder of the semester. Fourier series,
+[0:58:17] Fourier transforms,
+[0:58:19] and Laplace transforms. Although we will start with the last of these, the Laplace transform, then we'll go to Fourier series and Fourier transforms.
+[0:58:29] Alright. But just to recap, right, all these series and transform techniques allow us to do... What they allow us to do is,
+[0:58:38] for each one of them, to really greatly expand
+[0:58:41] the range of the types of signals for which we can analyze the behavior of circuits and for which we can develop an understanding that will allow
+[0:58:52] us and you to design suitable circuits with a given functionality.
+[0:58:57] Right? So we talked first about
+[0:59:01] four a series.
+[0:59:03] Okay.
+[0:59:04] And the idea here was
+[0:59:08] that if you took a superposition,
+[0:59:13] right, of frequencies or at least the appropriate superposition of frequencies,
+[0:59:19] right, each of which
+[0:59:24] can be analyzed using phasors.
+[0:59:30] Alright. This allows us then to analyze
+[0:59:37] circuits with
+[0:59:40] any periodic signal.
+[0:59:45] Right? Not just sinusoidal signals. Alright? So that's a major expansion, right, in what we can what we can treat. Then from there,
+[0:59:53] we saw how
+[0:59:56] taking the limit of that period in a Fourier series to go to infinity
+[1:00:02] led us to the Fourier transform.
+[1:00:06] Okay.
+[1:00:07] And so the Fourier transform
+[1:00:10] then is an extension
+[1:00:13] of the idea
+[1:00:15] of the Fourier series
+[1:00:18] to
+[1:00:21] an infinite period,
+[1:00:26] and this allows us to analyze
+[1:00:34] circuits with
+[1:00:38] nonperiodic
+[1:00:44] signals. Alright? Again, a major expansion
+[1:00:47] in the class of circuits that... And signals in circuits that we can
+[1:00:53] analyze and understand and design around. And then finally,
+[1:00:59] we got to Laplace transforms,
+[1:01:04] okay, which involved essentially generalizing the concept of frequency so that
+[1:01:10] it can be complex. Right? So this was then an extension
+[1:01:17] to
+[1:01:20] complex frequencies,
+[1:01:24] alright, which include then the possibility of oscillation.
+[1:01:31] Alright. That's the imaginary part of the complex frequency
+[1:01:36] and
+[1:01:40] exponential decay
+[1:01:44] or growth, right, from the real part of the complex frequency.
+[1:01:49] And this then allowed us to analyze
+[1:01:53] or will allow us to analyze
+[1:01:58] circuits
+[1:02:02] with signals that are defined,
+[1:02:06] right, for
+[1:02:08] positive times, right,
+[1:02:11] and
+[1:02:15] that have initial conditions that we want to incorporate.
+[1:02:22] Right?
+[1:02:24] And it includes
+[1:02:30] signals with...
+[1:02:32] That have growing amplitude
+[1:02:39] as time goes to infinity. Right? And there are circumstances where that can be very useful as well.
+[1:02:46] Having initial conditions is is very common. Okay. So so that's
+[1:02:54] sort of a broader picture of these fourier and Laplace techniques,
+[1:02:59] how they're related to each other,
+[1:03:02] a little bit about mathematically where they come from and what they enable. Right? And,
+[1:03:08] you know, with that as background and context, then perhaps
+[1:03:12] what we do with respect to the applications of these techniques to
+[1:03:17] different types of circuits and signals that go into them, perhaps that will
+[1:03:24] sort of make more sense by have... Being able to look at them in this this bigger picture. And, hopefully, also, this will help set the stage for you to understand these techniques better when you encounter them again in ECE
+[1:03:37] three thirteen and other courses.
+[1:03:40] Okay. So that is it for this recording.

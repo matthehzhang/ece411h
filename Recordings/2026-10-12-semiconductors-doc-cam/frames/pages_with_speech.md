@@ -1,0 +1,1182 @@
+# 2026-10-12-semiconductors-doc-cam: board pages with the speech that accompanied them
+
+37 distinct pages from 42 page-final frames. A section's image is the LAST frame of the page (most ink); earlier states of the same page are listed under it. Confidence marks: `(word?)` word < 0.55; `{…}` utterance mean < 0.7. Times are recording time.
+
+## page 01  f_0001.jpg  on screen [0:00:00 – 0:00:00]
+<sub>sharpness 0, ink 0.0 %, colour 0.4</sub>
+
+- (no speech captured in this span)
+
+## page 02  f_0036.jpg  on screen [0:00:00 – 0:02:52]
+<sub>sharpness 942, ink 4.2 %, colour 1.6</sub>
+
+- [0:00:03] Okay. So I have just started the recording.
+- [0:00:06] As you may have seen in the announcement on Canvas or as you can probably tell now,
+- [0:00:13] our
+- [0:00:15] technology
+- [0:00:16] mode will be a little bit different today. My tablet computer that I usually teach from, came up with a blue screen this morning,
+- [0:00:25] saying that the encryption
+- [0:00:28] {policies}
+- [0:00:29] for UT had changed, and now I cannot get into my, to my laptop or to,
+- [0:00:35] to the tablet. So, we are going to attempt to use the
+- [0:00:42] the camera
+- [0:00:43] {today.}
+- [0:00:45] And then, hopefully, the Zoom recording will be will be okay as well. So, anyway,
+- [0:00:53] having said that, there are a few announcements as usual. I guess the
+- [0:01:00] the camera does not capture the full width of,
+- [0:01:05] the paper here, so I'll try to adjust for that as we, as we go forward. So first of all, as you may have seen, the first semester exam has been graded. The results were quite good. There's a summary here and then more detailed information on,
+- [0:01:19] the Canvas site. (So?) the mean was, 71.3,
+- [0:01:24] median 74.5,
+- [0:01:26] standard deviation was 12.8,
+- [0:01:29] and the range was 40 and a half to 92 and a half. There were 25 people who took the exam.
+- [0:01:36] The regrade requests on Gradescope are open until 5PM this Friday.
+- [0:01:42] If you would like to submit a regrade request,
+- [0:01:45] then, you know, please provide a detailed explanation.
+- [0:01:48] But also,
+- [0:01:50] look at the section of the announcements on the regrade requests
+- [0:01:54] and read it carefully.
+- [0:01:56] The basic idea is that if we just made a mistake in the grading, then, that's easy to correct. But, if you have a question about, you know, something that, amounts to how much partial credit that you should get,
+- [0:02:11] for a given partially correct answer, then, since the grades are all curved, the most important thing is that everyone's exam is graded consistently,
+- [0:02:20] according to the same rubric. So, if we apply the rubric incorrectly,
+- [0:02:26] then...
+- [0:02:27] Get rid of this box here.
+- [0:02:30] If we (apply?) apply the rubric incorrectly, then we will correct that. But
+- [0:02:35] if you feel that (the?) rubric that we applied to everyone did not give you enough credit, then, you know, we (applied?) the same rubric to everyone. So in
+- [0:02:44] fairness to the class as a whole, we have to continue to apply to apply the same rubric to everyone.
+- [0:02:50] Let's see. So...
+
+## page 03  f_0083.jpg  on screen [0:02:52 – 0:04:19]
+<sub>sharpness 67, ink 0.2 %, colour 1.9</sub>
+
+- [0:02:50] Let's see. So...
+- [0:02:54] Okay. This week's recitation is important,
+- [0:02:57] because it will cover, material that will be important for you to do problem set six. Okay? And
+- [0:03:06] it is (complementary?) to rather than repeating
+- [0:03:09] what is... What we're doing in class.
+- [0:03:12] Third announcement is that my office hours
+- [0:03:16] this Wednesday
+- [0:03:17] will be in the afternoon, 02:30 to 4PM,
+- [0:03:20] instead of, in the morning after class as usual because,
+- [0:03:25] there were some, meetings that were put on my schedule. Location is still in my office, E R 3 Dot 802.
+- [0:03:32] And then the last announcement here is that I I may be late to my office hours today because,
+- [0:03:40] after class, I will probably stop by our IT office,
+- [0:03:45] to see if they can get me back into
+- [0:03:47] my tablet. Okay? And then
+- [0:03:52] I should be in my office after that.
+- [0:03:55] Okay. Any questions on any of this?
+- [0:04:00] Okay. Any questions from our last, class meeting? Remember, we had started (a?) more detailed discussion of semiconductors in our last class meeting before the exam.
+- [0:04:14] Okay. If not, then we will pick up from, where we left off,
+
+## page 04  f_0086.jpg  on screen [0:04:19 – 0:04:48]
+<sub>sharpness 27, ink 0.0 %, colour 1.9</sub>
+
+- [0:04:14] Okay. If not, then we will pick up from, where we left off,
+- [0:04:20] and I will try to keep
+- [0:04:23] everything
+- [0:04:24] on the screen here. Okay. So let's see.
+- [0:04:29] Yeah. So we may not cover quite as much material,
+- [0:04:32] today. Alright. So, if you remember from last time, what we were doing was, we had just started talking about,
+- [0:04:41] what we call the Fermi distribution function, right, which is
+- [0:04:45] a mathematical function that tells us,
+- [0:04:48] what is the probability
+
+## page 05  f_0107.jpg  on screen [0:04:48 – 0:07:16]
+<sub>sharpness 467, ink 2.3 %, colour 1.9</sub>
+
+- [0:04:48] what is the probability
+- [0:04:49] that an electronic state, an electronic level at a given energy is occupied by an electron. Right? So for last time... K.
+- [0:05:03] Right? What we had was the Fermi
+- [0:05:06] distribution function.
+- [0:05:11] Like, a little mark. Oops.
+- [0:05:15] Yeah. That's the edge.
+- [0:05:19] Okay. And so this was a function f of e.
+- [0:05:23] Alright? And it would tell us what's the probability that a state at a given energy is occupied by an electron. So
+- [0:05:32] this is given by one over
+- [0:05:35] e to the energy minus what we call the Fermi level over Boltzmann's constant
+- [0:05:42] times the temperature
+- [0:05:44] plus one. Okay?
+- [0:05:46] So case of b here is
+- [0:05:53] Boltzmann's constant,
+- [0:05:56] right, which is basically,
+- [0:05:58] it's a constant that allows us to convert,
+- [0:06:01] temperature into energy. Alright? So it's one point three eight
+- [0:06:06] point three eight one times 10 to the minus twenty third
+- [0:06:11] joules per Kelvin.
+- [0:06:13] T here
+- [0:06:15] is
+- [0:06:19] the temperature of the system, I,
+- [0:06:21] in Kelvin.
+- [0:06:23] And then
+- [0:06:25] e sub f here is what we call the Fermi energy
+- [0:06:35] or the Fermi level... Oops.
+- [0:06:39] (Or?) the Fermi level,
+- [0:06:40] and it's basically the energy
+- [0:06:47] at which the Fermi distribution function is equal to one half. Okay?
+- [0:06:53] And so so this is the Fermi distribution function. What we wanna do next is to see how this function,
+- [0:07:02] allows us to think about and calculate,
+- [0:07:05] say, the concentration of electrons and holes, that we have, in a semiconductor.
+- [0:07:11] So any questions to hear?
+- [0:07:14] Okay.
+- [0:07:16] So...
+
+## page 06  f_0116.jpg  on screen [0:07:16 – 0:08:57]
+<sub>sharpness 500, ink 2.5 %, colour 1.8</sub>
+
+- [0:07:16] So...
+- [0:07:19] Alright. We'll do that. Let's
+- [0:07:22] sketch this out. Alright?
+- [0:07:24] We'll first look at
+- [0:07:28] what happens at low temperature. Okay?
+- [0:07:31] And so we're gonna make a sketch here
+- [0:07:35] of
+- [0:07:37] the Fermi distribution function f of v, okay, as a function of energy. So energy,
+- [0:07:43] here is on, the vertical axis,
+- [0:07:46] and then we'll say that the Fermi level,
+- [0:07:51] right, is here. Now if you look at the
+- [0:07:55] form of the Fermi distribution function,
+- [0:07:57] this is an f here,
+- [0:08:01] then you can see that the the range of the Fermi distribution function is from zero to one. Right? So, if the energy is very high, e is very large,
+- [0:08:14] much higher than e f, then we have a large exponential in the denominator, and the Fermi distribution function is close to zero, which makes sense. It tells us that the probability of finding an electron at a (at?) a very high energy state is extremely small. Okay?
+- [0:08:30] And in contrast to that, if the energy is very low, say, below
+- [0:08:35] the Fermi level, then we have,
+- [0:08:38] the exponential of some negative quantity,
+- [0:08:42] and then
+- [0:08:43] that (ex...?) That exponential is very small, and the Fermi distribution function is very close to one. Okay? And that also makes sense. It tells us that states at very low energy are very likely to be occupied by by electrons. Okay. So that's kind of the intuition there. Right?
+
+## page 07  f_0131.jpg  on screen [0:08:57 – 0:11:52]
+<sub>sharpness 95, ink 0.6 %, colour 2.3</sub>
+
+- [0:08:43] that (ex...?) That exponential is very small, and the Fermi distribution function is very close to one. Okay? And that also makes sense. It tells us that states at very low energy are very likely to be occupied by by electrons. Okay. So that's kind of the intuition there. Right?
+- [0:09:00] And so, the Fermi distribution function
+- [0:09:04] ranges from zero to one. Okay. It's equal to one half
+- [0:09:09] at, the Fermi energy.
+- [0:09:13] And then I...
+- [0:09:16] What happens is it
+- [0:09:18] decreases exponentially, right, as we go to very high energies,
+- [0:09:22] and then it kind of exponentially approaches one
+- [0:09:26] as we go to low energies. Alright? So, that's kind of a sketch of the Fermi distribution function.
+- [0:09:33] And if we look at the Fermi distribution function up here again, right, you can see that,
+- [0:09:39] right, in the exponent, you have the energy minus the Fermi level over, k sub b times t. Right? So what that means is that the range of energies
+- [0:09:51] over which the Fermi distribution function
+- [0:09:54] is,
+- [0:09:55] you know, significantly different from zero or one,
+- [0:09:58] is just within a few times,
+- [0:10:02] k sub b times t of the Fermi level.
+- [0:10:06] Okay. So if we, look at our sketch again, right, basically, what that means is that the width
+- [0:10:14] of this transition here is
+- [0:10:17] sort of a few times
+- [0:10:20] k sub b times t. Alright?
+- [0:10:23] So that's what the Fermi distribution function looks like. Alright?
+- [0:10:29] And then as the temperature increases, that transition will become,
+- [0:10:33] it'll occur over a wider range of energies. Alright. So any questions on this?
+- [0:10:39] Okay. So now
+- [0:10:42] what we can do is we can see
+- [0:10:46] what this implies
+- [0:10:48] about the concentrations of,
+- [0:10:51] electrons in the valence band... Or sorry, holes in the valence band and electrons in the conduction band. So this is the valence band edge energy. This is the conduction band edge energy.
+- [0:11:00] Our conduction band states are up here,
+- [0:11:03] and our valence band states are down here.
+- [0:11:06] And so what this sketch tells us is that,
+- [0:11:10] if we are at energies
+- [0:11:12] close to... Or (or?) in the valence band, right, those are, the way that we've drawn it, they're quite far below the Fermi level.
+- [0:11:22] And so these states here in the Fermi level, or in the valence band will be
+- [0:11:28] essentially completely filled with electrons,
+- [0:11:31] and
+- [0:11:32] the states in the conduction band
+- [0:11:35] will be just
+- [0:11:37] about completely
+- [0:11:38] unoccupied. The the conduction band will be empty. Okay. So the valence band
+- [0:11:46] is nearly full
+- [0:11:48] of electrons. Oops.
+
+## page 08  f_0138.jpg  on screen [0:11:52 – 0:14:19]
+<sub>sharpness 460, ink 5.6 %, colour 3.3</sub>
+
+- [0:11:58] And then the conduction band
+- [0:12:04] is nearly empty. Okay?
+- [0:12:06] So (so?)
+- [0:12:09] the fact that the
+- [0:12:12] transition region (of?) the Fermi distribution function is very narrow,
+- [0:12:16] and the Fermi level is near the middle of the band gap, which has to be the case because,
+- [0:12:21] the concentration of electrons and holes have to be equal to each other, then,
+- [0:12:26] right, that then tells us that, we have,
+- [0:12:31] hardly any electrons in the conduction band, hardly any holes in the valence band. Alright. So any questions on
+- [0:12:36] that? What we wanna do next is to see what happens as we increase the temperature.
+- [0:12:43] Okay. So if we come back here,
+- [0:12:46] then let's, look at
+- [0:12:50] what happens if we have a high temperature. Okay. So in this case,
+- [0:12:54] right, we are again
+- [0:12:57] going to sketch out the Fermi distribution function.
+- [0:13:03] Okay. The Fermi level will take to be at the same
+- [0:13:08] energy.
+- [0:13:09] Fermi distribution function goes from zero to one. Right? And we will again have
+- [0:13:21] our conduction
+- [0:13:22] and valence band stays
+- [0:13:28] like this. Okay? And what happens is that
+- [0:13:32] at higher temperature,
+- [0:13:34] right, the width and energy of this transition
+- [0:13:39] will increase. Right? It'll...
+- [0:13:41] Sort of the slope going this way will get more shallow. Okay. So we'll have something that maybe looks like
+- [0:13:55] this instead. Alright? Because...
+- [0:14:07] Right? The temperature is higher (so?) that (with?) that transition occurs over a wider range of energy. And what happens then is that this makes the probability
+- [0:14:17] of finding
+- [0:14:19] some electrons
+
+## page 09  f_0147.jpg  on screen [0:14:19 – 0:16:48]
+<sub>sharpness 518, ink 2.9 %, colour 2.4</sub>
+<sub>earlier states of this page: f_0145.jpg (0:14:51)</sub>
+
+- [0:14:19] some electrons
+- [0:14:21] in conduction band states, are at high energy, it makes that probability higher. Right? So we'll have
+- [0:14:30] some electrons
+- [0:14:31] in the conduction band like this.
+- [0:14:34] And then correspondingly,
+- [0:14:36] there will be
+- [0:14:39] some empty states
+- [0:14:41] in the valence band, but most of the valence band states will still be will still be occupied. So now we have
+- [0:14:48] some electrons
+- [0:14:55] in the conduction band, and we will have holes,
+- [0:15:00] remember, which are empty states
+- [0:15:07] in the valence band.
+- [0:15:10] Okay. So any questions on, these basic ideas so far? Yes.
+- [0:15:24] I guess, the diagram on the right side has a region where electrons cannot be there. Right? So Yes. Right. Like, how do we write (this??) Oh,
+- [0:15:34] okay. So
+- [0:15:36] so the Fermi distribution function
+- [0:15:39] only
+- [0:15:41] tells us
+- [0:15:42] what is the probability
+- [0:15:44] that a state at a given energy will be occupied by an electron. It does not imply anything about whether there are states at that energy or not.
+- [0:15:53] Okay? What
+- [0:15:56] we have over here, right, this is the picture now in a semiconductor of how the states are distributed in
+- [0:16:05] energy.
+- [0:16:06] Okay?
+- [0:16:07] So if there are no states to be occupied over here, even though the probability of a state at this energy being occupied
+- [0:16:16] is nonzero, right, if that state were present, if the state is not present, we won't have any electrons in this range of energies. Does that answer your question? So we can draw the graph for each, like, infinitesimally
+- [0:16:29] (thin?) slice of
+- [0:16:31] energy level at, like, band, I guess. So, say, if you draw the graph at EC, it will be slightly different from EC plus 0.1.
+- [0:16:44] So, so in the recitation section,
+- [0:16:47] today,
+- [0:16:48] then, Darsh will probably talk a little bit about this
+
+## page 10  f_0160.jpg  on screen [0:16:48 – 0:19:12]
+<sub>sharpness 387, ink 2.4 %, colour 2.8</sub>
+
+- [0:16:48] then, Darsh will probably talk a little bit about this
+- [0:16:52] idea of density of states, alright, which is
+- [0:16:57] at a given energy,
+- [0:16:59] alright, which could be,
+- [0:17:02] you know, in the conduction band or in the valence band or in the bandgap,
+- [0:17:07] this,
+- [0:17:09] quantity (of?) the density of states
+- [0:17:11] tells us
+- [0:17:13] how many states are there basically at that energy.
+- [0:17:17] Okay?
+- [0:17:18] And then it's normalized to the volume. Right? So it becomes a concentration of states. Right? And then there's a per unit energy also because,
+- [0:17:29] you know, it's a function of energy.
+- [0:17:31] And so what that looks like
+- [0:17:35] is...
+- [0:17:38] Alright. If I had a different color here on the tablet, then I would do this in a different color, but we'll do it,
+- [0:17:43] on black here. So this is the density of states.
+- [0:17:46] Okay?
+- [0:17:48] And
+- [0:17:49] it will look... Although I draw this in a dash line.
+- [0:17:52] Right? It's zero in the band gap,
+- [0:17:55] and then it ends up looking, roughly speaking, something like this.
+- [0:18:01] Okay. So fewer states right at the,
+- [0:18:04] near the extrema of the bands and then increasing as you move farther into the bands. Okay. And then,
+- [0:18:12] you know, roughly speaking,
+- [0:18:14] this density of states,
+- [0:18:17] which is how many states there are, multiplied by the Fermi distribution function,
+- [0:18:22] which is what's the probability that (the?) states will be occupied by an electron, that product
+- [0:18:28] will then tell you how many electrons do you have at that energy,
+- [0:18:33] and then you would integrate over energy in a given band, say, in the conduction band to get the total number of, or concentration of electrons.
+- [0:18:42] Okay. Yes? So is this, (dense?) (state?) (graph?) continuous then, or are there just... Are there, you know, many discrete,
+- [0:18:50] I guess, substates within each state,
+- [0:18:54] each one with a specific energy level, or is it continuous through?
+- [0:19:00] Okay. Yeah. So,
+- [0:19:02] so there's a very detailed answer to that question, which I won't go into, all the details of. But,
+- [0:19:10] roughly speaking, if you had an infinite semiconductor crystal, this would be a continuous function.
+
+## page 11  f_0170.jpg  on screen [0:19:12 – 0:20:20]
+<sub>sharpness 33, ink 0.0 %, colour 1.8</sub>
+
+- [0:19:10] roughly speaking, if you had an infinite semiconductor crystal, this would be a continuous function.
+- [0:19:17] Okay?
+- [0:19:21] In any real crystal that is a finite volume,
+- [0:19:25] then,
+- [0:19:26] it won't be continuous
+- [0:19:28] because the,
+- [0:19:30] right, the energies at which you can have... Actually have states are... It's a discrete spectrum. Right? There are discrete values of the energy, but they're extremely close together in energy. So we essentially look at it as
+- [0:19:43] a continuous function of energy. Okay? Its derivative does not have to be continuous.
+- [0:19:50] Okay? So you have a... You know, the way I've drawn it here, it has a cusp down here, where the derivative is not continuous. So that can happen.
+- [0:19:59] But we we basically think of the density of states as a continuous function but not necessarily differentiable.
+- [0:20:06] Okay. Any other questions?
+- [0:20:09] Okay.
+- [0:20:11] Let's see. So let's put some numbers
+- [0:20:15] on this.
+- [0:20:16] I'll go to another sheet here.
+
+## page 12  f_0192.jpg  on screen [0:20:20 – 0:24:00]
+<sub>sharpness 122, ink 0.5 %, colour 2.0</sub>
+
+- [0:20:23] Okay. We kind of sketched out what,
+- [0:20:26] what this looks like.
+- [0:20:35] (The?) edges here. Alright. And,
+- [0:20:39] so now, you know, how many,
+- [0:20:42] at a given temperature, what does that really correspond to in energy? How does that compare to the width of the energy band gap and things like that? Right? So we wanna put some numbers on this now. Right? So we're gonna look at, say, at room temperature,
+- [0:20:58] which we will take to be
+- [0:21:01] 300 Kelvin, alright, then
+- [0:21:05] I...
+- [0:21:07] Right. If we calculate Boltzmann's constant times the temperature,
+- [0:21:11] right, this is... Remember, it's 1.381
+- [0:21:15] times
+- [0:21:17] 10 to the minus
+- [0:21:19] 23
+- [0:21:21] joules per Kelvin,
+- [0:21:24] and then it's times
+- [0:21:26] 300
+- [0:21:28] Kelvin. Alright?
+- [0:21:30] Now if you look at that, alright, then you can see that you're going to get... Alright. Bringing in a number that's of order 10 to the minus 20.
+- [0:21:39] Right?
+- [0:21:40] Now, you know, maybe four times 10 to the minus 20 or something like that. Okay?
+- [0:21:45] And,
+- [0:21:46] you know, it's sort of inconvenient
+- [0:21:48] if... Right? And that'll be in joules. Right? But it's it's sort of inconvenient
+- [0:21:53] to have to carry around this 10 to the minus 20 all the time. Right? It would be better if there were some unit of energy that we could use that
+- [0:22:03] had an order of magnitude,
+- [0:22:05] for for this quantity that's, say, closer to one,
+- [0:22:10] and that also had
+- [0:22:13] some,
+- [0:22:14] you know, nice, easy physical interpretation,
+- [0:22:17] alright, in the context of semiconductors and electricity and the like. Okay?
+- [0:22:22] And there is such a unit of energy that is
+- [0:22:26] the,
+- [0:22:27] most common unit of energy that is used for semiconductors,
+- [0:22:33] and it is called the electron volt. Okay? And so an electron volt,
+- [0:22:38] remember that,
+- [0:22:40] right, the, charge of an electron, right, e, its magnitude is 1.6
+- [0:22:47] times 10 to the minus 19 coulombs. Right?
+- [0:22:51] And then we also have electrostatic potential or voltage, which is in units of volts.
+- [0:22:57] And so, you know, if we think about current being
+- [0:23:01] carried by electrons that have this particular magnitude of charge,
+- [0:23:05] and then we think of potential as being in volts, right, we know that the potential energy
+- [0:23:14] of an electron
+- [0:23:15] at a particular potential or at a particular voltage is the charge of the electron
+- [0:23:22] times the voltage. Alright?
+- [0:23:25] So,
+- [0:23:26] so given that,
+- [0:23:28] a natural unit of energy to use is
+- [0:23:32] the amount of energy that it takes to,
+- [0:23:36] change the potential
+- [0:23:38] of an electron, right, or something that has the same magnitude of charge as the electron by one volt.
+- [0:23:45] Okay?
+- [0:23:47] And that unit of energy is what we call the electron volt. Okay?
+- [0:23:52] And,
+- [0:23:53] if we think about what that...
+- [0:23:55] What an electron volt should be,
+- [0:23:58] in joules,
+- [0:24:00] Right? For... If you take the product of charge
+
+## page 13  f_0216.jpg  on screen [0:24:00 – 0:28:24]
+<sub>sharpness 952, ink 3.4 %, colour 2.1</sub>
+<sub>earlier states of this page: f_0209.jpg (0:27:44)</sub>
+
+- [0:24:00] Right? For... If you take the product of charge
+- [0:24:03] and voltage,
+- [0:24:04] right,
+- [0:24:06] and your charge is in coulombs and your voltage is in volts, then you'll get joules.
+- [0:24:11] Okay? But now if we're saying, alright. We're gonna consider our fundamental charge to be 1.6 times 10 to the minus nineteenth coulombs,
+- [0:24:20] then,
+- [0:24:24] one electron volt is going to be the charge of the electron,
+- [0:24:27] point six times 10 to the minus nineteenth coulombs times one volt. Alright? That'll be 1.6 times 10 to the minus nineteenth joules.
+- [0:24:35] That is one electron volt.
+- [0:24:38] Okay.
+- [0:24:39] So, we can convert this to electron volts.
+- [0:24:43] Right? So e v, lowercase e, uppercase v,
+- [0:24:48] is how we write electron volts,
+- [0:24:50] and that is 1.6... Actually, point six zero two times 10 to the minus nineteenth
+- [0:24:57] joules.
+- [0:25:00] Okay, by the reasoning that I just described.
+- [0:25:03] And then if you calculate that,
+- [0:25:06] that's going to be point o
+- [0:25:08] two five nine
+- [0:25:11] electron volts. Okay. So
+- [0:25:14] Boltzmann (const...?) Boltzmann's constant times temperature
+- [0:25:18] at 300 Kelvin at room temperature is
+- [0:25:22] about... It's... This is roughly one fortieth of an electron volt. Okay?
+- [0:25:29] What this also means
+- [0:25:32] is that
+- [0:25:34] Boltzmann's constant. Right? All it's doing for us is it's converting temperature to energy. Right? The way that we specified it originally, not sure why this is slightly out of focus here. Wonder if we can do better.
+- [0:25:51] Okay. Yeah. So that's better.
+- [0:25:55] Alright. Boltzmann's
+- [0:25:56] constant really converts
+- [0:26:00] temperature into energy. The way that we originally defined it, it was we had energy in joules, but now, it makes a little more sense for us to
+- [0:26:10] have energy and electron volts. Right?
+- [0:26:14] And so,
+- [0:26:15] to get it in electron volts, we just take
+- [0:26:18] Boltzmann's constant here in joules per Kelvin and multiply by this factor over here, which converts the joules to electron volts. Right? So Boltzmann's constant, we can write it as 1.381
+- [0:26:30] times 10 to the minus 23
+- [0:26:33] joules per Kelvin.
+- [0:26:35] We could also write it as
+- [0:26:37] 8.617
+- [0:26:40] times 10 to the minus five
+- [0:26:43] electron volts
+- [0:26:46] per Kelvin. Okay.
+- [0:26:48] And electron volts
+- [0:26:50] here. Right?
+- [0:26:53] Right? This is what we call this is what we call an electron volt.
+- [0:26:59] Okay. And it is basically... It's the energy
+- [0:27:06] that's required,
+- [0:27:07] to increase
+- [0:27:13] the potential,
+- [0:27:17] okay,
+- [0:27:19] of
+- [0:27:25] an electron charge magnitude,
+- [0:27:32] alright, which is 1.602
+- [0:27:34] times 10 to the minus nineteenth coulombs,
+- [0:27:37] right, by one volt.
+- [0:27:41] Alright. That's how we define, the electron volt. Okay? And... Oops.
+- [0:27:47] Right? It is equal to,
+- [0:27:50] 1.602
+- [0:27:55] times 10 to the minus nineteenth
+- [0:27:58] joules.
+- [0:28:00] Okay. So any questions on any of that?
+- [0:28:06] Okay. So
+- [0:28:08] so this didn't seem, you know, perhaps quite as efficient as we could have made it if we look at, how much energy (and?) electron volts corresponds to room temperature. Right? We've got about one fortieth, okay,
+- [0:28:22] which is still a little bit far off from one, but not as bad as 10 to the minus 20. Okay?
+
+## page 14  f_0251.jpg  on screen [0:28:24 – 0:31:10]
+<sub>sharpness 848, ink 2.9 %, colour 1.9</sub>
+
+- [0:28:22] which is still a little bit far off from one, but not as bad as 10 to the minus 20. Okay?
+- [0:28:27] But,
+- [0:28:31] you know, what we really wanted to compare it to is the size of the energy band gap. Alright?
+- [0:28:39] And if we look at what are the typical energy band gaps of semiconductor, say (of?) silicon,
+- [0:28:44] the band gap of silicon
+- [0:28:47] is a little over one electron volt. Right? So it turns out,
+- [0:28:52] somewhat coincidentally,
+- [0:28:54] right, that the
+- [0:28:56] electron volt is a very natural unit both physically and also a very convenient unit to use in terms of (the?) magnitudes that you get for band gaps and things like that. Right? So the energy band gap
+- [0:29:14] okay, which is the conduction band edge energy minus the valence band energy,
+- [0:29:18] right, of silicon,
+- [0:29:21] it's around 1.1
+- [0:29:23] electron volts. It's, 1.1 electron volts at room temperature. Okay.
+- [0:29:29] (And?) that is,
+- [0:29:30] it's much larger. Right? It's 40 times,
+- [0:29:33] the amount of energy associated with
+- [0:29:38] k sub e times c (right?) at room temperature. And so what that also tells us is that
+- [0:29:44] if we have a pure and structurally perfect semiconductor,
+- [0:29:49] then, what's going to happen is that the concentrations of electrons and holes will be very small at room temperature. Right? They'll be down by a factor of, you know, roughly e to the minus 20 or so. Okay. So
+- [0:30:08] the consequence of this (started?) on a new page here.
+- [0:30:14] Okay.
+- [0:30:22] Bless you. Right. So the consequence... Or one of the consequences of
+- [0:30:26] this
+- [0:30:27] comparison between energy associated with room temperature and band gaps is that in...
+- [0:30:35] If you have a compositionally pure and structurally perfect
+- [0:30:40] semiconductor,
+- [0:30:46] right, what happens is that the concentration of electrons (n?)
+- [0:30:51] and the concentration of holes p,
+- [0:30:54] right, these are typically
+- [0:31:00] very small
+- [0:31:04] unless,
+- [0:31:05] the temperature
+- [0:31:10] is very high. Okay? And very high would not be, you know, for a material like silicon, that would not be typical. Okay?
+
+## page 15  f_0255.jpg  on screen [0:31:10 – 0:33:27]
+<sub>sharpness 644, ink 2.4 %, colour 1.9</sub>
+
+- [0:31:10] is very high. Okay? And very high would not be, you know, for a material like silicon, that would not be typical. Okay?
+- [0:31:18] So
+- [0:31:20] {given}
+- [0:31:21] that
+- [0:31:22] electrons and holes are what actually carry current,
+- [0:31:26] in a semiconductor,
+- [0:31:27] then, we can ask, alright. Well, (I...?) You know, if this is true, then how do we actually,
+- [0:31:34] get more electrons and holes, and or holes into a semiconductor? Alright?
+- [0:31:41] And from the picture that we had earlier,
+- [0:31:44] the Fermi distribution function and
+- [0:31:47] the energies of the connection and valence bands, right, then
+- [0:31:52] to get more electrons or holes,
+- [0:31:54] basically, at at a given temperature, say, basically, what we need to do is we need to move the Fermi level either closer to the conduction band or closer to the valence band. Alright?
+- [0:32:06] That picture then also tells us that, say, if we move the the Fermi level much closer to the conduction band, we'll have a lot more electrons in the conduction band, but we'll have even fewer holes in the valence band. Alright?
+- [0:32:18] If we have, the Fermi level very close to the valence band, we'll have more holes in the valence band but even fewer electrons in the conduction band. Right? So the basic idea is that, to increase
+- [0:32:34] n or p, right, to levels
+- [0:32:39] that are useful
+- [0:32:41] for devices.
+- [0:32:44] Right? What we need to do is if we think about things in terms of the Fermi level,
+- [0:32:50] we need to shift
+- [0:32:53] the Fermi level
+- [0:33:01] closer to either
+- [0:33:03] the valence band edge energy or
+- [0:33:06] the conduction band edge energy, but we cannot do both of those things simultaneously.
+- [0:33:12] Alright? So, we can get either many more electrons or many more holes, but, at a given temperature, we can't get both.
+- [0:33:21] Okay.
+- [0:33:22] So any questions to hear?
+- [0:33:26] Okay. So what we wanna do next then is to talk about ways
+
+## page 16  f_0278.jpg  on screen [0:33:27 – 0:34:29]
+<sub>sharpness 782, ink 7.4 %, colour 7.2</sub>
+
+- [0:33:26] Okay. So what we wanna do next then is to talk about ways
+- [0:33:32] of basically shifting the Fermi level. Okay. So this is now shifting
+- [0:33:40] the Fermi level.
+- [0:33:45] Okay. And
+- [0:33:47] so the (key?) method that we want to introduce to do this is what's called
+- [0:33:53] doping,
+- [0:33:54] which is taking some of the
+- [0:33:57] the atoms in a semiconductor crystal and replacing them with a different element.
+- [0:34:02] Okay. That's what doping really is. Right? So the question that we're asking here is,
+- [0:34:07] can
+- [0:34:09] we shift
+- [0:34:12] the Fermi level, alright, to be closer
+- [0:34:18] to either the valence band edge
+- [0:34:21] or
+- [0:34:22] the conduction band edge
+- [0:34:25] {(so,?)}
+- [0:34:26] that we get
+- [0:34:28] concentrations of electrons and holes not equal to each other. And most typically,
+
+## page 17  f_0288.jpg  on screen [0:34:29 – 0:36:01]
+<sub>sharpness 52, ink 0.0 %, colour 1.5</sub>
+
+- [0:34:28] concentrations of electrons and holes not equal to each other. And most typically,
+- [0:34:34] either the electron concentration being much greater than the hole concentration or the hole concentration being much greater than the electron concentration.
+- [0:34:44] Okay?
+- [0:34:45] And, you know, we're sort of asking this as a rhetorical question. The answer to this, of course, is yes. We can do that. And the way that we are going to talk about next of doing that is
+- [0:34:57] by introducing what we call impurity atoms. Right? Some element other than what we originally have in the semiconductor into the crystal
+- [0:35:06] that has a different number of valence electrons.
+- [0:35:11] Right? So that it shifts the the balance between the electrons and the holes. Right? So
+- [0:35:17] this can be accomplished
+- [0:35:24] by what we call doping,
+- [0:35:28] which is the introduction,
+- [0:35:34] okay, of impurity atoms.
+- [0:35:41] Into
+- [0:35:42] the semiconductor crystal.
+- [0:35:52] Okay.
+- [0:35:53] So any questions to hear?
+- [0:35:58] Okay.
+- [0:35:59] So what we're going to do then is...
+
+## page 18  f_0305.jpg  on screen [0:36:01 – 0:38:58]
+<sub>sharpness 1435, ink 4.5 %, colour 1.9</sub>
+
+- [0:35:59] So what we're going to do then is...
+- [0:36:04] Alright. We're gonna think about a silicon crystal.
+- [0:36:14] Okay. So let's consider
+- [0:36:21] a silicon crystal. And remember when we first talked about,
+- [0:36:25] semiconductor crystals generally, we said that,
+- [0:36:28] silicon has four valence electrons. Right? And then each of those valence electrons,
+- [0:36:35] helps to form one bond to one of, silicon's nearest neighbor atoms in the crystal. Right? So,
+- [0:36:44] if we think about, you know, what would be a good way to basically increase
+- [0:36:50] the concentration of electrons, right, in the crystal by introducing
+- [0:36:55] some atom into the crystal other than silicon,
+- [0:36:59] then, right, if we wanna increase the number of electrons,
+- [0:37:03] kind of the, the logical thing to do would be to introduce
+- [0:37:08] some
+- [0:37:09] atom
+- [0:37:10] that has more valence electrons
+- [0:37:13] than silicon, right, say five valence electrons instead of four, then that extra electron,
+- [0:37:20] can go into the conduction band. Alright? And it (will?) increase the concentration of electrons in the conduction band. And that's basically what's done in doping to to increase the electron concentration.
+- [0:37:31] Alright? So the idea then is that silicon has
+- [0:37:36] four valence electrons.
+- [0:37:42] Alright?
+- [0:37:43] And then what that means is that if
+- [0:37:49] we have
+- [0:37:52] an impurity atom
+- [0:37:54] or impurity atoms
+- [0:37:56] that have, say, five valence electrons,
+- [0:38:04] (if?) we introduce these into
+- [0:38:08] the crystal...
+- [0:38:11] So, for example, this could be
+- [0:38:17] phosphorus,
+- [0:38:18] right,
+- [0:38:19] or
+- [0:38:22] arsenic.
+- [0:38:23] Okay.
+- [0:38:25] If these are introduced,
+- [0:38:30] if we do that in place
+- [0:38:34] of
+- [0:38:35] some of the silicon atoms,
+- [0:38:38] right, then what happens is that you'll have a bunch of extra electrons around,
+- [0:38:44] and those will end up going into the conduction band. Right? So what'll happen is that the crystal
+- [0:38:57] it'll have
+
+## page 19  f_0317.jpg  on screen [0:38:58 – 0:39:41]
+<sub>sharpness 896, ink 3.2 %, colour 2.2</sub>
+
+- [0:38:57] it'll have
+- [0:39:01] an excess of electrons,
+- [0:39:08] And these will occupy,
+- [0:39:13] the conduction band states.
+- [0:39:21] Okay. (I...?) And so what that means then is that the Fermi level
+- [0:39:30] will be closer
+- [0:39:33] to the conduction band edge energy
+- [0:39:36] than
+- [0:39:38] to the valence band edge energy.
+- [0:39:40] Okay. So if we now draw some pictures,
+
+## page 20  f_0347.jpg  on screen [0:39:41 – 0:44:23]
+<sub>sharpness 1465, ink 4.8 %, colour 3.9</sub>
+<sub>earlier states of this page: f_0342.jpg (0:41:51)</sub>
+
+- [0:39:40] Okay. So if we now draw some pictures,
+- [0:39:43] right, to illustrate this, right, let's imagine that we have now,
+- [0:39:50] say, an arsenic atom. Right?
+- [0:39:53] And it's surrounded. We'll just draw the nearest neighbors
+- [0:39:56] by
+- [0:39:58] silicon atoms.
+- [0:40:00] Right?
+- [0:40:01] Each of these silicon atoms will be able to contribute one of its valence electrons to bond with the arsenic.
+- [0:40:09] The arsenic
+- [0:40:11] will contribute
+- [0:40:13] one valence electron
+- [0:40:15] to bond with each of its
+- [0:40:19] nearest neighbor silicon atoms.
+- [0:40:21] But then
+- [0:40:23] since arsenic has five valence electrons instead of four, what happens is that there will be... Right. There's still one extra. Okay? So now we have
+- [0:40:34] an extra electron.
+- [0:40:38] Okay? And that extra electron, right, if we think back now to kind of this picture of
+- [0:40:46] the bonding states being,
+- [0:40:49] the valence band states and the antibonding states being,
+- [0:40:52] conduction band states,
+- [0:40:54] right, this arsenic atom, right, all its bonding states are already filled. Right? We've already formed these four bonds. So this extra electron, the only place that (it?) can go,
+- [0:41:05] is into the antibonding,
+- [0:41:08] orbital or, equivalently, the conduction band.
+- [0:41:12] Okay.
+- [0:41:13] I... And so
+- [0:41:15] if we draw the picture of this
+- [0:41:20] using the energy bands,
+- [0:41:25] right, what's happening here is that this is the conduction band edge energy. This is valence band edge energy. This is the valence band.
+- [0:41:34] (So?) the conduction band.
+- [0:41:37] Right? The conduction... The valence band states are already completely filled because we have, our four
+- [0:41:44] valence electrons from arsenic already,
+- [0:41:47] forming the bonds,
+- [0:41:49] and so we're going to have that extra electron going into the conduction band. And if you have a bunch of these arsenic atoms present, then you'll have,
+- [0:42:00] right, more electrons in,
+- [0:42:03] the conduction band. Alright. So that's the basic picture.
+- [0:42:07] And if we now think about this in terms of the Fermi level, right, what we've done is we have
+- [0:42:15] increased
+- [0:42:16] the probability
+- [0:42:18] of finding electrons in the conduction band.
+- [0:42:21] Alright,
+- [0:42:22] it turns out that at the same time,
+- [0:42:25] we will have also decreased the probability of finding,
+- [0:42:29] holes in the valence band (because?) when we have all these extra electrons around, then if we had any
+- [0:42:37] holes in the valence band, some of these electrons would,
+- [0:42:41] like to lower their energy (so?) they'll go and, fill the whole state, the empty states in the valence band. So we'll also be decreasing the concentration of holes.
+- [0:42:50] Alright? So those things together mean that if we now look at the Fermi distribution function...
+- [0:43:05] Okay. And the Fermi level, right, that means that the Fermi level
+- [0:43:09] has to be up here closer to
+- [0:43:15] the,
+- [0:43:16] conduction band edge.
+- [0:43:20] Okay. And so the Fermi distribution function now...
+- [0:43:30] (Right??) It's gonna look something like this. Right? This should be one. Right? And so, right, you can see with the Fermi level closer to the conduction band edge,
+- [0:43:40] the probability of having electrons in the conduction band is going to be higher. Probability of having holes
+- [0:43:46] in
+- [0:43:48] the valence band will be lower. Alright? And that's the basic idea of how doping
+- [0:43:55] to
+- [0:43:57] create electrons in the conduction band works.
+- [0:44:00] And this particular
+- [0:44:02] variant of doping, where we introduce impurity atoms that have extra valence electrons so that they go into the conduction band, we call those impurity atoms
+- [0:44:12] {in}
+- [0:44:13] the semiconductor. We call them donors because they're essentially donating one of their valence electrons to
+- [0:44:20] the conduction band. Right? So impurity atoms
+
+## page 21  f_0350.jpg  on screen [0:44:23 – 0:45:36]
+<sub>sharpness 1712, ink 4.5 %, colour 2.4</sub>
+
+- [0:44:20] the conduction band. Right? So impurity atoms
+- [0:44:29] alright, that provide
+- [0:44:37] extra electrons,
+- [0:44:43] these are called
+- [0:44:46] donors.
+- [0:44:48] Okay.
+- [0:44:49] So so any questions on this idea? Yes. Yeah. Why
+- [0:44:56] {phosphorus (or??)}
+- [0:44:59] Oh,
+- [0:45:00] so (I...?) So so your question is really, you know, what (if?) if one extra is good, maybe then two extra is even better. Right? So why don't we do that? Is that No. I guess my question was just, like, why (ours?) versus...
+- [0:45:13] Like, I guess, (once?) they have one extra, like Mhmm. Why one versus another? But, yeah, I guess why two extra too? That's also a good question. Okay. Yeah. So so to answer the question that you actually asked first, for
+- [0:45:25] any given dope and type,
+- [0:45:27] there,
+- [0:45:29] you know, there are often multiple
+- [0:45:32] impurity
+- [0:45:33] multiple impurity elements that you could introduce that that will work. Right? So both for n type doping and for donor doping in silicon, right, phosphorus and arsenic, will both work, and they both work well.
+
+## page 22  f_0357.jpg  on screen [0:45:36 – 0:48:11]
+<sub>sharpness 46, ink 0.0 %, colour 2.4</sub>
+
+- [0:45:33] multiple impurity elements that you could introduce that that will work. Right? So both for n type doping and for donor doping in silicon, right, phosphorus and arsenic, will both work, and they both work well.
+- [0:45:47] And so they are both pretty commonly used.
+- [0:45:52] If you
+- [0:45:53] go farther from... The farther you go from,
+- [0:45:58] sort of the the row in which the semiconductor
+- [0:46:01] element,
+- [0:46:02] is located (in?) in the periodic table, then, right, if you go farther down,
+- [0:46:07] then you get to basically physically bigger atoms.
+- [0:46:12] Okay?
+- [0:46:13] And,
+- [0:46:14] then you're trying to stick this big atom, right, into a space where there was previously a small atom,
+- [0:46:21] and,
+- [0:46:23] that ends up not working as well, because it produces some distortion of the lattice around it. That affects the electronic states and, and so forth.
+- [0:46:35] You know, if you tried to go, up, then,
+- [0:46:39] sometimes that can work, but sometimes there are issues with that also, you know, because of the size mismatching related,
+- [0:46:44] related issues.
+- [0:46:46] That... That's one of the, the significant influences. Yes. And then for the second question as to,
+- [0:46:54] okay. If five is good, why don't we have, introduce something that has six?
+- [0:46:59] Then,
+- [0:47:02] right, what happens is that if, say, we introduced
+- [0:47:05] some,
+- [0:47:08] atom that has six,
+- [0:47:11] valence electrons, alright, like selenium,
+- [0:47:14] or or something like that, then
+- [0:47:18] what will happen is that
+- [0:47:21] {(one?)}
+- [0:47:22] of those electrons
+- [0:47:24] will,
+- [0:47:25] go pretty easily into,
+- [0:47:28] the conduction band. Right?
+- [0:47:31] But then... Then it's moving around. It can move around through the crystal. Right? Then what you have left is
+- [0:47:38] a positively charged ion,
+- [0:47:41] in the lattice because it's lost one electron.
+- [0:47:44] It started off as neutral, lost one electron, and then,
+- [0:47:48] yeah, and then it becomes positively charged. That makes it harder to get that second electron off.
+- [0:47:56] Okay. So so, actually, one more or one fewer, if you want holes (is?) what works best.
+- [0:48:05] Any other questions?
+- [0:48:08] Okay. So
+- [0:48:11] move on to another page here.
+
+## page 23  f_0369.jpg  on screen [0:48:11 – 0:50:55]
+<sub>sharpness 1415, ink 4.8 %, colour 1.7</sub>
+
+- [0:48:11] move on to another page here.
+- [0:48:18] Okay. Well, I really hope that, the IT people can
+- [0:48:23] fix my tablet by Wednesday.
+- [0:48:26] Okay. So so this is how donors work. Right? Getting extra electrons into the, conduction band, then,
+- [0:48:34] (alright,?) that also suggests sort of a logical
+- [0:48:37] strategy for getting holes
+- [0:48:39] into the valence band. Right? Instead of introducing impurities that have one extra valence electron per atom,
+- [0:48:47] to get holes, then
+- [0:48:50] what you should do is to introduce
+- [0:48:52] impurity atoms that have one fewer
+- [0:48:55] valence electron per atom. So three rather than four. Alright? So, alright, this is conversely
+- [0:49:04] in comparison to donors. Right? If we have
+- [0:49:10] purity atoms
+- [0:49:13] with three
+- [0:49:16] valence electrons,
+- [0:49:20] right, of these,
+- [0:49:22] per atom.
+- [0:49:25] Right? So this could be, say, boron,
+- [0:49:30] right, or
+- [0:49:33] aluminum.
+- [0:49:38] Right.
+- [0:49:40] (These?) are introduced.
+- [0:49:44] Then what happens is that, the crystal will now have two few electrons. Right? Because you've replaced an atom silicon that has four valence electrons with an atom that has three,
+- [0:49:55] say, boron or aluminum. Right? So the crystal,
+- [0:50:02] it has too few electrons,
+- [0:50:08] okay,
+- [0:50:09] to form
+- [0:50:13] all its bonds,
+- [0:50:16] right, or equivalently to occupy
+- [0:50:20] the valence band states.
+- [0:50:24] And so
+- [0:50:25] what will happen is that
+- [0:50:31] extra holes
+- [0:50:36] will be present in now the valence band
+- [0:50:40] and
+- [0:50:41] Fermi level
+- [0:50:44] will be closer
+- [0:50:47] to the valence band edge,
+- [0:50:51] than to the conduction band edge. Okay. So,
+- [0:50:55] alright, if we again
+
+## page 24  f_0401.jpg  on screen [0:50:55 – 0:51:27]
+<sub>sharpness 381, ink 0.9 %, colour 2.5</sub>
+
+- [0:50:55] alright, if we again
+- [0:50:58] draw our picture
+- [0:51:01] right now, let's consider a, an atom of boron.
+- [0:51:05] It's in the silicon crystal, so it has these
+- [0:51:09] four silicon atoms as nearest neighbors.
+- [0:51:13] Each of these silicon atoms
+- [0:51:15] will contribute,
+- [0:51:16] one valence electron to form a bond to, the boron. The boron
+- [0:51:22] has three valence electrons,
+- [0:51:24] so it can form
+- [0:51:26] three of these bonds.
+
+## page 25  f_0435.jpg  on screen [0:51:27 – 0:53:11]
+<sub>sharpness 1007, ink 4.4 %, colour 3.5</sub>
+
+- [0:51:26] three of these bonds.
+- [0:51:29] Alright? But then when it tries to form the fourth,
+- [0:51:36] there's no fourth valence electron to form that bond.
+- [0:51:40] Okay. So you have a missing electron here.
+- [0:51:48] Okay.
+- [0:51:50] And
+- [0:51:51] since that
+- [0:51:53] {(electron?)}
+- [0:51:54] is one that would have formed a bond, so it would have gone into a bonding orbital, then that empty state is going to be in the valence band of the semiconductor.
+- [0:52:04] Okay. So,
+- [0:52:05] if we draw our band picture,
+- [0:52:08] right, then we have, again,
+- [0:52:13] (the?) conduction band and the valence band.
+- [0:52:17] We have our conduction band states up here,
+- [0:52:20] valence band states down here, then what is going to happen is that
+- [0:52:25] we're going to have
+- [0:52:27] some
+- [0:52:29] empty states
+- [0:52:30] in the valence band.
+- [0:52:33] The Fermi level
+- [0:52:35] will be
+- [0:52:37] down close to the valence band because that corresponds to having a higher probability of finding empty states in the valence band.
+- [0:52:46] And the Fermi distribution function,
+- [0:52:52] alright, will now look like this. This is the Fermi level. This is zero, and this is one.
+- [0:53:00] Alright?
+- [0:53:02] And...
+- [0:53:08] Alright. The Fermi distribution function will look something like this. Right? So
+
+## page 26  f_0436.jpg  on screen [0:53:11 – 0:55:12]
+<sub>sharpness 1086, ink 3.4 %, colour 2.3</sub>
+
+- [0:53:08] Alright. The Fermi distribution function will look something like this. Right? So
+- [0:53:15] we're gonna have,
+- [0:53:18] a higher concentration of holes,
+- [0:53:21] than we have of electrons. Yes. Question? Does the hole have
+- [0:53:26] intrinsic physical
+- [0:53:28] value, or is it simply a mathematical
+- [0:53:32] thing we have (cut...?) Term we have come up with to represent?
+- [0:53:36] Like, the... Was it the one half mark? Or... Yeah. Yeah. Yeah. So it is... I mean, partly, it's defined mathematically,
+- [0:53:44] right, as being,
+- [0:53:46] the energy at which the probability of a state being occupied by an electron is
+- [0:53:53] is one half. Right? So equal probability of being occupied or unoccupied.
+- [0:53:57] Alright?
+- [0:53:59] You know, in that sense, it's sort of arbitrary. Right? We could have chosen some other, you know... One half is for something that goes from zero to one, and one half is kind of the least arbitrary
+- [0:54:12] point that we could pick, but we could have picked something else.
+- [0:54:15] It is actually physically
+- [0:54:17] significant in a number of ways. One of them is that, as we'll talk about later,
+- [0:54:24] if we have,
+- [0:54:26] say, semiconductor materials that have... You know, one of them has donors, one of them has, you know, has more electrons, one has more holes, we bring them together to form what's called a p n junction,
+- [0:54:38] then,
+- [0:54:40] what has to happen is that the Fermi level has to be the same in equilibrium. It has to be the same across that entire structure. Right? So
+- [0:54:49] {(I...?)}
+- [0:54:52] The the Fermi level
+- [0:54:54] does represent
+- [0:54:56] sort of a quantity that has to be preserved in equilibrium across an entire structure for two,
+- [0:55:03] systems that are in equilibrium with each other. Alright? So there is physical significance to it as well. Does that answer your question? Okay. Any other questions?
+- [0:55:12] Okay. So,
+
+## page 27  f_0455.jpg  on screen [0:55:12 – 0:57:27]
+<sub>sharpness 83, ink 0.1 %, colour 1.5</sub>
+
+- [0:55:12] Okay. So,
+- [0:55:14] so now we've seen,
+- [0:55:17] how we create electrons in the conduction band, holes in the valence band.
+- [0:55:21] Here, right, if we have... Right. So impurity atoms
+- [0:55:31] that essentially remove
+- [0:55:36] electrons or, equivalently,
+- [0:55:40] that provide holes.
+- [0:55:45] Right? These are called
+- [0:55:52] acceptors. Right? Because, essentially, what's happening is that, you know, the way the holes will move around is that,
+- [0:56:00] some other,
+- [0:56:03] electron in the bonding state. Right? If you have an empty state over here, there's some probability that this electron could move over here. And then once that happens, there's some probability that maybe an electron over here (can?) move into the resulting empty state, and that's basically how the holes move around in in the valence band. Okay.
+- [0:56:20] And then one other piece of terminology that we'll introduce is that
+- [0:56:26] when we introduce
+- [0:56:29] donors, alright, that is to get extra electrons,
+- [0:56:33] then we create what's called
+- [0:56:36] an n type semiconductor,
+- [0:56:43] meaning that
+- [0:56:45] the electron concentration is greater than the hole concentration.
+- [0:56:50] If we introduce acceptors,
+- [0:56:56] then we create what's called a p type
+- [0:57:04] semiconductor, where the concentration of holes, p,
+- [0:57:08] is greater than the concentration of electrons, n. Alright? So we'll use these terms,
+- [0:57:14] pretty frequently as we, as we move forward. Alright. So
+- [0:57:19] any questions on
+- [0:57:21] any of that?
+- [0:57:25] Okay. Then,
+
+## page 28  f_0483.jpg  on screen [0:57:27 – 1:00:19]
+<sub>sharpness 1514, ink 4.7 %, colour 1.8</sub>
+
+- [0:57:25] Okay. Then,
+- [0:57:29] the last thing that we'll say about this before we move on then is...
+- [0:57:33] Alright. We've talked,
+- [0:57:35] you know, kind of in general terms about,
+- [0:57:41] you know, introducing,
+- [0:57:43] impurities to create more electrons or more holes,
+- [0:57:47] but it's also useful to know, well, you know, how... What concentration
+- [0:57:52] of,
+- [0:57:54] impurities do we typically have to introduce in order to, sort of be able to create
+- [0:58:01] (a?) concentration of electrons or holes that is useful for,
+- [0:58:05] typical
+- [0:58:06] electronic devices. And, actually, it turns out that the fraction of atoms that,
+- [0:58:11] you have to replace, say, in silicon or most other semiconductors,
+- [0:58:16] is actually very small. Right? So the fraction
+- [0:58:25] of atoms that will be replaced
+- [0:58:30] by impurities,
+- [0:58:35] right, is typically
+- [0:58:42] very small. Right? So, for example, if we look at a crystal of silicon, right, and doping it by replacing some of the silicon atoms with impurities...
+- [0:58:54] So a crystal of silicon,
+- [0:58:57] it has around
+- [0:58:59] five times 10 to the 22 atoms per cubic centimeter.
+- [0:59:06] Right. Silicon atoms
+- [0:59:11] per cubic centimeter. Right? We can compare that to
+- [0:59:16] the typical concentrations of impurities
+- [0:59:20] that are introduced
+- [0:59:22] into silicon when... Or other (semiconductors?) when doping. So
+- [0:59:27] the typical
+- [0:59:34] concentrations of impurities,
+- [0:59:40] right,
+- [0:59:44] introduced in doping.
+- [0:59:50] Alright. These are,
+- [0:59:52] generally
+- [0:59:54] of the order of 10 to the (maybe?) fifteenth
+- [0:59:59] to 10 to the 20
+- [1:00:02] impurity atoms
+- [1:00:06] per cubic centimeter.
+- [1:00:08] Right? So, you know, roughly one in,
+- [1:00:13] 500 or so at the high end to one in,
+- [1:00:18] you know, 10 to the seventh or 10 to the eighth at the low end. Alright? So these are really... Even at the high end, it's a relatively small fraction that you're replacing. Yes. Oh, I (get?) that. (I?) can't just,
+
+## page 29  f_0485.jpg  on screen [1:00:19 – 1:02:24]
+<sub>sharpness 1650, ink 4.9 %, colour 1.7</sub>
+<sub>earlier states of this page: f_0484.jpg (1:00:23)</sub>
+
+- [1:00:18] you know, 10 to the seventh or 10 to the eighth at the low end. Alright? So these are really... Even at the high end, it's a relatively small fraction that you're replacing. Yes. Oh, I (get?) that. (I?) can't just,
+- [1:00:29] you know, have all of the atoms be (be?) impurity atoms.
+- [1:00:34] And then I get, like... You know, obviously, there's the other side of... If you have no impurity atoms,
+- [1:00:39] you you can get less current through it. But where's kind of, like, the the middle where you can kind of, like, I don't know, I guess, maximize your
+- [1:00:49] Oh, yeah. So that's an interesting question. So that when you introduce impurities,
+- [1:00:55] you know, roughly speaking, there are two things that are gonna happen. One is what we just talked about that
+- [1:01:02] you get... Say, if we talk about donors, right, you get more electrons into the conduction band. Right? And so if that were the only thing that happened,
+- [1:01:13] then I...
+- [1:01:15] Right? The way that you maximize
+- [1:01:17] the conductivity,
+- [1:01:18] say, right, is just you get as many of the
+- [1:01:23] impurities in as possible until,
+- [1:01:25] it starts looking not like silicon with some isolated impurities, but like an alloy of silicon, right, with,
+- [1:01:34] whatever the impurity is. And it starts to look like that at... You know, once you get to, like, a significant fraction of 1% or higher, right, it starts to look more like, an alloy, right, rather than silicon with,
+- [1:01:49] some impurities.
+- [1:01:50] The other thing that happens is that
+- [1:01:54] the,
+- [1:01:56] if you think about, say, the electrons moving around in the semiconductor,
+- [1:02:00] then the electrons are negatively charged.
+- [1:02:04] Okay?
+- [1:02:05] But each of these dopant atoms that you've introduced,
+- [1:02:09] when,
+- [1:02:10] say, a donor gives up its electron to the conduction band, it leaves behind,
+- [1:02:15] a positively charged ion that's sort of bonded into the lattice. So it's sitting there. It's positively charged.
+- [1:02:21] And that positively charged ion will influence the motion
+
+## page 30  f_0494.jpg  on screen [1:02:24 – 1:04:53]
+<sub>sharpness 444, ink 1.7 %, colour 1.7</sub>
+
+- [1:02:21] And that positively charged ion will influence the motion
+- [1:02:26] of the electrons that are moving in the conduction band because you have a Coulomb attraction between them. Right? And that influence
+- [1:02:34] is called scattering. Right? You can think of it... Right? If you think of the electron as being like a ball, right, that's moving around, in the conduction band, then I...
+- [1:02:44] You know, it can,
+- [1:02:46] you know, bounce off of,
+- [1:02:48] you know, say, an impurity atom, where you can think of it roughly that way. (And?)
+- [1:02:54] so its motion will be disrupted
+- [1:02:57] when it gets close to
+- [1:02:59] an impurity atom because the impurity atom has this charge associated with it. That's the biggest effect. Right?
+- [1:03:06] And,
+- [1:03:07] so then,
+- [1:03:09] what happens is
+- [1:03:11] as you introduce more donors,
+- [1:03:15] right, you're introducing... Or you're increasing the concentration of electrons,
+- [1:03:20] which increases the connectivity.
+- [1:03:23] But then
+- [1:03:24] you are also creating more scattering,
+- [1:03:28] which reduces the connectivity because the motion of the electrons is disrupted.
+- [1:03:33] And so those,
+- [1:03:35] have to be traded off. It turns out that
+- [1:03:39] (decrease?) in mobility is
+- [1:03:42] somewhat smaller than the increase in electron concentration. So if you really want high connectivity,
+- [1:03:48] you still wanna have as high an electron concentration as possible. But there are other characteristics of devices
+- [1:03:56] that are very important
+- [1:03:58] that,
+- [1:04:00] depend very heavily on how easily the electrons can move,
+- [1:04:05] right, and what's called the mobility. Right? And and the mobility, right, that gets decreased as you increase the number of impurities.
+- [1:04:12] And so if you want a good device,
+- [1:04:15] you don't necessarily want to push the concentration
+- [1:04:20] of electrons to... And the connectivity to the limit, you wanna have, depending on the circumstances, different
+- [1:04:27] balances between,
+- [1:04:29] high electron concentration and high mobility.
+- [1:04:33] Okay. And and what is optimum depends on the specifics of that application.
+- [1:04:40] Any other questions?
+- [1:04:43] Okay. So
+- [1:04:46] now that we've talked about the basics of,
+- [1:04:49] you know, semiconductor structure, doping, and things like that, then what we wanna do next is to start applying this to
+
+## page 31  f_0515.jpg  on screen [1:04:53 – 1:07:07]
+<sub>sharpness 866, ink 6.4 %, colour 7.6</sub>
+
+- [1:04:49] you know, semiconductor structure, doping, and things like that, then what we wanna do next is to start applying this to
+- [1:04:59] devices, right, and thinking about how do we... How does this play into the way devices behave?
+- [1:05:11] Okay. And
+- [1:05:13] the device type that we will look at in detail here in three zero two or three zero two h, you look, in some detail at MOSFETs. Alright? What we're gonna do here is to look in more detail at,
+- [1:05:28] what's called the PN junction diode.
+- [1:05:35] Okay.
+- [1:05:36] And so I... You know, you may have seen in the circuit the diode circuit symbol.
+- [1:05:42] Right? It looks like this. We also introduced it a couple (of?) classes ago. Alright? And, basically, you know, one of the very common ways of making a diode is to take
+- [1:05:55] a piece of p type semiconductor
+- [1:05:57] and a piece of n type semiconductor
+- [1:06:00] and put them together.
+- [1:06:04] Alright. Say like this.
+- [1:06:07] And then,
+- [1:06:08] the boundary region between these is what we call the PN junction.
+- [1:06:16] Okay. Or this structure overall,
+- [1:06:19] is often also called the PN junction.
+- [1:06:22] Okay. So now what we wanna do is to think about
+- [1:06:26] how this is going to behave based on what we have discussed so far. Alright?
+- [1:06:33] So if we first imagine,
+- [1:06:36] these two things being separate from each other, okay, they're not connected,
+- [1:06:42] then
+- [1:06:45] what we'd have is on the p... For the p type semiconductor,
+- [1:06:51] (we?) have our bands like this,
+- [1:06:54] and we have more holes than electrons.
+- [1:06:59] So the Fermi level is going to be down here close to the valence band.
+- [1:07:04] In
+- [1:07:06] the n type semiconductor,
+
+## page 32  f_0523.jpg  on screen [1:07:07 – 1:10:11]
+<sub>sharpness 540, ink 1.8 %, colour 2.3</sub>
+
+- [1:07:06] the n type semiconductor,
+- [1:07:11] okay, we have more electrons
+- [1:07:15] than holes,
+- [1:07:20] And so the Fermi level is going to be up here,
+- [1:07:23] close to the conduction band. Alright? So then the question is,
+- [1:07:28] what happens when we bring these two into contact with each other? Alright?
+- [1:07:35] And if you look at this, right, if you bring them into contact to each other... With each other, then all of a sudden, say, you have lots of electrons over here on the n side. You have very few over here on the p side.
+- [1:07:49] And so,
+- [1:07:51] right, just by diffusion,
+- [1:07:54] right, if you have lots of something over here and very few over here and things can move back and forth, then
+- [1:08:01] the concentrations will try to even out. Right? So so a bunch of these,
+- [1:08:06] electrons over here will diffuse (on?) the n side will diffuse over to the p side. Okay? And then the same thing,
+- [1:08:12] will happen with the holes. They'll diffuse from the p side over to the n side. Okay?
+- [1:08:20] And
+- [1:08:21] what will happen then
+- [1:08:22] is that,
+- [1:08:26] right, near
+- [1:08:27] the junction... Bless you. Right? Then you'll have, you know, if if you do a thought experiment, imagine what happens when you bring these... Right when you bring these together, you'll start having these, electrons and holes diffusing.
+- [1:08:41] And then the question is,
+- [1:08:44] (alright,?) what's the final state?
+- [1:08:46] Okay.
+- [1:08:48] And the final state
+- [1:08:50] is
+- [1:08:51] one in which the Fermi level, the probability of finding an electron or a hole at a given energy
+- [1:08:57] is the same in equilibrium across the entire structure. Because if it were not the same, then you would get some motion of the electrons or the holes, across the junction. Okay. So what happens here is that in equilibrium,
+- [1:09:14] right, then what happens is that the Fermi level
+- [1:09:20] has to be constant.
+- [1:09:24] Bless you.
+- [1:09:26] Across
+- [1:09:30] the entire device.
+- [1:09:33] Okay.
+- [1:09:34] And that's required in order for the current
+- [1:09:38] to be zero. Right? And in equilibrium, right, that's zero voltage. We also require that we have zero current. Okay? And so... See. I don't have quite enough room to draw it on the right here, so we'll draw it
+- [1:09:50] down below.
+- [1:09:52] Right? What'll happen then is that...
+- [1:09:56] Right now, the Fermi level
+- [1:10:00] is going to be constant across the entire structure. We're now gonna draw... What we're gonna do is we're gonna draw the band edge (energy.?) That's a function of position
+- [1:10:09] in the p n junction. Okay?
+
+## page 33  f_0539.jpg  on screen [1:10:11 – 1:12:20]
+<sub>sharpness 466, ink 3.0 %, colour 2.5</sub>
+
+- [1:10:09] in the p n junction. Okay?
+- [1:10:13] And we know that
+- [1:10:16] very far away from the junction,
+- [1:10:19] the semiconductor is going to have to look like
+- [1:10:23] a p type semiconductor. So it's gonna look like this, the Ohlins band
+- [1:10:28] (conduction?) band.
+- [1:10:30] Very far away from the junction on the n side,
+- [1:10:36] it'll have to look
+- [1:10:38] like this.
+- [1:10:42] Right? It'll be...
+- [1:10:45] It'll look like
+- [1:10:47] an n type
+- [1:10:50] semiconductor.
+- [1:10:52] Okay? And then,
+- [1:10:55] right, these two have to connect
+- [1:10:58] with each other.
+- [1:11:00] Right? And so you'll have a transition
+- [1:11:03] that will end up looking
+- [1:11:07] basically like this.
+- [1:11:09] Okay?
+- [1:11:11] And so one of the things that happens that's very fundamental to the behavior of a (PN?) junction diode
+- [1:11:19] is
+- [1:11:20] that you build up
+- [1:11:22] a potential energy difference between the p side and the n side. Alright? That's going to be,
+- [1:11:29] right, a charge... Electronic charge e
+- [1:11:32] times a potential
+- [1:11:34] we call v sub (b?) I. V sub b I here, oops,
+- [1:11:41] is what we call the built in potential.
+- [1:11:50] Okay.
+- [1:11:52] And...
+- [1:11:53] Alright. Basically, what is happening here is that
+- [1:11:56] as
+- [1:11:58] the electrons are diffusing over to the p side, the holes are diffusing over the inside, then a bunch of the electrons
+- [1:12:05] will
+- [1:12:06] drop down to lower energy and fill these whole states.
+- [1:12:09] And what you will have left
+- [1:12:12] are the ionized
+- [1:12:14] dopants.
+- [1:12:15] Right?
+- [1:12:16] Acceptors on the p side, donors on the n side. Those ionized dopants, the ones that have given up their electrons or holes, will have charge associated with them. That charge
+
+## page 34  f_0555.jpg  on screen [1:12:20 – 1:15:03]
+<sub>sharpness 567, ink 2.6 %, colour 2.3</sub>
+
+- [1:12:16] Acceptors on the p side, donors on the n side. Those ionized dopants, the ones that have given up their electrons or holes, will have charge associated with them. That charge
+- [1:12:29] will give rise to an electric field. Right? Because you have electric fields anytime you have charges.
+- [1:12:35] And then the integral of that electric field will give you a potential. So you'll have a potential difference then that builds up between the p side and the n side,
+- [1:12:46] and that potential difference basically prevents more diffusion from occurring so that once you've built up this potential difference, the built in potential,
+- [1:12:56] then
+- [1:12:57] in equilibrium,
+- [1:12:59] you will be able to keep this high concentration of holes on the inside and the high concentration of electrons on the p side because there's this... There are these barriers,
+- [1:13:08] to their diffusion.
+- [1:13:10] Okay. Yes? Is this (b?) b I is related to, like, I guess, when the die breaks?
+- [1:13:16] You know?
+- [1:13:18] The other way? So, yeah, so, actually, it's it's not so much related to what you're referring to, which is the breakdown voltage when... Which is when you reply reverse bias. Right? Basically,
+- [1:13:29] {(negative?)}
+- [1:13:31] charge... Or negative voltage to the p side. What it relates to instead is the voltage at which the diode turns on under forward bias. Right? So I... Right? If if you
+- [1:13:47] look at the diode like this, right, then
+- [1:13:53] you're applying...
+- [1:13:54] Right? You would typically apply
+- [1:13:56] positive volt... Right? Positive and negative... Positive voltage is the p side, negative voltage is the n side. And (what?)
+- [1:14:04] happens is that,
+- [1:14:07] you know, for a given... For a diode made from a given semiconductor material,
+- [1:14:12] the current, as we will see in detail later, will increase exponentially as you start with voltage, as you start applying positive voltage to the p side. That's the turn on of the diode. Okay?
+- [1:14:24] And
+- [1:14:26] there will be
+- [1:14:28] a certain voltage. Right? If you look at the current voltage characteristic,
+- [1:14:33] on a curve tracer or something, right, it'll it'll increase exponentially, so it'll kinda look like this. And you'll... There'll be a characteristic voltage at which it looks like it's turning on.
+- [1:14:43] The diffusion creates this (kind?) of (dot,?) and then it's, like, kind of the opposite way. And (then?) if we apply it,
+- [1:14:50] the, like... It's (like?) a negative, I guess. And then (when?) we apply positive voltage, it... Like, once you get to a certain threshold, (you're?) (canceling?)
+- [1:14:58] that (VDI?) out. Is that Yeah. That's basically right. So what'll happen is if we go back to
+
+## page 35  f_0575.jpg  on screen [1:15:03 – 1:16:48]
+<sub>sharpness 394, ink 2.4 %, colour 1.1</sub>
+<sub>earlier states of this page: f_0574.jpg (1:16:39)</sub>
+
+- [1:14:58] that (VDI?) out. Is that Yeah. That's basically right. So what'll happen is if we go back to
+- [1:15:04] this picture down here, this is a little preview of
+- [1:15:11] what will happen, what we'll talk about next time. What happens is that as you apply positive voltage to the p side, right, then positive voltage decreases the potential energy for electrons. Right? So that basically means this barrier will get lower.
+- [1:15:28] And, you know, once it's (slow?) enough, not,
+- [1:15:32] all the way to completely canceling out the built in potential, but getting within maybe,
+- [1:15:38] a couple tenths of a volt or something like that of doing so. Then
+- [1:15:42] the current due now to the diffusion of electrons that can now diffuse across the junction because the barrier is lower will become... Will start becoming very noticeable, and that's the turn on voltage. Right? So for a silicon,
+- [1:15:54] PN junction diode, the turn on, you know, very roughly is maybe around point six volts or so.
+- [1:16:02] And it is that
+
+## page 36  f_0588.jpg  on screen [1:16:48 – 1:18:20]
+<sub>sharpness 618, ink 5.4 %, colour 4.5</sub>
+
+- (no speech captured in this span)
+
+## page 37  f_0593.jpg  on screen [1:18:20 – 1:19:12]
+<sub>sharpness 779, ink 7.6 %, colour 9.7</sub>
+
+- (no speech captured in this span)

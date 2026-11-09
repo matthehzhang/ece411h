@@ -1,0 +1,380 @@
+[0:00:05] Okay. So this is Ulaby 9.37.
+[0:00:08] Alright? And this is an example.
+[0:00:15] Okay, of, an op amp
+[0:00:20] highpass
+[0:00:24] filter circuit.
+[0:00:27] Okay. So, basically, what we want to do here is to take the circuit
+[0:00:32] as shown here. We wanna calculate its transfer function. Alright? The output voltage over the input voltage, which is v sub s. Okay. Then we wanna generate the Bode plots for this, which we'll do in the linear approximation.
+[0:00:48] And then,
+[0:00:50] from,
+[0:00:51] that analysis, we want to deduce what kind of filter this is and what its maximum gain is.
+[0:00:58] Okay. So, let's go ahead with this.
+[0:01:02] So we will... As usual, we'll start off by drawing the circuit.
+[0:01:07] And so we have
+[0:01:12] an op amp here.
+[0:01:16] Okay. And then we have a feedback
+[0:01:21] resistor connection like this.
+[0:01:24] The noninverting input of the op amp is connected to our
+[0:01:29] input,
+[0:01:31] v sub s,
+[0:01:33] and then the noninverting input
+[0:01:36] is connected to ground through a resistor
+[0:01:41] and a capacitor.
+[0:01:43] Okay? And we have the output voltage
+[0:01:48] over here, v o.
+[0:01:51] Okay. And this is a capacitor with value c. This is a resistor r one. This is a resistor r two. Okay?
+[0:02:00] And what we're asked to do here is to first
+[0:02:05] calculate the transfer function,
+[0:02:09] okay, which is the output voltage over our input v sub s.
+[0:02:14] Then we wanna generate the Bode plots
+[0:02:20] for r one being equal to one kilo ohm,
+[0:02:24] r two
+[0:02:25] being equal to four kilo ohms,
+[0:02:28] and c being one
+[0:02:30] microfarad.
+[0:02:32] And then part c, based on our analysis, we wanna determine
+[0:02:40] what type of filter
+[0:02:42] this is. Right? I already told you the answer, but we'll see why it is that. And then what is its maximum gain?
+[0:02:51] Okay. So, let's go ahead and,
+[0:02:54] take a look at this. So,
+[0:02:57] the first part of this is to calculate the transfer function, meaning basically calculating the output voltage which will, be a function of, v sub s. Alright? And so to do that, we will proceed in the usual way as we do for op amps, which is to apply KCL
+[0:03:16] at, in this case, the inverting input of the op amp where, by, the ideal op amp rules, we know that the voltage has to be v sub s. Right? Because the voltage at the non inverting input is v sub s. Alright? So
+[0:03:34] for part a, calculating the transfer function,
+[0:03:38] all we wanna do is to apply KCL
+[0:03:41] at the op amp
+[0:03:47] inverting input
+[0:03:49] where the voltage is v sub s. Alright? So the current going out this way to the left is going to be that voltage v sub s minus zero.
+[0:04:01] So just v sub s divided by the impedance of r one in series with c. So that's r one plus
+[0:04:08] one over j omega c.
+[0:04:10] And then
+[0:04:12] we add to that the current flowing up this way and to the right through the resistor r two. That current is the voltage across the resistor, which is v s minus v o
+[0:04:23] divided by the resistance r two. These two currents have to add up to zero. Okay?
+[0:04:30] So now we
+[0:04:32] will, as usual, group together, the terms proportional to, the same variable. So for v s, alright, we have this first term over here. So one over... Sorry. This is r one here.
+[0:04:47] One over r one plus one over
+[0:04:51] j omega c.
+[0:04:52] And then from this second term over here, we have plus one over r two.
+[0:05:02] Okay. Those are multiplying
+[0:05:05] v sub s. And then we have this minus v o over r two on the left, so that becomes one over r two times v o, without the minus sign on the right.
+[0:05:17] Now, to, simplify this a bit, what we want to do is to take this equation and multiply it by, r two over j omega c.
+[0:05:35] Okay. Multiplying by r two, we'll get rid of this r two and this r two in the denominators here, multiplying by j omega c in the denominator will, turn this term into just a one. Alright?
+[0:05:49] And so, if we go ahead and,
+[0:05:52] do this, then from this first term over here, we're going to get an r two in the numerator divided by one.
+[0:06:03] Right? That's j omega c times one over j omega c, and then plus
+[0:06:09] j omega r one times c.
+[0:06:12] And then from the one over r two term over here, we're going to get just one over
+[0:06:18] j omega c, all this times v s.
+[0:06:22] And that's equal to, on the right hand side, one over j omega c times
+[0:06:28] v o. Alright?
+[0:06:30] And then,
+[0:06:33] here on the left, what we wanna do next is to take these two terms and put them over a common denominator. And that common denominator is going to be just the product of the two individual denominators.
+[0:06:48] So if we do that, then from this r two over here, we're going to get
+[0:06:54] r two times j omega c.
+[0:06:58] And then from this one over here, we're gonna get one plus j omega r one c. So plus one plus j omega r one c.
+[0:07:07] And then our denominator is going to be j omega c times one plus j omega
+[0:07:13] r one times c.
+[0:07:16] All of this still times v sub s. And then on the right hand side, we get one over j omega c times
+[0:07:23] v o.
+[0:07:25] Okay. So now, it's very easy for us to solve for the transfer function.
+[0:07:30] So h of omega. Right? It's v o over v s.
+[0:07:36] Alright? So, essentially, we just divide both sides of this equation by v s and multiply both sides by j omega c. And that's gonna cancel out this j omega c in the denominator over here. So what we're going to get is in the numerator,
+[0:07:50] one plus j omega,
+[0:07:53] and then it's r one times the quantity r one plus r two times c
+[0:07:58] divided by one plus j omega
+[0:08:02] r one c. Right? So this is
+[0:08:06] our transfer function h of omega.
+[0:08:12] Okay. And from looking at
+[0:08:17] this, right, we can see that
+[0:08:20] this transfer function, right, it has one zero, right, where the numerator goes to zero and one pole where the denominator goes to zero. So the transfer function,
+[0:08:31] right, it has a simple zero
+[0:08:37] and
+[0:08:39] omega...
+[0:08:40] We'll call it omega c one.
+[0:08:42] Alright? And it is one over
+[0:08:46] r one plus r two times c.
+[0:08:52] And it has a simple pull
+[0:08:58] at
+[0:09:00] omega c two. Right? And we can see from the denominator that omega c two is just one over r one c.
+[0:09:09] Okay.
+[0:09:10] And
+[0:09:11] so,
+[0:09:13] alternatively, we can write that h of omega
+[0:09:16] is equal to
+[0:09:19] one plus
+[0:09:21] j omega over omega c one
+[0:09:25] over one plus j omega over omega c two.
+[0:09:31] Okay. Where we have defined omega c one and omega c two as shown here.
+[0:09:38] Okay. So that's the first part of it, to calculate the transfer function.
+[0:09:43] Then the second part of the problem is to construct the Bode plots, alright, for the magnitude and the phase. So to do that, we're going to need
+[0:09:54] the numerical values of these...
+[0:09:57] Of the zero and pole frequencies.
+[0:10:00] So omega c one, where we have the zero,
+[0:10:04] is... It's one over the quantity r one plus r two times c. So it's one over... And then r one is one k,
+[0:10:15] and r two is four k times c, which is 10 to the minus six.
+[0:10:23] Okay. So one k plus four k is five k. K is 10 to the third, and so we have five times 10 to the third times 10 to the minus six in the denominator. So that's one fifth
+[0:10:36] times 10 to the plus three. So one over five times 10 to the minus three which is one fifth times 10 to the plus three. So this is one fifth times 10 to the third, which is 200.
+[0:10:50] Alright. And that's in radians per second.
+[0:10:53] Then omega c two
+[0:10:56] is equal to
+[0:10:58] one over r one c. So one over
+[0:11:02] one k, that's r one, times 10 to the minus six. Alright. That's one microfarad. So that is a thousand
+[0:11:13] radians per second. Okay.
+[0:11:15] And so that means that we can write
+[0:11:20] h of omega as one plus
+[0:11:23] j omega over omega c one, which is 200,
+[0:11:27] over one plus
+[0:11:29] j omega over omega c two,
+[0:11:32] which is 1,000.
+[0:11:35] Okay. So this is in terms of, producing the Bode plot, this is a slightly easier way, to look at
+[0:11:43] the transfer function.
+[0:11:45] Looking at this form for the transfer function,
+[0:11:48] we can see that
+[0:11:51] the magnitude of the transfer function at zero frequency
+[0:11:55] is
+[0:11:58] just one.
+[0:12:00] Alright? Which means that on the dB scale,
+[0:12:04] this is 20 times the log of one, which is zero dB.
+[0:12:11] Okay? And then add very high frequency. As the frequency goes to infinity,
+[0:12:17] then
+[0:12:21] what we have here... Alright. If we look at,
+[0:12:26] say, this form,
+[0:12:28] of h of omega here, right, it is the numerator is going to be dominated by this term, the denominator by this term over here. And so the limit of this as omega goes to infinity is just r one plus r two over r one.
+[0:12:45] Okay. So this is equal to 20 on the dB scale. It's 20 times the log
+[0:12:51] of r one plus r two
+[0:12:54] over r one.
+[0:12:56] So that's 20 times the log of five. Alright. Because r one is one k, r two is four k,
+[0:13:04] which is 13.98
+[0:13:07] dB.
+[0:13:09] We'll call that 14
+[0:13:12] dB. Okay? Then
+[0:13:15] the phase
+[0:13:16] at zero.
+[0:13:18] Alright. Looking at this form here for h of omega, we can see that's clearly
+[0:13:24] zero degrees.
+[0:13:27] And then the phase at
+[0:13:30] a very high frequency, frequency approaching infinity where, these second omega dependent terms dominate,
+[0:13:37] you can see that the phase there is going to be zero
+[0:13:40] as well. Right? But that does not necessarily mean that the phase at every point in between is zero as well as we will see. Okay? So the phase can vary between zero frequency and very high frequency.
+[0:13:55] Okay. So let's take this information now and generate
+[0:14:00] the Bode plots.
+[0:14:04] Okay. So we'll look first at
+[0:14:08] the Bode magnitude plot.
+[0:14:11] Okay.
+[0:14:12] And we'll draw the
+[0:14:16] frequency axis here. Alright?
+[0:14:19] We have a a zero at omega c one, which is 200,
+[0:14:26] and
+[0:14:27] a pole at omega c two, which is 1,000.
+[0:14:31] Okay. So,
+[0:14:33] our critical frequencies here, right, we have...
+[0:14:41] We'll say 100 here,
+[0:14:45] 1,010
+[0:14:48] to the fourth. Okay? Then 200,
+[0:14:52] say, maybe here,
+[0:14:55] 20 here,
+[0:14:57] and then
+[0:15:00] 2,000
+[0:15:01] here.
+[0:15:03] Okay.
+[0:15:04] And then we
+[0:15:07] know that as m... As as the frequency goes to infinity,
+[0:15:12] then the magnitude
+[0:15:13] is 14
+[0:15:15] dB. So
+[0:15:17] say this is... If this is 20, 14 would be maybe here.
+[0:15:23] Okay.
+[0:15:24] And
+[0:15:25] let's see. The key frequencies here
+[0:15:29] are 201,000.
+[0:15:37] Okay. So, we saw up here that at low frequencies,
+[0:15:42] which for our purposes will be less than 200,
+[0:15:45] then,
+[0:15:47] the magnitude is zero dB. Right? So
+[0:15:52] zero dB is where we put the axis.
+[0:15:55] And so
+[0:15:59] the low frequency part of the Bode plot is like this.
+[0:16:03] Then,
+[0:16:04] between 200 and a thousand,
+[0:16:07] right,
+[0:16:10] the
+[0:16:11] denominator is going to go as one, and the numerator is going to go as omega. So we're gonna have a slope of 20 dB
+[0:16:20] per decade, plus 20 dB per decade. So that's gonna take us up to 14.
+[0:16:29] K. So 20 dB per decade. And then at high frequency, meaning above a thousand,
+[0:16:36] then
+[0:16:39] we're gonna have
+[0:16:40] the
+[0:16:42] high frequency limit. So it'll just stay at 14 dB.
+[0:16:47] Okay. So like this.
+[0:16:50] K. And we'll draw this
+[0:16:54] so it's clear that these are aligned.
+[0:16:57] Okay. So that is the
+[0:17:00] Bode magnitude
+[0:17:03] plot.
+[0:17:06] Now we wanna construct
+[0:17:08] the Bode frequency plot.
+[0:17:14] Sorry. Not the
+[0:17:16] frequency plot. The phase plot. So phi of omega.
+[0:17:21] It's a function of omega. Right? The horizontal axis in both cases is the frequency.
+[0:17:25] So we have, say, 20 here,
+[0:17:29] 100 here,
+[0:17:31] 200 here,
+[0:17:34] thousand here,
+[0:17:37] 2,000,
+[0:17:39] and then 10 to the fourth.
+[0:17:41] Okay.
+[0:17:42] And we'll say this is zero degrees,
+[0:17:46] This is 90 degrees.
+[0:17:49] This is minus 90 degrees.
+[0:17:53] K. And we will mark
+[0:17:59] these various different
+[0:18:00] frequencies here.
+[0:18:15] Okay. So,
+[0:18:17] we have a
+[0:18:19] zero
+[0:18:21] at
+[0:18:22] 200,
+[0:18:23] frequency of 200.
+[0:18:24] So that means that low frequencies, meaning,
+[0:18:29] point one times 200 or 20 and below, then the phase will be zero. Right? Because the one term here will be dominant. And then at high frequency, say, 10 times 200, that is 2,000 and above, then this second term in the numerator will dominate and the phase will be 90 degrees. So we go from a phase of... We'll draw this in blue.
+[0:18:51] So at 20,
+[0:18:55] we have a phase of zero.
+[0:18:57] Then
+[0:18:58] at 2,000,
+[0:19:00] we have a phase of 90 degrees. And at 200, it's halfway. It's 45 degrees.
+[0:19:10] Okay. So, that's the contribution to the phase from the zero in the numerator of the transfer function.
+[0:19:18] Then
+[0:19:20] for the pole,
+[0:19:23] alright, we have a pole at a thousand radians per second. So at very low frequencies, meaning a tenth of this or a 100 and below, the phase is,
+[0:19:32] zero,
+[0:19:34] and it contributes zero to the phase of the transfer function. At very high frequencies, say,
+[0:19:40] 10 times a thousand or 10,000 and above,
+[0:19:44] the phase in the denominator is 90 degrees, meaning that the phase contribution to h of omega is minus 90 degrees.
+[0:19:52] Okay. So we go from phase of zero at a 100 to minus 90 at 10 to the fourth, and it's minus 45 degrees at
+[0:20:05] 1,000.
+[0:20:08] K. So we have a contribution to
+[0:20:13] the phase from the pole at omega equal to thousand that looks something like this other blue dash line that I just drew.
+[0:20:22] And now we can combine these
+[0:20:25] to get the
+[0:20:28] complete phase plot. Alright? Noting that at very low frequency and at very high frequency, the phase should be zero, right, as we concluded up here.
+[0:20:40] Okay. So that means a very low frequency. Say, than 20, omega less than 20, phase is zero.
+[0:20:48] Okay. Then
+[0:20:51] starting at 20,
+[0:20:53] right, we
+[0:20:56] go up like this. The slope here is
+[0:21:00] 45 degrees
+[0:21:02] per decade.
+[0:21:05] Then
+[0:21:06] from 100
+[0:21:09] to
+[0:21:10] 2,000,
+[0:21:12] right, we have 45 degrees per decade up like this and 45 degrees per decade down like this. So those cancel each other out, and we have just a
+[0:21:26] constant phase
+[0:21:27] like this.
+[0:21:29] Okay?
+[0:21:30] And then
+[0:21:32] from 2000 to '10 to the fourth, we have minus
+[0:21:36] 45 degrees per decade.
+[0:21:39] So that'll spring us down
+[0:21:41] like this.
+[0:21:43] And then from 10 to the fourth and above, the phase is zero again.
+[0:21:48] Okay. So, that is the, Bode phase plot.
+[0:21:53] Okay. So now we see right here both the Bode magnitude plot
+[0:21:58] and the Bode phase plot. Okay?
+[0:22:03] And we can confirm by looking at the magnitude plot that indeed this is acting as a highpass filter. Right? Because we have,
+[0:22:13] a larger transfer function by 14 dB at high frequencies than at low frequencies.
+[0:22:20] K. So that takes us to part c of this problem, which is asking, what kind of a filter is this?
+[0:22:27] Alright. So this is a
+[0:22:32] highpass filter.
+[0:22:34] And then it's also asking what is the maximum gain of this? Right?
+[0:22:40] And the maximum gain
+[0:22:42] is
+[0:22:43] basically the value of the magnitude
+[0:22:47] at high frequency,
+[0:22:49] which, we calculated up here. On the dB scale, it is 14 dB
+[0:22:54] or as,
+[0:22:55] just a conventional,
+[0:22:57] linear gain. Right? It's r one plus r two over r one, which is five. Alright? So
+[0:23:05] the maximum gain,
+[0:23:13] right, is on the dB scale, we can cut... We can say that it's 14 dB. Right?
+[0:23:21] Or
+[0:23:23] on a linear scale, it's r one plus r two
+[0:23:26] over r one, which is five.
+[0:23:31] Okay.
+[0:23:33] And so so that is the answer, to this. Okay?
+[0:23:38] And
+[0:23:40] if we look at this problem,
+[0:23:42] alright, it was actually... The analysis was quite simple. Right? It was basically just analyzing
+[0:23:49] this as a simple op amp circuit. Right? So if we think about what were some of the key points here.
+[0:24:03] Right? The analysis
+[0:24:07] was,
+[0:24:08] fairly straightforward.
+[0:24:17] Op amp circuit analysis.
+[0:24:24] Okay. And then, once we had the transfer function,
+[0:24:28] we were
+[0:24:30] able to construct the Bode plots in the usual way, which
+[0:24:36] was shown here. And, also, there are, several examples of this in, one of the earlier, problems. It was Ulaby
+[0:24:46] 9.19.
+[0:24:50] Alright?
+[0:24:52] And so,
+[0:24:55] right,
+[0:24:58] the Bode plots
+[0:25:02] were generated,
+[0:25:06] right, in the usual
+[0:25:10] way.
+[0:25:11] And
+[0:25:13] from the Bode plots, we could conclude that this was a highpass filter.
+[0:25:23] And, we could basically read from the Bode plot that the maximum gain
+[0:25:32] of
+[0:25:33] 14 dB
+[0:25:36] or
+[0:25:37] as a conventional linear gain, five, r one plus r two over
+[0:25:42] r one.
+[0:25:43] Okay. Now
+[0:25:45] let's go back and look at the circuit and think about whether these results actually make sense if we just think about the circuit a little bit. Alright? So if we're a very low frequency,
+[0:25:59] then this capacitor is going to behave like an open circuit. Alright? So there'll be no current flowing along this branch. There's also no current flowing along this branch going to the op amp inverting input.
+[0:26:13] Therefore, the current along this branch here has to be zero as well, and the voltage across r two has to be zero. So the output voltage
+[0:26:23] has to be equal to whatever the voltage is over here, and that voltage is v sub s. Right? Since the,
+[0:26:30] input voltages of the op amp have to be equal to each other. So at low frequencies,
+[0:26:35] we should get v o is equal to v s, which in terms of the transfer function, that means that the transfer function should be one. Alright? And so,
+[0:26:45] on the Bode plot, that should correspond to zero dB.
+[0:26:51] And if we look at the Bode plot, you can see, in fact, that's what we have over here. Alright?
+[0:26:58] And so,
+[0:27:00] you know, after going through all the formalism of calculating the transfer function and so forth, we can go back and check to see if, does that result make,
+[0:27:09] sort of intuitive sense. Right? And so the... At low frequency, it certainly does. How about at high frequencies?
+[0:27:18] At very high frequencies, this capacitor behaves basically like a short circuit.
+[0:27:23] And so this
+[0:27:25] circuit here now just looks like a conventional
+[0:27:30] inverting op amp amplifier circuit. Alright?
+[0:27:35] And...
+[0:27:36] Or non inverting op amp amplifier circuit. Right? Since the input voltage is connected to the non inverting input. Right? So it's just a conventional...
+[0:27:46] At high frequencies, it's just a conventional
+[0:27:48] non inverting op amp amplifier circuit. And we know that that circuit has a gain of r one plus r two over r one. Okay.
+[0:28:00] And in fact...
+[0:28:06] Alright. If we look at
+[0:28:08] the transfer function
+[0:28:11] here,
+[0:28:12] we can see that that is indeed the limiting mathematical form of the transfer function as omega becomes very large. And when we calculated
+[0:28:22] the magnitude
+[0:28:23] of the transfer function numerically, we got that,
+[0:28:28] it was five on a linear scale or 14 on the dB scale,
+[0:28:32] and we see that in the Bode plot as well. Okay.
+[0:28:37] So, the third point that we will make here
+[0:28:42] is that,
+[0:28:43] the results
+[0:28:48] for
+[0:28:49] h of omega
+[0:28:52] and the Bode plot,
+[0:28:55] particularly for the magnitude,
+[0:29:01] make intuitive sense.
+[0:29:09] In terms of
+[0:29:11] the low frequency
+[0:29:17] and high frequency
+[0:29:22] limiting behavior
+[0:29:29] of the circuit.
+[0:29:33] Okay. And, this idea of sort of after you get some result, going back and thinking about,
+[0:29:41] and testing to see whether, it makes reasonable intuitive sense,
+[0:29:47] whether it has the correct behavior
+[0:29:49] as you go to certain simplifying limits is actually quite useful and important
+[0:29:56] in kind of validating or checking that your result actually makes sense. Okay? If you get a result that predicts obviously incorrect behavior in one of these simplifying limits, then you know that it's probably a good idea to go back and check either of what you did in that analysis or what your intuitive understanding of what the circuit should be doing is or perhaps both.
+[0:30:22] Okay. So that is everything for this example,
+[0:30:27] and I will now stop the recording.
